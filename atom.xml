@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/"/>
-  <updated>2020-02-03T19:36:46.000Z</updated>
+  <updated>2020-02-03T21:06:43.000Z</updated>
   <id>https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo中引入音乐和视频</title>
+    <link href="https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/posts/3752.html"/>
+    <id>https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/posts/3752.html</id>
+    <published>2020-02-03T21:06:43.000Z</published>
+    <updated>2020-02-03T21:06:43.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1、通过网易云网站引入外链HTML代码&quot;&gt;&lt;a href=&quot;#1、通过网易云网站引入外链HTML代码&quot; class=&quot;headerlink&quot; title=&quot;1、通过网易云网站引入外链HTML代码:&quot;&gt;&lt;/a&gt;1、通过网易云网站引入外链HTML代码:&lt;/h3&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://niuxvdong.cf,https://niuxvdong.ml,https://niuxvdong.ga/categories/Hexo/"/>
+    
+    
+      <category term="aplayer" scheme="https://niuxvdong.cf,https://niuxvdong.ml,https://niuxvdong.ga/tags/aplayer/"/>
+    
+      <category term="dplayer" scheme="https://niuxvdong.cf,https://niuxvdong.ml,https://niuxvdong.ga/tags/dplayer/"/>
+    
+  </entry>
   
   <entry>
     <title>用法总结之Markdown</title>
