@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Mr.Niu&#39;s Blog</title>
+  
+  <subtitle>技术&amp;生活分享</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/"/>
+  <updated>2020-02-03T19:36:46.000Z</updated>
+  <id>https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/</id>
+  
+  <author>
+    <name>Mr.Niu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用法总结之Markdown</title>
+    <link href="https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/posts/646c.html"/>
+    <id>https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/posts/646c.html</id>
+    <published>2020-02-03T19:36:46.000Z</published>
+    <updated>2020-02-03T19:36:46.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。Markdown 编写的文档后缀为 .md, .markdown。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Markdown" scheme="https://niuxvdong.cf,https://niuxvdong.ml,https://niuxvdong.ga/categories/Markdown/"/>
+    
+    
+      <category term="Markdown" scheme="https://niuxvdong.cf,https://niuxvdong.ml,https://niuxvdong.ga/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/posts/3eeb.html"/>
+    <id>https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/posts/3eeb.html</id>
+    <published>2020-01-31T12:21:55.000Z</published>
+    <updated>2020-02-03T12:03:25.518Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://niuxvdong.cf,https://niuxvdong.ml,https://niuxvdong.ga/categories/Hexo/"/>
+    
+    
+      <category term="Doc" scheme="https://niuxvdong.cf,https://niuxvdong.ml,https://niuxvdong.ga/tags/Doc/"/>
+    
+  </entry>
+  
+</feed>
