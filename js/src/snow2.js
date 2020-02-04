@@ -125,5 +125,5 @@ function drawSnow() {
 var snow = new snowFall({maxFlake:60});
 snow.start();
 
-作者：donlex
-链接：http://www.imooc.com/article/272005
+//作者：donlex
+//链接：http://www.imooc.com/article/272005
