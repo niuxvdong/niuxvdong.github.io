@@ -10,23 +10,24 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Hello World - Mr.Niu&#39;s Blog</title>
+<title>Hexo中引入音乐和视频 - Mr.Niu&#39;s Blog</title>
 
 
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="1、通过网易云网站引入外链HTML代码:">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/posts/3eeb.html">
+<meta property="og:title" content="Hexo中引入音乐和视频">
+<meta property="og:url" content="https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/posts/14163.html">
 <meta property="og:site_name" content="Mr.Niu&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="1、通过网易云网站引入外链HTML代码:">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://blog-1259127207.cos.ap-beijing.myqcloud.com/img/f%20(35).png">
-<meta property="article:published_time" content="2020-01-31T12:21:55.000Z">
-<meta property="article:modified_time" content="2020-02-03T12:03:25.518Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(42).png">
+<meta property="article:published_time" content="2020-02-03T21:06:43.000Z">
+<meta property="article:modified_time" content="2020-02-03T21:06:43.000Z">
 <meta property="article:author" content="Mr.Niu">
-<meta property="article:tag" content="Doc">
+<meta property="article:tag" content="aplayer">
+<meta property="article:tag" content="dplayer">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://blog-1259127207.cos.ap-beijing.myqcloud.com/img/f%20(35).png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(42).png">
 
 
 
@@ -78,7 +79,10 @@
 
 <link rel="stylesheet" href="/css/style.css">	
 <link rel="alternate" href="/atom.xml" title="Mr.Niu's Blog" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"></script></head>
 <body class="is-3-column">
 
 
@@ -96,7 +100,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/codehub.ico" alt="Hello World" height="28">
+                <img src="/images/codehub.ico" alt="Hexo中引入音乐和视频" height="28">
             
             </a>
         </div>
@@ -138,10 +142,6 @@
                     
                 
                 
-                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
-                    <i class="fas fa-list-ul"></i>
-                </a>
-                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -160,7 +160,7 @@
     
     <div class="card-image">
         <span  class="image is-7by1">
-            <img class="thumbnail" src="https://blog-1259127207.cos.ap-beijing.myqcloud.com/img/f (35).png" alt="Hello World">
+            <img class="thumbnail" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (42).png" alt="Hexo中引入音乐和视频">
         </span>
     </div>
     
@@ -168,7 +168,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-01-31T12:21:55.000Z">2020-01-31</time>
+                <time class="level-item has-text-grey" datetime="2020-02-03T21:06:43.000Z">2020-02-03</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
@@ -178,7 +178,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 124 个字)
+                    4 分钟 读完 (大约 551 个字)
                 </span>
                 
                 
@@ -192,25 +192,85 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                Hello World
+                Hexo中引入音乐和视频
             
         </h1>
         <div class="content">
-            <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a id="more"></a>
+            <h3 id="1、通过网易云网站引入外链HTML代码"><a href="#1、通过网易云网站引入外链HTML代码" class="headerlink" title="1、通过网易云网站引入外链HTML代码:"></a>1、通过网易云网站引入外链HTML代码:</h3><a id="more"></a>
 
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+<br>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200203211028.png" alt=""></p>
+<h4 id="如图所示，复制当中的HTML代码即可。"><a href="#如图所示，复制当中的HTML代码即可。" class="headerlink" title="如图所示，复制当中的HTML代码即可。"></a>如图所示，复制当中的HTML代码即可。</h4><p style="color:red; font-size:16px">效果如下:</p><p>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&amp;id=1346281717&amp;auto=1&amp;height=66"></iframe>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+</p><h3 id="2、通过B站来引入外链HTML代码"><a href="#2、通过B站来引入外链HTML代码" class="headerlink" title="2、通过B站来引入外链HTML代码:"></a>2、通过B站来引入外链HTML代码:</h3><br>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200203212844.png" alt=""></p>
+<h4 id="如图所示，复制当中的HTML代码即可。-1"><a href="#如图所示，复制当中的HTML代码即可。-1" class="headerlink" title="如图所示，复制当中的HTML代码即可。"></a>如图所示，复制当中的HTML代码即可。</h4><p style="color:red; font-size:16px">效果如下:</p><p>
+
+<iframe src="//player.bilibili.com/player.html?aid=84850049&amp;cid=145104388&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+</p><h3 id="3、通过Hexo的插件来引用音乐"><a href="#3、通过Hexo的插件来引用音乐" class="headerlink" title="3、通过Hexo的插件来引用音乐:"></a>3、通过Hexo的插件来引用音乐:</h3><ul>
+<li><p>hexo-tag-aplayer： <a href="https://github.com/MoePlayer/hexo-tag-aplayer">点击这里！</a></p>
+</li>
+<li><p>hexo-tag-dplayer： <a href="https://github.com/MoePlayer/hexo-tag-dplayer">点击这里！</a></p>
+</li>
+</ul>
+<p style="color:red; font-size:16px">通过npm来安装两个插件：</p><p>
+
+</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">$ npm install hexo-tag-aplayer --save</span><br><span class="line"></span><br><span class="line">$ npm install hexo-tag-dplayer --save</span><br></pre></td></tr></tbody></table></figure>
+<h5 id="第一种：meting后面根歌单id，例如-https-music-163-com-playlist-id-523845661-amp-userid-46562117-，这个歌单的id就是523845661，公司名可以是tencent、netease或是其他公司。"><a href="#第一种：meting后面根歌单id，例如-https-music-163-com-playlist-id-523845661-amp-userid-46562117-，这个歌单的id就是523845661，公司名可以是tencent、netease或是其他公司。" class="headerlink" title="第一种：meting后面根歌单id，例如 https://music.163.com/playlist?id=523845661&amp;userid=46562117 ，这个歌单的id就是523845661，公司名可以是tencent、netease或是其他公司。"></a>第一种：meting后面根歌单id，例如 <a href="https://music.163.com/playlist?id=523845661&amp;userid=46562117">https://music.163.com/playlist?id=523845661&amp;userid=46562117</a> ，这个歌单的id就是523845661，公司名可以是tencent、netease或是其他公司。</h5><ul>
+<li>最新版的 hexo-tag-aplayer 已经支持了MetingJS的使用，可以直接解析网络平台的歌曲，在站点配置文件_config.yml中将aplayer的meting属性开启。</li>
+</ul>
+<figure class="highlight yml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="attr">aplayer:</span></span><br><span class="line">	<span class="attr">meting:</span> <span class="literal">true</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p><a href="https://www.jianshu.com/p/f1005ae09e5a">参考文章：点击这里！</a></p>
+<p><a href="https://blog.csdn.net/hushhw/article/details/88092728">有关细节及参数，点击这里！</a></p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{% meting "523845661" "netease" "playlist" "theme:#FF4081" "mode:circulation" "mutex:true" "listmaxheight:340px" "preload:auto" %}</span><br></pre></td></tr></tbody></table></figure>
+
+
+    <div id="aplayer-lNQHoLqc" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="523845661" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+
+
+<h5 id="第二种：写上名字，歌手，链接地址即可。"><a href="#第二种：写上名字，歌手，链接地址即可。" class="headerlink" title="第二种：写上名字，歌手，链接地址即可。"></a>第二种：写上名字，歌手，链接地址即可。</h5><p><a href="http://www.zhsh666.xyz/2019/08/19/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E9%9F%B3%E4%B9%90-%E8%A7%86%E9%A2%91/">参考文章：点击这里！</a></p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{% aplayer "她的睫毛" "周杰伦" "http://home.ustc.edu.cn/~mmmwhy/%d6%dc%bd%dc%c2%d7%20-%20%cb%fd%b5%c4%bd%de%c3%ab.mp3"  "http://home.ustc.edu.cn/~mmmwhy/jay.jpg" "autoplay=false" %}</span><br></pre></td></tr></tbody></table></figure>
+
+
+        <div id="aplayer-DJsMKLKj" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-DJsMKLKj"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "她的睫毛",
+              author: "周杰伦",
+              url: "http://home.ustc.edu.cn/~mmmwhy/%d6%dc%bd%dc%c2%d7%20-%20%cb%fd%b5%c4%bd%de%c3%ab.mp3",
+              pic: "http://home.ustc.edu.cn/~mmmwhy/jay.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+
+<p><strong>通过meting 和 aplayer 的引用，无法同时使用，都在的时候，只能加载meting</strong></p>
+<h3 id="4、通过Hexo的插件来引用视频"><a href="#4、通过Hexo的插件来引用视频" class="headerlink" title="4、通过Hexo的插件来引用视频:"></a>4、通过Hexo的插件来引用视频:</h3><p style="color:red; font-size:16px">效果如下:</p><p>
+
+</p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">{% dplayer "url=http://home.ustc.edu.cn/~mmmwhy/GEM.mp4"  "pic=http://home.ustc.edu.cn/~mmmwhy/GEM.jpg" "loop=yes" "theme=#FADFA3" "autoplay=false" "token=tokendemo" %}</span><br></pre></td></tr></tbody></table></figure>
+
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"http://home.ustc.edu.cn/~mmmwhy/GEM.mp4","pic":"http://home.ustc.edu.cn/~mmmwhy/GEM.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+
+
+
 <script>
         document.querySelectorAll('.github-emoji i')
           .forEach(el => {
@@ -236,7 +296,7 @@
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/Doc/" rel="tag">Doc</a>
+                    <a class="has-link-grey -link" href="/tags/aplayer/" rel="tag">aplayer</a>, <a class="has-link-grey -link" href="/tags/dplayer/" rel="tag">dplayer</a>
                 </div>
             </div>
         </div>
@@ -282,13 +342,13 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/posts/646c.html">
-                <i class="level-item fas fa-chevron-left"></i>
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/posts/25708.html">
                 <span class="level-item">用法总结之Markdown</span>
+                <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
-        
         
     </div>
 </div>
@@ -521,38 +581,6 @@
         <div class="column-right-shadow is-hidden-widescreen ">
         
             
-
-    <div class="card widget" id="toc">
-        <div class="card-content">
-            <div class="menu">
-                <h3 class="menu-label">
-                    目录
-                </h3>
-                <ul class="menu-list"><li>
-        <a class="is-flex" href="#Quick-Start">
-        <span class="has-mr-6">1</span>
-        <span>Quick Start</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#Create-a-new-post">
-        <span class="has-mr-6">1.1</span>
-        <span>Create a new post</span>
-        </a></li><li>
-        <a class="is-flex" href="#Run-server">
-        <span class="has-mr-6">1.2</span>
-        <span>Run server</span>
-        </a></li><li>
-        <a class="is-flex" href="#Generate-static-files">
-        <span class="has-mr-6">1.3</span>
-        <span>Generate static files</span>
-        </a></li><li>
-        <a class="is-flex" href="#Deploy-to-remote-sites">
-        <span class="has-mr-6">1.4</span>
-        <span>Deploy to remote sites</span>
-        </a></li></ul></li></ul>
-            </div>
-        </div>
-    </div>
-
         
             <div class="card widget">
     <div class="card-content">
@@ -571,16 +599,16 @@
         
         <article class="media">
             
-            <a href="/posts/3752.html" class="media-left">
+            <a href="/posts/14163.html" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://blog-1259127207.cos.ap-beijing.myqcloud.com/img/f (42).png" alt="Hexo中引入音乐和视频">
+                    <img class="thumbnail" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (42).png" alt="Hexo中引入音乐和视频">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-03T21:06:43.000Z">2020-02-03</time></div>
-                    <a href="/posts/3752.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hexo中引入音乐和视频</a>
+                    <a href="/posts/14163.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hexo中引入音乐和视频</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
                     </p>
@@ -590,16 +618,16 @@
         
         <article class="media">
             
-            <a href="/posts/646c.html" class="media-left">
+            <a href="/posts/25708.html" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://blog-1259127207.cos.ap-beijing.myqcloud.com/img/f (31).jpg" alt="用法总结之Markdown">
+                    <img class="thumbnail" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (31).jpg" alt="用法总结之Markdown">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-03T19:36:46.000Z">2020-02-03</time></div>
-                    <a href="/posts/646c.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">用法总结之Markdown</a>
+                    <a href="/posts/25708.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">用法总结之Markdown</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/Markdown/">Markdown</a>
                     </p>
@@ -609,16 +637,16 @@
         
         <article class="media">
             
-            <a href="/posts/3eeb.html" class="media-left">
+            <a href="/posts/16107.html" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://blog-1259127207.cos.ap-beijing.myqcloud.com/img/f (35).png" alt="Hello World">
+                    <img class="thumbnail" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(35).png" alt="Hello World">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-31T12:21:55.000Z">2020-01-31</time></div>
-                    <a href="/posts/3eeb.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
+                    <a href="/posts/16107.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
                     </p>
@@ -717,38 +745,6 @@
 <div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
     
         
-
-    <div class="card widget" id="toc">
-        <div class="card-content">
-            <div class="menu">
-                <h3 class="menu-label">
-                    目录
-                </h3>
-                <ul class="menu-list"><li>
-        <a class="is-flex" href="#Quick-Start">
-        <span class="has-mr-6">1</span>
-        <span>Quick Start</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#Create-a-new-post">
-        <span class="has-mr-6">1.1</span>
-        <span>Create a new post</span>
-        </a></li><li>
-        <a class="is-flex" href="#Run-server">
-        <span class="has-mr-6">1.2</span>
-        <span>Run server</span>
-        </a></li><li>
-        <a class="is-flex" href="#Generate-static-files">
-        <span class="has-mr-6">1.3</span>
-        <span>Generate static files</span>
-        </a></li><li>
-        <a class="is-flex" href="#Deploy-to-remote-sites">
-        <span class="has-mr-6">1.4</span>
-        <span>Deploy to remote sites</span>
-        </a></li></ul></li></ul>
-            </div>
-        </div>
-    </div>
-
     
         <div class="card widget">
     <div class="card-content">
@@ -767,16 +763,16 @@
         
         <article class="media">
             
-            <a href="/posts/3752.html" class="media-left">
+            <a href="/posts/14163.html" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://blog-1259127207.cos.ap-beijing.myqcloud.com/img/f (42).png" alt="Hexo中引入音乐和视频">
+                    <img class="thumbnail" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (42).png" alt="Hexo中引入音乐和视频">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-03T21:06:43.000Z">2020-02-03</time></div>
-                    <a href="/posts/3752.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hexo中引入音乐和视频</a>
+                    <a href="/posts/14163.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hexo中引入音乐和视频</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
                     </p>
@@ -786,16 +782,16 @@
         
         <article class="media">
             
-            <a href="/posts/646c.html" class="media-left">
+            <a href="/posts/25708.html" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://blog-1259127207.cos.ap-beijing.myqcloud.com/img/f (31).jpg" alt="用法总结之Markdown">
+                    <img class="thumbnail" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (31).jpg" alt="用法总结之Markdown">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-03T19:36:46.000Z">2020-02-03</time></div>
-                    <a href="/posts/646c.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">用法总结之Markdown</a>
+                    <a href="/posts/25708.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">用法总结之Markdown</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/Markdown/">Markdown</a>
                     </p>
@@ -805,16 +801,16 @@
         
         <article class="media">
             
-            <a href="/posts/3eeb.html" class="media-left">
+            <a href="/posts/16107.html" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://blog-1259127207.cos.ap-beijing.myqcloud.com/img/f (35).png" alt="Hello World">
+                    <img class="thumbnail" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(35).png" alt="Hello World">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-31T12:21:55.000Z">2020-01-31</time></div>
-                    <a href="/posts/3eeb.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
+                    <a href="/posts/16107.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
                     </p>
@@ -913,7 +909,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/codehub.ico" alt="Hello World" height="28">
+                    <img src="/images/codehub.ico" alt="Hexo中引入音乐和视频" height="28">
                 
                 </a>
                 <p class="is-size-7">
