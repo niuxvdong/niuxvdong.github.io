@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Mr.Niu&#39;s Blog</title>
   
-  <subtitle>技术&amp;生活分享</subtitle>
+  <subtitle>努力 奋斗！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/"/>
-  <updated>2020-02-03T21:06:43.000Z</updated>
-  <id>https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/</id>
+  <link href="https://niuxvdong.ga/"/>
+  <updated>2020-02-05T04:24:09.000Z</updated>
+  <id>https://niuxvdong.ga/</id>
   
   <author>
     <name>Mr.Niu</name>
@@ -17,68 +17,112 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo中引入音乐和视频</title>
-    <link href="https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/posts/14163.html"/>
-    <id>https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/posts/14163.html</id>
-    <published>2020-02-03T21:06:43.000Z</published>
-    <updated>2020-02-03T21:06:43.000Z</updated>
+    <title>hexo-theme-matery主题配置详解</title>
+    <link href="https://niuxvdong.ga/posts/57378.html"/>
+    <id>https://niuxvdong.ga/posts/57378.html</id>
+    <published>2020-02-05T04:24:09.000Z</published>
+    <updated>2020-02-05T04:24:09.000Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;1、通过网易云网站引入外链HTML代码&quot;&gt;&lt;a href=&quot;#1、通过网易云网站引入外链HTML代码&quot; class=&quot;headerlink&quot; title=&quot;1、通过网易云网站引入外链HTML代码:&quot;&gt;&lt;/a&gt;1、通过网易云网站引入外链HTML代码:&lt;/h3&gt;
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
     
     </summary>
     
     
-      <category term="Hexo" scheme="https://niuxvdong.cf,https://niuxvdong.ml,https://niuxvdong.ga/categories/Hexo/"/>
+      <category term="Hexo主题" scheme="https://niuxvdong.ga/categories/Hexo%E4%B8%BB%E9%A2%98/"/>
     
     
-      <category term="aplayer" scheme="https://niuxvdong.cf,https://niuxvdong.ml,https://niuxvdong.ga/tags/aplayer/"/>
+      <category term="matery" scheme="https://niuxvdong.ga/tags/matery/"/>
     
-      <category term="dplayer" scheme="https://niuxvdong.cf,https://niuxvdong.ml,https://niuxvdong.ga/tags/dplayer/"/>
+  </entry>
+  
+  <entry>
+    <title>Hexo中引入音乐和视频</title>
+    <link href="https://niuxvdong.ga/posts/14163.html"/>
+    <id>https://niuxvdong.ga/posts/14163.html</id>
+    <published>2020-02-03T13:06:43.000Z</published>
+    <updated>2020-02-03T13:06:43.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://niuxvdong.ga/categories/Hexo/"/>
+    
+    
+      <category term="aplayer" scheme="https://niuxvdong.ga/tags/aplayer/"/>
+    
+      <category term="dplayer" scheme="https://niuxvdong.ga/tags/dplayer/"/>
     
   </entry>
   
   <entry>
     <title>用法总结之Markdown</title>
-    <link href="https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/posts/25708.html"/>
-    <id>https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/posts/25708.html</id>
-    <published>2020-02-03T19:36:46.000Z</published>
-    <updated>2020-02-03T19:36:46.000Z</updated>
+    <link href="https://niuxvdong.ga/posts/25708.html"/>
+    <id>https://niuxvdong.ga/posts/25708.html</id>
+    <published>2020-02-03T11:36:46.000Z</published>
+    <updated>2020-02-03T11:36:46.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt; Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。Markdown 编写的文档后缀为 .md, .markdown。&lt;/p&gt;
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
     
     </summary>
     
     
-      <category term="Markdown" scheme="https://niuxvdong.cf,https://niuxvdong.ml,https://niuxvdong.ga/categories/Markdown/"/>
+      <category term="Markdown" scheme="https://niuxvdong.ga/categories/Markdown/"/>
     
     
-      <category term="Markdown" scheme="https://niuxvdong.cf,https://niuxvdong.ml,https://niuxvdong.ga/tags/Markdown/"/>
+      <category term="Markdown" scheme="https://niuxvdong.ga/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/posts/16107.html"/>
-    <id>https://niuxvdong.cf,https//niuxvdong.ml,https://niuxvdong.ga/posts/16107.html</id>
-    <published>2020-01-31T12:21:55.000Z</published>
-    <updated>2020-02-04T02:29:59.592Z</updated>
+    <link href="https://niuxvdong.ga/posts/16107.html"/>
+    <id>https://niuxvdong.ga/posts/16107.html</id>
+    <published>2020-01-31T04:21:55.000Z</published>
+    <updated>2020-02-05T04:42:26.254Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
     
     </summary>
     
     
-      <category term="Hexo" scheme="https://niuxvdong.cf,https://niuxvdong.ml,https://niuxvdong.ga/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://niuxvdong.ga/categories/Hexo/"/>
     
     
-      <category term="Doc" scheme="https://niuxvdong.cf,https://niuxvdong.ml,https://niuxvdong.ga/tags/Doc/"/>
+      <category term="Doc" scheme="https://niuxvdong.ga/tags/Doc/"/>
     
   </entry>
   
