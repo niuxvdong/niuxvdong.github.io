@@ -56,3 +56,45 @@
         transform: translate(0, 0.5px) rotate(1.5deg);
     }
 }
+
+
+@media only screen and (max-width: 601px) {
+    .bg-cover .title {
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (max-width: 601px) {
+    header .brand-logo .logo-img {
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 601px) {
+    header .side-nav .mobile-head img {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 601px) {
+    header .brand-logo .logo-span {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 601px) {
+    .index-cover .container .cover-social-link {
+        top: 20vh;
+    }
+}
+
+@media only screen and (max-width: 601px) {
+    .index-cover .container {
+        margin-bottom: 150px;
+    }
+}
+
+
+
+
+
+
