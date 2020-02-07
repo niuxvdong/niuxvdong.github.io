@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://niuxvdong.ga/"/>
-  <updated>2020-02-05T04:24:09.000Z</updated>
+  <updated>2020-02-06T13:10:27.850Z</updated>
   <id>https://niuxvdong.ga/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自学Git记录及用法总结</title>
+    <link href="https://niuxvdong.ga/posts/50207.html"/>
+    <id>https://niuxvdong.ga/posts/50207.html</id>
+    <published>2020-02-06T13:02:25.000Z</published>
+    <updated>2020-02-06T13:10:27.850Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Git" scheme="https://niuxvdong.ga/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="https://niuxvdong.ga/tags/Git/"/>
+    
+      <category term="Github" scheme="https://niuxvdong.ga/tags/Github/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo-theme-matery主题配置详解</title>
@@ -48,7 +77,7 @@
     <link href="https://niuxvdong.ga/posts/14163.html"/>
     <id>https://niuxvdong.ga/posts/14163.html</id>
     <published>2020-02-03T13:06:43.000Z</published>
-    <updated>2020-02-06T12:24:30.491Z</updated>
+    <updated>2020-02-07T03:56:13.219Z</updated>
     
     <summary type="html">
     
@@ -77,7 +106,7 @@
     <link href="https://niuxvdong.ga/posts/25708.html"/>
     <id>https://niuxvdong.ga/posts/25708.html</id>
     <published>2020-02-03T11:36:46.000Z</published>
-    <updated>2020-02-06T12:23:47.820Z</updated>
+    <updated>2020-02-06T12:35:30.200Z</updated>
     
     <summary type="html">
     
