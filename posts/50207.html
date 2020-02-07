@@ -30,11 +30,12 @@ Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理�
     <script src="/libs/jquery/jquery.min.js"></script>
     
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Mr.Niu's Blog" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-duotone-dark.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
+
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper head-container">
@@ -432,14 +433,14 @@ Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理�
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    157
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -455,11 +456,52 @@ Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理�
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/git.jpg" alt="Git"></p>
+                <p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/git.jpg" alt="Git"></p>
 <blockquote>
 <p>Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。</p>
 </blockquote>
-<script>
+<p><strong>本文资料参考：</strong> </p>
+<blockquote>
+<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰Git教程</a></p>
+<p><a href="https://www.runoob.com/git/git-tutorial.html" target="_blank" rel="noopener">菜鸟Git教程</a></p>
+</blockquote>
+<p><strong>相关文章推荐：</strong></p>
+<blockquote>
+<p><a href="https://www.runoob.com/w3cnote/git-five-minutes-tutorial.html" target="_blank" rel="noopener">Git五分钟教程</a></p>
+<p><a href="https://www.runoob.com/w3cnote/git-guide.html" target="_blank" rel="noopener">Github简明教程</a></p>
+</blockquote>
+<p><strong>Git命令文档参考：</strong></p>
+<blockquote>
+<p><a href="https://git-scm.com/docs" target="_blank" rel="noopener">Git官方文档参考</a></p>
+<p><a href="https://www.runoob.com/manual/github-git-cheat-sheet.pdf" target="_blank" rel="noopener">菜鸟Git文档PDF</a></p>
+<p><a href="https://gitee.com/liaoxuefeng/learn-java/raw/master/teach/git-cheatsheet.pdf" target="_blank" rel="noopener">国外友人制作Git文档</a></p>
+</blockquote>
+<h2 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&amp;id=1360802561&amp;auto=1&amp;height=66"></iframe>
+
+
+
+<h2 id="一、-Git的诞生"><a href="#一、-Git的诞生" class="headerlink" title="一、 Git的诞生"></a>一、 Git的诞生</h2><blockquote>
+<p>很多人都知道，Linus在1991年创建了开源的Linux，从此，Linux系统不断发展，已经成为最大的服务器系统软件了。</p>
+<p>Linus虽然创建了Linux，但Linux的壮大是靠全世界热心的志愿者参与的，这么多人在世界各地为Linux编写代码，那Linux的代码是如何管理的呢？</p>
+<p>事实是，在2002年以前，世界各地的志愿者把源代码文件通过diff的方式发给Linus，然后由Linus本人通过手工方式合并代码！</p>
+<p>你也许会想，为什么Linus不把Linux代码放到版本控制系统里呢？不是有CVS、SVN这些免费的版本控制系统吗？因为Linus坚定地反对CVS和SVN，这些集中式的版本控制系统不但速度慢，而且必须联网才能使用。有一些商用的版本控制系统，虽然比CVS、SVN好用，但那是付费的，和Linux的开源精神不符。</p>
+<p>不过，到了2002年，Linux系统已经发展了十年了，代码库之大让Linus很难继续通过手工方式管理了，社区的弟兄们也对这种方式表达了强烈不满，于是Linus选择了一个商业的版本控制系统BitKeeper，BitKeeper的东家BitMover公司出于人道主义精神，授权Linux社区免费使用这个版本控制系统。</p>
+<p>安定团结的大好局面在2005年就被打破了，原因是Linux社区牛人聚集，不免沾染了一些梁山好汉的江湖习气。开发Samba的Andrew试图破解BitKeeper的协议（这么干的其实也不只他一个），被BitMover公司发现了（监控工作做得不错！），于是BitMover公司怒了，要收回Linux社区的免费使用权。</p>
+<p>Linus可以向BitMover公司道个歉，保证以后严格管教弟兄们，嗯，这是不可能的。实际情况是这样的：</p>
+<p>Linus花了两周时间自己用C写了一个分布式版本控制系统，这就是Git！一个月之内，Linux系统的源码已经由Git管理了！牛是怎么定义的呢？大家可以体会一下。</p>
+<p>Git迅速成为最流行的分布式版本控制系统，尤其是2008年，GitHub网站上线了，它为开源项目免费提供Git存储，无数开源项目开始迁移至GitHub，包括jQuery，PHP，Ruby等等。</p>
+<p>历史就是这么偶然，如果不是当年BitMover公司威胁Linux社区，可能现在我们就没有免费而超级好用的Git了。</p>
+</blockquote>
+<h2 id="二、-Git与-Svn-的区别"><a href="#二、-Git与-Svn-的区别" class="headerlink" title="二、 Git与 Svn 的区别"></a>二、 Git与 Svn 的区别</h2><blockquote>
+<ul>
+<li><strong>1、Git 是分布式的，SVN 不是</strong>：这是 Git 和其它非分布式的版本控制系统，例如 SVN，CVS 等，最核心的区别。</li>
+<li><strong>2、Git 把内容按元数据方式存储，而 SVN 是按文件：</strong>所有的资源控制系统都是把文件的元信息隐藏在一个类似 .svn、.cvs 等的文件夹里。</li>
+<li><strong>3、Git 分支和 SVN 的分支不同：</strong>分支在 SVN 中一点都不特别，其实它就是版本库中的另外一个目录。</li>
+<li><strong>4、Git 没有一个全局的版本号，而 SVN 有：</strong>目前为止这是跟 SVN 相比 Git 缺少的最大的一个特征。</li>
+<li><strong>5、Git 的内容完整性要优于 SVN：</strong>Git 的内容存储使用的是 SHA-1 哈希算法。这能确保代码内容的完整性，确保在遇到磁盘故障和网络问题时降低对版本库的破坏。</li>
+</ul>
+</blockquote>
+<h2 id="三、Git的安装"><a href="#三、Git的安装" class="headerlink" title="三、Git的安装"></a>三、Git的安装</h2><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1021,7 +1063,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.8k</span>&nbsp;字
+                class="white-color">8.8k</span>&nbsp;字
             
             
             
@@ -1220,7 +1262,7 @@ $(function () {
 
 	
 
-</body>
+<script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
 
 </html>
 
