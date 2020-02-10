@@ -1,0 +1,1678 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Java教程系列之快速入门, Blog,博客,Java,js,JavaScript,C,C++,SQL,Python,Git">
+    <meta name="description" content="首先来首歌曲来放松一下吧！
+    
+
+为什么Java应用最广泛？从互联网到企业平台，Java是应用最广泛的编程语言，原因在于：
+Java是基于JVM虚拟机的跨平台语言，一次编写，到处运行；
+Java程序易于编写，而且有内置垃圾收集，不必考">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Java教程系列之快速入门 | Mr.Niu&#39;s Blog</title>
+    <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    <script src="/libs/jquery/jquery.min.js"></script>
+    
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Mr.Niu's Blog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
+</head>
+
+
+<body>
+
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper head-container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/codehub.ico" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Mr.Niu's Blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/musics" class="waves-effect waves-light">
+      
+      <i class="fas fa-music" style="zoom: 0.6;"></i>
+      
+      <span>音乐</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/codehub.ico" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Mr.Niu's Blog</div>
+        <div class="logo-desc">
+            
+            一个大学生的博客，记录学习，记录成长，分享生活！
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/musics" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-music"></i>
+			
+			音乐
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/niuxvdong/images/img/mmexport1581051788215.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Java教程系列之快速入门</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%9F%BA%E7%A1%80/">
+                                <span class="chip bg-color">基础</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%85%A5%E9%97%A8/">
+                                <span class="chip bg-color">入门</span>
+                            </a>
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Java%E6%95%99%E7%A8%8B/" class="post-category">
+                                Java教程
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-02-09
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2020-02-10
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3.5k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    14 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h2>
+    <div id="aplayer-OkCAHctC" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1407551413" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+
+<h2 id="为什么Java应用最广泛？"><a href="#为什么Java应用最广泛？" class="headerlink" title="为什么Java应用最广泛？"></a>为什么Java应用最广泛？</h2><h3 id="从互联网到企业平台，Java是应用最广泛的编程语言，原因在于："><a href="#从互联网到企业平台，Java是应用最广泛的编程语言，原因在于：" class="headerlink" title="从互联网到企业平台，Java是应用最广泛的编程语言，原因在于："></a>从互联网到企业平台，Java是应用最广泛的编程语言，原因在于：</h3><ul>
+<li>Java是基于JVM虚拟机的跨平台语言，一次编写，到处运行；</li>
+<li>Java程序易于编写，而且有内置垃圾收集，不必考虑内存管理；</li>
+<li>Java虚拟机拥有工业级的稳定性和高度优化的性能，且经过了长时期的考验；</li>
+<li>Java拥有最广泛的开源社区支持，各种高质量组件随时可用。</li>
+</ul>
+<h3 id="Java语言常年霸占着三大市场："><a href="#Java语言常年霸占着三大市场：" class="headerlink" title="Java语言常年霸占着三大市场："></a>Java语言常年霸占着三大市场：</h3><ul>
+<li>互联网和企业应用，这是Java EE的长期优势和市场地位；</li>
+<li>大数据平台，主要有Hadoop、Spark、Flink等，他们都是Java或Scala（一种运行于JVM的编程语言）开发的；</li>
+<li>Android移动平台。</li>
+</ul>
+<p>这意味着Java拥有最广泛的就业市场。</p>
+<h2 id="一、Java-的诞生"><a href="#一、Java-的诞生" class="headerlink" title="一、Java 的诞生"></a>一、Java 的诞生</h2><h3 id="Java的出现"><a href="#Java的出现" class="headerlink" title="Java的出现"></a>Java的出现</h3><blockquote>
+<p>Java最早是由SUN公司（已被Oracle收购）的<a href="https://en.wikipedia.org/wiki/James_Gosling" target="_blank" rel="noopener">詹姆斯·高斯林</a>（高司令，人称Java之父）在上个世纪90年代初开发的一种编程语言，最初被命名为Oak，目标是针对小型家电设备的嵌入式应用，结果市场没啥反响。谁料到互联网的崛起，让Oak重新焕发了生机，于是SUN公司改造了Oak，在1995年以Java的名称正式发布，原因是Oak已经被人注册了，因此SUN注册了Java这个商标。随着互联网的高速发展，Java逐渐成为最重要的网络编程语言。</p>
+</blockquote>
+<h3 id="Java语言类型"><a href="#Java语言类型" class="headerlink" title="Java语言类型"></a>Java语言类型</h3><blockquote>
+<p>Java介于编译型语言和解释型语言之间。</p>
+<p>编译型语言如C、C++，代码是直接编译成机器码执行，但是不同的平台（x86、ARM等）CPU的指令集不同，因此，需要编译出每一种平台的对应机器码。</p>
+<p>解释型语言如Python、Ruby没有这个问题，可以由解释器直接加载源码然后运行，代价是运行效率太低。</p>
+<p>而Java是将代码编译成一种“字节码”，它类似于抽象的CPU指令，然后，针对不同平台编写虚拟机，不同平台的虚拟机负责加载字节码并执行，这样就实现了“一次编写，到处运行”的效果。当然，这是针对Java开发者而言。对于虚拟机，需要为每个平台分别开发。为了保证不同平台、不同公司开发的虚拟机都能正确执行Java字节码，SUN公司制定了一系列的Java虚拟机规范。从实践的角度看，JVM的兼容性做得非常好，低版本的Java字节码完全可以正常运行在高版本的JVM上。</p>
+</blockquote>
+<h3 id="Java三个版本"><a href="#Java三个版本" class="headerlink" title="Java三个版本"></a>Java三个版本</h3><ul>
+<li>Java SE：Standard Edition</li>
+<li>Java EE：Enterprise Edition</li>
+<li>Java ME：Micro Edition</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200210191720.png" alt=""></p>
+<blockquote>
+<p>Java SE就是标准版，包含标准的JVM和标准库</p>
+<p>而Java EE是企业版，它只是在Java SE的基础上加上了大量的API和库，以便方便开发Web应用、数据库、消息服务等，Java EE的应用使用的虚拟机和Java SE完全相同。</p>
+<p>Java ME就和Java SE不同，它是一个针对嵌入式设备的“瘦身版”，Java SE的标准库无法在Java ME上使用，Java ME的虚拟机也是“瘦身版”。</p>
+</blockquote>
+<h3 id="Java学习路线"><a href="#Java学习路线" class="headerlink" title="Java学习路线"></a>Java学习路线</h3><ol>
+<li>首先要学习Java SE，掌握Java语言本身、Java核心开发技术以及Java标准库的使用；</li>
+<li>如果继续学习Java EE，那么Spring框架、数据库开发、分布式架构就是需要学习的；</li>
+<li>如果要学习大数据开发，那么Hadoop、Spark、Flink这些大数据平台就是需要学习的，他们都基于Java或Scala开发；</li>
+<li>如果想要学习移动开发，那么就深入Android平台，掌握Android App开发。</li>
+</ol>
+<p>无论怎么选择，Java SE的核心技术是基础</p>
+<h3 id="Java版本"><a href="#Java版本" class="headerlink" title="Java版本"></a>Java版本</h3><blockquote>
+<p>1995年发布，目前已经到了 Java13</p>
+</blockquote>
+<h3 id="名次解释"><a href="#名次解释" class="headerlink" title="名次解释"></a>名次解释</h3><h4 id="JDK-和-JRE"><a href="#JDK-和-JRE" class="headerlink" title="JDK 和 JRE"></a>JDK 和 JRE</h4><ul>
+<li>JDK：Java Development Kit</li>
+<li>JRE：Java Runtime Environment</li>
+</ul>
+<blockquote>
+<p>JRE就是运行Java字节码的虚拟机。但是，如果只有Java源码，要编译成Java字节码，就需要JDK，因为JDK除了包含JRE，还提供了编译器、调试器等开发工具。</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200210192759.png" alt=""></p>
+<h4 id="JSR-和JCP"><a href="#JSR-和JCP" class="headerlink" title="JSR 和JCP"></a>JSR 和JCP</h4><ul>
+<li>JSR规范：Java Specification Request</li>
+<li>JCP组织：Java Community Process</li>
+</ul>
+<h4 id="RI-和-TCK"><a href="#RI-和-TCK" class="headerlink" title="RI 和 TCK"></a>RI 和 TCK</h4><blockquote>
+<p>比如有人提议要搞一个基于Java开发的消息服务器，这个提议很好啊，但是光有提议还不行，得贴出真正能跑的代码，这就是RI。如果有其他人也想开发这样一个消息服务器，如何保证这些消息服务器对开发者来说接口、功能都是相同的？所以还得提供TCK。</p>
+<p>通常来说，RI只是一个“能跑”的正确的代码，它不追求速度，所以，如果真正要选择一个Java的消息服务器，一般是没人用RI的，大家都会选择一个有竞争力的商用或开源产品。</p>
+</blockquote>
+<ul>
+<li>RI：Reference Implementation                   参考实现</li>
+<li>TCK：Technology Compatibility Kit          兼容性测试套件</li>
+</ul>
+<h2 id="二、JDK的安装"><a href="#二、JDK的安装" class="headerlink" title="二、JDK的安装"></a>二、JDK的安装</h2><h3 id="环境变量配置"><a href="#环境变量配置" class="headerlink" title="环境变量配置"></a>环境变量配置</h3><blockquote>
+<p> 都在系统变量里设置：</p>
+</blockquote>
+<h4 id="1、新建JAVA-HOME变量，变量值为安装JDK的路径"><a href="#1、新建JAVA-HOME变量，变量值为安装JDK的路径" class="headerlink" title="1、新建JAVA_HOME变量，变量值为安装JDK的路径"></a>1、新建<code>JAVA_HOME</code>变量，变量值为安装JDK的路径</h4><p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200210201656.png" alt=""></p>
+<h4 id="2、新建CLASSPATH变量，变量值为-JAVA-HOME-lib。"><a href="#2、新建CLASSPATH变量，变量值为-JAVA-HOME-lib。" class="headerlink" title="2、新建CLASSPATH变量，变量值为.;%JAVA_HOME%\lib。"></a>2、新建<code>CLASSPATH</code>变量，变量值为<code>.;%JAVA_HOME%\lib</code>。</h4><p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200210201734.png" alt=""></p>
+<p>3、新增<code>CLASSPATH</code>变量，变量值为<code>%JAVA_HOME%\bin</code>。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200210201804.png" alt=""></p>
+<p> 找到PATH点击编辑-&gt;新建</p>
+<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200210201827.png" alt=""></p>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>win + R键打开cmd:</p>
+<p>输入<code>java -version</code>，若显示如下，则说明配置正确，否则需要检查路径问题，重新配置。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200210202637.png" alt=""></p>
+<h2 id="三、Java编程规范"><a href="#三、Java编程规范" class="headerlink" title="三、Java编程规范"></a>三、Java编程规范</h2><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Hello</span> 
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Hello, world!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="大小写敏感"><a href="#大小写敏感" class="headerlink" title="大小写敏感"></a>大小写敏感</h3><ul>
+<li><p>Java规定，某个类定义的<code>public static void main(String[] args)</code>是Java程序的固定入口方法，因此，Java程序总是从<code>main</code>方法开始执行。</p>
+</li>
+<li><p>当我们把代码保存为文件时，文件名必须是<code>Hello.java</code>，而且文件名也要注意大小写，因为要和我们定义的类名<code>Hello</code>完全保持一致。</p>
+</li>
+</ul>
+<p style="color: red; font-size: 25px">注意：文件名，必须和类名一致。</p>
+
+
+
+<h3 id="运行程序"><a href="#运行程序" class="headerlink" title="运行程序"></a>运行程序</h3><blockquote>
+<p>Java源码本质上是一个文本文件，我们需要先用<code>javac</code>把<code>Hello.java</code>编译成字节码文件<code>Hello.class</code>，然后，用<code>java</code>命令执行这个字节码文件：</p>
+<p>因此，可执行文件<code>javac</code>是编译器，而可执行文件<code>java</code>就是虚拟机。</p>
+<p>或者直接使用<code>java hello.java</code> 一次性完成两个过程</p>
+</blockquote>
+<pre class="line-numbers language-bash"><code class="language-bash">$ javac hello.java //生成hello.class
+$ java hello
+
+$ java hello.java<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>第一种，javac 后跟<code>文件名.java</code> , java后跟 类名，无后缀。</li>
+<li>第二种，直接java 后跟<code>文件名.java</code></li>
+</ul>
+<blockquote>
+<p>需要注意的是，在实际项目中，单个不依赖第三方库的Java源码是非常罕见的，所以，绝大多数情况下，我们无法直接运行一个Java源码文件，原因是它需要依赖其他的库。</p>
+</blockquote>
+<blockquote>
+<p>1.Java保存的文件名必须与类名一致； </p>
+<p>2.如果文件中只有一个类，文件名必须与类名一致； </p>
+<p>3.一个Java文件中只能有一个public类； </p>
+<p>4.如果文件中不止一个类，文件名必须与public类名一致； </p>
+<p>5.如果文件中不止一个类，而且没有public类，文件名可与任一类名一致。</p>
+</blockquote>
+<h2 id="四、java-程序基础"><a href="#四、java-程序基础" class="headerlink" title="四、java 程序基础"></a>四、java 程序基础</h2><h3 id="1、类"><a href="#1、类" class="headerlink" title="1、类"></a>1、类</h3><blockquote>
+<p> Java是面向对象的语言，一个程序的基本单位就是<code>class</code>，<code>class</code>是关键字</p>
+</blockquote>
+<p>类名要求：</p>
+<ul>
+<li>类名必须以英文字母开头，后接字母，数字和下划线的组合</li>
+<li>习惯以大写字母开头</li>
+</ul>
+<p style="color: red; font-size: 25px">注意：</p> 
+
+<ul>
+<li>Java入口程序规定的方法必须是静态方法，方法名必须为<code>main</code>，括号内的参数必须是String数组。</li>
+<li>在<code>class</code>内部，可以定义若干方法（method）</li>
+<li>句子以分号结束</li>
+</ul>
+<h3 id="2、注释"><a href="#2、注释" class="headerlink" title="2、注释"></a>2、注释</h3><ul>
+<li>// ：单行注释</li>
+<li>/* */：多行注释</li>
+<li>/**          */：如果有多行，每行通常以星号开头，可以用来自动创建文档的注释</li>
+</ul>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
+ * 可以用来自动创建文档的注释
+ * 
+ * @auther Mr.Niu
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Hello</span> 
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> 
+    <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Hello, world!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="3、数据类型"><a href="#3、数据类型" class="headerlink" title="3、数据类型"></a>3、数据类型</h3><blockquote>
+<p>计算机内存的最小存储单元是字节（byte），一个字节就是一个8位二进制数，即8个bit。它的二进制表示范围从<code>00000000</code><del><code>11111111</code>，换算成十进制是0</del>255，换算成十六进制是<code>00</code>~<code>ff</code>。</p>
+</blockquote>
+<ul>
+<li>整数类型：<ul>
+<li>byte                        一个字节</li>
+<li>short                       两个字节</li>
+<li>int                            四个字节</li>
+<li>long                         八个字节</li>
+</ul>
+</li>
+<li>浮点数类型：<ul>
+<li>float                         四个字节</li>
+<li>double                     八个字节</li>
+</ul>
+</li>
+<li>字符类型：<ul>
+<li>char                          两个字节</li>
+</ul>
+</li>
+<li>布尔类型：<ul>
+<li>boolean                   两个字节</li>
+</ul>
+</li>
+</ul>
+<p>So…….范围如下：</p>
+<ul>
+<li>byte：-128 ~ 127</li>
+<li>short: -32768 ~ 32767</li>
+<li>int: -2147483648 ~ 2147483647</li>
+<li>long: -9223372036854775808 ~ 9223372036854775807</li>
+</ul>
+<p>注意：long型数据结尾需要加<code>L</code>，否则会报错。不加L默认为int型。</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> 
+    <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2147483647</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> i2 <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">2147483648</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> i3 <span class="token operator">=</span> 2_000_000_000<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 加下划线更容易识别</span>
+        <span class="token keyword">int</span> i4 <span class="token operator">=</span> <span class="token number">0xff0000</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 十六进制表示的16711680</span>
+        <span class="token keyword">int</span> i5 <span class="token operator">=</span> <span class="token number">0b1000000000</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 二进制表示的512</span>
+        <span class="token keyword">long</span> l <span class="token operator">=</span> 9000000000000000000L<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// long型的结尾需要加L</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>注意：float型数据末尾必须加<code>f</code>，否则会报错，不加f默认为double类型。</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">float</span> f1 <span class="token operator">=</span> <span class="token number">3.14f</span><span class="token punctuation">;</span>
+<span class="token keyword">float</span> f2 <span class="token operator">=</span> <span class="token number">3.14e38f</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 科学计数法表示的3.14x10^38</span>
+<span class="token keyword">double</span> d <span class="token operator">=</span> <span class="token number">1.79e308</span><span class="token punctuation">;</span>
+<span class="token keyword">double</span> d2 <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1.79e308</span><span class="token punctuation">;</span>
+<span class="token keyword">double</span> d3 <span class="token operator">=</span> <span class="token number">4.9e-324</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 科学计数法表示的4.9x10^-324</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>浮点数可表示的范围非常大，<code>float</code>类型可最大表示3.4x1038，而<code>double</code>类型可最大表示1.79x10308。</p>
+<p>注意：boolean类型只有flase 和 true两个值</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">boolean</span> b1 <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token keyword">boolean</span> b2 <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token keyword">boolean</span> isGreater <span class="token operator">=</span> <span class="token number">5</span> <span class="token operator">></span> <span class="token number">3</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 计算结果为true</span>
+<span class="token keyword">int</span> age <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+<span class="token keyword">boolean</span> isAdult <span class="token operator">=</span> age <span class="token operator">>=</span> <span class="token number">18</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 计算结果为false</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>注意：char类型既可以表示ASCII码也可以表示Unicode字符</p>
+<ul>
+<li>单引号表示字符，双引号表示字符串</li>
+</ul>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> 
+    <span class="token punctuation">{</span>
+        <span class="token keyword">char</span> a <span class="token operator">=</span> <span class="token string">'A'</span><span class="token punctuation">;</span>
+        <span class="token keyword">char</span> zh <span class="token operator">=</span> <span class="token string">'中'</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>zh<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="4、常量"><a href="#4、常量" class="headerlink" title="4、常量"></a>4、常量</h3><blockquote>
+<p>定义变量的时候，如果加上<code>final</code>修饰符，这个变量就变成了常量：</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">final</span> <span class="token keyword">double</span> PI <span class="token operator">=</span> <span class="token number">3.14</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// PI是一个常量</span>
+<span class="token keyword">double</span> r <span class="token operator">=</span> <span class="token number">5.0</span><span class="token punctuation">;</span>
+<span class="token keyword">double</span> area <span class="token operator">=</span> PI <span class="token operator">*</span> r <span class="token operator">*</span> r<span class="token punctuation">;</span>
+PI <span class="token operator">=</span> <span class="token number">300</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// compile error!</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="5、var关键字"><a href="#5、var关键字" class="headerlink" title="5、var关键字"></a>5、var关键字</h3><blockquote>
+<p>编译器会根据赋值语句自动推断出变量类型，省时，省力</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java">StringBuilder sb <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+var sb <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="6、数据运算"><a href="#6、数据运算" class="headerlink" title="6、数据运算"></a>6、数据运算</h3><h4 id="除0编译可以通过，但运行会报错"><a href="#除0编译可以通过，但运行会报错" class="headerlink" title="除0编译可以通过，但运行会报错"></a>除0编译可以通过，但运行会报错</h4><h4 id="可以使用-等等"><a href="#可以使用-等等" class="headerlink" title="可以使用+=等等"></a>可以使用<code>+=</code>等等</h4><h4 id="可以使用-、-运算符"><a href="#可以使用-、-运算符" class="headerlink" title="可以使用++、-- 运算符"></a>可以使用<code>++</code>、<code>--</code> 运算符</h4><h4 id="移位运算"><a href="#移位运算" class="headerlink" title="移位运算"></a>移位运算</h4><ul>
+<li>带符号位移动：<ul>
+<li>左移 <code>&lt;&lt;</code> ：相当于乘2</li>
+<li>右移 <code>&gt;&gt;</code> ：相当于除2</li>
+</ul>
+</li>
+<li>不带符号位移动：<ul>
+<li>右移 <code>&gt;&gt;&gt;</code> ：相当于除2</li>
+</ul>
+</li>
+</ul>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">int</span> n <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>       <span class="token comment" spellcheck="true">// 00000000 00000000 00000000 00000111 = 7</span>
+<span class="token keyword">int</span> a <span class="token operator">=</span> n <span class="token operator">&lt;&lt;</span> <span class="token number">1</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 00000000 00000000 00000000 00001110 = 14</span>
+<span class="token keyword">int</span> b <span class="token operator">=</span> n <span class="token operator">&lt;&lt;</span> <span class="token number">2</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 00000000 00000000 00000000 00011100 = 28</span>
+<span class="token keyword">int</span> c <span class="token operator">=</span> n <span class="token operator">>></span> <span class="token number">1</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 00000000 00000000 00000000 00000011 = 3</span>
+<span class="token keyword">int</span> d <span class="token operator">=</span> n <span class="token operator">>></span> <span class="token number">2</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 00000000 00000000 00000000 00000001 = 1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>注意：对一个负数进行右移，最高位的<code>1</code>不动，结果仍然是一个负数：</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">int</span> n <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">536870912</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> a <span class="token operator">=</span> n <span class="token operator">>></span> <span class="token number">1</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 11110000 00000000 00000000 00000000 = -268435456</span>
+<span class="token keyword">int</span> b <span class="token operator">=</span> n <span class="token operator">>></span> <span class="token number">2</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 10111000 00000000 00000000 00000000 = -134217728</span>
+<span class="token keyword">int</span> c <span class="token operator">=</span> n <span class="token operator">>></span> <span class="token number">28</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 11111111 11111111 11111111 11111110 = -2</span>
+<span class="token keyword">int</span> d <span class="token operator">=</span> n <span class="token operator">>></span> <span class="token number">29</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 11111111 11111111 11111111 11111111 = -1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>注意：使用不带符号右移，负数右移，会将最高位符号位也右移，变为正数</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">int</span> n <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">536870912</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> a <span class="token operator">=</span> n <span class="token operator">>>></span> <span class="token number">1</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 01110000 00000000 00000000 00000000 = 1879048192</span>
+<span class="token keyword">int</span> b <span class="token operator">=</span> n <span class="token operator">>>></span> <span class="token number">2</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 00111000 00000000 00000000 00000000 = 939524096</span>
+<span class="token keyword">int</span> c <span class="token operator">=</span> n <span class="token operator">>>></span> <span class="token number">29</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 00000000 00000000 00000000 00000111 = 7</span>
+<span class="token keyword">int</span> d <span class="token operator">=</span> n <span class="token operator">>>></span> <span class="token number">31</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 00000000 00000000 00000000 00000001 = 1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>注意：对<code>byte</code>和<code>short</code>类型进行移位时，会首先转换为<code>int</code>再进行位移。</p>
+<h3 id="7、位运算"><a href="#7、位运算" class="headerlink" title="7、位运算"></a>7、位运算</h3><blockquote>
+<p> 位运算是按位进行与、或、非和异或的运算。</p>
+</blockquote>
+<ul>
+<li>&amp;：按位与 </li>
+<li>| ：按位或</li>
+<li>~ ：按位非</li>
+<li>^ ： 按位异或 :不同为1，相同为0</li>
+</ul>
+<h3 id="8、运算符优先级"><a href="#8、运算符优先级" class="headerlink" title="8、运算符优先级"></a>8、运算符优先级</h3><p>从高到低：</p>
+<ul>
+<li><code>()</code></li>
+<li><code>!</code> <code>~</code> <code>++</code> <code>--</code></li>
+<li><code>*</code> <code>/</code> <code>%</code></li>
+<li><code>+</code> <code>-</code></li>
+<li><code>&lt;&lt;</code> <code>&gt;&gt;</code> <code>&gt;&gt;&gt;</code></li>
+<li><code>&amp;</code></li>
+<li><code>|</code></li>
+<li><code>+=</code> <code>-=</code> <code>*=</code> <code>/=</code></li>
+</ul>
+<h3 id="9、类型提升和强转类型转换"><a href="#9、类型提升和强转类型转换" class="headerlink" title="9、类型提升和强转类型转换"></a>9、类型提升和强转类型转换</h3><p>略，太简单了！</p>
+<h3 id="10、浮点数"><a href="#10、浮点数" class="headerlink" title="10、浮点数"></a>10、浮点数</h3><blockquote>
+<p>由于计算机二进制表示，判断浮点数相等仍得通过阀值和绝对值函数来实现。</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">// 比较x和y是否相等，先计算其差的绝对值:</span>
+<span class="token keyword">double</span> r <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>x <span class="token operator">-</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// 再判断绝对值是否足够小:</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>r <span class="token operator">&lt;</span> <span class="token number">0.00001</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 可以认为相等</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 不相等</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="11、溢出"><a href="#11、溢出" class="headerlink" title="11、溢出"></a>11、溢出</h3><ul>
+<li><code>NaN</code>表示Not a Number</li>
+<li><code>Infinity</code>表示无穷大</li>
+<li><code>-Infinity</code>表示负无穷大</li>
+</ul>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">double</span> d1 <span class="token operator">=</span> <span class="token number">0.0</span> <span class="token operator">/</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// NaN</span>
+<span class="token keyword">double</span> d2 <span class="token operator">=</span> <span class="token number">1.0</span> <span class="token operator">/</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Infinity</span>
+<span class="token keyword">double</span> d3 <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1.0</span> <span class="token operator">/</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// -Infinity</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="12、boolean运算"><a href="#12、boolean运算" class="headerlink" title="12、boolean运算"></a>12、boolean运算</h3><ul>
+<li>比较运算符：<code>&gt;</code>，<code>&gt;=</code>，<code>&lt;</code>，<code>&lt;=</code>，<code>==</code>，<code>!=</code></li>
+<li>与运算 <code>&amp;&amp;</code></li>
+<li>或运算 <code>||</code></li>
+<li>非运算 <code>!</code></li>
+</ul>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">boolean</span> isGreater <span class="token operator">=</span> <span class="token number">5</span> <span class="token operator">></span> <span class="token number">3</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+<span class="token keyword">int</span> age <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+<span class="token keyword">boolean</span> isZero <span class="token operator">=</span> age <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// false</span>
+<span class="token keyword">boolean</span> isNonZero <span class="token operator">=</span> <span class="token operator">!</span>isZero<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+<span class="token keyword">boolean</span> isAdult <span class="token operator">=</span> age <span class="token operator">>=</span> <span class="token number">18</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// false</span>
+<span class="token keyword">boolean</span> isTeenager <span class="token operator">=</span> age <span class="token operator">></span><span class="token number">6</span> <span class="token operator">&amp;&amp;</span> age <span class="token operator">&lt;</span><span class="token number">18</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>注意：若boolean运算可以判断最终结果为真或假，则不会进行后续无意义计算，即便后面有除0运算</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">boolean</span> result <span class="token operator">=</span> <span class="token boolean">true</span> <span class="token operator">||</span> <span class="token punctuation">(</span><span class="token number">5</span> <span class="token operator">/</span> <span class="token number">0</span> <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="13、三目运算符"><a href="#13、三目运算符" class="headerlink" title="13、三目运算符"></a>13、三目运算符</h3><p><code>？：</code></p>
+<p>…不介绍了。</p>
+<h3 id="14、字符和字符串"><a href="#14、字符和字符串" class="headerlink" title="14、字符和字符串"></a>14、字符和字符串</h3><h4 id="char"><a href="#char" class="headerlink" title="char"></a>char</h4><blockquote>
+<p>char类型既可以表示ASCII码也可以表示Unicode字符</p>
+<p>用转义字符<code>\u</code>+Unicode编码来表示一个字符：</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">// 注意是十六进制:</span>
+<span class="token keyword">char</span> c3 <span class="token operator">=</span> <span class="token string">'\u0041'</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'A'，因为十六进制0041 = 十进制65</span>
+<span class="token keyword">char</span> c4 <span class="token operator">=</span> <span class="token string">'\u4e2d'</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// '中'，因为十六进制4e2d = 十进制20013</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h4 id="String"><a href="#String" class="headerlink" title="String"></a>String</h4><blockquote>
+<p>用双引号表示</p>
+<p>用\表示转义</p>
+</blockquote>
+<h5 id="字符串连接"><a href="#字符串连接" class="headerlink" title="字符串连接"></a>字符串连接</h5><blockquote>
+<p>用+号连接</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> 
+    <span class="token punctuation">{</span>
+        String s1 <span class="token operator">=</span> <span class="token string">"Hello"</span><span class="token punctuation">;</span>
+        String s2 <span class="token operator">=</span> <span class="token string">"world"</span><span class="token punctuation">;</span>
+        String s <span class="token operator">=</span> s1 <span class="token operator">+</span> <span class="token string">" "</span> <span class="token operator">+</span> s2 <span class="token operator">+</span> <span class="token string">"!"</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h5 id="多行字符串"><a href="#多行字符串" class="headerlink" title="多行字符串"></a>多行字符串</h5><ul>
+<li>笨办法：</li>
+</ul>
+<pre class="line-numbers language-java"><code class="language-java">String s <span class="token operator">=</span> <span class="token string">"first line \n"</span>
+         <span class="token operator">+</span> <span class="token string">"second line \n"</span>
+         <span class="token operator">+</span> <span class="token string">"end"</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>新办法：</li>
+</ul>
+<pre class="line-numbers language-java"><code class="language-java">String s <span class="token operator">=</span> <span class="token string">""</span>" 
+           SELECT <span class="token operator">*</span> FROM
+             users
+           WHERE id <span class="token operator">></span> <span class="token number">100</span>
+           ORDER BY name DESC
+            <span class="token string">""</span>"
+String s <span class="token operator">=</span> <span class="token string">""</span>" 
+           SELECT <span class="token operator">*</span> FROM
+             users
+           WHERE id <span class="token operator">></span> <span class="token number">100</span>
+           ORDER BY name DESC<span class="token string">""</span>"<span class="token punctuation">;</span>
+String s <span class="token operator">=</span> <span class="token string">""</span>" 
+SELECT <span class="token operator">*</span> FROM
+users
+WHERE id <span class="token operator">></span> <span class="token number">100</span>
+ORDER BY name DESC<span class="token string">""</span>"<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200210223841.png" alt=""></p>
+<p>注意：上面表示五行还有一个换行符<code>\n</code></p>
+<p>注意：下面表示四行，没有换行符</p>
+<p>注意：最终格式总是以最靠左边的为基准。</p>
+<p>第三种可以避免空格问题出现。。</p>
+<p>若要使用cmd：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">$ javac --source 13 --enable-preview Main.java<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h5 id="String的不可变特性"><a href="#String的不可变特性" class="headerlink" title="String的不可变特性"></a>String的不可变特性</h5><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> 
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> 
+    <span class="token punctuation">{</span>
+        String s <span class="token operator">=</span> <span class="token string">"hello"</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 显示 hello</span>
+        s <span class="token operator">=</span> <span class="token string">"world"</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 显示 world</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>原来的字符串<code>"hello"</code>还在，只是我们无法通过变量<code>s</code>访问它而已。因此，字符串的不可变是指字符串内容不可变。</p>
+<p>相当于指针指向换了，</p>
+</blockquote>
+<h5 id="空值null"><a href="#空值null" class="headerlink" title="空值null"></a>空值null</h5><pre class="line-numbers language-java"><code class="language-java">String s1 <span class="token operator">=</span> null<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// s1是null</span>
+String s2<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 没有赋初值值，s2也是null</span>
+String s3 <span class="token operator">=</span> s1<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// s3也是null</span>
+String s4 <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// s4指向空字符串，不是null</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="15、数组类型"><a href="#15、数组类型" class="headerlink" title="15、数组类型"></a>15、数组类型</h3><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://niuxvdong.ga" rel="external nofollow noreferrer">Mr.Niu</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://niuxvdong.ga/posts/12025.html">https://niuxvdong.ga/posts/12025.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="https://niuxvdong.ga" target="_blank">Mr.Niu</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E5%9F%BA%E7%A1%80/">
+                                    <span class="chip bg-color">基础</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%85%A5%E9%97%A8/">
+                                    <span class="chip bg-color">入门</span>
+                                </a>
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    
+    <div class="social-share" data-sites="qq,qzone,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/AliPayQR.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/WeChantQR.jpg" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+    <div class="livere-card card" data-aos="fade-up">
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC80ODUwNS8yNDk5OQ==">
+        <script type="text/javascript">
+            (function (d, s) {
+                let j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
+</div>
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/posts/12025.html">
+                    <div class="card-image">
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/mmexport1581051788215.jpg" class="responsive-img" alt="Java教程系列之快速入门">
+                        
+                        <span class="card-title">Java教程系列之快速入门</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            首先来首歌曲来放松一下吧！
+    
+
+为什么Java应用最广泛？从互联网到企业平台，Java是应用最广泛的编程语言，原因在于：
+Java是基于JVM虚拟机的跨平台语言，一次编写，到处运行；
+Java程序易于编写，而且有内置垃圾收集，不必考
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java%E6%95%99%E7%A8%8B/" class="post-category">
+                                    Java教程
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%9F%BA%E7%A1%80/">
+                        <span class="chip bg-color">基础</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%85%A5%E9%97%A8/">
+                        <span class="chip bg-color">入门</span>
+                    </a>
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/41103.html">
+                    <div class="card-image">
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e (19).jpg" class="responsive-img" alt="JavaScript教程系列之基础语法入门">
+                        
+                        <span class="card-title">JavaScript教程系列之基础语法入门</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            首先来首歌曲来放松一下吧！
+    
+
+
+在Web世界里，只有JavaScript能跨平台、跨浏览器驱动网页，与用户交互。
+新兴的Node.js把JavaScript引入到了服务器端，JavaScript已经变成了全能型选手。
+JavaSc
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JavaScript%E6%95%99%E7%A8%8B/" class="post-category">
+                                    JavaScript教程
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('300')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Mr.Niu&#39;s Blog<br />'
+            + '文章作者: Mr.Niu<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+    <footer class="page-footer bg-color">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="https://niuxvdong.ga" target="_blank">Mr.Niu</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">19.7k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "1";
+                    var startDate = "30";
+                    var startHour = "11";
+                    var startMinute = "11";
+                    var startSecond = "11";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/niuxvdong" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:158903258@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=158903258" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 158903258" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+    <a href="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/wechat.png" class="tooltipped" target="_blank" data-tooltip="关注我的微信: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/wechat.png" data-position="top" data-delay="50">
+        <i class="fab fa-weixin"></i>
+    </a>
+
+
+
+    <a href="https://me.csdn.net/qq_43590403" class="tooltipped" target="_blank" data-tooltip="关注我的CSDN: https://me.csdn.net/qq_43590403" data-position="top" data-delay="50">
+        <i class="fab fa-csdn">C</i>
+    </a>
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <!-- Baidu Analytics -->
+
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?f67f9d3cfccdaaeb7264df5691cc79a9";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+    
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+	
+
+<script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
+
+</html>
+
+
+
+<!--动态标题-->
+<script type="text/javascript"> 
+	var OriginTitile=document.title,st; 
+	document.addEventListener("visibilitychange",function(){ 
+		document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3)) 
+	}) 
+</script>
+
+
+<script>
+    var xlm_wid='15664';
+    var xlm_url='https://www.xianliao.me/';
+</script>
+<script type='text/javascript' charset='UTF-8' src='https://www.xianliao.me/embed.js'></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@2.8/source/js/click_show_text.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>
+
+
+
+
+
+
+
+
+

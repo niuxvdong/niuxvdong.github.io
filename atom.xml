@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://niuxvdong.ga/"/>
-  <updated>2020-02-09T11:08:00.275Z</updated>
+  <updated>2020-02-10T14:44:24.498Z</updated>
   <id>https://niuxvdong.ga/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java教程系列之快速入门</title>
+    <link href="https://niuxvdong.ga/posts/12025.html"/>
+    <id>https://niuxvdong.ga/posts/12025.html</id>
+    <published>2020-02-09T11:50:45.000Z</published>
+    <updated>2020-02-10T14:44:24.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java教程" scheme="https://niuxvdong.ga/categories/Java%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="基础" scheme="https://niuxvdong.ga/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="入门" scheme="https://niuxvdong.ga/tags/%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="Java" scheme="https://niuxvdong.ga/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript教程系列之基础语法入门</title>
