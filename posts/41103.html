@@ -440,14 +440,14 @@ JavaSc">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.8k
+                    4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    16 分
+                    17 分
                 </div>
                 
 
@@ -464,7 +464,7 @@ JavaSc">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h2>
-    <div id="aplayer-QlferkBS" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1345848098" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+    <div id="aplayer-maykCNbk" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1345848098" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
 
 <blockquote>
 <p>在Web世界里，只有JavaScript能跨平台、跨浏览器驱动网页，与用户交互。</p>
@@ -570,6 +570,23 @@ s<span class="token punctuation">.</span><span class="token function">indexOf</s
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> s <span class="token operator">=</span> <span class="token string">'hello, world'</span>
 s<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 从索引0开始到5（不包括5），返回'hello'</span>
 s<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 从索引7开始到结束，返回'world'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h4 id="split-函数"><a href="#split-函数" class="headerlink" title="split()函数"></a>split()函数</h4><blockquote>
+<p>split() 方法用于把一个字符串分割成字符串数组。</p>
+<p>如果把空字符串 (“”) 用作 separator，那么 stringObject 中的每个字符之间都会被分割。</p>
+<p> split() 方法不改变原始字符串。</p>
+<p><code>*string*.split(*separator*,*limit*)</code> 第一个参数：分隔符；第二个参数：限制返回字符数组的最大长度，不指定则不限制；</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> str<span class="token operator">=</span><span class="token string">"How are you doing today?"</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> n<span class="token operator">=</span>str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//["How", "are", "you", "doing", "today?"]</span>
+
+<span class="token keyword">var</span> nn <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>nn<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//["How are you doing today?"]</span>
+
+<span class="token keyword">var</span> nnn <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>nnn<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//["H", "o", "w", " ", "a", "r", "e", " ", "y", "o", "u", " ", "d", "o", "i", "n", "g", " ", "t", "o", "d", "a", "y", "?"]</span>
+
+<span class="token keyword">var</span> nnnn <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>nnnn<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//["How", "are", "you"]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h3><blockquote>
 <p>true 和 false</p>
 </blockquote>
@@ -1492,7 +1509,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.7k</span>&nbsp;字
+                class="white-color">25.4k</span>&nbsp;字
             
             
             
