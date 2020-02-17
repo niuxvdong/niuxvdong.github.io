@@ -1,0 +1,1737 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+
+<head>
+	<meta name="google-site-verification" content="GLWtLaS4mFunxxL-saY-q47wXZoXVOxwJ606SiFtDts" />
+    <meta charset="utf-8">
+    <meta name="keywords" content="JavaScript教程系列之标准对象, Blog,博客,Java,js,JavaScript,C,C++,SQL,Python,Git">
+    <meta name="description" content="首先来首歌曲来放松一下吧！
+    
+
+
+
+
+在 JavaScript 的世界里，一切皆对象！
+
+一、包装对象1、用typeof来识别身份
+number、string、boolean、function和undefined有别于其他类型。特别">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>JavaScript教程系列之标准对象 | Mr.Niu&#39;s Blog</title>
+    <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    <script src="/libs/jquery/jquery.min.js"></script>
+    
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Mr.Niu's Blog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
+</head>
+
+
+<body>
+
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper head-container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/codehub.ico" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Mr.Niu's Blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/musics" class="waves-effect waves-light">
+      
+      <i class="fas fa-music" style="zoom: 0.6;"></i>
+      
+      <span>音乐</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/codehub.ico" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Mr.Niu's Blog</div>
+        <div class="logo-desc">
+            
+            一个大学生的博客，记录学习，记录成长，分享生活！
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/musics" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-music"></i>
+			
+			音乐
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/niuxvdong/images/a/27.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">JavaScript教程系列之标准对象</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/JavaScript/">
+                                <span class="chip bg-color">JavaScript</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%AF%B9%E8%B1%A1/">
+                                <span class="chip bg-color">对象</span>
+                            </a>
+                        
+                            <a href="/tags/Data/">
+                                <span class="chip bg-color">Data</span>
+                            </a>
+                        
+                            <a href="/tags/RegExp/">
+                                <span class="chip bg-color">RegExp</span>
+                            </a>
+                        
+                            <a href="/tags/JSON/">
+                                <span class="chip bg-color">JSON</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/JavaScript%E6%95%99%E7%A8%8B/" class="post-category">
+                                JavaScript教程
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-02-17
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2020-02-17
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3.5k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    15 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h2>
+    <div id="aplayer-FkbxBsCi" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1409329965" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+
+
+
+<blockquote>
+<p>在 JavaScript 的世界里，一切皆对象！</p>
+</blockquote>
+<h2 id="一、包装对象"><a href="#一、包装对象" class="headerlink" title="一、包装对象"></a>一、包装对象</h2><h3 id="1、用typeof来识别身份"><a href="#1、用typeof来识别身份" class="headerlink" title="1、用typeof来识别身份"></a>1、用typeof来识别身份</h3><blockquote>
+<p><code>number</code>、<code>string</code>、<code>boolean</code>、<code>function</code>和<code>undefined</code>有别于其他类型。特别注意<code>null</code>的类型是<code>object</code>，<code>Array</code>的类型也是<code>object</code>，如果我们用<code>typeof</code>将无法区分出<code>null</code>、<code>Array</code>和通常意义上的object——<code>{}</code>。</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">typeof</span> <span class="token number">123</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'number'</span>
+<span class="token keyword">typeof</span> <span class="token number">NaN</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'number'</span>
+<span class="token keyword">typeof</span> <span class="token string">'str'</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'string'</span>
+<span class="token keyword">typeof</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'boolean'</span>
+<span class="token keyword">typeof</span> undefined<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'undefined'</span>
+<span class="token keyword">typeof</span> Math<span class="token punctuation">.</span>abs<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'function'</span>
+<span class="token keyword">typeof</span> <span class="token keyword">null</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'object'</span>
+<span class="token keyword">typeof</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'object'</span>
+<span class="token keyword">typeof</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'object'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2、通过new来包装对象"><a href="#2、通过new来包装对象" class="headerlink" title="2、通过new来包装对象"></a>2、通过new来包装对象</h3><blockquote>
+<p><code>number</code>、<code>boolean</code>和<code>string</code>都有包装对象。没错，在JavaScript中，字符串也区分<code>string</code>类型和它的包装类型。包装对象用<code>new</code>创建：</p>
+<p>经过new包装的元素类型已经变为了对象！</p>
+</blockquote>
+<p style="font-size:20px; color:red;">注意：闲的蛋疼也不要使用包装对象！尤其是针对`string`类型！！！</p><p>
+
+</p><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> n <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Number</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 123,生成了新的包装类型</span>
+<span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true,生成了新的包装类型</span>
+<span class="token keyword">var</span> s <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">'str'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'str',生成了新的包装类型</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">typeof</span> <span class="token keyword">new</span> <span class="token class-name">Number</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'object'</span>
+<span class="token keyword">new</span> <span class="token class-name">Number</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token number">123</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// false</span>
+
+<span class="token keyword">typeof</span> <span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'object'</span>
+<span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// false</span>
+
+<span class="token keyword">typeof</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">'str'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'object'</span>
+<span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">'str'</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">'str'</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// false</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>注意：创建包装对象后的与原始值不同！！！</p>
+<h3 id="3、不使用new的结果"><a href="#3、不使用new的结果" class="headerlink" title="3、不使用new的结果"></a>3、不使用new的结果</h3><blockquote>
+<p><code>Number()</code>、<code>Boolean</code>和<code>String()</code>被当做普通函数，把任何类型的数据转换为<code>number</code>、<code>boolean</code>和<code>string</code>类型（注意不是其包装类型）：</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> n <span class="token operator">=</span> <span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">'123'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 123，相当于parseInt()或parseFloat()</span>
+<span class="token keyword">typeof</span> n<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'number'</span>
+
+<span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token string">'true'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+<span class="token keyword">typeof</span> b<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'boolean'</span>
+
+<span class="token keyword">var</span> b2 <span class="token operator">=</span> <span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token string">'false'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true! 'false'字符串转换结果为true！因为它是非空字符串！</span>
+<span class="token keyword">var</span> b3 <span class="token operator">=</span> <span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// false</span>
+
+<span class="token keyword">var</span> s <span class="token operator">=</span> <span class="token function">String</span><span class="token punctuation">(</span><span class="token number">123.45</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// '123.45'</span>
+<span class="token keyword">typeof</span> s<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'string'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="4、简单总结"><a href="#4、简单总结" class="headerlink" title="4、简单总结"></a>4、简单总结</h3><ul>
+<li><p>不要使用<code>new Number()</code>、<code>new Boolean()</code>、<code>new String()</code>创建包装对象；</p>
+</li>
+<li><p>用<code>parseInt()</code>或<code>parseFloat()</code>来转换任意类型到<code>number</code>；</p>
+</li>
+<li><p>用<code>String()</code>来转换任意类型到<code>string</code>，或者直接调用某个对象的<code>toString()</code>方法；</p>
+</li>
+<li><p><code>typeof</code>操作符可以判断出<code>number</code>、<code>boolean</code>、<code>string</code>、<code>function</code>和<code>undefined</code>；</p>
+</li>
+<li><p>判断<code>Array</code>要使用<code>Array.isArray(arr)</code>；</p>
+</li>
+<li><p>判断<code>null</code>请使用<code>myVar === null</code>；</p>
+</li>
+<li><p>判断某个全局变量是否存在用<code>typeof window.myVar === 'undefined'</code>；</p>
+</li>
+</ul>
+<h4 id="toString-方法"><a href="#toString-方法" class="headerlink" title="toString()方法"></a>toString()方法</h4><blockquote>
+<p>除了null 和 undefined ,其他对象都有此方法！</p>
+<p>用来将一个对象转换为字符串类型！</p>
+<p>注意，数字调用toString方法时，会报错，因为程序会认为<code>.</code>不是调用方法而是看成了小数；</p>
+<p>所以要使用两个点，或者加一个括号，将他变成整体！</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token number">123</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// SyntaxError</span>
+
+<span class="token number">123</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// '123', 注意是两个点！</span>
+<span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// '123'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="二、Data对象"><a href="#二、Data对象" class="headerlink" title="二、Data对象"></a>二、Data对象</h2><h3 id="1、获取对象"><a href="#1、获取对象" class="headerlink" title="1、获取对象"></a>1、获取对象</h3><blockquote>
+<p>通过new Data()来构建一个时间对象</p>
+<p>可以获得，年月日，星期，时分秒，毫秒，以及时间戳！</p>
+<p>注意，当前时间是浏览器从本机操作系统获取的时间，所以不一定准确，因为用户可以把当前时间设定为任何值。</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> now <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+now<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Wed Jun 24 2015 19:49:22 GMT+0800 (CST)</span>
+now<span class="token punctuation">.</span><span class="token function">getFullYear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 2015, 年份</span>
+now<span class="token punctuation">.</span><span class="token function">getMonth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 5, 月份，注意月份范围是0~11，5表示六月</span>
+now<span class="token punctuation">.</span><span class="token function">getDate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 24, 表示24号</span>
+now<span class="token punctuation">.</span><span class="token function">getDay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 3, 表示星期三</span>
+now<span class="token punctuation">.</span><span class="token function">getHours</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 19, 24小时制</span>
+now<span class="token punctuation">.</span><span class="token function">getMinutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 49, 分钟</span>
+now<span class="token punctuation">.</span><span class="token function">getSeconds</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 22, 秒</span>
+now<span class="token punctuation">.</span><span class="token function">getMilliseconds</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 875, 毫秒数</span>
+now<span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 1435146562875, 以number形式表示的时间戳</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2、创建对象"><a href="#2、创建对象" class="headerlink" title="2、创建对象"></a>2、创建对象</h3><h4 id="创建指定日期的Data对象"><a href="#创建指定日期的Data对象" class="headerlink" title="创建指定日期的Data对象:"></a>创建指定日期的Data对象:</h4><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> d <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token number">2015</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+d<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Fri Jun 19 2015 20:15:30 GMT+0800 (CST)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p style="font-size:20px; color:red;">注意：JavaScript的Date对象月份值从0开始，牢记0=1月，1=2月，2=3月，……，11=12月。！</p><p>
+
+</p><p>注意：JavaScript的Date对象月份值从0开始，牢记0=1月，1=2月，2=3月，……，11=12月。
+
+</p><h4 id="通过解析ISO-8601格式的字符串"><a href="#通过解析ISO-8601格式的字符串" class="headerlink" title="通过解析ISO 8601格式的字符串"></a>通过解析<a href="http://www.w3.org/TR/NOTE-datetime" target="_blank" rel="noopener">ISO 8601</a>格式的字符串</h4><blockquote>
+<p>返回值为时间戳！</p>
+<p> 使用Date.parse()时传入的字符串使用实际月份01 ~ 12，转换为Date对象后getMonth()获取的月份值为0 ~ 11。</p>
+<p>要获取具体内容，得通过传入时间戳创建对象，再调用函数获得具体信息！</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> d <span class="token operator">=</span> Date<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token string">'2015-06-24T19:49:22.875+08:00'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+d<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 1435146562875</span>
+
+<span class="token keyword">var</span> d <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token number">1435146562875</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+d<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Wed Jun 24 2015 19:49:22 GMT+0800 (CST)</span>
+d<span class="token punctuation">.</span><span class="token function">getMonth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 5</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="时间戳"><a href="#时间戳" class="headerlink" title="时间戳"></a>时间戳</h4><blockquote>
+<p>时间戳是个什么东西？时间戳是一个自增的整数，它表示从1970年1月1日零时整的GMT时区开始的那一刻，到现在的毫秒数。假设浏览器所在电脑的时间是准确的，那么世界上无论哪个时区的电脑，它们此刻产生的时间戳数字都是一样的，所以，时间戳可以精确地表示一个时刻，并且与时区无关。</p>
+<p>我们只需要传递时间戳，或者把时间戳从数据库里读出来，再让JavaScript自动转换为当地时间就可以了。</p>
+</blockquote>
+<p>获取当前时间戳：</p>
+<p>两种方法：</p>
+<ul>
+<li>Data的now方法</li>
+<li>Data的getTime方法</li>
+</ul>
+<pre class="line-numbers language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="时区"><a href="#时区" class="headerlink" title="时区"></a>时区</h4><blockquote>
+<p><code>Date</code>对象表示的时间总是按浏览器所在时区显示的，不过我们既可以显示本地时间，也可以显示调整后的UTC时间：</p>
+<p>只要我们传递的是一个<code>number</code>类型的时间戳，我们就不用关心时区转换。任何浏览器都可以把一个时间戳正确转换为本地时间。</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> d <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token number">1435146562875</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+d<span class="token punctuation">.</span><span class="token function">toLocaleString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// '2015/6/24 下午7:49:22'，本地时间（北京时区+8:00），显示的字符串与操作系统设定的格式有关</span>
+d<span class="token punctuation">.</span><span class="token function">toUTCString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'Wed, 24 Jun 2015 11:49:22 GMT'，UTC时间，与本地时间相差8小时</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="三、RegExp对象"><a href="#三、RegExp对象" class="headerlink" title="三、RegExp对象"></a>三、RegExp对象</h2><blockquote>
+<p>就是正则表达式！</p>
+</blockquote>
+<h3 id="1、基础匹配"><a href="#1、基础匹配" class="headerlink" title="1、基础匹配"></a>1、基础匹配</h3><ul>
+<li><p><code>\d</code> ：一个数字</p>
+</li>
+<li><p><code>\w</code> ：一个数字或一个字母（大小写）</p>
+</li>
+<li><p><code>\s</code> ：一个空格</p>
+</li>
+<li><p><code>.</code> ：一个任意字符</p>
+</li>
+<li><p><code>\.</code> ：一个小数点</p>
+</li>
+<li><p><code>*</code> ：任意个（包括0个）</p>
+</li>
+<li><p><code>+</code> ：至少一个</p>
+</li>
+<li><p><code>？</code> ：0个或1个</p>
+</li>
+<li><p><code>{n}</code> ：n个</p>
+</li>
+<li><p><code>{n, m}</code> ：n 到 m 个</p>
+</li>
+<li><p><code>\-</code> ：一个<code>-</code></p>
+</li>
+<li><p><code>\\</code> ：一个<code>\</code></p>
+</li>
+</ul>
+<pre class="line-numbers language-javascript"><code class="language-javascript">js<span class="token punctuation">.</span>                    <span class="token comment" spellcheck="true">//可以表示js! js1 jsp</span>
+\d<span class="token punctuation">{</span><span class="token number">3</span><span class="token punctuation">}</span>\s<span class="token operator">+</span>\d<span class="token punctuation">{</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">}</span>        <span class="token comment" spellcheck="true">//即三个数字一个空格然后是三到八个数字eg:010-12345</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="2、做到更精确的匹配，用方括号表示范围："><a href="#2、做到更精确的匹配，用方括号表示范围：" class="headerlink" title="2、做到更精确的匹配，用方括号表示范围："></a>2、做到更精确的匹配，用方括号表示范围：</h3><ul>
+<li><code>[0-9a-zA-Z\_]</code>可以匹配一个数字、字母或者下划线；</li>
+<li><code>[0-9a-zA-Z\_]+</code>可以匹配至少由一个数字、字母或者下划线组成的字符串</li>
+<li><code>[a-zA-Z\_\$][0-9a-zA-Z\_\$]*</code>可以匹配由字母或下划线、<code>$</code>开头，后接任意个由一个数字、字母或者下划线、$组成的字符串，也就JavaScript允许的变量名</li>
+<li><code>[a-zA-Z\_\$][0-9a-zA-Z\_\$]{0, 19}</code>更精确地限制了变量的长度是1-20个字符（前面1个字符+后面最多19个字符）</li>
+<li><code>A|B</code>可以匹配A或B，所以<code>(J|j)ava(S|s)cript</code>可以匹配<code>'JavaScript'</code>、<code>'Javascript'</code>、<code>'javaScript'</code>或者<code>'javascript'</code>。</li>
+<li><code>^</code>表示行的开头，<code>^\d</code>表示必须以数字开头。</li>
+<li><code>$</code>表示行的结束，<code>\d$</code>表示必须以数字结束。</li>
+<li>你可能注意到了，<code>js</code>也可以匹配<code>'jsp'</code>，但是加上<code>^js$</code>就变成了整行匹配，就只能匹配<code>'js'</code>了。</li>
+</ul>
+<h3 id="3、创建正则表达式"><a href="#3、创建正则表达式" class="headerlink" title="3、创建正则表达式"></a>3、创建正则表达式</h3><h4 id="通过-正则表达式-创建"><a href="#通过-正则表达式-创建" class="headerlink" title="通过/正则表达式/ 创建"></a>通过<code>/正则表达式/</code> 创建</h4><h4 id="通过new-RegExp-39-正则表达式-39-创建"><a href="#通过new-RegExp-39-正则表达式-39-创建" class="headerlink" title="通过new RegExp('正则表达式')创建"></a>通过<code>new RegExp('正则表达式')</code>创建</h4><blockquote>
+<p>注意，如果使用第二种写法，因为字符串的转义问题，字符串的两个<code>\\</code>实际上是一个<code>\</code>。</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> re1 <span class="token operator">=</span> <span class="token regex">/ABC\-001/</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> re2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RegExp</span><span class="token punctuation">(</span><span class="token string">'ABC\\-001'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+re1<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// /ABC\-001/</span>
+re2<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// /ABC\-001/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="4、正则表达式匹配"><a href="#4、正则表达式匹配" class="headerlink" title="4、正则表达式匹配"></a>4、正则表达式匹配</h3><blockquote>
+<p>使用<code>re.test(待测字符串)</code></p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> re <span class="token operator">=</span> <span class="token regex">/^\d{3}\-\d{3,8}$/</span><span class="token punctuation">;</span>
+re<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'010-12345'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+re<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'010-1234x'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// false</span>
+re<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'010 12345'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// false</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="5、切分字符串"><a href="#5、切分字符串" class="headerlink" title="5、切分字符串"></a>5、切分字符串</h3><blockquote>
+<p>使用<code>字符串.split(正则表达式)</code> 来切割：</p>
+</blockquote>
+<ul>
+<li>第一个：按一个空格分隔</li>
+<li>第二个：按一个或多个空格分隔</li>
+<li>第三个：按按空格和逗号大于等于一个的任意组合分隔</li>
+<li>第四个：按空格和逗号和分号的大于等于一个的任意组合分隔</li>
+</ul>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token string">'a b   c'</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// ['a', 'b', '', '', 'c']</span>
+<span class="token string">'a b   c'</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token regex">/\s+/</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// ['a', 'b', 'c']</span>
+<span class="token string">'a,b, c  d'</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token regex">/[\s\,]+/</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// ['a', 'b', 'c', 'd']</span>
+<span class="token string">'a,b;; c  d'</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token regex">/[\s\,\;]+/</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// ['a', 'b', 'c', 'd']</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="6、字符串分组"><a href="#6、字符串分组" class="headerlink" title="6、字符串分组"></a>6、字符串分组</h3><blockquote>
+<p>将需要分组的部分用<code>()</code>括起来即可</p>
+<p>使用：<code>正则表达式.exec(待测字符串)</code> 进行分组</p>
+<p>结果返回一个<code>Array</code>，<code>[原字符串， 分组1， 分组2，....]</code></p>
+<p>若无法匹配字符串，则返回null</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> re <span class="token operator">=</span> <span class="token regex">/^(\d{3})-(\d{3,8})$/</span><span class="token punctuation">;</span>
+re<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">'010-12345'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// ['010-12345', '010', '12345']</span>
+re<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">'010 12345'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// null</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>看一个凶残的例子：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> re <span class="token operator">=</span> <span class="token regex">/^(0[0-9]|1[0-9]|2[0-3]|[0-9])\:(0[0-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|[0-9])\:(0[0-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|[0-9])$/</span><span class="token punctuation">;</span>
+re<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">'19:05:30'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// ['19:05:30', '19', '05', '30']</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><code>|</code> 表示或者，首先看冒号前的，从前往后表示00-09、10-19、20-29…最后一个是1-9，因为有时候01不写01，而写1，所以加一个[0-9]更合适。后面类似。。。</p>
+<h3 id="7、贪婪匹配"><a href="#7、贪婪匹配" class="headerlink" title="7、贪婪匹配"></a>7、贪婪匹配</h3><blockquote>
+<p>正则匹配默认是贪婪匹配，也就是匹配尽可能多的字符。举例如下，匹配出数字后面的<code>0</code>：</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> re <span class="token operator">=</span> <span class="token regex">/^(\d+)(0*)$/</span><span class="token punctuation">;</span>
+re<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">'102300'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// ['102300', '102300', '']</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<blockquote>
+<p>由于<code>\d+</code>采用贪婪匹配，直接把后面的<code>0</code>全部匹配了，结果<code>0*</code>只能匹配空字符串了。</p>
+<p>必须让<code>\d+</code>采用非贪婪匹配（也就是尽可能少匹配），才能把后面的<code>0</code>匹配出来，加个<code>?</code>就可以让<code>\d+</code>采用非贪婪匹配：</p>
+<p><code>?</code> ：即先满足后方的条件，再考虑前方！</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> re <span class="token operator">=</span> <span class="token regex">/^(\d+?)(0*)$/</span><span class="token punctuation">;</span>
+re<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">'102300'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// ['102300', '1023', '00']</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="8、全局搜索"><a href="#8、全局搜索" class="headerlink" title="8、全局搜索"></a>8、全局搜索</h3><blockquote>
+<p>JavaScript的正则表达式还有几个特殊的标志，最常用的是<code>g</code>，表示全局匹配：</p>
+<p>即在正则表达式的最后加一个<code>g</code></p>
+<p>全局匹配可以多次执行<code>exec()</code>方法来搜索一个匹配的字符串。当我们指定<code>g</code>标志后，每次运行<code>exec()</code>，正则表达式本身会更新<code>lastIndex</code>属性，表示上次匹配到的最后索引：</p>
+<p>全局匹配类似搜索，因此不能使用<code>/^...$/</code>，那样只会最多匹配一次。</p>
+<p>拓展：正则表达式还可以指定<code>i</code>标志，表示忽略大小写；<code>m</code>标志，表示执行多行匹配。</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> r1 <span class="token operator">=</span> <span class="token regex">/test/g</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// 等价于:</span>
+<span class="token keyword">var</span> r2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RegExp</span><span class="token punctuation">(</span><span class="token string">'test'</span><span class="token punctuation">,</span> <span class="token string">'g'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>如下：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> s <span class="token operator">=</span> <span class="token string">'JavaScript, VBScript, JScript and ECMAScript'</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> re<span class="token operator">=</span><span class="token regex">/[a-zA-Z]+Script/g</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// 使用全局匹配:</span>
+re<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// ['JavaScript']</span>
+re<span class="token punctuation">.</span>lastIndex<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 10</span>
+
+re<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// ['VBScript']</span>
+re<span class="token punctuation">.</span>lastIndex<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 20</span>
+
+re<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// ['JScript']</span>
+re<span class="token punctuation">.</span>lastIndex<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 29</span>
+
+re<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// ['ECMAScript']</span>
+re<span class="token punctuation">.</span>lastIndex<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 44</span>
+
+re<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// null，直到结束仍没有匹配到</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="9、小栗子"><a href="#9、小栗子" class="headerlink" title="9、小栗子"></a>9、小栗子</h3><h4 id="实现验证邮箱的正则表达式："><a href="#实现验证邮箱的正则表达式：" class="headerlink" title="实现验证邮箱的正则表达式："></a>实现验证邮箱的正则表达式：</h4><blockquote>
+<p>邮箱组成：</p>
+<ul>
+<li>数字字母、下划线、小数点、<code>-</code> ,并且不以<code>-</code>开头</li>
+<li>@符号</li>
+<li>域名前缀：字母数字以及·<code>-</code>的任意组合，且不能以<code>-</code>开头</li>
+<li><code>.</code></li>
+<li>域名后缀：<ul>
+<li>1、只有一组字符：eg ：.com, .cn</li>
+<li>2、有两组：eg: edu.cn、.com.cn</li>
+</ul>
+</li>
+<li>eg：<a href="mailto:9zdfsk7sdf-hsdf7sdf88dsf.sdfhi.sjiodf99sdf@bbsdkf-88sdf-sgd.com.cn">9zdfsk7sdf-hsdf7sdf88dsf.sdfhi.sjiodf99sdf@bbsdkf-88sdf-sgd.com.cn</a></li>
+<li>例子有点夸张，哈哈哈哈哈！</li>
+</ul>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> re <span class="token operator">=</span> <span class="token regex">/^\w+\.?\w+@\w+\.\w+$/</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> re <span class="token operator">=</span> <span class="token regex">/^[0-9a-zA-Z]+\.?[0-9a-zA-Z]+\@[0-9a-zA-Z]+\.[0-9a-zA-Z]+$/</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> re <span class="token operator">=</span> <span class="token regex">/^[a-zA-Z0-9]+([._-]?[a-zA-Z0-9]+)*@([a-zA-Z0-9]+[_-]?[a-zA-Z0-9]+)([_-][a-zA-Z0-9]+)*\.[a-zA-Z]{2,3}(\.[a-zA-Z]{2})?$/</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="四、JSON对象"><a href="#四、JSON对象" class="headerlink" title="四、JSON对象"></a>四、JSON对象</h2><blockquote>
+<p>JSON是JavaScript Object Notation的缩写，它是一种数据交换格式。</p>
+</blockquote>
+<h3 id="1、JSON的故事"><a href="#1、JSON的故事" class="headerlink" title="1、JSON的故事"></a>1、JSON的故事</h3><blockquote>
+<p>在JSON出现之前，大家一直用XML来传递数据。因为XML是一种纯文本格式，所以它适合在网络上交换数据。XML本身不算复杂，但是，加上DTD、XSD、XPath、XSLT等一大堆复杂的规范以后，任何正常的软件开发人员碰到XML都会感觉头大了，最后大家发现，即使你努力钻研几个月，也未必搞得清楚XML的规范。</p>
+<p>终于，在2002年的一天，道格拉斯·克罗克福特（Douglas Crockford）同学为了拯救深陷水深火热同时又被某几个巨型软件企业长期愚弄的软件工程师，发明了JSON这种超轻量级的数据交换格式。</p>
+</blockquote>
+<h3 id="2、JSON的数据类型"><a href="#2、JSON的数据类型" class="headerlink" title="2、JSON的数据类型"></a>2、JSON的数据类型</h3><ul>
+<li>number：和JavaScript的<code>number</code>完全一致；</li>
+<li>boolean：就是JavaScript的<code>true</code>或<code>false</code>；</li>
+<li>string：就是JavaScript的<code>string</code>；</li>
+<li>null：就是JavaScript的<code>null</code>；</li>
+<li>array：就是JavaScript的<code>Array</code>表示方式——<code>[]</code>；</li>
+<li>object：就是JavaScript的<code>{ ... }</code>表示方式。</li>
+</ul>
+<blockquote>
+<p>JSON还定死了字符集必须是UTF-8，表示多语言就没有问题了。</p>
+<p>为了统一解析，JSON的字符串规定必须用双引号<code>""</code>，Object的键也必须用双引号<code>""</code>。</p>
+<p>由于JSON非常简单，很快就风靡Web世界，并且成为ECMA标准。几乎所有编程语言都有解析JSON的库，而在JavaScript中，我们可以直接使用JSON，因为JavaScript内置了JSON的解析。</p>
+</blockquote>
+<h3 id="3、JSON序列化"><a href="#3、JSON序列化" class="headerlink" title="3、JSON序列化"></a>3、JSON序列化</h3><blockquote>
+<p>通过JSON的stringfy()方法来进行序列化：</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> xiaoming <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'小明'</span><span class="token punctuation">,</span>
+    age<span class="token punctuation">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+    gender<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token number">1.65</span><span class="token punctuation">,</span>
+    grade<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+    <span class="token string">'middle-school'</span><span class="token punctuation">:</span> <span class="token string">'\"W3C\" Middle School'</span><span class="token punctuation">,</span>
+    skills<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'JavaScript'</span><span class="token punctuation">,</span> <span class="token string">'Java'</span><span class="token punctuation">,</span> <span class="token string">'Python'</span><span class="token punctuation">,</span> <span class="token string">'Lisp'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> s <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>xiaoming<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//{"name":"小明","age":14,"gender":true,"height":1.65,"grade":null,"middle-school":"\"W3C\" Middle School","skills":["JavaScript","Java","Python","Lisp"]}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>为了好看一点：按照缩进输出：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>xiaoming<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">'  '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//结果：</span>
+<span class="token punctuation">{</span>
+  <span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"小明"</span><span class="token punctuation">,</span>
+  <span class="token string">"age"</span><span class="token punctuation">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+  <span class="token string">"gender"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string">"height"</span><span class="token punctuation">:</span> <span class="token number">1.65</span><span class="token punctuation">,</span>
+  <span class="token string">"grade"</span><span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token string">"middle-school"</span><span class="token punctuation">:</span> <span class="token string">"\"W3C\" Middle School"</span><span class="token punctuation">,</span>
+  <span class="token string">"skills"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"JavaScript"</span><span class="token punctuation">,</span>
+    <span class="token string">"Java"</span><span class="token punctuation">,</span>
+    <span class="token string">"Python"</span><span class="token punctuation">,</span>
+    <span class="token string">"Lisp"</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-javascript"><code class="language-javascript">JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>xiaoming<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">,</span> <span class="token string">'skills'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'  '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//结果：只输出name和skills的结果：</span>
+<span class="token punctuation">{</span>
+  <span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"小明"</span><span class="token punctuation">,</span>
+  <span class="token string">"skills"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"JavaScript"</span><span class="token punctuation">,</span>
+    <span class="token string">"Java"</span><span class="token punctuation">,</span>
+    <span class="token string">"Python"</span><span class="token punctuation">,</span>
+    <span class="token string">"Lisp"</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">function</span> <span class="token function">convert</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> value <span class="token operator">===</span> <span class="token string">'string'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> value<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> value<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>xiaoming<span class="token punctuation">,</span> convert<span class="token punctuation">,</span> <span class="token string">'  '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//结果：将值为String类型的都大写输出：</span>
+<span class="token punctuation">{</span>
+  <span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"小明"</span><span class="token punctuation">,</span>
+  <span class="token string">"age"</span><span class="token punctuation">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+  <span class="token string">"gender"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string">"height"</span><span class="token punctuation">:</span> <span class="token number">1.65</span><span class="token punctuation">,</span>
+  <span class="token string">"grade"</span><span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token string">"middle-school"</span><span class="token punctuation">:</span> <span class="token string">"\"W3C\" MIDDLE SCHOOL"</span><span class="token punctuation">,</span>
+  <span class="token string">"skills"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"JAVASCRIPT"</span><span class="token punctuation">,</span>
+    <span class="token string">"JAVA"</span><span class="token punctuation">,</span>
+    <span class="token string">"PYTHON"</span><span class="token punctuation">,</span>
+    <span class="token string">"LISP"</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>更精确控制：</p>
+<blockquote>
+<p>可以在对象内部定义一个<code>toJSON()</code>的方法：</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> xiaoming <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'小明'</span><span class="token punctuation">,</span>
+    age<span class="token punctuation">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+    gender<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token number">1.65</span><span class="token punctuation">,</span>
+    grade<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+    <span class="token string">'middle-school'</span><span class="token punctuation">:</span> <span class="token string">'\"W3C\" Middle School'</span><span class="token punctuation">,</span>
+    skills<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'JavaScript'</span><span class="token punctuation">,</span> <span class="token string">'Java'</span><span class="token punctuation">,</span> <span class="token string">'Python'</span><span class="token punctuation">,</span> <span class="token string">'Lisp'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    toJSON<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 只输出name和age，并且改变了key：</span>
+            <span class="token string">'Name'</span><span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">,</span>
+            <span class="token string">'Age'</span><span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>age
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>xiaoming<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// '{"Name":"小明","Age":14}'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="4、反序列化"><a href="#4、反序列化" class="headerlink" title="4、反序列化"></a>4、反序列化</h3><blockquote>
+<p>将JSON格式化后的字符串变为JavaScript对象</p>
+<p>格式：<code>JSON.parse(格式化的字符串)</code>；</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript">JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token string">'[1,2,3,true]'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// [1, 2, 3, true]</span>
+JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token string">'{"name":"小明","age":14}'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Object {name: '小明', age: 14}</span>
+JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token string">'true'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token string">'123.45'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 123.45</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>parse()还可以跟一个函数来控制：</p>
+<blockquote>
+<p>如果属性是name，则在对应的值上加同学两个字：</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> obj <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token string">'{"name":"小明","age":14}'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>key<span class="token punctuation">,</span> value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>key <span class="token operator">===</span> <span class="token string">'name'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> value <span class="token operator">+</span> <span class="token string">'同学'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> value<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// {"name": "小明同学", "age": 14}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="本节到此结束，欢迎阅读，敬请期待后续章节！"><a href="#本节到此结束，欢迎阅读，敬请期待后续章节！" class="headerlink" title="本节到此结束，欢迎阅读，敬请期待后续章节！"></a>本节到此结束，欢迎阅读，敬请期待后续章节！</h2><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://niuxvdong.top" rel="external nofollow noreferrer">Mr.Niu</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://niuxvdong.top/posts/15769.html">https://niuxvdong.top/posts/15769.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="https://niuxvdong.top" target="_blank">Mr.Niu</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/JavaScript/">
+                                    <span class="chip bg-color">JavaScript</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%AF%B9%E8%B1%A1/">
+                                    <span class="chip bg-color">对象</span>
+                                </a>
+                            
+                                <a href="/tags/Data/">
+                                    <span class="chip bg-color">Data</span>
+                                </a>
+                            
+                                <a href="/tags/RegExp/">
+                                    <span class="chip bg-color">RegExp</span>
+                                </a>
+                            
+                                <a href="/tags/JSON/">
+                                    <span class="chip bg-color">JSON</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    
+    <div class="social-share" data-sites="qq,qzone,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/AliPayQR.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/WeChantQR.jpg" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+    <div class="livere-card card" data-aos="fade-up">
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC80ODUwNS8yNDk5OQ==">
+        <script type="text/javascript">
+            (function (d, s) {
+                let j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
+</div>
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/posts/15769.html">
+                    <div class="card-image">
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/a/27.jpg" class="responsive-img" alt="JavaScript教程系列之标准对象">
+                        
+                        <span class="card-title">JavaScript教程系列之标准对象</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            首先来首歌曲来放松一下吧！
+    
+
+
+
+
+在 JavaScript 的世界里，一切皆对象！
+
+一、包装对象1、用typeof来识别身份
+number、string、boolean、function和undefined有别于其他类型。特别
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JavaScript%E6%95%99%E7%A8%8B/" class="post-category">
+                                    JavaScript教程
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%AF%B9%E8%B1%A1/">
+                        <span class="chip bg-color">对象</span>
+                    </a>
+                    
+                    <a href="/tags/Data/">
+                        <span class="chip bg-color">Data</span>
+                    </a>
+                    
+                    <a href="/tags/RegExp/">
+                        <span class="chip bg-color">RegExp</span>
+                    </a>
+                    
+                    <a href="/tags/JSON/">
+                        <span class="chip bg-color">JSON</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/52313.html">
+                    <div class="card-image">
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (26).png" class="responsive-img" alt="JavaScript教程系列之函数">
+                        
+                        <span class="card-title">JavaScript教程系列之函数</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            首先来首歌曲来放松一下吧！
+    
+
+一、函数的定义与调用定义function abs(x) 
+{
+    if (x &gt;= 0) return x;
+    else return -x;
+}
+
+abs(-9);// 9
+
+Jav
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JavaScript%E6%95%99%E7%A8%8B/" class="post-category">
+                                    JavaScript教程
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%87%BD%E6%95%B0/">
+                        <span class="chip bg-color">函数</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('300')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Mr.Niu&#39;s Blog<br />'
+            + '文章作者: Mr.Niu<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+    <footer class="page-footer bg-color">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="https://niuxvdong.top" target="_blank">Mr.Niu</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">32.6k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+			
+            
+            <span id="sitetime">载入运行时间...</span>
+			
+			
+			<span style="position: relative; left: 153px">
+				<span style="float: left; color: #fff">cdn by&nbsp;&nbsp;</span>
+				<a href="https://www.upyun.com/" target="_blank" rel="noopener" style="float:left">
+				<img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/youpai1.png" alt=""
+					style="height: 30px; width: 60px; margin-top: -3px"></a>
+			</span>
+			
+			
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "1";
+                    var startDate = "30";
+                    var startHour = "11";
+                    var startMinute = "11";
+                    var startSecond = "11";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/niuxvdong" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:158903258@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=158903258" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 158903258" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+    <a href="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/wechat.png" class="tooltipped" target="_blank" data-tooltip="关注我的微信: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/wechat.png" data-position="top" data-delay="50">
+        <i class="fab fa-weixin"></i>
+    </a>
+
+
+
+    <a href="https://me.csdn.net/qq_43590403" class="tooltipped" target="_blank" data-tooltip="关注我的CSDN: https://me.csdn.net/qq_43590403" data-position="top" data-delay="50">
+        <i class="fab fa-csdn">C</i>
+    </a>
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <!-- Baidu Analytics -->
+
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c295a600e3126beebaf06822cd8b5c22";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+    
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+	
+
+<script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
+
+</html>
+
+
+
+<!--动态标题-->
+<script type="text/javascript"> 
+	var OriginTitile=document.title,st; 
+	document.addEventListener("visibilitychange",function(){ 
+		document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3)) 
+	}) 
+</script>
+
+
+<script>
+    var xlm_wid='15664';
+    var xlm_url='https://www.xianliao.me/';
+</script>
+<script type='text/javascript' charset='UTF-8' src='https://www.xianliao.me/embed.js'></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@2.8/source/js/click_show_text.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>
+
+
+
+
+
+
+
+
+
