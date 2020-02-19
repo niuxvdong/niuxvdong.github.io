@@ -12,10 +12,13 @@
 
 
 
+
+有人这样说：这种高大上的东西都是造火箭才用得上的，平时干的都是拧螺丝的活当然用不上咯！
+但还是得知道并掌握。。。。！
+class继承需要掌握，原型继承知道就好了……
+
 一、面向对象编程概述
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-         ">
+Ja">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -436,21 +439,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-02-18
+                    2020-02-19
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    7 分
                 </div>
                 
 
@@ -467,11 +470,261 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h2>
-    <div id="aplayer-SQkwgejP" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="569200213" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+    <div id="aplayer-QJzfuYUw" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="569200213" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
 
 
 
-<h2 id="一、面向对象编程概述"><a href="#一、面向对象编程概述" class="headerlink" title="一、面向对象编程概述"></a>一、面向对象编程概述</h2><script>
+<blockquote>
+<p>有人这样说：这种高大上的东西都是造火箭才用得上的，平时干的都是拧螺丝的活当然用不上咯！</p>
+<p>但还是得知道并掌握。。。。！</p>
+<p>class继承需要掌握，原型继承知道就好了……</p>
+</blockquote>
+<h2 id="一、面向对象编程概述"><a href="#一、面向对象编程概述" class="headerlink" title="一、面向对象编程概述"></a>一、面向对象编程概述</h2><blockquote>
+<p>JavaScript不区分类和实例的概念，而是通过原型（prototype）来实现面向对象编程。</p>
+</blockquote>
+<h3 id="1、通过-proto-来指向Student，并且继承Student的所有属性！"><a href="#1、通过-proto-来指向Student，并且继承Student的所有属性！" class="headerlink" title="1、通过__proto__ 来指向Student，并且继承Student的所有属性！"></a>1、通过<code>__proto__</code> 来指向Student，并且继承Student的所有属性！</h3><blockquote>
+<p>JavaScript它没有“Class”的概念，所有对象都是实例，所谓继承关系不过是把一个对象的原型指向另一个对象而已。</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> Student <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'Robot'</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token number">1.2</span><span class="token punctuation">,</span>
+    run<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">+</span> <span class="token string">' is running...'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> xiaoming <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'小明'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+xiaoming<span class="token punctuation">.</span>__proto__ <span class="token operator">=</span> Student<span class="token punctuation">;</span>
+
+xiaoming<span class="token punctuation">.</span>name<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// '小明'</span>
+xiaoming<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 小明 is running...</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2、指向（原型）是可以改变的！"><a href="#2、指向（原型）是可以改变的！" class="headerlink" title="2、指向（原型）是可以改变的！"></a>2、指向（原型）是可以改变的！</h3><blockquote>
+<p>在指向一个类后，可以直接修改他的指向（原型）！</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> Bird <span class="token operator">=</span> <span class="token punctuation">{</span>
+    fly<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">+</span> <span class="token string">' is flying...'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> xiaoming <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'小明'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+xiaoming<span class="token punctuation">.</span>__proto__ <span class="token operator">=</span> Bird<span class="token punctuation">;</span>
+xiaoming<span class="token punctuation">.</span><span class="token function">fly</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 小明 is flying...</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p style="color:red; font-size:20px">注意：不建议使用`__proto__`来改变指向</p>
+
+
+
+<h3 id="3、要使用Object-create-方法"><a href="#3、要使用Object-create-方法" class="headerlink" title="3、要使用Object.create()方法"></a>3、要使用<code>Object.create()</code>方法</h3><blockquote>
+<p>该方法可以传入一个原型对象，并创建一个基于该原型的新对象，但是新对象什么属性都没有</p>
+<p>为了方便，可以创建一个函数来接收姓名参数，在函数内部做一下赋值的过程即可！</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// 原型对象:</span>
+<span class="token keyword">var</span> Student <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'Robot'</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token number">1.2</span><span class="token punctuation">,</span>
+    run<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">+</span> <span class="token string">' is running...'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">createStudent</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 基于Student原型创建一个新对象:</span>
+    <span class="token keyword">var</span> s <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>Student<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// 初始化新对象:</span>
+    s<span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//直接创建是没有属性“小明”的：</span>
+<span class="token keyword">let</span> xiaoming <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>Student<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//通过新建函数，传入名字，即可：</span>
+<span class="token keyword">var</span> xiaoming <span class="token operator">=</span> <span class="token function">createStudent</span><span class="token punctuation">(</span><span class="token string">'小明'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+xiaoming<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 小明 is running...</span>
+xiaoming<span class="token punctuation">.</span>__proto__ <span class="token operator">===</span> Student<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="二、关于proto和prototype"><a href="#二、关于proto和prototype" class="headerlink" title="二、关于proto和prototype"></a>二、关于proto和prototype</h2><blockquote>
+<p><code>prototype</code>是<strong>函数</strong>的一个属性（每个函数都有一个prototype属性），这个属性是一个指针，指向一个对象。它是显示修改对象的原型的属性。</p>
+<p><code>__proto__</code>是一个<strong>对象</strong>拥有的内置属性（请注意：prototype是函数的内置属性，<code>__proto__</code>是对象的内置属性），是JS内部使用寻找原型链的属性。</p>
+</blockquote>
+<p>区别参考链接：<a href="https://www.cnblogs.com/yangjinjin/archive/2013/02/01/2889103.html" target="_blank" rel="noopener">https://www.cnblogs.com/yangjinjin/archive/2013/02/01/2889103.html</a></p>
+<h2 id="三、创建对象"><a href="#三、创建对象" class="headerlink" title="三、创建对象"></a>三、创建对象</h2><blockquote>
+<p>为了区分普通函数和构造函数，按照约定，构造函数首字母应当大写，而普通函数首字母应当小写.</p>
+<p>这样，一些语法检查工具如<a href="http://www.jslint.com/" target="_blank" rel="noopener">jslint</a>将可以帮你检测到漏写的<code>new</code>。</p>
+<p>本节参考：<a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023022043494624" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/1022910821149312/1023022043494624</a></p>
+</blockquote>
+<h3 id="1、原型链"><a href="#1、原型链" class="headerlink" title="1、原型链"></a>1、原型链</h3><blockquote>
+<p>当我们用<code>obj.xxx</code>访问一个对象的属性时，JavaScript引擎先在当前对象上查找该属性，如果没有找到，就到其原型对象上找，如果还没有找到，就一直上溯到<code>Object.prototype</code>对象，最后，如果还没有找到，就只能返回<code>undefined</code>。</p>
+</blockquote>
+<h4 id="数组原型链"><a href="#数组原型链" class="headerlink" title="数组原型链"></a>数组原型链</h4><blockquote>
+<p><code>Array.prototype</code>定义了<code>indexOf()</code>、<code>shift()</code>等方法，因此你可以在所有的<code>Array</code>对象上直接调用这些方法。</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+arr <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">></span> Array<span class="token punctuation">.</span>prototype <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">></span> Object<span class="token punctuation">.</span>prototype <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">></span> <span class="token keyword">null</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="函数原型链"><a href="#函数原型链" class="headerlink" title="函数原型链"></a>函数原型链</h4><blockquote>
+<p><code>Function.prototype</code>定义了<code>apply()</code>等方法，因此，所有函数都可以调用<code>apply()</code>方法。</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+foo <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">></span> Function<span class="token punctuation">.</span>prototype <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">></span> Object<span class="token punctuation">.</span>prototype <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">></span> <span class="token keyword">null</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2、构造函数"><a href="#2、构造函数" class="headerlink" title="2、构造函数"></a>2、构造函数</h3><blockquote>
+<p>用new来调用函数，返回一个对象！</p>
+<p>函数内部的this指向新创建的对象！并默认返回this!不需要写return了！</p>
+<p>必须写new，不写new，函数返回的是undefined！</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">Student</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>hello <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Hello, '</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">+</span> <span class="token string">'!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> xiaoming <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Student</span><span class="token punctuation">(</span><span class="token string">'小明'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+xiaoming<span class="token punctuation">.</span>name<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// '小明'</span>
+xiaoming<span class="token punctuation">.</span><span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Hello, 小明!</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>此时小明的原型链：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">xiaoming <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">></span> Student<span class="token punctuation">.</span>prototype <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">></span> Object<span class="token punctuation">.</span>prototype <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">></span> <span class="token keyword">null</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="3、constructor"><a href="#3、constructor" class="headerlink" title="3、constructor"></a>3、constructor</h3><blockquote>
+<p>用<code>new Student()</code>创建的对象还从原型上获得了一个<code>constructor</code>属性，它指向函数<code>Student</code>本身：</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript">xiaoming<span class="token punctuation">.</span>constructor <span class="token operator">===</span> Student<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>constructor<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+Student<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>constructor <span class="token operator">===</span> Student<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+
+Object<span class="token punctuation">.</span><span class="token function">getPrototypeOf</span><span class="token punctuation">(</span>xiaoming<span class="token punctuation">)</span> <span class="token operator">===</span> Student<span class="token punctuation">.</span>prototype<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+
+xiaoming <span class="token keyword">instanceof</span> <span class="token class-name">Student</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="4、公用函数（共享方法）"><a href="#4、公用函数（共享方法）" class="headerlink" title="4、公用函数（共享方法）"></a>4、公用函数（共享方法）</h3><blockquote>
+<p>如果我们通过<code>new Student()</code>创建了很多对象，这些对象的<code>hello</code>函数实际上只需要共享同一个函数就可以了，这样可以节省很多内存。</p>
+<p>通过够着函数.prototype.函数名来创建公用函数，节省内存！</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">Student</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+Student<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>hello <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Hello, '</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">+</span> <span class="token string">'!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="5、解决忘写new的方法"><a href="#5、解决忘写new的方法" class="headerlink" title="5、解决忘写new的方法"></a>5、解决忘写new的方法</h3><blockquote>
+<p>我们还可以编写一个<code>createStudent()</code>函数，在内部封装所有的<code>new</code>操作。</p>
+<p><code>||</code> ：用或符号来实现默认值，毕竟是就近原则的！</p>
+<p>将new封装后，即可不用写new了，以防忘写！</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">Student</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> props<span class="token punctuation">.</span>name <span class="token operator">||</span> <span class="token string">'匿名'</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 默认值为'匿名'</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>grade <span class="token operator">=</span> props<span class="token punctuation">.</span>grade <span class="token operator">||</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 默认值为1</span>
+<span class="token punctuation">}</span>
+
+Student<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>hello <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Hello, '</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">+</span> <span class="token string">'!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">createStudent</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Student</span><span class="token punctuation">(</span>props <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>不传参都行</li>
+<li>也可以这样定义</li>
+</ul>
+<blockquote>
+<p>这样传参传的是一个对象，是不需要顺序的！</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> xiaoming <span class="token operator">=</span> <span class="token function">createStudent</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'小明'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+xiaoming<span class="token punctuation">.</span>grade<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="四、原型继承"><a href="#四、原型继承" class="headerlink" title="四、原型继承"></a>四、原型继承</h2><blockquote>
+<p>本节参考：<a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023021997355072" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/1022910821149312/1023021997355072</a></p>
+</blockquote>
+<p>原型链：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">new</span> <span class="token class-name">PrimaryStudent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">></span> PrimaryStudent<span class="token punctuation">.</span>prototype <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">></span> Student<span class="token punctuation">.</span>prototype <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">></span> Object<span class="token punctuation">.</span>prototype <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">></span> <span class="token keyword">null</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>我们必须借助一个中间对象来实现正确的原型链，这个中间对象的原型要指向<code>Student.prototype</code>。为了实现这一点，参考道爷（就是发明JSON的那个道格拉斯）的代码，中间对象可以用一个空函数<code>F</code>来实现：</p>
+<p>F空函数起到一个桥接的作用！</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// PrimaryStudent构造函数:</span>
+<span class="token keyword">function</span> <span class="token function">PrimaryStudent</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Student<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>grade <span class="token operator">=</span> props<span class="token punctuation">.</span>grade <span class="token operator">||</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// 空函数F:</span>
+<span class="token keyword">function</span> <span class="token function">F</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// 把F的原型指向Student.prototype:</span>
+F<span class="token punctuation">.</span>prototype <span class="token operator">=</span> Student<span class="token punctuation">.</span>prototype<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// 把PrimaryStudent的原型指向一个新的F对象，F对象的原型正好指向Student.prototype:</span>
+PrimaryStudent<span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">F</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// 把PrimaryStudent原型的构造函数修复为PrimaryStudent:</span>
+PrimaryStudent<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>constructor <span class="token operator">=</span> PrimaryStudent<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// 继续在PrimaryStudent原型（就是new F()对象）上定义方法：</span>
+PrimaryStudent<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>getGrade <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>grade<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// 创建xiaoming:</span>
+<span class="token keyword">var</span> xiaoming <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PrimaryStudent</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'小明'</span><span class="token punctuation">,</span>
+    grade<span class="token punctuation">:</span> <span class="token number">2</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+xiaoming<span class="token punctuation">.</span>name<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// '小明'</span>
+xiaoming<span class="token punctuation">.</span>grade<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 2</span>
+
+<span class="token comment" spellcheck="true">// 验证原型:</span>
+xiaoming<span class="token punctuation">.</span>__proto__ <span class="token operator">===</span> PrimaryStudent<span class="token punctuation">.</span>prototype<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+xiaoming<span class="token punctuation">.</span>__proto__<span class="token punctuation">.</span>__proto__ <span class="token operator">===</span> Student<span class="token punctuation">.</span>prototype<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+
+<span class="token comment" spellcheck="true">// 验证继承关系:</span>
+xiaoming <span class="token keyword">instanceof</span> <span class="token class-name">PrimaryStudent</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+xiaoming <span class="token keyword">instanceof</span> <span class="token class-name">Student</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>关于call()函数：<a href="https://www.runoob.com/w3cnote/js-call-apply-bind.html" target="_blank" rel="noopener">https://www.runoob.com/w3cnote/js-call-apply-bind.html</a></p>
+<p><strong>是用来重定义 this 这个对象的!</strong></p>
+<h2 id="五、class继承"><a href="#五、class继承" class="headerlink" title="五、class继承"></a>五、class继承</h2><blockquote>
+<p>在上面的章节中我们看到了JavaScript的对象模型是基于原型实现的，特点是简单，缺点是理解起来比传统的类－实例模型要困难，最大的缺点是继承的实现需要编写大量代码，并且需要正确实现原型链。</p>
+<p>有没有更简单的写法？有！</p>
+<p>新的关键字<code>class</code>从ES6开始正式被引入到JavaScript中。<code>class</code>的目的就是让定义类更简单。</p>
+</blockquote>
+<p>用class来写，上面章节中的继承和对象编程就简单多了！</p>
+<blockquote>
+<p>constructor很明显是够着函数！</p>
+<p>注意没有<code>function</code>关键字！</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Student</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Hello, '</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">+</span> <span class="token string">'!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> xiaoming <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Student</span><span class="token punctuation">(</span><span class="token string">'小明'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+xiaoming<span class="token punctuation">.</span><span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="class继承"><a href="#class继承" class="headerlink" title="class继承"></a>class继承</h3><blockquote>
+<p>用<code>class</code>定义对象的另一个巨大的好处是继承更方便了。想一想我们从<code>Student</code>派生一个<code>PrimaryStudent</code>需要编写的代码量。现在，原型继承的中间对象，原型对象的构造函数等等都不需要考虑了，直接通过<code>extends</code>来实现：</p>
+<p><code>extends</code>表示原型链对象来自<code>Student</code>！</p>
+<p>使用super()函数来调用父类的（即Student）的构造方法！</p>
+<p>class继承和原型继承没有任何区别，<code>class</code>的作用就是让JavaScript引擎去实现原来需要我们自己编写的原型链代码。简而言之，用<code>class</code>的好处就是极大地简化了原型链代码。</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">PrimaryStudent</span> <span class="token keyword">extends</span> <span class="token class-name">Student</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> grade<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 记得用super调用父类的构造方法!</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>grade <span class="token operator">=</span> grade<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">myGrade</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'I am at grade '</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>grade<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="本章节到此结束，敬请期待后续章节！"><a href="#本章节到此结束，敬请期待后续章节！" class="headerlink" title="本章节到此结束，敬请期待后续章节！"></a>本章节到此结束，敬请期待后续章节！</h2><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -745,17 +998,16 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/55519.html">
+                <a href="/posts/57030.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/a/18.jpg" class="responsive-img" alt="JavaScript教程系列之面向对象编程">
+                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(26).jpg" class="responsive-img" alt="JavaScript教程系列之面向浏览器">
                         
-                        <span class="card-title">JavaScript教程系列之面向对象编程</span>
+                        <span class="card-title">JavaScript教程系列之面向浏览器</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -763,19 +1015,15 @@
                         
                             首先来首歌曲来放松一下吧！
     
-
-
-
-一、面向对象编程概述
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
-         
+            if (!el.dat
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-17
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-19
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -788,7 +1036,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -796,8 +1043,12 @@
                         <span class="chip bg-color">JavaScript</span>
                     </a>
                     
-                    <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
-                        <span class="chip bg-color">面向对象</span>
+                    <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/">
+                        <span class="chip bg-color">浏览器</span>
+                    </a>
+                    
+                    <a href="/tags/DOM/">
+                        <span class="chip bg-color">DOM</span>
                     </a>
                     
                 </div>
@@ -1054,7 +1305,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">32.7k</span>&nbsp;字
+                class="white-color">34.6k</span>&nbsp;字
             
             
             
