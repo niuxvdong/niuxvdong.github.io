@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://niuxvdong.top/"/>
-  <updated>2020-02-19T11:26:08.041Z</updated>
+  <updated>2020-02-23T15:01:15.121Z</updated>
   <id>https://niuxvdong.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://niuxvdong.top/posts/57030.html"/>
     <id>https://niuxvdong.top/posts/57030.html</id>
     <published>2020-02-19T11:20:35.000Z</published>
-    <updated>2020-02-19T11:26:08.041Z</updated>
+    <updated>2020-02-23T15:01:15.121Z</updated>
     
     <summary type="html">
     
@@ -41,9 +41,9 @@
     
       <category term="JavaScript" scheme="https://niuxvdong.top/tags/JavaScript/"/>
     
-      <category term="浏览器" scheme="https://niuxvdong.top/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
-    
       <category term="DOM" scheme="https://niuxvdong.top/tags/DOM/"/>
+    
+      <category term="BOM" scheme="https://niuxvdong.top/tags/BOM/"/>
     
   </entry>
   
