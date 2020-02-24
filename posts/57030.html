@@ -450,7 +450,7 @@ Nav">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    6.3k
+                    6.2k
                 </div>
                 
 
@@ -474,7 +474,7 @@ Nav">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h2>
-    <div id="aplayer-ebNxcZSC" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="32619064" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+    <div id="aplayer-NHNFnfLa" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="32619064" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
 
 
 
@@ -1107,104 +1107,62 @@ var filename <span class="token operator">=</span> f<span class="token punctuati
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<script>
-    window.onload=function(){
-        var fileInput = document.getElementById('test-image-file');
-        var info = document.getElementById('test-file-info');
-        var preview = document.getElementById('test-image-preview');
+<blockquote>
+<p>上面的代码演示了如何通过HTML5的File API读取文件内容。以DataURL的形式读取到的文件是一个字符串，类似于<code>data:image/jpeg;base64,/9j/4AAQSk...(base64编码)...</code>，常用于设置图像。如果需要服务器端处理，把字符串<code>base64,</code>后面的字符发送给服务器并用Base64解码就可以得到原始文件的二进制内容。</p>
+</blockquote>
+<h2 id="五、AJAX"><a href="#五、AJAX" class="headerlink" title="五、AJAX"></a>五、AJAX</h2><h3 id="1、AJAX-的起源"><a href="#1、AJAX-的起源" class="headerlink" title="1、AJAX 的起源"></a>1、AJAX 的起源</h3><blockquote>
+<hr>
+<p>AJAX不是JavaScript的规范，它只是一个哥们“发明”的缩写：Asynchronous JavaScript and XML，意思就是用JavaScript执行异步网络请求。</p>
+<p>如果仔细观察一个Form的提交，你就会发现，一旦用户点击“Submit”按钮，表单开始提交，浏览器就会刷新页面，然后在新页面里告诉你操作是成功了还是失败了。如果不幸由于网络太慢或者其他原因，就会得到一个404页面。</p>
+<p>这就是Web的运作原理：一次HTTP请求对应一个页面。</p>
+<p>如果要让用户留在当前页面中，同时发出新的HTTP请求，就必须用JavaScript发送这个新请求，接收到数据后，再用JavaScript更新页面，这样一来，用户就感觉自己仍然停留在当前页面，但是数据却可以不断地更新。</p>
+<p>最早大规模使用AJAX的就是Gmail，Gmail的页面在首次加载后，剩下的所有数据都依赖于AJAX来更新。</p>
+<p>用JavaScript写一个完整的AJAX代码并不复杂，但是需要注意：AJAX请求是异步执行的，也就是说，要通过回调函数获得响应。</p>
+</blockquote>
+<h3 id="2、编写AJAX"><a href="#2、编写AJAX" class="headerlink" title="2、编写AJAX"></a>2、编写AJAX</h3><blockquote>
+<p>通过检测<code>window</code>对象是否有<code>XMLHttpRequest</code>属性来确定浏览器是否支持标准的<code>XMLHttpRequest</code>。注意，<em>不要</em>根据浏览器的<code>navigator.userAgent</code>来检测浏览器是否支持某个JavaScript特性，一是因为这个字符串本身可以伪造，二是通过IE版本判断JavaScript特性将非常复杂。</p>
+<p>当创建了<code>XMLHttpRequest</code>对象后，要先设置<code>onreadystatechange</code>的回调函数。在回调函数中，通常我们只需通过<code>readyState === 4</code>判断请求是否完成，如果已完成，再根据<code>status === 200</code>判断是否是一个成功的响应。</p>
+<p><code>XMLHttpRequest</code>对象的<code>open()</code>方法有3个参数，第一个参数指定是<code>GET</code>还是<code>POST</code>，第二个参数指定URL地址，第三个参数指定是否使用异步，默认是<code>true</code>，所以不用写。</p>
+<p><em>注意</em>，千万不要把第三个参数指定为<code>false</code>，否则浏览器将停止响应，直到AJAX请求完成。如果这个请求耗时10秒，那么10秒内你会发现浏览器处于“假死”状态。</p>
+<p>最后调用<code>send()</code>方法才真正发送请求。<code>GET</code>请求不需要参数，<code>POST</code>请求需要把body部分以字符串或者<code>FormData</code>对象传进去。</p>
+<p>参考教程：<a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400</a></p>
+</blockquote>
+<p>在现代浏览器上写AJAX主要依靠<code>XMLHttpRequest</code>对象：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">success</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> textarea <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'test-response-text'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    textarea<span class="token punctuation">.</span>value <span class="token operator">=</span> text<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
+<span class="token keyword">function</span> <span class="token function">fail</span><span class="token punctuation">(</span>code<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> textarea <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'test-response-text'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    textarea<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">'Error code: '</span> <span class="token operator">+</span> code<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
+<span class="token keyword">var</span> request <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 新建XMLHttpRequest对象</span>
 
-> 上面的代码演示了如何通过HTML5的File API读取文件内容。以DataURL的形式读取到的文件是一个字符串，类似于`data:image/jpeg;base64,/9j/4AAQSk...(base64编码)...`，常用于设置图像。如果需要服务器端处理，把字符串`base64,`后面的字符发送给服务器并用Base64解码就可以得到原始文件的二进制内容。
+request<span class="token punctuation">.</span>onreadystatechange <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 状态发生变化时，函数被回调</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>request<span class="token punctuation">.</span>readyState <span class="token operator">===</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 成功完成</span>
+        <span class="token comment" spellcheck="true">// 判断响应结果:</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>request<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">// 成功，通过responseText拿到响应的文本:</span>
+            <span class="token keyword">return</span> <span class="token function">success</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>responseText<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">// 失败，根据响应码判断失败原因:</span>
+            <span class="token keyword">return</span> <span class="token function">fail</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>status<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// HTTP请求还在继续...</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
+<span class="token comment" spellcheck="true">// 发送请求:</span>
+request<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'GET'</span><span class="token punctuation">,</span> <span class="token string">'/api/categories'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+request<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-
-## 五、AJAX
-
-
-
-### 1、AJAX 的起源
-
-
-
-> ------
->
-> AJAX不是JavaScript的规范，它只是一个哥们“发明”的缩写：Asynchronous JavaScript and XML，意思就是用JavaScript执行异步网络请求。
->
-> 如果仔细观察一个Form的提交，你就会发现，一旦用户点击“Submit”按钮，表单开始提交，浏览器就会刷新页面，然后在新页面里告诉你操作是成功了还是失败了。如果不幸由于网络太慢或者其他原因，就会得到一个404页面。
->
-> 这就是Web的运作原理：一次HTTP请求对应一个页面。
->
-> 如果要让用户留在当前页面中，同时发出新的HTTP请求，就必须用JavaScript发送这个新请求，接收到数据后，再用JavaScript更新页面，这样一来，用户就感觉自己仍然停留在当前页面，但是数据却可以不断地更新。
->
-> 最早大规模使用AJAX的就是Gmail，Gmail的页面在首次加载后，剩下的所有数据都依赖于AJAX来更新。
->
-> 用JavaScript写一个完整的AJAX代码并不复杂，但是需要注意：AJAX请求是异步执行的，也就是说，要通过回调函数获得响应。
-
-
-
-
-
-### 2、编写AJAX
-
-
-
-> 通过检测`window`对象是否有`XMLHttpRequest`属性来确定浏览器是否支持标准的`XMLHttpRequest`。注意，*不要*根据浏览器的`navigator.userAgent`来检测浏览器是否支持某个JavaScript特性，一是因为这个字符串本身可以伪造，二是通过IE版本判断JavaScript特性将非常复杂。
->
-> 当创建了`XMLHttpRequest`对象后，要先设置`onreadystatechange`的回调函数。在回调函数中，通常我们只需通过`readyState === 4`判断请求是否完成，如果已完成，再根据`status === 200`判断是否是一个成功的响应。
->
-> `XMLHttpRequest`对象的`open()`方法有3个参数，第一个参数指定是`GET`还是`POST`，第二个参数指定URL地址，第三个参数指定是否使用异步，默认是`true`，所以不用写。
->
-> *注意*，千万不要把第三个参数指定为`false`，否则浏览器将停止响应，直到AJAX请求完成。如果这个请求耗时10秒，那么10秒内你会发现浏览器处于“假死”状态。
->
-> 最后调用`send()`方法才真正发送请求。`GET`请求不需要参数，`POST`请求需要把body部分以字符串或者`FormData`对象传进去。
->
-> 参考教程：[https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400](https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400)
-
-
-
-在现代浏览器上写AJAX主要依靠`XMLHttpRequest`对象：
-
-```javascript
-function success(text) {
-    var textarea = document.getElementById('test-response-text');
-    textarea.value = text;
-}
-
-function fail(code) {
-    var textarea = document.getElementById('test-response-text');
-    textarea.value = 'Error code: ' + code;
-}
-
-var request = new XMLHttpRequest(); // 新建XMLHttpRequest对象
-
-request.onreadystatechange = function () { // 状态发生变化时，函数被回调
-    if (request.readyState === 4) { // 成功完成
-        // 判断响应结果:
-        if (request.status === 200) {
-            // 成功，通过responseText拿到响应的文本:
-            return success(request.responseText);
-        } else {
-            // 失败，根据响应码判断失败原因:
-            return fail(request.status);
-        }
-    } else {
-        // HTTP请求还在继续...
-    }
-}
-
-// 发送请求:
-request.open('GET', '/api/categories');
-request.send();
-
-alert('请求已发送，请等待响应...');
-
-```
-
-对于低版本的IE，需要换一个`ActiveXObject`对象：
-
-```
-function success(text) {
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'请求已发送，请等待响应...'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>对于低版本的IE，需要换一个<code>ActiveXObject</code>对象：</p>
+<pre><code>function success(text) {
     var textarea = document.getElementById('test-ie-response-text');
     textarea.value = text;
 }
@@ -1236,46 +1194,21 @@ request.open('GET', '/api/categories');
 request.send();
 
 alert('请求已发送，请等待响应...');
-
-```
-
-### 3、安全限制
-
-
-
-> 有点看不懂了！
->
-> 参考教程：[https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400#0](https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400#0)
-
-### 4、CORS
-
-> 有点看不懂了！
->
-> 参考教程：[https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400#0](https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400#0)
-
-
-
-## 六、Promise
-
-
-
-> 有点看不懂了！
->
-> 参考教程：[https://www.liaoxuefeng.com/wiki/1022910821149312/1023024413276544](https://www.liaoxuefeng.com/wiki/1022910821149312/1023024413276544)
-
-## 七、Canvas
-
-以后再看吧！
-
-参考教程：[https://www.liaoxuefeng.com/wiki/1022910821149312/1023022423592576](https://www.liaoxuefeng.com/wiki/1022910821149312/1023022423592576)
-
-
-
-
-
-## 目前告一段落了！以后有机会再进行 JavaScript 的学习！
-
-</script><script>
+</code></pre><h3 id="3、安全限制"><a href="#3、安全限制" class="headerlink" title="3、安全限制"></a>3、安全限制</h3><blockquote>
+<p>有点看不懂了！</p>
+<p>参考教程：<a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400#0" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400#0</a></p>
+</blockquote>
+<h3 id="4、CORS"><a href="#4、CORS" class="headerlink" title="4、CORS"></a>4、CORS</h3><blockquote>
+<p>有点看不懂了！</p>
+<p>参考教程：<a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400#0" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400#0</a></p>
+</blockquote>
+<h2 id="六、Promise"><a href="#六、Promise" class="headerlink" title="六、Promise"></a>六、Promise</h2><blockquote>
+<p>有点看不懂了！</p>
+<p>参考教程：<a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023024413276544" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/1022910821149312/1023024413276544</a></p>
+</blockquote>
+<h2 id="七、Canvas"><a href="#七、Canvas" class="headerlink" title="七、Canvas"></a>七、Canvas</h2><p>以后再看吧！</p>
+<p>参考教程：<a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023022423592576" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/1022910821149312/1023022423592576</a></p>
+<h2 id="目前告一段落了！以后有机会再进行-JavaScript-的学习！"><a href="#目前告一段落了！以后有机会再进行-JavaScript-的学习！" class="headerlink" title="目前告一段落了！以后有机会再进行 JavaScript 的学习！"></a>目前告一段落了！以后有机会再进行 JavaScript 的学习！</h2><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1856,7 +1789,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">42.6k</span>&nbsp;字
+                class="white-color">42.5k</span>&nbsp;字
             
             
             
