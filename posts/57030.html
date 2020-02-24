@@ -474,7 +474,7 @@ Nav">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h2>
-    <div id="aplayer-NHNFnfLa" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="32619064" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+    <div id="aplayer-vaPmBvmH" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="32619064" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
 
 
 
@@ -1162,39 +1162,40 @@ request<span class="token punctuation">.</span><span class="token function">send
 <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'请求已发送，请等待响应...'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>对于低版本的IE，需要换一个<code>ActiveXObject</code>对象：</p>
-<pre><code>function success(text) {
-    var textarea = document.getElementById('test-ie-response-text');
-    textarea.value = text;
-}
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">success</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> textarea <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'test-ie-response-text'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    textarea<span class="token punctuation">.</span>value <span class="token operator">=</span> text<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-function fail(code) {
-    var textarea = document.getElementById('test-ie-response-text');
-    textarea.value = 'Error code: ' + code;
-}
+<span class="token keyword">function</span> <span class="token function">fail</span><span class="token punctuation">(</span>code<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> textarea <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'test-ie-response-text'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    textarea<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">'Error code: '</span> <span class="token operator">+</span> code<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-var request = new ActiveXObject('Microsoft.XMLHTTP'); // 新建Microsoft.XMLHTTP对象
+<span class="token keyword">var</span> request <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ActiveXObject</span><span class="token punctuation">(</span><span class="token string">'Microsoft.XMLHTTP'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 新建Microsoft.XMLHTTP对象</span>
 
-request.onreadystatechange = function () { // 状态发生变化时，函数被回调
-    if (request.readyState === 4) { // 成功完成
-        // 判断响应结果:
-        if (request.status === 200) {
-            // 成功，通过responseText拿到响应的文本:
-            return success(request.responseText);
-        } else {
-            // 失败，根据响应码判断失败原因:
-            return fail(request.status);
-        }
-    } else {
-        // HTTP请求还在继续...
-    }
-}
+request<span class="token punctuation">.</span>onreadystatechange <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 状态发生变化时，函数被回调</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>request<span class="token punctuation">.</span>readyState <span class="token operator">===</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 成功完成</span>
+        <span class="token comment" spellcheck="true">// 判断响应结果:</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>request<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">// 成功，通过responseText拿到响应的文本:</span>
+            <span class="token keyword">return</span> <span class="token function">success</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>responseText<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">// 失败，根据响应码判断失败原因:</span>
+            <span class="token keyword">return</span> <span class="token function">fail</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>status<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// HTTP请求还在继续...</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
-// 发送请求:
-request.open('GET', '/api/categories');
-request.send();
+<span class="token comment" spellcheck="true">// 发送请求:</span>
+request<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'GET'</span><span class="token punctuation">,</span> <span class="token string">'/api/categories'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+request<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-alert('请求已发送，请等待响应...');
-</code></pre><h3 id="3、安全限制"><a href="#3、安全限制" class="headerlink" title="3、安全限制"></a>3、安全限制</h3><blockquote>
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'请求已发送，请等待响应...'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="3、安全限制"><a href="#3、安全限制" class="headerlink" title="3、安全限制"></a>3、安全限制</h3><blockquote>
 <p>有点看不懂了！</p>
 <p>参考教程：<a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400#0" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400#0</a></p>
 </blockquote>
