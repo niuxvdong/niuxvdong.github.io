@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://niuxvdong.top/"/>
-  <updated>2020-02-26T13:50:56.490Z</updated>
+  <updated>2020-02-27T05:19:28.319Z</updated>
   <id>https://niuxvdong.top/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AcWing-89.a ^ b</title>
+    <link href="https://niuxvdong.top/posts/2286.html"/>
+    <id>https://niuxvdong.top/posts/2286.html</id>
+    <published>2020-02-27T04:34:36.000Z</published>
+    <updated>2020-02-27T05:19:28.319Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://niuxvdong.top/categories/AcWing/"/>
+    
+    
+      <category term="AcWing" scheme="https://niuxvdong.top/tags/AcWing/"/>
+    
+      <category term="快速幂" scheme="https://niuxvdong.top/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/"/>
+    
+  </entry>
+  
+  <entry>
     <title>AcWing-788.逆序对的数量</title>
     <link href="https://niuxvdong.top/posts/25834.html"/>
     <id>https://niuxvdong.top/posts/25834.html</id>
     <published>2020-02-26T13:19:28.000Z</published>
-    <updated>2020-02-26T13:50:56.490Z</updated>
+    <updated>2020-02-26T13:51:39.476Z</updated>
     
     <summary type="html">
     
