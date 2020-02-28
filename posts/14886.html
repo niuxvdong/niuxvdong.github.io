@@ -6,20 +6,22 @@
 <head>
 	<meta name="google-site-verification" content="GLWtLaS4mFunxxL-saY-q47wXZoXVOxwJ606SiFtDts" />
     <meta charset="utf-8">
-    <meta name="keywords" content="AcWing-1324.五子棋, Blog,博客,Java,js,JavaScript,C,C++,SQL,Python,Git">
+    <meta name="keywords" content="AcWing-92.递归实现指数型枚举, Blog,博客,Java,js,JavaScript,C,C++,SQL,Python,Git">
     <meta name="description" content="首先来首歌曲来放松一下吧！
     
 
 
 
 
+题目链接：92. 递归实现指数型枚举
 
-题目链接：1324. 五子棋
 
-题目背景：题目描述小 A 和小 B 在下五子棋。
-五子棋是在一个由网格构成的棋盘内进行的。
-网格有 15 行 15 列，共有 225 个交叉点。
-小 A 先手执">
+题目背景：
+多种做法！
+
+题目描述从 1~n 这 n 个整数中随机选取任意多个，输出所有可能的选择方案。
+输入格式输入一个整数n。
+输出格式每行输出一种">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -27,7 +29,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>AcWing-1324.五子棋 | Mr.Niu&#39;s Blog</title>
+    <title>AcWing-92.递归实现指数型枚举 | Mr.Niu&#39;s Blog</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -282,12 +284,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_65.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_41.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">AcWing-1324.五子棋</h1>
+                    <h1 class="description center-align post-title">AcWing-92.递归实现指数型枚举</h1>
                 </div>
             </div>
         </div>
@@ -408,8 +410,16 @@
                                 <span class="chip bg-color">AcWing</span>
                             </a>
                         
-                            <a href="/tags/%E6%A8%A1%E6%8B%9F/">
-                                <span class="chip bg-color">模拟</span>
+                            <a href="/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/">
+                                <span class="chip bg-color">二进制</span>
+                            </a>
+                        
+                            <a href="/tags/DFS/">
+                                <span class="chip bg-color">DFS</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/">
+                                <span class="chip bg-color">状态压缩</span>
                             </a>
                         
                     </div>
@@ -433,14 +443,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-25
+                    2020-02-28
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-02-25
+                    2020-02-28
                 </div>
                 
 
@@ -471,123 +481,175 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h2>
-    <div id="aplayer-gNjUxiiA" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1403215687" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+    <div id="aplayer-vsNyRiGE" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1297498908" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
 
 
 
-<hr>
 <blockquote>
-<p>题目链接：<a href="https://www.acwing.com/problem/content/description/1326/" target="_blank" rel="noopener">1324. 五子棋</a></p>
+<p>题目链接：<a href="https://www.acwing.com/problem/content/description/94/" target="_blank" rel="noopener">92. 递归实现指数型枚举</a></p>
 </blockquote>
-<h2 id="题目背景："><a href="#题目背景：" class="headerlink" title="题目背景："></a>题目背景：</h2><h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>小 A 和小 B 在下五子棋。</p>
-<p>五子棋是在一个由网格构成的棋盘内进行的。</p>
-<p>网格有 15 行 15 列，共有 225 个交叉点。</p>
-<p>小 A 先手执黑棋，小 B 后手执白棋。</p>
-<p>两人轮流下棋，每次下棋都将一个自己的棋子放在棋盘上一个空白的交叉点上。</p>
-<p>然而，由于小 A 和小 B 都不知道五子棋的胜利条件，所以即使有一方已经胜利了，他们仍然会继续下棋。</p>
-<p>现在想请你帮忙分析一下，所下的棋局是在第几步结束的。</p>
-<p>当然，也有可能他们最终仍然没有分出胜负，这时请判定他们平局。</p>
-<p>五子棋的胜利条件是这样的：当同一行或同一列或同一斜线（即与网格线成 45° 角的直线）上连续的五个或五个以上交叉点放有同色棋子的时候，立即判定使用该颜色棋子的玩家获得胜利，游戏结束。</p>
-<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>第一行输入一个正整数 n，表示双方<strong>总共</strong>下了多少步棋。</p>
-<p>接下来 n 行，每行两个正整数。其中，第 i 行的两个数 x,y 表示第 i 步的棋子下在了第 x 条横线和第 y 条竖线的交叉点上。若 i 为奇数，则这个棋子是黑棋，否则是白棋。</p>
-<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>若没有人获得胜利，你需要输出“Tie”（不含引号）。</p>
-<p>否则，若小 A 获胜，输出 “A”（不含引号），若小 B 获胜，输出 “B”（不含引号）；并输出一个正整数 w 表示第 w 步下完后游戏应当结束，字母与整数间用一个空格隔开。</p>
-<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>对于 20% 的数据，游戏结果是平局。<br>对于 30% 的数据，游戏在最后一手结束。<br>对于 100% 的数据，0≤n≤225，1≤x,y≤150≤n≤225，1≤x,y≤15。</p>
-<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre><code>9
-1 1
-2 1
-1 2
-2 2
-1 3
+<hr>
+<h2 id="题目背景："><a href="#题目背景：" class="headerlink" title="题目背景："></a>题目背景：</h2><blockquote>
+<p>多种做法！</p>
+</blockquote>
+<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>从 1~n 这 n 个整数中随机选取任意多个，输出所有可能的选择方案。</p>
+<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>输入一个整数n。</p>
+<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>每行输出一种方案。</p>
+<p>同一行内的数必须升序排列，相邻两个数用恰好1个空格隔开。</p>
+<p>对于没有选任何数的方案，输出空行。</p>
+<p>本题有自定义校验器（SPJ），各行（不同方案）之间的顺序任意。</p>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤n≤15</p>
+<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre><code>3</code></pre><h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre><code>
+3
+2
 2 3
-1 4
-2 4
-1 5</code></pre><h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre><code>A 9</code></pre><hr>
-<h2 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h2><h3 id="题目要求："><a href="#题目要求：" class="headerlink" title="题目要求："></a>题目要求：</h3><p>题目意思就是在一个15 x 15 的棋盘下棋，要你求出谁最后赢了，并且是在下第几课棋子时赢的！</p>
-<h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：</h3><ul>
-<li>当然还是要下一步棋子，就判断一下是否有人胜利！</li>
-<li>方法就是要在下棋子的地方展开，如果下了这步棋子，胜利了，那么最后的结果必有这一个棋子，所以从这里展开！</li>
-<li>有四个方向可能五子连珠：横向，竖向，以及两个斜向！</li>
-<li>所以直接扫描四个方向即可！</li>
-<li>五子连珠条件：一个方向的正反向相加再加1大于等于5即可！</li>
-</ul>
-<h2 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h2><p>由于一个方向的正反完全可以由正或反乘以-1得到，所以只需记录八个方向的相连的四个方向即可。本人用dx 和 dy数组记录。</p>
-<p>先后手判断奇偶数即可。</p>
-<p>arr 为 0 表示空，为1表示先手，为2表示后手。</p>
-<p>win 为 0 表示平局，1表示先手赢，2表示后手赢。</p>
-<p>flag 标记是否五子连珠，step 表示胜利时的步数。</p>
-<p>需注意越界条件和下一个棋子是否是本方棋色。</p>
-<p>一个方向的正向就是+该变量，反向就是-该变量！</p>
-<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;cstdio></span></span>
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span> </span>
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;algorithm></span></span>
+1
+1 3
+1 2
+1 2 3</code></pre><hr>
+<h2 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h2><h3 id="题目要求："><a href="#题目要求：" class="headerlink" title="题目要求："></a>题目要求：</h3><p>输出任任意位的组合（从小到大），包括0位组合（即输出空行），不限制输出顺序！</p>
+<h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：</h3><p>详见下方四种解法：</p>
+<blockquote>
+<p><a href="https://www.acwing.com/solution/AcWing/content/812/" target="_blank" rel="noopener">一篇好理解的题解，点击这里！</a></p>
+</blockquote>
+<h2 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h2><p>注意：选择0位也是一种情况，千万别忘记！要输出一个空行！</p>
+<h3 id="解法一：本人能想到的最粗糙的做法："><a href="#解法一：本人能想到的最粗糙的做法：" class="headerlink" title="解法一：本人能想到的最粗糙的做法："></a>解法一：本人能想到的最粗糙的做法：</h3><pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span> </span>
 
 using namespace std<span class="token punctuation">;</span>
 
-<span class="token keyword">int</span> n<span class="token punctuation">;</span>
-<span class="token keyword">int</span> arr<span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 1 先手 2 后手 </span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">15</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> b<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+bool flag<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">dfs</span><span class="token punctuation">(</span><span class="token keyword">int</span> k<span class="token punctuation">,</span> <span class="token keyword">int</span> cnt<span class="token punctuation">,</span> <span class="token keyword">int</span> pos<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>cnt <span class="token operator">>=</span> k<span class="token punctuation">)</span> 
+    <span class="token punctuation">{</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> k<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> b<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> pos <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>flag<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            b<span class="token punctuation">[</span>cnt<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+            flag<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> true<span class="token punctuation">;</span>
+            <span class="token function">dfs</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span> cnt <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>    
+            flag<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> false<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> 
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
     cin <span class="token operator">>></span> n<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token function">dfs</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="解法二：使用二进制优化："><a href="#解法二：使用二进制优化：" class="headerlink" title="解法二：使用二进制优化："></a>解法二：使用二进制优化：</h3><p>和之前做过的类似：将每一位的选择变成0和1的二进制即可，和直接使用数组存储（解法一）不一样的点：</p>
+<ul>
+<li>添加第 i 位时：<code>state |= 1 &lt;&lt;(i - 1);</code></li>
+<li>最后还要恢复原状态：<code>state ^= 1 &lt;&lt; (i - 1);</code></li>
+</ul>
+<p>用到了异或和按位或，不懂的去学习一下！</p>
+<p>为何数组不需要恢复状态，而二进制需要恢复状态？</p>
+<p>因为数组存储时时从下标为0开始存储，一次dfs结束后，会进入下一次for循环，此时，数组存储的下标仍然是cnt，没有变化，即进行了覆盖，不会影响；</p>
+<p>然而：使用二进制就不一样了，二进制存储的是每一位的状态，没有下标的关系，如果不进行恢复状态，下一次for循环可不是数组的原位覆盖，而是在新的地方置为了1，这样state状态就会多一位被选择的数，造成错误答案！</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span> </span>
 
-    <span class="token comment" spellcheck="true">// 四个方向：下、右下、右、右上 </span>
-    <span class="token keyword">int</span> dx<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-    <span class="token keyword">int</span> dy<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-    <span class="token keyword">int</span> step<span class="token punctuation">,</span> win <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//先手为1，后手为2 </span>
+using namespace std<span class="token punctuation">;</span>
 
-    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">15</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> b<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+bool flag<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">dfs</span><span class="token punctuation">(</span><span class="token keyword">int</span> state<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">,</span> <span class="token keyword">int</span> cnt<span class="token punctuation">,</span> <span class="token keyword">int</span> pos<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>cnt <span class="token operator">>=</span> k<span class="token punctuation">)</span> 
     <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> x<span class="token punctuation">,</span> y<span class="token punctuation">;</span>
-        cin <span class="token operator">>></span> x <span class="token operator">>></span> y<span class="token punctuation">;</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">%</span> <span class="token number">2</span><span class="token punctuation">)</span> arr<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-        <span class="token keyword">else</span> arr<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
-
-        bool flag <span class="token operator">=</span> false<span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// 判断四个方向 </span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">4</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
-            <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//一个方向的正反  记录该方向可走的步数 </span>
-            <span class="token comment" spellcheck="true">// 正向 </span>
-            <span class="token keyword">while</span><span class="token punctuation">(</span>true<span class="token punctuation">)</span>
-            <span class="token punctuation">{</span>
-                <span class="token keyword">int</span> tx <span class="token operator">=</span> x <span class="token operator">+</span> <span class="token punctuation">(</span>a <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> dx<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
-                <span class="token keyword">int</span> ty <span class="token operator">=</span> y <span class="token operator">+</span> <span class="token punctuation">(</span>a <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> dy<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span> 
-                <span class="token keyword">if</span><span class="token punctuation">(</span>tx <span class="token operator">&lt;</span> <span class="token number">1</span> <span class="token operator">||</span> tx <span class="token operator">></span> <span class="token number">15</span> <span class="token operator">||</span> ty <span class="token operator">&lt;</span> <span class="token number">1</span> <span class="token operator">||</span> ty <span class="token operator">></span> <span class="token number">15</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//越界</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">!=</span> arr<span class="token punctuation">[</span>tx<span class="token punctuation">]</span><span class="token punctuation">[</span>ty<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//棋子颜色不同</span>
-                a<span class="token operator">++</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//正方向++ </span>
-            <span class="token punctuation">}</span> 
-            <span class="token comment" spellcheck="true">// 反向 </span>
-            <span class="token keyword">while</span><span class="token punctuation">(</span>true<span class="token punctuation">)</span>
-            <span class="token punctuation">{</span>
-                <span class="token keyword">int</span> tx <span class="token operator">=</span> x <span class="token operator">-</span> <span class="token punctuation">(</span>b <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> dx<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
-                <span class="token keyword">int</span> ty <span class="token operator">=</span> y <span class="token operator">-</span> <span class="token punctuation">(</span>b <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> dy<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span> 
-                <span class="token keyword">if</span><span class="token punctuation">(</span>tx <span class="token operator">&lt;</span> <span class="token number">1</span> <span class="token operator">||</span> tx <span class="token operator">></span> <span class="token number">15</span> <span class="token operator">||</span> ty <span class="token operator">&lt;</span> <span class="token number">1</span> <span class="token operator">||</span> ty <span class="token operator">></span> <span class="token number">15</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//越界</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">!=</span> arr<span class="token punctuation">[</span>tx<span class="token punctuation">]</span><span class="token punctuation">[</span>ty<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//棋子颜色不同</span>
-                b<span class="token operator">++</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//反方向++ </span>
-            <span class="token punctuation">}</span>
-
-            <span class="token keyword">if</span><span class="token punctuation">(</span>a <span class="token operator">+</span> b <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">>=</span> <span class="token number">5</span><span class="token punctuation">)</span> 
-            <span class="token punctuation">{</span> 
-                flag <span class="token operator">=</span> true<span class="token punctuation">;</span>
-                <span class="token keyword">break</span><span class="token punctuation">;</span> 
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span> 
-        <span class="token keyword">if</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
-            win <span class="token operator">=</span> arr<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span><span class="token punctuation">;</span>
-            step <span class="token operator">=</span> i<span class="token punctuation">;</span> <span class="token keyword">break</span><span class="token punctuation">;</span>    
-        <span class="token punctuation">}</span>    
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>state <span class="token operator">>></span> i <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> i <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
-    <span class="token keyword">if</span><span class="token punctuation">(</span>win <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Tie"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-    <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>win <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"A %d\n"</span><span class="token punctuation">,</span> step<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">else</span> <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"B %d\n"</span><span class="token punctuation">,</span> step<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> pos <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>flag<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            state <span class="token operator">|</span><span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span><span class="token punctuation">(</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            flag<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> true<span class="token punctuation">;</span>
+            <span class="token function">dfs</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> k<span class="token punctuation">,</span> cnt <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>    
+            flag<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> false<span class="token punctuation">;</span>
+            state <span class="token operator">^</span><span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> <span class="token punctuation">(</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> 
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    cin <span class="token operator">>></span> n<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token function">dfs</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> i<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="解法三：状态压缩非递归"><a href="#解法三：状态压缩非递归" class="headerlink" title="解法三：状态压缩非递归"></a>解法三：状态压缩非递归</h3><p>类似于第二种解法：用state来存储二进制集合，当然共有 2 <sup>n</sup>种，然后第二层for循环直接去从第0位开始扫描即可，遇到1 就输出，遇到0就跳过即可！</p>
+<p>本人最喜欢这种做法，既好理解又简洁！推荐！！！</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span> </span>
+
+using namespace std<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">15</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> state<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+bool flag<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    cin <span class="token operator">>></span> n<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> state <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> state <span class="token operator">&lt;</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> n<span class="token punctuation">;</span> state<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>state <span class="token operator">>></span> j <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> j <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<center style="color: red; font-size: 25px">欢迎访问！</center>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="解法四：状态压缩递归形式（来自yxc大神）"><a href="#解法四：状态压缩递归形式（来自yxc大神）" class="headerlink" title="解法四：状态压缩递归形式（来自yxc大神）"></a>解法四：状态压缩递归形式（来自yxc大神）</h3><p>也就是第三种解法的递归写法，仍然是每一位数都有两种选择，选与不选，所以，此处的dfs的两个参数，第一个代表当前扫描到了哪一位，state表示当前状态的二进制为情况！</p>
+<p>两种状态：</p>
+<ul>
+<li><code>dfs(u + 1, state);</code> ：不选，state 没有进行改变！</li>
+<li><code>dfs(u + 1, state | (1 &lt;&lt; u));</code> ：选择，state 已经将 u + 1加入到了state中！</li>
+</ul>
+<p>退出条件，扫描到最后一项时进行输出和判断！</p>
+<p>总而言之：就像是一个二叉搜索树，都有选与不选两种情况，答案则在最后的叶子节点上！</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span> </span>
+
+using namespace std<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">15</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">dfs</span><span class="token punctuation">(</span><span class="token keyword">int</span> u<span class="token punctuation">,</span> <span class="token keyword">int</span> state<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>u <span class="token operator">==</span> n<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>state <span class="token operator">>></span> i <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> i <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span> 
+    <span class="token punctuation">}</span>
+    <span class="token function">dfs</span><span class="token punctuation">(</span>u <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> state<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">dfs</span><span class="token punctuation">(</span>u <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> state <span class="token operator">|</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">&lt;&lt;</span> u<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> 
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    cin <span class="token operator">>></span> n<span class="token punctuation">;</span>
+    <span class="token function">dfs</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -631,7 +693,7 @@ using namespace std<span class="token punctuation">;</span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://niuxvdong.top/posts/44380.html">https://niuxvdong.top/posts/44380.html</a>
+                    <a href="https://niuxvdong.top/posts/14886.html">https://niuxvdong.top/posts/14886.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -673,8 +735,16 @@ using namespace std<span class="token punctuation">;</span>
                                     <span class="chip bg-color">AcWing</span>
                                 </a>
                             
-                                <a href="/tags/%E6%A8%A1%E6%8B%9F/">
-                                    <span class="chip bg-color">模拟</span>
+                                <a href="/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/">
+                                    <span class="chip bg-color">二进制</span>
+                                </a>
+                            
+                                <a href="/tags/DFS/">
+                                    <span class="chip bg-color">DFS</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/">
+                                    <span class="chip bg-color">状态压缩</span>
                                 </a>
                             
                         </div>
@@ -862,16 +932,17 @@ using namespace std<span class="token punctuation">;</span>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/13968.html">
+                <a href="/posts/14886.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_39.jpg" class="responsive-img" alt="AcWing-1326.军训队列">
+                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_41.jpg" class="responsive-img" alt="AcWing-92.递归实现指数型枚举">
                         
-                        <span class="card-title">AcWing-1326.军训队列</span>
+                        <span class="card-title">AcWing-92.递归实现指数型枚举</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -883,19 +954,93 @@ using namespace std<span class="token punctuation">;</span>
 
 
 
+题目链接：92. 递归实现指数型枚举
 
 
-题目链接：1326. 军训队列
+题目背景：
+多种做法！
 
-
-题目背景：题目描述有 n 名学生参加军训，军训的一大重要内容就是走队列，而一个队列的不整齐程度是该队中最高的学生的身高与最矮的学生的身高差值的平方。
-现在
+题目描述从 1~n 这 n 个整数中随机选取任意多个，输出所有可能的选择方案。
+输入格式输入一个整数n。
+输出格式每行输出一种
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-25
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-28
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/AcWing/" class="post-category">
+                                    AcWing
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/AcWing/">
+                        <span class="chip bg-color">AcWing</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/">
+                        <span class="chip bg-color">二进制</span>
+                    </a>
+                    
+                    <a href="/tags/DFS/">
+                        <span class="chip bg-color">DFS</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/">
+                        <span class="chip bg-color">状态压缩</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/30496.html">
+                    <div class="card-image">
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_09.jpg" class="responsive-img" alt="AcWing-91.最短Hamilton路径">
+                        
+                        <span class="card-title">AcWing-91.最短Hamilton路径</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            首先来首歌曲来放松一下吧！
+    
+
+
+
+
+题目链接：91. 最短Hamilton路径
+
+
+题目背景：
+这对我来说是一道难题，经过我一直理解，看题解，看yxc大神视频，反复多次，一点点的，终于明白了这个思想并且可以自己独立写出来！
+坚持！
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -915,74 +1060,16 @@ using namespace std<span class="token punctuation">;</span>
                         <span class="chip bg-color">AcWing</span>
                     </a>
                     
-                    <a href="/tags/%E8%B4%AA%E5%BF%83/">
-                        <span class="chip bg-color">贪心</span>
+                    <a href="/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/">
+                        <span class="chip bg-color">二进制</span>
                     </a>
                     
-                    <a href="/tags/Dp/">
-                        <span class="chip bg-color">Dp</span>
+                    <a href="/tags/%E7%8A%B6%E5%8E%8BDp/">
+                        <span class="chip bg-color">状压Dp</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/posts/42468.html">
-                    <div class="card-image">
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/wallhaven-4xgyml.jpg" class="responsive-img" alt="人一生需要花多少钱">
-                        
-                        <span class="card-title">人一生需要花多少钱</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            一首歌曲送上
-    
-
-
-
-
-我们都是语言的巨人，行动的矮子！
-
-分享偶然看到的四张图：
-
-
-
-看到图后，我想了很多，当然是乐观的想，本人并不是那种悲观的人！
-人一生花费的钱有这么多，现在不努力更待何时！
-每天努力一点点，不要管于你无关的
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-24
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E9%9A%8F%E7%AC%94/" class="post-category">
-                                    随笔
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%8A%AA%E5%8A%9B/">
-                        <span class="chip bg-color">努力</span>
+                    <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/">
+                        <span class="chip bg-color">最短路</span>
                     </a>
                     
                 </div>
