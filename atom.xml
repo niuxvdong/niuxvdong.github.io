@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://niuxvdong.top/"/>
-  <updated>2020-02-28T11:47:05.504Z</updated>
+  <updated>2020-02-28T13:25:49.742Z</updated>
   <id>https://niuxvdong.top/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AcWing-94.递归实现排列型枚举</title>
+    <link href="https://niuxvdong.top/posts/45388.html"/>
+    <id>https://niuxvdong.top/posts/45388.html</id>
+    <published>2020-02-28T13:10:57.000Z</published>
+    <updated>2020-02-28T13:25:49.742Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://niuxvdong.top/categories/AcWing/"/>
+    
+    
+      <category term="AcWing" scheme="https://niuxvdong.top/tags/AcWing/"/>
+    
+      <category term="DFS" scheme="https://niuxvdong.top/tags/DFS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>AcWing-93.递归实现组合型枚举</title>
     <link href="https://niuxvdong.top/posts/53888.html"/>
     <id>https://niuxvdong.top/posts/53888.html</id>
     <published>2020-02-28T11:17:32.000Z</published>
-    <updated>2020-02-28T11:47:05.504Z</updated>
+    <updated>2020-02-28T11:47:56.463Z</updated>
     
     <summary type="html">
     
@@ -580,33 +609,6 @@
     
     
       <category term="Markdown" scheme="https://niuxvdong.top/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://niuxvdong.top/posts/16107.html"/>
-    <id>https://niuxvdong.top/posts/16107.html</id>
-    <published>2020-01-31T04:21:55.000Z</published>
-    <updated>2020-02-11T08:34:22.460Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="https://niuxvdong.top/categories/Hexo/"/>
-    
-    
-      <category term="Doc" scheme="https://niuxvdong.top/tags/Doc/"/>
     
   </entry>
   
