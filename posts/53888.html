@@ -6,23 +6,21 @@
 <head>
 	<meta name="google-site-verification" content="GLWtLaS4mFunxxL-saY-q47wXZoXVOxwJ606SiFtDts" />
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo中引入音乐和视频, Blog,博客,Java,js,JavaScript,C,C++,SQL,Python,Git">
-    <meta name="description" content="1、通过网易云网站引入外链HTML代码:
+    <meta name="keywords" content="AcWing-93.递归实现组合型枚举, Blog,博客,Java,js,JavaScript,C,C++,SQL,Python,Git">
+    <meta name="description" content="首先来首歌曲来放松一下吧！
+    
 
 
-如图所示，复制当中的HTML代码即可。效果如下:
 
 
+题目链接：93. 递归实现组合型枚举
 
-2、通过B站来引入外链HTML代码:
 
+题目背景：
+递归实现，看完本篇你大概将知道递归转化为非递归方法！
 
-如图所示，复制当中的HTML代码即可。效果如下:
-
- 
-
-3、通过Hexo的插件来引用音乐:
-h">
+题目描述从 1~n 这 n 个整数中随机选出 m 个，输出所有可能的选择方案。
+输入">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -30,7 +28,7 @@ h">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hexo中引入音乐和视频 | Mr.Niu&#39;s Blog</title>
+    <title>AcWing-93.递归实现组合型枚举 | Mr.Niu&#39;s Blog</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -45,8 +43,9 @@ h">
     
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Mr.Niu's Blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"></script><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
 <script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
 </head>
 
 
@@ -284,12 +283,12 @@ h">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(42).png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_08.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo中引入音乐和视频</h1>
+                    <h1 class="description center-align post-title">AcWing-93.递归实现组合型枚举</h1>
                 </div>
             </div>
         </div>
@@ -406,12 +405,16 @@ h">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/aplayer/">
-                                <span class="chip bg-color">aplayer</span>
+                            <a href="/tags/AcWing/">
+                                <span class="chip bg-color">AcWing</span>
                             </a>
                         
-                            <a href="/tags/dplayer/">
-                                <span class="chip bg-color">dplayer</span>
+                            <a href="/tags/DFS/">
+                                <span class="chip bg-color">DFS</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%A0%88/">
+                                <span class="chip bg-color">栈</span>
                             </a>
                         
                     </div>
@@ -422,8 +425,8 @@ h">
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Hexo/" class="post-category">
-                                Hexo
+                            <a href="/categories/AcWing/" class="post-category">
+                                AcWing
                             </a>
                         
                     </div>
@@ -435,28 +438,28 @@ h">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-03
+                    2020-02-28
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-02-07
+                    2020-02-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    539
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    5 分
                 </div>
                 
 
@@ -472,80 +475,179 @@ h">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1、通过网易云网站引入外链HTML代码"><a href="#1、通过网易云网站引入外链HTML代码" class="headerlink" title="1、通过网易云网站引入外链HTML代码:"></a>1、通过网易云网站引入外链HTML代码:</h2><br>
+                <h2 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h2>
+    <div id="aplayer-OSiPyuXj" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="25638340" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
 
-<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200203211028.png" alt=""></p>
-<h4 id="如图所示，复制当中的HTML代码即可。"><a href="#如图所示，复制当中的HTML代码即可。" class="headerlink" title="如图所示，复制当中的HTML代码即可。"></a>如图所示，复制当中的HTML代码即可。</h4><p style="color:red; font-size:16px">效果如下:</p><p>
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&amp;id=1346281717&amp;auto=1&amp;height=66"></iframe>
 
-</p><h2 id="2、通过B站来引入外链HTML代码"><a href="#2、通过B站来引入外链HTML代码" class="headerlink" title="2、通过B站来引入外链HTML代码:"></a>2、通过B站来引入外链HTML代码:</h2><br>
+<blockquote>
+<p>题目链接：<a href="https://www.acwing.com/problem/content/95/" target="_blank" rel="noopener">93. 递归实现组合型枚举</a></p>
+</blockquote>
+<hr>
+<h2 id="题目背景："><a href="#题目背景：" class="headerlink" title="题目背景："></a>题目背景：</h2><blockquote>
+<p>递归实现，看完本篇你大概将知道递归转化为非递归方法！</p>
+</blockquote>
+<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>从 1~n 这 n 个整数中随机选出 m 个，输出所有可能的选择方案。</p>
+<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>两个整数 n,m ,在同一行用空格隔开。</p>
+<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>按照从小到大的顺序输出所有方案，每行1个。</p>
+<p>首先，同一行内的数升序排列，相邻两个数用一个空格隔开。</p>
+<p>其次，对于两个不同的行，对应下标的数一一比较，字典序较小的排在前面（例如1 3 5 7排在1 3 6 8前面）。</p>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>n&gt;0<br>0≤m≤n<br>n+(n−m)≤25</p>
+<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre><code>5 3</code></pre><h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre><code>1 2 3 
+1 2 4 
+1 2 5 
+1 3 4 
+1 3 5 
+1 4 5 
+2 3 4 
+2 3 5 
+2 4 5 
+3 4 5 </code></pre><p><strong>思考题</strong>：如果要求使用非递归方法，该怎么做呢？</p>
+<hr>
+<h2 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h2><h3 id="题目要求："><a href="#题目要求：" class="headerlink" title="题目要求："></a>题目要求：</h3><h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：</h3><blockquote>
+<p><a href="https://www.acwing.com/solution/AcWing/content/812/" target="_blank" rel="noopener">一篇好理解的题解，点击这里！</a></p>
+</blockquote>
+<h2 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h2><h3 id="题解一：最普通的递归："><a href="#题解一：最普通的递归：" class="headerlink" title="题解一：最普通的递归："></a>题解一：最普通的递归：</h3><p>不解释了！</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span> </span>
 
-<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200203212844.png" alt=""></p>
-<h4 id="如图所示，复制当中的HTML代码即可。-1"><a href="#如图所示，复制当中的HTML代码即可。-1" class="headerlink" title="如图所示，复制当中的HTML代码即可。"></a>如图所示，复制当中的HTML代码即可。</h4><p style="color:red; font-size:16px">效果如下:</p><p>
+using namespace std<span class="token punctuation">;</span>
 
-<iframe src="//player.bilibili.com/player.html?aid=84850049&amp;cid=145104388&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">;</span>
+<span class="token keyword">int</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+bool visit<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
 
-</p><h2 id="3、通过Hexo的插件来引用音乐"><a href="#3、通过Hexo的插件来引用音乐" class="headerlink" title="3、通过Hexo的插件来引用音乐:"></a>3、通过Hexo的插件来引用音乐:</h2><ul>
-<li><p>hexo-tag-aplayer： <a href="https://github.com/MoePlayer/hexo-tag-aplayer" target="_blank" rel="noopener">点击这里！</a></p>
-</li>
-<li><p>hexo-tag-dplayer： <a href="https://github.com/MoePlayer/hexo-tag-dplayer" target="_blank" rel="noopener">点击这里！</a></p>
-</li>
-</ul>
-<p style="color:red; font-size:16px">通过npm来安装两个插件：</p><p>
+<span class="token keyword">void</span> <span class="token function">dfs</span><span class="token punctuation">(</span><span class="token keyword">int</span> k<span class="token punctuation">,</span> <span class="token keyword">int</span> t<span class="token punctuation">,</span> <span class="token keyword">int</span> m<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>k <span class="token operator">==</span> m<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> k<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span> 
+    <span class="token punctuation">}</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> t <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>visit<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            a<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+            visit<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> true<span class="token punctuation">;</span>
+            <span class="token function">dfs</span><span class="token punctuation">(</span>k <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> i<span class="token punctuation">,</span> m<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            visit<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> false<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
-</p><pre class="line-numbers language-bash"><code class="language-bash">
-$ <span class="token function">npm</span> <span class="token function">install</span> hexo-tag-aplayer --save
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    cin <span class="token operator">>></span> n <span class="token operator">>></span> m<span class="token punctuation">;</span>
+    <span class="token function">dfs</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> m<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="题解二：这是错误的。。"><a href="#题解二：这是错误的。。" class="headerlink" title="题解二：这是错误的。。"></a>题解二：这是错误的。。</h3><p>题目要求最后要按字典序输出，如果用上次的二进制表示，结果没问题，但是顺序是乱的！没有规律的！</p>
+<p>Go Out！</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span> </span>
 
-$ <span class="token function">npm</span> <span class="token function">install</span> hexo-tag-dplayer --save<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="第一种：meting后面根歌单id。"><a href="#第一种：meting后面根歌单id。" class="headerlink" title="第一种：meting后面根歌单id。"></a>第一种：meting后面根歌单id。</h3><p>例如 :<a href="https://music.163.com/playlist?id=523845661&amp;userid=46562117" target="_blank" rel="noopener">https://music.163.com/playlist?id=523845661&amp;userid=46562117</a> ，这个歌</p>
-<p>单的id就是523845661，公司名可以是tencent、netease或是其他公司。</p>
+using namespace std<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    cin <span class="token operator">>></span> n <span class="token operator">>></span> m<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> k <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">>></span> j <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span> k<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>k <span class="token operator">==</span> m<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> t <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> t <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> t<span class="token operator">++</span><span class="token punctuation">)</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">>></span> t <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> t <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span> 
+        <span class="token punctuation">}</span>    
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="题解三：yxc大神的递归，以及递归转非递归："><a href="#题解三：yxc大神的递归，以及递归转非递归：" class="headerlink" title="题解三：yxc大神的递归，以及递归转非递归："></a>题解三：yxc大神的递归，以及递归转非递归：</h3><p>递归容易爆栈，有时候需要使用非递归！</p>
+<p>递归仍然和上一题一样，稍微修改一下，多一个计数器，如果sum + 后面可以取到的数的最大位数 n - u， 还达不到 要求的m为，直接return；后面为了输出按照字典序，要换一下dfs选与不选的顺序，至于为什么（自己大脑稍微模拟一下过程即可）。</p>
+<p>接下来就是，转化为非递归的做法，将递归的过程分为三部分，如图上所标示的：</p>
+<p>pos 为0，为1，为2，三种状态！</p>
+<p>使用State结构体存储状态，多一个pos来标识当前处于的状态：</p>
+<p>将初状态鸭压入栈中：<code>stk.push({0, 0, 0, 0});</code></p>
+<p>进入while循环来判断三种状态：</p>
 <ul>
-<li>最新版的 hexo-tag-aplayer 已经支持了MetingJS的使用，可以直接解析网络平台的歌曲，在站点配置文件_config.yml中将aplayer的meting属性开启。</li>
+<li>pos = 0，将递归的那一段写进去，改一下变量，将return改为continue，然后将当前状态改为1，压入栈中，将状态0的最后一句dfs也压入栈中。</li>
+<li>pos = 1，将当前状态改为2，压入栈中，将状态1的那一句dfs也压入栈中。</li>
+<li>pos =  2， 直接continue。</li>
 </ul>
-<pre class="line-numbers language-yaml"><code class="language-yaml">
-<span class="token key atrule">aplayer</span><span class="token punctuation">:</span>
-    <span class="token key atrule">meting</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li><p><a href="https://www.jianshu.com/p/f1005ae09e5a" target="_blank" rel="noopener">参考文章：点击这里！</a></p>
-</li>
-<li><p><a href="https://blog.csdn.net/hushhw/article/details/88092728" target="_blank" rel="noopener">有关细节及参数，点击这里！</a></p>
-</li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">{</span><span class="token operator">%</span> meting <span class="token string">"523845661"</span> <span class="token string">"netease"</span> <span class="token string">"playlist"</span> <span class="token string">"theme:#FF4081"</span> <span class="token string">"mode:circulation"</span> <span class="token string">"mutex:true"</span> <span class="token string">"listmaxheight:340px"</span> <span class="token string">"preload:auto"</span> <span class="token operator">%</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-{% meting "523845661" "netease" "playlist" "theme:#FF4081" "mode:circulation" "mutex:true" "listmaxheight:340px" "preload:auto" %}
+<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stack></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span> </span>
 
-<h3 id="第二种：写上名字，歌手，链接地址即可。"><a href="#第二种：写上名字，歌手，链接地址即可。" class="headerlink" title="第二种：写上名字，歌手，链接地址即可。"></a>第二种：写上名字，歌手，链接地址即可。</h3><ul>
-<li><a href="https://www.zhsh666.xyz/2019/08/19/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E9%9F%B3%E4%B9%90-%E8%A7%86%E9%A2%91/" target="_blank" rel="noopener">参考文章：点击这里！</a></li>
-</ul>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">{</span><span class="token operator">%</span> aplayer <span class="token string">"她的睫毛"</span> <span class="token string">"周杰伦"</span> <span class="token string">"https://home.ustc.edu.cn/~mmmwhy/%d6%dc%bd%dc%c2%d7%20-%20%cb%fd%b5%c4%bd%de%c3%ab.mp3"</span>  <span class="token string">"http://home.ustc.edu.cn/~mmmwhy/jay.jpg"</span> <span class="token string">"autoplay=false"</span> <span class="token operator">%</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+using namespace std<span class="token punctuation">;</span>
 
-        <div id="aplayer-FaAxRdJz" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
-            <pre class="aplayer-lrc-content"></pre>
-        </div>
-        <script>
-          var ap = new APlayer({
-            element: document.getElementById("aplayer-FaAxRdJz"),
-            narrow: false,
-            autoplay: false,
-            showlrc: false,
-            music: {
-              title: "她的睫毛",
-              author: "周杰伦",
-              url: "https://home.ustc.edu.cn/~mmmwhy/%d6%dc%bd%dc%c2%d7%20-%20%cb%fd%b5%c4%bd%de%c3%ab.mp3",
-              pic: "http://home.ustc.edu.cn/~mmmwhy/jay.jpg",
-              lrc: ""
-            }
-          });
-          window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap);
-        </script>
+<span class="token keyword">struct</span> State
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> pos<span class="token punctuation">,</span> u<span class="token punctuation">,</span> sum<span class="token punctuation">,</span> state<span class="token punctuation">;</span>    
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 
-<h3 id="通过meting-和-aplayer-的引用，无法同时使用，都在的时候，只能加载meting"><a href="#通过meting-和-aplayer-的引用，无法同时使用，都在的时候，只能加载meting" class="headerlink" title="通过meting 和 aplayer 的引用，无法同时使用，都在的时候，只能加载meting!"></a>通过meting 和 aplayer 的引用，无法同时使用，都在的时候，只能加载meting!</h3><h2 id="4、通过Hexo的插件来引用视频"><a href="#4、通过Hexo的插件来引用视频" class="headerlink" title="4、通过Hexo的插件来引用视频:"></a>4、通过Hexo的插件来引用视频:</h2><p style="color:red; font-size:16px">效果如下:</p><p>
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">;</span>
 
-</p><pre class="line-numbers language-javascript"><code class="language-javascript">
-<span class="token punctuation">{</span><span class="token operator">%</span> dplayer <span class="token string">"url=http://home.ustc.edu.cn/~mmmwhy/GEM.mp4"</span>  <span class="token string">"pic=http://home.ustc.edu.cn/~mmmwhy/GEM.jpg"</span> <span class="token string">"loop=yes"</span> <span class="token string">"theme=#FADFA3"</span> <span class="token string">"autoplay=false"</span> <span class="token string">"token=tokendemo"</span> <span class="token operator">%</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"http://home.ustc.edu.cn/~mmmwhy/GEM.mp4","pic":"http://home.ustc.edu.cn/~mmmwhy/GEM.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+<span class="token keyword">void</span> <span class="token function">dfs</span><span class="token punctuation">(</span><span class="token keyword">int</span> u<span class="token punctuation">,</span> <span class="token keyword">int</span> sum<span class="token punctuation">,</span> <span class="token keyword">int</span> state<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// pos = 0</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>sum <span class="token operator">+</span> n <span class="token operator">-</span> u <span class="token operator">&lt;</span> m<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>sum <span class="token operator">==</span> m<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>state <span class="token operator">>></span> i <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> i <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span><span class="token string">" "</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>    
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">dfs</span><span class="token punctuation">(</span>u <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> sum <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> state <span class="token operator">|</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> u<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// pos = 1</span>
+    <span class="token function">dfs</span><span class="token punctuation">(</span>u <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> sum<span class="token punctuation">,</span> state<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// pos = 2</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    cin <span class="token operator">>></span> n <span class="token operator">>></span> m<span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//dfs(0, 0, 0);</span>
+    stack<span class="token operator">&lt;</span>State<span class="token operator">></span> stk<span class="token punctuation">;</span>
+    stk<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">while</span><span class="token punctuation">(</span>stk<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        State t <span class="token operator">=</span> stk<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        stk<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span>pos <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span>sum <span class="token operator">+</span> n <span class="token operator">-</span> t<span class="token punctuation">.</span>u <span class="token operator">&lt;</span> m<span class="token punctuation">)</span> <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span>sum <span class="token operator">==</span> m<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+                    <span class="token keyword">if</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span>state <span class="token operator">>></span> i <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> i <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span><span class="token punctuation">;</span>
+                cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+                <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            t<span class="token punctuation">.</span>pos <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            stk<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            stk<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span> t<span class="token punctuation">.</span>u <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> t<span class="token punctuation">.</span>sum <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> t<span class="token punctuation">.</span>state <span class="token operator">|</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> t<span class="token punctuation">.</span>u<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span>pos <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            t<span class="token punctuation">.</span>pos <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+            stk<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            stk<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span> t<span class="token punctuation">.</span>u <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> t<span class="token punctuation">.</span>sum<span class="token punctuation">,</span> t<span class="token punctuation">.</span>state<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token keyword">continue</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -589,7 +691,7 @@ $ <span class="token function">npm</span> <span class="token function">install</
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://niuxvdong.top/posts/14163.html">https://niuxvdong.top/posts/14163.html</a>
+                    <a href="https://niuxvdong.top/posts/53888.html">https://niuxvdong.top/posts/53888.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -627,12 +729,16 @@ $ <span class="token function">npm</span> <span class="token function">install</
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/aplayer/">
-                                    <span class="chip bg-color">aplayer</span>
+                                <a href="/tags/AcWing/">
+                                    <span class="chip bg-color">AcWing</span>
                                 </a>
                             
-                                <a href="/tags/dplayer/">
-                                    <span class="chip bg-color">dplayer</span>
+                                <a href="/tags/DFS/">
+                                    <span class="chip bg-color">DFS</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%A0%88/">
+                                    <span class="chip bg-color">栈</span>
                                 </a>
                             
                         </div>
@@ -820,51 +926,68 @@ $ <span class="token function">npm</span> <span class="token function">install</
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/57378.html">
+                <a href="/posts/53888.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e (49).jpg" class="responsive-img" alt="hexo-theme-matery主题配置详解">
+                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_08.jpg" class="responsive-img" alt="AcWing-93.递归实现组合型枚举">
                         
-                        <span class="card-title">hexo-theme-matery主题配置详解</span>
+                        <span class="card-title">AcWing-93.递归实现组合型枚举</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            hexo-theme-matery
-这是一个采用 Material Design 和响应式设计的 Hexo 博客主题。
+                            首先来首歌曲来放松一下吧！
+    
 
-特性
-简单漂亮，文章内容美观易读
-Material Design 设计
-响应式设计，博客在桌面端、平板、手机等设备上均
+
+
+
+题目链接：93. 递归实现组合型枚举
+
+
+题目背景：
+递归实现，看完本篇你大概将知道递归转化为非递归方法！
+
+题目描述从 1~n 这 n 个整数中随机选出 m 个，输出所有可能的选择方案。
+输入
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Hexo%E4%B8%BB%E9%A2%98/" class="post-category">
-                                    Hexo主题
+                            <a href="/categories/AcWing/" class="post-category">
+                                    AcWing
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/matery/">
-                        <span class="chip bg-color">matery</span>
+                    <a href="/tags/AcWing/">
+                        <span class="chip bg-color">AcWing</span>
+                    </a>
+                    
+                    <a href="/tags/DFS/">
+                        <span class="chip bg-color">DFS</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%A0%88/">
+                        <span class="chip bg-color">栈</span>
                     </a>
                     
                 </div>
@@ -878,31 +1001,44 @@ Material Design 设计
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/25708.html">
+                <a href="/posts/14886.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (31).jpg" class="responsive-img" alt="用法总结之Markdown">
+                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_41.jpg" class="responsive-img" alt="AcWing-92.递归实现指数型枚举">
                         
-                        <span class="card-title">用法总结之Markdown</span>
+                        <span class="card-title">AcWing-92.递归实现指数型枚举</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。Markdown 编写的文档可以导出 HTML 、Word、图像、
+                            首先来首歌曲来放松一下吧！
+    
+
+
+
+
+题目链接：92. 递归实现指数型枚举
+
+
+题目背景：
+多种做法！
+
+题目描述从 1~n 这 n 个整数中随机选取任意多个，输出所有可能的选择方案。
+输入格式输入一个整数n。
+输出格式每行输出一种
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-28
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Markdown/" class="post-category">
-                                    Markdown
+                            <a href="/categories/AcWing/" class="post-category">
+                                    AcWing
                                 </a>
                             
                             
@@ -912,8 +1048,20 @@ Markdown 是一种轻量级标记语言，它允许人们使用易读易写的�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
+                    <a href="/tags/AcWing/">
+                        <span class="chip bg-color">AcWing</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/">
+                        <span class="chip bg-color">二进制</span>
+                    </a>
+                    
+                    <a href="/tags/DFS/">
+                        <span class="chip bg-color">DFS</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/">
+                        <span class="chip bg-color">状态压缩</span>
                     </a>
                     
                 </div>
