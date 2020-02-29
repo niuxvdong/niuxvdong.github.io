@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://niuxvdong.top/"/>
-  <updated>2020-02-29T09:12:18.749Z</updated>
+  <updated>2020-02-29T10:02:42.900Z</updated>
   <id>https://niuxvdong.top/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AcWing-96.奇怪的汉诺塔</title>
+    <link href="https://niuxvdong.top/posts/34850.html"/>
+    <id>https://niuxvdong.top/posts/34850.html</id>
+    <published>2020-02-29T09:44:12.000Z</published>
+    <updated>2020-02-29T10:02:42.900Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://niuxvdong.top/categories/AcWing/"/>
+    
+    
+      <category term="AcWing" scheme="https://niuxvdong.top/tags/AcWing/"/>
+    
+      <category term="Dp" scheme="https://niuxvdong.top/tags/Dp/"/>
+    
+      <category term="递推" scheme="https://niuxvdong.top/tags/%E9%80%92%E6%8E%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>AcWing-95.费解的开关</title>
     <link href="https://niuxvdong.top/posts/18232.html"/>
     <id>https://niuxvdong.top/posts/18232.html</id>
     <published>2020-02-29T08:39:12.000Z</published>
-    <updated>2020-02-29T09:12:18.749Z</updated>
+    <updated>2020-02-29T09:12:51.492Z</updated>
     
     <summary type="html">
     
@@ -584,35 +615,6 @@
     
     
       <category term="matery" scheme="https://niuxvdong.top/tags/matery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo中引入音乐和视频</title>
-    <link href="https://niuxvdong.top/posts/14163.html"/>
-    <id>https://niuxvdong.top/posts/14163.html</id>
-    <published>2020-02-03T13:06:43.000Z</published>
-    <updated>2020-02-07T06:29:17.338Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="https://niuxvdong.top/categories/Hexo/"/>
-    
-    
-      <category term="aplayer" scheme="https://niuxvdong.top/tags/aplayer/"/>
-    
-      <category term="dplayer" scheme="https://niuxvdong.top/tags/dplayer/"/>
     
   </entry>
   
