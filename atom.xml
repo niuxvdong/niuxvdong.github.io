@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://niuxvdong.top/"/>
-  <updated>2020-02-29T11:21:51.760Z</updated>
+  <updated>2020-02-29T15:20:16.766Z</updated>
   <id>https://niuxvdong.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AcWing-99.激光炸弹</title>
+    <link href="https://niuxvdong.top/posts/26178.html"/>
+    <id>https://niuxvdong.top/posts/26178.html</id>
+    <published>2020-02-29T14:07:26.000Z</published>
+    <updated>2020-02-29T15:20:16.766Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://niuxvdong.top/categories/AcWing/"/>
+    
+    
+      <category term="AcWing" scheme="https://niuxvdong.top/tags/AcWing/"/>
+    
+      <category term="二维前缀和" scheme="https://niuxvdong.top/tags/%E4%BA%8C%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>AcWing-96.奇怪的汉诺塔</title>
@@ -588,33 +617,6 @@
       <category term="Git" scheme="https://niuxvdong.top/tags/Git/"/>
     
       <category term="Github" scheme="https://niuxvdong.top/tags/Github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo-theme-matery主题配置详解</title>
-    <link href="https://niuxvdong.top/posts/57378.html"/>
-    <id>https://niuxvdong.top/posts/57378.html</id>
-    <published>2020-02-05T04:24:09.000Z</published>
-    <updated>2020-02-05T04:24:09.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Hexo主题" scheme="https://niuxvdong.top/categories/Hexo%E4%B8%BB%E9%A2%98/"/>
-    
-    
-      <category term="matery" scheme="https://niuxvdong.top/tags/matery/"/>
     
   </entry>
   
