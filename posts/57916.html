@@ -6,8 +6,21 @@
 <head>
 	<meta name="google-site-verification" content="GLWtLaS4mFunxxL-saY-q47wXZoXVOxwJ606SiFtDts" />
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Blog,博客,Java,js,JavaScript,C,C++,SQL,Python,Git">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="AcWing-104.货仓选址, Blog,博客,Java,js,JavaScript,C,C++,SQL,Python,Git">
+    <meta name="description" content="首先来首歌曲来放松一下吧！
+    
+
+
+
+
+题目链接：104. 货仓选址
+
+
+题目背景：
+贪心，贪的我很服。。。
+
+题目描述在一条数轴上有 N 家商店，它们的坐标分别为 A1~AN。
+现在需要在数轴上建立一家货仓，每天清晨，从货仓到每家商">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +28,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World | Mr.Niu&#39;s Blog</title>
+    <title>AcWing-104.货仓选址 | Mr.Niu&#39;s Blog</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -30,7 +43,10 @@
     
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Mr.Niu's Blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
+</head>
 
 
 <body>
@@ -267,12 +283,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(35).png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(7).jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">AcWing-104.货仓选址</h1>
                 </div>
             </div>
         </div>
@@ -389,8 +405,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Doc/">
-                                <span class="chip bg-color">Doc</span>
+                            <a href="/tags/AcWing/">
+                                <span class="chip bg-color">AcWing</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%B4%AA%E5%BF%83/">
+                                <span class="chip bg-color">贪心</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%8E%92%E5%BA%8F/">
+                                <span class="chip bg-color">排序</span>
                             </a>
                         
                     </div>
@@ -401,8 +425,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Hexo/" class="post-category">
-                                Hexo
+                            <a href="/categories/AcWing/" class="post-category">
+                                AcWing
                             </a>
                         
                     </div>
@@ -414,28 +438,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-31
+                    2020-03-03
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-02-11
+                    2020-03-03
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    125
+                    932
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -451,15 +475,95 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h2 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h2>
+    <div id="aplayer-ISbLyehA" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="554241732" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+
+
+
+<blockquote>
+<p>题目链接：<a href="https://www.acwing.com/problem/content/description/106/" target="_blank" rel="noopener">104. 货仓选址</a></p>
+</blockquote>
+<hr>
+<h2 id="题目背景："><a href="#题目背景：" class="headerlink" title="题目背景："></a>题目背景：</h2><blockquote>
+<p>贪心，贪的我很服。。。</p>
+</blockquote>
+<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>在一条数轴上有 N 家商店，它们的坐标分别为 A1~AN。</p>
+<p>现在需要在数轴上建立一家货仓，每天清晨，从货仓到每家商店都要运送一车商品。</p>
+<p>为了提高效率，求把货仓建在何处，可以使得货仓到每家商店的距离之和最小。</p>
+<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>第一行输入整数N。</p>
+<p>第二行N个整数A1~AN。</p>
+<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>输出一个整数，表示距离之和的最小值。</p>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤N≤100000</p>
+<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre><code>4
+6 2 9 1</code></pre><h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre><code>12</code></pre><h2 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h2><h3 id="题目要求："><a href="#题目要求：" class="headerlink" title="题目要求："></a>题目要求：</h3><p>有N个商店，要求放一个仓库使得到所有商店的距离和最小，输出最小值！</p>
+<h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：</h3><p>第一想法就是暴力扫描一遍，选出最小值即可！但是超时了，数据范围为1e5，平方就是1e10，肯定超时，详见题解一的代码：</p>
+<p>正确思路：</p>
+<p>先排序，使其变成一条链状的情况！</p>
+<p>把a[0] ~ a[N-1]排序，设货仓在X坐标处，X左侧的商店有P家，右侧的商店有Q家。若P &lt; Q，则每把仓库的选址向右移动1单位距离，距离之和就会变少Q - P.同理，若P &gt; Q，则仓库的选址向左移动会使距离之和变小。当P==Q时为最优解。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://img.niuxvdong.top/20200303131219.png" alt=""></p>
+<p>结合图片，红色的圈表示商店，蓝色的箭头表示仓库的所在地：</p>
+<ul>
+<li>第一种情况：左边的商店数目小于右边时，往右移动，则左边的都要加一，右边的都要减一，而右边的多，所以最终距离和会变小！</li>
+<li>第二种情况：左边的商店数目大于右边时，往左移动，则左边的都要减一，右边的都要加一，而左边的多，所以最终距离和会变小！</li>
+<li>第三种情况：第一种情况左移，和第二种情况右移，会发现最终都是变大的！</li>
+</ul>
+<p>总结：仓库的位置一定不在靠左，也不在靠右，因为，如果在两边，都会有更优的地方，可以取到最小值！所以中间一定是最优的地方；</p>
+<p>也就是上图的红色箭头处，五个仓库取中间即可！</p>
+<p>分一下奇偶数情况，都进行取中位数即可，即仓库从N个商店中找一个中间商店，若为偶数则随便即可！我们统一选择偶数时编号小的那个：即<code>res = n- 1 &gt;&gt; 1</code></p>
+<blockquote>
+<p><a href="https://www.acwing.com/solution/AcWing/content/5382/" target="_blank" rel="noopener">一篇好理解一点的题解：点击这里！</a></p>
+</blockquote>
+<h2 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h2><h3 id="题解一：（TLE）超时代码"><a href="#题解一：（TLE）超时代码" class="headerlink" title="题解一：（TLE）超时代码"></a>题解一：（TLE）超时代码</h3><p>时间复杂度：O(N<sup>2</sup>)</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;algorithm></span></span>
+
+using namespace std<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">100010</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> b<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> k<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> n<span class="token punctuation">;</span>
+    cin <span class="token operator">>></span> n<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> cin <span class="token operator">>></span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token function">sort</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> a <span class="token operator">+</span> n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token number">0x3f</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> a<span class="token punctuation">[</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            sum <span class="token operator">+</span><span class="token operator">=</span> <span class="token function">abs</span><span class="token punctuation">(</span>i <span class="token operator">-</span> a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        b<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">sort</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span> b <span class="token operator">+</span> k<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cout <span class="token operator">&lt;&lt;</span> b<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="题解二：选取中位数为仓库处"><a href="#题解二：选取中位数为仓库处" class="headerlink" title="题解二：选取中位数为仓库处"></a>题解二：选取中位数为仓库处</h3><p>时间复杂度：O(N)</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;algorithm></span></span>
+
+using namespace std<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">100010</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> n<span class="token punctuation">;</span>
+    cin <span class="token operator">>></span> n<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> cin <span class="token operator">>></span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token function">sort</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> a <span class="token operator">+</span> n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> 
+    <span class="token keyword">int</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+        sum <span class="token operator">+</span><span class="token operator">=</span> <span class="token function">abs</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>res<span class="token punctuation">]</span> <span class="token operator">-</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cout <span class="token operator">&lt;&lt;</span> sum <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -503,7 +607,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://niuxvdong.top/posts/16107.html">https://niuxvdong.top/posts/16107.html</a>
+                    <a href="https://niuxvdong.top/posts/57916.html">https://niuxvdong.top/posts/57916.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -541,8 +645,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Doc/">
-                                    <span class="chip bg-color">Doc</span>
+                                <a href="/tags/AcWing/">
+                                    <span class="chip bg-color">AcWing</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%B4%AA%E5%BF%83/">
+                                    <span class="chip bg-color">贪心</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%8E%92%E5%BA%8F/">
+                                    <span class="chip bg-color">排序</span>
                                 </a>
                             
                         </div>
@@ -730,83 +842,48 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/25708.html">
+                <a href="/posts/57916.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (31).jpg" class="responsive-img" alt="用法总结之Markdown">
+                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(7).jpg" class="responsive-img" alt="AcWing-104.货仓选址">
                         
-                        <span class="card-title">用法总结之Markdown</span>
+                        <span class="card-title">AcWing-104.货仓选址</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。Markdown 编写的文档可以导出 HTML 、Word、图像、
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-03
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Markdown/" class="post-category">
-                                    Markdown
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/posts/16107.html">
-                    <div class="card-image">
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(35).png" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            首先来首歌曲来放松一下吧！
+    
+
+
+
+
+题目链接：104. 货仓选址
+
+
+题目背景：
+贪心，贪的我很服。。。
+
+题目描述在一条数轴上有 N 家商店，它们的坐标分别为 A1~AN。
+现在需要在数轴上建立一家货仓，每天清晨，从货仓到每家商
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-31
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-03
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Hexo/" class="post-category">
-                                    Hexo
+                            <a href="/categories/AcWing/" class="post-category">
+                                    AcWing
                                 </a>
                             
                             
@@ -817,8 +894,88 @@ Markdown 是一种轻量级标记语言，它允许人们使用易读易写的�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Doc/">
-                        <span class="chip bg-color">Doc</span>
+                    <a href="/tags/AcWing/">
+                        <span class="chip bg-color">AcWing</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%B4%AA%E5%BF%83/">
+                        <span class="chip bg-color">贪心</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%8E%92%E5%BA%8F/">
+                        <span class="chip bg-color">排序</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/35910.html">
+                    <div class="card-image">
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/31.jpg" class="responsive-img" alt="AcWing-102.最佳牛围栏">
+                        
+                        <span class="card-title">AcWing-102.最佳牛围栏</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            首先来首歌曲来放松一下吧！
+    
+
+
+
+
+题目链接：102. 最佳牛围栏
+
+
+题目背景：
+一道难题，前缀和，差分，双指针的叠加应用！
+
+题目描述农夫约翰的农场由 N 块田地组成，每块地里都有一定数量的牛,其数量不会少于1头，也不会超过2
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/AcWing/" class="post-category">
+                                    AcWing
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/AcWing/">
+                        <span class="chip bg-color">AcWing</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/">
+                        <span class="chip bg-color">前缀和</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%BA%8C%E5%88%86/">
+                        <span class="chip bg-color">二分</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/">
+                        <span class="chip bg-color">双指针</span>
                     </a>
                     
                 </div>
