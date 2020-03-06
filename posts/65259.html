@@ -440,7 +440,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-04
+                    2020-03-06
                 </div>
                 
 
@@ -471,7 +471,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h2>
-    <div id="aplayer-LowYPIlu" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1315718569" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+    <div id="aplayer-CaqEMirP" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1315718569" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
 
 
 
@@ -514,11 +514,11 @@ ab</code></pre><h4 id="输出样例："><a href="#输出样例：" class="header
 <h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：</h3><p>先举一个例子：假如输入 <code>cdfg</code> ，要怎么计算了？</p>
 <p><strong>先看长度为字符串长度的处理：</strong></p>
 <ul>
-<li>c开头的一定排在a和b开头的后面，我们可以先算出a打头的长度为3的字符串有多少个，用C(26 - 1, 3 - 1) 表示从25个字符中组合2长度的组合种类！这句话是不是相当于C <sup>2</sup><sub>25</sub> 了，即数学中的排列组合的组合，这样既可保证不重不漏，还可以保证字典序正确！</li>
-<li>a完了，还有b开头的长度为3的字符串种类，即C(26 - 2, 3 - 1)</li>
+<li>c开头的一定排在a和b开头的后面，我们可以先算出a打头的长度为4的字符串有多少个，用C(26 - 1, 4 - 1) 表示从25个字符中组合3长度的组合种类！这句话是不是相当于C <sup>3</sup><sub>25</sub> 了，即数学中的排列组合的组合，这样既可保证不重不漏，还可以保证字典序正确！</li>
+<li>a完了，还有b开头的长度为4的字符串种类，即C(26 - 2, 4 - 1)</li>
 <li>ab完了，到了c，很明显，c不需要处理</li>
 <li>往后移动，到了d的位置，c的下一个就是d，不需要处理</li>
-<li>下一个f，会发现f一定在e开头的长度为2的字符串之后，所以需要继续统计,即C(26 - 5 , 3 - 2)</li>
+<li>下一个f，会发现f一定在e开头的长度为2的字符串之后，所以需要继续统计,即C(26 - 5 , 4 - 3)</li>
 <li>继续发现下一个是g，这也是最后一个，就简单了，不需要用到组合，g一定在a之后，最后直接累加一下a ~ g的编号即可！</li>
 </ul>
 <p><strong>再看长度小于字符串长度的处理：</strong></p>
