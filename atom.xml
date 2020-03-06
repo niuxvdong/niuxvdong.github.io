@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://niuxvdong.top/"/>
-  <updated>2020-03-06T04:27:22.798Z</updated>
+  <updated>2020-03-06T09:46:34.397Z</updated>
   <id>https://niuxvdong.top/</id>
   
   <author>
@@ -17,11 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AcWing-108.奇数码问题</title>
+    <link href="https://niuxvdong.top/posts/12934.html"/>
+    <id>https://niuxvdong.top/posts/12934.html</id>
+    <published>2020-03-06T08:12:44.000Z</published>
+    <updated>2020-03-06T09:46:34.397Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://niuxvdong.top/categories/AcWing/"/>
+    
+    
+      <category term="AcWing" scheme="https://niuxvdong.top/tags/AcWing/"/>
+    
+      <category term="逆序对" scheme="https://niuxvdong.top/tags/%E9%80%86%E5%BA%8F%E5%AF%B9/"/>
+    
+      <category term="归并排序" scheme="https://niuxvdong.top/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"/>
+    
+      <category term="奇偶性" scheme="https://niuxvdong.top/tags/%E5%A5%87%E5%81%B6%E6%80%A7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>AcWing-107.超快速排序</title>
     <link href="https://niuxvdong.top/posts/8382.html"/>
     <id>https://niuxvdong.top/posts/8382.html</id>
     <published>2020-03-06T03:58:14.000Z</published>
-    <updated>2020-03-06T04:27:22.798Z</updated>
+    <updated>2020-03-06T04:28:00.816Z</updated>
     
     <summary type="html">
     
@@ -602,37 +635,6 @@
       <category term="逆序对" scheme="https://niuxvdong.top/tags/%E9%80%86%E5%BA%8F%E5%AF%B9/"/>
     
       <category term="归并排序" scheme="https://niuxvdong.top/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AcWing-1326.军训队列</title>
-    <link href="https://niuxvdong.top/posts/13968.html"/>
-    <id>https://niuxvdong.top/posts/13968.html</id>
-    <published>2020-02-25T11:08:02.000Z</published>
-    <updated>2020-02-25T12:23:28.320Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="AcWing" scheme="https://niuxvdong.top/categories/AcWing/"/>
-    
-    
-      <category term="AcWing" scheme="https://niuxvdong.top/tags/AcWing/"/>
-    
-      <category term="贪心" scheme="https://niuxvdong.top/tags/%E8%B4%AA%E5%BF%83/"/>
-    
-      <category term="Dp" scheme="https://niuxvdong.top/tags/Dp/"/>
     
   </entry>
   
