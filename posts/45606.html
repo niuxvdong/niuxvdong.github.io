@@ -6,17 +6,19 @@
 <head>
 	<meta name="google-site-verification" content="GLWtLaS4mFunxxL-saY-q47wXZoXVOxwJ606SiFtDts" />
     <meta charset="utf-8">
-    <meta name="keywords" content="AcWing-788.逆序对的数量, Blog,博客,Java,js,JavaScript,C,C++,SQL,Python,Git">
+    <meta name="keywords" content="AcWing-109.天才ACM, Blog,博客,Java,js,JavaScript,C,C++,SQL,Python,Git">
     <meta name="description" content="首先来首歌曲来放松一下吧！
     
 
 
 
 
-题目链接：788. 逆序对的数量
+题目链接：109. 天才ACM
 
-题目背景：题目描述给定一个长度为n的整数数列，请你计算数列中的逆序对的数量。
-逆序对的定义如下：对于数列的第 i 个和第 j 个元素，如果满足 i &amp;lt; ">
+题目背景：
+又是一道好题，参考了许多题解，明白后，有因为粗心，debug了好久才AC了！
+
+题目描述给定一个整数 M，对于任意一个整数集合 S，定义“校验值”如">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,7 +26,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>AcWing-788.逆序对的数量 | Mr.Niu&#39;s Blog</title>
+    <title>AcWing-109.天才ACM | Mr.Niu&#39;s Blog</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -279,12 +281,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_35.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://img.niuxvdong.top/1067199.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">AcWing-788.逆序对的数量</h1>
+                    <h1 class="description center-align post-title">AcWing-109.天才ACM</h1>
                 </div>
             </div>
         </div>
@@ -405,12 +407,16 @@
                                 <span class="chip bg-color">AcWing</span>
                             </a>
                         
-                            <a href="/tags/%E9%80%86%E5%BA%8F%E5%AF%B9/">
-                                <span class="chip bg-color">逆序对</span>
+                            <a href="/tags/%E8%B4%AA%E5%BF%83/">
+                                <span class="chip bg-color">贪心</span>
                             </a>
                         
                             <a href="/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/">
                                 <span class="chip bg-color">归并排序</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%80%8D%E5%A2%9E/">
+                                <span class="chip bg-color">倍增</span>
                             </a>
                         
                     </div>
@@ -434,28 +440,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-26
+                    2020-03-07
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-02-26
+                    2020-03-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    871
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    6 分
                 </div>
                 
 
@@ -472,84 +478,147 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h2>
-    <div id="aplayer-sANCKJge" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="569214250" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+    <div id="aplayer-wSwmVzNc" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="449818741" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
 
 
 
 <blockquote>
-<p>题目链接：<a href="https://www.acwing.com/problem/content/description/790/" target="_blank" rel="noopener">788. 逆序对的数量</a></p>
+<p>题目链接：<a href="https://www.acwing.com/problem/content/111/" target="_blank" rel="noopener">109. 天才ACM</a></p>
 </blockquote>
-<h2 id="题目背景："><a href="#题目背景：" class="headerlink" title="题目背景："></a>题目背景：</h2><h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>给定一个长度为n的整数数列，请你计算数列中的逆序对的数量。</p>
-<p>逆序对的定义如下：对于数列的第 i 个和第 j 个元素，如果满足 i &lt; j 且 a[i] &gt; a[j]，则其为一个逆序对；否则不是。</p>
-<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>第一行包含整数n，表示数列的长度。</p>
-<p>第二行包含 n 个整数，表示整个数列。</p>
-<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>输出一个整数，表示逆序对的个数。</p>
-<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤n≤100000</p>
-<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre><code>6
-2 3 4 5 6 1</code></pre><h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre><code>5</code></pre><h2 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h2><h3 id="题目要求："><a href="#题目要求：" class="headerlink" title="题目要求："></a>题目要求：</h3><p>题目要求求出逆序对的数目，所谓逆序对就是后面的数小于前面的数就是一组！</p>
-<h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：</h3><p>首先，应该想到逆序对不就是从小大大排序时，需要交换的两者吗？所以可以使用冒泡排序，在进行交换时就进行++记录。</p>
-<p>但是：很明显冒泡排序复杂度太大，是O(N) 的，一定超时。</p>
-<p>所以又想到归并排序，归并排序也有逆序对的交换，所以也可以进行记录。时间复杂度为O(NlogN)！</p>
+<h2 id="题目背景："><a href="#题目背景：" class="headerlink" title="题目背景："></a>题目背景：</h2><blockquote>
+<p>又是一道好题，参考了许多题解，明白后，有因为粗心，debug了好久才AC了！</p>
+</blockquote>
+<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>给定一个整数 M，对于任意一个整数集合 S，定义“校验值”如下:</p>
+<p>从集合 S 中取出 M 对数(即 2∗M 个数，不能重复使用集合中的数，如果 S 中的整数不够 M 对，则取到不能取为止)，使得“每对数的差的平方”之和最大，这个最大值就称为集合 S 的“校验值”。</p>
+<p>现在给定一个长度为 N 的数列 A 以及一个整数 T。</p>
+<p>我们要把 A 分成若干段，使得每一段的“校验值”都不超过 T。</p>
+<p>求最少需要分成几段。</p>
+<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>第一行输入整数 K，代表有 K 组测试数据。</p>
+<p>对于每组测试数据，第一行包含三个整数 N,M,T 。</p>
+<p>第二行包含 N 个整数，表示数列A1,A2…AN。</p>
+<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>对于每组测试数据，输出其答案，每个答案占一行。</p>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤K≤12<br>1≤N,M≤500000<br>0≤T≤10<sup>18</sup><br>0≤Ai≤2<sup>20</sup></p>
+<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre><code>2
+5 1 49
+8 2 1 7 9
+5 1 64
+8 2 1 7 9</code></pre><h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre><code>2
+1</code></pre><h2 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h2><h3 id="题目要求："><a href="#题目要求：" class="headerlink" title="题目要求："></a>题目要求：</h3><p>校验值：就是每对数的差的平方之和</p>
+<p>将一个序列分成若干段，使得每一段的校验值都不超过T，求可分成的最小段数！</p>
+<p>每一段要取出M对数，即2 * M 个数，取到不能取为止！</p>
+<h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：</h3><p>贪心 + 归并(只用到合并) + 倍增</p>
+<p>首先一段的校验值最大，很简单，直接排序后，取一个最大值和一个最小值，每次都去最大最小即可，这样贪心得到的校验值就是这一段的最大值！（当然不能重复取！）</p>
+<p>如何可以使得段数尽可能的小了？</p>
+<p>那么一段要取多长？</p>
+<p>我们可以进行二分，每次都将二分得到的区间计算的到的校验值和T比较即可，然后动态的改变右端点！</p>
+<p>但是这样得到的区间要想计算校验值，得进行该序列的排序，用到sort，复杂度石灰超时的！</p>
+<p>这是可以用倍增来解决这个问题！</p>
+<p>要想使段数尽可能少，则要保证每一段在不超过T的情况下，尽可能的长！</p>
+<p>用 l 和 r 指向区间的左右端点，若区间不超过T，就进行倍增拓展长度（p），p 成倍增加，r 也要一直后移；若某次成倍增加是校验值超过T，则当前p就得成倍减少，直到p为0，此时就是说明找到了不超过T的最大长度！</p>
+<p>第一段开始，已排序序列b数组需要和那段倍增的长度进行拓展，需要进行排序，但是 b 数组已经有序，根本不需要去整段去排序，将倍增长度排序后，直接使用归并进行两个序列的合并，得到一个新数组即可！</p>
+<p>其后的每一段合并时，b数组都是排好序的，这样可以大大减少时间消耗！</p>
+<p>b数组用来保存处理过的序列，c数组来保存每次倍增多出来的序列，temp数组来保存b和c合并后的序列！</p>
+<p>若当前序列不超过T，则将合并后的序列temp归还给b数组（表示处理过且当前是有序序列），返回true，右端点右移到倍增后的位置，p继续倍增！</p>
+<p>若当前序列超过了T，则直接返回false，此时b数组的存储没有被改变，然后p倍减！</p>
+<p>为什么会比二分更优化呢？</p>
+<p>因为每次的b数组都是有序的，不需要排序，省了很多时间！</p>
+<p>可以参考代码中的注释进行详细了解！</p>
+<p>也可以参考如下的一篇题解！</p>
 <blockquote>
-<p><a href="https://www.acwing.com/blog/content/277/" target="_blank" rel="noopener">归并排序模板！点击这里！</a></p>
+<p><a href="https://www.cnblogs.com/BigYellowDog/p/11278993.html" target="_blank" rel="noopener">参考题解：点击这里！</a></p>
 </blockquote>
-<p>稍微解释一下归并排序，先分后合的思想：</p>
-<p>分：将原来的一条链一直从中间切开，直到切到当前只有一个元素，这时，它是有序的。</p>
-<p>合：将当前两个有序序列排好序用中间变量存储起来，最后再将中间序列还给原序列。</p>
-<p>直到序列全部有序！</p>
-<p>本题就是要在归并排序的过程中，产生逆序对的时候，进行记录：</p>
-<p>其中res 就是用来记录的，<code>res = mid - i + 1;</code> 关于这里，要详细解释一下：</p>
-<pre class="line-numbers language-c"><code class="language-c"><span class="token keyword">while</span><span class="token punctuation">(</span>i <span class="token operator">&lt;=</span> mid <span class="token operator">&amp;&amp;</span> j <span class="token operator">&lt;=</span> r<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span> temp<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>i<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token keyword">else</span>
-    <span class="token punctuation">{</span>
-        res <span class="token operator">+</span><span class="token operator">=</span> mid <span class="token operator">-</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> 
-        temp<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>j<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>首先：相邻的这两个序列，对序列本身自己来说，它是内部有序的，假如左边的序列大于右边的序列，由于左右都是有序的，那么左边的序列从当前位置 i 到 mid 结束时，都是要大于右边当前值的，所以逆序对不是1，而是 <code>res += mid - i + 1;</code> ， 至于为什么要这样算，因为等到右边的较小值被存储了之后，左边当前值以后真的值就没有机会和右边的被存储值进行比较了！</p>
-<p>如图：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200226214901.png" alt=""></p>
-<h2 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h2><p>注意：最好使用long long 或许数据很大！</p>
+<h2 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h2><p>注意：</p>
+<p>校验值可能会溢出，要使用long long！</p>
+<p>以防倍增后使右端点溢出，使用<code>t = min(r + p, n - 1)</code> 来进行约束！</p>
+<p>每一段找到右端点后，当前段在b数组就是有序的！</p>
 <pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;algorithm></span></span>
 
 using namespace std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
 
-<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">100050</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> temp<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token keyword">long</span> <span class="token keyword">long</span> n<span class="token punctuation">,</span> res<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">5e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
 
-<span class="token keyword">void</span> <span class="token function">merge_sort</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">int</span> l<span class="token punctuation">,</span> <span class="token keyword">int</span> r<span class="token punctuation">)</span>
+<span class="token keyword">int</span> K<span class="token punctuation">,</span> n<span class="token punctuation">,</span> m<span class="token punctuation">;</span>
+LL a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> b<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> c<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> temp<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> T<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// 合并 l1~r1 和 l2~r2</span>
+<span class="token keyword">int</span> <span class="token function">merge</span><span class="token punctuation">(</span><span class="token keyword">int</span> l1<span class="token punctuation">,</span> <span class="token keyword">int</span> r1<span class="token punctuation">,</span> <span class="token keyword">int</span> l2<span class="token punctuation">,</span> <span class="token keyword">int</span> r2<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>l <span class="token operator">>=</span> r<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> i <span class="token operator">=</span> l1<span class="token punctuation">,</span> j <span class="token operator">=</span> l2<span class="token punctuation">,</span> k <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
 
-    <span class="token keyword">int</span> mid <span class="token operator">=</span> l <span class="token operator">+</span> r <span class="token operator">>></span> <span class="token number">1</span><span class="token punctuation">;</span>
-    <span class="token function">merge_sort</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> l<span class="token punctuation">,</span> mid<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">merge_sort</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> mid <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> r<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token keyword">int</span> k <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> i <span class="token operator">=</span> l<span class="token punctuation">,</span> j <span class="token operator">=</span> mid <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span>i <span class="token operator">&lt;=</span> mid <span class="token operator">&amp;&amp;</span> j <span class="token operator">&lt;=</span> r<span class="token punctuation">)</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>i <span class="token operator">&lt;=</span> r1 <span class="token operator">&amp;&amp;</span> j <span class="token operator">&lt;=</span> r2<span class="token punctuation">)</span>
     <span class="token punctuation">{</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span> temp<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>i<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token keyword">else</span>
-        <span class="token punctuation">{</span>
-            res <span class="token operator">+</span><span class="token operator">=</span> mid <span class="token operator">-</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> 
-            temp<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>j<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>b<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> c<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span> temp<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> b<span class="token punctuation">[</span>i<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span> temp<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> c<span class="token punctuation">[</span>j<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span>i <span class="token operator">&lt;=</span> mid<span class="token punctuation">)</span> temp<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>i<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span>j <span class="token operator">&lt;=</span> r<span class="token punctuation">)</span> temp<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>j<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> l<span class="token punctuation">,</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> r<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">,</span> j<span class="token operator">++</span><span class="token punctuation">)</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">while</span><span class="token punctuation">(</span>i <span class="token operator">&lt;=</span> r1<span class="token punctuation">)</span> temp<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> b<span class="token punctuation">[</span>i<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>j <span class="token operator">&lt;=</span> r2<span class="token punctuation">)</span> temp<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> c<span class="token punctuation">[</span>j<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> k<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// 当前l ~ r1 是有序的 </span>
+bool <span class="token function">check</span><span class="token punctuation">(</span><span class="token keyword">int</span> l<span class="token punctuation">,</span> <span class="token keyword">int</span> r1<span class="token punctuation">,</span> <span class="token keyword">int</span> r2<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 将 r1 + 1 ~ r2(倍增序列)存储起来 </span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> r1 <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> r2<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> c<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// 排序倍增序列 </span>
+    <span class="token function">sort</span><span class="token punctuation">(</span>c <span class="token operator">+</span> r1 <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> c <span class="token operator">+</span> r2 <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// 合并倍增序列与已排好序的序列 </span>
+    <span class="token keyword">int</span> len <span class="token operator">=</span> <span class="token function">merge</span><span class="token punctuation">(</span>l<span class="token punctuation">,</span> r1<span class="token punctuation">,</span> r1 <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> r2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// 合并后的有序序列 计算校验值 </span>
+    LL cnt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> head <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> tail <span class="token operator">=</span> len <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>cnt <span class="token operator">&lt;</span> m <span class="token operator">&amp;&amp;</span> head <span class="token operator">&lt;</span> tail<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        sum <span class="token operator">+</span><span class="token operator">=</span> <span class="token punctuation">(</span>temp<span class="token punctuation">[</span>head<span class="token punctuation">]</span> <span class="token operator">-</span> temp<span class="token punctuation">[</span>tail<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>temp<span class="token punctuation">[</span>head<span class="token punctuation">]</span> <span class="token operator">-</span> temp<span class="token punctuation">[</span>tail<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        head <span class="token operator">++</span><span class="token punctuation">,</span> tail <span class="token operator">--</span><span class="token punctuation">,</span> cnt <span class="token operator">++</span><span class="token punctuation">;</span> 
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>sum <span class="token operator">></span> T<span class="token punctuation">)</span> <span class="token keyword">return</span> false<span class="token punctuation">;</span>
+    <span class="token keyword">else</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// 小于T 将临时temp存回到b数组，此时b数组是一个有序序列 </span>
+        <span class="token keyword">int</span> k <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> l<span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> r2<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> b<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> true<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
-    cin <span class="token operator">>></span> n<span class="token punctuation">;</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> cin <span class="token operator">>></span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token function">merge_sort</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    cout <span class="token operator">&lt;&lt;</span> res <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    cin <span class="token operator">>></span> K<span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>K<span class="token operator">--</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        cin <span class="token operator">>></span> n <span class="token operator">>></span> m <span class="token operator">>></span> T<span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> cin <span class="token operator">>></span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">int</span> l <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> r <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> p<span class="token punctuation">,</span> nes <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> t<span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// 若 r 到了最后就退出 </span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>r <span class="token operator">&lt;</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">// b 在这里每次存储一段序列的头部！r 初始指向 l, p初始倍增为1 nes统计序列段数 </span>
+            b<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">,</span> r <span class="token operator">=</span> l<span class="token punctuation">,</span> p <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> nes<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">// p 为0时，即找到了序列的最大长度 </span>
+            <span class="token keyword">while</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token comment" spellcheck="true">// 倍增后的右端点 </span>
+                t <span class="token operator">=</span> <span class="token function">min</span><span class="token punctuation">(</span>r <span class="token operator">+</span> p<span class="token punctuation">,</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment" spellcheck="true">// 若此时的合并后的序列的校验值 &lt;= T 则p倍增 合并完成的右端点r后移 否则：p倍减 </span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">check</span><span class="token punctuation">(</span>l<span class="token punctuation">,</span> r<span class="token punctuation">,</span> t<span class="token punctuation">)</span><span class="token punctuation">)</span> r <span class="token operator">=</span> t<span class="token punctuation">,</span> p <span class="token operator">&lt;&lt;=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+                <span class="token keyword">else</span> p <span class="token operator">>>=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+                <span class="token comment" spellcheck="true">// 保证r  不超过 n - 1  说明走到了序列末 是切割的最后一段 </span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>r <span class="token operator">==</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token comment" spellcheck="true">// 下一段开始的位置 </span>
+            l <span class="token operator">=</span> r <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        cout <span class="token operator">&lt;&lt;</span> nes <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -593,7 +662,7 @@ using namespace std<span class="token punctuation">;</span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://niuxvdong.top/posts/25834.html">https://niuxvdong.top/posts/25834.html</a>
+                    <a href="https://niuxvdong.top/posts/45606.html">https://niuxvdong.top/posts/45606.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -635,12 +704,16 @@ using namespace std<span class="token punctuation">;</span>
                                     <span class="chip bg-color">AcWing</span>
                                 </a>
                             
-                                <a href="/tags/%E9%80%86%E5%BA%8F%E5%AF%B9/">
-                                    <span class="chip bg-color">逆序对</span>
+                                <a href="/tags/%E8%B4%AA%E5%BF%83/">
+                                    <span class="chip bg-color">贪心</span>
                                 </a>
                             
                                 <a href="/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/">
                                     <span class="chip bg-color">归并排序</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%80%8D%E5%A2%9E/">
+                                    <span class="chip bg-color">倍增</span>
                                 </a>
                             
                         </div>
@@ -828,16 +901,17 @@ using namespace std<span class="token punctuation">;</span>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/2286.html">
+                <a href="/posts/45606.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_33.jpg" class="responsive-img" alt="AcWing-89.a ^ b">
+                        <img src="https://img.niuxvdong.top/1067199.jpg" class="responsive-img" alt="AcWing-109.天才ACM">
                         
-                        <span class="card-title">AcWing-89.a ^ b</span>
+                        <span class="card-title">AcWing-109.天才ACM</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -849,18 +923,18 @@ using namespace std<span class="token punctuation">;</span>
 
 
 
-题目链接：89. a^b
+题目链接：109. 天才ACM
 
-题目背景：题目描述求 a 的 b 次方对 p 取模的值。
-输入格式三个整数 a,b,在同一行用空格隔开。
-输出格式输出一个整数，表示a^b mod p的值。
-数据范围
+题目背景：
+又是一道好题，参考了许多题解，明白后，有因为粗心，debug了好久才AC了！
+
+题目描述给定一个整数 M，对于任意一个整数集合 S，定义“校验值”如
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -873,6 +947,7 @@ using namespace std<span class="token punctuation">;</span>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -880,8 +955,16 @@ using namespace std<span class="token punctuation">;</span>
                         <span class="chip bg-color">AcWing</span>
                     </a>
                     
-                    <a href="/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/">
-                        <span class="chip bg-color">快速幂</span>
+                    <a href="/tags/%E8%B4%AA%E5%BF%83/">
+                        <span class="chip bg-color">贪心</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/">
+                        <span class="chip bg-color">归并排序</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%80%8D%E5%A2%9E/">
+                        <span class="chip bg-color">倍增</span>
                     </a>
                     
                 </div>
@@ -895,12 +978,12 @@ using namespace std<span class="token punctuation">;</span>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/13968.html">
+                <a href="/posts/12934.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_39.jpg" class="responsive-img" alt="AcWing-1326.军训队列">
+                        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e%20(19).jpg" class="responsive-img" alt="AcWing-108.奇数码问题">
                         
-                        <span class="card-title">AcWing-1326.军训队列</span>
+                        <span class="card-title">AcWing-108.奇数码问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -912,18 +995,17 @@ using namespace std<span class="token punctuation">;</span>
 
 
 
+题目链接：108.奇数码问题
 
-
-题目链接：1326. 军训队列
-
-
-题目背景：题目描述有 n 名学生参加军训，军训的一大重要内容就是走队列，而一个队列的不整齐程度是该队中最高的学生的身高与最矮的学生的身高差值的平方。
-现在
+题目背景：
+同样是归并排序求逆序对的问题！
+参考我关于这类问题的一篇题解：AcWing-788.逆序对的数量
+奇偶性很神奇，对于一类问题，如果属于同种性质（奇偶性
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-06
                             </span>
                         <span class="publish-author">
                             
@@ -944,12 +1026,16 @@ using namespace std<span class="token punctuation">;</span>
                         <span class="chip bg-color">AcWing</span>
                     </a>
                     
-                    <a href="/tags/%E8%B4%AA%E5%BF%83/">
-                        <span class="chip bg-color">贪心</span>
+                    <a href="/tags/%E9%80%86%E5%BA%8F%E5%AF%B9/">
+                        <span class="chip bg-color">逆序对</span>
                     </a>
                     
-                    <a href="/tags/Dp/">
-                        <span class="chip bg-color">Dp</span>
+                    <a href="/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/">
+                        <span class="chip bg-color">归并排序</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%A5%87%E5%81%B6%E6%80%A7/">
+                        <span class="chip bg-color">奇偶性</span>
                     </a>
                     
                 </div>
