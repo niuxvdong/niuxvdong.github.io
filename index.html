@@ -592,36 +592,52 @@ Markdown 是一种轻量级标记语言，它允许人们使用易读易写的�
     
 
     
-        
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
 
-<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
 <div class="">
     
     <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s12">
-            <div id="aplayer" class="music"></div>
-        </div>
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
     </div>
 </div>
 
 <script src="/libs/aplayer/APlayer.min.js"></script>
-<script>
-$(function () {
-    new APlayer({
-        container: document.getElementById('aplayer'),
-        fixed: 'true' === 'true',
-        autoplay: 'true' === 'true',
-        theme: '#42b983',
-        loop: 'all',
-        order: 'random',
-        preload: 'auto',
-        volume: Number('0.7'),
-        listFolded: 'false' === 'true',
-        listMaxHeight: '300',
-        audio: eval([{"name":"还魂门","artist":"胡彦斌","url":"//music.163.com/song/media/outer/url?id=420513275.mp3","cover":"//p2.music.126.net/V_ZXEWJ2Yr07b_clTy2E6g==/1396379780245786.jpg?param=130y130"},{"name":"生而为人","artist":"尚士达","url":"//music.163.com/song/media/outer/url?id=1335350269.mp3","cover":"//p2.music.126.net/dgPK-FDvF92suiQmnl5kCg==/109951163745432466.jpg?param=130y130"},{"name":"画心","artist":"张靓颖","url":"//music.163.com/song/media/outer/url?id=327089.mp3","cover":"//p1.music.126.net/V_Bghb8c6fWGtcyZmtf-UQ==/873012232454523.jpg?param=130y130"},{"name":"大鱼","artist":"张靓颖","url":"//music.163.com/song/media/outer/url?id=413812448.mp3","cover":"//p1.music.126.net/aiPQXP8mdLovQSrKsM3hMQ==/1416170985079958.jpg?param=130y130"},{"name":"我的名字","artist":"焦迈奇","url":"//music.163.com/song/media/outer/url?id=554241732.mp3","cover":"https://p2.music.126.net/a_rb8pgC5R_hO-lfm7acSw==/109951164019567772.jpg?param=130y130"},{"name":"消愁","artist":"毛不易","url":"//music.163.com/song/media/outer/url?id=569200213.mp3","cover":"//p1.music.126.net/vmCcDvD1H04e9gm97xsCqg==/109951163350929740.jpg?param=130y130"},{"name":"句号","artist":"邓紫棋","url":"//music.163.com/song/media/outer/url?id=1405283464.mp3","cover":"//p2.music.126.net/KTo5oSxH3CPA5PBTeFKDyA==/109951164581432409.jpg?param=130y130"},{"name":"你的酒馆对我打了烊","artist":"陈雪凝","url":"//music.163.com/song/media/outer/url?id=1341964346.mp3","cover":"//p1.music.126.net/LiRR__0pJHSivqBHZzbMUw==/109951163816225567.jpg?param=130y130"},{"name":"小半","artist":"陈粒","url":"//music.163.com/song/media/outer/url?id=421423806.mp3","cover":"//p1.music.126.net/HQxTggMCB7AHUXN-ZFEtmA==/1371091013186741.jpg?param=130y130"},{"name":"你的答案","artist":"阿冗","url":"//music.163.com/song/media/outer/url?id=1400256289.mp3","cover":"//p1.music.126.net/OlX-4S4L0Hdkyy_DQ27zag==/109951164459621658.jpg?param=130y130"}])
-    });
-});
-</script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
     
 
     
@@ -1605,6 +1621,54 @@ $(function () {
 </footer>
 
 <div class="progress-bar"></div>
+
+
+<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
 
     <!-- 搜索遮罩框 -->
