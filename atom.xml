@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://niuxvdong.top/"/>
-  <updated>2020-03-12T13:40:02.295Z</updated>
+  <updated>2020-03-17T11:48:37.042Z</updated>
   <id>https://niuxvdong.top/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>蓝桥杯第十一届软件类校内模拟赛</title>
+    <link href="https://niuxvdong.top/posts/43446.html"/>
+    <id>https://niuxvdong.top/posts/43446.html</id>
+    <published>2020-03-17T10:53:00.000Z</published>
+    <updated>2020-03-17T11:48:37.042Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="蓝桥杯" scheme="https://niuxvdong.top/categories/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    
+      <category term="蓝桥杯" scheme="https://niuxvdong.top/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>AcWing-112.雷达设备</title>
@@ -604,39 +631,6 @@
       <category term="DFS" scheme="https://niuxvdong.top/tags/DFS/"/>
     
       <category term="栈" scheme="https://niuxvdong.top/tags/%E6%A0%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AcWing-92.递归实现指数型枚举</title>
-    <link href="https://niuxvdong.top/posts/14886.html"/>
-    <id>https://niuxvdong.top/posts/14886.html</id>
-    <published>2020-02-28T09:02:35.000Z</published>
-    <updated>2020-02-28T09:43:39.501Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="AcWing" scheme="https://niuxvdong.top/categories/AcWing/"/>
-    
-    
-      <category term="AcWing" scheme="https://niuxvdong.top/tags/AcWing/"/>
-    
-      <category term="二进制" scheme="https://niuxvdong.top/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/"/>
-    
-      <category term="DFS" scheme="https://niuxvdong.top/tags/DFS/"/>
-    
-      <category term="状态压缩" scheme="https://niuxvdong.top/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/"/>
     
   </entry>
   
