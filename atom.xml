@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://niuxvdong.top/"/>
-  <updated>2020-03-17T11:48:37.042Z</updated>
+  <updated>2020-03-18T13:46:34.221Z</updated>
   <id>https://niuxvdong.top/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AcWing-114.国王游戏</title>
+    <link href="https://niuxvdong.top/posts/55540.html"/>
+    <id>https://niuxvdong.top/posts/55540.html</id>
+    <published>2020-03-18T13:12:46.000Z</published>
+    <updated>2020-03-18T13:46:34.221Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://niuxvdong.top/categories/AcWing/"/>
+    
+    
+      <category term="AcWing" scheme="https://niuxvdong.top/tags/AcWing/"/>
+    
+      <category term="贪心" scheme="https://niuxvdong.top/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+      <category term="高精度" scheme="https://niuxvdong.top/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>蓝桥杯第十一届软件类校内模拟赛</title>
     <link href="https://niuxvdong.top/posts/43446.html"/>
     <id>https://niuxvdong.top/posts/43446.html</id>
     <published>2020-03-17T10:53:00.000Z</published>
-    <updated>2020-03-17T11:48:37.042Z</updated>
+    <updated>2020-03-17T11:49:06.886Z</updated>
     
     <summary type="html">
     
@@ -600,37 +631,6 @@
       <category term="AcWing" scheme="https://niuxvdong.top/tags/AcWing/"/>
     
       <category term="DFS" scheme="https://niuxvdong.top/tags/DFS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AcWing-93.递归实现组合型枚举</title>
-    <link href="https://niuxvdong.top/posts/53888.html"/>
-    <id>https://niuxvdong.top/posts/53888.html</id>
-    <published>2020-02-28T11:17:32.000Z</published>
-    <updated>2020-02-28T11:47:56.463Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="AcWing" scheme="https://niuxvdong.top/categories/AcWing/"/>
-    
-    
-      <category term="AcWing" scheme="https://niuxvdong.top/tags/AcWing/"/>
-    
-      <category term="DFS" scheme="https://niuxvdong.top/tags/DFS/"/>
-    
-      <category term="栈" scheme="https://niuxvdong.top/tags/%E6%A0%88/"/>
     
   </entry>
   
