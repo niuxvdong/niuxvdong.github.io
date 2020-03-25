@@ -442,7 +442,7 @@ Java程序易于编写，而且有内置垃圾收集，不必考">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-02-11
+                    2020-03-24
                 </div>
                 
 
@@ -473,7 +473,7 @@ Java程序易于编写，而且有内置垃圾收集，不必考">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h2>
-    <div id="aplayer-yQeqvZAV" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1407551413" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+    <div id="aplayer-fNlwADmD" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1407551413" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
 
 <h2 id="为什么Java应用最广泛？"><a href="#为什么Java应用最广泛？" class="headerlink" title="为什么Java应用最广泛？"></a>为什么Java应用最广泛？</h2><h3 id="从互联网到企业平台，Java是应用最广泛的编程语言，原因在于："><a href="#从互联网到企业平台，Java是应用最广泛的编程语言，原因在于：" class="headerlink" title="从互联网到企业平台，Java是应用最广泛的编程语言，原因在于："></a>从互联网到企业平台，Java是应用最广泛的编程语言，原因在于：</h3><ul>
 <li>Java是基于JVM虚拟机的跨平台语言，一次编写，到处运行；</li>
@@ -596,10 +596,13 @@ $ java hello.java<span aria-hidden="true" class="line-numbers-rows"><span></span
 <li>习惯以大写字母开头</li>
 </ul>
 <p style="color: red; font-size: 25px">注意：</p> 
-- Java入口程序规定的方法必须是静态方法，方法名必须为`main`，括号内的参数必须是String数组。
-- 在`class`内部，可以定义若干方法（method）
-- 句子以分号结束
 
+
+<ul>
+<li>Java入口程序规定的方法必须是静态方法，方法名必须为<code>main</code>，括号内的参数必须是String数组。</li>
+<li>在<code>class</code>内部，可以定义若干方法（method）</li>
+<li>句子以分号结束</li>
+</ul>
 <h3 id="2、注释"><a href="#2、注释" class="headerlink" title="2、注释"></a>2、注释</h3><ul>
 <li>// ：单行注释</li>
 <li>/* */：多行注释</li>
@@ -618,7 +621,7 @@ $ java hello.java<span aria-hidden="true" class="line-numbers-rows"><span></span
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="3、数据类型"><a href="#3、数据类型" class="headerlink" title="3、数据类型"></a>3、数据类型</h3><blockquote>
-<p>计算机内存的最小存储单元是字节（byte），一个字节就是一个8位二进制数，即8个bit。它的二进制表示范围从<code>00000000</code><del><code>11111111</code>，换算成十进制是0</del>255，换算成十六进制是<code>00</code>~<code>ff</code>。</p>
+<p>计算机内存的最小存储单元是字节（byte），一个字节就是一个8位二进制数，即8个bit。它的二进制表示范围从<code>00000000~11111111</code>，换算成十进制是<code>0~255</code>，换算成十六进制是<code>00~ff</code>。</p>
 </blockquote>
 <ul>
 <li>整数类型：<ul>
@@ -668,7 +671,7 @@ $ java hello.java<span aria-hidden="true" class="line-numbers-rows"><span></span
 <span class="token keyword">double</span> d <span class="token operator">=</span> <span class="token number">1.79e308</span><span class="token punctuation">;</span>
 <span class="token keyword">double</span> d2 <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1.79e308</span><span class="token punctuation">;</span>
 <span class="token keyword">double</span> d3 <span class="token operator">=</span> <span class="token number">4.9e-324</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 科学计数法表示的4.9x10^-324</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>浮点数可表示的范围非常大，<code>float</code>类型可最大表示3.4x1038，而<code>double</code>类型可最大表示1.79x10308。</p>
+<p>浮点数可表示的范围非常大，<code>float</code>类型可最大表示3.4x10<sup>38</sup>，而<code>double</code>类型可最大表示1.79x10<sup>308</sup>。</p>
 <p>注意：boolean类型只有flase 和 true两个值</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">boolean</span> b1 <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
 <span class="token keyword">boolean</span> b2 <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
@@ -1215,7 +1218,9 @@ String s4 <span class="token operator">=</span> <span class="token string">""</s
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>我没有输出任何结果。。。</p>
+<pre class="line-numbers language-bash"><code class="language-bash">$ javac Main.java
+$ java Main -version <span class="token comment" spellcheck="true"># 传一个参数</span>
+<span class="token function">v</span> 1.0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h1 id="快速入门结束，敬请期待后续内容，to-be-continued"><a href="#快速入门结束，敬请期待后续内容，to-be-continued" class="headerlink" title="快速入门结束，敬请期待后续内容，to be continued."></a>快速入门结束，敬请期待后续内容，to be continued.</h1><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -2034,7 +2039,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">76.7k</span>&nbsp;字
+                class="white-color">78.5k</span>&nbsp;字
             
             
             
