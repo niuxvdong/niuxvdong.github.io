@@ -21,17 +21,17 @@
 
 	
     <title>关于 | Mr.Niu&#39;s Blog</title>
-    <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.iohttps://cdn.jsdelivr.net/gh/niuxvdong/images/img/favicon.ico">
+    <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
     
-    <script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Mr.Niu's Blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
@@ -45,7 +45,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/medias/codehub.ico" class="logo-img" alt="LOGO">
+                    <img src="/medias/codehub.ico" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Mr.Niu's Blog</span>
                 </a>
@@ -154,7 +154,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/medias/codehub.ico" class="logo-img circle responsive-img">
+        <img src="/medias/codehub.ico" class="logo-img circle responsive-img">
         
         <div class="logo-name">Mr.Niu's Blog</div>
         <div class="logo-desc">
@@ -316,8 +316,8 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    //$('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/medias/banner/' + new Date().getDay() + '.jpg)');
-	$('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.iohttps://cdn.jsdelivr.net/gh/niuxvdong/images/banners/' + new Date().getHours() % 7 + '.jpg)');
+    //$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+	$('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/niuxvdong/images/banners/' + new Date().getHours() % 7 + '.jpg)');
 
 </script>
 
@@ -358,7 +358,7 @@
                     <div class="col s12 m12 l4">
                         <div class="profile center-align">
                             <div class="avatar">
-                                <img src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.iohttps://cdn.jsdelivr.net/gh/niuxvdong/images/img/head.jpg" alt="Mr.Niu"
+                                <img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/head.jpg" alt="Mr.Niu"
                                      class="circle responsive-img avatar-img">
                             </div>
                             <div class="author">
@@ -514,7 +514,7 @@
     </div>
 </div>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/echarts/echarts.min.js"></script>
+<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
 <script>
     let postsChart = echarts.init(document.getElementById('posts-chart'));
     let categoriesChart = echarts.init(document.getElementById('categories-chart'));
@@ -609,7 +609,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["AcWing","贪心","JavaScript","归并排序","前缀和","中位数","逆序对","DFS","差分序列","堆"]
+                data: ["AcWing","贪心","JavaScript","归并排序","前缀和","中位数","逆序对","DFS","差分序列","排序"]
             }
         ],
         yAxis: [
@@ -769,20 +769,8 @@
             
             
             
-            <a href="/tags/priority-queue/">
-                <span class="chip center-align waves-effect waves-light chip-default">priority_queue</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E4%B8%AD%E4%BD%8D%E6%95%B0/">
-                <span class="chip center-align waves-effect waves-light chip-default">中位数</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E5%A0%86/">
-                <span class="chip center-align waves-effect waves-light chip-default">堆</span>
+            <a href="/tags/%E6%8E%92%E5%BA%8F/">
+                <span class="chip center-align waves-effect waves-light chip-default">排序</span>
             </a>
             
             
@@ -793,8 +781,20 @@
             
             
             
-            <a href="/tags/%E6%8E%92%E5%BA%8F/">
-                <span class="chip center-align waves-effect waves-light chip-default">排序</span>
+            <a href="/tags/%E4%B8%AD%E4%BD%8D%E6%95%B0/">
+                <span class="chip center-align waves-effect waves-light chip-default">中位数</span>
+            </a>
+            
+            
+            
+            <a href="/tags/priority-queue/">
+                <span class="chip center-align waves-effect waves-light chip-default">priority_queue</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E5%A0%86/">
+                <span class="chip center-align waves-effect waves-light chip-default">堆</span>
             </a>
             
             
@@ -841,12 +841,6 @@
             
             
             
-            <a href="/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/">
-                <span class="chip center-align waves-effect waves-light chip-default">快速幂</span>
-            </a>
-            
-            
-            
             <a href="/tags/%E6%A0%88/">
                 <span class="chip center-align waves-effect waves-light chip-default">栈</span>
             </a>
@@ -859,32 +853,26 @@
             
             
             
-            <a href="/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/">
-                <span class="chip center-align waves-effect waves-light chip-default">二进制</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E7%8A%B6%E5%8E%8BDp/">
-                <span class="chip center-align waves-effect waves-light chip-default">状压Dp</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/">
-                <span class="chip center-align waves-effect waves-light chip-default">最短路</span>
-            </a>
-            
-            
-            
             <a href="/tags/DFS/">
                 <span class="chip center-align waves-effect waves-light chip-default">DFS</span>
             </a>
             
             
             
+            <a href="/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/">
+                <span class="chip center-align waves-effect waves-light chip-default">二进制</span>
+            </a>
+            
+            
+            
             <a href="/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/">
                 <span class="chip center-align waves-effect waves-light chip-default">状态压缩</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/">
+                <span class="chip center-align waves-effect waves-light chip-default">快速幂</span>
             </a>
             
             
@@ -901,6 +889,24 @@
             
             
             
+            <a href="/tags/%E4%BA%8C%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C/">
+                <span class="chip center-align waves-effect waves-light chip-default">二维前缀和</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E7%8A%B6%E5%8E%8BDp/">
+                <span class="chip center-align waves-effect waves-light chip-default">状压Dp</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/">
+                <span class="chip center-align waves-effect waves-light chip-default">最短路</span>
+            </a>
+            
+            
+            
             <a href="/tags/aplayer/">
                 <span class="chip center-align waves-effect waves-light chip-default">aplayer</span>
             </a>
@@ -909,12 +915,6 @@
             
             <a href="/tags/dplayer/">
                 <span class="chip center-align waves-effect waves-light chip-default">dplayer</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E4%BA%8C%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C/">
-                <span class="chip center-align waves-effect waves-light chip-default">二维前缀和</span>
             </a>
             
             
@@ -969,6 +969,12 @@
             
             
             
+            <a href="/tags/JUnit/">
+                <span class="chip center-align waves-effect waves-light chip-default">JUnit</span>
+            </a>
+            
+            
+            
             <a href="/tags/IO/">
                 <span class="chip center-align waves-effect waves-light chip-default">IO</span>
             </a>
@@ -977,18 +983,6 @@
             
             <a href="/tags/File/">
                 <span class="chip center-align waves-effect waves-light chip-default">File</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E5%8A%A0%E5%AF%86/">
-                <span class="chip center-align waves-effect waves-light chip-default">加密</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E5%AE%89%E5%85%A8/">
-                <span class="chip center-align waves-effect waves-light chip-default">安全</span>
             </a>
             
             
@@ -1017,34 +1011,20 @@
             
             
             
-            <a href="/tags/JUnit/">
-                <span class="chip center-align waves-effect waves-light chip-default">JUnit</span>
+            <a href="/tags/%E5%8A%A0%E5%AF%86/">
+                <span class="chip center-align waves-effect waves-light chip-default">加密</span>
             </a>
             
             
             
-            <a href="/tags/Regex/">
-                <span class="chip center-align waves-effect waves-light chip-default">Regex</span>
+            <a href="/tags/%E5%AE%89%E5%85%A8/">
+                <span class="chip center-align waves-effect waves-light chip-default">安全</span>
             </a>
-            
-            
-            
-            <a href="/tags/%E5%9F%BA%E7%A1%80/">
-                <span class="chip center-align waves-effect waves-light chip-default">基础</span>
-            </a>
-            
-            
             
             
             
             <a href="/tags/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">
                 <span class="chip center-align waves-effect waves-light chip-default">异常处理</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E6%B3%9B%E5%9E%8B/">
-                <span class="chip center-align waves-effect waves-light chip-default">泛型</span>
             </a>
             
             
@@ -1061,20 +1041,40 @@
             
             
             
+            <a href="/tags/Regex/">
+                <span class="chip center-align waves-effect waves-light chip-default">Regex</span>
+            </a>
+            
+            
+            
             <a href="/tags/%E6%B3%A8%E8%A7%A3/">
                 <span class="chip center-align waves-effect waves-light chip-default">注解</span>
             </a>
             
             
             
-            <a href="/tags/Doc/">
-                <span class="chip center-align waves-effect waves-light chip-default">Doc</span>
+            <a href="/tags/%E6%B3%9B%E5%9E%8B/">
+                <span class="chip center-align waves-effect waves-light chip-default">泛型</span>
             </a>
+            
+            
+            
+            <a href="/tags/%E5%9F%BA%E7%A1%80/">
+                <span class="chip center-align waves-effect waves-light chip-default">基础</span>
+            </a>
+            
+            
             
             
             
             <a href="/tags/%E9%9B%86%E5%90%88/">
                 <span class="chip center-align waves-effect waves-light chip-default">集合</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Doc/">
+                <span class="chip center-align waves-effect waves-light chip-default">Doc</span>
             </a>
             
             
@@ -1087,24 +1087,6 @@
             
             <a href="/tags/%E5%8A%AA%E5%8A%9B/">
                 <span class="chip center-align waves-effect waves-light chip-default">努力</span>
-            </a>
-            
-            
-            
-            <a href="/tags/Markdown/">
-                <span class="chip center-align waves-effect waves-light chip-default">Markdown</span>
-            </a>
-            
-            
-            
-            <a href="/tags/Git/">
-                <span class="chip center-align waves-effect waves-light chip-default">Git</span>
-            </a>
-            
-            
-            
-            <a href="/tags/Github/">
-                <span class="chip center-align waves-effect waves-light chip-default">Github</span>
             </a>
             
             
@@ -1123,6 +1105,24 @@
             
             <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0/">
                 <span class="chip center-align waves-effect waves-light chip-default">组合数</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Markdown/">
+                <span class="chip center-align waves-effect waves-light chip-default">Markdown</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Git/">
+                <span class="chip center-align waves-effect waves-light chip-default">Git</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Github/">
+                <span class="chip center-align waves-effect waves-light chip-default">Github</span>
             </a>
             
             
@@ -1231,7 +1231,7 @@
             <span id="icp" >
 				cdn by&nbsp;&nbsp;
 				<a href="https://www.upyun.com/" target="_blank" rel="noopener">又拍云&nbsp;&nbsp;&nbsp;&nbsp;</a>
-				<img src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/medias/icp.png" style="vertical-align: text-bottom;" />
+				<img src="/medias/icp.png" style="vertical-align: text-bottom;" />
                 <a href="http://www.beian.miit.gov.cn/" target="_blank">晋ICP备19005025号</a>
             </span>
             
@@ -1281,7 +1281,7 @@
     </div>
 	
 	
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/aplayer/APlayer.min.css">
+	<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
 	<style>
 		.aplayer .aplayer-lrc p {
 			font-size: 12px;
@@ -1325,7 +1325,7 @@
 		</div>
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/aplayer/APlayer.min.js"></script>
+	<script src="/libs/aplayer/APlayer.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
 </footer>
@@ -1344,10 +1344,10 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/js/search.js"></script>
+<script src="/js/search.js"></script>
 <script type="text/javascript">
 $(function () {
-    searchFunc("https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/" + "search.xml", 'searchInput', 'searchResult');
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
 });
 </script>
     <!-- 回到顶部按钮 -->
@@ -1358,12 +1358,12 @@ $(function () {
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/js/matery.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -1397,10 +1397,10 @@ $(function () {
 </script>
 
     
-    <script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/others/clicklove.js" async="async"></script>
+    <script src="/libs/others/clicklove.js" async="async"></script>
     
     
-    <script async src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1411,17 +1411,17 @@ $(function () {
     <script type="text/javascript" color="0,0,255"
         pointColor="0,0,255" opacity='0.7'
         zIndex="-1" count="99"
-        src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/background/canvas-nest.js"></script>
+        src="/libs/background/canvas-nest.js"></script>
     
 
     
 
     
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/background/ribbon-dynamic.js" async="async"></script>
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
     
     
-    <script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
 	
