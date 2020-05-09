@@ -1,0 +1,16 @@
+[
+	{ 
+	"avatar": "https://cdn.jsdelivr.net/gh/niuxvdong/images/img/head.jpg", 
+	"name": "Mr.Niu's Blog", 
+	"introduction": "你现在的努力，是为了以后有更多的选择！", 
+	"url": "https://niuxvdong.top/", 
+	"title": "前去学习" 
+	},
+	{
+    "name": "过客~励む",
+    "avatar": "https://yafine-blog.cn/medias/avatar.jpg",
+    "url": "https://yafine-blog.cn",
+    "introduction": "你现在的努力，是为了以后有更多的选择",
+    "title": "戳一戳"
+	}
+]
