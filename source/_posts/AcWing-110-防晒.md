@@ -3,8 +3,8 @@ title: AcWing-110.防晒
 author: Mr.Niu
 toc: true
 abbrlink: 10715
-img: 'https://img.niuxvdong.top/wallhaven-96w8e8.png'
-thumbnail: 'https://img.niuxvdong.top/wallhaven-96w8e8.png'
+cover: 'https://img.niuxvdong.top/wallhaven-96w8e8.png'
+top_img: 'https://img.niuxvdong.top/wallhaven-96w8e8.png'
 categories:
   - AcWing
 tags:

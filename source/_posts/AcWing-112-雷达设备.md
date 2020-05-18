@@ -3,8 +3,8 @@ title: AcWing-112.雷达设备
 author: Mr.Niu
 toc: true
 abbrlink: 27200
-img: 'https://img.niuxvdong.top/33c5cb5498ecb6ff82468159c138819d.jpg'
-thumbnail: 'https://img.niuxvdong.top/33c5cb5498ecb6ff82468159c138819d.jpg'
+cover: 'https://img.niuxvdong.top/33c5cb5498ecb6ff82468159c138819d.jpg'
+top_img: 'https://img.niuxvdong.top/33c5cb5498ecb6ff82468159c138819d.jpg'
 categories:
   - AcWing
 tags:

@@ -3,8 +3,8 @@ title: AcWing-90.64位整数乘法
 author: Mr.Niu
 toc: true
 abbrlink: 39845
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_83.jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_83.jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_83.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_83.jpg'
 categories:
   - AcWing
 tags:

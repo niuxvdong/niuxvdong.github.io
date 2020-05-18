@@ -3,8 +3,8 @@ title: AcWing-99.激光炸弹
 author: Mr.Niu
 toc: true
 abbrlink: 26178
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/40.jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/40.jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/40.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/40.jpg'
 categories:
   - AcWing
 tags:

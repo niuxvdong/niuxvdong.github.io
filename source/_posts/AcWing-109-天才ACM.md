@@ -3,8 +3,8 @@ title: AcWing-109.天才ACM
 author: Mr.Niu
 toc: true
 abbrlink: 45606
-img: 'https://img.niuxvdong.top/1067199.jpg'
-thumbnail: 'https://img.niuxvdong.top/1067199.jpg'
+cover: 'https://img.niuxvdong.top/1067199.jpg'
+top_img: 'https://img.niuxvdong.top/1067199.jpg'
 categories:
   - AcWing
 tags:

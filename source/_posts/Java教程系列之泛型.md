@@ -3,8 +3,8 @@ title: Java教程系列之泛型
 author: Mr.Niu
 toc: true
 abbrlink: 16438
-img: 'https://img.niuxvdong.top/80228475_p0.jpg'
-thumbnail: 'https://img.niuxvdong.top/80228475_p0.jpg'
+cover: 'https://img.niuxvdong.top/80228475_p0.jpg'
+top_img: 'https://img.niuxvdong.top/80228475_p0.jpg'
 categories:
   - Java教程
 tags:

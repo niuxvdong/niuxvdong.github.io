@@ -3,8 +3,8 @@ title: AcWing-104.货仓选址
 author: Mr.Niu
 toc: true
 abbrlink: 57916
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(7).jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(7).jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(7).jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(7).jpg'
 categories:
   - AcWing
 tags:

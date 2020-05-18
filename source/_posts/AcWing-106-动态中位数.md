@@ -3,8 +3,8 @@ title: AcWing-106.动态中位数
 author: Mr.Niu
 toc: true
 abbrlink: 3455
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(28).jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(28).jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(28).jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(28).jpg'
 categories:
   - AcWing
 tags:

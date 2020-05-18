@@ -3,8 +3,8 @@ title: JavaScript教程系列之面向浏览器
 author: Mr.Niu
 toc: true
 abbrlink: 57030
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(26).jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(26).jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(26).jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(26).jpg'
 categories: 
 	- JavaScript教程
 tags:

@@ -3,8 +3,8 @@ title: AcWing-114.国王游戏
 author: Mr.Niu
 toc: true
 abbrlink: 55540
-img: 'https://img.niuxvdong.top/307c4ebdb19d991e0c3dbab61d07d8de.jpg'
-thumbnail: 'https://img.niuxvdong.top/307c4ebdb19d991e0c3dbab61d07d8de.jpg'
+cover: 'https://img.niuxvdong.top/307c4ebdb19d991e0c3dbab61d07d8de.jpg'
+top_img: 'https://img.niuxvdong.top/307c4ebdb19d991e0c3dbab61d07d8de.jpg'
 categories:
   - AcWing
 tags:

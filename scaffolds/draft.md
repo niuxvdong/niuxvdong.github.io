@@ -1,12 +1,17 @@
 ---
 title: {{ title }}
 date: {{ date }}
-updated: {{ date }}
+updated: 
 author: Mr.Niu 
 abbrlink: 
 img:  
 thumbnail: 
-toc: false 
+top_img:
+cover:  
+toc: true 
 categories: 
 tags: 
+keywords:
+description:
+toc_number:
 ---

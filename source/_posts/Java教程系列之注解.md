@@ -3,8 +3,8 @@ title: Java教程系列之注解
 author: Mr.Niu
 toc: true
 abbrlink: 35258
-img: 'https://img.niuxvdong.top/BingWallpaper-2020-03-04.jpg'
-thumbnail: 'https://img.niuxvdong.top/BingWallpaper-2020-03-04.jpg'
+cover: 'https://img.niuxvdong.top/BingWallpaper-2020-03-04.jpg'
+top_img: 'https://img.niuxvdong.top/BingWallpaper-2020-03-04.jpg'
 categories:
   - Java教程
 tags:

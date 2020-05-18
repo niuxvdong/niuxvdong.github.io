@@ -3,14 +3,14 @@ title: hexo-theme-matery主题配置详解
 author: Mr.Niu
 toc: true
 abbrlink: 57378
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e (49).jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e (49).jpg'
 categories:
   - Hexo主题
 tags:
   - matery
 date: 2020-02-05 12:24:09
 updated: 2020-02-05 12:24:09
-thumbnail: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e (49).jpg
+top_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e (49).jpg
 ---
 
 # hexo-theme-matery

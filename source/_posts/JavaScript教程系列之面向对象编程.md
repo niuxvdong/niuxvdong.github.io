@@ -6,7 +6,7 @@ abbrlink: 55519
 date: 2020-02-17 22:17:37
 updated:
 img: https://cdn.jsdelivr.net/gh/niuxvdong/images/a/18.jpg
-thumbnail: https://cdn.jsdelivr.net/gh/niuxvdong/images/a/18.jpg
+top_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/a/18.jpg
 categories:
 	- JavaScript教程
 tags:

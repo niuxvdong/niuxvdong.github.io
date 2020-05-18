@@ -3,8 +3,8 @@ title: AcWing-102.最佳牛围栏
 author: Mr.Niu
 toc: true
 abbrlink: 35910
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/31.jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/31.jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/31.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/31.jpg'
 categories:
   - AcWing
 tags:

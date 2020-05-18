@@ -1,4 +1,12 @@
 ---
-title: {{ title }}
-date: {{ date }}
+title:
+date:
+type:
+comments:
+description:
+keywords:
+top_img:
+mathjax:
+katex:
+aside:
 ---

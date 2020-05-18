@@ -3,8 +3,8 @@ title: AcWing-111.畜栏预定
 author: Mr.Niu
 toc: true
 abbrlink: 23513
-img: 'https://img.niuxvdong.top/83765f62e4e17e84b572fe33bb52e50c.jpg'
-thumbnail: 'https://img.niuxvdong.top/83765f62e4e17e84b572fe33bb52e50c.jpg'
+cover: 'https://img.niuxvdong.top/83765f62e4e17e84b572fe33bb52e50c.jpg'
+top_img: 'https://img.niuxvdong.top/83765f62e4e17e84b572fe33bb52e50c.jpg'
 categories:
   - AcWing
 tags:

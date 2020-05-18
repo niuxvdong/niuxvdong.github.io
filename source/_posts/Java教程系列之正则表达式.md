@@ -3,8 +3,8 @@ title: Java教程系列之正则表达式
 author: Mr.Niu
 toc: true
 abbrlink: 53926
-img: 'https://img.niuxvdong.top/ckjnlk9.png'
-thumbnail: 'https://img.niuxvdong.top/ckjnlk9.png'
+cover: 'https://img.niuxvdong.top/ckjnlk9.png'
+top_img: 'https://img.niuxvdong.top/ckjnlk9.png'
 categories:
   - Java教程
 tags:

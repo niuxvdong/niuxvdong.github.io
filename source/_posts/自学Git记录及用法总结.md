@@ -4,7 +4,8 @@ author: Mr.Niu
 toc: true
 top: true
 abbrlink: 50207
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/banners/1.jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/banners/1.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/banners/1.jpg'
 categories:
   - Git
 tags:
@@ -12,7 +13,6 @@ tags:
   - Github
 date: 2020-02-06 21:02:25
 updated:
-thumbnail: https://cdn.jsdelivr.net/gh/niuxvdong/images/banners/1.jpg
 ---
 
 ![Git](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/git.jpg)

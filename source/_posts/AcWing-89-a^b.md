@@ -3,8 +3,8 @@ title: AcWing-89.a ^ b
 author: Mr.Niu
 toc: true
 abbrlink: 2286
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_33.jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_33.jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_33.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_33.jpg'
 categories:
   - AcWing
 tags:

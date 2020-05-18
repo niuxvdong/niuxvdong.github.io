@@ -3,8 +3,8 @@ title: AcWing-91.最短Hamilton路径
 author: Mr.Niu
 toc: true
 abbrlink: 30496
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_09.jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_09.jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_09.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_09.jpg'
 categories:
   - AcWing
 tags:

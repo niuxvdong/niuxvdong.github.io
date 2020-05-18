@@ -3,8 +3,8 @@ title: Java教程系列之集合
 author: Mr.Niu
 toc: true
 abbrlink: 46100
-img: 'https://img.niuxvdong.top/ckjnlk.jpg'
-thumbnail: 'https://img.niuxvdong.top/ckjnlk.jpg'
+cover: 'https://img.niuxvdong.top/ckjnlk.jpg'
+top_img: 'https://img.niuxvdong.top/ckjnlk.jpg'
 categories:
   - Java教程
 tags:

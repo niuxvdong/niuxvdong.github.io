@@ -3,8 +3,8 @@ title: Java教程系列之Java核心类
 author: Mr.Niu
 toc: true
 abbrlink: 22799
-img: 'https://img.niuxvdong.top/299ac7c5e1d3abeaeea9cc74507c8a6e.jpg'
-thumbnail: 'https://img.niuxvdong.top/299ac7c5e1d3abeaeea9cc74507c8a6e.jpg'
+cover: 'https://img.niuxvdong.top/299ac7c5e1d3abeaeea9cc74507c8a6e.jpg'
+top_img: 'https://img.niuxvdong.top/299ac7c5e1d3abeaeea9cc74507c8a6e.jpg'
 categories:
   - Java教程
 tags:

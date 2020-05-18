@@ -3,8 +3,8 @@ title: JavaScript教程系列之函数
 author: Mr.Niu
 toc: true
 abbrlink: 52313
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (26).png'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (26).png'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (26).png'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (26).png'
 categories:
   - JavaScript教程
 tags:

@@ -195,7 +195,7 @@ lazyload:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-matery
+theme: Butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -236,7 +236,8 @@ baidu_url_submit:
     
 backup:
   type: git
-  theme: hexo-theme-matery
+  # theme: hexo-theme-matery
+  theme: Butterfly
   message: Back up my niuxvdong.top blog
   repository:
     github: git@github.com:niuxvdong/niuxvdong.github.io.git,backup

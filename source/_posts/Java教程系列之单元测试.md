@@ -3,8 +3,8 @@ title: Java教程系列之单元测试
 author: Mr.Niu
 toc: true
 abbrlink: 44270
-img: 'https://img.niuxvdong.top/ckjnlk1.png'
-thumbnail: 'https://img.niuxvdong.top/ckjnlk1.png'
+cover: 'https://img.niuxvdong.top/ckjnlk1.png'
+top_img: 'https://img.niuxvdong.top/ckjnlk1.png'
 categories:
   - Java教程
 tags:

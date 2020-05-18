@@ -3,7 +3,7 @@ title: Java教程系列之快速入门
 author: Mr.Niu
 toc: true
 abbrlink: 12025
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/mmexport1581051788215.jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/mmexport1581051788215.jpg'
 categories:
   - Java教程
 tags:
@@ -12,7 +12,7 @@ tags:
   - Java
 date: 2020-02-09 19:50:45
 updated:
-thumbnail: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/mmexport1581051788215.jpg
+top_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/mmexport1581051788215.jpg
 ---
 
 

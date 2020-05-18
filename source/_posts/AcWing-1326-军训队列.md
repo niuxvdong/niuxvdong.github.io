@@ -3,8 +3,8 @@ title: AcWing-1326.军训队列
 author: Mr.Niu
 toc: true
 abbrlink: 13968
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_39.jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_39.jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_39.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_39.jpg'
 categories:
   - AcWing
 tags:

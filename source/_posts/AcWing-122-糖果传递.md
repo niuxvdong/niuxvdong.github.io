@@ -3,8 +3,8 @@ title: AcWing-122.糖果传递
 author: Mr.Niu
 toc: true
 abbrlink: 58067
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(2).jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(2).jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(2).jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(2).jpg'
 categories:
   - AcWing
 tags:

@@ -3,8 +3,8 @@ title: AcWing-108.奇数码问题
 author: Mr.Niu
 toc: true
 abbrlink: 12934
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e%20(19).jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e%20(19).jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e%20(19).jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e%20(19).jpg'
 categories:
   - AcWing
 tags:

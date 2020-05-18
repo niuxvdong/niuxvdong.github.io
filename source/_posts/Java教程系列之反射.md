@@ -3,8 +3,8 @@ title: Java教程系列之反射
 author: Mr.Niu
 toc: true
 abbrlink: 39487
-img: 'https://img.niuxvdong.top/1d8e2cf19e6f6345a86f1f5c00889843.jpg'
-thumbnail: 'https://img.niuxvdong.top/1d8e2cf19e6f6345a86f1f5c00889843.jpg'
+cover: 'https://img.niuxvdong.top/1d8e2cf19e6f6345a86f1f5c00889843.jpg'
+top_img: 'https://img.niuxvdong.top/1d8e2cf19e6f6345a86f1f5c00889843.jpg'
 categories:
   - Java教程
 tags:

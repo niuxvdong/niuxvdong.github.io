@@ -3,8 +3,8 @@ title: AcWing-107.超快速排序
 author: Mr.Niu
 toc: true
 abbrlink: 8382
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e%20(24).jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e%20(24).jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e%20(24).jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e%20(24).jpg'
 categories:
   - AcWing
 tags:

@@ -3,8 +3,8 @@ title: JavaScript教程系列之标准对象
 author: Mr.Niu
 toc: true
 abbrlink: 15769
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/a/27.jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/a/27.jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/a/27.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/a/27.jpg'
 categories:
   - JavaScript教程
 tags:

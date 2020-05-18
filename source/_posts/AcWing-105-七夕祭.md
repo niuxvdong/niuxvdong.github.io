@@ -3,8 +3,8 @@ title: AcWing-105.七夕祭
 author: Mr.Niu
 toc: true
 abbrlink: 47007
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(20).jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(20).jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(20).jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(20).jpg'
 categories:
   - AcWing
 tags:

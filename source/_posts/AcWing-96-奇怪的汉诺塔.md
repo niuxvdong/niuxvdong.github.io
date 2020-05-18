@@ -3,8 +3,8 @@ title: AcWing-96.奇怪的汉诺塔
 author: Mr.Niu
 toc: true
 abbrlink: 34850
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_67.jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_67.jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_67.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_67.jpg'
 categories:
   - AcWing
 tags:

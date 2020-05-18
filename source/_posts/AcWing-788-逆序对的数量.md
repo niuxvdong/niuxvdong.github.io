@@ -3,8 +3,8 @@ title: AcWing-788.逆序对的数量
 author: Mr.Niu
 toc: true
 abbrlink: 25834
-img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_35.jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_35.jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_35.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_35.jpg'
 categories:
   - AcWing
 tags:

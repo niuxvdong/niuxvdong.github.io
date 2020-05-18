@@ -4,7 +4,7 @@ author: Mr.Niu
 toc: true
 abbrlink: 14163
 img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(42).png
-thumbnail: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (42).png'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (42).png'
 categories:
   - Hexo
 tags:
