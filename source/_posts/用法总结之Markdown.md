@@ -7,8 +7,8 @@ categories:
   - Markdown
 tags:
   - Markdown
-img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (31).jpg
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (31).jpg'
+cover: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_35.jpg
+top_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_35.jpg
 date: 2020-02-03 19:36:46
 updated: 
 top: true

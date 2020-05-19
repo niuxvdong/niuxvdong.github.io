@@ -4,7 +4,17 @@ class:
     1:
       name: Mr.Niu's Blog
       link: https://niuxvdong.top
-      avatar: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/yafine-blog.jpg
+      avatar: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/head.jpg
+      descr: 奋斗一生！
+    2:
+      name: Mr.Niu's Blog
+      link: https://niuxvdong.top
+      avatar: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/head.jpg
+      descr: 奋斗一生！
+    3:
+      name: Mr.Niu's Blog
+      link: https://niuxvdong.top
+      avatar: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/head.jpg
       descr: 奋斗一生！
 #     2:
 #       name: xxxxxx

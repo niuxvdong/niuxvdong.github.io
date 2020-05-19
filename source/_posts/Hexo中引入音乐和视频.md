@@ -3,8 +3,8 @@ title: Hexo中引入音乐和视频
 author: Mr.Niu
 toc: true
 abbrlink: 14163
-img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(42).png
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (42).png'
+cover: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_65.jpg
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_65.jpg'
 categories:
   - Hexo
 tags:

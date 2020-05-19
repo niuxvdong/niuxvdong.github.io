@@ -4,7 +4,7 @@ author: Mr.Niu
 toc: true
 abbrlink: 3455
 cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(28).jpg'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(28).jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/56.jpg'
 categories:
   - AcWing
 tags:

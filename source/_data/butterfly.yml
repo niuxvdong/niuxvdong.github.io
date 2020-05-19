@@ -12,7 +12,9 @@ menu:
   友链: /link/ || fa fa-link
   关于: /about/ || fa fa-heart
   清单||fa fa-list:
-    - 音乐 || /music/ || fa fa-music
+    - 导航 || https://nxd.js.org/ || fa fa-hand-o-right
+    - 音乐 || https://music.niuxvdong.top/ || fa fa-music
+    - 云盘 || https://pan.niub.cf/tykj/ || fa fa-cloud
     - 电影 || /movies/ || fa fa-film
 
 # PWA
@@ -29,7 +31,7 @@ menu:
 
 # Highlight theme
 # ---------------
-highlight_theme: pale night # default / darker / pale night / light / ocean
+highlight_theme: light # default / darker / pale night / light / ocean
 highlight_copy: true #代碼複製按鈕
 highlight_lang: true #代碼語言顯示
 highlight_shrink: false # true 全部代碼框不展開，需點擊 '>' 打開 / false 代碼框展開，有'>'點擊按鈕 | none 代碼框展開，不顯示 '>' 按鈕
@@ -48,9 +50,15 @@ copy:
 #   icon: link || the description
 # ---------------
 social:
-  fa fa-github: https://github.com/niuxvdong || Github
-  fa fa-envelope: mailto:158903258@qq.com || Email
-  fa fa-rss: /atom.xml || RSS
+  # fa fa-github: https://github.com/niuxvdong || Github
+  # fa fa-envelope: mailto:158903258@qq.com || Email
+  # fa fa-rss: /atom.xml || RSS
+  iconfont icon-GitHub card-github: https://github.com/niuxvdong || Github
+  iconfont icon-QQ card-qq: tencent://message/?Menu=yes&amp;uin=158903258&amp;Service=300&amp;sigT=45a1e5847943b64c6ff3990f8a9e644d2b31356cb0b4ac6b24663a3c8dd0f8aa12a595b1714f9d45 || QQ
+  iconfont icon-youxiang card-youxiang: mailto:158903258@qq.com || Email
+  iconfont icon-rss card-rss: /atom.xml || RSS
+  iconfont icon-csdn card-csdn: https://blog.csdn.net/qq_43590403 || CSDN
+  iconfont icon-bilibili card-bilibili: https://space.bilibili.com/389893592 || Bilibili
 
 ####    search    ####
 # Algolia search
@@ -111,21 +119,21 @@ avatar:
   effect: true # 頭像會一直轉圈
 
 # the banner image of index
-index_img:
+index_img: https://img.niuxvdong.top/H21b5f6b8496141a1979a33666e1074d9x.jpg
 
 # if the banner of page not setting,it will show the top_img
 default_top_img: https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg
 
 # the banner image of archive page
-archive_img:
+archive_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/H21b5f6b8496141a1979a33666e1074d9x.jpg
 
 # the banner image of tag page
 # tag page, look like https://xxxxxxxxx.com/tags/butterfly
-tag_img:
+tag_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/mmexport1581051773909.jpg
 
 # the banner image of category page
 # category page, look like https://xxxxxxxxx.com/categories/butterfly
-category_img:
+category_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/mmexport1581051788215.jpg
 
 # 如果你有使用hexo-douban，可配置這個
 # douban:
@@ -271,7 +279,7 @@ valine:
   emojiCDN: # emoji CDN
   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields nick/mail/link
-  bg: # valine background
+  bg: https://cdn.jsdelivr.net/gh/niuxvdong/pic/img/comment_bg.png # valine background
   count: false # dispaly comment count in top_img
 
 # utterances
@@ -300,7 +308,7 @@ facebook_comments:
 # ------------------------------------
 since: 2020
 
-footer_custom_text:
+footer_custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.upyun.com/"><b>又拍云</b></a> | HOST BY <a target="_blank" rel="external nofollow" href="https://coding.net/"><b>Coding</b></a> && <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a>
 
 footer_copyright:
   enable: true
@@ -368,7 +376,7 @@ reward:
 # 推薦文章
 related_post:
   enable: true
-  limit: 6 # 顯示推薦文章數目
+  limit: 3 # 顯示推薦文章數目
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption
@@ -417,7 +425,7 @@ tag_ui: # 留空或index
 # 圖片格式 background: url(http://xxxxxx.com/xxx.jpg)
 # 顔色 background: '#49B202'
 # 留空 顯示白色
-background:
+background: '#efefef'
 
 # footer是否顯示圖片背景(與top_img一致)
 footer_bg: false
@@ -436,13 +444,13 @@ canvas_ribbon:
 
 # 動態彩帶
 canvas_ribbon_piao:
-  enable: true
+  enable: false
   mobile: true # false 手機端不顯示 true 手機端顯示
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: true
+  enable: false
   color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
@@ -451,7 +459,7 @@ canvas_nest:
 
 # 打字效果
 activate_power_mode:
-  enable: true
+  enable: false
   colorful: true # 冒光特效
   shake: true # 抖動特效
 
@@ -459,7 +467,7 @@ activate_power_mode:
 # 避免卡頓，建議只開啟一個
 # 點擊煙火特效
 fireworks:
-  enable: true
+  enable: false
 
 # 點擊出現愛心
 click_heart:
@@ -519,25 +527,33 @@ subtitle:
   # 打字效果
   effect: true
   # 循環或者只打字一次
-  loop: false
+  loop: true
   # source調用第三方服務
-  # source: false 關閉調用
-  # source: 1  調用搏天api的隨機語錄（簡體） https://api.btstu.cn/
-  # source: 2  調用一言網的一句話（簡體） https://hitokoto.cn/
-  # source: 3  調用一句網（簡體） http://yijuzhan.com/
-  # source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
+  # source: false #關閉調用
+  # source: #1  調用搏天api的隨機語錄（簡體） https://api.btstu.cn/
+  # source: #2  調用一言網的一句話（簡體） https://hitokoto.cn/
+  # source: #3  調用一句網（簡體） http://yijuzhan.com/
+  # source: #4  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
   source: false
   # (如果有英文逗號' , '，請使用轉義字符 &#44;)
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
-    - 今日事&#44;今日畢
+    - 今日事&#44;今日毕
     - Never put off till tomorrow what you can do today
+    - 从来没有真正的绝境, 只有心灵的迷途
+    - Never really desperate, only the lost of the soul
+    - 志之所向，金石为开，谁能御之？ 
+    - 花开不是为了花落，而是为了开的更加灿烂。 
+    - 没有伞的孩子必须努力奔跑！ 
+    - 欲望以提升热忱，毅力以磨平高山。 
+    - 如果放弃太早，你永远都不知道自己会错过什么。 
+    - 没有礁石，就没有美丽的浪花；没有挫折，就没有壮丽的人生。
 
 # fontawesome圖標
 # 默認使用的是 fontawesome v4版本的圖標
 fontawesome_v5:
-  enable: false
+  enable: true
 
 # 加載動畫 Loading Animation
 preloader: false
@@ -551,10 +567,10 @@ aside:
   position: right # left or right
   card_author:
     enable: true
-    description:
+    description: 
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 欢迎访问小牛博客，本博客是用来记录一些学习笔记以及一些所见所感，好玩好看的东西，如果阅读中有什么问题，可以随时留言或通过QQ以及邮箱联系哦！
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -585,7 +601,7 @@ busuanzi:
 # 也可以寫成 年/月/日 時間
 runtimeshow:
   enable: true
-  start_date: 30/01/2020 00:00:00
+  start_date: 2020/01/30 00:00:00
 
 ####   右下角按鈕  ####
 #----------------------------------------------
@@ -629,11 +645,11 @@ darkmode:
 #--------------------------------------------
 # medium_zoom https://github.com/francoischalifour/medium-zoom
 medium_zoom:
-  enable: false
+  enable: true
 
 # fancybox http://fancyapps.com/fancybox/3/
 fancybox:
-  enable: true
+  enable: false
 
 # Snackbar 彈窗
 # https://github.com/polonel/SnackBar
@@ -647,7 +663,7 @@ snackbar:
 
 #百度推送
 baidu_push:
-  enable: false
+  enable: true
 
 # https://instant.page/
 # prefetch預加載
@@ -677,7 +693,7 @@ note:
 
 # 圖片懶加載
 # https://github.com/ApoorvSaxena/lozad.js
-lazyload: false
+lazyload: true
 
 # 避免重複網址分散seo
 canonical: true
@@ -700,9 +716,10 @@ fragment_cache: true
 # 插入代码到头部</head>之前 和 尾部</body>之前
 inject:
   head:
-  # - <link rel="stylesheet" href="xxxxx">
+  - <link rel="stylesheet" href="/css/my.css">
+  - <link rel="stylesheet" href="//at.alicdn.com/t/font_1828588_zrw9f0qqie.css">
   bottom:
-    # - <script src="xxxx"></script>
+    - <script src="js/my.js"></script>
 
 # CDN
 # 非必要不要修改

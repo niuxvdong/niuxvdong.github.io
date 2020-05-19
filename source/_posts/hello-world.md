@@ -6,8 +6,8 @@ categories:
   - Hexo
 tags:
   - Doc
-img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(35).png
-top_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(35).png'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(35).png'
+cover: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f%20(35).png
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/04.jpg'
 date: 2020-01-31 12:21:55
 ---
 

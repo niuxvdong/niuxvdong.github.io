@@ -4,7 +4,7 @@ author: Mr.Niu
 toc: true
 abbrlink: 52313
 cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (26).png'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/f (26).png'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/04.jpg'
 categories:
   - JavaScript教程
 tags:
