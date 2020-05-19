@@ -12,7 +12,7 @@ menu:
   友链: /link/ || fa fa-link
   关于: /about/ || fa fa-heart
   清单||fa fa-list:
-    - 导航 || https://nxd.js.org/ || fa fa-hand-o-right
+    - 导航 || https://nxd.js.org/ || fa fa-thumbs-up
     - 音乐 || https://music.niuxvdong.top/ || fa fa-music
     - 云盘 || https://pan.niub.cf/tykj/ || fa fa-cloud
     - 电影 || /movies/ || fa fa-film
@@ -133,7 +133,7 @@ tag_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/mmexport1581051773909.
 
 # the banner image of category page
 # category page, look like https://xxxxxxxxx.com/categories/butterfly
-category_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/mmexport1581051788215.jpg
+category_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/banners/5.jpg
 
 # 如果你有使用hexo-douban，可配置這個
 # douban:
@@ -716,10 +716,12 @@ fragment_cache: true
 # 插入代码到头部</head>之前 和 尾部</body>之前
 inject:
   head:
-  - <link rel="stylesheet" href="/css/my.css">
+  # - <link rel="stylesheet" href="/css/my.css">
+  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/css/my.css">
   - <link rel="stylesheet" href="//at.alicdn.com/t/font_1828588_zrw9f0qqie.css">
   bottom:
     - <script src="js/my.js"></script>
+    - <script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/js/my.js"></script>
 
 # CDN
 # 非必要不要修改
