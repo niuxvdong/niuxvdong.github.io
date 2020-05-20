@@ -53,9 +53,9 @@ social:
   # fa fa-github: https://github.com/niuxvdong || Github
   # fa fa-envelope: mailto:158903258@qq.com || Email
   # fa fa-rss: /atom.xml || RSS
-  iconfont icon-GitHub card-github: https://github.com/niuxvdong || Github
   iconfont icon-QQ card-qq: tencent://message/?Menu=yes&amp;uin=158903258&amp;Service=300&amp;sigT=45a1e5847943b64c6ff3990f8a9e644d2b31356cb0b4ac6b24663a3c8dd0f8aa12a595b1714f9d45 || QQ
-  iconfont icon-youxiang card-youxiang: mailto:158903258@qq.com || Email
+  iconfont icon-youxiang card-youxiang: https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=q8XC3tPdz8TFzOva2oXIxMY || Email
+  iconfont icon-GitHub card-github: https://github.com/niuxvdong || Github
   iconfont icon-rss card-rss: /atom.xml || RSS
   iconfont icon-csdn card-csdn: https://blog.csdn.net/qq_43590403 || CSDN
   iconfont icon-bilibili card-bilibili: https://space.bilibili.com/389893592 || Bilibili
@@ -265,9 +265,11 @@ gitalk:
 # valine comment system. https://valine.js.org
 valine:
   enable: true # if you want use valine,please set this value is true
-  appId: 7Iq3HQDB16yvBEcNcwVjda1d-gzGzoHsz # leancloud application app id
-  appKey: D3Bo4s1jd1EhYgxI1VC5TO0A # leancloud application app key
-  notify: false # valine mail notify (true/false) Deprecated in v1.4.0+
+  # appId: 7Iq3HQDB16yvBEcNcwVjda1d-gzGzoHsz # leancloud application app id
+  # appKey: D3Bo4s1jd1EhYgxI1VC5TO0A # leancloud application app key
+  appId: 90p3ltuDBaHUROmxjB6gPP5E-gzGzoHsz
+  appKey: ELqQhwIA4xnLFKglq8vVAjJ6
+  notify: true # valine mail notify (true/false) Deprecated in v1.4.0+
   verify: false # valine verify code (true/false) Deprecated in v1.4.0+
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
@@ -720,7 +722,7 @@ inject:
   - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/css/my.css">
   - <link rel="stylesheet" href="//at.alicdn.com/t/font_1828588_zrw9f0qqie.css">
   bottom:
-    - <script src="js/my.js"></script>
+    # - <script src="js/my.js"></script>
     - <script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/js/my.js"></script>
 
 # CDN
