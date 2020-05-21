@@ -15,6 +15,7 @@ menu:
     - 导航 || https://nxd.js.org/ || fa fa-thumbs-up
     - 音乐 || https://music.niuxvdong.top/ || fa fa-music
     - 云盘 || https://pan.niub.cf/tykj/ || fa fa-cloud
+    - 评论 || https://valine.niuxvdong.top/ || fa fa-comments
     - 电影 || /movies/ || fa fa-film
 
 # PWA
@@ -269,20 +270,31 @@ valine:
   # appKey: D3Bo4s1jd1EhYgxI1VC5TO0A # leancloud application app key
   appId: 90p3ltuDBaHUROmxjB6gPP5E-gzGzoHsz
   appKey: ELqQhwIA4xnLFKglq8vVAjJ6
-  notify: true # valine mail notify (true/false) Deprecated in v1.4.0+
+  master:
+    - d9cd3b7d3ff3953067e21d186cc3b8a8
+  friends:
+    - db61bf13ef744168a53227821321dd74
+  notify: false # valine mail notify (true/false) Deprecated in v1.4.0+
   verify: false # valine verify code (true/false) Deprecated in v1.4.0+
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
-  placeholder: 'ヾﾉ≧∀≦)o 来呀！吐槽一番吧！' # valine comment input placeholder(like: Please leave your footprints )
-  guest_info: nick,mail,link #valine comment header info
+  placeholder: '昵称处填写qq号会自动更换成qq昵称并填入qq邮箱哦！' # valine comment input placeholder(like: Please leave your footprints )
+  # guest_info: nick,mail,link #valine comment header info
+  guest_info: 昵称,邮箱,主页 #valine comment header info
   recordIP: true # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   emojiCDN: # emoji CDN
   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields nick/mail/link
-  bg: https://cdn.jsdelivr.net/gh/niuxvdong/pic/img/comment_bg.png # valine background
-  count: false # dispaly comment count in top_img
+  bg: https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/img/comment_bg.png
+  # bg: https://cdn.jsdelivr.net/gh/niuxvdong/pic/img/comment_bg.png # valine background
+  count: true # dispaly comment count in top_img
+  metaPlaceholder:
+    nick: 昵称/QQ号(必填)
+    mail: 邮箱(必填)
+    link: 网址(https://)
+  tagMeta: [“博主”,“小伙伴”,“访客”]
 
 # utterances
 # https://utteranc.es/
@@ -738,7 +750,7 @@ CDN:
   blueimp_md5: https://cdn.jsdelivr.net/npm/blueimp-md5/js/md5.min.js
   gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
-  valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
+  valine: https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js #https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqus.js
   disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqusjs.css
   utterances: https://utteranc.es/client.js

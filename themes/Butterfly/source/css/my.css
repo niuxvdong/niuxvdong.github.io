@@ -224,3 +224,7 @@ img {
   /* 修改颜色 */
   color: rgb(216,30,6);
 }
+
+#vcomment textarea {
+  background: url(https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile1/imgbed/2020/02/13/20200213164243.png) 100% 100% no-repeat;
+}
