@@ -1,0 +1,680 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>hexo-theme-matery主题配置详解 | 小牛博客</title><meta name="description" content="hexo-theme-matery 这是一个采用 Material Design 和响应式设计的 Hexo 博客主题。  特性 简单漂亮，文章内容美观易读 Material Design 设计 响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现 首页轮播文章及每天动态切换 Banner 图片 瀑布流式的博客文章列表（文章无特色图片时会有 24 张漂亮的图片代替） 时间轴式的归档页 词云的标"><meta name="keywords" content="matery"><meta name="author" content="Dreamy.NXD"><meta name="copyright" content="Dreamy.NXD"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/favicon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="dns-prefetch" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://hm.baidu.com"/><link rel="dns-prefetch" href="https://hm.baidu.com"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="dns-prefetch" href="https://fonts.googleapis.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="dns-prefetch" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="hexo-theme-matery主题配置详解"><meta name="twitter:description" content="hexo-theme-matery 这是一个采用 Material Design 和响应式设计的 Hexo 博客主题。  特性 简单漂亮，文章内容美观易读 Material Design 设计 响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现 首页轮播文章及每天动态切换 Banner 图片 瀑布流式的博客文章列表（文章无特色图片时会有 24 张漂亮的图片代替） 时间轴式的归档页 词云的标"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e (49).jpg"><meta property="og:type" content="article"><meta property="og:title" content="hexo-theme-matery主题配置详解"><meta property="og:url" content="https://niuxvdong.top/posts/57378.html"><meta property="og:site_name" content="小牛博客"><meta property="og:description" content="hexo-theme-matery 这是一个采用 Material Design 和响应式设计的 Hexo 博客主题。  特性 简单漂亮，文章内容美观易读 Material Design 设计 响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现 首页轮播文章及每天动态切换 Banner 图片 瀑布流式的博客文章列表（文章无特色图片时会有 24 张漂亮的图片代替） 时间轴式的归档页 词云的标"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/e (49).jpg"><meta property="article:published_time" content="2020-02-05T04:24:09.000Z"><meta property="article:modified_time" content="2020-02-05T04:24:09.000Z"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>var autoChangeMode = '1'
+var t = Cookies.get("theme")
+if (autoChangeMode == '1'){
+  var isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+  var isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+  var isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined){
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport){
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour < 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+  }
+  } else if (t == 'light') activateLightMode()
+  else activateDarkMode()
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="canonical" href="https://niuxvdong.top/posts/57378.html"><link rel="prev" title="自学Git记录及用法总结" href="https://niuxvdong.top/posts/50207.html"><link rel="next" title="Hexo中引入音乐和视频" href="https://niuxvdong.top/posts/14163.html"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c295a600e3126beebaf06822cd8b5c22";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://niuxvdong.top/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: true,
+  fancybox: false,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  baiduPush: true,
+  highlightCopy: true,
+  highlightLang: true,
+  highlightShrink: 'false',
+  isFontAwesomeV5: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+  
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isSidebar: true  
+  }</script><noscript><style>
+#page-header {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/css/my.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_1828588_zrw9f0qqie.css"><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="小牛博客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">54</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">67</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">9</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="https://nxd.js.org/" target="_blank" rel="noopener"><i class="fa-fw fa fa-thumbs-up"></i><span> 导航</span></a></li><li><a class="site-page" href="https://music.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="https://pan.niub.cf/tykj/" target="_blank" rel="noopener"><i class="fa-fw fa fa-cloud"></i><span> 云盘</span></a></li><li><a class="site-page" href="https://proxy.niub.cf/" target="_blank" rel="noopener"><i class="fa-fw fa fa-plane"></i><span> 谷歌</span></a></li><li><a class="site-page" href="https://valine.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-comments"></i><span> 评论</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div></div></div></div><i class="fa fa-arrow-right on" id="toggle-sidebar" aria-hidden="true">     </i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-theme-matery"><span class="toc-number">1.</span> <span class="toc-text">hexo-theme-matery</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#特性"><span class="toc-number">1.1.</span> <span class="toc-text">特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#贡献者"><span class="toc-number">1.2.</span> <span class="toc-text">贡献者</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#下载"><span class="toc-number">1.3.</span> <span class="toc-text">下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-number">1.4.</span> <span class="toc-text">配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#切换主题"><span class="toc-number">1.4.1.</span> <span class="toc-text">切换主题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#config-yml-文件的其它修改建议"><span class="toc-number">1.4.1.1.</span> <span class="toc-text">_config.yml 文件的其它修改建议:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#新建分类-categories-页"><span class="toc-number">1.4.2.</span> <span class="toc-text">新建分类 categories 页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#新建标签-tags-页"><span class="toc-number">1.4.3.</span> <span class="toc-text">新建标签 tags 页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#新建关于我-about-页"><span class="toc-number">1.4.4.</span> <span class="toc-text">新建关于我 about 页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#新建留言板-contact-页（可选的）"><span class="toc-number">1.4.5.</span> <span class="toc-text">新建留言板 contact 页（可选的）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#新建友情连接-friends-页（可选的）"><span class="toc-number">1.4.6.</span> <span class="toc-text">新建友情连接 friends 页（可选的）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#菜单导航配置"><span class="toc-number">1.4.7.</span> <span class="toc-text">菜单导航配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#配置基本菜单导航的名称、路径url和图标icon"><span class="toc-number">1.4.7.1.</span> <span class="toc-text">配置基本菜单导航的名称、路径url和图标icon.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二级菜单配置方法"><span class="toc-number">1.4.7.2.</span> <span class="toc-text">二级菜单配置方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码高亮"><span class="toc-number">1.4.8.</span> <span class="toc-text">代码高亮</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#搜索"><span class="toc-number">1.4.9.</span> <span class="toc-text">搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#中文链接转拼音（建议安装）"><span class="toc-number">1.4.10.</span> <span class="toc-text">中文链接转拼音（建议安装）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文章字数统计插件（建议安装）"><span class="toc-number">1.4.11.</span> <span class="toc-text">文章字数统计插件（建议安装）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#添加emoji表情支持（可选的）"><span class="toc-number">1.4.12.</span> <span class="toc-text">添加emoji表情支持（可选的）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#添加-RSS-订阅支持（可选的）"><span class="toc-number">1.4.13.</span> <span class="toc-text">添加 RSS 订阅支持（可选的）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#添加-DaoVoice-在线聊天功能（可选的）"><span class="toc-number">1.4.14.</span> <span class="toc-text">添加 DaoVoice 在线聊天功能（可选的）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#添加-Tidio-在线聊天功能（可选的）"><span class="toc-number">1.4.15.</span> <span class="toc-text">添加 Tidio 在线聊天功能（可选的）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改页脚"><span class="toc-number">1.4.16.</span> <span class="toc-text">修改页脚</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改社交链接"><span class="toc-number">1.4.17.</span> <span class="toc-text">修改社交链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改打赏的二维码图片"><span class="toc-number">1.4.18.</span> <span class="toc-text">修改打赏的二维码图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置音乐播放器（可选的）"><span class="toc-number">1.4.19.</span> <span class="toc-text">配置音乐播放器（可选的）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文章-Front-matter-介绍"><span class="toc-number">1.5.</span> <span class="toc-text">文章 Front-matter 介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Front-matter-选项详解"><span class="toc-number">1.5.1.</span> <span class="toc-text">Front-matter 选项详解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#最简示例"><span class="toc-number">1.5.2.</span> <span class="toc-text">最简示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#最全示例"><span class="toc-number">1.5.3.</span> <span class="toc-text">最全示例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#效果截图"><span class="toc-number">1.6.</span> <span class="toc-text">效果截图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#自定制修改"><span class="toc-number">1.7.</span> <span class="toc-text">自定制修改</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#修改主题颜色"><span class="toc-number">1.7.1.</span> <span class="toc-text">修改主题颜色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改-banner-图和文章特色图"><span class="toc-number">1.7.2.</span> <span class="toc-text">修改 banner 图和文章特色图</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#版本记录"><span class="toc-number">1.8.</span> <span class="toc-text">版本记录</span></a></li></ol></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><div class="post-bg" id="nav" style="background-image: url(https://cdn.jsdelivr.net/gh/niuxvdong/images/img/04.jpg)"><div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">小牛博客</a></span><span class="pull_right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="https://nxd.js.org/" target="_blank" rel="noopener"><i class="fa-fw fa fa-thumbs-up"></i><span> 导航</span></a></li><li><a class="site-page" href="https://music.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="https://pan.niub.cf/tykj/" target="_blank" rel="noopener"><i class="fa-fw fa fa-cloud"></i><span> 云盘</span></a></li><li><a class="site-page" href="https://proxy.niub.cf/" target="_blank" rel="noopener"><i class="fa-fw fa fa-plane"></i><span> 谷歌</span></a></li><li><a class="site-page" href="https://valine.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-comments"></i><span> 评论</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div></div><span class="toggle-menu close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span></span></div><div id="post-info"><div id="post-title"><div class="posttitle">hexo-theme-matery主题配置详解</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-02-05 12:24:09"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2020-02-05</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-02-05 12:24:09"><i class="fa fa-history" aria-hidden="true"></i> 更新于 2020-02-05</span></time><span class="post-meta__categories"><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/Hexo%E4%B8%BB%E9%A2%98/">Hexo主题</a></span></div><div class="meta-secondline"> <span class="post-meta-wordcount"><i class="post-meta__icon far fa-file-word" aria-hidden="true"></i><span>字数总计:</span><span class="word-count">5.4k</span><span class="post-meta__separator">|</span><i class="post-meta__icon far fa-clock" aria-hidden="true"></i><span>阅读时长: 19 分钟</span></span></div><div class="meta-thirdline"><span class="post-meta-pv-cv"><span class="post-meta__separator">|</span><i class="fa fa-eye post-meta__icon" aria-hidden="true"> </i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"><span class="post-meta__separator">|</span><i class="post-meta__icon far fa-comments" aria-hidden="true"></i><span>评论数:</span><a href="/posts/57378.html#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/posts/57378.html" itemprop="commentCount"></span></a></span></div></div></div></div><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h1 id="hexo-theme-matery"><a href="#hexo-theme-matery" class="headerlink" title="hexo-theme-matery"></a>hexo-theme-matery</h1><blockquote>
+<p>这是一个采用 <code>Material Design</code> 和响应式设计的 Hexo 博客主题。</p>
+</blockquote>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
+<li>简单漂亮，文章内容美观易读</li>
+<li><a href="https://material.io/" target="_blank" rel="noopener">Material Design</a> 设计</li>
+<li>响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现</li>
+<li>首页轮播文章及每天动态切换 <code>Banner</code> 图片</li>
+<li>瀑布流式的博客文章列表（文章无特色图片时会有 <code>24</code> 张漂亮的图片代替）</li>
+<li>时间轴式的归档页</li>
+<li><strong>词云</strong>的标签页和<strong>雷达图</strong>的分类页</li>
+<li>丰富的关于我页面（包括关于我、文章统计图、我的项目、我的技能、相册等）</li>
+<li>可自定义的数据的友情链接页面</li>
+<li>支持文章置顶和文章打赏</li>
+<li>支持 <code>MathJax</code></li>
+<li><code>TOC</code> 目录</li>
+<li>可设置复制文章内容时追加版权信息</li>
+<li>可设置阅读文章时做密码验证</li>
+<li><a href="https://gitalk.github.io/" target="_blank" rel="noopener">Gitalk</a>、<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment</a>、<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a> 和 <a href="https://disqus.com/" target="_blank" rel="noopener">Disqus</a> 评论模块（推荐使用 <code>Gitalk</code>）</li>
+<li>集成了<a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">不蒜子统计</a>、谷歌分析（<code>Google Analytics</code>）和文章字数统计等功能</li>
+<li>支持在首页的音乐播放和视频播放功能</li>
+<li>支持<code>emoji</code>表情，用<code>markdown emoji</code>语法书写直接生成对应的能<strong>跳跃</strong>的表情。</li>
+<li>支持 <a href="http://www.daovoice.io/" target="_blank" rel="noopener">DaoVoice</a>、<a href="https://www.tidio.com/" target="_blank" rel="noopener">Tidio</a> 在线聊天功能。</li>
+</ul>
+<h2 id="贡献者"><a href="#贡献者" class="headerlink" title="贡献者"></a>贡献者</h2><p>感谢下面列出的贡献者，没有他们，hexo-theme-matery 不会这么完美。</p>
+<ul>
+<li><a href="https://github.com/HarborZeng" target="_blank" rel="noopener">@HarborZeng</a></li>
+<li><a href="https://github.com/shw2018" target="_blank" rel="noopener">@shw2018</a></li>
+<li><a href="https://github.com/L1cardo" target="_blank" rel="noopener">@L1cardo</a></li>
+<li><a href="https://github.com/Five-great" target="_blank" rel="noopener">@Five-great</a></li>
+</ul>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>当你看到这里的时候，应该已经有一个自己的 <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> 博客了。如果还没有的话，不妨使用 Hexo 和 <a href="https://www.appinn.com/markdown/" target="_blank" rel="noopener">Markdown</a> 来写博客和文章。</p>
+<p>点击 <a href="https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master" target="_blank" rel="noopener">这里</a> 下载 <code>master</code> 分支的最新稳定版的代码，解压缩后，将 <code>hexo-theme-matery</code> 的文件夹复制到你 Hexo 的 <code>themes</code> 文件夹中即可。</p>
+<p>当然你也可以在你的 <code>themes</code> 文件夹下使用 <code>Git clone</code> 命令来下载:</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/blinkfox/hexo-theme-matery.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h3><p>修改 Hexo 根目录下的 <code>_config.yml</code> 的  <code>theme</code> 的值：<code>theme: hexo-theme-matery</code></p>
+<h4 id="config-yml-文件的其它修改建议"><a href="#config-yml-文件的其它修改建议" class="headerlink" title="_config.yml 文件的其它修改建议:"></a><code>_config.yml</code> 文件的其它修改建议:</h4><ul>
+<li>请修改 <code>_config.yml</code> 的 <code>url</code> 的值为你的网站主 <code>URL</code>（如：<code>http://xxx.github.io</code>）。</li>
+<li>建议修改两个 <code>per_page</code> 的分页条数值为 <code>6</code> 的倍数，如：<code>12</code>、<code>18</code> 等，这样文章列表在各个屏幕下都能较好的显示。</li>
+<li>如果你是中文用户，则建议修改 <code>language</code> 的值为 <code>zh-CN</code>。</li>
+</ul>
+<h3 id="新建分类-categories-页"><a href="#新建分类-categories-页" class="headerlink" title="新建分类 categories 页"></a>新建分类 categories 页</h3><p><code>categories</code> 页是用来展示所有分类的页面，如果在你的博客 <code>source</code> 目录下还没有 <code>categories/index.md</code> 文件，那么你就需要新建一个，命令如下：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">hexo new page <span class="token string">"categories"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>编辑你刚刚新建的页面文件 <code>/source/categories/index.md</code>，至少需要以下内容：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> categories
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2018-09-30 17:25:30</span>
+<span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">"categories"</span>
+<span class="token key atrule">layout</span><span class="token punctuation">:</span> <span class="token string">"categories"</span>
+<span class="token punctuation">---</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="新建标签-tags-页"><a href="#新建标签-tags-页" class="headerlink" title="新建标签 tags 页"></a>新建标签 tags 页</h3><p><code>tags</code> 页是用来展示所有标签的页面，如果在你的博客 <code>source</code> 目录下还没有 <code>tags/index.md</code> 文件，那么你就需要新建一个，命令如下：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">hexo new page <span class="token string">"tags"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>编辑你刚刚新建的页面文件 <code>/source/tags/index.md</code>，至少需要以下内容：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> tags
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2018-09-30 18:23:38</span>
+<span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">"tags"</span>
+<span class="token key atrule">layout</span><span class="token punctuation">:</span> <span class="token string">"tags"</span>
+<span class="token punctuation">---</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="新建关于我-about-页"><a href="#新建关于我-about-页" class="headerlink" title="新建关于我 about 页"></a>新建关于我 about 页</h3><p><code>about</code> 页是用来展示<strong>关于我和我的博客</strong>信息的页面，如果在你的博客 <code>source</code> 目录下还没有 <code>about/index.md</code> 文件，那么你就需要新建一个，命令如下：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">hexo new page <span class="token string">"about"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>编辑你刚刚新建的页面文件 <code>/source/about/index.md</code>，至少需要以下内容：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> about
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2018-09-30 17:25:30</span>
+<span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">"about"</span>
+<span class="token key atrule">layout</span><span class="token punctuation">:</span> <span class="token string">"about"</span>
+<span class="token punctuation">---</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="新建留言板-contact-页（可选的）"><a href="#新建留言板-contact-页（可选的）" class="headerlink" title="新建留言板 contact 页（可选的）"></a>新建留言板 contact 页（可选的）</h3><p><code>contact</code> 页是用来展示<strong>留言板</strong>信息的页面，如果在你的博客 <code>source</code> 目录下还没有 <code>contact/index.md</code> 文件，那么你就需要新建一个，命令如下：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">hexo new page <span class="token string">"contact"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>编辑你刚刚新建的页面文件 <code>/source/contact/index.md</code>，至少需要以下内容：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> contact
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2018-09-30 17:25:30</span>
+<span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">"contact"</span>
+<span class="token key atrule">layout</span><span class="token punctuation">:</span> <span class="token string">"contact"</span>
+<span class="token punctuation">---</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p><strong>注</strong>：本留言板功能依赖于第三方评论系统，请<strong>激活</strong>你的评论系统才有效果。并且在主题的 <code>_config.yml</code> 文件中，第 <code>19</code> 至 <code>21</code> 行的“<strong>菜单</strong>”配置，取消关于留言板的注释即可。</p>
+</blockquote>
+<h3 id="新建友情连接-friends-页（可选的）"><a href="#新建友情连接-friends-页（可选的）" class="headerlink" title="新建友情连接 friends 页（可选的）"></a>新建友情连接 friends 页（可选的）</h3><p><code>friends</code> 页是用来展示<strong>友情连接</strong>信息的页面，如果在你的博客 <code>source</code> 目录下还没有 <code>friends/index.md</code> 文件，那么你就需要新建一个，命令如下：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">hexo new page <span class="token string">"friends"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>编辑你刚刚新建的页面文件 <code>/source/friends/index.md</code>，至少需要以下内容：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> friends
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2018-12-12 21:25:30</span>
+<span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">"friends"</span>
+<span class="token key atrule">layout</span><span class="token punctuation">:</span> <span class="token string">"friends"</span>
+<span class="token punctuation">---</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>同时，在你的博客 <code>source</code> 目录下新建 <code>_data</code> 目录，在 <code>_data</code> 目录中新建 <code>friends.json</code> 文件，文件内容如下所示：</p>
+<pre class="line-numbers language-json"><code class="language-json"><span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token property">"avatar"</span><span class="token operator">:</span> <span class="token string">"http://image.luokangyuan.com/1_qq_27922023.jpg"</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"码酱"</span><span class="token punctuation">,</span>
+    <span class="token property">"introduction"</span><span class="token operator">:</span> <span class="token string">"我不是大佬，只是在追寻大佬的脚步"</span><span class="token punctuation">,</span>
+    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"http://luokangyuan.com/"</span><span class="token punctuation">,</span>
+    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"前去学习"</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token property">"avatar"</span><span class="token operator">:</span> <span class="token string">"http://image.luokangyuan.com/4027734.jpeg"</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"闪烁之狐"</span><span class="token punctuation">,</span>
+    <span class="token property">"introduction"</span><span class="token operator">:</span> <span class="token string">"编程界大佬，技术牛，人还特别好，不懂的都可以请教大佬"</span><span class="token punctuation">,</span>
+    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://blinkfox.github.io/"</span><span class="token punctuation">,</span>
+    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"前去学习"</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token property">"avatar"</span><span class="token operator">:</span> <span class="token string">"http://image.luokangyuan.com/avatar.jpg"</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"ja_rome"</span><span class="token punctuation">,</span>
+    <span class="token property">"introduction"</span><span class="token operator">:</span> <span class="token string">"平凡的脚步也可以走出伟大的行程"</span><span class="token punctuation">,</span>
+    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://me.csdn.net/jlh912008548"</span><span class="token punctuation">,</span>
+    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"前去学习"</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="菜单导航配置"><a href="#菜单导航配置" class="headerlink" title="菜单导航配置"></a>菜单导航配置</h3><h4 id="配置基本菜单导航的名称、路径url和图标icon"><a href="#配置基本菜单导航的名称、路径url和图标icon" class="headerlink" title="配置基本菜单导航的名称、路径url和图标icon."></a>配置基本菜单导航的名称、路径url和图标icon.</h4><p>1.菜单导航名称可以是中文也可以是英文(如：<code>Index</code>或<code>主页</code>)<br>2.图标icon 可以在<a href="https://fontawesome.com/icons" target="_blank" rel="noopener">Font Awesome</a> 中查找   </p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">menu</span><span class="token punctuation">:</span>
+  <span class="token key atrule">Index</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>home
+  <span class="token key atrule">Tags</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /tags
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>tags
+  <span class="token key atrule">Categories</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /categories
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>bookmark
+  <span class="token key atrule">Archives</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /archives
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>archive
+  <span class="token key atrule">About</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /about
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>user<span class="token punctuation">-</span>circle
+  <span class="token key atrule">Friends</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /friends
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>address<span class="token punctuation">-</span>book<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="二级菜单配置方法"><a href="#二级菜单配置方法" class="headerlink" title="二级菜单配置方法"></a>二级菜单配置方法</h4><p>如果你需要二级菜单则可以在原基本菜单导航的基础上如下操作<br>1.在需要添加二级菜单的一级菜单下添加<code>children</code>关键字(如:<code>About</code>菜单下添加<code>children</code>)<br>2.在<code>children</code>下创建二级菜单的 名称name,路径url和图标icon.<br>3.注意每个二级菜单模块前要加 <code>-</code>.<br>4.注意缩进格式  </p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">menu</span><span class="token punctuation">:</span>
+  <span class="token key atrule">Index</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>home
+  <span class="token key atrule">Tags</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /tags
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>tags
+  <span class="token key atrule">Categories</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /categories
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>bookmark
+  <span class="token key atrule">Archives</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /archives
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>archive
+  <span class="token key atrule">About</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /about
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>user<span class="token punctuation">-</span>circle<span class="token punctuation">-</span>o
+  <span class="token key atrule">Friends</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /friends
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>address<span class="token punctuation">-</span>book
+  <span class="token key atrule">Medias</span><span class="token punctuation">:</span>
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>list
+    <span class="token key atrule">children</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Musics
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /musics
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>music
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Movies
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /movies
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>film
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Books
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /books
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>book
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Galleries
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /galleries
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>image<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>执行 <code>hexo clean &amp;&amp; hexo g</code> 重新生成博客文件，然后就可以在文章中对应位置看到你用<code>emoji</code>语法写的表情了。</p>
+<h3 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h3><p>由于 Hexo 自带的代码高亮主题显示不好看，所以主题中使用到了 <a href="https://github.com/ele828/hexo-prism-plugin" target="_blank" rel="noopener">hexo-prism-plugin</a> 的 Hexo 插件来做代码高亮，安装命令如下：</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> i -S hexo-prism-plugin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>然后，修改 Hexo 根目录下 <code>_config.yml</code> 文件中 <code>highlight.enable</code> 的值为 <code>false</code>，并新增 <code>prism</code> 插件相关的配置，主要配置如下：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">highlight</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+<span class="token key atrule">prism_plugin</span><span class="token punctuation">:</span>
+  <span class="token key atrule">mode</span><span class="token punctuation">:</span> <span class="token string">'preprocess'</span>    <span class="token comment" spellcheck="true"># realtime/preprocess</span>
+  <span class="token key atrule">theme</span><span class="token punctuation">:</span> <span class="token string">'tomorrow'</span>
+  <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">false    </span><span class="token comment" spellcheck="true"># default false</span>
+  custom_css<span class="token punctuation">:</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><p>本主题中还使用到了 <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-search</a> 的 Hexo 插件来做内容搜索，安装命令如下：</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-generator-search --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">search</span><span class="token punctuation">:</span>
+  <span class="token key atrule">path</span><span class="token punctuation">:</span> search.xml
+  <span class="token key atrule">field</span><span class="token punctuation">:</span> post<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="中文链接转拼音（建议安装）"><a href="#中文链接转拼音（建议安装）" class="headerlink" title="中文链接转拼音（建议安装）"></a>中文链接转拼音（建议安装）</h3><p>如果你的文章名称是中文的，那么 Hexo 默认生成的永久链接也会有中文，这样不利于 <code>SEO</code>，且 <code>gitment</code> 评论对中文链接也不支持。我们可以用 <a href="https://github.com/viko16/hexo-permalink-pinyin" target="_blank" rel="noopener">hexo-permalink-pinyin</a> Hexo 插件使在生成文章时生成中文拼音的永久链接。</p>
+<p>安装命令如下：</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> i hexo-permalink-pinyin --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">permalink_pinyin</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">separator</span><span class="token punctuation">:</span> <span class="token string">'-'</span> <span class="token comment" spellcheck="true"># default: '-'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p><strong>注</strong>：除了此插件外，<a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="noopener">hexo-abbrlink</a> 插件也可以生成非中文的链接。</p>
+</blockquote>
+<h3 id="文章字数统计插件（建议安装）"><a href="#文章字数统计插件（建议安装）" class="headerlink" title="文章字数统计插件（建议安装）"></a>文章字数统计插件（建议安装）</h3><p>如果你想要在文章中显示文章字数、阅读时长信息，可以安装 <a href="https://github.com/willin/hexo-wordcount" target="_blank" rel="noopener">hexo-wordcount</a>插件。</p>
+<p>安装命令如下：</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> i --save hexo-wordcount<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>然后只需在本主题下的 <code>_config.yml</code> 文件中，将各个文章字数相关的配置激活即可：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">postInfo</span><span class="token punctuation">:</span>
+  <span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">update</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">wordCount</span><span class="token punctuation">:</span> <span class="token boolean important">false </span><span class="token comment" spellcheck="true"># 设置文章字数统计为 true.</span>
+  <span class="token key atrule">totalCount</span><span class="token punctuation">:</span> <span class="token boolean important">false </span><span class="token comment" spellcheck="true"># 设置站点文章总字数统计为 true.</span>
+  <span class="token key atrule">min2read</span><span class="token punctuation">:</span> <span class="token boolean important">false </span><span class="token comment" spellcheck="true"># 阅读时长.</span>
+  <span class="token key atrule">readCount</span><span class="token punctuation">:</span> <span class="token boolean important">false </span><span class="token comment" spellcheck="true"># 阅读次数.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="添加emoji表情支持（可选的）"><a href="#添加emoji表情支持（可选的）" class="headerlink" title="添加emoji表情支持（可选的）"></a>添加emoji表情支持（可选的）</h3><p>本主题新增了对<code>emoji</code>表情的支持，使用到了 <a href="https://npm.taobao.org/package/hexo-filter-github-emojis" target="_blank" rel="noopener">hexo-filter-github-emojis</a> 的 Hexo 插件来支持 <code>emoji</code>表情的生成，把对应的<code>markdown emoji</code>语法（<code>::</code>,例如：<code>:smile:</code>）转变成会跳跃的<code>emoji</code>表情，安装命令如下：</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-filter-github-emojis --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">githubEmojis</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">className</span><span class="token punctuation">:</span> github<span class="token punctuation">-</span>emoji
+  <span class="token key atrule">inject</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">styles</span><span class="token punctuation">:</span>
+  customEmojis<span class="token punctuation">:</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="添加-RSS-订阅支持（可选的）"><a href="#添加-RSS-订阅支持（可选的）" class="headerlink" title="添加 RSS 订阅支持（可选的）"></a>添加 RSS 订阅支持（可选的）</h3><p>本主题中还使用到了 <a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="noopener">hexo-generator-feed</a> 的 Hexo 插件来做 <code>RSS</code>，安装命令如下：</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-generator-feed --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">feed</span><span class="token punctuation">:</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> atom
+  <span class="token key atrule">path</span><span class="token punctuation">:</span> atom.xml
+  <span class="token key atrule">limit</span><span class="token punctuation">:</span> <span class="token number">20</span>
+  <span class="token key atrule">hub</span><span class="token punctuation">:</span>
+  <span class="token key atrule">content</span><span class="token punctuation">:</span>
+  <span class="token key atrule">content_limit</span><span class="token punctuation">:</span> <span class="token number">140</span>
+  <span class="token key atrule">content_limit_delim</span><span class="token punctuation">:</span> <span class="token string">' '</span>
+  <span class="token key atrule">order_by</span><span class="token punctuation">:</span> <span class="token punctuation">-</span>date<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>执行 <code>hexo clean &amp;&amp; hexo g</code> 重新生成博客文件，然后在 <code>public</code> 文件夹中即可看到 <code>atom.xml</code> 文件，说明你已经安装成功了。</p>
+<h3 id="添加-DaoVoice-在线聊天功能（可选的）"><a href="#添加-DaoVoice-在线聊天功能（可选的）" class="headerlink" title="添加 DaoVoice 在线聊天功能（可选的）"></a>添加 <a href="http://www.daovoice.io/" target="_blank" rel="noopener">DaoVoice</a> 在线聊天功能（可选的）</h3><p>前往 <a href="http://www.daovoice.io/" target="_blank" rel="noopener">DaoVoice</a> 官网注册并且获取 <code>app_id</code>，并将 <code>app_id</code> 填入主题的 <code>_config.yml</code> 文件中。</p>
+<h3 id="添加-Tidio-在线聊天功能（可选的）"><a href="#添加-Tidio-在线聊天功能（可选的）" class="headerlink" title="添加 Tidio 在线聊天功能（可选的）"></a>添加 <a href="https://www.tidio.com/" target="_blank" rel="noopener">Tidio</a> 在线聊天功能（可选的）</h3><p>前往 <a href="https://www.tidio.com/" target="_blank" rel="noopener">Tidio</a> 官网注册并且获取 <code>Public Key</code>，并将 <code>Public Key</code> 填入主题的 <code>_config.yml</code> 文件中。</p>
+<h3 id="修改页脚"><a href="#修改页脚" class="headerlink" title="修改页脚"></a>修改页脚</h3><p>页脚信息可能需要做定制化修改，而且它不便于做成配置信息，所以可能需要你自己去再修改和加工。修改的地方在主题文件的 <code>/layout/_partial/footer.ejs</code> 文件中，包括站点、使用的主题、访问量等。</p>
+<h3 id="修改社交链接"><a href="#修改社交链接" class="headerlink" title="修改社交链接"></a>修改社交链接</h3><p>在主题的 <code>_config.yml</code> 文件中，默认支持 <code>QQ</code>、<code>GitHub</code> 和邮箱等的配置，你可以在主题文件的 <code>/layout/_partial/social-link.ejs</code> 文件中，新增、修改你需要的社交链接地址，增加链接可参考如下代码：</p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">if</span> <span class="token attr-name">(theme.socialLink.github)</span> <span class="token attr-name">{</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>&lt;%<span class="token punctuation">=</span> theme.socialLink.github %<span class="token punctuation">></span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tooltipped<span class="token punctuation">"</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>_blank<span class="token punctuation">"</span></span> <span class="token attr-name">data-tooltip</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>访问我的GitHub<span class="token punctuation">"</span></span> <span class="token attr-name">data-position</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>top<span class="token punctuation">"</span></span> <span class="token attr-name">data-delay</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>fab fa-github<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">}</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>其中，社交图标（如：<code>fa-github</code>）你可以在 <a href="https://fontawesome.com/icons" target="_blank" rel="noopener">Font Awesome</a> 中搜索找到。以下是常用社交图标的标识，供你参考：</p>
+<ul>
+<li>Facebook: <code>fab fa-facebook</code></li>
+<li>Twitter: <code>fab fa-twitter</code></li>
+<li>Google-plus: <code>fab fa-google-plus</code></li>
+<li>Linkedin: <code>fab fa-linkedin</code></li>
+<li>Tumblr: <code>fab fa-tumblr</code></li>
+<li>Medium: <code>fab fa-medium</code></li>
+<li>Slack: <code>fab fa-slack</code></li>
+<li>Sina Weibo: <code>fab fa-weibo</code></li>
+<li>Wechat: <code>fab fa-weixin</code></li>
+<li>QQ: <code>fab fa-qq</code></li>
+<li>Zhihu: <code>fab fa-zhihu</code></li>
+</ul>
+<blockquote>
+<p><strong>注意</strong>: 本主题中使用的 <code>Font Awesome</code> 版本为 <code>5.11.0</code>。</p>
+</blockquote>
+<h3 id="修改打赏的二维码图片"><a href="#修改打赏的二维码图片" class="headerlink" title="修改打赏的二维码图片"></a>修改打赏的二维码图片</h3><p>在主题文件的 <code>source/medias/reward</code> 文件中，你可以替换成你的的微信和支付宝的打赏二维码图片。</p>
+<h3 id="配置音乐播放器（可选的）"><a href="#配置音乐播放器（可选的）" class="headerlink" title="配置音乐播放器（可选的）"></a>配置音乐播放器（可选的）</h3><p>要支持音乐播放，就必须开启音乐的播放配置和音乐数据的文件。</p>
+<p>首先，在你的博客 <code>source</code> 目录下的 <code>_data</code> 目录（没有的话就新建一个）中新建 <code>musics.json</code> 文件，文件内容如下所示：</p>
+<pre class="line-numbers language-json"><code class="language-json"><span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"五月雨变奏电音"</span><span class="token punctuation">,</span>
+    <span class="token property">"artist"</span><span class="token operator">:</span> <span class="token string">"AnimeVibe"</span><span class="token punctuation">,</span>
+    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"http://xxx.com/music1.mp3"</span><span class="token punctuation">,</span>
+    <span class="token property">"cover"</span><span class="token operator">:</span> <span class="token string">"http://xxx.com/music-cover1.png"</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Take me hand"</span><span class="token punctuation">,</span>
+    <span class="token property">"artist"</span><span class="token operator">:</span> <span class="token string">"DAISHI DANCE,Cecile Corbel"</span><span class="token punctuation">,</span>
+    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"/medias/music/music2.mp3"</span><span class="token punctuation">,</span>
+    <span class="token property">"cover"</span><span class="token operator">:</span> <span class="token string">"/medias/music/cover2.png"</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Shape of You"</span><span class="token punctuation">,</span>
+    <span class="token property">"artist"</span><span class="token operator">:</span> <span class="token string">"J.Fla"</span><span class="token punctuation">,</span>
+    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"http://xxx.com/music3.mp3"</span><span class="token punctuation">,</span>
+    <span class="token property">"cover"</span><span class="token operator">:</span> <span class="token string">"http://xxx.com/music-cover3.png"</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p><strong>注</strong>：以上 JSON 中的属性：<code>name</code>、<code>artist</code>、<code>url</code>、<code>cover</code> 分别表示音乐的名称、作者、音乐文件地址、音乐封面。</p>
+</blockquote>
+<p>然后，在主题的 <code>_config.yml</code> 配置文件中激活配置即可：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 是否在首页显示音乐.</span>
+<span class="token key atrule">music</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">showTitle</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">title</span><span class="token punctuation">:</span> 听听音乐
+  <span class="token key atrule">fixed</span><span class="token punctuation">:</span> <span class="token boolean important">false </span><span class="token comment" spellcheck="true"># 是否开启吸底模式</span>
+  <span class="token key atrule">autoplay</span><span class="token punctuation">:</span> <span class="token boolean important">false </span><span class="token comment" spellcheck="true"># 是否自动播放</span>
+  <span class="token key atrule">theme</span><span class="token punctuation">:</span> '<span class="token comment" spellcheck="true">#42b983'</span>
+  <span class="token key atrule">loop</span><span class="token punctuation">:</span> <span class="token string">'all'</span> <span class="token comment" spellcheck="true"># 音频循环播放, 可选值: 'all', 'one', 'none'</span>
+  <span class="token key atrule">order</span><span class="token punctuation">:</span> <span class="token string">'list'</span> <span class="token comment" spellcheck="true"># 音频循环顺序, 可选值: 'list', 'random'</span>
+  <span class="token key atrule">preload</span><span class="token punctuation">:</span> <span class="token string">'auto'</span> <span class="token comment" spellcheck="true"># 预加载，可选值: 'none', 'metadata', 'auto'</span>
+  <span class="token key atrule">volume</span><span class="token punctuation">:</span> <span class="token number">0.7 </span><span class="token comment" spellcheck="true"># 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效</span>
+  <span class="token key atrule">listFolded</span><span class="token punctuation">:</span> <span class="token boolean important">false </span><span class="token comment" spellcheck="true"># 列表默认折叠</span>
+  <span class="token key atrule">listMaxHeight</span><span class="token punctuation">:</span> <span class="token comment" spellcheck="true"># 列表最大高度</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="文章-Front-matter-介绍"><a href="#文章-Front-matter-介绍" class="headerlink" title="文章 Front-matter 介绍"></a>文章 Front-matter 介绍</h2><h3 id="Front-matter-选项详解"><a href="#Front-matter-选项详解" class="headerlink" title="Front-matter 选项详解"></a>Front-matter 选项详解</h3><p><code>Front-matter</code> 选项中的所有内容均为<strong>非必填</strong>的。但我仍然建议至少填写 <code>title</code> 和 <code>date</code> 的值。</p>
+<table>
+<thead>
+<tr>
+<th>配置选项</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>title</td>
+<td><code>Markdown</code> 的文件标题</td>
+<td>文章标题，强烈建议填写此选项</td>
+</tr>
+<tr>
+<td>date</td>
+<td>文件创建时的日期时间</td>
+<td>发布时间，强烈建议填写此选项，且最好保证全局唯一</td>
+</tr>
+<tr>
+<td>author</td>
+<td>根 <code>_config.yml</code> 中的 <code>author</code></td>
+<td>文章作者</td>
+</tr>
+<tr>
+<td>img</td>
+<td><code>featureImages</code> 中的某个值</td>
+<td>文章特征图，推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如: <code>http://xxx.com/xxx.jpg</code></td>
+</tr>
+<tr>
+<td>top</td>
+<td><code>true</code></td>
+<td>推荐文章（文章是否置顶），如果 <code>top</code> 值为 <code>true</code>，则会作为首页推荐文章</td>
+</tr>
+<tr>
+<td>cover</td>
+<td><code>false</code></td>
+<td><code>v1.0.2</code>版本新增，表示该文章是否需要加入到首页轮播封面中</td>
+</tr>
+<tr>
+<td>coverImg</td>
+<td>无</td>
+<td><code>v1.0.2</code>版本新增，表示该文章在首页轮播封面需要显示的图片路径，如果没有，则默认使用文章的特色图片</td>
+</tr>
+<tr>
+<td>password</td>
+<td>无</td>
+<td>文章阅读密码，如果要对文章设置阅读验证密码的话，就可以设置 <code>password</code> 的值，该值必须是用 <code>SHA256</code> 加密后的密码，防止被他人识破。前提是在主题的 <code>config.yml</code> 中激活了 <code>verifyPassword</code> 选项</td>
+</tr>
+<tr>
+<td>toc</td>
+<td><code>true</code></td>
+<td>是否开启 TOC，可以针对某篇文章单独关闭 TOC 的功能。前提是在主题的 <code>config.yml</code> 中激活了 <code>toc</code> 选项</td>
+</tr>
+<tr>
+<td>mathjax</td>
+<td><code>false</code></td>
+<td>是否开启数学公式支持 ，本文章是否开启 <code>mathjax</code>，且需要在主题的 <code>_config.yml</code> 文件中也需要开启才行</td>
+</tr>
+<tr>
+<td>summary</td>
+<td>无</td>
+<td>文章摘要，自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>无</td>
+<td>文章分类，本主题的分类表示宏观上大的分类，只建议一篇文章一个分类</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>无</td>
+<td>文章标签，一篇文章可以多个标签</td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>文章标题</td>
+<td>文章关键字，SEO 时需要</td>
+</tr>
+<tr>
+<td>reprintPolicy</td>
+<td>cc_by</td>
+<td>文章转载规则， 可以是 cc_by, cc_by_nd, cc_by_sa, cc_by_nc, cc_by_nc_nd, cc_by_nc_sa, cc0, noreprint 或 pay 中的一个</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>注意</strong>:</p>
+<ol>
+<li>如果 <code>img</code> 属性不填写的话，文章特色图会根据文章标题的 <code>hashcode</code> 的值取余，然后选取主题中对应的特色图片，从而达到让所有文章都的特色图<strong>各有特色</strong>。</li>
+<li><code>date</code> 的值尽量保证每篇文章是唯一的，因为本主题中 <code>Gitalk</code> 和 <code>Gitment</code> 识别 <code>id</code> 是通过 <code>date</code> 的值来作为唯一标识的。</li>
+<li>如果要对文章设置阅读验证密码的功能，不仅要在 Front-matter 中设置采用了 SHA256 加密的 password 的值，还需要在主题的 <code>_config.yml</code> 中激活了配置。有些在线的 SHA256 加密的地址，可供你使用：<a href="http://tool.oschina.net/encrypt?type=2" target="_blank" rel="noopener">开源中国在线工具</a>、<a href="http://encode.chahuo.com/" target="_blank" rel="noopener">chahuo</a>、<a href="http://tool.chinaz.com/tools/hash.aspx" target="_blank" rel="noopener">站长工具</a>。</li>
+<li>您可以在文章md文件的 front-matter 中指定 reprintPolicy 来给单个文章配置转载规则</li>
+</ol>
+</blockquote>
+<p>以下为文章的 <code>Front-matter</code> 示例。</p>
+<h3 id="最简示例"><a href="#最简示例" class="headerlink" title="最简示例"></a>最简示例</h3><pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> typora<span class="token punctuation">-</span>vue<span class="token punctuation">-</span>theme主题介绍
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2018-09-07 09:25:00</span>
+<span class="token punctuation">---</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="最全示例"><a href="#最全示例" class="headerlink" title="最全示例"></a>最全示例</h3><pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> typora<span class="token punctuation">-</span>vue<span class="token punctuation">-</span>theme主题介绍
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2018-09-07 09:25:00</span>
+<span class="token key atrule">author</span><span class="token punctuation">:</span> 赵奇
+<span class="token key atrule">img</span><span class="token punctuation">:</span> /source/images/xxx.jpg
+<span class="token key atrule">top</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">cover</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">coverImg</span><span class="token punctuation">:</span> /images/1.jpg
+<span class="token key atrule">password</span><span class="token punctuation">:</span> 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
+<span class="token key atrule">toc</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">mathjax</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">summary</span><span class="token punctuation">:</span> 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
+<span class="token key atrule">categories</span><span class="token punctuation">:</span> Markdown
+<span class="token key atrule">tags</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> Typora
+  <span class="token punctuation">-</span> Markdown
+<span class="token punctuation">---</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="效果截图"><a href="#效果截图" class="headerlink" title="效果截图"></a>效果截图</h2><p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="http://static.blinkfox.com/matery-20181202-1.png" alt="首页"></p>
+<p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="http://static.blinkfox.com/matery-20181202-2.png" alt="首页推荐文章"></p>
+<p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="http://static.blinkfox.com/matery-20181202-3.png" alt="首页文章列表"></p>
+<p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="http://static.blinkfox.com/matery-20181202-7.png" alt="首页文章列表"></p>
+<p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="http://static.blinkfox.com/matery-20181202-8.png" alt="首页文章列表"></p>
+<h2 id="自定制修改"><a href="#自定制修改" class="headerlink" title="自定制修改"></a>自定制修改</h2><p>在本主题的 <code>_config.yml</code> 中可以修改部分自定义信息，有以下几个部分：</p>
+<ul>
+<li>菜单</li>
+<li>我的梦想</li>
+<li>首页的音乐播放器和视频播放器配置</li>
+<li>是否显示推荐文章名称和按钮配置</li>
+<li><code>favicon</code> 和 <code>Logo</code></li>
+<li>个人信息</li>
+<li>TOC 目录</li>
+<li>文章打赏信息</li>
+<li>复制文章内容时追加版权信息</li>
+<li>MathJax</li>
+<li>文章字数统计、阅读时长</li>
+<li>点击页面的’爱心’效果</li>
+<li>我的项目</li>
+<li>我的技能</li>
+<li>我的相册</li>
+<li><code>Gitalk</code>、<code>Gitment</code>、<code>Valine</code> 和 <code>disqus</code> 评论配置</li>
+<li><a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">不蒜子统计</a>和谷歌分析（<code>Google Analytics</code>）</li>
+<li>默认特色图的集合。当文章没有设置特色图时，本主题会根据文章标题的 <code>hashcode</code> 值取余，来选择展示对应的特色图</li>
+</ul>
+<p><strong>我认为个人博客应该都有自己的风格和特色</strong>。如果本主题中的诸多功能和主题色彩你不满意，可以在主题中自定义修改，很多更自由的功能和细节点的修改难以在主题的 <code>_config.yml</code> 中完成，需要修改源代码才来完成。以下列出了可能对你有用的地方：</p>
+<h3 id="修改主题颜色"><a href="#修改主题颜色" class="headerlink" title="修改主题颜色"></a>修改主题颜色</h3><p>在主题文件的 <code>/source/css/matery.css</code> 文件中，搜索 <code>.bg-color</code> 来修改背景颜色：</p>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token comment" spellcheck="true">/* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色. */</span>
+<span class="token selector"><span class="token class">.bg-color</span> </span><span class="token punctuation">{</span>
+    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to right, <span class="token hexcode">#4cbf30</span> <span class="token number">0%</span>, <span class="token hexcode">#0f9d58</span> <span class="token number">100%</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> rainbow</span> <span class="token punctuation">{</span>
+   <span class="token comment" spellcheck="true">/* 动态切换背景颜色. */</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@keyframes</span> rainbow</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">/* 动态切换背景颜色. */</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="修改-banner-图和文章特色图"><a href="#修改-banner-图和文章特色图" class="headerlink" title="修改 banner 图和文章特色图"></a>修改 banner 图和文章特色图</h3><p>你可以直接在 <code>/source/medias/banner</code> 文件夹中更换你喜欢的 <code>banner</code> 图片，主题代码中是每天动态切换一张，只需 <code>7</code> 张即可。如果你会 <code>JavaScript</code> 代码，可以修改成你自己喜欢切换逻辑，如：随机切换等，<code>banner</code> 切换的代码位置在 <code>/layout/_partial/bg-cover-content.ejs</code> 文件的 <code>&lt;script&gt;&lt;/script&gt;</code> 代码中：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.bg-cover'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">'background-image'</span><span class="token punctuation">,</span> <span class="token string">'url(/medias/banner/'</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'.jpg)'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在 <code>/source/medias/featureimages</code> 文件夹中默认有 24 张特色图片，你可以再增加或者减少，并需要在 <code>_config.yml</code> 做同步修改。</p>
+<h2 id="版本记录"><a href="#版本记录" class="headerlink" title="版本记录"></a>版本记录</h2><ul>
+<li>v1.2.2<ul>
+<li>新增了自定义文章 <code>keywords</code> 的功能；</li>
+<li>新增静态彩带点击切换的功能和配置；</li>
+<li>将文章字数统计、彩带和站点运行时间等功能默认设置为 <code>false</code>；</li>
+<li>修改了文章的 <code>description</code> 的 meta 属性优先读取文章的 <code>summary</code> 属性；</li>
+<li>修改了文章标题的 HTML 标签，从 <code>div</code> 改成了 <code>h1</code> 标题；</li>
+<li>修改了页脚年份显示不正确的问题；</li>
+<li>去掉了站点运行时间中多余的 <code>setTimeout</code> 代码；</li>
+</ul>
+</li>
+<li>v1.2.1<ul>
+<li>新增了 TOC 的展开目录层级设置和滚动条功能，防止目录较多的时候目录溢出；</li>
+<li>修改了首页的展示方式为以前的模式；</li>
+<li>修复首页按钮没有边框的问题；</li>
+<li>修复了音乐及吸底模式、视频、推荐文章等不激活时仍然生成首页卡片的问题；</li>
+<li>修复 wordCount 插件未安装的问题，修改了部分配置；</li>
+<li>修复音乐的 JSON 配置中有单引号的情况页面不显示的音乐的问题</li>
+<li>修复标签云在Hexo4.0下链接失效的问题；</li>
+</ul>
+</li>
+<li>v1.2.0<ul>
+<li>新增了 <a href="http://www.daovoice.io/" target="_blank" rel="noopener">DaoVoice</a>、<a href="https://www.tidio.com/" target="_blank" rel="noopener">Tidio</a> 的在线聊天功能；</li>
+<li>新增了两级菜单的功能；</li>
+<li>新增了打字效果的副标题；</li>
+<li>新增了网页内容预加载的功能；</li>
+<li>新增了首页 banner 是否每日切换的配置功能；</li>
+<li>新增了显示 ICP 备案信息的功能，默认未开启；</li>
+<li>新增了百度分析的配置；</li>
+<li>新增了代码块的语言显示、一键复制、显示行号等功能；</li>
+<li>新增了首页轮播图和推荐文章可自定义配置的功能；</li>
+<li>新增了文章页面显示更新日期；</li>
+<li>新增了转载规则的图标；</li>
+<li>修改了分享的布局和显示方式；</li>
+<li>升级更新了部分依赖库的版本；</li>
+<li>其他细节修改和优化；</li>
+</ul>
+</li>
+<li>v1.1.0<ul>
+<li>新增了 <code>emoji</code> 的支持；</li>
+<li>新增了站点运行时间统计及配置；</li>
+<li>新增了留言板的功能,默认未开启；</li>
+<li>新增了 <code>Twitter</code>、<code>Facebook</code>、知乎的社交链接；</li>
+<li>更新了 <code>Valine</code> 的版本为最新版；</li>
+<li>其他小细节的修改；</li>
+</ul>
+</li>
+<li>v1.0.4<ul>
+<li>新增了能为每篇文章都自定义转载规则的功能；</li>
+<li>修复上一页、下一页的自定义 <code>summary</code> 不显示的问题；</li>
+<li>修复了友情链接显示错位的问题，改为了瀑布流的布局方式；</li>
+<li>其他小细节 bug 的修改；</li>
+</ul>
+</li>
+<li>v1.0.3<ul>
+<li>新增了<code>TOC</code>展开、收缩的按钮和相关配置，默认显示此按钮；</li>
+</ul>
+</li>
+<li>v1.0.2<ul>
+<li>升级了 <a href="https://materializecss.com/" target="_blank" rel="noopener">Materialize</a> 框架版本为<code>1.0.0</code>，重构和修改了升级过程中的部分文件或问题；</li>
+<li>新增了首页封面的全屏轮播特效，可以将更重要的文章设置到首页轮播中；</li>
+<li>修复首页第一个按钮是中文的问题</li>
+<li>修复了 iPhone 上点击搜索输入获取焦点的问题；</li>
+<li>修复了 iPhone 上输入框获取焦点后页面放大的问题；</li>
+<li>修复一些文章或 UI 显示问题；</li>
+</ul>
+</li>
+<li>v1.0.1<ul>
+<li>调整 <code>css</code>、<code>js</code> 的文件请求路径在主题的<code>_config.yml</code>中配置，便于你更快捷的配置自己的 CDN；</li>
+<li>新增代码是否折行为可配置，默认为折行；</li>
+<li>默认激活 <code>TOC</code> 功能，并新增为某篇文章关闭 <code>TOC</code> 的 <code>Front-matter</code> 配置选项；</li>
+<li>修复文章滚动时，高亮的目录选项不准确的问题；</li>
+<li><code>IOS</code>下移除搜索框自动获得焦点属性，防止自动获得焦点后导致视图上移；</li>
+</ul>
+</li>
+<li>v1.0.0<ul>
+<li>新增了所有基础功能；</li>
+</ul>
+</li>
+</ul>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script></div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Dreamy.NXD</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://niuxvdong.top/posts/57378.html">https://niuxvdong.top/posts/57378.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://niuxvdong.top" target="_blank">小牛博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/matery/">matery</a></div><div class="post_share"><div class="social-share" data-image="https://img.niuxvdong.top/1585990922032.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button button--primary button--animated"> <i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="post-qr-code__img" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/WeChantQR.jpg" alt="微信"/><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="post-qr-code__img" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/AliPayQR.jpg" alt="支付宝"/><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/posts/50207.html"><img class="prev_cover" data-src="https://cdn.jsdelivr.net/gh/niuxvdong/images/banners/1.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">自学Git记录及用法总结</div></div></a></div><div class="next-post pull_right"><a href="/posts/14163.html"><img class="next_cover" data-src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_65.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hexo中引入音乐和视频</div></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script><script>var requestSetting = function (from,set) {
+  var from = from
+  var setting = set.split(',').filter(function(item){
+  return from.indexOf(item) > -1
+  });
+  setting = setting.length == 0 ? from :setting;
+  return setting
+}
+
+var guestInfo = requestSetting(['nick','mail','link'],'昵称,邮箱,主页')
+var requiredFields = requestSetting(['nick','mail','link'],'nick,mail')
+let friends = 'db61bf13ef744168a53227821321dd74'.split(',')
+let master = 'd9cd3b7d3ff3953067e21d186cc3b8a8'.split(',')
+
+window.valine = new Valine({
+  el:'#vcomment',
+  appId: '90p3ltuDBaHUROmxjB6gPP5E-gzGzoHsz',
+  appKey: 'ELqQhwIA4xnLFKglq8vVAjJ6',
+  notify: false,
+  verify: false,
+  placeholder: '昵称处填写qq号会自动更换成qq昵称并填入qq邮箱哦！',
+  avatar: 'monsterid',
+  meta: guestInfo,
+  pageSize: '10',
+  lang: 'zh-CN',
+  recordIP: true,
+  serverURLs: '',
+  emojiCDN: '',
+  emojiMaps: {"smile":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/e3/2018new_weixioa02_org.png","lovely":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/09/2018new_keai_org.png","happy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/1e/2018new_taikaixin_org.png","clap":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/6e/2018new_guzhang_thumb.png","whee":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/33/2018new_xixi_thumb.png","haha":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8f/2018new_haha_thumb.png","laugh and cry":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/4a/2018new_xiaoku_thumb.png","wink":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/43/2018new_jiyan_org.png","greddy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/fa/2018new_chanzui_org.png","awkward":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a3/2018new_heixian_thumb.png","sweat":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/28/2018new_han_org.png","pick nose":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/9a/2018new_wabi_thumb.png","hum":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/7c/2018new_heng_thumb.png","angry":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/f6/2018new_nu_thumb.png","grievance":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a5/2018new_weiqu_thumb.png","poor":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/96/2018new_kelian_org.png","disappoint":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/aa/2018new_shiwang_thumb.png","sad":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/ee/2018new_beishang_org.png","tear":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/6e/2018new_leimu_org.png","no way":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/83/2018new_kuxiao_org.png","shy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/c1/2018new_haixiu_org.png","dirt":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/10/2018new_wu_thumb.png","love you":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/f6/2018new_aini_org.png","kiss":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/2c/2018new_qinqin_thumb.png","amorousness":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/9d/2018new_huaxin_org.png","longing":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/c9/2018new_chongjing_org.png","desire":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/3e/2018new_tianping_thumb.png","bad laugh":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/4d/2018new_huaixiao_org.png","blackness":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/9e/2018new_yinxian_org.png","laugh without word":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/2d/2018new_xiaoerbuyu_org.png","titter":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/71/2018new_touxiao_org.png","cool":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/c4/2018new_ku_org.png","not easy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/aa/2018new_bingbujiandan_thumb.png","think":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/30/2018new_sikao_org.png","question":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/b8/2018new_ningwen_org.png","no idea":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/2a/2018new_wenhao_thumb.png","dizzy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/07/2018new_yun_thumb.png","bomb":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a2/2018new_shuai_thumb.png","bone":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a1/2018new_kulou_thumb.png","be quiet":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/b0/2018new_xu_org.png","shut up":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/62/2018new_bizui_org.png","stupid":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/dd/2018new_shayan_org.png","surprise":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/49/2018new_chijing_org.png","vomit":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/08/2018new_tu_org.png","cold":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/40/2018new_kouzhao_thumb.png","sick":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/3b/2018new_shengbing_thumb.png","bye":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/fd/2018new_baibai_thumb.png","look down on":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/da/2018new_bishi_org.png","white eye":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/ef/2018new_landelini_org.png","left hum":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/43/2018new_zuohengheng_thumb.png","right hum":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/c1/2018new_youhengheng_thumb.png","crazy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/17/2018new_zhuakuang_org.png","scold":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/87/2018new_zhouma_thumb.png","hit on face":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/cb/2018new_dalian_org.png","wow":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/ae/2018new_ding_org.png","fan":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/86/2018new_hufen02_org.png","money":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a2/2018new_qian_thumb.png","yawn":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/55/2018new_dahaqian_org.png","sleepy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/3c/2018new_kun_thumb.png","sleep":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/e2/2018new_shuijiao_thumb.png","watermelon":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/01/2018new_chigua_thumb.png","doge":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a1/2018new_doge02_org.png","dog":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/22/2018new_erha_org.png","cat":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/7b/2018new_miaomiao_thumb.png","thumb":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/e6/2018new_zan_org.png","good":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8a/2018new_good_org.png","ok":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/45/2018new_ok_org.png","yeah":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/29/2018new_ye_thumb.png","shack hand":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/e9/2018new_woshou_thumb.png","bow":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/e7/2018new_zuoyi_org.png","come":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/42/2018new_guolai_thumb.png","punch":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/86/2018new_quantou_thumb.png","tv_doge":"//i0.hdslb.com/bfs/emote/6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png","tv_亲亲":"//i0.hdslb.com/bfs/emote/a8111ad55953ef5e3be3327ef94eb4a39d535d06.png","tv_偷笑":"//i0.hdslb.com/bfs/emote/bb690d4107620f1c15cff29509db529a73aee261.png","tv_再见":"//i0.hdslb.com/bfs/emote/180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png","tv_冷漠":"//i0.hdslb.com/bfs/emote/b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png","tv_发怒":"//i0.hdslb.com/bfs/emote/34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png","tv_发财":"//i0.hdslb.com/bfs/emote/34db290afd2963723c6eb3c4560667db7253a21a.png","tv_可爱":"//i0.hdslb.com/bfs/emote/9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png","tv_吐血":"//i0.hdslb.com/bfs/emote/09dd16a7aa59b77baa1155d47484409624470c77.png","tv_呆":"//i0.hdslb.com/bfs/emote/fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png","tv_呕吐":"//i0.hdslb.com/bfs/emote/9f996894a39e282ccf5e66856af49483f81870f3.png","tv_困":"//i0.hdslb.com/bfs/emote/241ee304e44c0af029adceb294399391e4737ef2.png","tv_坏笑":"//i0.hdslb.com/bfs/emote/1f0b87f731a671079842116e0991c91c2c88645a.png","tv_大佬":"//i0.hdslb.com/bfs/emote/093c1e2c490161aca397afc45573c877cdead616.png","tv_大哭":"//i0.hdslb.com/bfs/emote/23269aeb35f99daee28dda129676f6e9ea87934f.png","tv_委屈":"//i0.hdslb.com/bfs/emote/d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png","tv_害羞":"//i0.hdslb.com/bfs/emote/a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png","tv_尴尬":"//i0.hdslb.com/bfs/emote/7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png","tv_微笑":"//i0.hdslb.com/bfs/emote/70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png","tv_思考":"//i0.hdslb.com/bfs/emote/90cf159733e558137ed20aa04d09964436f618a1.png","tv_惊吓":"//i0.hdslb.com/bfs/emote/0d15c7e2ee58e935adc6a7193ee042388adc22af.png","custom_37":"https://cdn.jsdelivr.net/gh/blogimg/picbed@latest/2020/04/22/097cd88f446efae87cb27de38c5eed15.png","custom_36":"https://cdn.jsdelivr.net/gh/blogimg/picbed@latest/2020/04/22/ec2166501d29bc1eb7380c22944db462.png","custom_35":"https://cdn.jsdelivr.net/gh/blogimg/picbed@latest/2020/04/22/8ca39f96c182e51cd752dde464157c2e.png","custom_34":"https://cdn.jsdelivr.net/gh/blogimg/picbed@latest/2020/04/22/0a65c5dd18872b56605c08f7bae2e8c8.png","custom_33":"https://cdn.jsdelivr.net/gh/blogimg/picbed@latest/2020/04/22/ec3edbfe84684fdb1680307d261c3c7b.png","custom_32":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/31.webp","custom_31":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/30.gif","custom_30":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/29.webp","custom_29":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/28.webp","custom_28":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/27.webp","custom_27":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/26.webp","custom_26":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/25.jpg","custom_25":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/24.webp","custom_24":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/23.webp","custom_23":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/22.webp","custom_22":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/21.webp","custom_21":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/20.webp","custom_20":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/19.webp","custom_19":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/18.jpg","custom_18":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/17.webp","custom_17":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/16.webp","custom_16":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/15.webp","custom_15":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/14.webp","custom_14":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/13.webp","custom_13":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/12.webp","custom_12":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/11.webp","custom_11":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/10.webp","custom_10":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/9.webp","custom_9":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/8.webp","custom_8":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/7.webp","custom_7":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/6.gif","custom_6":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/5.gif","custom_5":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/4.jpg","custom_4":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/3.jpg","custom_3":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/2.webp","custom_2":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/1.webp","custom_1":"https://cdn.jsdelivr.net/gh/blogimg/picbed@master/2020/04/19/c3164053d300cc5cca5e4dc3311842dc.png","custom_0":"https://cdn.jsdelivr.net/gh/blogimg/picbed@master/2020/04/19/6b5e768e524c8441ba66184bfdd86d4d.png"},
+  enableQQ: true,
+  requiredFields: requiredFields,
+  master: master,
+  friends: friends,
+  metaPlaceholder: {"nick":"昵称/QQ号(必填)","mail":"邮箱(必填)","link":"网址(https://)"}
+});</script></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By Dreamy.NXD</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">CDN BY <a target="_blank" rel="external nofollow" href="https://www.upyun.com/"><b>又拍云</b></a> | HOST BY <a target="_blank" rel="external nofollow" href="https://coding.net/"><b>Coding</b></a> && <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a></div><div class="icp"><a href="http://www.beian.miit.gov.cn/" target="_blank" rel="noopener"><img class="icp-icon" src="/img/icp.png"/><span>晋ICP备19005025号</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode far fa-moon" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script><script src="/js/search/local-search.js"></script><script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/js/my.js"></script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body></html>

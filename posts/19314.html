@@ -1,0 +1,1229 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Java教程系列之异常处理 | 小牛博客</title><meta name="description" content="首先来首歌曲来放松一下吧！         一、Java的异常1、异常的来源1.1 来源 用户输入造成 随机出现的错误 网络突然断了，连接不到远程服务器； 内存耗尽，程序崩溃了； 用户点“打印”，但根本没有打印机； ……    1.2 处理错误的方法 方法一：约定返回错误码。   例如，处理一个文件，如果返回0，表示成功，返回其他整数，表示约定的错误码： 因为使用int类型的错误码，想要处理就非常"><meta name="keywords" content="异常处理"><meta name="author" content="Dreamy.NXD"><meta name="copyright" content="Dreamy.NXD"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/favicon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="dns-prefetch" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://hm.baidu.com"/><link rel="dns-prefetch" href="https://hm.baidu.com"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="dns-prefetch" href="https://fonts.googleapis.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="dns-prefetch" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Java教程系列之异常处理"><meta name="twitter:description" content="首先来首歌曲来放松一下吧！         一、Java的异常1、异常的来源1.1 来源 用户输入造成 随机出现的错误 网络突然断了，连接不到远程服务器； 内存耗尽，程序崩溃了； 用户点“打印”，但根本没有打印机； ……    1.2 处理错误的方法 方法一：约定返回错误码。   例如，处理一个文件，如果返回0，表示成功，返回其他整数，表示约定的错误码： 因为使用int类型的错误码，想要处理就非常"><meta name="twitter:image" content="https://img.niuxvdong.top/t016b5f21f795099717.jpg"><meta property="og:type" content="article"><meta property="og:title" content="Java教程系列之异常处理"><meta property="og:url" content="https://niuxvdong.top/posts/19314.html"><meta property="og:site_name" content="小牛博客"><meta property="og:description" content="首先来首歌曲来放松一下吧！         一、Java的异常1、异常的来源1.1 来源 用户输入造成 随机出现的错误 网络突然断了，连接不到远程服务器； 内存耗尽，程序崩溃了； 用户点“打印”，但根本没有打印机； ……    1.2 处理错误的方法 方法一：约定返回错误码。   例如，处理一个文件，如果返回0，表示成功，返回其他整数，表示约定的错误码： 因为使用int类型的错误码，想要处理就非常"><meta property="og:image" content="https://img.niuxvdong.top/t016b5f21f795099717.jpg"><meta property="article:published_time" content="2020-03-30T11:55:07.000Z"><meta property="article:modified_time" content="2020-03-30T11:55:07.000Z"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>var autoChangeMode = '1'
+var t = Cookies.get("theme")
+if (autoChangeMode == '1'){
+  var isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+  var isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+  var isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined){
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport){
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour < 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+  }
+  } else if (t == 'light') activateLightMode()
+  else activateDarkMode()
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="canonical" href="https://niuxvdong.top/posts/19314.html"><link rel="prev" title="Java教程系列之反射" href="https://niuxvdong.top/posts/39487.html"><link rel="next" title="Java教程系列之Java核心类" href="https://niuxvdong.top/posts/22799.html"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c295a600e3126beebaf06822cd8b5c22";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://niuxvdong.top/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: true,
+  fancybox: false,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  baiduPush: true,
+  highlightCopy: true,
+  highlightLang: true,
+  highlightShrink: 'false',
+  isFontAwesomeV5: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+  
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isSidebar: true  
+  }</script><noscript><style>
+#page-header {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/css/my.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_1828588_zrw9f0qqie.css"><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="小牛博客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">54</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">67</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">9</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="https://nxd.js.org/" target="_blank" rel="noopener"><i class="fa-fw fa fa-thumbs-up"></i><span> 导航</span></a></li><li><a class="site-page" href="https://music.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="https://pan.niub.cf/tykj/" target="_blank" rel="noopener"><i class="fa-fw fa fa-cloud"></i><span> 云盘</span></a></li><li><a class="site-page" href="https://proxy.niub.cf/" target="_blank" rel="noopener"><i class="fa-fw fa fa-plane"></i><span> 谷歌</span></a></li><li><a class="site-page" href="https://valine.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-comments"></i><span> 评论</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div></div></div></div><i class="fa fa-arrow-right on" id="toggle-sidebar" aria-hidden="true">     </i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#首先来首歌曲来放松一下吧！"><span class="toc-number">1.</span> <span class="toc-text">首先来首歌曲来放松一下吧！</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一、Java的异常"><span class="toc-number">2.</span> <span class="toc-text">一、Java的异常</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、异常的来源"><span class="toc-number">2.1.</span> <span class="toc-text">1、异常的来源</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-来源"><span class="toc-number">2.1.1.</span> <span class="toc-text">1.1 来源</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-处理错误的方法"><span class="toc-number">2.1.2.</span> <span class="toc-text">1.2 处理错误的方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-异常的继承关系"><span class="toc-number">2.1.3.</span> <span class="toc-text">1.3 异常的继承关系</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-哪些异常需要处理"><span class="toc-number">2.1.4.</span> <span class="toc-text">1.4 哪些异常需要处理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、捕获异常（catch）"><span class="toc-number">2.2.</span> <span class="toc-text">2、捕获异常（catch）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-方法内部使用try-catch捕获"><span class="toc-number">2.2.1.</span> <span class="toc-text">2.1 方法内部使用try catch捕获</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-方法定义处使用throws"><span class="toc-number">2.2.2.</span> <span class="toc-text">2.2 方法定义处使用throws</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-使用printStackTrace-打印异常栈"><span class="toc-number">2.2.3.</span> <span class="toc-text">2.3 使用printStackTrace()打印异常栈</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、捕获异常"><span class="toc-number">3.</span> <span class="toc-text">二、捕获异常</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、多条catch语句"><span class="toc-number">3.1.</span> <span class="toc-text">1、多条catch语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、finally语句"><span class="toc-number">3.2.</span> <span class="toc-text">2、finally语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、异常逻辑相同则合并"><span class="toc-number">3.3.</span> <span class="toc-text">3、异常逻辑相同则合并</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、抛出异常"><span class="toc-number">4.</span> <span class="toc-text">三、抛出异常</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、异常的传播"><span class="toc-number">4.1.</span> <span class="toc-text">1、异常的传播</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、抛出异常"><span class="toc-number">4.2.</span> <span class="toc-text">2、抛出异常</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-创建并抛出"><span class="toc-number">4.2.1.</span> <span class="toc-text">2.1 创建并抛出</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-异常转换"><span class="toc-number">4.2.2.</span> <span class="toc-text">2.2 异常转换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-传入原始Exception来保留原始Exception"><span class="toc-number">4.2.3.</span> <span class="toc-text">2.3 传入原始Exception来保留原始Exception</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、finally语句是否执行"><span class="toc-number">4.3.</span> <span class="toc-text">3、finally语句是否执行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、异常屏蔽"><span class="toc-number">4.4.</span> <span class="toc-text">4、异常屏蔽</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、自定义异常"><span class="toc-number">5.</span> <span class="toc-text">四、自定义异常</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、Java标准库定义的-常用异常："><span class="toc-number">5.1.</span> <span class="toc-text">1、Java标准库定义的 常用异常：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、自定义异常"><span class="toc-number">5.2.</span> <span class="toc-text">2、自定义异常</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、NullPointerException"><span class="toc-number">6.</span> <span class="toc-text">五、NullPointerException</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、处理NullPointerException"><span class="toc-number">6.1.</span> <span class="toc-text">1、处理NullPointerException</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-变量定义时尽量不使用null"><span class="toc-number">6.1.1.</span> <span class="toc-text">1.1 变量定义时尽量不使用null</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-返回时尽量不返回null"><span class="toc-number">6.1.2.</span> <span class="toc-text">1.2 返回时尽量不返回null</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-必须返回null时使用Optional-lt-T-gt"><span class="toc-number">6.1.3.</span> <span class="toc-text">1.3 必须返回null时使用Optional&lt;T&gt;</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、定位NullPointerException"><span class="toc-number">6.2.</span> <span class="toc-text">2、定位NullPointerException</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#六、使用断言"><span class="toc-number">7.</span> <span class="toc-text">六、使用断言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#七、使用JDK-Loging"><span class="toc-number">8.</span> <span class="toc-text">七、使用JDK Loging</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#几点好处："><span class="toc-number">8.1.</span> <span class="toc-text">几点好处：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Logger日志的七个级别："><span class="toc-number">8.2.</span> <span class="toc-text">Logger日志的七个级别：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#八、使用Commons-Logging"><span class="toc-number">9.</span> <span class="toc-text">八、使用Commons Logging</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、idea-导入方式："><span class="toc-number">9.1.</span> <span class="toc-text">1、idea 导入方式：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、Commons-Logging定义了6个日志级别："><span class="toc-number">9.2.</span> <span class="toc-text">2、Commons Logging定义了6个日志级别：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、静态方法中引用log定义静态类型变量："><span class="toc-number">9.3.</span> <span class="toc-text">3、静态方法中引用log定义静态类型变量：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、实例方法中引用log定义实例类型变量："><span class="toc-number">9.4.</span> <span class="toc-text">4、实例方法中引用log定义实例类型变量：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5、可抛出异常："><span class="toc-number">9.5.</span> <span class="toc-text">5、可抛出异常：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#九、使用Log4j"><span class="toc-number">10.</span> <span class="toc-text">九、使用Log4j</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、Log4j架构："><span class="toc-number">10.1.</span> <span class="toc-text">1、Log4j架构：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、配置XML文件"><span class="toc-number">10.2.</span> <span class="toc-text">2、配置XML文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、下载并配置Log4j"><span class="toc-number">10.3.</span> <span class="toc-text">3、下载并配置Log4j</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、小结"><span class="toc-number">10.4.</span> <span class="toc-text">4、小结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十、使用SLF4J和Logback"><span class="toc-number">11.</span> <span class="toc-text">十、使用SLF4J和Logback</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置相关："><span class="toc-number">11.1.</span> <span class="toc-text">配置相关：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码修改如下："><span class="toc-number">11.2.</span> <span class="toc-text">代码修改如下：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#小结"><span class="toc-number">11.3.</span> <span class="toc-text">小结</span></a></li></ol></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><div class="post-bg" id="nav" style="background-image: url(https://img.niuxvdong.top/t016b5f21f795099717.jpg)"><div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">小牛博客</a></span><span class="pull_right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="https://nxd.js.org/" target="_blank" rel="noopener"><i class="fa-fw fa fa-thumbs-up"></i><span> 导航</span></a></li><li><a class="site-page" href="https://music.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="https://pan.niub.cf/tykj/" target="_blank" rel="noopener"><i class="fa-fw fa fa-cloud"></i><span> 云盘</span></a></li><li><a class="site-page" href="https://proxy.niub.cf/" target="_blank" rel="noopener"><i class="fa-fw fa fa-plane"></i><span> 谷歌</span></a></li><li><a class="site-page" href="https://valine.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-comments"></i><span> 评论</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div></div><span class="toggle-menu close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span></span></div><div id="post-info"><div id="post-title"><div class="posttitle">Java教程系列之异常处理</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-03-30 19:55:07"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2020-03-30</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-03-30 19:55:07"><i class="fa fa-history" aria-hidden="true"></i> 更新于 2020-03-30</span></time><span class="post-meta__categories"><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/Java%E6%95%99%E7%A8%8B/">Java教程</a></span></div><div class="meta-secondline"> <span class="post-meta-wordcount"><i class="post-meta__icon far fa-file-word" aria-hidden="true"></i><span>字数总计:</span><span class="word-count">7.2k</span><span class="post-meta__separator">|</span><i class="post-meta__icon far fa-clock" aria-hidden="true"></i><span>阅读时长: 29 分钟</span></span></div><div class="meta-thirdline"><span class="post-meta-pv-cv"><span class="post-meta__separator">|</span><i class="fa fa-eye post-meta__icon" aria-hidden="true"> </i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"><span class="post-meta__separator">|</span><i class="post-meta__icon far fa-comments" aria-hidden="true"></i><span>评论数:</span><a href="/posts/19314.html#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/posts/19314.html" itemprop="commentCount"></span></a></span></div></div></div></div><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h2 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h2>
+    <div id="aplayer-GazySnBU" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="280464" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+
+
+
+<h2 id="一、Java的异常"><a href="#一、Java的异常" class="headerlink" title="一、Java的异常"></a>一、Java的异常</h2><h3 id="1、异常的来源"><a href="#1、异常的来源" class="headerlink" title="1、异常的来源"></a>1、异常的来源</h3><h4 id="1-1-来源"><a href="#1-1-来源" class="headerlink" title="1.1 来源"></a>1.1 来源</h4><ul>
+<li>用户输入造成</li>
+<li>随机出现的错误<ul>
+<li>网络突然断了，连接不到远程服务器；</li>
+<li>内存耗尽，程序崩溃了；</li>
+<li>用户点“打印”，但根本没有打印机；</li>
+<li>……</li>
+</ul>
+</li>
+</ul>
+<h4 id="1-2-处理错误的方法"><a href="#1-2-处理错误的方法" class="headerlink" title="1.2 处理错误的方法"></a>1.2 处理错误的方法</h4><ul>
+<li>方法一：约定返回错误码。</li>
+</ul>
+<blockquote>
+<p>例如，处理一个文件，如果返回<code>0</code>，表示成功，返回其他整数，表示约定的错误码：</p>
+<p>因为使用<code>int</code>类型的错误码，想要处理就非常麻烦。这种方式常见于底层C函数。</p>
+<p>一般不这样处理！</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">int</span> code <span class="token operator">=</span> <span class="token function">processFile</span><span class="token punctuation">(</span><span class="token string">"C:\\test.txt"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>code <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// ok:</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// error:</span>
+    <span class="token keyword">switch</span> <span class="token punctuation">(</span>code<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span>
+        <span class="token comment" spellcheck="true">// file not found:</span>
+    <span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span>
+        <span class="token comment" spellcheck="true">// no read permission:</span>
+    <span class="token keyword">default</span><span class="token operator">:</span>
+        <span class="token comment" spellcheck="true">// unknown error:</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>方法二：在语言层面上提供一个异常处理机制。</li>
+</ul>
+<blockquote>
+<p>Java内置了一套异常处理机制，总是使用异常来表示错误。</p>
+<p>异常是一种<code>class</code>，因此它本身带有类型信息。异常可以在任何地方抛出，但只需要在上层捕获，这样就和方法调用分离了！</p>
+<p>使用的是<code>try...catch...语句</code>：</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">try</span> <span class="token punctuation">{</span>
+    String s <span class="token operator">=</span> <span class="token function">processFile</span><span class="token punctuation">(</span>“C<span class="token operator">:</span>\\test<span class="token punctuation">.</span>txt”<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// ok:</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">FileNotFoundException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// file not found:</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">SecurityException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// no read permission:</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// io error:</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// other error:</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="1-3-异常的继承关系"><a href="#1-3-异常的继承关系" class="headerlink" title="1.3 异常的继承关系"></a>1.3 异常的继承关系</h4><pre class="line-numbers language-ascii"><code class="language-ascii">                     ┌───────────┐
+                     │  Object   │
+                     └───────────┘
+                           ▲
+                           │
+                     ┌───────────┐
+                     │ Throwable │
+                     └───────────┘
+                           ▲
+                 ┌─────────┴─────────┐
+                 │                   │
+           ┌───────────┐       ┌───────────┐
+           │   Error   │       │ Exception │
+           └───────────┘       └───────────┘
+                 ▲                   ▲
+         ┌───────┘              ┌────┴──────────┐
+         │                      │               │
+┌─────────────────┐    ┌─────────────────┐┌───────────┐
+│OutOfMemoryError │... │RuntimeException ││IOException│...
+└─────────────────┘    └─────────────────┘└───────────┘
+                                ▲
+                    ┌───────────┴─────────────┐
+                    │                         │
+         ┌─────────────────────┐ ┌─────────────────────────┐
+         │NullPointerException │ │IllegalArgumentException │...
+         └─────────────────────┘ └─────────────────────────┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p><code>Throwable</code>是异常体系的根，它继承自<code>Object</code>。<code>Throwable</code>有两个体系：<code>Error</code>和<code>Exception</code>，<code>Error</code>表示严重的错误，程序对此一般无能为力：</p>
+</blockquote>
+<ul>
+<li><code>OutOfMemoryError</code>：内存耗尽</li>
+<li><code>NoClassDefFoundError</code>：无法加载某个Class</li>
+<li><code>StackOverflowError</code>：栈溢出</li>
+</ul>
+<blockquote>
+<p>而<code>Exception</code>则是运行时的错误，它可以被捕获并处理！</p>
+<p>某些异常是应用程序逻辑处理的一部分，应该捕获并处理！</p>
+<p>还有一些异常是程序逻辑编写不对造成的，应该修复程序本身！</p>
+</blockquote>
+<ul>
+<li><code>NumberFormatException</code>：数值类型的格式错误</li>
+<li><code>FileNotFoundException</code>：未找到文件</li>
+<li><code>SocketException</code>：读取网络失败</li>
+<li><code>NullPointerException</code>：对某个<code>null</code>的对象调用方法或字段</li>
+<li><code>IndexOutOfBoundsException</code>：数组索引越界</li>
+</ul>
+<p>Exception分为两大类：</p>
+<ul>
+<li><p><code>RuntimeException</code>以及它的子类；</p>
+</li>
+<li><p>非<code>RuntimeException</code>（包括<code>IOException</code>、<code>ReflectiveOperationException</code>等等）</p>
+</li>
+</ul>
+<h4 id="1-4-哪些异常需要处理"><a href="#1-4-哪些异常需要处理" class="headerlink" title="1.4 哪些异常需要处理"></a>1.4 哪些异常需要处理</h4><p>Java规定：</p>
+<ul>
+<li>必须捕获的异常，包括<code>Exception</code>及其子类，但不包括<code>RuntimeException</code>及其子类，这种类型的异常称为Checked Exception。</li>
+<li>不需要捕获的异常，包括<code>Error</code>及其子类，<code>RuntimeException</code>及其子类。</li>
+</ul>
+<h3 id="2、捕获异常（catch）"><a href="#2、捕获异常（catch）" class="headerlink" title="2、捕获异常（catch）"></a>2、捕获异常（catch）</h3><blockquote>
+<p>捕获异常使用<code>try...catch</code>语句，把可能发生异常的代码放到<code>try {...}</code>中，然后使用<code>catch</code>捕获对应的<code>Exception</code>及其子类！</p>
+</blockquote>
+<h4 id="2-1-方法内部使用try-catch捕获"><a href="#2-1-方法内部使用try-catch捕获" class="headerlink" title="2.1 方法内部使用try catch捕获"></a>2.1 方法内部使用<code>try catch</code>捕获</h4><blockquote>
+<p>不去捕获错误会发生编译错误：</p>
+<pre><code>Main.java:15: 错误: 未报告的异常错误UnsupportedEncodingException; 必须对其进行捕获或声明以便抛出
+        return s.getBytes("GBK");
+                         ^
+1 个错误
+错误: 编译失败</code></pre></blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>test<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>UnsupportedEncodingException<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Arrays<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">codeTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> bs <span class="token operator">=</span> <span class="token function">toGBK</span><span class="token punctuation">(</span><span class="token string">"中国"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Arrays<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span>bs<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">toGBK</span><span class="token punctuation">(</span>String s<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">// 用指定编码转换String为byte[]:</span>
+            <span class="token keyword">return</span> s<span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token string">"GBK"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">UnsupportedEncodingException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">// 如果系统不支持GBK编码，会捕获到UnsupportedEncodingException:</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 打印错误信息</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> s<span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 尝试使用用默认编码</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>来看一下<code>String.getBytes(String)</code>方法的定义：</p>
+<blockquote>
+<p>在方法定义的时候，使用<code>throws Xxx</code>表示该方法可能抛出的异常类型。调用方在调用的时候，必须强制捕获这些异常，否则编译器会报错。</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">getBytes</span><span class="token punctuation">(</span>String charsetName<span class="token punctuation">)</span> <span class="token keyword">throws</span> UnsupportedEncodingException <span class="token punctuation">{</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h4 id="2-2-方法定义处使用throws"><a href="#2-2-方法定义处使用throws" class="headerlink" title="2.2 方法定义处使用throws"></a>2.2 方法定义处使用throws</h4><blockquote>
+<p>在方法定义处用throws表示<code>toGBK()</code>方法可能会抛出<code>UnsupportedEncodingException</code>，就可以让<code>toGBK()</code>方法通过编译器检查：</p>
+<p>告诉编译器可能会抛出错误，编译器会跳过检查该方法，但是会在main方法里面抛出异常：</p>
+<pre><code>Main.java:8: 错误: 未报告的异常错误UnsupportedEncodingException; 必须对其进行捕获或声明以便抛出
+        byte[] bs = toGBK("中文");
+                         ^
+1 个错误
+错误: 编译失败</code></pre></blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>test<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>UnsupportedEncodingException<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Arrays<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">codeTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> bs <span class="token operator">=</span> <span class="token function">toGBK</span><span class="token punctuation">(</span><span class="token string">"中国"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Arrays<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span>bs<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">toGBK</span><span class="token punctuation">(</span>String s<span class="token punctuation">)</span> <span class="token keyword">throws</span> UnsupportedEncodingException <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> s<span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token string">"GBK"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>做出修改如下：</p>
+<ul>
+<li>修改一：在main方法内捕获异常：</li>
+</ul>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>test<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>UnsupportedEncodingException<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Arrays<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">codeTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> bs <span class="token operator">=</span> <span class="token function">toGBK</span><span class="token punctuation">(</span><span class="token string">"中国"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Arrays<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span>bs<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">UnsupportedEncodingException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">toGBK</span><span class="token punctuation">(</span>String s<span class="token punctuation">)</span> <span class="token keyword">throws</span> UnsupportedEncodingException <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> s<span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token string">"GBK"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>修改二：将main方法定义为<code>throws Exception</code></li>
+</ul>
+<blockquote>
+<p><code>main()</code>方法声明了可能抛出<code>Exception</code>，也就声明了可能抛出所有的<code>Exception</code>，因此在内部就无需捕获了。代价就是一旦发生异常，程序会立刻退出。</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>test<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>UnsupportedEncodingException<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Arrays<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">codeTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> Exception <span class="token punctuation">{</span>
+        <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> bs <span class="token operator">=</span> <span class="token function">toGBK</span><span class="token punctuation">(</span><span class="token string">"中国"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Arrays<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span>bs<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">toGBK</span><span class="token punctuation">(</span>String s<span class="token punctuation">)</span> <span class="token keyword">throws</span> UnsupportedEncodingException <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> s<span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token string">"GBK"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="2-3-使用printStackTrace-打印异常栈"><a href="#2-3-使用printStackTrace-打印异常栈" class="headerlink" title="2.3 使用printStackTrace()打印异常栈"></a>2.3 使用printStackTrace()打印异常栈</h4><blockquote>
+<p>没有弄明白这样写为什么不会执行catch内部的语句。。。</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>test<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>UnsupportedEncodingException<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Arrays<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">codeTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> bs <span class="token operator">=</span> <span class="token function">toGBK</span><span class="token punctuation">(</span><span class="token string">"中国"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Arrays<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span>bs<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">UnsupportedEncodingException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">toGBK</span><span class="token punctuation">(</span>String s<span class="token punctuation">)</span> <span class="token keyword">throws</span> UnsupportedEncodingException <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> s<span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token string">"GBK"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="二、捕获异常"><a href="#二、捕获异常" class="headerlink" title="二、捕获异常"></a>二、捕获异常</h2><h3 id="1、多条catch语句"><a href="#1、多条catch语句" class="headerlink" title="1、多条catch语句"></a>1、多条catch语句</h3><blockquote>
+<p>可以使用多个<code>catch</code>语句，每个<code>catch</code>分别捕获对应的<code>Exception</code>及其子类。JVM在捕获到异常后，会从上到下匹配<code>catch</code>语句，匹配到某个<code>catch</code>后，执行<code>catch</code>代码块，然后<em>不再</em>继续匹配。</p>
+<p>多条catch语句只执行一个！</p>
+<p>由于从上到下匹配，所以catch语句要从子类开始写起，防止被一个父类直接截断！</p>
+<p>若将下方两个catch互换，则<code>UnsupportedEncodingException</code>根本无法执行，会被其父类<code>IOException</code>给截断！</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+        <span class="token function">process1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">process2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">process3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">UnsupportedEncodingException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Bad encoding"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"IO error"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2、finally语句"><a href="#2、finally语句" class="headerlink" title="2、finally语句"></a>2、finally语句</h3><blockquote>
+<p>无论是否有异常发生，如果我们都希望执行一些语句，例如清理工作，怎么写？</p>
+<p>当然可以在每个catch语句都写一遍，显然这样很麻烦！</p>
+<p>所以引入一个finally语句，有无错误都会执行！</p>
+<p>可见，<code>finally</code>是用来保证一些代码必须执行的。</p>
+<p>如果捕获异常跳转执行 catch 里面的语句块，return 先执行。finally 里面的代码总是最后执行。</p>
+</blockquote>
+<p>注意<code>finally</code>的两个特点：</p>
+<ol>
+<li><code>finally</code>语句不是必须的，可写可不写；</li>
+<li><code>finally</code>总是最后执行。</li>
+</ol>
+<p>执行流程：</p>
+<p>如果没有发生异常，就正常执行<code>try { ... }</code>语句块，然后执行<code>finally</code>。如果发生了异常，就中断执行<code>try { ... }</code>语句块，然后跳转执行匹配的<code>catch</code>语句块，最后执行<code>finally</code>。</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+        <span class="token function">process1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">process2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">process3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">UnsupportedEncodingException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Bad encoding"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"IO error"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"END"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><code>try...finally</code>语句：</p>
+<blockquote>
+<p>某些情况下，可以没有<code>catch</code>，只使用<code>try ... finally</code>结构！</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">void</span> <span class="token function">process</span><span class="token punctuation">(</span>String file<span class="token punctuation">)</span> <span class="token keyword">throws</span> IOException <span class="token punctuation">{</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"END"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="3、异常逻辑相同则合并"><a href="#3、异常逻辑相同则合并" class="headerlink" title="3、异常逻辑相同则合并"></a>3、异常逻辑相同则合并</h3><blockquote>
+<p>处理<code>IOException</code>和<code>NumberFormatException</code>的代码是相同的，所以我们可以把它两用<code>|</code>合并到一起：</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+        <span class="token function">process1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">process2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">process3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> <span class="token operator">|</span> NumberFormatException e<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// IOException或NumberFormatException</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Bad input"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Unknown error"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="三、抛出异常"><a href="#三、抛出异常" class="headerlink" title="三、抛出异常"></a>三、抛出异常</h2><blockquote>
+<p>目的：是为了在代码执行发生错误的时候，停止，或者进行处理，以及抛出信息帮助程序员定位出现bug的位置！</p>
+<p>所以，需要在可能发生异常的地方，使用 throw 语句抛出异常！</p>
+<p>异常抛出之后，需要对异常进行捕获！</p>
+</blockquote>
+<h3 id="1、异常的传播"><a href="#1、异常的传播" class="headerlink" title="1、异常的传播"></a>1、异常的传播</h3><blockquote>
+<p>当某个方法抛出了异常时，如果当前方法没有捕获异常，异常就会被抛到上层调用方法，直到遇到某个<code>try ... catch</code>被捕获为止：</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>test<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">codeTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token function">process1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">process1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">process2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">process2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Integer<span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span>null<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 会抛出NumberFormatException</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>使用<code>printStackTrace()</code>方法打印方法的调用栈：</p>
+<blockquote>
+<p><code>printStackTrace()</code>对于调试错误非常有用，下面信息表示：<code>NumberFormatException</code>是在<code>java.lang.Integer.parseInt</code>方法中被抛出的！</p>
+</blockquote>
+<pre><code>java.lang.NumberFormatException: null
+    at java.base/java.lang.Integer.parseInt(Integer.java:614)
+    at java.base/java.lang.Integer.parseInt(Integer.java:770)
+    at com.test.codeTest.process2(codeTest.java:17)
+    at com.test.codeTest.process1(codeTest.java:13)
+    at com.test.codeTest.main(codeTest.java:6)
+
+Process finished with exit code 0
+</code></pre><p>打印的是异常栈，是栈，所以从下往上看：</p>
+<ul>
+<li><code>main()</code>调用<code>process1()</code>；</li>
+<li><code>process1()</code>调用<code>process2()</code>；</li>
+<li><code>process2()</code>调用<code>Integer.parseInt(String)</code>；</li>
+<li><code>Integer.parseInt(String)</code>调用<code>Integer.parseInt(String, int)</code>。</li>
+</ul>
+<h3 id="2、抛出异常"><a href="#2、抛出异常" class="headerlink" title="2、抛出异常"></a>2、抛出异常</h3><h4 id="2-1-创建并抛出"><a href="#2-1-创建并抛出" class="headerlink" title="2.1 创建并抛出"></a>2.1 创建并抛出</h4><ul>
+<li><p>创建某个<code>Exception</code>的实例；</p>
+</li>
+<li><p>用<code>throw</code>语句抛出。</p>
+</li>
+</ul>
+<p>通常会合并到一起来写：</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">void</span> <span class="token function">process2</span><span class="token punctuation">(</span>String s<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>s<span class="token operator">==</span>null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        NullPointerException e <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">NullPointerException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">throw</span> e<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// 合并写法：</span>
+<span class="token keyword">void</span> <span class="token function">process2</span><span class="token punctuation">(</span>String s<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>s<span class="token operator">==</span>null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">NullPointerException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="2-2-异常转换"><a href="#2-2-异常转换" class="headerlink" title="2.2 异常转换"></a>2.2 异常转换</h4><blockquote>
+<p>如果一个方法捕获了某个异常后，又在<code>catch</code>子句中抛出新的异常，就相当于把抛出的异常类型“转换”了：</p>
+<p>后者覆盖前者：</p>
+<p>当<code>process2()</code>抛出<code>NullPointerException</code>后，被<code>process1()</code>捕获，然后抛出<code>IllegalArgumentException()</code>。</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token function">process1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">process1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token function">process2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">NullPointerException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">IllegalArgumentException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">process2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">NullPointerException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="2-3-传入原始Exception来保留原始Exception"><a href="#2-3-传入原始Exception来保留原始Exception" class="headerlink" title="2.3 传入原始Exception来保留原始Exception"></a>2.3 传入原始<code>Exception</code>来保留原始<code>Exception</code></h4><blockquote>
+<p>捕获到异常并再次抛出时，一定要留住原始异常，否则很难定位第一案发现场！</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token function">process1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">process1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token function">process2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">NullPointerException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">// 关键点，传入原始Exception e</span>
+            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">IllegalArgumentException</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">process2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">NullPointerException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>抛出信息的异常栈信息如下：</p>
+<blockquote>
+<p>注意到<code>Caused by: Xxx</code>，说明捕获的<code>IllegalArgumentException</code>并不是造成问题的根源，根源在于<code>NullPointerException</code>，是在<code>Main.process2()</code>方法抛出的。</p>
+</blockquote>
+<pre><code>java.lang.IllegalArgumentException: java.lang.NullPointerException
+    at com.test.codeTest.process1(codeTest.java:16)
+    at com.test.codeTest.main(codeTest.java:6)
+// 关键点：
+Caused by: java.lang.NullPointerException
+    at com.test.codeTest.process2(codeTest.java:23)
+    at com.test.codeTest.process1(codeTest.java:14)</code></pre><h3 id="3、finally语句是否执行"><a href="#3、finally语句是否执行" class="headerlink" title="3、finally语句是否执行"></a>3、finally语句是否执行</h3><blockquote>
+<p>在<code>catch</code>中抛出异常，不会影响<code>finally</code>的执行。JVM会先执行<code>finally</code>，然后抛出异常。</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            Integer<span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"catched"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">RuntimeException</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"finally"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre><code>catched
+finally
+Exception in thread "main" java.lang.IllegalArgumentException
+    at Main.main(Main.java:11)</code></pre><h3 id="4、异常屏蔽"><a href="#4、异常屏蔽" class="headerlink" title="4、异常屏蔽"></a>4、异常屏蔽</h3><blockquote>
+<p>在执行<code>finally</code>语句时抛出异常,<code>catch</code>语句的异常会被屏蔽！</p>
+<p><code>finally</code>抛出异常后，原来在<code>catch</code>中准备抛出的异常就“消失”了，因为只能抛出一个异常。没有被抛出的异常称为“被屏蔽”的异常（Suppressed Exception）</p>
+<p>Suppressed ：屏蔽</p>
+<p>绝大多数情况下，在<code>finally</code>中不要抛出异常。因此，我们通常不需要关心<code>Suppressed Exception</code>。</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            Integer<span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"catched"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">RuntimeException</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"finally"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">IllegalArgumentException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>抛出异常如下：</p>
+<pre><code>catched
+finally
+Exception in thread "main" java.lang.IllegalArgumentException
+    at Main.main(Main.java:11)</code></pre><p>解决方法：</p>
+<blockquote>
+<p>如果需要获知所有的异常，方法是先用<code>origin</code>变量保存原始异常，然后调用<code>Throwable.addSuppressed()</code>，把原始异常添加进来，最后在<code>finally</code>抛出：</p>
+<p>Suppressed ：屏蔽</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> Exception <span class="token punctuation">{</span>
+        Exception origin <span class="token operator">=</span> null<span class="token punctuation">;</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Integer<span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            origin <span class="token operator">=</span> e<span class="token punctuation">;</span>
+            <span class="token keyword">throw</span> e<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+            Exception e <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">IllegalArgumentException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>origin <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                e<span class="token punctuation">.</span><span class="token function">addSuppressed</span><span class="token punctuation">(</span>origin<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">throw</span> e<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>抛出异常信息如下：</p>
+<pre class="line-numbers language-java"><code class="language-java">Exception in thread <span class="token string">"main"</span> java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>IllegalArgumentException
+    at Main<span class="token punctuation">.</span><span class="token function">main</span><span class="token punctuation">(</span>Main<span class="token punctuation">.</span>java<span class="token operator">:</span><span class="token number">11</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true">// 关键点：屏蔽异常信息：NumberFormatException</span>
+    Suppressed<span class="token operator">:</span> java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>NumberFormatException<span class="token operator">:</span> For input string<span class="token operator">:</span> <span class="token string">"abc"</span>
+        at java<span class="token punctuation">.</span>base<span class="token operator">/</span>java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>NumberFormatException<span class="token punctuation">.</span><span class="token function">forInputString</span><span class="token punctuation">(</span>NumberFormatException<span class="token punctuation">.</span>java<span class="token operator">:</span><span class="token number">68</span><span class="token punctuation">)</span>
+        at java<span class="token punctuation">.</span>base<span class="token operator">/</span>java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>Integer<span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span>Integer<span class="token punctuation">.</span>java<span class="token operator">:</span><span class="token number">652</span><span class="token punctuation">)</span>
+        at java<span class="token punctuation">.</span>base<span class="token operator">/</span>java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>Integer<span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span>Integer<span class="token punctuation">.</span>java<span class="token operator">:</span><span class="token number">770</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="四、自定义异常"><a href="#四、自定义异常" class="headerlink" title="四、自定义异常"></a>四、自定义异常</h2><h3 id="1、Java标准库定义的-常用异常："><a href="#1、Java标准库定义的-常用异常：" class="headerlink" title="1、Java标准库定义的 常用异常："></a>1、Java标准库定义的 常用异常：</h3><pre class="line-numbers language-ascii"><code class="language-ascii">Exception
+│
+├─ RuntimeException
+│  │
+│  ├─ NullPointerException
+│  │
+│  ├─ IndexOutOfBoundsException
+│  │
+│  ├─ SecurityException
+│  │
+│  └─ IllegalArgumentException
+│     │
+│     └─ NumberFormatException
+│
+├─ IOException
+│  │
+│  ├─ UnsupportedCharsetException
+│  │
+│  ├─ FileNotFoundException
+│  │
+│  └─ SocketException
+│
+├─ ParseException
+│
+├─ GeneralSecurityException
+│
+├─ SQLException
+│
+└─ TimeoutException<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2、自定义异常"><a href="#2、自定义异常" class="headerlink" title="2、自定义异常"></a>2、自定义异常</h3><blockquote>
+<p>在一个大型项目中，可以自定义新的异常类型，但是，保持一个合理的异常继承体系是非常重要的。</p>
+<p>一个常见的做法是自定义一个<code>BaseException</code>作为“根异常”，然后，派生出各种业务类型的异常。</p>
+<p><code>BaseException</code>需要从一个适合的<code>Exception</code>派生，通常建议从<code>RuntimeException</code>派生：</p>
+<p><code>BaseException</code>构造方法实际上都是原样照抄<code>RuntimeException</code>。这样，抛出异常的时候，就可以选择合适的构造方法。通过IDE可以根据父类快速生成子类的构造方法。</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BaseException</span> <span class="token keyword">extends</span> <span class="token class-name">RuntimeException</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token function">BaseException</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token function">BaseException</span><span class="token punctuation">(</span>String message<span class="token punctuation">,</span> Throwable cause<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>message<span class="token punctuation">,</span> cause<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token function">BaseException</span><span class="token punctuation">(</span>String message<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token function">BaseException</span><span class="token punctuation">(</span>Throwable cause<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>cause<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">UserNotFoundException</span> <span class="token keyword">extends</span> <span class="token class-name">BaseException</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LoginFailedException</span> <span class="token keyword">extends</span> <span class="token class-name">BaseException</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="五、NullPointerException"><a href="#五、NullPointerException" class="headerlink" title="五、NullPointerException"></a>五、NullPointerException</h2><blockquote>
+<p>所有的<code>RuntimeException</code>异常中，最常见的就是<code>NullPointerException</code>了！</p>
+<p><code>NullPointerException</code>即空指针异常，俗称NPE。如果一个对象为<code>null</code>，调用其方法或访问其字段就会产生<code>NullPointerException</code>，这个异常通常是由JVM抛出的！</p>
+</blockquote>
+<h3 id="1、处理NullPointerException"><a href="#1、处理NullPointerException" class="headerlink" title="1、处理NullPointerException"></a>1、处理NullPointerException</h3><blockquote>
+<p><code>NullPointerException</code>是一种代码逻辑错误，遇到<code>NullPointerException</code>，遵循原则是早暴露，早修复，严禁使用<code>catch</code>来隐藏这种编码错误：</p>
+</blockquote>
+<h4 id="1-1-变量定义时尽量不使用null"><a href="#1-1-变量定义时尽量不使用null" class="headerlink" title="1.1 变量定义时尽量不使用null"></a>1.1 变量定义时尽量不使用<code>null</code></h4><blockquote>
+<p>使用空字符串<code>""</code>而不是默认的<code>null</code>可避免很多<code>NullPointerException</code>，编写业务逻辑时，用空字符串<code>""</code>表示未填写比<code>null</code>安全得多。</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> String name <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h4 id="1-2-返回时尽量不返回null"><a href="#1-2-返回时尽量不返回null" class="headerlink" title="1.2 返回时尽量不返回null"></a>1.2 返回时尽量不返回<code>null</code></h4><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>test<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">codeTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        String name <span class="token operator">=</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>name<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> String <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//return null;</span>
+        <span class="token keyword">return</span> <span class="token string">""</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="1-3-必须返回null时使用Optional-lt-T-gt"><a href="#1-3-必须返回null时使用Optional-lt-T-gt" class="headerlink" title="1.3 必须返回null时使用Optional<T>"></a>1.3 必须返回<code>null</code>时使用<code>Optional&lt;T&gt;</code></h4><blockquote>
+<p>使用<code>Optional.isPresent()来判断是不是null</code></p>
+<p>使用<code>Optional.of()</code>返回T类型的值：</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>test<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Optional<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">codeTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Optional<span class="token operator">&lt;</span>String<span class="token operator">></span> name <span class="token operator">=</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>name<span class="token punctuation">.</span><span class="token function">isPresent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"NULL"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> Optional<span class="token operator">&lt;</span>String<span class="token operator">></span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//return null;</span>
+        <span class="token comment" spellcheck="true">//return Optional.of("hhh");</span>
+        <span class="token keyword">return</span> Optional<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2、定位NullPointerException"><a href="#2、定位NullPointerException" class="headerlink" title="2、定位NullPointerException"></a>2、定位NullPointerException</h3><blockquote>
+<p>这种增强的<code>NullPointerException</code>详细信息是Java 14新增的功能，但默认是关闭的，我们可以给JVM添加一个<code>-XX:+ShowCodeDetailsInExceptionMessages</code>参数启用它：</p>
+</blockquote>
+<pre><code>java -XX:+ShowCodeDetailsInExceptionMessages Main.java</code></pre><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>test<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">codeTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Persons p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Persons</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>address<span class="token punctuation">.</span>city<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Persons</span> <span class="token punctuation">{</span>
+    String<span class="token punctuation">[</span><span class="token punctuation">]</span> name <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    Address address <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Address</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Address</span> <span class="token punctuation">{</span>
+    String city<span class="token punctuation">;</span>
+    String street<span class="token punctuation">;</span>
+    String zipcode<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>定位信息如下：<code>city</code>是空的！</p>
+<pre><code>java -XX:+ShowCodeDetailsInExceptionMessages Main.java
+
+// 信息如下：
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "&lt;local1&gt;.address.city" is null
+        at com.test.codeTest.main(codeTest.java:6)</code></pre><h2 id="六、使用断言"><a href="#六、使用断言" class="headerlink" title="六、使用断言"></a>六、使用断言</h2><blockquote>
+<p>实际开发中，很少使用断言。更好的方法是编写单元测试！</p>
+<p>断言条件预期为<code>true</code>，则正常执行。断言条件为<code>false</code>，抛出<code>AssertionError</code>。</p>
+<p>后面可加参数来打印提示信息，更加便于调试！</p>
+<p>Java断言的特点是：断言失败时会抛出<code>AssertionError</code>，导致程序结束退出。因此，断言不能用于可恢复的程序错误，只应该用于开发和测试阶段。</p>
+<p>对可恢复的错误不能使用断言，而应该抛出异常；</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">assert</span> x <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">:</span> <span class="token string">"x must >= 0"</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">assert</span> x <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>JVM默认关闭断言指令，即遇到<code>assert</code>语句就自动忽略了，不执行。</p>
+<p>要执行<code>assert</code>语句，必须给Java虚拟机传递<code>-enableassertions</code>（可简写为<code>-ea</code>）参数启用断言。所以，上述程序必须在命令行下运行才有效果：</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java">$ java <span class="token operator">-</span>ea Main<span class="token punctuation">.</span>java
+Exception in thread <span class="token string">"main"</span> java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>AssertionError
+    at Main<span class="token punctuation">.</span><span class="token function">main</span><span class="token punctuation">(</span>Main<span class="token punctuation">.</span>java<span class="token operator">:</span><span class="token number">5</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="七、使用JDK-Loging"><a href="#七、使用JDK-Loging" class="headerlink" title="七、使用JDK Loging"></a>七、使用JDK Loging</h2><blockquote>
+<p>编写程序的过程中，发现程序运行结果与预期不符，使用<code>System.out.println()</code>打印变量信息！异常麻烦！</p>
+<p>所以使用Loging，日志就是Logging，它的目的是为了取代<code>System.out.println()</code>。</p>
+<p>使用日志最大的好处是，它自动打印了时间、调用类、调用方法等很多有用的信息。</p>
+</blockquote>
+<h3 id="几点好处："><a href="#几点好处：" class="headerlink" title="几点好处："></a>几点好处：</h3><ol>
+<li>可以设置输出样式，避免自己每次都写<code>"ERROR: " + var</code>；</li>
+<li>可以设置输出级别，禁止某些级别输出。例如，只输出错误日志；</li>
+<li>可以被重定向到文件，这样可以在程序运行结束后查看日志；</li>
+<li>可以按包名控制日志级别，只输出某些包打的日志；</li>
+<li>可以……</li>
+</ol>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>test<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>logging<span class="token punctuation">.</span>Logger<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">codeTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Logger logger <span class="token operator">=</span> Logger<span class="token punctuation">.</span><span class="token function">getGlobal</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"start process..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        logger<span class="token punctuation">.</span><span class="token function">warning</span><span class="token punctuation">(</span><span class="token string">"memory is running out..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        logger<span class="token punctuation">.</span><span class="token function">fine</span><span class="token punctuation">(</span><span class="token string">"ignored."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        logger<span class="token punctuation">.</span><span class="token function">severe</span><span class="token punctuation">(</span><span class="token string">"process will be terminated..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>输出信息如下：</p>
+<pre><code>3月 31, 2020 6:12:33 下午 com.test.codeTest main
+信息: start process...
+3月 31, 2020 6:12:33 下午 com.test.codeTest main
+警告: memory is running out...
+3月 31, 2020 6:12:33 下午 com.test.codeTest main
+严重: process will be terminated...</code></pre><h3 id="Logger日志的七个级别："><a href="#Logger日志的七个级别：" class="headerlink" title="Logger日志的七个级别："></a>Logger日志的七个级别：</h3><blockquote>
+<p>默认级别是INFO，因此，INFO级别以下的日志，不会被打印出来。使用日志级别的好处在于，调整级别，就可以屏蔽掉很多调试相关的日志输出。</p>
+</blockquote>
+<ul>
+<li>SEVERE</li>
+<li>WARNING</li>
+<li>INFO</li>
+<li>CONFIG</li>
+<li>FINE</li>
+<li>FINER</li>
+<li>FINEST</li>
+</ul>
+<p>Logging系统在JVM启动时读取配置文件并完成初始化，一旦开始运行<code>main()</code>方法，就无法修改配置；</p>
+<p>配置不太方便，需要在JVM启动时传递参数<code>-Djava.util.logging.config.file=</code>。</p>
+<p>因此，Java标准库内置的Logging使用并不是非常广泛。</p>
+<p>一个例子：</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>test<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> com<span class="token punctuation">.</span>sun<span class="token punctuation">.</span>tools<span class="token punctuation">.</span>javac<span class="token punctuation">.</span>Main<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>UnsupportedEncodingException<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>logging<span class="token punctuation">.</span>Logger<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">codeTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Logger logger <span class="token operator">=</span> Logger<span class="token punctuation">.</span><span class="token function">getLogger</span><span class="token punctuation">(</span>Main<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"Start process..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token string">""</span><span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token string">"invalidCharsetName"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">UnsupportedEncodingException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">// TODO: 使用logger.severe()打印异常</span>
+            logger<span class="token punctuation">.</span><span class="token function">severe</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"Process end."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>日志如下：</p>
+<pre><code>3月 31, 2020 6:18:43 下午 com.test.codeTest main
+信息: Start process...
+3月 31, 2020 6:18:43 下午 com.test.codeTest main
+严重: java.io.UnsupportedEncodingException: invalidCharsetName
+3月 31, 2020 6:18:43 下午 com.test.codeTest main
+信息: Process end.
+
+Process finished with exit code 0
+</code></pre><h2 id="八、使用Commons-Logging"><a href="#八、使用Commons-Logging" class="headerlink" title="八、使用Commons Logging"></a>八、使用Commons Logging</h2><blockquote>
+<p>和Java标准库提供的日志不同，Commons Logging是一个第三方日志库，它是由Apache创建的日志模块。</p>
+<p>Commons Logging的特色是，它可以挂接不同的日志系统，并通过配置文件指定挂接的日志系统。默认情况下，Commons Loggin自动搜索并使用Log4j（Log4j是另一个流行的日志系统），如果没有找到Log4j，再使用JDK Logging。</p>
+</blockquote>
+<p>Commons Logging是一个第三方提供的库，所以，必须先把它<a href="https://commons.apache.org/proper/commons-logging/download_logging.cgi" target="_blank" rel="noopener">下载</a>下来。下载后，解压，找到<code>commons-logging-1.2.jar</code>这个文件，再把Java源码<code>Main.java</code>放到一个目录下</p>
+<h3 id="1、idea-导入方式："><a href="#1、idea-导入方式：" class="headerlink" title="1、idea 导入方式："></a>1、idea 导入方式：</h3><p>1.打开 File -&gt; Project Structure </p>
+<p>2.单击 Modules -&gt; Dependencies -&gt; “+” -&gt; “Jars or directories”</p>
+<p>3.选择硬盘上的jar包</p>
+<p>4.Apply -&gt; OK</p>
+<p>然后将鼠标放到导入的包上，点击提示信息的add classspath….即可成功导入！</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>test<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> com<span class="token punctuation">.</span>sun<span class="token punctuation">.</span>tools<span class="token punctuation">.</span>javac<span class="token punctuation">.</span>Main<span class="token punctuation">;</span>
+<span class="token keyword">import</span> org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>commons<span class="token punctuation">.</span>logging<span class="token punctuation">.</span>Log<span class="token punctuation">;</span>
+<span class="token keyword">import</span> org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>commons<span class="token punctuation">.</span>logging<span class="token punctuation">.</span>LogFactory<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">codeTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Log log <span class="token operator">=</span> LogFactory<span class="token punctuation">.</span><span class="token function">getLog</span><span class="token punctuation">(</span>Main<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"start..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        log<span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span><span class="token string">"end."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>信息如下：</p>
+<pre><code>3月 31, 2020 6:51:39 下午 com.sun.tools.javac.Main main
+信息: start...
+3月 31, 2020 6:51:39 下午 com.sun.tools.javac.Main main
+警告: end.</code></pre><h3 id="2、Commons-Logging定义了6个日志级别："><a href="#2、Commons-Logging定义了6个日志级别：" class="headerlink" title="2、Commons Logging定义了6个日志级别："></a>2、Commons Logging定义了6个日志级别：</h3><ul>
+<li>FATAL</li>
+<li>ERROR</li>
+<li>WARNING</li>
+<li>INFO</li>
+<li>DEBUG</li>
+<li>TRACE</li>
+</ul>
+<p>默认级别是<code>INFO</code>。</p>
+<h3 id="3、静态方法中引用log定义静态类型变量："><a href="#3、静态方法中引用log定义静态类型变量：" class="headerlink" title="3、静态方法中引用log定义静态类型变量："></a>3、静态方法中引用log定义静态类型变量：</h3><pre class="line-numbers language-java"><code class="language-java"><span class="token operator">/</span> 在静态方法中引用Log<span class="token operator">:</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+    <span class="token keyword">static</span> <span class="token keyword">final</span> Log log <span class="token operator">=</span> LogFactory<span class="token punctuation">.</span><span class="token function">getLog</span><span class="token punctuation">(</span>Main<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"foo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="4、实例方法中引用log定义实例类型变量："><a href="#4、实例方法中引用log定义实例类型变量：" class="headerlink" title="4、实例方法中引用log定义实例类型变量："></a>4、实例方法中引用log定义实例类型变量：</h3><blockquote>
+<p>注意到实例变量log的获取方式是<code>LogFactory.getLog(getClass())</code>，虽然也可以用<code>LogFactory.getLog(Person.class)</code>，但是前一种方式有个非常大的好处，就是子类可以直接使用该<code>log</code>实例：</p>
+<p>由于Java类的动态特性，子类获取的<code>log</code>字段实际上相当于<code>LogFactory.getLog(Student.class)</code>，但却是从父类继承而来，并且无需改动代码：</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">// 在实例方法中引用Log:</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    <span class="token keyword">protected</span> <span class="token keyword">final</span> Log log <span class="token operator">=</span> LogFactory<span class="token punctuation">.</span><span class="token function">getLog</span><span class="token punctuation">(</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">void</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"foo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment" spellcheck="true">// 在子类中使用父类实例化的log:</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Student</span> <span class="token keyword">extends</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    <span class="token keyword">void</span> <span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"bar"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="5、可抛出异常："><a href="#5、可抛出异常：" class="headerlink" title="5、可抛出异常："></a>5、可抛出异常：</h3><blockquote>
+<p>Commons Logging的日志方法，例如<code>info()</code>，除了标准的<code>info(String)</code>外，还提供了一个非常有用的重载方法：<code>info(String, Throwable)</code>，这使得记录异常更加简单：</p>
+</blockquote>
+<p>本例子使用了：</p>
+<ul>
+<li>实例方法引用log定义实例变量</li>
+<li>使用<code>LogFactory.getLog(getClass())</code>来是子类直接继承log</li>
+<li>使用log的两个参数，第二个参数来抛出异常：</li>
+</ul>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>test<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>commons<span class="token punctuation">.</span>logging<span class="token punctuation">.</span>Log<span class="token punctuation">;</span>
+<span class="token keyword">import</span> org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>commons<span class="token punctuation">.</span>logging<span class="token punctuation">.</span>LogFactory<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">codeTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        var s <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Persons</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        s<span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        var t <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Tests</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        t<span class="token punctuation">.</span><span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Persons</span><span class="token punctuation">{</span>
+    <span class="token keyword">protected</span> <span class="token keyword">final</span> Log log <span class="token operator">=</span> LogFactory<span class="token punctuation">.</span><span class="token function">getLog</span><span class="token punctuation">(</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">void</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            Integer n <span class="token operator">=</span> Integer<span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">"abs"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">NumberFormatException</span> e<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            log<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">"foo"</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Tests</span> <span class="token keyword">extends</span> <span class="token class-name">Persons</span><span class="token punctuation">{</span>
+    <span class="token keyword">void</span> <span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"bar"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>结果如下：</p>
+<pre><code>3月 31, 2020 7:09:22 下午 com.test.Persons foo
+严重: foo
+java.lang.NumberFormatException: For input string: "abs"
+    at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+    at java.base/java.lang.Integer.parseInt(Integer.java:652)
+    at java.base/java.lang.Integer.parseInt(Integer.java:770)
+    at com.test.Persons.foo(codeTest.java:20)
+    at com.test.codeTest.main(codeTest.java:9)
+
+3月 31, 2020 7:09:22 下午 com.test.Tests bar
+信息: bar</code></pre><h2 id="九、使用Log4j"><a href="#九、使用Log4j" class="headerlink" title="九、使用Log4j"></a>九、使用Log4j</h2><blockquote>
+<p>前面介绍了Commons Logging，可以作为“日志接口”来使用。而真正的“日志实现”可以使用Log4j。</p>
+<p>Log4j是一种非常流行的日志框架，最新版本是2.x。</p>
+<p>在开发阶段，始终使用Commons Logging接口来写入日志，并且开发阶段无需引入Log4j。如果需要把日志写入文件， 只需要把正确的配置文件和Log4j相关的jar包放入<code>classpath</code>，就可以自动把日志切换成使用Log4j写入，无需修改任何代码。</p>
+</blockquote>
+<h3 id="1、Log4j架构："><a href="#1、Log4j架构：" class="headerlink" title="1、Log4j架构："></a>1、Log4j架构：</h3><p>Log4j是一个组件化设计的日志系统，它的架构大致如下：</p>
+<pre class="line-numbers language-ascii"><code class="language-ascii">log.info("User signed in.");
+ │
+ │   ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐
+ ├──>│ Appender │───>│  Filter  │───>│  Layout  │───>│ Console  │
+ │   └──────────┘    └──────────┘    └──────────┘    └──────────┘
+ │
+ │   ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐
+ ├──>│ Appender │───>│  Filter  │───>│  Layout  │───>│   File   │
+ │   └──────────┘    └──────────┘    └──────────┘    └──────────┘
+ │
+ │   ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐
+ └──>│ Appender │───>│  Filter  │───>│  Layout  │───>│  Socket  │
+     └──────────┘    └──────────┘    └──────────┘    └──────────┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>当我们使用Log4j输出一条日志时，Log4j自动通过不同的Appender把同一条日志输出到不同的目的地。例如：</p>
+<ul>
+<li>console：输出到屏幕；</li>
+<li>file：输出到文件；</li>
+<li>socket：通过网络输出到远程计算机；</li>
+<li>jdbc：输出到数据库</li>
+</ul>
+<p>在输出日志的过程中，通过Filter来过滤哪些log需要被输出，哪些log不需要被输出。例如，仅输出<code>ERROR</code>级别的日志。</p>
+<p>最后，通过Layout来格式化日志信息，例如，自动添加日期、时间、方法名称等信息。</p>
+<h3 id="2、配置XML文件"><a href="#2、配置XML文件" class="headerlink" title="2、配置XML文件"></a>2、配置XML文件</h3><p>上述结构虽然复杂，但我们在实际使用的时候，并不需要关心Log4j的API，而是通过配置文件来配置它。</p>
+<blockquote>
+<p>将下面保存到文件并命名为：log4j2.xml放到src目录下即可：</p>
+<p>虽然配置Log4j比较繁琐，但一旦配置完成，使用起来就非常方便。对上面的配置文件，凡是<code>INFO</code>级别的日志，会自动输出到屏幕，而<code>ERROR</code>级别的日志，不但会输出到屏幕，还会同时输出到文件。并且，一旦日志文件达到指定大小（1MB），Log4j就会自动切割新的日志文件，并最多保留10份。</p>
+</blockquote>
+<pre class="line-numbers language-xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="UTF-8"?></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Configuration</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Properties</span><span class="token punctuation">></span></span>
+        <span class="token comment" spellcheck="true">&lt;!-- 定义日志格式 --></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>log.pattern<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>%d{MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36}%n%msg%n%n<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Property</span><span class="token punctuation">></span></span>
+        <span class="token comment" spellcheck="true">&lt;!-- 定义文件名变量 --></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>file.err.filename<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>log/err.log<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Property</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>file.err.pattern<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>log/err.%i.log.gz<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Property</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Properties</span><span class="token punctuation">></span></span>
+    <span class="token comment" spellcheck="true">&lt;!-- 定义Appender，即目的地 --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Appenders</span><span class="token punctuation">></span></span>
+        <span class="token comment" spellcheck="true">&lt;!-- 定义输出到屏幕 --></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Console</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>console<span class="token punctuation">"</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>SYSTEM_OUT<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token comment" spellcheck="true">&lt;!-- 日志格式引用上面定义的log.pattern --></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>PatternLayout</span> <span class="token attr-name">pattern</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>${log.pattern}<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Console</span><span class="token punctuation">></span></span>
+        <span class="token comment" spellcheck="true">&lt;!-- 定义输出到文件,文件名引用上面定义的file.err.filename --></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>RollingFile</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>err<span class="token punctuation">"</span></span> <span class="token attr-name">bufferedIO</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">fileName</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>${file.err.filename}<span class="token punctuation">"</span></span> <span class="token attr-name">filePattern</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>${file.err.pattern}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>PatternLayout</span> <span class="token attr-name">pattern</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>${log.pattern}<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Policies</span><span class="token punctuation">></span></span>
+                <span class="token comment" spellcheck="true">&lt;!-- 根据文件大小自动切割日志 --></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SizeBasedTriggeringPolicy</span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1 MB<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Policies</span><span class="token punctuation">></span></span>
+            <span class="token comment" spellcheck="true">&lt;!-- 保留最近10份 --></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>DefaultRolloverStrategy</span> <span class="token attr-name">max</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>10<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>RollingFile</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Appenders</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Loggers</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Root</span> <span class="token attr-name">level</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>info<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token comment" spellcheck="true">&lt;!-- 对info级别的日志，输出到console --></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>AppenderRef</span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>console<span class="token punctuation">"</span></span> <span class="token attr-name">level</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>info<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+            <span class="token comment" spellcheck="true">&lt;!-- 对error级别的日志，输出到err，即上面定义的RollingFile --></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>AppenderRef</span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>err<span class="token punctuation">"</span></span> <span class="token attr-name">level</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>error<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Root</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Loggers</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Configuration</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>虽然配置Log4j比较繁琐，但一旦配置完成，使用起来就非常方便。对上面的配置文件，凡是<code>INFO</code>级别的日志，会自动输出到屏幕，而<code>ERROR</code>级别的日志，不但会输出到屏幕，还会同时输出到文件。并且，一旦日志文件达到指定大小（1MB），Log4j就会自动切割新的日志文件，并最多保留10份。</p>
+</blockquote>
+<h3 id="3、下载并配置Log4j"><a href="#3、下载并配置Log4j" class="headerlink" title="3、下载并配置Log4j"></a>3、下载并配置Log4j</h3><p>有了配置文件还不够，因为Log4j也是一个第三方库，我们需要从<a href="https://logging.apache.org/log4j/2.x/download.html" target="_blank" rel="noopener">这里</a>下载Log4j，解压后，把以下3个jar包放到<code>classpath</code>中：</p>
+<ul>
+<li>log4j-api-2.x.jar</li>
+<li>log4j-core-2.x.jar</li>
+<li>log4j-jcl-2.x.jar</li>
+</ul>
+<blockquote>
+<p>因为Commons Logging会自动发现并使用Log4j，所以，把上一节下载的<code>commons-logging-1.2.jar</code>也放到<code>classpath</code>中。</p>
+<p>要打印日志，只需要按Commons Logging的写法写，不需要改动任何代码，就可以得到Log4j的日志输出，类似：</p>
+</blockquote>
+<p>第八节第五点的输出信息变为如下：</p>
+<pre><code>03-31 19:35:03.119 [main] ERROR com.test.Persons
+foo
+
+java.lang.NumberFormatException: For input string: "abs"
+    at java.lang.NumberFormatException.forInputString(NumberFormatException.java:68) ~[?:?]
+    at java.lang.Integer.parseInt(Integer.java:652) ~[?:?]
+    at java.lang.Integer.parseInt(Integer.java:770) ~[?:?]
+    at com.test.Persons.foo(codeTest.java:20) [java-base/:?]
+    at com.test.codeTest.main(codeTest.java:9) [java-base/:?]
+03-31 19:35:03.146 [main] INFO  com.test.Tests
+bar</code></pre><h3 id="4、小结"><a href="#4、小结" class="headerlink" title="4、小结"></a>4、小结</h3><ul>
+<li><p>通过Commons Logging实现日志，不需要修改代码即可使用Log4j；</p>
+</li>
+<li><p>使用Log4j只需要把log4j2.xml和相关jar放入classpath；</p>
+</li>
+<li><p>如果要更换Log4j，只需要移除log4j2.xml和相关jar；</p>
+</li>
+<li><p>只有扩展Log4j时，才需要引用Log4j的接口（例如，将日志加密写入数据库的功能，需要自己开发）。</p>
+</li>
+</ul>
+<h2 id="十、使用SLF4J和Logback"><a href="#十、使用SLF4J和Logback" class="headerlink" title="十、使用SLF4J和Logback"></a>十、使用SLF4J和Logback</h2><blockquote>
+<p>前面介绍了Commons Logging和Log4j这一对好基友，它们一个负责充当日志API，一个负责实现日志底层，搭配使用非常便于开发。</p>
+<p>有的童鞋可能还听说过SLF4J和Logback。这两个东东看上去也像日志，它们又是啥？</p>
+<p>其实SLF4J类似于Commons Logging，也是一个日志接口，而Logback类似于Log4j，是一个日志的实现。</p>
+<p>为什么有了Commons Logging和Log4j，又会蹦出来SLF4J和Logback？这是因为Java有着非常悠久的开源历史，不但OpenJDK本身是开源的，而且我们用到的第三方库，几乎全部都是开源的。开源生态丰富的一个特定就是，同一个功能，可以找到若干种互相竞争的开源库。</p>
+<p>因为对Commons Logging的接口不满意，有人就搞了SLF4J。因为对Log4j的性能不满意，有人就搞了Logback。</p>
+</blockquote>
+<p>来看看SLF4J对Commons Logging的接口有何改进：</p>
+<blockquote>
+<p>SLF4J的日志接口传入的是一个带占位符的字符串，用后面的变量自动替换占位符，所以看起来更加自然。</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">int</span> score <span class="token operator">=</span> <span class="token number">99</span><span class="token punctuation">;</span>
+p<span class="token punctuation">.</span><span class="token function">setScore</span><span class="token punctuation">(</span>score<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// Commons Logging 的拼接字符串：</span>
+log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"Set score "</span> <span class="token operator">+</span> score <span class="token operator">+</span> <span class="token string">" for Person "</span> <span class="token operator">+</span> p<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">" ok."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// SLF4J</span>
+<span class="token keyword">int</span> score <span class="token operator">=</span> <span class="token number">99</span><span class="token punctuation">;</span>
+p<span class="token punctuation">.</span><span class="token function">setScore</span><span class="token punctuation">(</span>score<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// 改进后的拼接字符串：</span>
+logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"Set score {} for Person {} ok."</span><span class="token punctuation">,</span> score<span class="token punctuation">,</span> p<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>如何使用SLF4J？它的接口实际上和Commons Logging几乎一模一样！</p>
+<h3 id="配置相关："><a href="#配置相关：" class="headerlink" title="配置相关："></a>配置相关：</h3><p>使用SLF4J和Logback和前面讲到的使用Commons Logging加Log4j是类似的，先分别下载<a href="https://www.slf4j.org/download.html" target="_blank" rel="noopener">SLF4J</a>和<a href="https://logback.qos.ch/download.html" target="_blank" rel="noopener">Logback</a>，然后把以下jar包放到classpath下：</p>
+<ul>
+<li>slf4j-api-1.7.x.jar</li>
+<li>logback-classic-1.2.x.jar</li>
+<li>logback-core-1.2.x.jar</li>
+</ul>
+<p>在src目录下新建一个logback.xml文件，写入下面内容：</p>
+<pre class="line-numbers language-xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="UTF-8"?></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>configuration</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>appender</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>CONSOLE<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ch.qos.logback.core.ConsoleAppender<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>encoder</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pattern</span><span class="token punctuation">></span></span>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>pattern</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>encoder</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>appender</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>appender</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>FILE<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ch.qos.logback.core.rolling.RollingFileAppender<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>encoder</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pattern</span><span class="token punctuation">></span></span>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>pattern</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>charset</span><span class="token punctuation">></span></span>utf-8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>charset</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>encoder</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>file</span><span class="token punctuation">></span></span>log/output.log<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>file</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rollingPolicy</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ch.qos.logback.core.rolling.FixedWindowRollingPolicy<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fileNamePattern</span><span class="token punctuation">></span></span>log/output.log.%i<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>fileNamePattern</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rollingPolicy</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>triggeringPolicy</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MaxFileSize</span><span class="token punctuation">></span></span>1MB<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>MaxFileSize</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>triggeringPolicy</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>appender</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>root</span> <span class="token attr-name">level</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>INFO<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>appender-ref</span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>CONSOLE<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>appender-ref</span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>FILE<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>root</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>configuration</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="代码修改如下："><a href="#代码修改如下：" class="headerlink" title="代码修改如下："></a>代码修改如下：</h3><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>test<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> org<span class="token punctuation">.</span>slf4j<span class="token punctuation">.</span>LoggerFactory<span class="token punctuation">;</span>
+<span class="token keyword">import</span> org<span class="token punctuation">.</span>slf4j<span class="token punctuation">.</span>Logger<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">codeTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        var s <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Persons</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        s<span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        var t <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Tests</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        t<span class="token punctuation">.</span><span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Persons</span><span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//protected final Logger log = LoggerFactory.getLogger(getClass());</span>
+    <span class="token keyword">final</span> Logger logger <span class="token operator">=</span> LoggerFactory<span class="token punctuation">.</span><span class="token function">getLogger</span><span class="token punctuation">(</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">void</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            Integer n <span class="token operator">=</span> Integer<span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">"abs"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">NumberFormatException</span> e<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            logger<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">"foo"</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Tests</span> <span class="token keyword">extends</span> <span class="token class-name">Persons</span><span class="token punctuation">{</span>
+    String name <span class="token operator">=</span> <span class="token string">"Mr.Niu"</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> age <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"bar"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 拼接字符串新方法：</span>
+        logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"name:{}, age:{}"</span><span class="token punctuation">,</span>name<span class="token punctuation">,</span> age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>输出信息如下：</p>
+<pre><code>20:14:19.679 [main] ERROR com.test.Persons - foo
+java.lang.NumberFormatException: For input string: "abs"
+    at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+    at java.base/java.lang.Integer.parseInt(Integer.java:652)
+    at java.base/java.lang.Integer.parseInt(Integer.java:770)
+    at com.test.Persons.foo(codeTest.java:21)
+    at com.test.codeTest.main(codeTest.java:9)
+20:14:19.693 [main] INFO  com.test.Tests - bar
+20:14:19.697 [main] INFO  com.test.Tests - name:Mr.Niu, age:100</code></pre><h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><ul>
+<li><p>SLF4J和Logback可以取代Commons Logging和Log4j；</p>
+</li>
+<li><p>始终使用SLF4J的接口写入日志，使用Logback只需要配置，不需要修改代码。</p>
+</li>
+</ul>
+<center style="color:red; font-size:25px">异常处理已完结，敬请期待后续章节！</center><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script></div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Dreamy.NXD</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://niuxvdong.top/posts/19314.html">https://niuxvdong.top/posts/19314.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://niuxvdong.top" target="_blank">小牛博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a></div><div class="post_share"><div class="social-share" data-image="https://img.niuxvdong.top/1585990922032.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button button--primary button--animated"> <i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="post-qr-code__img" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/WeChantQR.jpg" alt="微信"/><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="post-qr-code__img" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/AliPayQR.jpg" alt="支付宝"/><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/posts/39487.html"><img class="prev_cover" data-src="https://img.niuxvdong.top/1d8e2cf19e6f6345a86f1f5c00889843.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Java教程系列之反射</div></div></a></div><div class="next-post pull_right"><a href="/posts/22799.html"><img class="next_cover" data-src="https://img.niuxvdong.top/299ac7c5e1d3abeaeea9cc74507c8a6e.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Java教程系列之Java核心类</div></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script><script>var requestSetting = function (from,set) {
+  var from = from
+  var setting = set.split(',').filter(function(item){
+  return from.indexOf(item) > -1
+  });
+  setting = setting.length == 0 ? from :setting;
+  return setting
+}
+
+var guestInfo = requestSetting(['nick','mail','link'],'昵称,邮箱,主页')
+var requiredFields = requestSetting(['nick','mail','link'],'nick,mail')
+let friends = 'db61bf13ef744168a53227821321dd74'.split(',')
+let master = 'd9cd3b7d3ff3953067e21d186cc3b8a8'.split(',')
+
+window.valine = new Valine({
+  el:'#vcomment',
+  appId: '90p3ltuDBaHUROmxjB6gPP5E-gzGzoHsz',
+  appKey: 'ELqQhwIA4xnLFKglq8vVAjJ6',
+  notify: false,
+  verify: false,
+  placeholder: '昵称处填写qq号会自动更换成qq昵称并填入qq邮箱哦！',
+  avatar: 'monsterid',
+  meta: guestInfo,
+  pageSize: '10',
+  lang: 'zh-CN',
+  recordIP: true,
+  serverURLs: '',
+  emojiCDN: '',
+  emojiMaps: {"smile":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/e3/2018new_weixioa02_org.png","lovely":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/09/2018new_keai_org.png","happy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/1e/2018new_taikaixin_org.png","clap":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/6e/2018new_guzhang_thumb.png","whee":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/33/2018new_xixi_thumb.png","haha":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8f/2018new_haha_thumb.png","laugh and cry":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/4a/2018new_xiaoku_thumb.png","wink":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/43/2018new_jiyan_org.png","greddy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/fa/2018new_chanzui_org.png","awkward":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a3/2018new_heixian_thumb.png","sweat":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/28/2018new_han_org.png","pick nose":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/9a/2018new_wabi_thumb.png","hum":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/7c/2018new_heng_thumb.png","angry":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/f6/2018new_nu_thumb.png","grievance":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a5/2018new_weiqu_thumb.png","poor":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/96/2018new_kelian_org.png","disappoint":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/aa/2018new_shiwang_thumb.png","sad":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/ee/2018new_beishang_org.png","tear":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/6e/2018new_leimu_org.png","no way":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/83/2018new_kuxiao_org.png","shy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/c1/2018new_haixiu_org.png","dirt":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/10/2018new_wu_thumb.png","love you":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/f6/2018new_aini_org.png","kiss":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/2c/2018new_qinqin_thumb.png","amorousness":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/9d/2018new_huaxin_org.png","longing":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/c9/2018new_chongjing_org.png","desire":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/3e/2018new_tianping_thumb.png","bad laugh":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/4d/2018new_huaixiao_org.png","blackness":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/9e/2018new_yinxian_org.png","laugh without word":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/2d/2018new_xiaoerbuyu_org.png","titter":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/71/2018new_touxiao_org.png","cool":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/c4/2018new_ku_org.png","not easy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/aa/2018new_bingbujiandan_thumb.png","think":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/30/2018new_sikao_org.png","question":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/b8/2018new_ningwen_org.png","no idea":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/2a/2018new_wenhao_thumb.png","dizzy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/07/2018new_yun_thumb.png","bomb":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a2/2018new_shuai_thumb.png","bone":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a1/2018new_kulou_thumb.png","be quiet":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/b0/2018new_xu_org.png","shut up":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/62/2018new_bizui_org.png","stupid":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/dd/2018new_shayan_org.png","surprise":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/49/2018new_chijing_org.png","vomit":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/08/2018new_tu_org.png","cold":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/40/2018new_kouzhao_thumb.png","sick":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/3b/2018new_shengbing_thumb.png","bye":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/fd/2018new_baibai_thumb.png","look down on":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/da/2018new_bishi_org.png","white eye":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/ef/2018new_landelini_org.png","left hum":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/43/2018new_zuohengheng_thumb.png","right hum":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/c1/2018new_youhengheng_thumb.png","crazy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/17/2018new_zhuakuang_org.png","scold":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/87/2018new_zhouma_thumb.png","hit on face":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/cb/2018new_dalian_org.png","wow":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/ae/2018new_ding_org.png","fan":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/86/2018new_hufen02_org.png","money":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a2/2018new_qian_thumb.png","yawn":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/55/2018new_dahaqian_org.png","sleepy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/3c/2018new_kun_thumb.png","sleep":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/e2/2018new_shuijiao_thumb.png","watermelon":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/01/2018new_chigua_thumb.png","doge":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a1/2018new_doge02_org.png","dog":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/22/2018new_erha_org.png","cat":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/7b/2018new_miaomiao_thumb.png","thumb":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/e6/2018new_zan_org.png","good":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8a/2018new_good_org.png","ok":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/45/2018new_ok_org.png","yeah":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/29/2018new_ye_thumb.png","shack hand":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/e9/2018new_woshou_thumb.png","bow":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/e7/2018new_zuoyi_org.png","come":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/42/2018new_guolai_thumb.png","punch":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/86/2018new_quantou_thumb.png","tv_doge":"//i0.hdslb.com/bfs/emote/6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png","tv_亲亲":"//i0.hdslb.com/bfs/emote/a8111ad55953ef5e3be3327ef94eb4a39d535d06.png","tv_偷笑":"//i0.hdslb.com/bfs/emote/bb690d4107620f1c15cff29509db529a73aee261.png","tv_再见":"//i0.hdslb.com/bfs/emote/180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png","tv_冷漠":"//i0.hdslb.com/bfs/emote/b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png","tv_发怒":"//i0.hdslb.com/bfs/emote/34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png","tv_发财":"//i0.hdslb.com/bfs/emote/34db290afd2963723c6eb3c4560667db7253a21a.png","tv_可爱":"//i0.hdslb.com/bfs/emote/9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png","tv_吐血":"//i0.hdslb.com/bfs/emote/09dd16a7aa59b77baa1155d47484409624470c77.png","tv_呆":"//i0.hdslb.com/bfs/emote/fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png","tv_呕吐":"//i0.hdslb.com/bfs/emote/9f996894a39e282ccf5e66856af49483f81870f3.png","tv_困":"//i0.hdslb.com/bfs/emote/241ee304e44c0af029adceb294399391e4737ef2.png","tv_坏笑":"//i0.hdslb.com/bfs/emote/1f0b87f731a671079842116e0991c91c2c88645a.png","tv_大佬":"//i0.hdslb.com/bfs/emote/093c1e2c490161aca397afc45573c877cdead616.png","tv_大哭":"//i0.hdslb.com/bfs/emote/23269aeb35f99daee28dda129676f6e9ea87934f.png","tv_委屈":"//i0.hdslb.com/bfs/emote/d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png","tv_害羞":"//i0.hdslb.com/bfs/emote/a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png","tv_尴尬":"//i0.hdslb.com/bfs/emote/7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png","tv_微笑":"//i0.hdslb.com/bfs/emote/70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png","tv_思考":"//i0.hdslb.com/bfs/emote/90cf159733e558137ed20aa04d09964436f618a1.png","tv_惊吓":"//i0.hdslb.com/bfs/emote/0d15c7e2ee58e935adc6a7193ee042388adc22af.png","custom_37":"https://cdn.jsdelivr.net/gh/blogimg/picbed@latest/2020/04/22/097cd88f446efae87cb27de38c5eed15.png","custom_36":"https://cdn.jsdelivr.net/gh/blogimg/picbed@latest/2020/04/22/ec2166501d29bc1eb7380c22944db462.png","custom_35":"https://cdn.jsdelivr.net/gh/blogimg/picbed@latest/2020/04/22/8ca39f96c182e51cd752dde464157c2e.png","custom_34":"https://cdn.jsdelivr.net/gh/blogimg/picbed@latest/2020/04/22/0a65c5dd18872b56605c08f7bae2e8c8.png","custom_33":"https://cdn.jsdelivr.net/gh/blogimg/picbed@latest/2020/04/22/ec3edbfe84684fdb1680307d261c3c7b.png","custom_32":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/31.webp","custom_31":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/30.gif","custom_30":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/29.webp","custom_29":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/28.webp","custom_28":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/27.webp","custom_27":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/26.webp","custom_26":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/25.jpg","custom_25":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/24.webp","custom_24":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/23.webp","custom_23":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/22.webp","custom_22":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/21.webp","custom_21":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/20.webp","custom_20":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/19.webp","custom_19":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/18.jpg","custom_18":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/17.webp","custom_17":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/16.webp","custom_16":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/15.webp","custom_15":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/14.webp","custom_14":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/13.webp","custom_13":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/12.webp","custom_12":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/11.webp","custom_11":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/10.webp","custom_10":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/9.webp","custom_9":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/8.webp","custom_8":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/7.webp","custom_7":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/6.gif","custom_6":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/5.gif","custom_5":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/4.jpg","custom_4":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/3.jpg","custom_3":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/2.webp","custom_2":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/1.webp","custom_1":"https://cdn.jsdelivr.net/gh/blogimg/picbed@master/2020/04/19/c3164053d300cc5cca5e4dc3311842dc.png","custom_0":"https://cdn.jsdelivr.net/gh/blogimg/picbed@master/2020/04/19/6b5e768e524c8441ba66184bfdd86d4d.png"},
+  enableQQ: true,
+  requiredFields: requiredFields,
+  master: master,
+  friends: friends,
+  metaPlaceholder: {"nick":"昵称/QQ号(必填)","mail":"邮箱(必填)","link":"网址(https://)"}
+});</script></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By Dreamy.NXD</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">CDN BY <a target="_blank" rel="external nofollow" href="https://www.upyun.com/"><b>又拍云</b></a> | HOST BY <a target="_blank" rel="external nofollow" href="https://coding.net/"><b>Coding</b></a> && <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a></div><div class="icp"><a href="http://www.beian.miit.gov.cn/" target="_blank" rel="noopener"><img class="icp-icon" src="/img/icp.png"/><span>晋ICP备19005025号</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode far fa-moon" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script><script src="/js/search/local-search.js"></script><script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/js/my.js"></script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body></html>

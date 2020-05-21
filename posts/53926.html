@@ -1,0 +1,417 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Java教程系列之正则表达式 | 小牛博客</title><meta name="description" content="首先来首歌曲来放松一下吧！            由于学JavaScript时就已经学过了正则的规则，所以本文只介绍与其不同支出，大概的一个框架及用法！  一、正则匹配规则 \d ：一个数字 \D：一个非数字 \w ：一个数字或一个字母（大小写） \W：与\w相对。。。匹配其不能匹配的 \s ：一个空格 \S：与\s相对，匹配其不能匹配的 \u548c：匹配一个指定Unicode字符 . ：一个任"><meta name="keywords" content="Regex"><meta name="author" content="Dreamy.NXD"><meta name="copyright" content="Dreamy.NXD"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/favicon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="dns-prefetch" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://hm.baidu.com"/><link rel="dns-prefetch" href="https://hm.baidu.com"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="dns-prefetch" href="https://fonts.googleapis.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="dns-prefetch" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Java教程系列之正则表达式"><meta name="twitter:description" content="首先来首歌曲来放松一下吧！            由于学JavaScript时就已经学过了正则的规则，所以本文只介绍与其不同支出，大概的一个框架及用法！  一、正则匹配规则 \d ：一个数字 \D：一个非数字 \w ：一个数字或一个字母（大小写） \W：与\w相对。。。匹配其不能匹配的 \s ：一个空格 \S：与\s相对，匹配其不能匹配的 \u548c：匹配一个指定Unicode字符 . ：一个任"><meta name="twitter:image" content="https://img.niuxvdong.top/ckjnlk9.png"><meta property="og:type" content="article"><meta property="og:title" content="Java教程系列之正则表达式"><meta property="og:url" content="https://niuxvdong.top/posts/53926.html"><meta property="og:site_name" content="小牛博客"><meta property="og:description" content="首先来首歌曲来放松一下吧！            由于学JavaScript时就已经学过了正则的规则，所以本文只介绍与其不同支出，大概的一个框架及用法！  一、正则匹配规则 \d ：一个数字 \D：一个非数字 \w ：一个数字或一个字母（大小写） \W：与\w相对。。。匹配其不能匹配的 \s ：一个空格 \S：与\s相对，匹配其不能匹配的 \u548c：匹配一个指定Unicode字符 . ：一个任"><meta property="og:image" content="https://img.niuxvdong.top/ckjnlk9.png"><meta property="article:published_time" content="2020-04-18T10:06:42.000Z"><meta property="article:modified_time" content="2020-04-18T10:06:42.000Z"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>var autoChangeMode = '1'
+var t = Cookies.get("theme")
+if (autoChangeMode == '1'){
+  var isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+  var isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+  var isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined){
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport){
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour < 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+  }
+  } else if (t == 'light') activateLightMode()
+  else activateDarkMode()
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="canonical" href="https://niuxvdong.top/posts/53926.html"><link rel="prev" title="Java教程系列之加密与安全" href="https://niuxvdong.top/posts/25096.html"><link rel="next" title="Java教程系列之单元测试" href="https://niuxvdong.top/posts/44270.html"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c295a600e3126beebaf06822cd8b5c22";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://niuxvdong.top/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: true,
+  fancybox: false,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  baiduPush: true,
+  highlightCopy: true,
+  highlightLang: true,
+  highlightShrink: 'false',
+  isFontAwesomeV5: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+  
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isSidebar: true  
+  }</script><noscript><style>
+#page-header {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/css/my.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_1828588_zrw9f0qqie.css"><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="小牛博客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">54</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">67</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">9</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="https://nxd.js.org/" target="_blank" rel="noopener"><i class="fa-fw fa fa-thumbs-up"></i><span> 导航</span></a></li><li><a class="site-page" href="https://music.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="https://pan.niub.cf/tykj/" target="_blank" rel="noopener"><i class="fa-fw fa fa-cloud"></i><span> 云盘</span></a></li><li><a class="site-page" href="https://proxy.niub.cf/" target="_blank" rel="noopener"><i class="fa-fw fa fa-plane"></i><span> 谷歌</span></a></li><li><a class="site-page" href="https://valine.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-comments"></i><span> 评论</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div></div></div></div><i class="fa fa-arrow-right on" id="toggle-sidebar" aria-hidden="true">     </i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#首先来首歌曲来放松一下吧！"><span class="toc-number">1.</span> <span class="toc-text">首先来首歌曲来放松一下吧！</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一、正则匹配规则"><span class="toc-number">2.</span> <span class="toc-text">一、正则匹配规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、Java中使用String正则不同之处"><span class="toc-number">3.</span> <span class="toc-text">二、Java中使用String正则不同之处</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、分组匹配（引入regex包）"><span class="toc-number">4.</span> <span class="toc-text">三、分组匹配（引入regex包）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、一个例子"><span class="toc-number">4.1.</span> <span class="toc-text">1、一个例子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、Pattern"><span class="toc-number">4.2.</span> <span class="toc-text">2、Pattern</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、贪婪匹配"><span class="toc-number">5.</span> <span class="toc-text">四、贪婪匹配</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、贪婪匹配"><span class="toc-number">5.1.</span> <span class="toc-text">1、贪婪匹配</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、解决方法：（非贪婪匹配）"><span class="toc-number">5.2.</span> <span class="toc-text">2、解决方法：（非贪婪匹配）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、"><span class="toc-number">5.3.</span> <span class="toc-text">3、??</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、分割"><span class="toc-number">6.</span> <span class="toc-text">五、分割</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、使用Pattern的split方法"><span class="toc-number">6.1.</span> <span class="toc-text">1、使用Pattern的split方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、使用String-的split方法"><span class="toc-number">6.2.</span> <span class="toc-text">2、使用String 的split方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#六、搜索和替换"><span class="toc-number">7.</span> <span class="toc-text">六、搜索和替换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、搜索"><span class="toc-number">7.1.</span> <span class="toc-text">1、搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、替换"><span class="toc-number">7.2.</span> <span class="toc-text">2、替换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、反向引用"><span class="toc-number">7.3.</span> <span class="toc-text">3、反向引用</span></a></li></ol></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><div class="post-bg" id="nav" style="background-image: url(https://img.niuxvdong.top/ckjnlk9.png)"><div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">小牛博客</a></span><span class="pull_right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="https://nxd.js.org/" target="_blank" rel="noopener"><i class="fa-fw fa fa-thumbs-up"></i><span> 导航</span></a></li><li><a class="site-page" href="https://music.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="https://pan.niub.cf/tykj/" target="_blank" rel="noopener"><i class="fa-fw fa fa-cloud"></i><span> 云盘</span></a></li><li><a class="site-page" href="https://proxy.niub.cf/" target="_blank" rel="noopener"><i class="fa-fw fa fa-plane"></i><span> 谷歌</span></a></li><li><a class="site-page" href="https://valine.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-comments"></i><span> 评论</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div></div><span class="toggle-menu close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span></span></div><div id="post-info"><div id="post-title"><div class="posttitle">Java教程系列之正则表达式</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-04-18 18:06:42"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2020-04-18</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-04-18 18:06:42"><i class="fa fa-history" aria-hidden="true"></i> 更新于 2020-04-18</span></time><span class="post-meta__categories"><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/Java%E6%95%99%E7%A8%8B/">Java教程</a></span></div><div class="meta-secondline"> <span class="post-meta-wordcount"><i class="post-meta__icon far fa-file-word" aria-hidden="true"></i><span>字数总计:</span><span class="word-count">2k</span><span class="post-meta__separator">|</span><i class="post-meta__icon far fa-clock" aria-hidden="true"></i><span>阅读时长: 8 分钟</span></span></div><div class="meta-thirdline"><span class="post-meta-pv-cv"><span class="post-meta__separator">|</span><i class="fa fa-eye post-meta__icon" aria-hidden="true"> </i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"><span class="post-meta__separator">|</span><i class="post-meta__icon far fa-comments" aria-hidden="true"></i><span>评论数:</span><a href="/posts/53926.html#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/posts/53926.html" itemprop="commentCount"></span></a></span></div></div></div></div><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h2 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h2>
+    <div id="aplayer-LkfNNahz" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="423849091" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+
+
+
+
+
+<blockquote>
+<p><a href="https://niuxvdong.top/posts/15769.html">由于学JavaScript时就已经学过了正则的规则，所以本文只介绍与其不同支出，大概的一个框架及用法！</a></p>
+</blockquote>
+<h2 id="一、正则匹配规则"><a href="#一、正则匹配规则" class="headerlink" title="一、正则匹配规则"></a>一、正则匹配规则</h2><ul>
+<li><code>\d</code> ：一个数字</li>
+<li><code>\D</code>：一个非数字</li>
+<li><code>\w</code> ：一个数字或一个字母（大小写）</li>
+<li><code>\W</code>：与<code>\w</code>相对。。。匹配其不能匹配的</li>
+<li><code>\s</code> ：一个空格</li>
+<li><code>\S</code>：与<code>\s</code>相对，匹配其不能匹配的</li>
+<li><code>\u548c</code>：匹配一个指定Unicode字符</li>
+<li><code>.</code> ：一个任意字符</li>
+<li><code>\.</code> ：一个小数点</li>
+<li><code>*</code> ：任意个（包括0个）</li>
+<li><code>+</code> ：至少一个</li>
+<li><code>？</code> ：0个或1个</li>
+<li><code>{n,}</code>：至少n个</li>
+<li><code>{n}</code> ：n个</li>
+<li><code>{n, m}</code> ：n 到 m 个</li>
+<li><code>\-</code> ：一个<code>-</code></li>
+<li><code>\\</code> ：一个<code>\</code></li>
+</ul>
+<ul>
+<li><p><code>[abc]</code>：匹配其中一个</p>
+</li>
+<li><p><code>[0-9a-zA-Z\_]</code>可以匹配一个数字、字母或者下划线；</p>
+</li>
+<li><p><code>[0-9a-zA-Z\_]+</code>可以匹配至少由一个数字、字母或者下划线组成的字符串</p>
+</li>
+<li><p><code>[a-zA-Z\_\$][0-9a-zA-Z\_\$]*</code>可以匹配由字母或下划线、<code>$</code>开头，后接任意个由一个数字、字母或者下划线、$组成的字符串，也就JavaScript允许的变量名</p>
+</li>
+<li><p><code>[a-zA-Z\_\$][0-9a-zA-Z\_\$]{0, 19}</code>更精确地限制了变量的长度是1-20个字符（前面1个字符+后面最多19个字符）</p>
+</li>
+<li><p><code>[^0-9]</code>：不匹配数字，匹配其他任意字符一个</p>
+</li>
+<li><p><code>A|B</code>可以匹配A或B，所以<code>(J|j)ava(S|s)cript</code>可以匹配<code>'JavaScript'</code>、<code>'Javascript'</code>、<code>'javaScript'</code>或者<code>'javascript'</code>。</p>
+</li>
+<li><p><code>^</code>表示行的开头，<code>^\d</code>表示必须以数字开头。</p>
+</li>
+<li><p><code>$</code>表示行的结束，<code>\d$</code>表示必须以数字结束。</p>
+</li>
+<li><p><code>()</code>：相当于提取公因式。。</p>
+</li>
+</ul>
+<blockquote>
+<p><code>^</code>和<code>$</code>写在正则表达式前后可以精确控制字符串，保证开头和结尾的规则，在JavaScript中，<code>js</code>也可以匹配<code>'jsp'</code>，但是加上<code>^js$</code>就变成了整行匹配，就只能匹配<code>'js'</code>了；而在Java中，<code>js</code>不可以匹配<code>'jsp'</code>。</p>
+</blockquote>
+<h2 id="二、Java中使用String正则不同之处"><a href="#二、Java中使用String正则不同之处" class="headerlink" title="二、Java中使用String正则不同之处"></a>二、Java中使用String正则不同之处</h2><blockquote>
+<p>Java没有专门的正则对象，所以用String字符串来表示一个正则表达式：</p>
+<p>这样就会使得与正则表达式不一样了：</p>
+</blockquote>
+<p>格式：标准正则 - - - - - - - -&gt; Java中字符串表示的正则</p>
+<ul>
+<li><code>\d</code> -&gt; <code>\\d</code></li>
+<li><code>\\</code> -&gt; <code>\\\\</code></li>
+<li><code>\-</code> -&gt; <code>-</code></li>
+<li><code>\_</code> -&gt; <code>_</code></li>
+<li><code>\$</code> -&gt; <code>$</code></li>
+<li><code>\"</code> -&gt; <code>\"</code></li>
+<li><code>\'</code> -&gt; <code>'</code></li>
+<li><code>/</code> -&gt; <code>/</code></li>
+</ul>
+<blockquote>
+<p>总结：java中的特殊字符可以直接用，双引号特殊得用斜杠转义：</p>
+<p>标准正则两个斜杠代表一个斜杠，Java字符串则是四个斜杠代表一个斜杠，即前两个转义为1个，后两个转义为1个，前面再将后面的转义为斜杠。。。</p>
+<p>大概就是这些。。。</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>org<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Regex01</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// /\d\\\-\_\$\"\'</span>
+        String re <span class="token operator">=</span> <span class="token string">"/\\d\\\\-_&amp;\"'"</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"/3\\-_&amp;\"'"</span><span class="token punctuation">.</span><span class="token function">matches</span><span class="token punctuation">(</span>re<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// true</span>
+        String re1 <span class="token operator">=</span> <span class="token string">"[^1-9]*"</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"h)fkd-+d"</span><span class="token punctuation">.</span><span class="token function">matches</span><span class="token punctuation">(</span>re1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+        <span class="token comment" spellcheck="true">// 与JavaScript不同，特别的地方。。</span>
+        String re3 <span class="token operator">=</span> <span class="token string">"js"</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"jsp"</span><span class="token punctuation">.</span><span class="token function">matches</span><span class="token punctuation">(</span>re3<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// false JavaScript可以匹配。。。</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="三、分组匹配（引入regex包）"><a href="#三、分组匹配（引入regex包）" class="headerlink" title="三、分组匹配（引入regex包）"></a>三、分组匹配（引入regex包）</h2><blockquote>
+<p><code>()</code>的一个重要作用，用来分组：</p>
+<p>使用<code>String.matches()</code>方法只能判断，要想获得匹配子串需要使用<code>regex</code>包的对象。</p>
+<p>还有：Java的正则匹配和JavaScript有点不一样：（参考第一小节最后的内容！）</p>
+<p>引入<code>java.util.regex</code>包，用<code>Pattern</code>对象匹配，匹配后获得一个<code>Matcher</code>对象，如果匹配成功，就可以直接从<code>Matcher.group(index)</code>返回子串：</p>
+<p>下标为0返回原串，下标为1以后的则返回匹配的字串！</p>
+</blockquote>
+<h3 id="1、一个例子"><a href="#1、一个例子" class="headerlink" title="1、一个例子"></a>1、一个例子</h3><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>org<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>regex<span class="token punctuation">.</span>Matcher<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>regex<span class="token punctuation">.</span>Pattern<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Regex02</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Pattern p <span class="token operator">=</span> Pattern<span class="token punctuation">.</span><span class="token function">compile</span><span class="token punctuation">(</span><span class="token string">"(\\d{3,4})-(\\d{7,8})"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Matcher m <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token function">matcher</span><span class="token punctuation">(</span><span class="token string">"010-12345678"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>m<span class="token punctuation">.</span><span class="token function">matches</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>m<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 010-12345678</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>m<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 010</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>m<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 12345678</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"匹配失败!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2、Pattern"><a href="#2、Pattern" class="headerlink" title="2、Pattern"></a>2、Pattern</h3><blockquote>
+<p>使用<code>String</code>和<code>regex</code>包，实际上这两种代码本质上是一样的，因为<code>String.matches()</code>方法内部调用的就是<code>Pattern</code>和<code>Matcher</code>类的方法。</p>
+<p>反复使用<code>String.matches()</code>对同一个正则表达式进行多次匹配效率较低，因为每次都会创建出一样的<code>Pattern</code>对象。</p>
+<p>完全可以先创建出一个<code>Pattern</code>对象，然后反复使用，就可以实现编译一次，多次匹配：</p>
+<p>使用<code>Matcher</code>时，必须首先调用<code>matches()</code>判断是否匹配成功，匹配成功后，才能调用<code>group()</code>提取子串。</p>
+</blockquote>
+<p>代码见上面例子：</p>
+<h2 id="四、贪婪匹配"><a href="#四、贪婪匹配" class="headerlink" title="四、贪婪匹配"></a>四、贪婪匹配</h2><h3 id="1、贪婪匹配"><a href="#1、贪婪匹配" class="headerlink" title="1、贪婪匹配"></a>1、贪婪匹配</h3><blockquote>
+<p>看下方例子，这就是贪婪匹配，<code>\d+</code>将后面的所有数字都给匹配了，所以<code>0*</code>就无法匹配了！</p>
+<p>贪婪匹配：任何一个规则，它总是尽可能多地向后匹配，因此，<code>\d+</code>总是会把后面的<code>0</code>包含进来。</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>org<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>regex<span class="token punctuation">.</span>Matcher<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>regex<span class="token punctuation">.</span>Pattern<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Regex04</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Pattern pattern <span class="token operator">=</span> Pattern<span class="token punctuation">.</span><span class="token function">compile</span><span class="token punctuation">(</span><span class="token string">"(\\d+)(0*)"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Matcher matcher <span class="token operator">=</span> pattern<span class="token punctuation">.</span><span class="token function">matcher</span><span class="token punctuation">(</span><span class="token string">"1230000"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>matcher<span class="token punctuation">.</span><span class="token function">matches</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>matcher<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// "1230000"</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>matcher<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// ""</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2、解决方法：（非贪婪匹配）"><a href="#2、解决方法：（非贪婪匹配）" class="headerlink" title="2、解决方法：（非贪婪匹配）"></a>2、解决方法：（非贪婪匹配）</h3><blockquote>
+<p>使用<code>?</code>，使其尽可能先去满足后面的规则，完事了在满足自己规则；</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>org<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>regex<span class="token punctuation">.</span>Matcher<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>regex<span class="token punctuation">.</span>Pattern<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Regex04</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Pattern pattern <span class="token operator">=</span> Pattern<span class="token punctuation">.</span><span class="token function">compile</span><span class="token punctuation">(</span><span class="token string">"(\\d+?)(0*)"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Matcher matcher <span class="token operator">=</span> pattern<span class="token punctuation">.</span><span class="token function">matcher</span><span class="token punctuation">(</span><span class="token string">"1230000"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>matcher<span class="token punctuation">.</span><span class="token function">matches</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>matcher<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// "123"</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>matcher<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// "0000"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="3、"><a href="#3、" class="headerlink" title="3、??"></a>3、<code>??</code></h3><blockquote>
+<p>连续两个问号：(针对没有+*的时候使用)</p>
+<p>第一个：表示基础意思，匹配0个或1个。。</p>
+<p>第二个：非贪婪匹配</p>
+<p>只有一个问号：（+*符号后面）</p>
+<p>默认就是：非贪婪匹配</p>
+<p>只有一个问号：（没有+*符号）</p>
+<p>默认就是：表示基础意思，匹配0个或1个。。</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>org<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>regex<span class="token punctuation">.</span>Matcher<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>regex<span class="token punctuation">.</span>Pattern<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Regex04</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Pattern pattern <span class="token operator">=</span> Pattern<span class="token punctuation">.</span><span class="token function">compile</span><span class="token punctuation">(</span><span class="token string">"(\\d??)(0*)"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Matcher matcher <span class="token operator">=</span> pattern<span class="token punctuation">.</span><span class="token function">matcher</span><span class="token punctuation">(</span><span class="token string">"10000"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>matcher<span class="token punctuation">.</span><span class="token function">matches</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>matcher<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// "1"</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>matcher<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// "0000"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="五、分割"><a href="#五、分割" class="headerlink" title="五、分割"></a>五、分割</h2><blockquote>
+<p>使用<code>split()</code>方法，返回一个String数组。</p>
+</blockquote>
+<h3 id="1、使用Pattern的split方法"><a href="#1、使用Pattern的split方法" class="headerlink" title="1、使用Pattern的split方法"></a>1、使用Pattern的split方法</h3><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>org<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>regex<span class="token punctuation">.</span>Pattern<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Regex05</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Pattern pattern <span class="token operator">=</span> Pattern<span class="token punctuation">.</span><span class="token function">compile</span><span class="token punctuation">(</span><span class="token string">"[\s,\\\\*;]+"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        String<span class="token punctuation">[</span><span class="token punctuation">]</span> str <span class="token operator">=</span> pattern<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"2 ;;,43\\ 5* ,7"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>String s <span class="token operator">:</span> str<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>s <span class="token operator">+</span> <span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 2 43 5 7 </span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2、使用String-的split方法"><a href="#2、使用String-的split方法" class="headerlink" title="2、使用String 的split方法"></a>2、使用String 的split方法</h3><blockquote>
+<p>直接使用String的split方法更简单！</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>org<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Regex06</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        String<span class="token punctuation">[</span><span class="token punctuation">]</span> str <span class="token operator">=</span> <span class="token string">"2 ;;,43\\ 5* ,7"</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"[\s,\\\\*;]+"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>String s <span class="token operator">:</span> str<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>s <span class="token operator">+</span> <span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//2 43 5 7 </span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="六、搜索和替换"><a href="#六、搜索和替换" class="headerlink" title="六、搜索和替换"></a>六、搜索和替换</h2><h3 id="1、搜索"><a href="#1、搜索" class="headerlink" title="1、搜索"></a>1、搜索</h3><blockquote>
+<p>使用<code>Matcher.find()</code>判断有没有匹配子串了。</p>
+<p>使用<code>Matcher.start()</code>和<code>Matcher.end()</code>方法返回子串的起始下标位置，类似于迭代器，找完一个找下一个，直到找完。<code>Matcher.find()</code>方法也是，找过一个就不回去找了，直到找不到返回<code>false</code>！</p>
+<p>使用<code>String.substring()</code>来切割输出！</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>org<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>regex<span class="token punctuation">.</span>Matcher<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>regex<span class="token punctuation">.</span>Pattern<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Regex07</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        String s <span class="token operator">=</span> <span class="token string">"the quick brown fox jumps over the lazy dog."</span><span class="token punctuation">;</span>
+        Pattern p <span class="token operator">=</span> Pattern<span class="token punctuation">.</span><span class="token function">compile</span><span class="token punctuation">(</span><span class="token string">"\\wo\\w"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Matcher m <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token function">matcher</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>m<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            String sub <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>m<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> m<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>sub<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// row fox dog</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2、替换"><a href="#2、替换" class="headerlink" title="2、替换"></a>2、替换</h3><blockquote>
+<p>使用正则表达式替换字符串可以直接调用<code>String.replaceAll()</code>，它的第一个参数是正则表达式，第二个参数是待替换的字符串：</p>
+</blockquote>
+<p>如下例子：将多个空格替换为一个空格</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>org<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Regex08</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        String s <span class="token operator">=</span> <span class="token string">"The     quick\t\t brown   fox  jumps   over the  lazy dog."</span><span class="token punctuation">;</span>
+        String r <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">replaceAll</span><span class="token punctuation">(</span><span class="token string">"\\s+"</span><span class="token punctuation">,</span> <span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// "The quick brown fox jumps over the lazy dog."</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="3、反向引用"><a href="#3、反向引用" class="headerlink" title="3、反向引用"></a>3、反向引用</h3><blockquote>
+<p>第二个参数可以使用<code>$1</code>、<code>$2</code>来反向引用匹配到的子串。</p>
+<p><code>$1</code>指的是前面括号的一组内容，<code>$2</code>只第二个括号的内容，以此类推。。</p>
+</blockquote>
+<p>一个例子：将四字母单词加上<code>&lt;b&gt;&lt;/b&gt;</code>，即HTML的加粗标签！</p>
+<p>即<code>([a-z]{4})</code>替换了<code>$1</code>。</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>org<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Regex08</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        String ss <span class="token operator">=</span> <span class="token string">"the quick brown fox jumps over the lazy dog."</span><span class="token punctuation">;</span>
+        String rr <span class="token operator">=</span> ss<span class="token punctuation">.</span><span class="token function">replaceAll</span><span class="token punctuation">(</span><span class="token string">"\\s([a-z]{4})\\s"</span><span class="token punctuation">,</span> <span class="token string">" &lt;b>$1&lt;/b> "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>rr<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// the quick brown fox jumps &lt;b>over&lt;/b> the &lt;b>lazy&lt;/b> dog.</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<center style="color:red; font-size:25px">正则表达式已完结，敬请期待后续内容！</center><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script></div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Dreamy.NXD</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://niuxvdong.top/posts/53926.html">https://niuxvdong.top/posts/53926.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://niuxvdong.top" target="_blank">小牛博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Regex/">Regex</a></div><div class="post_share"><div class="social-share" data-image="https://img.niuxvdong.top/1585990922032.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button button--primary button--animated"> <i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="post-qr-code__img" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/WeChantQR.jpg" alt="微信"/><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="post-qr-code__img" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/AliPayQR.jpg" alt="支付宝"/><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/posts/25096.html"><img class="prev_cover" data-src="https://img.niuxvdong.top/ckjnlk6.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Java教程系列之加密与安全</div></div></a></div><div class="next-post pull_right"><a href="/posts/44270.html"><img class="next_cover" data-src="https://img.niuxvdong.top/ckjnlk1.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Java教程系列之单元测试</div></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script><script>var requestSetting = function (from,set) {
+  var from = from
+  var setting = set.split(',').filter(function(item){
+  return from.indexOf(item) > -1
+  });
+  setting = setting.length == 0 ? from :setting;
+  return setting
+}
+
+var guestInfo = requestSetting(['nick','mail','link'],'昵称,邮箱,主页')
+var requiredFields = requestSetting(['nick','mail','link'],'nick,mail')
+let friends = 'db61bf13ef744168a53227821321dd74'.split(',')
+let master = 'd9cd3b7d3ff3953067e21d186cc3b8a8'.split(',')
+
+window.valine = new Valine({
+  el:'#vcomment',
+  appId: '90p3ltuDBaHUROmxjB6gPP5E-gzGzoHsz',
+  appKey: 'ELqQhwIA4xnLFKglq8vVAjJ6',
+  notify: false,
+  verify: false,
+  placeholder: '昵称处填写qq号会自动更换成qq昵称并填入qq邮箱哦！',
+  avatar: 'monsterid',
+  meta: guestInfo,
+  pageSize: '10',
+  lang: 'zh-CN',
+  recordIP: true,
+  serverURLs: '',
+  emojiCDN: '',
+  emojiMaps: {"smile":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/e3/2018new_weixioa02_org.png","lovely":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/09/2018new_keai_org.png","happy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/1e/2018new_taikaixin_org.png","clap":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/6e/2018new_guzhang_thumb.png","whee":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/33/2018new_xixi_thumb.png","haha":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8f/2018new_haha_thumb.png","laugh and cry":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/4a/2018new_xiaoku_thumb.png","wink":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/43/2018new_jiyan_org.png","greddy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/fa/2018new_chanzui_org.png","awkward":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a3/2018new_heixian_thumb.png","sweat":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/28/2018new_han_org.png","pick nose":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/9a/2018new_wabi_thumb.png","hum":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/7c/2018new_heng_thumb.png","angry":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/f6/2018new_nu_thumb.png","grievance":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a5/2018new_weiqu_thumb.png","poor":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/96/2018new_kelian_org.png","disappoint":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/aa/2018new_shiwang_thumb.png","sad":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/ee/2018new_beishang_org.png","tear":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/6e/2018new_leimu_org.png","no way":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/83/2018new_kuxiao_org.png","shy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/c1/2018new_haixiu_org.png","dirt":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/10/2018new_wu_thumb.png","love you":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/f6/2018new_aini_org.png","kiss":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/2c/2018new_qinqin_thumb.png","amorousness":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/9d/2018new_huaxin_org.png","longing":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/c9/2018new_chongjing_org.png","desire":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/3e/2018new_tianping_thumb.png","bad laugh":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/4d/2018new_huaixiao_org.png","blackness":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/9e/2018new_yinxian_org.png","laugh without word":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/2d/2018new_xiaoerbuyu_org.png","titter":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/71/2018new_touxiao_org.png","cool":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/c4/2018new_ku_org.png","not easy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/aa/2018new_bingbujiandan_thumb.png","think":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/30/2018new_sikao_org.png","question":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/b8/2018new_ningwen_org.png","no idea":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/2a/2018new_wenhao_thumb.png","dizzy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/07/2018new_yun_thumb.png","bomb":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a2/2018new_shuai_thumb.png","bone":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a1/2018new_kulou_thumb.png","be quiet":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/b0/2018new_xu_org.png","shut up":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/62/2018new_bizui_org.png","stupid":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/dd/2018new_shayan_org.png","surprise":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/49/2018new_chijing_org.png","vomit":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/08/2018new_tu_org.png","cold":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/40/2018new_kouzhao_thumb.png","sick":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/3b/2018new_shengbing_thumb.png","bye":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/fd/2018new_baibai_thumb.png","look down on":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/da/2018new_bishi_org.png","white eye":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/ef/2018new_landelini_org.png","left hum":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/43/2018new_zuohengheng_thumb.png","right hum":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/c1/2018new_youhengheng_thumb.png","crazy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/17/2018new_zhuakuang_org.png","scold":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/87/2018new_zhouma_thumb.png","hit on face":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/cb/2018new_dalian_org.png","wow":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/ae/2018new_ding_org.png","fan":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/86/2018new_hufen02_org.png","money":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a2/2018new_qian_thumb.png","yawn":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/55/2018new_dahaqian_org.png","sleepy":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/3c/2018new_kun_thumb.png","sleep":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/e2/2018new_shuijiao_thumb.png","watermelon":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/01/2018new_chigua_thumb.png","doge":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a1/2018new_doge02_org.png","dog":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/22/2018new_erha_org.png","cat":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/7b/2018new_miaomiao_thumb.png","thumb":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/e6/2018new_zan_org.png","good":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8a/2018new_good_org.png","ok":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/45/2018new_ok_org.png","yeah":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/29/2018new_ye_thumb.png","shack hand":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/e9/2018new_woshou_thumb.png","bow":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/e7/2018new_zuoyi_org.png","come":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/42/2018new_guolai_thumb.png","punch":"//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/86/2018new_quantou_thumb.png","tv_doge":"//i0.hdslb.com/bfs/emote/6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png","tv_亲亲":"//i0.hdslb.com/bfs/emote/a8111ad55953ef5e3be3327ef94eb4a39d535d06.png","tv_偷笑":"//i0.hdslb.com/bfs/emote/bb690d4107620f1c15cff29509db529a73aee261.png","tv_再见":"//i0.hdslb.com/bfs/emote/180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png","tv_冷漠":"//i0.hdslb.com/bfs/emote/b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png","tv_发怒":"//i0.hdslb.com/bfs/emote/34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png","tv_发财":"//i0.hdslb.com/bfs/emote/34db290afd2963723c6eb3c4560667db7253a21a.png","tv_可爱":"//i0.hdslb.com/bfs/emote/9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png","tv_吐血":"//i0.hdslb.com/bfs/emote/09dd16a7aa59b77baa1155d47484409624470c77.png","tv_呆":"//i0.hdslb.com/bfs/emote/fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png","tv_呕吐":"//i0.hdslb.com/bfs/emote/9f996894a39e282ccf5e66856af49483f81870f3.png","tv_困":"//i0.hdslb.com/bfs/emote/241ee304e44c0af029adceb294399391e4737ef2.png","tv_坏笑":"//i0.hdslb.com/bfs/emote/1f0b87f731a671079842116e0991c91c2c88645a.png","tv_大佬":"//i0.hdslb.com/bfs/emote/093c1e2c490161aca397afc45573c877cdead616.png","tv_大哭":"//i0.hdslb.com/bfs/emote/23269aeb35f99daee28dda129676f6e9ea87934f.png","tv_委屈":"//i0.hdslb.com/bfs/emote/d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png","tv_害羞":"//i0.hdslb.com/bfs/emote/a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png","tv_尴尬":"//i0.hdslb.com/bfs/emote/7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png","tv_微笑":"//i0.hdslb.com/bfs/emote/70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png","tv_思考":"//i0.hdslb.com/bfs/emote/90cf159733e558137ed20aa04d09964436f618a1.png","tv_惊吓":"//i0.hdslb.com/bfs/emote/0d15c7e2ee58e935adc6a7193ee042388adc22af.png","custom_37":"https://cdn.jsdelivr.net/gh/blogimg/picbed@latest/2020/04/22/097cd88f446efae87cb27de38c5eed15.png","custom_36":"https://cdn.jsdelivr.net/gh/blogimg/picbed@latest/2020/04/22/ec2166501d29bc1eb7380c22944db462.png","custom_35":"https://cdn.jsdelivr.net/gh/blogimg/picbed@latest/2020/04/22/8ca39f96c182e51cd752dde464157c2e.png","custom_34":"https://cdn.jsdelivr.net/gh/blogimg/picbed@latest/2020/04/22/0a65c5dd18872b56605c08f7bae2e8c8.png","custom_33":"https://cdn.jsdelivr.net/gh/blogimg/picbed@latest/2020/04/22/ec3edbfe84684fdb1680307d261c3c7b.png","custom_32":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/31.webp","custom_31":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/30.gif","custom_30":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/29.webp","custom_29":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/28.webp","custom_28":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/27.webp","custom_27":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/26.webp","custom_26":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/25.jpg","custom_25":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/24.webp","custom_24":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/23.webp","custom_23":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/22.webp","custom_22":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/21.webp","custom_21":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/20.webp","custom_20":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/19.webp","custom_19":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/18.jpg","custom_18":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/17.webp","custom_17":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/16.webp","custom_16":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/15.webp","custom_15":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/14.webp","custom_14":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/13.webp","custom_13":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/12.webp","custom_12":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/11.webp","custom_11":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/10.webp","custom_10":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/9.webp","custom_9":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/8.webp","custom_8":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/7.webp","custom_7":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/6.gif","custom_6":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/5.gif","custom_5":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/4.jpg","custom_4":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/3.jpg","custom_3":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/2.webp","custom_2":"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/1.webp","custom_1":"https://cdn.jsdelivr.net/gh/blogimg/picbed@master/2020/04/19/c3164053d300cc5cca5e4dc3311842dc.png","custom_0":"https://cdn.jsdelivr.net/gh/blogimg/picbed@master/2020/04/19/6b5e768e524c8441ba66184bfdd86d4d.png"},
+  enableQQ: true,
+  requiredFields: requiredFields,
+  master: master,
+  friends: friends,
+  metaPlaceholder: {"nick":"昵称/QQ号(必填)","mail":"邮箱(必填)","link":"网址(https://)"}
+});</script></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By Dreamy.NXD</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">CDN BY <a target="_blank" rel="external nofollow" href="https://www.upyun.com/"><b>又拍云</b></a> | HOST BY <a target="_blank" rel="external nofollow" href="https://coding.net/"><b>Coding</b></a> && <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a></div><div class="icp"><a href="http://www.beian.miit.gov.cn/" target="_blank" rel="noopener"><img class="icp-icon" src="/img/icp.png"/><span>晋ICP备19005025号</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode far fa-moon" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script><script src="/js/search/local-search.js"></script><script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/js/my.js"></script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body></html>
