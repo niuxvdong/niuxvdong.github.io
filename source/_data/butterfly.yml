@@ -514,8 +514,9 @@ display_mode: light
 beautify:
   enable: true
   field: post # site/post
-  title-prefix-icon: '\f0c1'
-  title-prefix-icon-color: '#F47466'
+  # title-prefix-icon: '\f0c1'
+  title-prefix-icon: '\f0e7'
+  title-prefix-icon-color: '#49b1f5'
 
 # 全局字體
 font:
