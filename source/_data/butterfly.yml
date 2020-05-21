@@ -9,12 +9,14 @@ menu:
   时间轴: /archives/ || fa fa-archive
   标签: /tags/ || fa fa-tags
   分类: /categories/ || fa fa-folder-open
+  留言板: /contact/ || fa fa-coffee
   友链: /link/ || fa fa-link
   关于: /about/ || fa fa-heart
   清单||fa fa-list:
     - 导航 || https://nxd.js.org/ || fa fa-thumbs-up
     - 音乐 || https://music.niuxvdong.top/ || fa fa-music
     - 云盘 || https://pan.niub.cf/tykj/ || fa fa-cloud
+    - 谷歌 || https://proxy.niub.cf/ || fa fa-plane
     - 评论 || https://valine.niuxvdong.top/ || fa fa-comments
     - 电影 || /movies/ || fa fa-film
 
@@ -585,7 +587,7 @@ aside:
     description: 
   card_announcement:
     enable: true
-    content: 欢迎访问小牛博客，本博客是用来记录一些学习笔记以及一些所见所感，好玩好看的东西，如果阅读中有什么问题，可以随时留言或通过QQ以及邮箱联系哦！
+    content: 欢迎访问小牛博客，本博客是用来记录一些学习笔记以及一些所见所感，好玩好看的东西，如果阅读中有什么问题，可以随时到留言版留言或通过QQ以及邮箱及时联系哦！
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
