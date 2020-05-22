@@ -420,7 +420,7 @@ theme_color:
   hr_color: "#A4D8FA"
   code_foreground: "#F47466"
   code_background: "rgba(27, 31, 35, .05)"
-  toc_color: "#00c4b6"
+  toc_color: "#eb5055"
   blockquote_padding_color: "#49b1f5"
   blockquote_background_color: "#49b1f5"
 

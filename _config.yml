@@ -49,7 +49,7 @@ future: true
 
 # Agate/Atom One Dark Reasonable/Atom One Dark/Atom One Light/Dark/Dracula/Gml/Hopscotch/Qtcreator Dark/School Book/Xt 256/A 11 Y Dark
 highlight:
-  enable: false   
+  enable: true   
   line_number: true
   auto_detect: false
   tab_replace: ''
