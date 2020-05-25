@@ -11,14 +11,15 @@ menu:
   分类: /categories/ || fa fa-folder-open
   留言板: /contact/ || fa fa-coffee
   友链: /link/ || fa fa-link
-  关于: /about/ || fa fa-heart
-  清单||fa fa-list:
+  关于我: /about/ || fa fa-heart
+  百宝箱||fa fa-list:
     - 导航 || https://nxd.js.org/ || fa fa-thumbs-up
     - 音乐 || https://music.niuxvdong.top/ || fa fa-music
     - 云盘 || https://pan.niub.cf/tykj/ || fa fa-cloud
+    - 图床 || http://pic.niuxvdong.top/ || fa fa-file-image
     - 谷歌 || https://proxy.niub.cf/ || fa fa-plane
     - 评论 || https://valine.niuxvdong.top/ || fa fa-comments
-    - 电影 || /movies/ || fa fa-film
+    # - 电影 || /movies/ || fa fa-film
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
