@@ -189,7 +189,7 @@ wordcount:
 
 toc:
   enable: true
-  number: true
+  number: false
 
 # auto open the sidebar in 'post'
 auto_open_sidebar:
@@ -519,7 +519,7 @@ beautify:
   field: post # site/post
   # title-prefix-icon: '\f0c1'
   title-prefix-icon: '\f0e7'
-  title-prefix-icon-color: '#49b1f5'
+  title-prefix-icon-color: '#eb5055'
 
 # 全局字體
 font:
