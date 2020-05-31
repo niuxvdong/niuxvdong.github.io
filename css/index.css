@@ -3413,7 +3413,7 @@ blockquote footer cite:before {
 #article-container.post-content h6:before {
   position: absolute;
   top: calc(50% - 0.35rem);
-  color: #49b1f5;
+  color: #eb5055;
   content: '\f0e7';
   font-style: normal;
   font-variant: normal;
