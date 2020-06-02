@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://niuxvdong.top/"/>
-  <updated>2020-05-26T10:39:46.000Z</updated>
+  <updated>2020-06-02T09:37:39.000Z</updated>
   <id>https://niuxvdong.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据库教程之查询数据</title>
+    <link href="https://niuxvdong.top/posts/16928.html"/>
+    <id>https://niuxvdong.top/posts/16928.html</id>
+    <published>2020-06-02T09:37:39.000Z</published>
+    <updated>2020-06-02T09:37:39.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="数据库" scheme="https://niuxvdong.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="SELECT" scheme="https://niuxvdong.top/tags/SELECT/"/>
+    
+      <category term="查询" scheme="https://niuxvdong.top/tags/%E6%9F%A5%E8%AF%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>数据库教程之基础知识</title>
@@ -556,39 +585,6 @@
       <category term="排序" scheme="https://niuxvdong.top/tags/%E6%8E%92%E5%BA%8F/"/>
     
       <category term="贪心" scheme="https://niuxvdong.top/tags/%E8%B4%AA%E5%BF%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AcWing-109.天才ACM</title>
-    <link href="https://niuxvdong.top/posts/45606.html"/>
-    <id>https://niuxvdong.top/posts/45606.html</id>
-    <published>2020-03-07T08:44:34.000Z</published>
-    <updated>2020-03-07T08:44:34.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="AcWing" scheme="https://niuxvdong.top/categories/AcWing/"/>
-    
-    
-      <category term="AcWing" scheme="https://niuxvdong.top/tags/AcWing/"/>
-    
-      <category term="贪心" scheme="https://niuxvdong.top/tags/%E8%B4%AA%E5%BF%83/"/>
-    
-      <category term="归并排序" scheme="https://niuxvdong.top/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"/>
-    
-      <category term="倍增" scheme="https://niuxvdong.top/tags/%E5%80%8D%E5%A2%9E/"/>
     
   </entry>
   
