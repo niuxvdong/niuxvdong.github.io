@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://niuxvdong.top/"/>
-  <updated>2020-06-14T01:27:14.000Z</updated>
+  <updated>2020-06-14T02:44:43.000Z</updated>
   <id>https://niuxvdong.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode刷题-6.Z字形变换</title>
+    <link href="https://niuxvdong.top/posts/60082.html"/>
+    <id>https://niuxvdong.top/posts/60082.html</id>
+    <published>2020-06-14T02:44:43.000Z</published>
+    <updated>2020-06-14T02:44:43.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="模拟" scheme="https://niuxvdong.top/tags/%E6%A8%A1%E6%8B%9F/"/>
+    
+      <category term="找规律" scheme="https://niuxvdong.top/tags/%E6%89%BE%E8%A7%84%E5%BE%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode刷题-5.最长回文子串</title>
@@ -558,37 +587,6 @@
     
     
       <category term="异常处理" scheme="https://niuxvdong.top/tags/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java教程系列之Java核心类</title>
-    <link href="https://niuxvdong.top/posts/22799.html"/>
-    <id>https://niuxvdong.top/posts/22799.html</id>
-    <published>2020-03-27T09:56:43.000Z</published>
-    <updated>2020-03-27T09:56:43.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Java教程" scheme="https://niuxvdong.top/categories/Java%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="String" scheme="https://niuxvdong.top/tags/String/"/>
-    
-      <category term="JavaBean" scheme="https://niuxvdong.top/tags/JavaBean/"/>
-    
-      <category term="包装类型" scheme="https://niuxvdong.top/tags/%E5%8C%85%E8%A3%85%E7%B1%BB%E5%9E%8B/"/>
     
   </entry>
   
