@@ -1,0 +1,120 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>/*
+Dracula Theme v1.2.0
+https://github.com/zenorocha/dracula-theme
+Copyright 2015, All rights reserved
+Code licensed under the MIT license
+http://zenorocha.mit-license.org
+@author Éverton Ribeiro <nuxlli@gmail.com>
+@author Zeno Rocha <hi@zenorocha.com>
+*/
+
+/* 新添加的内容 */
+/* ------------------------------------- */
+/* 代码框背景色和字体顔色,与hljs一样就行 */
+/* 必须配置(把下面.hljs的color和background复製到这里来) */
+#article-container pre, 
+#article-container figure.highlight {
+  background: #221a0f;  
+  color: #d3af86
+}
+
+/* 代码框工具栏 (如果你关掉了copy、lang和shrink,可不用配置这个 */
+#article-container figure.highlight .highlight-tools {
+  color: #fff;
+  background: #321a0f
+}
+
+/* 代码框行数(如果已经关掉line_number,可以不用配置这个) */
+#article-container figure.highlight .gutter pre {
+  background-color: #221a0f;
+  color: #fff
+}
+
+/* 代码块figcaption配置(hexo自带标签https://hexo.io/zh-tw/docs/tag-plugins.html#Code-Block) */
+/* 不需要可以不用配置这个 */
+#article-container figure.highlight figcaption a {
+  color: #d3af86 !important
+}
+
+/* ------------------------------------- */
+/* 更改的内容 把.hljs改为 #article-container figure.highlight .hljs *、
+/* ------------------------------------- */
+#article-container figure.highlight .hljs {
+/* .hljs { */
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #282a36;
+  }
+  
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-literal,
+  .hljs-section,
+  .hljs-link {
+    color: #8be9fd;
+  }
+  
+  .hljs-function .hljs-keyword {
+    color: #ff79c6;
+  }
+  
+  .hljs,
+  .hljs-subst {
+    color: #f8f8f2;
+  }
+  
+  .hljs-string,
+  .hljs-title,
+  .hljs-name,
+  .hljs-type,
+  .hljs-attribute,
+  .hljs-symbol,
+  .hljs-bullet,
+  .hljs-addition,
+  .hljs-variable,
+  .hljs-template-tag,
+  .hljs-template-variable {
+    color: #f1fa8c;
+  }
+  
+  .hljs-comment,
+  .hljs-quote,
+  .hljs-deletion,
+  .hljs-meta {
+    color: #6272a4;
+  }
+  
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-literal,
+  .hljs-title,
+  .hljs-section,
+  .hljs-doctag,
+  .hljs-type,
+  .hljs-name,
+  .hljs-strong {
+    font-weight: bold;
+  }
+  
+  .hljs-emphasis {
+    font-style: italic;
+  }</hi@zenorocha.com></nuxlli@gmail.com><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
