@@ -35,11 +35,10 @@ menu:
 
 # Highlight theme
 # ---------------
-highlight_theme: light # default / darker / pale night / light / ocean
+highlight_theme: light # default / darker / pale night / light / ocean / mac / false
 highlight_copy: true #代碼複製按鈕
 highlight_lang: true #代碼語言顯示
 highlight_shrink: false # true 全部代碼框不展開，需點擊 '>' 打開 / false 代碼框展開，有'>'點擊按鈕 | none 代碼框展開，不顯示 '>' 按鈕
-
 code_word_wrap: false
 
 # copy setting
@@ -159,7 +158,7 @@ cover:
     - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 # if the photo link cannot connect,it will show that
-lodding_bg:
+error_img:
   flink: /img/friend_404.gif #404後圖片
   post_page: /img/404.jpg #404後圖片
 #  post: /img/loading.gif ##加載動畫
@@ -174,7 +173,7 @@ post_meta:
   page:
     date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     categories: true # true or false 主頁是否顯示分類
-    tags: false # true or false 主頁是否顯示標籤
+    tags: true # true or false 主頁是否顯示標籤
   post:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
     categories: true # true or false 文章頁是否顯示分類
@@ -190,10 +189,11 @@ wordcount:
 toc:
   enable: true
   number: false
+  auto_open: true # auto open the sidebar
 
 # auto open the sidebar in 'post'
-auto_open_sidebar:
-  enable: true
+# auto_open_sidebar:
+#   enable: true
 
 post_copyright:
   enable: true
@@ -202,9 +202,17 @@ post_copyright:
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 # 自動節選
-auto_excerpt:
-  enable: true
-  length: 150
+# auto_excerpt:
+#   enable: true
+#   length: 150
+
+# Display the article introduction on homepage
+# 1: description
+# 2: both (if the description exists, it will show description. or show the auto_excerpt)
+# 3: auto_excerpt (default)
+index_post_content:
+  method: 3
+  length: 500 # if you set method to 2 or 3, the length need to config
 
 ####    Share System    ####
 # -----------------------------------------
@@ -243,12 +251,14 @@ disqusjs:
   shortname:
   siteName:
   apikey:
-  api: https://disqus.skk.moe/disqus/ #一般情況下無需修改 API 地址
+  # api: https://disqus.skk.moe/disqus/ #一般情況下無需修改 API 地址
+  api:
+  nocomment: # display when a blog post or an article has no comment attached
   admin:
   adminLabel:
   count: false # dispaly comment count in top_img
 
-laibili:
+livere:
   enable: false
   uid:
 
@@ -277,8 +287,8 @@ valine:
     - d9cd3b7d3ff3953067e21d186cc3b8a8
   friends:
     - db61bf13ef744168a53227821321dd74
-  notify: false # valine mail notify (true/false) Deprecated in v1.4.0+
-  verify: false # valine verify code (true/false) Deprecated in v1.4.0+
+  # notify: false # valine mail notify (true/false) Deprecated in v1.4.0+
+  # verify: false # valine verify code (true/false) Deprecated in v1.4.0+
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
@@ -321,14 +331,47 @@ facebook_comments:
   lang: en_US # Language en_US/zh_CN/zh_TW and so on
   count: false
 
+# Chat Services
+# --------------------------------------
+
+# Chat Button [recommend]
+# It will create a button in the bottom right corner of website, and hide the origin button
+chat_btn: false
+
+# The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
+chat_hide_show: false
+
+# chatra
+# https://chatra.io/
+chatra:
+  enable: false
+  id:
+
+# tidio
+# https://www.tidio.com/
+tidio:
+  enable: false
+  public_key:
+
+# daovoice
+# http://daovoice.io/
+daovoice:
+  enable: false
+  app_id:
+
+# gitter
+# https://gitter.im/
+gitter:
+  enable: false
+  room:
+
 #####     Footer Settings    ####
 # ------------------------------------
 since: 2020
 
 footer_custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.upyun.com/"><b>又拍云</b></a> | HOST BY <a target="_blank" rel="external nofollow" href="https://coding.net/"><b>Coding</b></a> && <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a>
 
-footer_copyright:
-  enable: true
+footer_copyright: true
 
 ICP:
   enable: true
@@ -383,12 +426,12 @@ qihu_site_verification:
 reward:
   enable: true
   QR_code:
-    - itemlist:
-        img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/WeChantQR.jpg
-        text: 微信
-    - itemlist:
-        img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/AliPayQR.jpg
-        text: 支付宝
+    - img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/WeChantQR.jpg
+      link:
+      text: 微信
+    - img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/AliPayQR.jpg
+      link:
+      text: 支付宝
 
 # 推薦文章
 related_post:
@@ -447,6 +490,9 @@ background: '#efefef'
 # footer是否顯示圖片背景(與top_img一致)
 footer_bg: false
 
+# 右下角按鈕距離底部的距離(默認單位為px)
+rightside-bottom: 
+
 # 背景特效
 # 避免卡頓，建議只開啟一個
 # canvas_ribbon 禁止彩帶背景
@@ -485,10 +531,10 @@ activate_power_mode:
 # 點擊煙火特效
 fireworks:
   enable: false
+  zIndex: 9999 # -1 or 9999
 
 # 點擊出現愛心
-click_heart:
-  enable: false
+click_heart: false
 
 # 點擊出現文字，文字可自行修改
 ClickShowText:
@@ -523,9 +569,9 @@ beautify:
 
 # 全局字體
 font:
-  enable: true
-  font-family: Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, MicrMicrosoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
-  code-font: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace, Helvetica Neue For Number
+  # enable: true
+  font-family: #Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, MicrMicrosoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
+  code-font: #consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace, Helvetica Neue For Number
 
 # 網站名字字體
 # 左上角網站名字 主頁居中網站名字
@@ -534,8 +580,9 @@ blog_title_font:
   font-family: Titillium Web, PingFang SC, Hiragino Sans GB, "Microsoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
 
 # 水平分隔綫
-hr:
-  enable: false
+# hr:
+hr_icon:
+  enable: true
   icon: '\f21c' #fontawesome上圖標的Unicode
   icon-top: -20px
 
@@ -570,8 +617,8 @@ subtitle:
 
 # fontawesome圖標
 # 默認使用的是 fontawesome v4版本的圖標
-fontawesome_v5:
-  enable: true
+# fontawesome_v5:
+#   enable: true
 
 # 加載動畫 Loading Animation
 preloader: false
@@ -595,6 +642,7 @@ aside:
   card_categories:
     enable: true
     limit: 8 # if set 0 will show all
+    expand: none # none/true/false
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
@@ -619,7 +667,7 @@ busuanzi:
 # 也可以寫成 年/月/日 時間
 runtimeshow:
   enable: true
-  start_date: 2020/01/30 00:00:00
+  publish_date: 2020/01/30 00:00:00
 
 ####   右下角按鈕  ####
 #----------------------------------------------
@@ -633,15 +681,14 @@ translate:
   #延遲時間,若不在前, 要設定延遲翻譯時間, 如100表示100ms,默認為0
   translateDelay: 0
   #博客網址
-  cookieDomain: 'https://niuxvdong.top/'
+  # cookieDomain: 'https://niuxvdong.top/'
   #當文字是簡體時，按鈕顯示的文字
   msgToTraditionalChinese: '繁'
   #當文字是繁體時，按鈕顯示的文字
   msgToSimplifiedChinese: '簡'
 
 #閲讀模式
-readmode:
-  enable: true
+readmode: true
 
 # dark mode
 darkmode:
@@ -662,12 +709,10 @@ darkmode:
 # 只選一個 或者 兩個都不選
 #--------------------------------------------
 # medium_zoom https://github.com/francoischalifour/medium-zoom
-medium_zoom:
-  enable: true
+medium_zoom: true
 
 # fancybox http://fancyapps.com/fancybox/3/
-fancybox:
-  enable: false
+fancybox: false
 
 # Snackbar 彈窗
 # https://github.com/polonel/SnackBar
@@ -680,19 +725,17 @@ snackbar:
   bg_dark: '#2d3035' #dark mode時彈窗背景
 
 #百度推送
-baidu_push:
-  enable: true
+baidu_push: true
 
 # https://instant.page/
 # prefetch預加載
-instantpage:
-  enable: true
+instantpage: true
 
 # https://github.com/vinta/pangu.js
 # 中英文之間添加空格
 pangu:
   enable: false
-  field: page # page/post
+  field: site # site/post
 
 # Note (Bootstrap Callout)
 # https://muse.theme-next.org/docs/tag-plugins/note
@@ -711,17 +754,19 @@ note:
 
 # 圖片懶加載
 # https://github.com/ApoorvSaxena/lozad.js
-lazyload: true
+lazyload:
+  enable: true
+  post: /img/loading.gif #加載動畫
 
 # 避免重複網址分散seo
-canonical: true
+# canonical: true
 
 # 禁止百度轉碼
 disable_baidu_transformation: true
 
 # twitter分享自動帶上樣式
 # https://i.loli.net/2019/09/08/qm3RfvUCKbct1Wz.png
-twitter_meta: true
+# twitter_meta: true
 
 # facebook QQ 等 分享自動帶上樣式
 # https://i.loli.net/2019/09/08/2wbFJEKloisRvhj.png
@@ -737,9 +782,11 @@ inject:
   # - <link rel="stylesheet" href="/css/my.css">
   - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/css/my.css">
   - <link rel="stylesheet" href="//at.alicdn.com/t/font_1828588_zrw9f0qqie.css">
+  # - <link rel="stylesheet" href="/self/atom-one-dark-reasonable.css">
+
   bottom:
-    # - <script src="js/my.js"></script>
-    - <script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/js/my.js"></script>
+    - <script src="js/my.js"></script>
+    # - <script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/js/my.js"></script>
 
 # CDN
 # 非必要不要修改
@@ -755,8 +802,10 @@ CDN:
   gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
   valine: https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js #https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
-  disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqus.js
-  disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqusjs.css
+  # disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqus.js
+  # disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqusjs.css
+  disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
+  disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
   utterances: https://utteranc.es/client.js
 
   # share
@@ -785,10 +834,11 @@ CDN:
   canvas_ribbon_piao: /js/third-party/piao.js
   canvas_nest: /js/third-party/canvas-nest.js
 
-  lazyload: https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js
+  # lazyload: https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js
+  lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
   instantpage: https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js
   typed: https://cdn.jsdelivr.net/npm/typed.js
-  js_cookies: https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js
+  # js_cookies: https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js
   pangu: https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js
 
   # photo
@@ -808,8 +858,19 @@ CDN:
   ClickShowText: /js/third-party/ClickShowText.js
 
   # fontawesome
-  fontawesome_v4: https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
-  fontawesome_v5: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+  # fontawesome_v4: https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
+  # fontawesome_v5: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+  # fontawesome
+  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+
+  # justifiedGallery
+  justifiedGallery_js: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js
+  justifiedGallery_css: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css
+
+  # aplayer
+  aplayer_css: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
+  aplayer_js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
+  meting_js: https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js
 
   # 簡繁轉換
   translate: /js/tw_cn.js

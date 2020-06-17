@@ -9,7 +9,7 @@ description: '一个大学生的博客，记录学习，记录成长，分享生
 keywords: Blog,博客,Java,js,JavaScript,C,C++,SQL,Python,Git
 author: Dreamy.NXD
 language: zh-CN
-timezone: 
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -90,9 +90,9 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
-ignore:
+# include: #
+# exclude: #
+# ignore:
 
 # Live2D
 # https://github.com/EYHN/hexo-helper-live2d
@@ -121,7 +121,7 @@ live2d:
     # show: true # 手机中是否展示
     
 aplayer:
-	meting: true
+  meting: true
 
 dplayer:
     enable: true
