@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://niuxvdong.top/"/>
-  <updated>2020-06-19T14:43:38.000Z</updated>
+  <updated>2020-06-21T15:13:02.000Z</updated>
   <id>https://niuxvdong.top/</id>
   
   <author>
@@ -15,6 +15,230 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode刷题-28.实现strStr()</title>
+    <link href="https://niuxvdong.top/posts/45773.html"/>
+    <id>https://niuxvdong.top/posts/45773.html</id>
+    <published>2020-06-21T15:13:02.000Z</published>
+    <updated>2020-06-21T15:13:02.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="KMP" scheme="https://niuxvdong.top/tags/KMP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode刷题-27.移除元素</title>
+    <link href="https://niuxvdong.top/posts/37226.html"/>
+    <id>https://niuxvdong.top/posts/37226.html</id>
+    <published>2020-06-21T15:11:51.000Z</published>
+    <updated>2020-06-21T15:11:51.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="双指针" scheme="https://niuxvdong.top/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode刷题-26.删除排序数组中的重复项</title>
+    <link href="https://niuxvdong.top/posts/20075.html"/>
+    <id>https://niuxvdong.top/posts/20075.html</id>
+    <published>2020-06-21T15:11:20.000Z</published>
+    <updated>2020-06-21T15:11:20.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="双指针" scheme="https://niuxvdong.top/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
+    
+      <category term="数组" scheme="https://niuxvdong.top/tags/%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode刷题-25.K个一组翻转链表</title>
+    <link href="https://niuxvdong.top/posts/42577.html"/>
+    <id>https://niuxvdong.top/posts/42577.html</id>
+    <published>2020-06-21T13:24:47.000Z</published>
+    <updated>2020-06-21T13:24:47.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="链表" scheme="https://niuxvdong.top/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode刷题-24.两两交换链表中的节点</title>
+    <link href="https://niuxvdong.top/posts/28774.html"/>
+    <id>https://niuxvdong.top/posts/28774.html</id>
+    <published>2020-06-21T13:14:13.000Z</published>
+    <updated>2020-06-21T13:14:13.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="链表" scheme="https://niuxvdong.top/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode刷题-23.合并K个排序链表</title>
+    <link href="https://niuxvdong.top/posts/57955.html"/>
+    <id>https://niuxvdong.top/posts/57955.html</id>
+    <published>2020-06-21T11:56:39.000Z</published>
+    <updated>2020-06-21T11:56:39.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="堆" scheme="https://niuxvdong.top/tags/%E5%A0%86/"/>
+    
+      <category term="链表" scheme="https://niuxvdong.top/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+      <category term="k路归并" scheme="https://niuxvdong.top/tags/k%E8%B7%AF%E5%BD%92%E5%B9%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode刷题-22.括号生成</title>
+    <link href="https://niuxvdong.top/posts/51962.html"/>
+    <id>https://niuxvdong.top/posts/51962.html</id>
+    <published>2020-06-21T11:56:10.000Z</published>
+    <updated>2020-06-21T11:56:10.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="递归" scheme="https://niuxvdong.top/tags/%E9%80%92%E5%BD%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode刷题-21.合并两个有序链表</title>
+    <link href="https://niuxvdong.top/posts/12870.html"/>
+    <id>https://niuxvdong.top/posts/12870.html</id>
+    <published>2020-06-21T11:55:40.000Z</published>
+    <updated>2020-06-21T11:55:40.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="链表" scheme="https://niuxvdong.top/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+      <category term="二路归并" scheme="https://niuxvdong.top/tags/%E4%BA%8C%E8%B7%AF%E5%BD%92%E5%B9%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode刷题-20.有效的括号</title>
@@ -341,240 +565,6 @@
     
     
       <category term="回文数" scheme="https://niuxvdong.top/tags/%E5%9B%9E%E6%96%87%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode刷题-8.字符串转换整数(atoi)</title>
-    <link href="https://niuxvdong.top/posts/64625.html"/>
-    <id>https://niuxvdong.top/posts/64625.html</id>
-    <published>2020-06-14T05:39:07.000Z</published>
-    <updated>2020-06-14T05:39:07.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="模拟" scheme="https://niuxvdong.top/tags/%E6%A8%A1%E6%8B%9F/"/>
-    
-      <category term="字符串" scheme="https://niuxvdong.top/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode刷题-7.整数反转</title>
-    <link href="https://niuxvdong.top/posts/58547.html"/>
-    <id>https://niuxvdong.top/posts/58547.html</id>
-    <published>2020-06-14T04:24:06.000Z</published>
-    <updated>2020-06-14T04:24:06.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="反转" scheme="https://niuxvdong.top/tags/%E5%8F%8D%E8%BD%AC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode刷题-6.Z字形变换</title>
-    <link href="https://niuxvdong.top/posts/60082.html"/>
-    <id>https://niuxvdong.top/posts/60082.html</id>
-    <published>2020-06-14T02:44:43.000Z</published>
-    <updated>2020-06-14T02:44:43.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="模拟" scheme="https://niuxvdong.top/tags/%E6%A8%A1%E6%8B%9F/"/>
-    
-      <category term="找规律" scheme="https://niuxvdong.top/tags/%E6%89%BE%E8%A7%84%E5%BE%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode刷题-5.最长回文子串</title>
-    <link href="https://niuxvdong.top/posts/30088.html"/>
-    <id>https://niuxvdong.top/posts/30088.html</id>
-    <published>2020-06-14T01:27:14.000Z</published>
-    <updated>2020-06-14T01:27:14.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="双指针" scheme="https://niuxvdong.top/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
-    
-      <category term="枚举" scheme="https://niuxvdong.top/tags/%E6%9E%9A%E4%B8%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode刷题-4.寻找两个正序数组的中位数</title>
-    <link href="https://niuxvdong.top/posts/44209.html"/>
-    <id>https://niuxvdong.top/posts/44209.html</id>
-    <published>2020-06-13T13:45:10.000Z</published>
-    <updated>2020-06-13T13:45:10.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="二分" scheme="https://niuxvdong.top/tags/%E4%BA%8C%E5%88%86/"/>
-    
-      <category term="递归" scheme="https://niuxvdong.top/tags/%E9%80%92%E5%BD%92/"/>
-    
-      <category term="分治" scheme="https://niuxvdong.top/tags/%E5%88%86%E6%B2%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode刷题-3.无重复字符的最长子串</title>
-    <link href="https://niuxvdong.top/posts/25173.html"/>
-    <id>https://niuxvdong.top/posts/25173.html</id>
-    <published>2020-06-13T03:05:26.000Z</published>
-    <updated>2020-06-13T03:05:26.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="双指针" scheme="https://niuxvdong.top/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
-    
-      <category term="哈希表" scheme="https://niuxvdong.top/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
-    
-      <category term="滑动窗口" scheme="https://niuxvdong.top/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode刷题-2.两数相加</title>
-    <link href="https://niuxvdong.top/posts/1127.html"/>
-    <id>https://niuxvdong.top/posts/1127.html</id>
-    <published>2020-06-12T14:09:58.000Z</published>
-    <updated>2020-06-12T14:09:58.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="模拟" scheme="https://niuxvdong.top/tags/%E6%A8%A1%E6%8B%9F/"/>
-    
-      <category term="链表" scheme="https://niuxvdong.top/tags/%E9%93%BE%E8%A1%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode刷题-1.两数之和</title>
-    <link href="https://niuxvdong.top/posts/43672.html"/>
-    <id>https://niuxvdong.top/posts/43672.html</id>
-    <published>2020-06-12T12:53:28.000Z</published>
-    <updated>2020-06-12T12:53:28.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="数组" scheme="https://niuxvdong.top/tags/%E6%95%B0%E7%BB%84/"/>
-    
-      <category term="哈希表" scheme="https://niuxvdong.top/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
     
   </entry>
   
