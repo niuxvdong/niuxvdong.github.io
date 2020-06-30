@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>数据库教程之查询数据 | 小牛博客</title><meta name="description" content="首先来首歌曲来放松一下吧！         一、准备数据 廖雪峰SQL教程例子：例子代码点击这里！ 将上方链接或者下方代码保存到文本文件，改名为init-test-data.sql。然后再本地cmd运行$ mysql -u root -p &lt; init-test-data.sql即可创建一个名为test的数据库，有两张表classes和students! 注意要在cmd，不要使用powers"><meta name="keywords" content="SELECT,查询"><meta name="author" content="Dreamy.NXD"><meta name="copyright" content="Dreamy.NXD"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/favicon.ico"><link rel="canonical" href="https://niuxvdong.top/posts/16928.html"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="preconnect" href="//zz.bdstatic.com"/><meta property="og:type" content="article"><meta property="og:title" content="数据库教程之查询数据"><meta property="og:url" content="https://niuxvdong.top/posts/16928.html"><meta property="og:site_name" content="小牛博客"><meta property="og:description" content="首先来首歌曲来放松一下吧！         一、准备数据 廖雪峰SQL教程例子：例子代码点击这里！ 将上方链接或者下方代码保存到文本文件，改名为init-test-data.sql。然后再本地cmd运行$ mysql -u root -p &lt; init-test-data.sql即可创建一个名为test的数据库，有两张表classes和students! 注意要在cmd，不要使用powers"><meta property="og:image" content="https://img.niuxvdong.top/thumb-1920-552086.jpg"><meta property="article:published_time" content="2020-06-02T09:37:39.000Z"><meta property="article:modified_time" content="2020-06-02T09:37:39.000Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>数据库教程之查询数据 | 小牛博客</title><meta name="description" content="title: 数据库教程之查询数据author: Mr.Niutoc: trueabbrlink: 16928top_img: ‘https:&#x2F;&#x2F;img.niuxvdong.top&#x2F;thumb-1920-552086.jpg&#39;cover: ‘https:&#x2F;&#x2F;img.niuxvdong.top&#x2F;thumb-1920-552086.jpg&#39;categories:  数据库tags: SELECT 查询"><meta name="keywords" content="Blog,博客,Java,js,JavaScript,C,C++,SQL,Python,Git"><meta name="author" content="Dreamy.NXD"><meta name="copyright" content="Dreamy.NXD"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/favicon.ico"><link rel="canonical" href="https://niuxvdong.top/posts/16928.html"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="preconnect" href="//zz.bdstatic.com"/><meta property="og:type" content="article"><meta property="og:title" content="数据库教程之查询数据"><meta property="og:url" content="https://niuxvdong.top/posts/16928.html"><meta property="og:site_name" content="小牛博客"><meta property="og:description" content="title: 数据库教程之查询数据author: Mr.Niutoc: trueabbrlink: 16928top_img: ‘https:&#x2F;&#x2F;img.niuxvdong.top&#x2F;thumb-1920-552086.jpg&#39;cover: ‘https:&#x2F;&#x2F;img.niuxvdong.top&#x2F;thumb-1920-552086.jpg&#39;categories:  数据库tags: SELECT 查询"><meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><meta property="article:published_time" content="2020-06-02T09:37:39.836Z"><meta property="article:modified_time" content="2020-06-02T09:37:39.836Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
   document.documentElement.setAttribute('data-theme', 'dark')
   if (document.querySelector('meta[name="theme-color"]') !== null) {
     document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
@@ -107,8 +107,14 @@ if (autoChangeMode === '1') {
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
 <script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
 <script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
-</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">98</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">95</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">12</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list"></i><span> 百宝箱</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="https://nxd.js.org/" target="_blank" rel="noopener"><i class="fa-fw fa fa-thumbs-up"></i><span> 导航</span></a></li><li><a class="site-page" href="https://music.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="https://pan.niub.cf/tykj/" target="_blank" rel="noopener"><i class="fa-fw fa fa-cloud"></i><span> 云盘</span></a></li><li><a class="site-page" href="http://pic.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-file-image"></i><span> 图床</span></a></li><li><a class="site-page" href="https://proxy.niub.cf/" target="_blank" rel="noopener"><i class="fa-fw fa fa-plane"></i><span> 谷歌</span></a></li><li><a class="site-page" href="https://valine.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-comments"></i><span> 评论</span></a></li></ul></div></div></div></div><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#首先来首歌曲来放松一下吧！"><span class="toc-text">首先来首歌曲来放松一下吧！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一、准备数据"><span class="toc-text">一、准备数据</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、基本查询"><span class="toc-text">二、基本查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、SELECT语句"><span class="toc-text">1、SELECT语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、用于计算的SELECT"><span class="toc-text">2、用于计算的SELECT</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、条件查询"><span class="toc-text">三、条件查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、WHERE-条件"><span class="toc-text">1、WHERE 条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、逻辑运算"><span class="toc-text">2、逻辑运算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-AND"><span class="toc-text">2.1 AND</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-OR"><span class="toc-text">2.2 OR</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-NOT"><span class="toc-text">2.3 NOT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-多条件使用括号"><span class="toc-text">2.4 多条件使用括号</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、条件表达式符号"><span class="toc-text">3、条件表达式符号</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四、投影查询"><span class="toc-text">四、投影查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、普通投影"><span class="toc-text">1、普通投影</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、别名投影"><span class="toc-text">2、别名投影</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、复杂投影"><span class="toc-text">3、复杂投影</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#五、排序"><span class="toc-text">五、排序</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、升序"><span class="toc-text">1、升序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、降序"><span class="toc-text">2、降序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、复杂排序"><span class="toc-text">3、复杂排序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-多列排序"><span class="toc-text">3.1 多列排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-条件排序"><span class="toc-text">3.2 条件排序</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#六、分页查询"><span class="toc-text">六、分页查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#注意："><span class="toc-text">注意：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#规则："><span class="toc-text">规则：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如下："><span class="toc-text">如下：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#七、聚合查询"><span class="toc-text">七、聚合查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、COUNT-函数"><span class="toc-text">1、COUNT()函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、其他函数"><span class="toc-text">2、其他函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、分组（GROUP）"><span class="toc-text">3、分组（GROUP）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-单列分组"><span class="toc-text">3.1 单列分组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-多列分组"><span class="toc-text">3.2 多列分组</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#八、多表查询"><span class="toc-text">八、多表查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、语法："><span class="toc-text">1、语法：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、使用WHERE"><span class="toc-text">2、使用WHERE</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#九、连接查询"><span class="toc-text">九、连接查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、INNER-JOIN查询（内连接）"><span class="toc-text">1、INNER JOIN查询（内连接）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、RIGHT-OUTER-JOIN（右外连接）"><span class="toc-text">2、RIGHT OUTER JOIN（右外连接）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、LEFT-OUTER-JOIN（左外连接）"><span class="toc-text">3、LEFT OUTER JOIN（左外连接）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、FULL-OUTER-JOIN（全外连接）"><span class="toc-text">4、FULL OUTER JOIN（全外连接）</span></a></li></ol></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><header class="post-bg" id="page-header" style="background-image: url(https://img.niuxvdong.top/thumb-1920-552086.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">小牛博客</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list"></i><span> 百宝箱</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="https://nxd.js.org/" target="_blank" rel="noopener"><i class="fa-fw fa fa-thumbs-up"></i><span> 导航</span></a></li><li><a class="site-page" href="https://music.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="https://pan.niub.cf/tykj/" target="_blank" rel="noopener"><i class="fa-fw fa fa-cloud"></i><span> 云盘</span></a></li><li><a class="site-page" href="http://pic.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-file-image"></i><span> 图床</span></a></li><li><a class="site-page" href="https://proxy.niub.cf/" target="_blank" rel="noopener"><i class="fa-fw fa fa-plane"></i><span> 谷歌</span></a></li><li><a class="site-page" href="https://valine.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-comments"></i><span> 评论</span></a></li></ul></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">数据库教程之查询数据</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-06-02 17:37:39"><i class="far fa-calendar-alt fa-fw"></i> 发表于 2020-06-02</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-06-02 17:37:39"><i class="fas fa-history fa-fw"></i> 更新于 2020-06-02</span></time><span class="post-meta__categories"><span class="post-meta__separator">|</span><i class="fas fa-inbox fa-fw post-meta__icon"></i><a class="post-meta__categories" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a></span></div><div class="meta-secondline"> <span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta__icon"></i><span>字数总计:</span><span class="word-count">5.3k</span><span class="post-meta__separator">|</span><i class="far fa-clock fa-fw post-meta__icon"></i><span>阅读时长: 22 分钟</span></span></div><div class="meta-thirdline"><span class="post-meta-pv-cv"><span class="post-meta__separator">|</span><i class="far fa-eye fa-fw post-meta__icon"></i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"><span class="post-meta__separator">|</span><i class="far fa-comments fa-fw post-meta__icon"></i><span>评论数:</span><a href="/posts/16928.html#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/posts/16928.html" itemprop="commentCount"></span></a></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h1 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h1>
-    <div id="aplayer-PayCWjkr" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1371353582" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">98</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">93</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">12</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list"></i><span> 百宝箱</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="https://nxd.js.org/" target="_blank" rel="noopener"><i class="fa-fw fa fa-thumbs-up"></i><span> 导航</span></a></li><li><a class="site-page" href="https://music.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="https://pan.niub.cf/tykj/" target="_blank" rel="noopener"><i class="fa-fw fa fa-cloud"></i><span> 云盘</span></a></li><li><a class="site-page" href="http://pic.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-file-image"></i><span> 图床</span></a></li><li><a class="site-page" href="https://proxy.niub.cf/" target="_blank" rel="noopener"><i class="fa-fw fa fa-plane"></i><span> 谷歌</span></a></li><li><a class="site-page" href="https://valine.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-comments"></i><span> 评论</span></a></li></ul></div></div></div></div><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#首先来首歌曲来放松一下吧！"><span class="toc-text">首先来首歌曲来放松一下吧！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一、准备数据"><span class="toc-text">一、准备数据</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、基本查询"><span class="toc-text">二、基本查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、SELECT语句"><span class="toc-text">1、SELECT语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、DISTINCT只返回不同值"><span class="toc-text">2、DISTINCT只返回不同值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、用于计算的SELECT"><span class="toc-text">3、用于计算的SELECT</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、条件查询"><span class="toc-text">三、条件查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、WHERE-条件"><span class="toc-text">1、WHERE 条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、逻辑运算"><span class="toc-text">2、逻辑运算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-AND"><span class="toc-text">2.1 AND</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-OR"><span class="toc-text">2.2 OR</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-NOT"><span class="toc-text">2.3 NOT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-多条件使用括号"><span class="toc-text">2.4 多条件使用括号</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、条件表达式符号"><span class="toc-text">3、条件表达式符号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、-其他操作符"><span class="toc-text">4、 其他操作符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-IN"><span class="toc-text">4.1 IN</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-LIKE"><span class="toc-text">4.2 LIKE</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-1-百分号（-）通配符"><span class="toc-text">4.2.1 百分号（%）通配符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-2-下划线（-）通配符"><span class="toc-text">4.2.2 下划线（_）通配符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-3-使用通配符的优缺点"><span class="toc-text">4.2.3 使用通配符的优缺点</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四、投影查询"><span class="toc-text">四、投影查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、普通投影"><span class="toc-text">1、普通投影</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、别名投影"><span class="toc-text">2、别名投影</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、复杂投影"><span class="toc-text">3、复杂投影</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#五、排序"><span class="toc-text">五、排序</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、升序"><span class="toc-text">1、升序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、降序"><span class="toc-text">2、降序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、复杂排序"><span class="toc-text">3、复杂排序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-多列排序"><span class="toc-text">3.1 多列排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-条件排序"><span class="toc-text">3.2 条件排序</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#六、分页查询"><span class="toc-text">六、分页查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#注意："><span class="toc-text">注意：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#规则："><span class="toc-text">规则：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如下："><span class="toc-text">如下：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#七、聚合（聚集）查询"><span class="toc-text">七、聚合（聚集）查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、COUNT-函数"><span class="toc-text">1、COUNT()函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、其他聚集函数"><span class="toc-text">2、其他聚集函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、使用DISTINCT"><span class="toc-text">3、使用DISTINCT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、组合聚集函数"><span class="toc-text">4、组合聚集函数</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#八、多表查询"><span class="toc-text">八、多表查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、语法："><span class="toc-text">1、语法：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、使用WHERE"><span class="toc-text">2、使用WHERE</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#九、连接（联结）查询"><span class="toc-text">九、连接（联结）查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、INNER-JOIN查询（内连接）"><span class="toc-text">1、INNER JOIN查询（内连接）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、RIGHT-OUTER-JOIN（右外连接）"><span class="toc-text">2、RIGHT OUTER JOIN（右外连接）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、LEFT-OUTER-JOIN（左外连接）"><span class="toc-text">3、LEFT OUTER JOIN（左外连接）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、FULL-OUTER-JOIN（全外连接）"><span class="toc-text">4、FULL OUTER JOIN（全外连接）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#十、正则搜索查询"><span class="toc-text">十、正则搜索查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、语法格式"><span class="toc-text">1、语法格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、使用SELECT进行简单测试"><span class="toc-text">2、使用SELECT进行简单测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、REGEXP-和-LIKE"><span class="toc-text">3、REGEXP 和 LIKE</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#十一、创建计算字段"><span class="toc-text">十一、创建计算字段</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、使用Concat-函数"><span class="toc-text">1、使用Concat()函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、执行算术计算"><span class="toc-text">2、执行算术计算</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#十二、其他普通函数"><span class="toc-text">十二、其他普通函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、文本处理函数"><span class="toc-text">1、文本处理函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、日期和时间处理函数"><span class="toc-text">2、日期和时间处理函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、数值处理函数"><span class="toc-text">3、数值处理函数</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#十三、分组（GROUP）"><span class="toc-text">十三、分组（GROUP）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、单列分组"><span class="toc-text">1、单列分组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、多列分组"><span class="toc-text">2、多列分组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、WITH-ROLLUP"><span class="toc-text">3、WITH ROLLUP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、对分组的过滤"><span class="toc-text">4、对分组的过滤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#全部使用的顺序"><span class="toc-text">全部使用的顺序</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#十四、子查询"><span class="toc-text">十四、子查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、利用子查询进行过滤"><span class="toc-text">1、利用子查询进行过滤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、利用子查询处理计算字段"><span class="toc-text">2、利用子查询处理计算字段</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#十五、组合查询"><span class="toc-text">十五、组合查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、UNION-和-WHERE"><span class="toc-text">1、UNION 和 WHERE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、UNION"><span class="toc-text">2、UNION</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、UNION-ALL"><span class="toc-text">3、UNION ALL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、组合结果排序"><span class="toc-text">4、组合结果排序</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#十六、全文本搜索"><span class="toc-text">十六、全文本搜索</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、两种引擎"><span class="toc-text">1、两种引擎</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、启用全文本搜索"><span class="toc-text">2、启用全文本搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、进行全文本搜索"><span class="toc-text">3、进行全文本搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、使用查询拓展"><span class="toc-text">4、使用查询拓展</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5、布尔文本搜索"><span class="toc-text">5、布尔文本搜索</span></a></li></ol></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><header class="post-bg" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">小牛博客</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list"></i><span> 百宝箱</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="https://nxd.js.org/" target="_blank" rel="noopener"><i class="fa-fw fa fa-thumbs-up"></i><span> 导航</span></a></li><li><a class="site-page" href="https://music.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="https://pan.niub.cf/tykj/" target="_blank" rel="noopener"><i class="fa-fw fa fa-cloud"></i><span> 云盘</span></a></li><li><a class="site-page" href="http://pic.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-file-image"></i><span> 图床</span></a></li><li><a class="site-page" href="https://proxy.niub.cf/" target="_blank" rel="noopener"><i class="fa-fw fa fa-plane"></i><span> 谷歌</span></a></li><li><a class="site-page" href="https://valine.niuxvdong.top/" target="_blank" rel="noopener"><i class="fa-fw fa fa-comments"></i><span> 评论</span></a></li></ul></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">数据库教程之查询数据</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-06-02 17:37:39"><i class="far fa-calendar-alt fa-fw"></i> 发表于 2020-06-02</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-06-02 17:37:39"><i class="fas fa-history fa-fw"></i> 更新于 2020-06-02</span></time></div><div class="meta-secondline"> <span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta__icon"></i><span>字数总计:</span><span class="word-count">10.6k</span><span class="post-meta__separator">|</span><i class="far fa-clock fa-fw post-meta__icon"></i><span>阅读时长: 41 分钟</span></span></div><div class="meta-thirdline"><span class="post-meta-pv-cv"><span class="post-meta__separator">|</span><i class="far fa-eye fa-fw post-meta__icon"></i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"><span class="post-meta__separator">|</span><i class="far fa-comments fa-fw post-meta__icon"></i><span>评论数:</span><a href="/posts/16928.html#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/posts/16928.html" itemprop="commentCount"></span></a></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>title: 数据库教程之查询数据<br>author: Mr.Niu<br>toc: true<br>abbrlink: 16928<br>top_img: ‘<a href="https://img.niuxvdong.top/thumb-1920-552086.jpg'" target="_blank" rel="noopener">https://img.niuxvdong.top/thumb-1920-552086.jpg'</a><br>cover: ‘<a href="https://img.niuxvdong.top/thumb-1920-552086.jpg'" target="_blank" rel="noopener">https://img.niuxvdong.top/thumb-1920-552086.jpg'</a><br>categories:</p>
+<ul>
+<li>数据库<br>tags:</li>
+<li>SELECT</li>
+<li>查询<br>date: 2020-06-02 17:37:39<br>updated:</li>
+</ul>
+<h1 id="首先来首歌曲来放松一下吧！"><a href="#首先来首歌曲来放松一下吧！" class="headerlink" title="首先来首歌曲来放松一下吧！"></a>首先来首歌曲来放松一下吧！</h1>
+    <div id="aplayer-jTILpIvq" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1371353582" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
 
 
 
@@ -129,8 +135,18 @@ if (autoChangeMode === '1') {
 
 
 
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://i.loli.net/2020/06/02/Fv2oYPO9Vj5iTAI.png" alt=""></p>
-<h2 id="2、用于计算的SELECT"><a href="#2、用于计算的SELECT" class="headerlink" title="2、用于计算的SELECT"></a>2、用于计算的SELECT</h2><blockquote>
+<p><img src= "/img/loading.gif" data-src="https://i.loli.net/2020/06/02/Fv2oYPO9Vj5iTAI.png" alt=""></p>
+<h2 id="2、DISTINCT只返回不同值"><a href="#2、DISTINCT只返回不同值" class="headerlink" title="2、DISTINCT只返回不同值"></a>2、DISTINCT只返回不同值</h2><blockquote>
+<p>用于返回不同的值！</p>
+<p>DISTINCT 关键字应用于所有列而不仅是前置它的列。如果给出 SELECT DISTINCT vend_id,prod_price ，除非指定的两个列都不同，否则所有行都将被检索出来。</p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> vend_id <span class="keyword">FROM</span> products;</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+<h2 id="3、用于计算的SELECT"><a href="#3、用于计算的SELECT" class="headerlink" title="3、用于计算的SELECT"></a>3、用于计算的SELECT</h2><blockquote>
 <p>上述查询会直接计算出表达式的结果。虽然<code>SELECT</code>可以用作计算，但它并不是SQL的强项。但是，不带<code>FROM</code>子句的<code>SELECT</code>语句有一个有用的用途，就是用来判断当前到数据库的连接是否有效。许多检测工具会执行一条<code>SELECT 1;</code>来测试数据库连接。</p>
 </blockquote>
 <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; SELECT 200 * 3000000000;</span><br><span class="line">+<span class="comment">------------------+</span></span><br><span class="line">| 200 * 3000000000 |</span><br><span class="line">+<span class="comment">------------------+</span></span><br><span class="line">|     600000000000 |</span><br><span class="line">+<span class="comment">------------------+</span></span><br><span class="line">1 row in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></tbody></table></figure>
@@ -144,26 +160,27 @@ if (autoChangeMode === '1') {
 <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">SELECT</span> * <span class="keyword">FROM</span> &lt;表名&gt; <span class="keyword">WHERE</span> &lt;条件表达式&gt;</span><br></pre></td></tr></tbody></table></figure>
 
 <p>效果如下：</p>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://i.loli.net/2020/06/02/A5L3UGt2wQeR1OK.png" alt=""></p>
+<p><img src= "/img/loading.gif" data-src="https://i.loli.net/2020/06/02/A5L3UGt2wQeR1OK.png" alt=""></p>
 <h2 id="2、逻辑运算"><a href="#2、逻辑运算" class="headerlink" title="2、逻辑运算"></a>2、逻辑运算</h2><blockquote>
 <p>与其他语言不同：等于号不是<code>==</code>而是<code>=</code>！        </p>
 </blockquote>
 <h3 id="2-1-AND"><a href="#2-1-AND" class="headerlink" title="2.1 AND"></a>2.1 AND</h3><blockquote>
-<p>就是与<code>与</code>元算符！</p>
+<p>就是<code>与</code>运算符！</p>
 </blockquote>
 <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; SELECT * FROM students WHERE score &gt;= 80 AND gender = 'M';</span><br><span class="line">+<span class="comment">----+----------+--------+--------+-------+</span></span><br><span class="line">| id | class_id | name   | gender | score |</span><br><span class="line">+<span class="comment">----+----------+--------+--------+-------+</span></span><br><span class="line">|  1 |        1 | 小明   | M      |    90 |</span><br><span class="line">|  3 |        1 | 小军   | M      |    88 |</span><br><span class="line">|  7 |        2 | 小林   | M      |    85 |</span><br><span class="line">|  9 |        3 | 小王   | M      |    89 |</span><br><span class="line">+<span class="comment">----+----------+--------+--------+-------+</span></span><br><span class="line">4 rows in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></tbody></table></figure>
 
 
 
 <h3 id="2-2-OR"><a href="#2-2-OR" class="headerlink" title="2.2 OR"></a>2.2 OR</h3><blockquote>
-<p>就是与<code>或</code>元算符！</p>
+<p>就是<code>或</code>运算符！</p>
 </blockquote>
 <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; SELECT * FROM students WHERE score &gt;= 80 OR gender = 'M';</span><br><span class="line">+<span class="comment">----+----------+--------+--------+-------+</span></span><br><span class="line">| id | class_id | name   | gender | score |</span><br><span class="line">+<span class="comment">----+----------+--------+--------+-------+</span></span><br><span class="line">|  1 |        1 | 小明   | M      |    90 |</span><br><span class="line">|  2 |        1 | 小红   | F      |    95 |</span><br><span class="line">|  3 |        1 | 小军   | M      |    88 |</span><br><span class="line">|  5 |        2 | 小白   | F      |    81 |</span><br><span class="line">|  6 |        2 | 小兵   | M      |    55 |</span><br><span class="line">|  7 |        2 | 小林   | M      |    85 |</span><br><span class="line">|  8 |        3 | 小新   | F      |    91 |</span><br><span class="line">|  9 |        3 | 小王   | M      |    89 |</span><br><span class="line">| 10 |        3 | 小丽   | F      |    85 |</span><br><span class="line">+<span class="comment">----+----------+--------+--------+-------+</span></span><br><span class="line">9 rows in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></tbody></table></figure>
 
 
 
 <h3 id="2-3-NOT"><a href="#2-3-NOT" class="headerlink" title="2.3 NOT"></a>2.3 NOT</h3><blockquote>
-<p>就是与<code>非</code>元算符！</p>
+<p>就是<code>非</code>运算符！</p>
+<p><strong>MySQL支持使用 NOT 对 IN 、 BETWEEN 和EXISTS子句取反，这与多数其他 DBMS允许使用 NOT 对各种条件取反有很大的差别。</strong></p>
 </blockquote>
 <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; SELECT * FROM students WHERE NOT class_id = 2;</span><br><span class="line">+<span class="comment">----+----------+--------+--------+-------+</span></span><br><span class="line">| id | class_id | name   | gender | score |</span><br><span class="line">+<span class="comment">----+----------+--------+--------+-------+</span></span><br><span class="line">|  1 |        1 | 小明   | M      |    90 |</span><br><span class="line">|  2 |        1 | 小红   | F      |    95 |</span><br><span class="line">|  3 |        1 | 小军   | M      |    88 |</span><br><span class="line">|  4 |        1 | 小米   | F      |    73 |</span><br><span class="line">|  8 |        3 | 小新   | F      |    91 |</span><br><span class="line">|  9 |        3 | 小王   | M      |    89 |</span><br><span class="line">| 10 |        3 | 小丽   | F      |    85 |</span><br><span class="line">+<span class="comment">----+----------+--------+--------+-------+</span></span><br><span class="line">7 rows in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></tbody></table></figure>
 
@@ -179,8 +196,8 @@ if (autoChangeMode === '1') {
 
 
 <h2 id="3、条件表达式符号"><a href="#3、条件表达式符号" class="headerlink" title="3、条件表达式符号"></a>3、条件表达式符号</h2><blockquote>
-<p>注意：不等于不是<code>!=</code>而是<code>&lt;&gt;</code>！</p>
-<p>字符串要用引号引起来！</p>
+<p>注意：不等于可以是<code>!=</code>或者是<code>&lt;&gt;</code>！</p>
+<p>字符串要用单引号引起来！</p>
 <p><code>%</code>可以匹配任意字符，包括空字符且不一定是一个字符！</p>
 </blockquote>
 <table>
@@ -229,12 +246,71 @@ if (autoChangeMode === '1') {
 <td align="center"></td>
 </tr>
 <tr>
+<td align="center">使用!=判断不相等</td>
+<td align="center">score!=80</td>
+<td align="center">name!=’abc’</td>
+<td align="center"></td>
+</tr>
+<tr>
 <td align="center">使用LIKE判断相似</td>
 <td align="center">name LIKE ‘ab%’</td>
 <td align="center">name LIKE ‘%bc%’</td>
 <td align="center">%表示任意字符，例如’ab%’将匹配’ab’，’abc’，’abcd’</td>
 </tr>
+<tr>
+<td align="center">BETWEEN a AND b</td>
+<td align="center">BETWEEN 80 AND 90</td>
+<td align="center"></td>
+<td align="center">在指定两个值之间</td>
+</tr>
+<tr>
+<td align="center">IS NULL</td>
+<td align="center">score IS NULL</td>
+<td align="center"></td>
+<td align="center">指的是空，不是0，空字符串，空格，可能出现在建表时设置的NOT NULL的属性列</td>
+</tr>
 </tbody></table>
+<h2 id="4、-其他操作符"><a href="#4、-其他操作符" class="headerlink" title="4、 其他操作符"></a>4、 其他操作符</h2><h3 id="4-1-IN"><a href="#4-1-IN" class="headerlink" title="4.1 IN"></a>4.1 IN</h3><blockquote>
+<p>IN 操作符用来指定条件范围，范围中的每个条件都可以进行匹配。 IN 取合法值的由逗号分隔的清单，全都括在圆括号中。</p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">IN (值1，值2....);</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> student <span class="keyword">WHERE</span> class_id <span class="keyword">IN</span> (<span class="number">1</span>,<span class="number">2</span>) <span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="keyword">name</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p><strong>IN 与 OR相比的优点：</strong></p>
+<ol>
+<li>在使用长的合法选项清单时，IN 操作符的语法更<strong>清楚</strong>且更直观。</li>
+<li>在使用 IN 时，计算的次序更容易管理（因为使用的操作符更少）。</li>
+<li>IN 操作符一般比 OR 操作符清单执行<strong>更快</strong>。</li>
+<li>IN 的最大优点是可以包含其他 SELECT 语句，使得能够更动态地建立 WHERE 子句。（后续会介绍）</li>
+</ol>
+<h3 id="4-2-LIKE"><a href="#4-2-LIKE" class="headerlink" title="4.2 LIKE"></a>4.2 LIKE</h3><blockquote>
+<p> LIKE 指示MySQL后跟的搜索模式利用通配符匹配而不是直接相等匹配进行比较。</p>
+</blockquote>
+<h4 id="4-2-1-百分号（-）通配符"><a href="#4-2-1-百分号（-）通配符" class="headerlink" title="4.2.1 百分号（%）通配符"></a>4.2.1 百分号（%）通配符</h4><blockquote>
+<p><code>%</code> 表示任何字符出现任意（0,1，….）次数！</p>
+<p><strong>此搜索区分大小写</strong>，<code>'jet%'</code> 与 <code>JetPack 1000</code> 将不匹配。</p>
+<p>可以出现在任意位置，可以出现任意多个。</p>
+<p>例如：<code>s%e</code>,<code>%ss%</code></p>
+</blockquote>
+<p><strong>注意：</strong></p>
+<ul>
+<li>尾空格：<code>%abc</code>无法匹配<code>%abc&lt;空格&gt;</code>，要想匹配可以在最后再加一个<code>%abc%</code>，后面会讲到一个更好的方法，使用函数</li>
+<li><code>%</code>无法匹配<code>NULL</code>。</li>
+</ul>
+<h4 id="4-2-2-下划线（-）通配符"><a href="#4-2-2-下划线（-）通配符" class="headerlink" title="4.2.2 下划线（_）通配符"></a>4.2.2 下划线（_）通配符</h4><blockquote>
+<p><code>_</code>只匹配单个（只能是1个）任意字符，</p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> prod_id, prod_name <span class="keyword">FROM</span> products <span class="keyword">WHERE</span> prod_name <span class="keyword">LIKE</span> <span class="string">'_ abc'</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h4 id="4-2-3-使用通配符的优缺点"><a href="#4-2-3-使用通配符的优缺点" class="headerlink" title="4.2.3 使用通配符的优缺点"></a>4.2.3 使用通配符的优缺点</h4><ol>
+<li>可以使用通配符完成一些不易完成的搜索</li>
+<li>使用通配符会带来效率的降低，会比其他搜索更耗时</li>
+<li>不要过度使用通配符。如果其他操作符能达到相同的目的，应该使用其他操作符。</li>
+<li>在确实需要使用通配符时，除非绝对有必要，否则不要把它们用在搜索模式的开始处。把通配符置于搜索模式的开始处，搜索起来是最慢的。</li>
+</ol>
 <h1 id="四、投影查询"><a href="#四、投影查询" class="headerlink" title="四、投影查询"></a>四、投影查询</h1><blockquote>
 <p>使用<code>SELECT * FROM &lt;表名&gt; WHERE &lt;条件&gt;</code>可以选出表中的若干条记录。我们注意到返回的二维表结构和原表是相同的，即结果集的所有列与原表的所有列都一一对应。</p>
 <p>如果我们只希望返回某些列的数据，而不是所有列的数据，我们可以用<code>SELECT 列1, 列2, 列3 FROM ...</code>，让结果集仅包含指定列。这种操作称为投影查询。</p>
@@ -269,6 +345,7 @@ if (autoChangeMode === '1') {
 
 <h1 id="五、排序"><a href="#五、排序" class="headerlink" title="五、排序"></a>五、排序</h1><blockquote>
 <p>我们使用SELECT查询时，细心的读者可能注意到，查询结果集通常是按照<code>id</code>排序的，也就是根据主键排序。这也是大部分数据库的做法。</p>
+<p>在给出 ORDER BY 子句时，应该保证它位于 FROM 子句之后。如果使用 LIMIT ，它必须位于 ORDER BY之后。使用子句的次序不对将产生错误消息。</p>
 </blockquote>
 <h2 id="1、升序"><a href="#1、升序" class="headerlink" title="1、升序"></a>1、升序</h2><blockquote>
 <p>使用 <code>ORDER BY ***</code>语句；<code>ASC</code>：升序，可省略！</p>
@@ -308,6 +385,7 @@ if (autoChangeMode === '1') {
 <p>要实现分页功能，实际上就是从结果集中显示第1 ~ 100条记录作为第1页，显示第101 ~ 200条记录作为第2页，以此类推。</p>
 <p>因此，分页实际上就是从结果集中“截取”出第M ~ N条记录。</p>
 <p>通过<code>LIMIT &lt;M&gt; OFFSET &lt;N&gt;</code>子句实现：<code>LIMIT</code>表示每页最多三条信息，<code>OFFSET</code>表示从第几条开始。（SQL索引从0开始）</p>
+<p><strong>可以使用LIMIT控制要输出的结果！</strong></p>
 </blockquote>
 <h2 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h2><ul>
 <li><p><code>OFFSET</code>是可选的，如果只写<code>LIMIT 15</code>，那么相当于<code>LIMIT 15 OFFSET 0</code>。</p>
@@ -333,13 +411,14 @@ if (autoChangeMode === '1') {
 
 
 
-<h1 id="七、聚合查询"><a href="#七、聚合查询" class="headerlink" title="七、聚合查询"></a>七、聚合查询</h1><blockquote>
-<p>对于统计总数、平均数这类计算，SQL提供了专门的聚合函数，使用聚合函数进行查询，就是聚合查询，它可以快速获得结果。</p>
+<h1 id="七、聚合（聚集）查询"><a href="#七、聚合（聚集）查询" class="headerlink" title="七、聚合（聚集）查询"></a>七、聚合（聚集）查询</h1><blockquote>
+<p>对于统计总数、平均数这类计算，SQL提供了专门的聚合(聚集)函数，使用聚合函数进行查询，就是聚合查询，它可以快速获得结果。</p>
 </blockquote>
 <h2 id="1、COUNT-函数"><a href="#1、COUNT-函数" class="headerlink" title="1、COUNT()函数"></a>1、COUNT()函数</h2><blockquote>
 <p> <code>COUNT(*)</code>表示查询所有列的行数，要注意聚合的计算结果虽然是一个数字，但查询的结果仍然是一个二维表，只是这个二维表只有一行一列，并且列名是<code>COUNT(*)</code>。</p>
-<p>可以设置一个别名，便于处理结果：</p>
-<p><code>COUNT(*)</code>和<code>COUNT(id)</code>实际上是一样的效果。</p>
+<p> 可以设置一个别名，便于处理结果：</p>
+<p> <code>COUNT(*)</code>和<code>COUNT(id)</code>实际上是一样的效果。</p>
+<p> 如果指定列名，则指定列的值为空的行被 <code>COUNT()</code>函数忽略，但如果 <code>COUNT()</code> 函数中用的是星号<code>（ * ）</code>，则不<strong>忽略</strong>。</p>
 </blockquote>
 <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; SELECT COUNT(*) FROM students;</span><br><span class="line">+<span class="comment">----------+</span></span><br><span class="line">| COUNT(*) |</span><br><span class="line">+<span class="comment">----------+</span></span><br><span class="line">|       10 |</span><br><span class="line">+<span class="comment">----------+</span></span><br><span class="line">1 row in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 取一个别名 num</span></span><br><span class="line">mysql&gt; <span class="keyword">SELECT</span> <span class="keyword">COUNT</span>(*) <span class="keyword">num</span> <span class="keyword">FROM</span> students;</span><br><span class="line">+<span class="comment">-----+</span></span><br><span class="line">| num |</span><br><span class="line">+<span class="comment">-----+</span></span><br><span class="line">|  10 |</span><br><span class="line">+<span class="comment">-----+</span></span><br><span class="line">1 row in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></tbody></table></figure>
 
@@ -352,7 +431,7 @@ if (autoChangeMode === '1') {
 
 
 
-<h2 id="2、其他函数"><a href="#2、其他函数" class="headerlink" title="2、其他函数"></a>2、其他函数</h2><blockquote>
+<h2 id="2、其他聚集函数"><a href="#2、其他聚集函数" class="headerlink" title="2、其他聚集函数"></a>2、其他聚集函数</h2><blockquote>
 <p>注意，<code>MAX()</code>和<code>MIN()</code>函数并不限于数值类型。如果是字符类型，<code>MAX()</code>和<code>MIN()</code>会返回排序最后和排序最前的字符。</p>
 <p>注意：如果聚合查询的<code>WHERE</code>条件没有匹配到任何行，<code>COUNT()</code>会返回0，而<code>SUM()</code>、<code>AVG()</code>、<code>MAX()</code>和<code>MIN()</code>会返回<code>NULL</code>：</p>
 </blockquote>
@@ -365,19 +444,19 @@ if (autoChangeMode === '1') {
 </thead>
 <tbody><tr>
 <td align="center">SUM</td>
-<td align="center">计算某一列的合计值，该列必须为数值类型</td>
+<td align="center">计算某一列的合计值，该列必须为数值类型，SUM() 函数忽略列值为 NULL 的行</td>
 </tr>
 <tr>
 <td align="center">AVG</td>
-<td align="center">计算某一列的平均值，该列必须为数值类型</td>
+<td align="center">计算某一列的平均值，该列必须为数值类型，AVG() 函数忽略列值为 NULL 的行。</td>
 </tr>
 <tr>
 <td align="center">MAX</td>
-<td align="center">计算某一列的最大值</td>
+<td align="center">计算某一列的最大值，MAX() 函数忽略列值为 NULL 的行</td>
 </tr>
 <tr>
 <td align="center">MIN</td>
-<td align="center">计算某一列的最小值</td>
+<td align="center">计算某一列的最小值，MIN() 函数忽略列值为 NULL 的行</td>
 </tr>
 <tr>
 <td align="center">CEILING</td>
@@ -392,25 +471,22 @@ if (autoChangeMode === '1') {
 
 
 
-<h2 id="3、分组（GROUP）"><a href="#3、分组（GROUP）" class="headerlink" title="3、分组（GROUP）"></a>3、分组（GROUP）</h2><blockquote>
-<p>用于统计一类数据的方法：<code>GROUP BY 某一列</code></p>
+
+
+<h2 id="3、使用DISTINCT"><a href="#3、使用DISTINCT" class="headerlink" title="3、使用DISTINCT"></a>3、使用DISTINCT</h2><blockquote>
+<p>默认为<code>ALL</code>，可选<code>DISTINCT</code>，即去掉重复值</p>
+<p>上面的聚集（聚合）函数都可以使用<code>DISTINCT</code>来去重计算</p>
+<p>对于<code>MIN</code>，<code>MAX</code>添加该参数无意义，因为去不去重结果无影响！</p>
 </blockquote>
-<h3 id="3-1-单列分组"><a href="#3-1-单列分组" class="headerlink" title="3.1 单列分组"></a>3.1 单列分组</h3><figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; SELECT class_id, COUNT(*) num FROM students GROUP BY class_id;</span><br><span class="line">+<span class="comment">----------+-----+</span></span><br><span class="line">| class_id | num |</span><br><span class="line">+<span class="comment">----------+-----+</span></span><br><span class="line">|        1 |   4 |</span><br><span class="line">|        2 |   3 |</span><br><span class="line">|        3 |   3 |</span><br><span class="line">+<span class="comment">----------+-----+</span></span><br><span class="line">3 rows in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></tbody></table></figure>
+<p>下面的这个例子就是将价格不同的过滤掉，仅计算价格不同的均值。</p>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">AVG</span>(<span class="keyword">DISTINCT</span> prod_price) avg_rice</span><br><span class="line"><span class="keyword">FROM</span> products</span><br><span class="line"><span class="keyword">WHERE</span> vend_id = <span class="number">1003</span>;</span><br><span class="line">+<span class="comment">-----------+</span></span><br><span class="line">| avg_price |</span><br><span class="line">+<span class="comment">-----------+</span></span><br><span class="line">| 15 .998000|</span><br><span class="line">+<span class="comment">-----------+</span></span><br></pre></td></tr></tbody></table></figure>
 
 
 
-<h3 id="3-2-多列分组"><a href="#3-2-多列分组" class="headerlink" title="3.2 多列分组"></a>3.2 多列分组</h3><figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; SELECT class_id, gender, COUNT(*) num FROM students GROUP BY class_id, gender;</span><br><span class="line">+<span class="comment">----------+--------+-----+</span></span><br><span class="line">| class_id | gender | num |</span><br><span class="line">+<span class="comment">----------+--------+-----+</span></span><br><span class="line">|        1 | M      |   2 |</span><br><span class="line">|        1 | F      |   2 |</span><br><span class="line">|        2 | F      |   1 |</span><br><span class="line">|        2 | M      |   2 |</span><br><span class="line">|        3 | F      |   2 |</span><br><span class="line">|        3 | M      |   1 |</span><br><span class="line">+<span class="comment">----------+--------+-----+</span></span><br><span class="line">6 rows in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<ul>
-<li><strong>注意</strong>：SQL引擎不能把多个<code>name</code>的值放入一行记录中。因此，聚合查询的列中，只能放入分组的列。</li>
-</ul>
-<blockquote>
-<p>原因：class_id = 1 有 4 个人，他们班级名相同，但name不同，如果有了name列，应该显示几个名字呢？？？</p>
-<p>所以干脆直接报错！ </p>
+<h2 id="4、组合聚集函数"><a href="#4、组合聚集函数" class="headerlink" title="4、组合聚集函数"></a>4、组合聚集函数</h2><blockquote>
+<p>即一条语句使用多个聚集函数。</p>
 </blockquote>
-<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; SELECT name, class_id, COUNT(*) num FROM students GROUP BY class_id;</span><br><span class="line">ERROR 1055 (42000): Expression <span class="comment">#1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'test.students.name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">COUNT</span>(*) <span class="keyword">AS</span> num_items,</span><br><span class="line"><span class="keyword">MIN</span>(prod_price) <span class="keyword">AS</span> price_min,</span><br><span class="line"><span class="keyword">MAX</span>(prod_price) <span class="keyword">AS</span> price_max,</span><br><span class="line"><span class="keyword">AVG</span>(prod_price) <span class="keyword">AS</span> price_avg</span><br><span class="line"><span class="keyword">FROM</span> products;</span><br></pre></td></tr></tbody></table></figure>
 
 
 
@@ -448,7 +524,7 @@ if (autoChangeMode === '1') {
 
 
 
-<h1 id="九、连接查询"><a href="#九、连接查询" class="headerlink" title="九、连接查询"></a>九、连接查询</h1><blockquote>
+<h1 id="九、连接（联结）查询"><a href="#九、连接（联结）查询" class="headerlink" title="九、连接（联结）查询"></a>九、连接（联结）查询</h1><blockquote>
 <p>连接查询是另一种类型的多表查询。连接查询对多个表进行JOIN运算，简单地说，就是先确定一个主表作为结果集，然后，把其他表的行有选择性地“连接”在主表结果集上。</p>
 </blockquote>
 <h2 id="1、INNER-JOIN查询（内连接）"><a href="#1、INNER-JOIN查询（内连接）" class="headerlink" title="1、INNER JOIN查询（内连接）"></a>1、INNER JOIN查询（内连接）</h2><blockquote>
@@ -463,7 +539,7 @@ if (autoChangeMode === '1') {
 <li>可选：加上<code>WHERE</code>子句、<code>ORDER BY</code>等子句。</li>
 </ol>
 <p>示例图如下：</p>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://i.loli.net/2020/06/03/FnVoJYyXKD5QpZf.png" alt=""></p>
+<p><img src= "/img/loading.gif" data-src="https://i.loli.net/2020/06/03/FnVoJYyXKD5QpZf.png" alt=""></p>
 <p>代码如下：</p>
 <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; SELECT s.id, s.name, s.class_id, c.name class_name, s.gender, s.score</span><br><span class="line">    -&gt; FROM students s</span><br><span class="line">    -&gt; INNER JOIN classes c</span><br><span class="line">    -&gt; ON s.class_id = c.id;</span><br><span class="line">+<span class="comment">----+--------+----------+------------+--------+-------+</span></span><br><span class="line">| id | name   | class_id | class_name | gender | score |</span><br><span class="line">+<span class="comment">----+--------+----------+------------+--------+-------+</span></span><br><span class="line">|  1 | 小明   |        1 | 一班       | M      |    90 |</span><br><span class="line">|  2 | 小红   |        1 | 一班       | F      |    95 |</span><br><span class="line">|  3 | 小军   |        1 | 一班       | M      |    88 |</span><br><span class="line">|  4 | 小米   |        1 | 一班       | F      |    73 |</span><br><span class="line">|  5 | 小白   |        2 | 二班       | F      |    81 |</span><br><span class="line">|  6 | 小兵   |        2 | 二班       | M      |    55 |</span><br><span class="line">|  7 | 小林   |        2 | 二班       | M      |    85 |</span><br><span class="line">|  8 | 小新   |        3 | 三班       | F      |    91 |</span><br><span class="line">|  9 | 小王   |        3 | 三班       | M      |    89 |</span><br><span class="line">| 10 | 小丽   |        3 | 三班       | F      |    85 |</span><br><span class="line">+<span class="comment">----+--------+----------+------------+--------+-------+</span></span><br><span class="line">10 rows in <span class="keyword">set</span> (<span class="number">0.01</span> sec)</span><br></pre></td></tr></tbody></table></figure>
 
@@ -478,7 +554,7 @@ if (autoChangeMode === '1') {
 <p><strong>注意</strong>：左右外连接可以省略写<code>OUTER</code>。</p>
 </blockquote>
 <p>示例图如下：</p>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://i.loli.net/2020/06/03/9wUZjqBb5Y4HpQI.png" alt=""></p>
+<p><img src= "/img/loading.gif" data-src="https://i.loli.net/2020/06/03/9wUZjqBb5Y4HpQI.png" alt=""></p>
 <p>代码如下：</p>
 <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; SELECT s.id, s.name, s.class_id, c.name class_name, s.gender, s.score</span><br><span class="line">    -&gt; FROM students s</span><br><span class="line">    -&gt; RIGHT OUTER JOIN classes c</span><br><span class="line">    -&gt; ON s.class_id = c.id;</span><br><span class="line">+<span class="comment">------+--------+----------+------------+--------+-------+</span></span><br><span class="line">| id   | name   | class_id | class_name | gender | score |</span><br><span class="line">+<span class="comment">------+--------+----------+------------+--------+-------+</span></span><br><span class="line">|    1 | 小明   |        1 | 一班       | M      |    90 |</span><br><span class="line">|    2 | 小红   |        1 | 一班       | F      |    95 |</span><br><span class="line">|    3 | 小军   |        1 | 一班       | M      |    88 |</span><br><span class="line">|    4 | 小米   |        1 | 一班       | F      |    73 |</span><br><span class="line">|    5 | 小白   |        2 | 二班       | F      |    81 |</span><br><span class="line">|    6 | 小兵   |        2 | 二班       | M      |    55 |</span><br><span class="line">|    7 | 小林   |        2 | 二班       | M      |    85 |</span><br><span class="line">|    8 | 小新   |        3 | 三班       | F      |    91 |</span><br><span class="line">|    9 | 小王   |        3 | 三班       | M      |    89 |</span><br><span class="line">|   10 | 小丽   |        3 | 三班       | F      |    85 |</span><br><span class="line">| NULL | NULL   |     NULL | 四班       | NULL   |  NULL |</span><br><span class="line">+<span class="comment">------+--------+----------+------------+--------+-------+</span></span><br><span class="line">11 rows in <span class="keyword">set</span> (<span class="number">0.01</span> sec)</span><br></pre></td></tr></tbody></table></figure>
 
@@ -493,7 +569,7 @@ if (autoChangeMode === '1') {
 <p>由于<code>students</code>表都可以在<code>classes</code>表匹配，所以添加一行吧唧id为5的，来说明左外连接问题。</p>
 </blockquote>
 <p>示例图如下：</p>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://i.loli.net/2020/06/03/yTozw3hQbYp8SKU.png" alt=""></p>
+<p><img src= "/img/loading.gif" data-src="https://i.loli.net/2020/06/03/yTozw3hQbYp8SKU.png" alt=""></p>
 <p>代码如下：</p>
 <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- </span></span><br><span class="line">$ mysql&gt; INSERT INTO students (class_id, name, gender, score) values (5, '新生', 'M', 88);</span><br><span class="line">Query OK, 1 row affected (0.01 sec)</span><br><span class="line"></span><br><span class="line">$ mysql&gt; SELECT s.id, s.name, s.class_id, c.name class_name, s.gender, s.score</span><br><span class="line">    -&gt; FROM students s</span><br><span class="line">    -&gt; LEFT OUTER JOIN classes c</span><br><span class="line">    -&gt; ON s.class_id = c.id;</span><br><span class="line">+<span class="comment">----+--------+----------+------------+--------+-------+</span></span><br><span class="line">| id | name   | class_id | class_name | gender | score |</span><br><span class="line">+<span class="comment">----+--------+----------+------------+--------+-------+</span></span><br><span class="line">|  1 | 小明   |        1 | 一班       | M      |    90 |</span><br><span class="line">|  2 | 小红   |        1 | 一班       | F      |    95 |</span><br><span class="line">|  3 | 小军   |        1 | 一班       | M      |    88 |</span><br><span class="line">|  4 | 小米   |        1 | 一班       | F      |    73 |</span><br><span class="line">|  5 | 小白   |        2 | 二班       | F      |    81 |</span><br><span class="line">|  6 | 小兵   |        2 | 二班       | M      |    55 |</span><br><span class="line">|  7 | 小林   |        2 | 二班       | M      |    85 |</span><br><span class="line">|  8 | 小新   |        3 | 三班       | F      |    91 |</span><br><span class="line">|  9 | 小王   |        3 | 三班       | M      |    89 |</span><br><span class="line">| 10 | 小丽   |        3 | 三班       | F      |    85 |</span><br><span class="line">| 11 | 新生   |        5 | NULL       | M      |    88 |</span><br><span class="line">+<span class="comment">----+--------+----------+------------+--------+-------+</span></span><br><span class="line">11 rows in <span class="keyword">set</span> (<span class="number">0.01</span> sec)</span><br></pre></td></tr></tbody></table></figure>
 
@@ -506,14 +582,14 @@ if (autoChangeMode === '1') {
 <p>MySQL并不支持全连接。。。</p>
 </blockquote>
 <p>示例图如下：</p>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif" data-original="https://i.loli.net/2020/06/03/rhCTO9VMHPtxiDF.png" alt=""></p>
+<p><img src= "/img/loading.gif" data-src="https://i.loli.net/2020/06/03/rhCTO9VMHPtxiDF.png" alt=""></p>
 <p>代码如下：</p>
 <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; SELECT s.id, s.name, s.class_id, c.name class_name, s.gender, s.score</span><br><span class="line">    -&gt; FROM students s</span><br><span class="line">    -&gt; FULL OUTER JOIN classes c</span><br><span class="line">    -&gt; ON s.class_id = c.id;</span><br><span class="line">ERROR 1064 (42000): You have an error in your SQL syntax; <span class="keyword">check</span> the <span class="keyword">manual</span> that corresponds <span class="keyword">to</span> your MySQL <span class="keyword">server</span> <span class="keyword">version</span> <span class="keyword">for</span> the <span class="keyword">right</span> syntax <span class="keyword">to</span> <span class="keyword">use</span> near <span class="string">'FULL OUTER JOIN classes c</span></span><br><span class="line"><span class="string">ON s.class_id = c.id'</span> <span class="keyword">at</span> line <span class="number">3</span></span><br></pre></td></tr></tbody></table></figure>
 
 
 
 <ul>
-<li>代替解决方案：使用<code>UNION</code>，左连接一次，有连接一次，再使用UNION合并。</li>
+<li>代替解决方案：使用<code>UNION</code>，左连接一次，右连接一次，再使用UNION合并。</li>
 </ul>
 <p>代码如下：</p>
 <figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT s.id, s.name, s.class_id, c.name class_name, s.gender, s.score</span><br><span class="line">    -&gt; FROM students s</span><br><span class="line">    -&gt; RIGHT OUTER JOIN classes c ON class_id = c.id</span><br><span class="line">    -&gt; UNION</span><br><span class="line">    -&gt; SELECT s.id, s.name, s.class_id, c.name class_name, s.gender, s.score</span><br><span class="line">    -&gt; FROM students s</span><br><span class="line">    -&gt; LEFT OUTER JOIN classes c ON class_id = c.id;</span><br><span class="line">+<span class="comment">------+--------+----------+------------+--------+-------+</span></span><br><span class="line">| id   | name   | class_id | class_name | gender | score |</span><br><span class="line">+<span class="comment">------+--------+----------+------------+--------+-------+</span></span><br><span class="line">|    1 | 小明   |        1 | 一班       | M      |    90 |</span><br><span class="line">|    2 | 小红   |        1 | 一班       | F      |    95 |</span><br><span class="line">|    3 | 小军   |        1 | 一班       | M      |    88 |</span><br><span class="line">|    4 | 小米   |        1 | 一班       | F      |    73 |</span><br><span class="line">|    5 | 小白   |        2 | 二班       | F      |    81 |</span><br><span class="line">|    6 | 小兵   |        2 | 二班       | M      |    55 |</span><br><span class="line">|    7 | 小林   |        2 | 二班       | M      |    85 |</span><br><span class="line">|    8 | 小新   |        3 | 三班       | F      |    91 |</span><br><span class="line">|    9 | 小王   |        3 | 三班       | M      |    89 |</span><br><span class="line">|   10 | 小丽   |        3 | 三班       | F      |    85 |</span><br><span class="line">| NULL | NULL   |     NULL | 四班       | NULL   |  NULL |</span><br><span class="line">|   11 | 新生   |        5 | NULL       | M      |    88 |</span><br><span class="line">+<span class="comment">------+--------+----------+------------+--------+-------+</span></span><br><span class="line">12 rows in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></tbody></table></figure>
@@ -522,10 +598,403 @@ if (autoChangeMode === '1') {
 
 
 
+<h1 id="十、正则搜索查询"><a href="#十、正则搜索查询" class="headerlink" title="十、正则搜索查询"></a>十、正则搜索查询</h1><blockquote>
+<p>可以使用正则的所有语法！</p>
+<p>参考我之前的<a href="https://niuxvdong.top/posts/53926.html">Java教程的正则表达式！</a>，以及<a href="https://niuxvdong.top/posts/15769.html">JavaScript教程的正则表达式！</a>，以及<a href="https://github.com/niuxvdong/learn-html-css-js/blob/master/js/正则.js" target="_blank" rel="noopener">加强版的正则表达式!</a></p>
+</blockquote>
+<p>这里只介绍一些不同点！</p>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT * FROM students WHERE score REGEXP '8\\d';</span><br><span class="line">+<span class="comment">----+----------+--------+--------+-------+</span></span><br><span class="line">| id | class_id | name   | gender | score |</span><br><span class="line">+<span class="comment">----+----------+--------+--------+-------+</span></span><br><span class="line">|  3 |        1 | 小军   | M      |    88 |</span><br><span class="line">|  4 |        1 | 小米   | F      |    83 |</span><br><span class="line">|  5 |        2 | 小白   | F      |    81 |</span><br><span class="line">|  7 |        2 | 小林   | M      |    85 |</span><br><span class="line">|  9 |        3 | 小王   | M      |    89 |</span><br><span class="line">| 10 |        3 | 小丽   | F      |    85 |</span><br><span class="line">| 11 |        5 | 新生   | M      |    88 |</span><br><span class="line">| 12 |        2 | 大牛   | M      |    80 |</span><br><span class="line">| 13 |        1 | 大宝   | M      |    87 |</span><br><span class="line">| 14 |        2 | 二宝   | M      |    81 |</span><br><span class="line">+<span class="comment">----+----------+--------+--------+-------+</span></span><br><span class="line">10 rows in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></tbody></table></figure>
 
 
 
 
+
+
+
+<h2 id="1、语法格式"><a href="#1、语法格式" class="headerlink" title="1、语法格式"></a>1、语法格式</h2><blockquote>
+<p>与<code>LIKE</code>的通配符类似！</p>
+</blockquote>
+<p><strong>注意：</strong></p>
+<ol>
+<li><code>mysql</code>的正则表达式不区分大小写，指的是这样子的 <code>SELECT 'jack 001' REGEXP 'Jack 001';</code></li>
+<li>可以加上<code>BINARY</code>来区分大小写，eg：<code>SELECT 'jack 001' REGEXP BINARY 'Jack 001';</code></li>
+</ol>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> students <span class="keyword">WHERE</span> score REGEXP <span class="string">'8\\d'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> students <span class="keyword">WHERE</span> score <span class="keyword">LIKE</span> <span class="string">'8%'</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p><strong>特殊字符格式：</strong></p>
+<blockquote>
+<p><code>\\- \\. \\| \\( \\{ \\[</code></p>
+<p>以及 <code>\\f \\r \\t \\v</code>分别表示换页，换行，回车，制表符，纵向制表符。</p>
+<p><code>\\\</code>表示<code>\</code></p>
+</blockquote>
+<p><strong>匹配字符类：</strong></p>
+<blockquote>
+<p>存在找出你自己经常使用的数字、所有字母字符或所有数字字母字符等的匹配。为更方便工作，可以使用预定义的字符集，称为<strong>字符类</strong>.</p>
+</blockquote>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/29/dd008e71901afce749d899cf855ed33a.png" alt=""></p>
+<p>如下：</p>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="string">'HHH123'</span> REGEXP <span class="string">'[[:digit:]]{3}'</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h2 id="2、使用SELECT进行简单测试"><a href="#2、使用SELECT进行简单测试" class="headerlink" title="2、使用SELECT进行简单测试"></a>2、使用SELECT进行简单测试</h2><blockquote>
+<p>匹配返回 1，不匹配返回 0</p>
+<p><code>LIKE</code>和<code>REGEXP</code>都可以！</p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT 'habc123' LIKE 'ha%3';</span><br><span class="line">+<span class="comment">-----------------------+</span></span><br><span class="line">| 'habc123' LIKE 'ha%3' |</span><br><span class="line">+<span class="comment">-----------------------+</span></span><br><span class="line">|                     1 |</span><br><span class="line">+<span class="comment">-----------------------+</span></span><br><span class="line">1 row in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 如下</span></span><br><span class="line">mysql&gt; <span class="keyword">SELECT</span> <span class="string">'habc123'</span> REGEXP <span class="string">'^\\w*\\d{3}$'</span>;</span><br><span class="line">+<span class="comment">---------------------------------+</span></span><br><span class="line">| 'habc123' REGEXP '^\\w*\\d{3}$' |</span><br><span class="line">+<span class="comment">---------------------------------+</span></span><br><span class="line">|                               1 |</span><br><span class="line">+<span class="comment">---------------------------------+</span></span><br><span class="line">1 row in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+
+
+
+
+<h2 id="3、REGEXP-和-LIKE"><a href="#3、REGEXP-和-LIKE" class="headerlink" title="3、REGEXP 和 LIKE"></a>3、REGEXP 和 LIKE</h2><p><strong>一些区别：</strong></p>
+<ol>
+<li><code>REGEXP</code>可以匹配子串，只要有子串匹配就可以返回真值，当然也可以匹配原串。</li>
+<li><code>LIKE</code>只能匹配原串，必须将原串全部匹配才可。</li>
+</ol>
+<h1 id="十一、创建计算字段"><a href="#十一、创建计算字段" class="headerlink" title="十一、创建计算字段"></a>十一、创建计算字段</h1><blockquote>
+<p>创建计算字段主要是为了格式化输出，可以获得需要的输出结果！</p>
+<p>其他<code>DBMS</code>使用 <code>+</code> ，<code>||</code>来实现拼接来处理格式化，<code>MySql</code>使用<code>Concat()</code>函数进行拼接来处理格式化。</p>
+<p>这类普通函数与聚集函数写法规范略有不同，聚集函数全部大写如<code>AVG()</code>，普通函数首字母大写<code>Concat()</code>。</p>
+<p>这仅仅是一个规定，约定俗成的规矩，大小写<code>MySql</code>是忽略的。</p>
+</blockquote>
+<h2 id="1、使用Concat-函数"><a href="#1、使用Concat-函数" class="headerlink" title="1、使用Concat()函数"></a>1、使用Concat()函数</h2><figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT Concat(name, ' ---------- ', score) name_score FROM students;</span><br><span class="line">+<span class="comment">----------------------+</span></span><br><span class="line">| name_score           |</span><br><span class="line">+<span class="comment">----------------------+</span></span><br><span class="line">| 小明 <span class="comment">---------- 98   |</span></span><br><span class="line">| 小红 <span class="comment">---------- 95   |</span></span><br><span class="line">| 小军 <span class="comment">---------- 88   |</span></span><br><span class="line">| 小米 <span class="comment">---------- 83   |</span></span><br><span class="line">| 小白 <span class="comment">---------- 81   |</span></span><br><span class="line">| 小兵 <span class="comment">---------- 65   |</span></span><br><span class="line">| 小林 <span class="comment">---------- 85   |</span></span><br><span class="line">| 小新 <span class="comment">---------- 91   |</span></span><br><span class="line">| 小王 <span class="comment">---------- 89   |</span></span><br><span class="line">| 小丽 <span class="comment">---------- 85   |</span></span><br><span class="line">| 新生 <span class="comment">---------- 88   |</span></span><br><span class="line">| 大牛 <span class="comment">---------- 80   |</span></span><br><span class="line">| 大宝 <span class="comment">---------- 87   |</span></span><br><span class="line">| 二宝 <span class="comment">---------- 81   |</span></span><br><span class="line">+<span class="comment">----------------------+</span></span><br><span class="line">14 rows in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+<p><strong>同样可以使用一些其他函数来进行控制，使用别名来替换该字段：</strong></p>
+<blockquote>
+<p>这里用到了<code>RTrim()</code>，<code>LTrim()</code>，<code>Trim()</code>，来进行配合，分别为去掉右边空格，左边空格，及两边空格！</p>
+<p>也可以使用别名来重命名该列。</p>
+<p>别名可以使用<code>a AS b</code>来表示，也可以直接空格隔开，两种写法完全一致，但一般空格隔开即可！</p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">Concat</span>(<span class="keyword">RTrim</span>(<span class="keyword">name</span>), <span class="string">' - '</span>, <span class="keyword">LTrim</span>(score)) name_score <span class="keyword">FROM</span> students;</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">Concat</span>(<span class="keyword">RTrim</span>(<span class="keyword">name</span>), <span class="string">' - '</span>, <span class="keyword">LTrim</span>(score)) <span class="keyword">AS</span> name_score <span class="keyword">FROM</span> students;</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+<h2 id="2、执行算术计算"><a href="#2、执行算术计算" class="headerlink" title="2、执行算术计算"></a>2、执行算术计算</h2><blockquote>
+<p>可以使用<code>+-*/</code>来进行计算得到新的一列。</p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> prod_id, quantity, item_price,</span><br><span class="line">quantity * item_price expanded_price</span><br><span class="line"><span class="keyword">FROM</span> orderitems</span><br><span class="line"><span class="keyword">WHERE</span> order_num = <span class="number">20005</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<ul>
+<li><strong>可以使用SELECT的测试功能来简单测试一下</strong></li>
+</ul>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT Trim('   bsd      ');</span><br><span class="line">+<span class="comment">----------------------+</span></span><br><span class="line">| Trim('   bsd      ') |</span><br><span class="line">+<span class="comment">----------------------+</span></span><br><span class="line">| bsd                  |</span><br><span class="line">+<span class="comment">----------------------+</span></span><br><span class="line">1 row in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; <span class="keyword">SELECT</span> <span class="number">3</span> * <span class="number">5</span>;</span><br><span class="line">+<span class="comment">-------+</span></span><br><span class="line">| 3 * 5 |</span><br><span class="line">+<span class="comment">-------+</span></span><br><span class="line">|    15 |</span><br><span class="line">+<span class="comment">-------+</span></span><br><span class="line">1 row in <span class="keyword">set</span> (<span class="number">0.01</span> sec)</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+<h1 id="十二、其他普通函数"><a href="#十二、其他普通函数" class="headerlink" title="十二、其他普通函数"></a>十二、其他普通函数</h1><h2 id="1、文本处理函数"><a href="#1、文本处理函数" class="headerlink" title="1、文本处理函数"></a>1、文本处理函数</h2><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/29/1081b217e36291d71ae0278c9e1b9631.png" alt=""></p>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/29/d3eb81f9a55369963144fcb2e5ded164.png" alt=""></p>
+<blockquote>
+<p> <code>SOUNDEX</code> 是一个将任何文本串转换为描述其语音表示的字母数字模式的算法。 <code>SOUNDEX</code>考虑了类似的发音字符和音节，使得能对串进行发音比较而不是字母比较。虽然<code>SOUNDEX</code> 不是<code>SQL</code>概念，但<code>MySQL</code>（就像多数<code>DBMS</code>一样）都提供对<code>SOUNDEX</code>的支持。</p>
+<p>可以在你拼错的时候返回正确的匹配项！有发音相似性匹配。。神奇！</p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT Soundex('Lie') = Soundex('Lee');</span><br><span class="line">+<span class="comment">---------------------------------+</span></span><br><span class="line">| Soundex('Lie') = Soundex('Lee') |</span><br><span class="line">+<span class="comment">---------------------------------+</span></span><br><span class="line">|                               1 |</span><br><span class="line">+<span class="comment">---------------------------------+</span></span><br><span class="line">1 row in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> cust_name，cust_contact</span><br><span class="line"><span class="keyword">FROM</span> customers</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">Soundex</span>(cust_contact) = <span class="keyword">Soundex</span>(<span class="string">'Y Lie'</span>);</span><br><span class="line">+<span class="comment">-------------+--------------+</span></span><br><span class="line">| cust_name   | cust_contact |</span><br><span class="line">| Coyote Inc. | Y Lee        |</span><br><span class="line">+<span class="comment">-------------+--------------+</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+<h2 id="2、日期和时间处理函数"><a href="#2、日期和时间处理函数" class="headerlink" title="2、日期和时间处理函数"></a>2、日期和时间处理函数</h2><blockquote>
+<p>日期和时间采用相应的数据类型和特殊的格式存储，以便能快速和有效地排序或过滤，并且节省物理存储空间。</p>
+<p>主要是从<code>DATETIME</code>数据类型中截取需要的数据！</p>
+</blockquote>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/29/5afb913f2d226283a03e6489dd2c14c9.png" alt=""></p>
+<p><strong>部分示例：</strong></p>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT Now();</span><br><span class="line">+<span class="comment">---------------------+</span></span><br><span class="line">| Now()               |</span><br><span class="line">+<span class="comment">---------------------+</span></span><br><span class="line">| 2020-06-29 21:45:11 |</span><br><span class="line">+<span class="comment">---------------------+</span></span><br><span class="line">1 row in <span class="keyword">set</span> (<span class="number">0.01</span> sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; <span class="keyword">SELECT</span> <span class="built_in">Date</span>(<span class="string">'2020--06-29 00:00:00'</span>);</span><br><span class="line">+<span class="comment">------------------------------+</span></span><br><span class="line">| Date('2020-06-29 00:00:00') |</span><br><span class="line">+<span class="comment">------------------------------+</span></span><br><span class="line">| 2020-06-29                   |</span><br><span class="line">+<span class="comment">------------------------------+</span></span><br><span class="line">1 row in <span class="keyword">set</span> (<span class="number">0.01</span> sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; <span class="keyword">SELECT</span> <span class="keyword">DayOfWeek</span>(<span class="string">'2020-06-29 00:00:00'</span>);</span><br><span class="line">+<span class="comment">-----------------------------------+</span></span><br><span class="line">| DayOfWeek('2020-06-29 00:00:00') |</span><br><span class="line">+<span class="comment">-----------------------------------+</span></span><br><span class="line">|                                 2 |</span><br><span class="line">+<span class="comment">-----------------------------------+</span></span><br><span class="line">1 row in <span class="keyword">set</span> (<span class="number">0.01</span> sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; <span class="keyword">SELECT</span> <span class="keyword">Now</span>();</span><br><span class="line">+<span class="comment">---------------------+</span></span><br><span class="line">| Now()               |</span><br><span class="line">+<span class="comment">---------------------+</span></span><br><span class="line">| 2020-06-29 21:56:31 |</span><br><span class="line">+<span class="comment">---------------------+</span></span><br><span class="line">1 row in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; <span class="keyword">SELECT</span> <span class="keyword">CurTime</span>();</span><br><span class="line">+<span class="comment">-----------+</span></span><br><span class="line">| CurTime() |</span><br><span class="line">+<span class="comment">-----------+</span></span><br><span class="line">| 21:57:09  |</span><br><span class="line">+<span class="comment">-----------+</span></span><br><span class="line">1 row in <span class="keyword">set</span> (<span class="number">0.01</span> sec)</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 实际用于按日期，时间等匹配日期</span></span><br><span class="line"><span class="comment">-- 此处的order_date为datetime类型：</span></span><br><span class="line">SEL ECT cust_id，order_num</span><br><span class="line"><span class="keyword">FROM</span> orders</span><br><span class="line"><span class="keyword">WHERE</span> <span class="built_in">Date</span>(order_date) = <span class="string">'2020-09-01'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 使用 Between And</span></span><br><span class="line"><span class="keyword">SELECT</span> cust_id，order_num</span><br><span class="line"><span class="keyword">FROM</span> orders</span><br><span class="line"><span class="keyword">WHERE</span> <span class="built_in">Date</span>(order_date) <span class="keyword">BETWEEN</span> <span class="string">'2005-09-01'</span> <span class="keyword">AND</span> <span class="string">'2005-09-30'</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+<h2 id="3、数值处理函数"><a href="#3、数值处理函数" class="headerlink" title="3、数值处理函数"></a>3、数值处理函数</h2><blockquote>
+<p>数值处理函数仅处理数值数据。这些函数一般主要用于代数、三角或几何运算，因此没有串或日期 — 时间处理函数的使用那么频繁。具有讽刺意味的是，在主要DBMS的函数中，数值函数是最一致最统一的函数。</p>
+</blockquote>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/29/53f96173db9f1881175d8f021d504f8d.png" alt=""></p>
+<h1 id="十三、分组（GROUP）"><a href="#十三、分组（GROUP）" class="headerlink" title="十三、分组（GROUP）"></a>十三、分组（GROUP）</h1><blockquote>
+<p>用于统计一类数据的方法：<code>GROUP BY 某一列 HAVING 条件</code></p>
+<ul>
+<li><code>GROUP BY</code> 子句中列出的每个列都必须是检索列或有效的表达式(<code>eg:nums * score</code>)（但<strong>不能是聚集函数</strong>）。如果在 <code>SELECT</code> 中使用表达式，则必须在<code>GROUP BY</code>子句中指定相同的表达式。<strong>不能使用别名</strong>。</li>
+<li>除聚集计算语句外， <code>SELECT</code> 语句中的每个列都必须在 <code>GROUP BY</code> 子句中给出。</li>
+<li>如果分组列中具有 <code>NULL</code> 值，则 <code>NULL</code> 将作为一个分组返回。如果列中有多行 <code>NULL</code> 值，它们将分为一组。</li>
+<li><code>GROUP BY</code> 子句必须出现在 <code>WHERE</code> 子句之后， <code>ORDER BY</code> 子句之前。</li>
+</ul>
+</blockquote>
+<h2 id="1、单列分组"><a href="#1、单列分组" class="headerlink" title="1、单列分组"></a>1、单列分组</h2><figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; SELECT class_id, COUNT(*) num FROM students GROUP BY class_id;</span><br><span class="line">+<span class="comment">----------+-----+</span></span><br><span class="line">| class_id | num |</span><br><span class="line">+<span class="comment">----------+-----+</span></span><br><span class="line">|        1 |   4 |</span><br><span class="line">|        2 |   3 |</span><br><span class="line">|        3 |   3 |</span><br><span class="line">+<span class="comment">----------+-----+</span></span><br><span class="line">3 rows in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h2 id="2、多列分组"><a href="#2、多列分组" class="headerlink" title="2、多列分组"></a>2、多列分组</h2><figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; SELECT class_id, gender, COUNT(*) num FROM students GROUP BY class_id, gender;</span><br><span class="line">+<span class="comment">----------+--------+-----+</span></span><br><span class="line">| class_id | gender | num |</span><br><span class="line">+<span class="comment">----------+--------+-----+</span></span><br><span class="line">|        1 | M      |   2 |</span><br><span class="line">|        1 | F      |   2 |</span><br><span class="line">|        2 | F      |   1 |</span><br><span class="line">|        2 | M      |   2 |</span><br><span class="line">|        3 | F      |   2 |</span><br><span class="line">|        3 | M      |   1 |</span><br><span class="line">+<span class="comment">----------+--------+-----+</span></span><br><span class="line">6 rows in <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<ul>
+<li><strong>注意</strong>：SQL引擎不能把多个<code>name</code>的值放入一行记录中。因此，聚合查询的列中，只能放入分组的列。</li>
+</ul>
+<blockquote>
+<p>原因：class_id = 1 有 4 个人，他们班级名相同，但name不同，如果有了name列，应该显示几个名字呢？？？</p>
+<p>所以干脆直接报错！ </p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mysql&gt; SELECT name, class_id, COUNT(*) num FROM students GROUP BY class_id;</span><br><span class="line">ERROR 1055 (42000): Expression <span class="comment">#1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'test.students.name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+
+
+
+
+<h2 id="3、WITH-ROLLUP"><a href="#3、WITH-ROLLUP" class="headerlink" title="3、WITH ROLLUP"></a>3、WITH ROLLUP</h2><blockquote>
+<p>在<code>GROUP BY</code>后面加<code>WITH ROLLUP</code>来进行统计分组的总行数。</p>
+<p>如下方的最后一行！</p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT class_id, COUNT(*) total FROM students GROUP BY class_id WITH ROLLUP;</span><br><span class="line">+<span class="comment">----------+-------+</span></span><br><span class="line">| class_id | total |</span><br><span class="line">+<span class="comment">----------+-------+</span></span><br><span class="line">|        1 |     5 |</span><br><span class="line">|        2 |     5 |</span><br><span class="line">|        3 |     3 |</span><br><span class="line">|        5 |     1 |</span><br><span class="line">|     NULL |    14 |</span><br><span class="line">+<span class="comment">----------+-------+</span></span><br><span class="line">5 rows in <span class="keyword">set</span> (<span class="number">0.01</span> sec)</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h2 id="4、对分组的过滤"><a href="#4、对分组的过滤" class="headerlink" title="4、对分组的过滤"></a>4、对分组的过滤</h2><blockquote>
+<p><code>WHERE</code>用于过滤行，<code>HAVING</code>用于过滤分组。</p>
+<p>语法与<code>WHERE</code>一模一样。</p>
+<p> <code>WHERE</code> 在数据分组前进行过滤， <code>HAVING</code> 在数据分组后进行过滤。</p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT class_id, COUNT(*) total FROM students GROUP BY class_id HAVING COUNT(*) &gt;= 3;</span><br><span class="line">+<span class="comment">----------+-------+</span></span><br><span class="line">| class_id | total |</span><br><span class="line">+<span class="comment">----------+-------+</span></span><br><span class="line">|        1 |     5 |</span><br><span class="line">|        2 |     5 |</span><br><span class="line">|        3 |     3 |</span><br><span class="line">+<span class="comment">----------+-------+</span></span><br><span class="line">3 rows in <span class="keyword">set</span> (<span class="number">0.01</span> sec)</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+<h3 id="全部使用的顺序"><a href="#全部使用的顺序" class="headerlink" title="全部使用的顺序"></a>全部使用的顺序</h3><blockquote>
+<p><code>SELECT</code>子句顺序：<code>SELECT (FROM) (WHERE) (GROUP BY) (ORDER BY) (LIMIT)</code></p>
+<p>括号表示可选！</p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT class_id, COUNT(*) total</span><br><span class="line">    -&gt; FROM students</span><br><span class="line">    -&gt; WHERE gender = 'M'</span><br><span class="line">    -&gt; GROUP BY class_id HAVING COUNT(*) &gt;= 2</span><br><span class="line">    -&gt; ORDER BY total</span><br><span class="line">    -&gt; LIMIT 3;</span><br><span class="line">+<span class="comment">----------+-------+</span></span><br><span class="line">| class_id | total |</span><br><span class="line">+<span class="comment">----------+-------+</span></span><br><span class="line">|        1 |     2 |</span><br><span class="line">|        2 |     4 |</span><br><span class="line">+<span class="comment">----------+-------+</span></span><br><span class="line">2 rows in <span class="keyword">set</span> (<span class="number">0.01</span> sec)</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+<h1 id="十四、子查询"><a href="#十四、子查询" class="headerlink" title="十四、子查询"></a>十四、子查询</h1><blockquote>
+<p>就是嵌套的多级<code>SELECT</code>语句。</p>
+<p>使用连接（联结）通常比子查询要更快！</p>
+</blockquote>
+<h2 id="1、利用子查询进行过滤"><a href="#1、利用子查询进行过滤" class="headerlink" title="1、利用子查询进行过滤"></a>1、利用子查询进行过滤</h2><blockquote>
+<p>子查询总是从内向外处理，使用适当的缩进可以更易于阅读和调试。内层子查询的结果作为上层的基础进行查询，如下所示，将内层查询结果转变为<code>IN</code>的格式进行下一次查询。</p>
+<p>不仅仅可以使用<code>IN</code>，其他的操作符都是可以的，<code>LIKE</code>，<code>&gt;</code>，，，等等都可以！</p>
+<p>嵌套太多会降低性能，不建议嵌套太多！</p>
+<p><strong>注意：要保证<code>WHERE</code>的列与子查询<code>SELECT</code>的列相同！</strong></p>
+<p>同样：使用多表连接通过<code>WHERE</code>也可以实现相同效果。</p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> cust_name，cust_contact</span><br><span class="line"><span class="keyword">FROM</span> customers</span><br><span class="line"><span class="keyword">WHERE</span> cust_id <span class="keyword">IN</span> (<span class="keyword">SELECT</span> cust_id</span><br><span class="line">				  <span class="keyword">FROM</span> orders</span><br><span class="line">				  <span class="keyword">WHERE</span> order_num <span class="keyword">IN</span> (<span class="keyword">SELECT</span> order_num</span><br><span class="line">									  <span class="keyword">FROM</span> orderitems</span><br><span class="line">									  <span class="keyword">WHERE</span> prod_id = <span class="string">'TNT2'</span>));</span><br><span class="line">+<span class="comment">----------------+--------------+</span></span><br><span class="line">| cust_name      | cust_contact |</span><br><span class="line">| Coyote InC.    | Y Lee		|</span><br><span class="line">| Yosemite P1ace | Y Sam		|</span><br><span class="line">+<span class="comment">----------------+--------------+</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 完全相同</span></span><br><span class="line"><span class="keyword">SELECT</span> cust_name，cust_contact</span><br><span class="line"><span class="keyword">FROM</span> customers，orders，orderitems</span><br><span class="line"><span class="keyword">WHERE</span> customers.cust_id = orders.cust_id</span><br><span class="line"><span class="keyword">AND</span> orderitems.order_num = orders.order_num</span><br><span class="line"><span class="keyword">AND</span> prod_id = <span class="string">'TNT2'</span> ;</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+
+
+<h2 id="2、利用子查询处理计算字段"><a href="#2、利用子查询处理计算字段" class="headerlink" title="2、利用子查询处理计算字段"></a>2、利用子查询处理计算字段</h2><blockquote>
+<p>除了在<code>WHERE</code>后进行过滤，还可以在<code>WHERE</code>前进行计算字段的查询处理！</p>
+<p>这里使用了<strong>完全限定列名</strong>，即使用<code>表.列 orders.cust_id</code>来进行限定列的范围，当然是为了防止多表存在相同列名。</p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> cust_name,</span><br><span class="line">	   cust_state，</span><br><span class="line">	   (<span class="keyword">SELECT</span> <span class="keyword">COUNT</span>(*)</span><br><span class="line">		<span class="keyword">FROM</span> orders</span><br><span class="line">		<span class="keyword">WHERE</span> orders.cust_id = customers.cust_id) <span class="keyword">AS</span> orders </span><br><span class="line"><span class="keyword">FROM</span> customers</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> cust_name;</span><br><span class="line">+<span class="comment">----------------+------------+--------+</span></span><br><span class="line">|	cust_name    |cust_state  | orders |</span><br><span class="line">+<span class="comment">----------------+------------+--------+</span></span><br><span class="line">| Coyote Inc.    | MI		  |	2	   |</span><br><span class="line">| E Fudd		 | IL		  |	1	   |</span><br><span class="line">| Mouse House	 | 0H		  |	0	   |</span><br><span class="line">| Wascals		 | IN		  |	1	   |</span><br><span class="line">| Yosemite Place | AZ		  |	1	   |</span><br><span class="line">+<span class="comment">----------------+------------+--------+</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+
+
+<h1 id="十五、组合查询"><a href="#十五、组合查询" class="headerlink" title="十五、组合查询"></a>十五、组合查询</h1><blockquote>
+<p>即使用<code>UNION</code>来合并多条<code>SELECT</code>语句。</p>
+</blockquote>
+<h2 id="1、UNION-和-WHERE"><a href="#1、UNION-和-WHERE" class="headerlink" title="1、UNION 和 WHERE"></a>1、UNION 和 WHERE</h2><blockquote>
+<p> <code>UNION</code> 几乎总是完成与多个<code>WHERE</code> 条件相同的工作。 </p>
+<p><code>UNION ALL</code> 为 <code>UNION</code> 的一种形式，它完成<code>WHERE</code> 子句完成不了的工作。如果确实需要每个条件的匹配行全部出现（包括重复行），则必须使用 <code>UNION ALL</code> 而不是 <code>WHERE</code> 。</p>
+<ul>
+<li><p><code>UNION</code> 中的每个查询必须包含相同的列、表达式或聚集函数！</p>
+</li>
+<li><p>列数据类型必须兼容：类型不必完全相同，但必须是<code>DBMS</code>可以隐含地转换的类型（例如，不同的数值类型或不同的日期类型）。</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="2、UNION"><a href="#2、UNION" class="headerlink" title="2、UNION"></a>2、UNION</h2><blockquote>
+<p>会过滤重复行！</p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> vend_id, prod_id, prod_price</span><br><span class="line"><span class="keyword">FROM</span> products</span><br><span class="line"><span class="keyword">WHERE</span> prod_price &lt;= <span class="number">5</span></span><br><span class="line"><span class="keyword">UNION</span></span><br><span class="line"><span class="keyword">SELECT</span> vend_id，prod_id，prod_price</span><br><span class="line"><span class="keyword">FROM</span> products</span><br><span class="line"><span class="keyword">WHERE</span> vend_id <span class="keyword">IN</span> (<span class="number">1001</span>,<span class="number">1002</span>);</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h2 id="3、UNION-ALL"><a href="#3、UNION-ALL" class="headerlink" title="3、UNION ALL"></a>3、UNION ALL</h2><blockquote>
+<p>不会过滤重复行！</p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> vend_id, prod_id, prod_price</span><br><span class="line"><span class="keyword">FROM</span> products</span><br><span class="line"><span class="keyword">WHERE</span> prod_price &lt;= <span class="number">5</span></span><br><span class="line"><span class="keyword">UNION</span> <span class="keyword">ALL</span></span><br><span class="line"><span class="keyword">SELECT</span> vend_id，prod_id，prod_price</span><br><span class="line"><span class="keyword">FROM</span> products</span><br><span class="line"><span class="keyword">WHERE</span> vend_id <span class="keyword">IN</span> (<span class="number">1001</span>,<span class="number">1002</span>);</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h2 id="4、组合结果排序"><a href="#4、组合结果排序" class="headerlink" title="4、组合结果排序"></a>4、组合结果排序</h2><blockquote>
+<p>只能在最后使用一条<code>ORDER BY</code> 进行排序，排序作用于<code>UNION</code>的结果！</p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> vend_id, prod_id, prod_price</span><br><span class="line"><span class="keyword">FROM</span> products</span><br><span class="line"><span class="keyword">WHERE</span> prod_price &lt;= <span class="number">5</span></span><br><span class="line"><span class="keyword">UNION</span> <span class="keyword">ALL</span></span><br><span class="line"><span class="keyword">SELECT</span> vend_id，prod_id，prod_price</span><br><span class="line"><span class="keyword">FROM</span> products</span><br><span class="line"><span class="keyword">WHERE</span> vend_id <span class="keyword">IN</span> (<span class="number">1001</span>,<span class="number">1002</span>)</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> ven_id, prod_price;</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+<h1 id="十六、全文本搜索"><a href="#十六、全文本搜索" class="headerlink" title="十六、全文本搜索"></a>十六、全文本搜索</h1><h2 id="1、两种引擎"><a href="#1、两种引擎" class="headerlink" title="1、两种引擎"></a>1、两种引擎</h2><ol>
+<li><code>InnoDB</code>是一个可靠的事务处理引擎，它<strong>不支持</strong>全文本搜索，但<strong>支持</strong>事务处理。</li>
+<li><code>MyISAM</code>是一个性能极高的引擎，它<strong>支持</strong>全文本搜索，但<strong>不支持</strong>事务处理。</li>
+</ol>
+<blockquote>
+<ol>
+<li><p><strong>性能</strong>：通配符和正则表达式匹配通常要求<code>MySQL</code>尝试匹配表中所有行（而且这些搜索极少使用表索引）。因此，由于被搜索行数不断增加，这些搜索可能非常耗时。</p>
+</li>
+<li><p><strong>明确控制</strong>：使用通配符和正则表达式匹配，很难（而且并不总是能）明确地控制匹配什么和不匹配什么。例如，指定一个词匹配和指定一个词不匹配….</p>
+</li>
+<li><p><strong>智能化的结果</strong>：虽然基于通配符和正则表达式的搜索提供了非常灵活的搜索，但它们都不能提供一种智能化的选择结果的方法。例如：一个特殊词的搜索将会返回包含这些词的所有行，而不区分包含单个匹配的行和包含多个匹配的行（按照可能是更好地匹配来排列它们）。类似，一个特殊词的搜索将不会找出不包含该词但包含其他相关词的行。</p>
+</li>
+</ol>
+<p>　　所有这些限制以及更多的限制都可以用<strong>全文本搜索</strong>来解决，在使用全文本搜索时，<code>MySQL</code>不需要分别查看每个行，不需要分别分析和处理每个词。<code>MySQL</code>创建指定列中各词的一个<strong>索引</strong>，搜索可以针对这些词进行。这样，<code>MySQL</code>可以快速有效的决定那些词分配（那些行包含它们），那些词不匹配，它们匹配的频率，等等。</p>
+</blockquote>
+<h2 id="2、启用全文本搜索"><a href="#2、启用全文本搜索" class="headerlink" title="2、启用全文本搜索"></a>2、启用全文本搜索</h2><blockquote>
+<p>这些列中有一个名为<code>note_text</code>的列，为了进行全文本搜索，<code>MySQL</code>根据字句<code>FULLTEXT(note_text)</code>的指示对它进行了索引，这里的<code>FULLTEXT</code><strong>索引</strong>单个列，如果需要也可以指定<strong>多个列</strong>。</p>
+<p>在定义之后，<code>MySQL</code>自动维护该索引。在增加、更新或删除行时，索引随之自动更新。</p>
+<p>　　可以在创建表时指定<code>FULLTEXT</code>，或者在稍后指定。但是不要在导入数据时使用<code>FULLTEXT</code>，因为更新索引需要时间，虽然不是很多，但毕竟要花时间。如果正在导入数据到一个新表，此时不应该启用<code>FULLTEXT</code>索引。应该首先导入所有数据，然后在修改表，定义<code>FULLTEXT</code>，这要有助于更快地导入数据（而且使索引的总时间小于在导入每行每行时分别进行索引所需的总时间）。</p>
+<p>在建表最后指出引擎：<code>ENGINE=MyISAM</code></p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> productnotes           </span><br><span class="line">(</span><br><span class="line">    note_id <span class="built_in">int</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT,</span><br><span class="line">    prod_id <span class="built_in">char</span>(<span class="number">10</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">    note_text <span class="built_in">text</span> <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">    note_date datetime <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">    PRIMARY <span class="keyword">KEY</span>(note_id),</span><br><span class="line">    FULLTEXT(note_text)</span><br><span class="line">)<span class="keyword">ENGINE</span>=MyISAM;</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+<h2 id="3、进行全文本搜索"><a href="#3、进行全文本搜索" class="headerlink" title="3、进行全文本搜索"></a>3、进行全文本搜索</h2><p>全文本搜索用到的两个函数：</p>
+<blockquote>
+<p><strong>传递给<code>Match</code>的值必须与<code>FULLTEXT()</code>定义中的相同，如果指定多个列，则必须列出它们（而且次序相同）。</strong></p>
+<p><strong>搜索不区分大小写，除非使用<code>BINARY</code>方式。</strong></p>
+<p>全文本搜索的一个重要部分就是对<strong>结果排序</strong>。具有较高等级（单词出现的位置靠前，数量多的优先级更高）的行先返回。<code>LIKE</code>同样可以实现，但是由于使用通配符搜索，效率低，速度慢，且输出无序！</p>
+</blockquote>
+<ol>
+<li><code>Match()</code>指定被搜索的列 </li>
+<li><code>Against()</code>指定要使用的搜索表达式。</li>
+</ol>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> note_text</span><br><span class="line"><span class="keyword">FROM</span> productnotes</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">Match</span>(note_text) Against(<span class="string">'rabbit'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> note_text</span><br><span class="line"><span class="keyword">FROM</span> productnotes</span><br><span class="line"><span class="keyword">WHERE</span> note_text <span class="keyword">LIKE</span> <span class="string">'%rabbit%'</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+<p><strong>如下：可以返回每行计算后的优先级作为<code>RANK</code>一列！</strong></p>
+<blockquote>
+<p>等级由MySQL根据行中词的数目、唯一词的数目、整个索引中词的总数以及包含该词的行的数目计算出来。</p>
+</blockquote>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> note_text</span><br><span class="line">       <span class="keyword">Match</span>(note_text) Against(<span class="string">'rabbit'</span>) <span class="keyword">AS</span> <span class="keyword">RANK</span></span><br><span class="line"><span class="keyword">FROM</span> productnotes;</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/30/d3fce39877aa59040f814339489a3e62.png" alt=""></p>
+<h2 id="4、使用查询拓展"><a href="#4、使用查询拓展" class="headerlink" title="4、使用查询拓展"></a>4、使用查询拓展</h2><blockquote>
+<p>查询扩展用来设法放宽所返回的全文本搜索结果的范围。</p>
+<p>在<code>Against</code>内添加<code>WITH QUERY EXPANSION</code>表名使用查询拓展！</p>
+</blockquote>
+<p><strong>使用查询扩展时，MySQL对数据和索引进行两遍扫描来完成搜索：</strong></p>
+<ul>
+<li>首先，进行一个基本的全文本搜索，找出与搜索条件匹配的所有航</li>
+<li>其次，MySQL检查这些匹配行并选择所有有用的词</li>
+<li>再其次，MySQL再次进行全文本搜索，这次不仅使用原来的条件，而且还是用使用所有有用的词</li>
+</ul>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> note_text</span><br><span class="line"><span class="keyword">FROM</span> productnotes</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">Match</span>(note_text) Against(<span class="string">'anvils'</span> <span class="keyword">WITH</span> <span class="keyword">QUERY</span> EXPANSION) ;</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+<h2 id="5、布尔文本搜索"><a href="#5、布尔文本搜索" class="headerlink" title="5、布尔文本搜索"></a>5、布尔文本搜索</h2><blockquote>
+<p><code>MySQL</code>支持全文本搜索的另外一种形式，称为<strong>布尔方式</strong>（<code>boolean mode</code>）。</p>
+<p><strong>即使没有<code>FULLTEXT</code>索引也可以使用</strong><br> 布尔方式不同于迄今为止使用的全文本搜索语法的地方在于，即使没有定义fulltext索引，也可以使用它。但是这是一种非常<strong>缓慢</strong>的操作（其性能随着数据量的增加而降低）。</p>
+<p>在<code>Against</code>内添加<code>IN BOOLEAN MODE</code>来表名使用布尔文本搜索！ </p>
+</blockquote>
+<p>此全文本搜索检索包含词<code>heavy</code>的所有行（有两行）。其中使用了关键字<code>IN BOOLEAN MODE</code>，但实际上没有指定布尔操作符，因此，其结果与没有指定布尔方式的结果相同：</p>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> note_text</span><br><span class="line"><span class="keyword">FROM</span> productnotes</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">Match</span>(note_text) Against(<span class="string">'heavy'</span> <span class="keyword">IN</span> <span class="built_in">BOOLEAN</span> <span class="keyword">MODE</span>);</span><br></pre></td></tr></tbody></table></figure>
+
+<p>可匹配包含heavy但不包含任意以rope开始的词的所有行：</p>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span><span class="string">` `</span>note_text</span><br><span class="line"><span class="keyword">FROM</span><span class="string">` `</span>productnotes</span><br><span class="line"><span class="keyword">WHERE</span><span class="string">` `</span><span class="keyword">Match</span>(note_text) Against(<span class="string">'heavy -rope*'</span> <span class="keyword">IN</span> <span class="built_in">BOOLEAN</span> <span class="keyword">MODE</span>);</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p><strong>全文本布尔操作符：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">布尔操作符</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">+</td>
+<td align="center">包含，词必须存在</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">排除，词必须不出现</td>
+</tr>
+<tr>
+<td align="center">&gt;</td>
+<td align="center">包含，而且增加等级值</td>
+</tr>
+<tr>
+<td align="center">&lt;</td>
+<td align="center">包含，而且减少等级制</td>
+</tr>
+<tr>
+<td align="center">()</td>
+<td align="center">把词组成表达式(允许这些子表达式作为一个组被包含、排除、排列等)</td>
+</tr>
+<tr>
+<td align="center">~</td>
+<td align="center">取消一个词的排序值</td>
+</tr>
+<tr>
+<td align="center">*</td>
+<td align="center">词尾的通配符</td>
+</tr>
+<tr>
+<td align="center">“”</td>
+<td align="center">定义一个短语(与单个词的列表不一样，它匹配整个短语以便包含或排除这个短语)</td>
+</tr>
+</tbody></table>
+<p>部分示例如下：</p>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> note_text</span><br><span class="line"><span class="keyword">FROM</span> productnotes</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">Match</span>(note_text) Against(<span class="string">'+rabbit +bait'</span> <span class="keyword">IN</span> <span class="built_in">BOOLEAN</span> <span class="keyword">MODE</span>);</span><br><span class="line">这个搜索匹配包含词rabbit和bait的行</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="keyword">SELECT</span> note_text</span><br><span class="line"><span class="keyword">FROM</span> productnotes</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">Match</span>(note_text) Against(<span class="string">'rabbit bait'</span> <span class="keyword">IN</span> <span class="built_in">BOOLEAN</span> <span class="keyword">MODE</span>);</span><br><span class="line">没有指定操作符，这个搜索匹配包含词rabbit和bait中的至少一个词的行；</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="keyword">SELECT</span> note_text</span><br><span class="line"><span class="keyword">FROM</span> productnotes</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">Match</span>(note_text) Against(<span class="string">'“rabbit bait”'</span> <span class="keyword">IN</span> <span class="built_in">BOOLEAN</span> <span class="keyword">MODE</span>);</span><br><span class="line">这个搜索匹配短语rabbit bait，而不是匹配两个词；</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="keyword">SELECT</span> note_text</span><br><span class="line"><span class="keyword">FROM</span> productnotes</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">Match</span>(note_text) Against(<span class="string">'&gt;rabbit &lt;carrot'</span> <span class="keyword">IN</span> <span class="built_in">BOOLEAN</span> <span class="keyword">MODE</span>);</span><br><span class="line">这个搜索匹配rabbit 和carrot，增加前者的等级，降低后者的等级；</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="keyword">SELECT</span> note_text</span><br><span class="line"><span class="keyword">FROM</span> productnotes</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">Match</span>(note_text) Against(<span class="string">'+safe +(&lt;combination)'</span> <span class="keyword">IN</span> <span class="built_in">BOOLEAN</span> <span class="keyword">MODE</span>);</span><br><span class="line">这个搜索匹配safe 和combination，降低后者的等级；</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+<p><strong>小总结：</strong></p>
+<ul>
+<li>全文本搜索数据时，短词被忽略而且从索引中删除。短词定义为那些具有3个或者3个以下字符的词（如果需要，这个数目可以修改）。</li>
+<li>MySQL带有一个内建的非用词（``stopword`）列表，这些词在索引全文本数据时总是被忽略。如果需要，可以覆盖这个列表（请参阅MySQL文档以了解如何完成此工作）。</li>
+<li>许多词出现的频率高，搜索它们没有用处（返回太多的结果），因此，MySQL定义了一条50%的规则，如果一个词出现在50%以上的行中，则将它作为一个非用词忽略。50%规则不用于<code>IN BOOLEAN MODE</code></li>
+<li>如果表中的行数小于3行，则全文本搜索将不返回结果（因为每个词或者不出现，或者至少出现在50%的行中）。</li>
+<li>忽略词中的单引号 ‘ 。例如， <code>don't</code>索引为 <code>dont</code> 。</li>
+<li>仅在<code>MyISAM</code>的数据库引擎中支持全文本搜索。</li>
+<li>不具有词分隔符（包括日语和汉语）的语言不能恰当地返回全文本搜索结果。</li>
+</ul>
 <center style="color: red; font-size: 25px">数据库教程之查询数据已完成！敬请期待后续内容！</center><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -544,7 +1013,7 @@ if (autoChangeMode === '1') {
             });
             document.body.appendChild(img);
           });
-      </script></div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Dreamy.NXD</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://niuxvdong.top/posts/16928.html">https://niuxvdong.top/posts/16928.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://niuxvdong.top" target="_blank">小牛博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/SELECT/">SELECT</a><a class="post-meta__tags" href="/tags/%E6%9F%A5%E8%AF%A2/">查询</a></div><div class="post_share"><div class="social-share" data-image="https://img.niuxvdong.top/20200627132459.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><button class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="post-qr-code__img" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/WeChantQR.jpg" alt="微信" onclick="window.open('https://cdn.jsdelivr.net/gh/niuxvdong/images/img/WeChantQR.jpg')"/><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="post-qr-code__img" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/AliPayQR.jpg" alt="支付宝" onclick="window.open('https://cdn.jsdelivr.net/gh/niuxvdong/images/img/AliPayQR.jpg')"/><div class="post-qr-code__desc">支付宝</div></li></ul></div></button></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/1495.html"><img class="prev-cover" data-src="https://img.niuxvdong.top/thumb-1920-677543.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">JS实战之油猴脚本编写之知乎一键转载</div></div></a></div><div class="next-post pull-right"><a href="/posts/15411.html"><img class="next-cover" data-src="https://img.niuxvdong.top/1585990922032.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">数据库教程之基础知识</div></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script><script>var requestSetting = function (from,set) {
+      </script></div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Dreamy.NXD</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://niuxvdong.top/posts/16928.html">https://niuxvdong.top/posts/16928.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://niuxvdong.top" target="_blank">小牛博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://img.niuxvdong.top/20200627212152.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><button class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="post-qr-code__img" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/WeChantQR.jpg" alt="微信" onclick="window.open('https://cdn.jsdelivr.net/gh/niuxvdong/images/img/WeChantQR.jpg')"/><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="post-qr-code__img" src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/AliPayQR.jpg" alt="支付宝" onclick="window.open('https://cdn.jsdelivr.net/gh/niuxvdong/images/img/AliPayQR.jpg')"/><div class="post-qr-code__desc">支付宝</div></li></ul></div></button></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/1495.html"><img class="prev-cover" data-src="https://img.niuxvdong.top/thumb-1920-677543.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">JS实战之油猴脚本编写之知乎一键转载</div></div></a></div><div class="next-post pull-right"><a href="/posts/15411.html"><img class="next-cover" data-src="https://img.niuxvdong.top/1585990922032.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">数据库教程之基础知识</div></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script><script>var requestSetting = function (from,set) {
   var from = from
   var setting = set.split(',').filter(function(item){
   return from.indexOf(item) > -1
