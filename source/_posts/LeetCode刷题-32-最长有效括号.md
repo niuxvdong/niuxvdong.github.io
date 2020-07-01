@@ -3,8 +3,8 @@ title: LeetCode刷题-32.最长有效括号
 author: Mr.Niu
 toc: true
 abbrlink: 24831
-top_img: 'https://i.loli.net/2020/06/25/BSOCINJMrs59xHm.jpg'
-cover: 'https://i.loli.net/2020/06/25/BSOCINJMrs59xHm.jpg'
+top_img: 'https://img.niuxvdong.top/20200627132547.jpg'
+cover: 'https://img.niuxvdong.top/20200627132547.jpg'
 categories: LeetCode刷题
 tags:
   - 动态规划

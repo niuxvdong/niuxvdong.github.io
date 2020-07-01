@@ -3,8 +3,8 @@ title: LeetCode刷题-27.移除元素
 author: Mr.Niu
 toc: true
 abbrlink: 37226
-top_img: 'https://i.loli.net/2020/05/20/JVxn1AeYryo9CaE.png'
-cover: 'https://i.loli.net/2020/05/20/JVxn1AeYryo9CaE.png'
+top_img: 'https://img.niuxvdong.top/bg.png'
+cover: 'https://img.niuxvdong.top/bg.png'
 categories: LeetCode刷题
 tags:
   - 双指针
