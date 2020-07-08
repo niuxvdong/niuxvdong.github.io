@@ -4,6 +4,85 @@
   
     
     <entry>
+      <title>LeetCode刷题-58. 最后一个单词的长度</title>
+      <link href="/posts/33807.html"/>
+      <url>/posts/33807.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote><p>题目链接：<a href="https://leetcode-cn.com/problems/length-of-last-word/" target="_blank" rel="noopener">58. 最后一个单词的长度</a></p></blockquote><h1 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h1><blockquote><p>简单题！</p></blockquote><h2 id="题目简述："><a href="#题目简述：" class="headerlink" title="题目简述："></a>题目简述：</h2><p>返回最后一个字符串的长度！</p><h2 id="题解：-1"><a href="#题解：-1" class="headerlink" title="题解："></a>题解：</h2><p><strong>思路：</strong></p><p>先将末尾多余的空格过滤掉！</p><p>再从后往前扫描，进行统计，直到遇到第一个空格为止！</p><p><strong>注意：</strong></p><ul><li>特判字符串为空的情况！</li></ul><h2 id="AC代码："><a href="#AC代码：" class="headerlink" title="AC代码："></a>AC代码：</h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> {</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">lengthOfLastWord</span><span class="params">(<span class="built_in">string</span> s)</span> </span>{</span><br><span class="line">        <span class="keyword">if</span>(s.<span class="built_in">size</span>() == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> n = s.<span class="built_in">size</span>() - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(n &amp;&amp; s[n] == <span class="string">' '</span>) n--;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = n; i &gt;= <span class="number">0</span>; i--){</span><br><span class="line">            <span class="keyword">if</span>(s[i] == <span class="string">' '</span>) <span class="keyword">return</span> res;</span><br><span class="line">            res ++;</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> LeetCode刷题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 模拟 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LeetCode刷题-57. 插入区间</title>
+      <link href="/posts/4935.html"/>
+      <url>/posts/4935.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote><p>题目链接：<a href="https://leetcode-cn.com/problems/insert-interval/" target="_blank" rel="noopener">57. 插入区间</a></p></blockquote><h1 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h1><blockquote><p>看似和上一题区间合并类似，实则没什么关系！</p></blockquote><h2 id="题目简述："><a href="#题目简述：" class="headerlink" title="题目简述："></a>题目简述：</h2><p>给一个按照区间左端点排序的列表，给定一个待插入区间，使得插入后，没有重叠元素！</p><h2 id="题解：-1"><a href="#题解：-1" class="headerlink" title="题解："></a>题解：</h2><p>由于已经排好序了，所以我们就不需要排序了！</p><p><strong>分三段处理：</strong></p><ol><li>找到可以插入待插入区间的上一个区间，即从开始到该区间是不需要参与合并的，即<code>a[k][1] &lt; b[0]</code></li><li>找到可以和待插入区间合并的区间的最后一个区间，即<code>a[k][0] &lt;= b[1]</code>，不断更新待插入区间的右端点，直到无法合并结束，此时区间为待插入区间</li><li>最后一段就是剩下的区间了，按顺序插入即可</li></ol><p><strong>看一下简图：</strong></p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/08/8caa0f75a700023ee6ca9c06a0968bc0.png" alt=""></p><p><strong>注意：</strong></p><ul><li>处理第二段不要越界，即<code>k &lt; a.size()</code></li></ul><p><strong>时间复杂度：</strong> 扫描一遍，为<code>O(n)</code></p><h2 id="AC代码："><a href="#AC代码：" class="headerlink" title="AC代码："></a>AC代码：</h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> {</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt; <span class="title">insert</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt;&amp; a, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; b)</span> </span>{</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt; res;</span><br><span class="line">        <span class="keyword">int</span> k = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(k &lt; a.<span class="built_in">size</span>() &amp;&amp; a[k][<span class="number">1</span>] &lt; b[<span class="number">0</span>]) res.push_back(a[k++]);</span><br><span class="line">        <span class="keyword">if</span>(k &lt; a.<span class="built_in">size</span>()){</span><br><span class="line">            b[<span class="number">0</span>] = <span class="built_in">min</span>(a[k][<span class="number">0</span>], b[<span class="number">0</span>]);</span><br><span class="line">            <span class="keyword">while</span>(k &lt; a.<span class="built_in">size</span>() &amp;&amp; a[k][<span class="number">0</span>] &lt;= b[<span class="number">1</span>]) b[<span class="number">1</span>] = <span class="built_in">max</span>(b[<span class="number">1</span>], a[k++][<span class="number">1</span>]);</span><br><span class="line">        }</span><br><span class="line">        res.push_back(b);</span><br><span class="line">        <span class="keyword">while</span>(k &lt; a.<span class="built_in">size</span>()) res.push_back(a[k++]);</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> LeetCode刷题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 排序 </tag>
+            
+            <tag> 模拟 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LeetCode刷题-56. 合并区间</title>
+      <link href="/posts/63206.html"/>
+      <url>/posts/63206.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote><p>题目链接：<a href="https://leetcode-cn.com/problems/merge-intervals/" target="_blank" rel="noopener">56. 合并区间</a></p></blockquote><h1 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h1><blockquote><p>区间合并问题，先人的总结，先按照左端点排序再进行合并！</p></blockquote><h2 id="题目简述："><a href="#题目简述：" class="headerlink" title="题目简述："></a>题目简述：</h2><p>给定一堆区间，将重叠的区间进行合并，重新返回！</p><h2 id="题解：-1"><a href="#题解：-1" class="headerlink" title="题解："></a>题解：</h2><p><strong>思路：</strong></p><ol><li>按照左端点排序，左端点相同，按照右端点排序</li><li>使用<code>l</code>，<code>r</code>两个指针维护最大可拓展区间</li><li>若当前左端点严格大于右指针，说明当前区间无法和上一个区间合并，则将上一个区间保存起来，更新新的左右指针为当前区间</li><li>若当前左端点小于等于上一个区间，则说明当前区间可以与上一个区间进行合并，则更新最大可拓展区间的右端点（即右指针）</li><li>最后将最后一个区间也保存起来</li></ol><p><strong>稍做解释：</strong> </p><p>按左端点排序，再按右端点排序，那么如果有重叠部分的区间，该区间的左端点一定在上一个区间的左端点的后面！这样如果有重叠就合并，没有就插入新的容器！</p><p><strong>时间复杂度：</strong> 排序O(nlogn)，线性扫描O(n)，总时间复杂度为<code>O(nlogn)</code></p><p><strong>注意点：</strong></p><ul><li>特判为空的情况，直接返回</li><li>记得要把最后一个区间插入</li><li><code>vector</code>进行排序默认按照第一个值，第二个值等等进行排序</li></ul><h2 id="AC代码："><a href="#AC代码：" class="headerlink" title="AC代码："></a>AC代码：</h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> {</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt; <span class="title">merge</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt;&amp; intervals)</span> </span>{</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt; res;</span><br><span class="line">        <span class="keyword">if</span>(intervals.empty()) <span class="keyword">return</span> res;</span><br><span class="line">        sort(intervals.<span class="built_in">begin</span>(), intervals.<span class="built_in">end</span>());</span><br><span class="line">        <span class="keyword">int</span> l = intervals[<span class="number">0</span>][<span class="number">0</span>], r = intervals[<span class="number">0</span>][<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; intervals.<span class="built_in">size</span>(); i++){</span><br><span class="line">            <span class="keyword">if</span>(intervals[i][<span class="number">0</span>] &gt; r) {</span><br><span class="line">                res.push_back({l, r});</span><br><span class="line">                l = intervals[i][<span class="number">0</span>], r = intervals[i][<span class="number">1</span>];</span><br><span class="line">            } <span class="keyword">else</span> r = <span class="built_in">max</span>(r, intervals[i][<span class="number">1</span>]);</span><br><span class="line">        }</span><br><span class="line">        res.push_back({l, r});</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> LeetCode刷题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 排序 </tag>
+            
+            <tag> 模拟 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>LeetCode刷题-55. 跳跃游戏 </title>
       <link href="/posts/23034.html"/>
       <url>/posts/23034.html</url>
