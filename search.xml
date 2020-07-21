@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>蓝桥杯省赛-1207. 大臣的旅费</title>
+      <link href="/posts/61315.html"/>
+      <url>/posts/61315.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote><p>题目链接：<a href="https://www.acwing.com/problem/content/1209/" target="_blank" rel="noopener">蓝桥杯省赛-1207. 大臣的旅费</a></p><p>题目来源：第四届蓝桥杯省赛C++A组</p></blockquote><h1 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h1><blockquote><p>本题用到了许多知识！下面给出参考教程即必备知识！</p><p>链式前向星：<a href="https://blog.csdn.net/qq_43590403/article/details/107456756" target="_blank" rel="noopener">我的简单总结！点击这里！</a></p></blockquote><h2 id="题目简述："><a href="#题目简述：" class="headerlink" title="题目简述："></a>题目简述：</h2><h2 id="题解：-1"><a href="#题解：-1" class="headerlink" title="题解："></a>题解：</h2><h2 id="AC代码："><a href="#AC代码：" class="headerlink" title="AC代码："></a>AC代码：</h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 蓝桥杯 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 树的直径 </tag>
+            
+            <tag> 两次搜索 </tag>
+            
+            <tag> 树形DP </tag>
+            
+            <tag> 链式前向星 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>LeetCode刷题-70. 爬楼梯</title>
       <link href="/posts/42551.html"/>
       <url>/posts/42551.html</url>

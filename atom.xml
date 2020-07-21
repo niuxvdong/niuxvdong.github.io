@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://niuxvdong.top/"/>
-  <updated>2020-07-20T13:46:14.000Z</updated>
+  <updated>2020-07-21T09:57:22.000Z</updated>
   <id>https://niuxvdong.top/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>蓝桥杯省赛-1207. 大臣的旅费</title>
+    <link href="https://niuxvdong.top/posts/61315.html"/>
+    <id>https://niuxvdong.top/posts/61315.html</id>
+    <published>2020-07-21T09:57:22.000Z</published>
+    <updated>2020-07-21T09:57:22.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="蓝桥杯" scheme="https://niuxvdong.top/categories/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    
+      <category term="树的直径" scheme="https://niuxvdong.top/tags/%E6%A0%91%E7%9A%84%E7%9B%B4%E5%BE%84/"/>
+    
+      <category term="两次搜索" scheme="https://niuxvdong.top/tags/%E4%B8%A4%E6%AC%A1%E6%90%9C%E7%B4%A2/"/>
+    
+      <category term="树形DP" scheme="https://niuxvdong.top/tags/%E6%A0%91%E5%BD%A2DP/"/>
+    
+      <category term="链式前向星" scheme="https://niuxvdong.top/tags/%E9%93%BE%E5%BC%8F%E5%89%8D%E5%90%91%E6%98%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode刷题-70. 爬楼梯</title>
@@ -518,35 +551,6 @@
     <id>https://niuxvdong.top/posts/47720.html</id>
     <published>2020-07-07T06:08:12.000Z</published>
     <updated>2020-07-07T06:08:12.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://niuxvdong.top/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="DFS" scheme="https://niuxvdong.top/tags/DFS/"/>
-    
-      <category term="递归" scheme="https://niuxvdong.top/tags/%E9%80%92%E5%BD%92/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode刷题-51. N 皇后 </title>
-    <link href="https://niuxvdong.top/posts/29682.html"/>
-    <id>https://niuxvdong.top/posts/29682.html</id>
-    <published>2020-07-07T06:07:12.000Z</published>
-    <updated>2020-07-07T06:07:12.000Z</updated>
     
     <summary type="html">
     
