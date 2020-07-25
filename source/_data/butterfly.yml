@@ -641,7 +641,7 @@ aside:
     limit: 5 # if set 0 will show all
   card_categories:
     enable: true
-    limit: 8 # if set 0 will show all
+    limit: 0 # if set 0 will show all
     expand: none # none/true/false
   card_tags:
     enable: true
@@ -782,6 +782,7 @@ inject:
   # - <link rel="stylesheet" href="/css/my.css">
   - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/css/my.css">
   - <link rel="stylesheet" href="//at.alicdn.com/t/font_1828588_zrw9f0qqie.css">
+  - <meta name="google-site-verification" content="GLWtLaS4mFunxxL-saY-q47wXZoXVOxwJ606SiFtDts" />
   # - <link rel="stylesheet" href="/self/atom-one-dark-reasonable.css">
 
   bottom:
