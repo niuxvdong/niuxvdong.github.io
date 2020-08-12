@@ -81,7 +81,10 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## Use post's date for updated date unless set in front-matter
-use_date_for_updated: true
+# use_date_for_updated: true
+# New option
+# https://hexo.io/docs/configuration#Date-Time-format
+updated_option: mtime
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -122,11 +125,12 @@ live2d:
     
 aplayer:
   meting: true
+  asset_inject: false
 
 dplayer:
     enable: true
     
-#添加emoji表情支持 https://npm.taobao.org/package/hexo-filter-github-emojis
+# 添加emoji表情支持 https://npm.taobao.org/package/hexo-filter-github-emojis
 githubEmojis: 
     enable: true 
     className: github-emoji 
@@ -138,11 +142,11 @@ githubEmojis:
 # 代码高亮主题切换 https://github.com/ele828/hexo-prism-plugin
 # 可选主题：
 # coy,dark,okaidia,-tomorrow,ghcolors,hopscotch
-prism_plugin: 
-    mode: 'preprocess' # realtime/preprocess 
-    theme: 'tomorrow'  #default
-    line_number: true  # default false 
-    custom_css:
+# prism_plugin: 
+#     mode: 'preprocess' # realtime/preprocess 
+#     theme: 'tomorrow'  #default
+#     line_number: true  # default false 
+#     custom_css:
     
 # Hexo搜索插件 https://github.com/wzpan/hexo-generator-search
 search:
@@ -195,7 +199,7 @@ abbrlink:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: Butterfly
+theme: butterfly-3.0.0
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

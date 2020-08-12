@@ -16,9 +16,6 @@ top: true
 
 > Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。Markdown 编写的文档后缀为 .md, .markdown。
 
-## 首先来首歌曲来放松一下吧！
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=1417215806&auto=1&height=66"></iframe>
 
 > 技术支持：[Markdown教程|菜鸟教程](https://www.runoob.com/markdown/md-tutorial.html)
 
