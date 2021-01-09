@@ -199,7 +199,7 @@ abbrlink:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: butterfly-3.0.0
+theme: butterfly-3.5.1
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -208,7 +208,7 @@ deploy:
 - type: 'git'
   repo: 
     github: git@github.com:niuxvdong/niuxvdong.github.io.git,master
-    coding: git@e.coding.net:niuxvdong/blog.git,master
+    # coding: git@e.coding.net:niuxvdong/blog.git,master
     #gitee: git@gitee.com:niuxvdong/blog.git,master
 - type: baidu_url_submitter    
 
@@ -245,7 +245,7 @@ backup:
   message: Back up my niuxvdong.top blog
   repository:
     github: git@github.com:niuxvdong/niuxvdong.github.io.git,backup
-    coding: git@e.coding.net:niuxvdong/blog.git,backup
+    # coding: git@e.coding.net:niuxvdong/blog.git,backup
   
   
 

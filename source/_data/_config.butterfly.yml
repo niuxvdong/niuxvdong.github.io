@@ -21,6 +21,9 @@ menu:
     - 评论 || https://valine.niuxvdong.top/ || fa fa-comments
     # - 电影 || /movies/ || fa fa-film
 
+# Hide the child menu items in mobile sidebar
+hide_sidebar_menu_child: false
+
 # PWA
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
@@ -141,9 +144,19 @@ archive_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/H21b5f6b8496141a19
 # tag page, look like https://xxxxxxxxx.com/tags/butterfly
 tag_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/mmexport1581051773909.jpg
 
+# The banner image of tag page
+# format:
+#  - tag name: xxxxx
+tag_per_img:
+
 # the banner image of category page
 # category page, look like https://xxxxxxxxx.com/categories/butterfly
 category_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/banners/5.jpg
+
+# The banner image of category page
+# format:
+#  - category name: xxxxx
+category_per_img:
 
 # 如果你有使用hexo-douban，可配置這個
 # douban:
@@ -179,11 +192,13 @@ error_404:
 post_meta:
   page:
     date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 主頁是否顯示分類
     tags: true # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
   post:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
+    date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 文章頁是否顯示分類
     tags: true # true or false 文章頁是否顯示標籤
     label: true # true or false 顯示描述性文字
@@ -198,7 +213,7 @@ wordcount:
 toc:
   enable: true
   number: false
-  auto_open: true # auto open the sidebar
+  style_simple: false
 
 # auto open the sidebar in 'post'
 # auto_open_sidebar:
@@ -219,6 +234,7 @@ post_copyright:
 # 1: description
 # 2: both (if the description exists, it will show description. or show the auto_excerpt)
 # 3: auto_excerpt (default)
+# false: do not show the article introduction
 index_post_content:
   method: 3
   length: 500 # if you set method to 2 or 3, the length need to config
@@ -233,17 +249,11 @@ sharejs:
   enable: true
   sites: facebook,twitter,wechat,weibo,qq
 
+# AddToAny
 # https://www.addtoany.com/
 addtoany:
   enable: false
-  item:
-    - facebook
-    - twitter
-    - wechat
-    - sina_weibo
-    - facebook_messenger
-    - email
-    - copy_link
+  item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 
 ####   Comments System    ####
 # ------------------------------------
@@ -330,6 +340,16 @@ valine:
     mail: 邮箱(必填)
     link: 网址(https://)
   tagMeta: [“博主”,“小伙伴”,“访客”]
+  option:
+
+# waline - A simple comment system with backend support fork from Valine
+# https://waline.js.org/
+waline:
+  serverURL: # Waline server address url
+  avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
+  emojiCDN: # emoji CDN
+  bg: /image/comment_bg.png # waline background
+  option:
 
 # utterances
 # https://utteranc.es/
@@ -352,6 +372,13 @@ facebook_comments:
   order_by: social # social/time/reverse_time
   lang: en_US # Language en_US/zh_CN/zh_TW and so on
   count: false
+
+# Twikoo
+# https://github.com/imaegoo/twikoo
+twikoo:
+  envId:
+  region:
+  option:
 
 # Chat Services
 # --------------------------------------
@@ -428,6 +455,18 @@ google_analytics:
 
 # Tencent_analytics ID
 tencent_analytics:
+
+# CNZZ Analytics
+# https://www.umeng.com/
+cnzz_analytics:
+
+# Cloudflare Analytics
+# https://www.cloudflare.com/zh-tw/web-analytics/
+cloudflare_analytics:
+
+# Microsoft Clarity
+# https://clarity.microsoft.com/
+microsoft_clarity:
 
 # Ads
 # ---------------
@@ -547,6 +586,9 @@ footer_bg: false
 # 右下角按鈕距離底部的距離(默認單位為px)
 rightside-bottom: 
 
+# Enter transitions (開啓網頁進入效果)
+enter_transitions: true
+
 # 背景特效
 # 避免卡頓，建議只開啟一個
 # canvas_ribbon 禁止彩帶背景
@@ -559,10 +601,10 @@ canvas_ribbon:
   click_to_change: false
   mobile: false # false 手機端不顯示 true 手機端顯示
 
-# 動態彩帶
-canvas_ribbon_piao:
+# Fluttering Ribbon (動態彩帶)
+canvas_fluttering_ribbon:
   enable: false
-  mobile: true # false 手機端不顯示 true 手機端顯示
+  mobile: false
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
@@ -579,6 +621,7 @@ activate_power_mode:
   enable: false
   colorful: true # 冒光特效
   shake: true # 抖動特效
+  mobile: false
 
 # 鼠標點擊效果
 # 避免卡頓，建議只開啟一個
@@ -586,9 +629,12 @@ activate_power_mode:
 fireworks:
   enable: false
   zIndex: 9999 # -1 or 9999
+  mobile: false
 
-# 點擊出現愛心
-click_heart: false
+# Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
+click_heart:
+  enable: false
+  mobile: false
 
 # 點擊出現文字，文字可自行修改
 ClickShowText:
@@ -607,6 +653,8 @@ ClickShowText:
     - 诚信
     - 友善
   fontSize: 15px
+  random: false
+  mobile: false
 
 # 網站顯示模式
 # light 默認模式
@@ -621,11 +669,19 @@ beautify:
   title-prefix-icon: '\f0e7'
   title-prefix-icon-color: '#eb5055'
 
-# 全局字體
+# # 全局字體
+# font:
+#   # enable: true
+#   font-family: #Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, MicrMicrosoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
+#   code-font: #consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace, Helvetica Neue For Number
+
+# Global font settings
+# Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  # enable: true
-  font-family: #Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, MicrMicrosoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
-  code-font: #consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace, Helvetica Neue For Number
+  global-font-size:
+  code-font-size:
+  font-family:
+  code-font-family:
 
 # 網站名字字體
 # 左上角網站名字 主頁居中網站名字
@@ -682,12 +738,15 @@ preloader: false
 # 側邊欄顯示設置
 aside:
   enable: true
+  hide: false
+  button: true
   mobile: true # 手機頁面（ 顯示寬度 < 768px ）是否顯示aside內容
   position: right # left or right
   card_author:
     enable: true
     description: 
     button:
+      enable: true
       icon: fab fa-github
       text: Follow Me
       link: https://github.com/niuxvdong
@@ -698,21 +757,29 @@ aside:
     enable: true
     limit: 5 # if set 0 will show all
     sort: date # date or updated
+    sort_order: # Don't modify the setting unless you know how it works
   card_categories:
     enable: true
     limit: 0 # if set 0 will show all
     expand: none # none/true/false
+    sort_order: # Don't modify the setting unless you know how it works
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
     color: true
+    sort_order: # Don't modify the setting unless you know how it works
   card_archives:
     enable: true
     type: monthly # yearly or monthly
     format: MMMM YYYY # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
     limit: 8 # if set 0 will show all
-  card_webinfo: true
+    sort_order: # Don't modify the setting unless you know how it works
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+    sort_order: # Don't modify the setting unless you know how it works
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -728,7 +795,29 @@ runtimeshow:
   enable: true
   publish_date: 2020/01/30 00:00:00
 
+# Aside widget - Newest Comments
+newest_comments:
+  enable: true
+  sort_order: # Don't modify the setting unless you know how it works
+  limit: 6
+  avatar: true
+  # You can only choose one, or neither
+  valine: true
+  github_issues:
+    enable: false
+    repo:
+  disqus:
+    enable: false
+    forum:
+    api_key:
+  twikoo: false
+  waline: false
+
 ####   右下角按鈕  ####
+
+# Change font size
+change_font_size: true
+
 #----------------------------------------------
 # 簡繁轉換
 translate:
@@ -814,10 +903,21 @@ note:
 # other
 # --------------------------------------
 
+# Artitalk
+# see https://artitalk.js.org/
+artitalk:
+  appId:
+  appKey:
+  option:
+
 # Pjax [Beta]
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
-pjax: true
+pjax:
+  enable: true
+  exclude:
+    # - xxxx
+    # - xxxx
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
@@ -847,13 +947,16 @@ Open_Graph_meta: true
 # 開啟hexo自帶的緩存，加快生成速度
 fragment_cache: true
 
+# Add the vendor prefixes to ensure compatibility
+css_prefix: true
+
 # inject
 # 插入代码到头部</head>之前 和 尾部</body>之前
 inject:
   head:
-  # - <link rel="stylesheet" href="/css/my.css">
+  - <link rel="stylesheet" href="/css/my.css">
   - '<style type="text/css">#toggle-sidebar {bottom: 80px}</style>'
-  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/css/my.css">
+  # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/css/my.css">
   - <link rel="stylesheet" href="//at.alicdn.com/t/font_1828588_zrw9f0qqie.css">
   - <meta name="google-site-verification" content="GLWtLaS4mFunxxL-saY-q47wXZoXVOxwJ606SiFtDts" />
   # - <link rel="stylesheet" href="/self/atom-one-dark-reasonable.css">
@@ -907,9 +1010,9 @@ CDN:
   busuanzi: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 
   # background effect
-  canvas_ribbon: /js/third-party/canvas-ribbon.js
-  canvas_ribbon_piao: /js/third-party/piao.js
-  canvas_nest: /js/third-party/canvas-nest.js
+  canvas_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js
+  canvas_fluttering_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js
+  canvas_nest: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js
 
   # lazyload: https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js
   lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
@@ -927,12 +1030,11 @@ CDN:
   snackbar_css: https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css
   snackbar: https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js
 
-  # 鼠標點擊特效
-  anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
-  activate_power_mode: /js/third-party/activate-power-mode.js
-  fireworks: /js/third-party/fireworks.js
-  click_heart: /js/third-party/click_heart.js
-  ClickShowText: /js/third-party/ClickShowText.js
+  # effect
+  activate_power_mode: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js
+  fireworks: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js
+  click_heart: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js
+  ClickShowText: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js
 
   # fontawesome
   # fontawesome_v4: https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
@@ -948,6 +1050,8 @@ CDN:
   aplayer_css: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
   aplayer_js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
   meting_js: https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js
+
+  artitalk: https://cdn.jsdelivr.net/npm/artitalk
 
   # 簡繁轉換
   translate: /js/tw_cn.js
