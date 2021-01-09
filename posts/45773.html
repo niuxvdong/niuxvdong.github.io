@@ -219,16 +219,16 @@ if (fontSizeVal !== undefined) {
 <p>首先，<code>next[0]</code>不需要管，下标从1开始，<code>next[1] = 0</code>，非平凡不包括自己！</p>
 <p>从下标为2开始即可！</p>
 <p>假设当前状态如下：<code>i - 1</code>为原串<code>p</code>指向的位置，<code>j</code>为<code>p</code>的前缀后缀相等时前缀的尾。序号1和序号2是同一段，序号3是原串<code>1 ~ (i - 1)</code>中与前缀相等的后缀，此时序号1，2，3都是相等的。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/22/5880ff8272e6debedb8138c4b76db5d0.png" alt=""></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/22/5880ff8272e6debedb8138c4b76db5d0.png" alt=""></p>
 <p><strong>若 <code>i</code> 和 <code>j + 1</code>可以匹配，此时<code>next[i]</code>就会由<code>j</code>变为<code>j + 1</code>，则效果图如下：</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/22/9411c5d614a964bc2fe5df17302a9ab1.png" alt=""></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/22/9411c5d614a964bc2fe5df17302a9ab1.png" alt=""></p>
 <p><strong>若 <code>i</code> 和 <code>j + 1</code>无法匹配，则说明前缀串<code>1 ~ j</code>无法满足当前<code>next[i]</code>的条件，此时<code>j</code>的位置就需要发生变化，将前缀缩小为<code>1 ~ next[j]</code>去试探此时是否可以匹配<code>next[i]</code>的条件，若一直无法匹配，已经到了<code>next[1] = 0</code>或<code>j == 0</code>时，仍然无法匹配，则当前<code>next[i] = 0</code>；若试探中，某次可以匹配，则当前<code>next[i]</code>的值就可以更新为当前<code>next[j] + 1</code></strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/22/ab2c3a53e468247615e02a1579fbaf64.png" alt=""></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/22/ab2c3a53e468247615e02a1579fbaf64.png" alt=""></p>
 <p>会发现后面的<code>next</code>计算都在前面已经算出来的基础上进行试探的，而前面算出来的都是前后缀相等且最长的，所以这样可以求得所有<code>next</code>数组的值，且一定是正确的！</p>
 <hr>
 <p><strong>下一个问题，怎么求子串与原串的匹配并计算得到起始下标？</strong></p>
 <p>和求解<code>next</code>数组一样，求解<code>next</code>数组是用的两个待匹配字符串<code>p</code>，求下面这个问题则只需要将第一个串换成<code>s</code>串即可，最后只需要判断什么时候等于待匹配字符串的长度，直接计算返回该下标即可！</p>
-<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/22/196ae57ca0cee7dde9393d23354933c6.png" alt=""></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/22/196ae57ca0cee7dde9393d23354933c6.png" alt=""></p>
 <p><strong>什么时候就算找到了？</strong></p>
 <p>当然是当<code>j == m</code>的时候，即说明此时已经匹配完了<code>p</code>串。</p>
 <p>最终返回的长度就是<code>i - m</code>，即<code>s</code>串的匹配终点的前m个字符的位置，应该为<code>i - m + 1</code>，但是我们下标是从1开始，所以要减去1，<code>i - m + 1 - 1</code>即<code>i - m</code>。</p>

@@ -186,7 +186,7 @@ if (fontSizeVal !== undefined) {
 <h2 id="题目简述："><a href="#题目简述：" class="headerlink" title="题目简述："></a>题目简述：</h2><p>给定一个无序链表，给定一个目标值，将小于目标值的节点放到大于等于目标值的左边！</p>
 <h2 id="题解：-1"><a href="#题解：-1" class="headerlink" title="题解："></a>题解：</h2><p>很明显：要将链表一分为二，一部分放小于目标值，一部分放大于目标值。</p>
 <p><strong>具体思路：如下图</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/25/c1571c1738339abedaeaeb7f001ea8ae.png" alt=""></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/25/c1571c1738339abedaeaeb7f001ea8ae.png" alt=""></p>
 <p><strong>遇到小的放到一个链表，遇到大的放到另一个链表，最后将小的链表尾指向大的链表头，再将大的链表的末尾指向空即可！</strong></p>
 <p><strong>注意</strong>：为了防止两个链表头找不到，一定要预先设置两个头<code>lh, rh</code>，并设置虚拟头结点，否则<code>lt, rt</code>后面的指向会乱，而且会构成死循环！（我好像就错到了这里）</p>
 <p><strong>时间复杂度</strong>：<code>O(n)</code></p>

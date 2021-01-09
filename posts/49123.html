@@ -189,7 +189,7 @@ if (fontSizeVal !== undefined) {
 <p><code>n = s.size(), m = words.size(), w = words[0].size();</code></p>
 <p><strong>使用分类思想：</strong></p>
 <p>本题可以划分为<code>w</code>类，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/22/f3a86f0a869dbaf256ca156a249102ef.png" alt=""></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/22/f3a86f0a869dbaf256ca156a249102ef.png" alt=""></p>
 <p><strong>可以发现，可以把起点分为<code>0 - w-1</code>的<code>w</code>组，你会惊奇的发现，起点从<code>w-1</code>往后，都已经被前面的情况所包括了！</strong></p>
 <p>而且，我们扫描时按单词的长度<code>w</code>往后走，即每个单词一定落在坑里！</p>
 <p><strong>具体做法：</strong></p>
@@ -213,7 +213,7 @@ if (fontSizeVal !== undefined) {
 <li>匹配条件：<code>cnt == m</code>即两个哈希表匹配成功，找到了一组合法区间一一对应，起始下标为<code>j - (m - 1) * w</code></li>
 </ol>
 <p><strong>下标图解如下：</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/22/1fc948e33196f06abf417a96e39fa353.png" alt=""></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/22/1fc948e33196f06abf417a96e39fa353.png" alt=""></p>
 <p><strong>时间复杂度：</strong> 小区间个数为<code>n / w</code>，一共分为了<code>w</code>类，哈希表的插入删除复杂度为<code>word</code>长度<code>w</code>，总时间复杂度为<code>O(n / w * w * w) = O(n * w)</code></p>
 <p><strong>进一步优化：</strong></p>
 <p>使用<strong>字符串哈希</strong>，可以将哈希表的插入删除降到O(1)，总时间复杂度降为<code>O(n)</code>。奈何没有学到，今后再学习，进行补充！</p>
