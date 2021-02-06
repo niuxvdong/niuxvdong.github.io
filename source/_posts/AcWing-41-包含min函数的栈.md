@@ -3,8 +3,8 @@ title: AcWing-41.包含min函数的栈
 author: Mr.Niu
 toc: true
 abbrlink: 50257
-cover: 'https://img.niuxvdong.top/d3b7ae8726eb0af6a336af0c5144ed7e.jpg'
-top_img: 'https://img.niuxvdong.top/d3b7ae8726eb0af6a336af0c5144ed7e.jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@abcb0ee99d47116058305ed624d2b854c301e126/2021/02/06/a748bd6cf1ce9794a730ee2ac026ca16.png'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@abcb0ee99d47116058305ed624d2b854c301e126/2021/02/06/a748bd6cf1ce9794a730ee2ac026ca16.png'
 categories:
   - AcWing
 tags:

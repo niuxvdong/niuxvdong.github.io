@@ -3,8 +3,8 @@ title: LeetCode刷题-37.解数独
 author: Mr.Niu
 toc: true
 abbrlink: 37046
-top_img: 'https://img.niuxvdong.top/20200627212140.jpg'
-cover: 'https://img.niuxvdong.top/20200627212140.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@7346d3b83842757c98cd1cdfdc6f4ab24934eca9/2021/02/06/1a3787a3c6f65a1ac029dc769aed5c36.png'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@7346d3b83842757c98cd1cdfdc6f4ab24934eca9/2021/02/06/1a3787a3c6f65a1ac029dc769aed5c36.png'
 categories: LeetCode刷题
 tags:
   - 数独

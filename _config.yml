@@ -7,13 +7,13 @@ title: 小牛博客
 subtitle: 每天进步一点点!
 description: '一个大学生的博客，记录学习，记录成长，分享生活！'
 keywords: Blog,博客,Java,js,JavaScript,C,C++,SQL,Python,Git
-author: Dreamy.NXD
+author: ITNXD
 language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://niuxvdong.top
+url: https://www.itnxd.cn/
 root: /
 #permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink.html  # 此处可以自己设置，也可以直接使用 :/abbrlink
@@ -199,7 +199,7 @@ abbrlink:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: butterfly-3.5.1
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -221,8 +221,8 @@ deploy:
 
 # hexo-baidu-url-submit 百度主动推送 
 baidu_url_submit: 
-    count: 80 # 提交最新的一个链接 
-    host: niuxvdong.top # 在百度站长平台中注册的域名 
+    count: 300 # 提交最新的一个链接 
+    host: www.itnxd.cn # 在百度站长平台中注册的域名 
     token: WAtgzOp9lVQXjDi3 # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里! 
     path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
 

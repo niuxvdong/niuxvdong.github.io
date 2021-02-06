@@ -3,8 +3,8 @@ title: LeetCode刷题-42.接雨水
 author: Mr.Niu
 toc: true
 abbrlink: 57751
-top_img: 'https://img.niuxvdong.top/20200705092353.jpg'
-cover: 'https://img.niuxvdong.top/20200705092353.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/08/09/ab444f56198af2025a18c92122a07ce7.png'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/08/09/ab444f56198af2025a18c92122a07ce7.png'
 categories: LeetCode刷题
 tags:
   - 单调栈

@@ -9,8 +9,8 @@ tags:
   - 找规律
 date: 2020-06-14 10:44:43
 updated:
-top_img: https://img.niuxvdong.top/thumb-1920-1073010.jpg
-cover: https://img.niuxvdong.top/thumb-1920-1073010.jpg
+top_img: https://cdn.jsdelivr.net/gh/niuxvdong/pic@a7ba0705416b80093aaa91cac65656b3cd023871/2021/02/06/d5787bbd8ec29096932f5b1b12823ec4.png
+cover: https://cdn.jsdelivr.net/gh/niuxvdong/pic@a7ba0705416b80093aaa91cac65656b3cd023871/2021/02/06/d5787bbd8ec29096932f5b1b12823ec4.png
 ---
 
 

@@ -3,8 +3,8 @@ title: LeetCode刷题-31.下一个排列
 author: Mr.Niu
 toc: true
 abbrlink: 17783
-top_img: 'https://img.niuxvdong.top/20200627132552.jpg'
-cover: 'https://img.niuxvdong.top/20200627132552.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@c0e31f1ad80376e7f59bff73e7de464fd0c93f9c/2021/02/06/57ea9cb8f94698210de69d9742d81d04.png'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@c0e31f1ad80376e7f59bff73e7de464fd0c93f9c/2021/02/06/57ea9cb8f94698210de69d9742d81d04.png'
 categories: LeetCode刷题
 tags:
   - 全排列

@@ -3,8 +3,8 @@ title: LeetCode刷题-41.缺失的第一个正数
 author: Mr.Niu
 toc: true
 abbrlink: 50883
-top_img: 'https://img.niuxvdong.top/20200705092344.jpg'
-cover: 'https://img.niuxvdong.top/20200705092344.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/08/09/777a4a3670cc50eafae809ce48667231.png'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/08/09/777a4a3670cc50eafae809ce48667231.png'
 categories: LeetCode刷题
 tags:
   - 排序

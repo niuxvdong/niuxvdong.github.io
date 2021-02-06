@@ -148,7 +148,7 @@ updated:
 
 
 
-![](https://img.niuxvdong.top/20200305201117.png)
+![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a41609470294f86889b2c3f04e122f1896ba9c72/2021/02/06/cfbed76f33d180d0887c7328c90b0165.png)
 
 
 

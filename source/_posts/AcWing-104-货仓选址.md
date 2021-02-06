@@ -104,7 +104,7 @@ updated:
 
 
 
-![](https://img.niuxvdong.top/20200303131219.png)
+![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@49af430e3d989ccb40e9cfd4ca967fffdb68a0e8/2021/02/06/2f690b15a6ccd626c06526ce7f99735d.png)
 
 
 

@@ -3,8 +3,8 @@ title: LeetCode刷题-35.搜索插入位置
 author: Mr.Niu
 toc: true
 abbrlink: 24432
-top_img: 'https://img.niuxvdong.top/20200627132637.jpg'
-cover: 'https://img.niuxvdong.top/20200627132637.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@3a228ab208170517bd99f61493b544653a2ba241/2021/02/06/ecfd34a7e91fda4bf46196524b181e38.png'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@3a228ab208170517bd99f61493b544653a2ba241/2021/02/06/ecfd34a7e91fda4bf46196524b181e38.png'
 categories: LeetCode刷题
 tags:
   - 二分

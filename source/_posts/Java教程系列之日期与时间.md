@@ -3,8 +3,8 @@ title: Java教程系列之日期与时间
 author: Mr.Niu
 toc: true
 abbrlink: 51490
-cover: 'https://img.niuxvdong.top/ckjnlk4.jpg'
-top_img: 'https://img.niuxvdong.top/ckjnlk4.jpg'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@019e969a3f119f3d5547732fc720131e1ce6a0ab/2021/02/06/2ead155c241dc7841b557e7750a24927.png'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@019e969a3f119f3d5547732fc720131e1ce6a0ab/2021/02/06/2ead155c241dc7841b557e7750a24927.png'
 categories:
   - Java教程
 tags:

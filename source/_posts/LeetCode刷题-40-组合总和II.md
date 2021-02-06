@@ -3,8 +3,8 @@ title: LeetCode刷题-40.组合总和II
 author: Mr.Niu
 toc: true
 abbrlink: 41794
-top_img: 'https://img.niuxvdong.top/20200627212157.jpg'
-cover: 'https://img.niuxvdong.top/20200627212157.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@5fd3dbe13ef695b02253cf8eda5d122175265490/2021/02/06/9a243e58bd4813fdc8ee8059599308f1.png'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@5fd3dbe13ef695b02253cf8eda5d122175265490/2021/02/06/9a243e58bd4813fdc8ee8059599308f1.png'
 categories: LeetCode刷题
 tags:
   - 递归

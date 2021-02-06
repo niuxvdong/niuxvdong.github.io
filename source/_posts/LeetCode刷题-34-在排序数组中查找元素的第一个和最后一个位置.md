@@ -3,8 +3,8 @@ title: LeetCode刷题-34.在排序数组中查找元素的第一个和最后一�
 author: Mr.Niu
 toc: true
 abbrlink: 39392
-top_img: 'https://img.niuxvdong.top/20200627132624.jpg'
-cover: 'https://img.niuxvdong.top/20200627132624.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@019e969a3f119f3d5547732fc720131e1ce6a0ab/2021/02/06/2ead155c241dc7841b557e7750a24927.png'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@019e969a3f119f3d5547732fc720131e1ce6a0ab/2021/02/06/2ead155c241dc7841b557e7750a24927.png'
 categories: LeetCode刷题
 tags:
   - 二分

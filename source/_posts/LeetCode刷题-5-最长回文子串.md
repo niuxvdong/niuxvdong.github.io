@@ -3,8 +3,8 @@ title: LeetCode刷题-5.最长回文子串
 author: Mr.Niu
 toc: true
 abbrlink: 30088
-top_img: 'https://img.niuxvdong.top/bg-f1efaea.jpg'
-cover: 'https://img.niuxvdong.top/bg-f1efaea.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@25fe3876042973d1968601ddec4adf8b598d7334/2021/02/06/1cd30885cbb41802e41b1e6d976cb2cb.png'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@25fe3876042973d1968601ddec4adf8b598d7334/2021/02/06/1cd30885cbb41802e41b1e6d976cb2cb.png'
 categories: LeetCode刷题
 tags:
   - 枚举

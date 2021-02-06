@@ -3,8 +3,8 @@ title: LeetCode刷题-65. 有效数字
 author: Mr.Niu
 toc: true
 abbrlink: 47819
-top_img: 'https://img.niuxvdong.top/20200709222235.jpg'
-cover: 'https://img.niuxvdong.top/20200709222235.jpg'
+top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/20/b2a472fd03d7676fc29016169f5e4eee.png'
+cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/20/b2a472fd03d7676fc29016169f5e4eee.png'
 categories: LeetCode刷题
 tags:
   - 字符串
