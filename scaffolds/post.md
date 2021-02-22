@@ -2,7 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 updated: 
-author: Mr.Niu 
+author: ITNXD
 abbrlink: 
 top_img:
 cover:  

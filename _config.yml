@@ -195,6 +195,14 @@ abbrlink:
         # title: '我的影单' 
         # quote: '那些年我看过的电影' 
     # timeout: 10000
+
+# 外链 https://github.com/hexojs/hexo-filter-nofollow
+nofollow:
+  enable: true
+  field: site
+  exclude:
+    # - 'exclude1.com'
+    # - 'exclude2.com'
     
 # Extensions
 ## Plugins: https://hexo.io/plugins/

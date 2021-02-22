@@ -135,10 +135,10 @@ avatar:
 disable_top_img: false
 
 # the banner image of index
-index_img: https://cdn.jsdelivr.net/gh/crossyourheart/imageshack@985409622fd6ab4bbef8d867c2eab308f8474626/2020/10/19/9501ea6b6a3a7c979d59ffdef5e4f047.png
+index_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/H21b5f6b8496141a1979a33666e1074d9x.jpg
 
 # if the banner of page not setting,it will show the top_img
-default_top_img: https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg
+default_top_img: https://cdn.jsdelivr.net/gh/niuxvdong/pic@952357b1f7ce307a9753f30b8709af5f00fcee8e/2021/02/06/eae39252d9715e4ec7a4557d355e2eb7.png
 
 # the banner image of archive page
 archive_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/H21b5f6b8496141a1979a33666e1074d9x.jpg
@@ -549,7 +549,7 @@ post_pagination: 1
 
 # anchor
 # when you scroll in post, the url will update according to header id.
-anchor: false
+anchor: true
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
