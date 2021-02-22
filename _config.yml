@@ -250,7 +250,7 @@ backup:
   type: git
   # theme: hexo-theme-matery
   theme: Butterfly
-  message: Back up my niuxvdong.top blog
+  message: Back up my www.itnxd.cn blog
   repository:
     github: git@github.com:niuxvdong/niuxvdong.github.io.git,backup
     # coding: git@e.coding.net:niuxvdong/blog.git,backup
