@@ -980,6 +980,7 @@ inject:
   # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/css/my.css">
   - <link rel="stylesheet" href="//at.alicdn.com/t/font_1828588_zrw9f0qqie.css">
   # - <link rel="stylesheet" href="/self/atom-one-dark-reasonable.css">
+  - <link rel="stylesheet" href="/self/dracula.css">
 
   bottom:
     # - <script src="js/music.js"></script>

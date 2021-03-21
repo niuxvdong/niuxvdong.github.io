@@ -169,9 +169,8 @@ feed:
     content_limit: 140 
     content_limit_delim: ' ' 
     order_by: -date
-    
-    
-    
+  
+
 # 文章生成永久链接 https://github.com/rozbo/hexo-abbrlink  
 abbrlink: 
     alg: crc16 #算法： crc16(default) and crc32 
@@ -203,6 +202,14 @@ nofollow:
   exclude:
     # - 'exclude1.com'
     # - 'exclude2.com'
+
+# markdown:
+#   plugins:
+#     - plugin:
+#       name: '@neilsustc/markdown-it-katex'
+#       options:
+#         strict: false
+
     
 # Extensions
 ## Plugins: https://hexo.io/plugins/
