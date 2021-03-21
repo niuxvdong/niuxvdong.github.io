@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.itnxd.cn/"/>
-  <updated>2021-03-19T04:18:13.316Z</updated>
+  <updated>2021-03-21T14:16:10.158Z</updated>
   <id>https://www.itnxd.cn/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>LeetCode每日一题之反转链表</title>
-    <link href="https://www.itnxd.cn/posts/25333.html"/>
-    <id>https://www.itnxd.cn/posts/25333.html</id>
-    <published>2021-03-19T01:47:32.000Z</published>
-    <updated>2021-03-19T04:18:13.316Z</updated>
+    <title>每日一题之AcWing 3302.表达式求值</title>
+    <link href="https://www.itnxd.cn/posts/46950.html"/>
+    <id>https://www.itnxd.cn/posts/46950.html</id>
+    <published>2021-03-21T12:46:10.000Z</published>
+    <updated>2021-03-21T14:16:10.158Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,38 @@
       
         
         
-          &lt;h1 id=&quot;一、反转链表I&quot;&gt;&lt;a href=&quot;#一、反转链表I&quot; class=&quot;headerlink&quot; title=&quot;一、反转链表I&quot;&gt;&lt;/a&gt;一、反转链表I&lt;/h1&gt;&lt;blockquote&gt;
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/3305/&quot;&gt;AcWing 3302.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
+    
+    
+      <category term="栈" scheme="https://www.itnxd.cn/tags/%E6%A0%88/"/>
+    
+      <category term="模板" scheme="https://www.itnxd.cn/tags/%E6%A8%A1%E6%9D%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode每日一题之反转链表</title>
+    <link href="https://www.itnxd.cn/posts/25333.html"/>
+    <id>https://www.itnxd.cn/posts/25333.html</id>
+    <published>2021-03-19T01:47:32.000Z</published>
+    <updated>2021-03-21T12:51:15.185Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;一、反转链表I&lt;/h1&gt;
+&lt;blockquote&gt;
 &lt;p&gt;题目链接：&lt;a
         
       
@@ -37,7 +68,7 @@
     </summary>
     
     
-      <category term="LeetCode每日一题" scheme="https://www.itnxd.cn/categories/LeetCode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/"/>
+      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
     
     
       <category term="链表" scheme="https://www.itnxd.cn/tags/%E9%93%BE%E8%A1%A8/"/>
@@ -57,7 +88,10 @@
       
         
         
-          &lt;h1 id=&quot;一、JSON&quot;&gt;&lt;a href=&quot;#一、JSON&quot; class=&quot;headerlink&quot; title=&quot;一、JSON&quot;&gt;&lt;/a&gt;一、JSON&lt;/h1&gt;&lt;h2 id=&quot;1、概述&quot;&gt;&lt;a href=&quot;#1、概述&quot; class=&quot;headerlink&quot;
+          &lt;h1&gt;一、JSON&lt;/h1&gt;
+&lt;h2 id=&quot;1、概述&quot;&gt;1、概述&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;JSON (JavaScript Object Notation)
         
       
     
@@ -88,7 +122,11 @@
       
         
         
-          &lt;h1 id=&quot;一、Filter&quot;&gt;&lt;a href=&quot;#一、Filter&quot; class=&quot;headerlink&quot; title=&quot;一、Filter&quot;&gt;&lt;/a&gt;一、Filter&lt;/h1&gt;&lt;h2 id=&quot;1、概述&quot;&gt;&lt;a href=&quot;#1、概述&quot; class=&quot;headerlink&quot;
+          &lt;h1&gt;一、Filter&lt;/h1&gt;
+&lt;h2 id=&quot;1、概述&quot;&gt;1、概述&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Filter 过滤器它是 JavaWeb 的三大组件之一。三大组件分别是：Servlet 程序、Listener 监听器、Filter 过滤器。&lt;/li&gt;
+&lt;li&gt;Filter
         
       
     
@@ -117,7 +155,8 @@
       
         
         
-          &lt;h1 id=&quot;一、概述&quot;&gt;&lt;a href=&quot;#一、概述&quot; class=&quot;headerlink&quot; title=&quot;一、概述&quot;&gt;&lt;/a&gt;一、概述&lt;/h1&gt;&lt;h2 id=&quot;1、表单重复提交&quot;&gt;&lt;a href=&quot;#1、表单重复提交&quot; class=&quot;headerlink&quot;
+          &lt;h1&gt;一、概述&lt;/h1&gt;
+&lt;h2
         
       
     
@@ -146,7 +185,11 @@
       
         
         
-          &lt;h1 id=&quot;一、Cookie&quot;&gt;&lt;a href=&quot;#一、Cookie&quot; class=&quot;headerlink&quot; title=&quot;一、Cookie&quot;&gt;&lt;/a&gt;一、Cookie&lt;/h1&gt;&lt;h2 id=&quot;1、Cookie概述&quot;&gt;&lt;a href=&quot;#1、Cookie概述&quot;
+          &lt;h1&gt;一、Cookie&lt;/h1&gt;
+&lt;h2 id=&quot;1、Cookie概述&quot;&gt;1、Cookie概述&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Cookie 翻译过来是饼干的意思。&lt;/li&gt;
+&lt;li&gt;Cookie
         
       
     
@@ -175,7 +218,14 @@
       
         
         
-          &lt;h1 id=&quot;一、文件上传&quot;&gt;&lt;a href=&quot;#一、文件上传&quot; class=&quot;headerlink&quot; title=&quot;一、文件上传&quot;&gt;&lt;/a&gt;一、文件上传&lt;/h1&gt;&lt;h2 id=&quot;1、文件上传介绍&quot;&gt;&lt;a href=&quot;#1、文件上传介绍&quot; class=&quot;headerlink&quot;
+          &lt;h1&gt;一、文件上传&lt;/h1&gt;
+&lt;h2 id=&quot;1、文件上传介绍&quot;&gt;1、文件上传介绍&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;要有一个 form 标签，method=post 请求&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;form 标签的 encType 属性值必须为
         
       
     
@@ -202,7 +252,12 @@
       
         
         
-          &lt;h1 id=&quot;一、EL表达式&quot;&gt;&lt;a href=&quot;#一、EL表达式&quot; class=&quot;headerlink&quot; title=&quot;一、EL表达式&quot;&gt;&lt;/a&gt;一、EL表达式&lt;/h1&gt;&lt;h2 id=&quot;1、EL表达式概述&quot;&gt;&lt;a href=&quot;#1、EL表达式概述&quot;
+          &lt;h1&gt;一、EL表达式&lt;/h1&gt;
+&lt;h2 id=&quot;1、EL表达式概述&quot;&gt;1、EL表达式概述&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;EL 表达式的全称是：Expression Language。是表达式语言。&lt;/li&gt;
+&lt;li&gt;EL 表达式的什么作用：EL
         
       
     
@@ -231,8 +286,9 @@
       
         
         
-          &lt;h1 id=&quot;一、JSP概述&quot;&gt;&lt;a href=&quot;#一、JSP概述&quot; class=&quot;headerlink&quot; title=&quot;一、JSP概述&quot;&gt;&lt;/a&gt;一、JSP概述&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;JSP 的全称是 &lt;code&gt;java server
+          &lt;h1&gt;一、JSP概述&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;JSP 的全称是 &lt;code&gt;java server pages&lt;/code&gt;。Java 的服务器页面。JSP 的&lt;strong&gt;主要作用是代替 Servlet 程序回传 html
         
       
     
@@ -261,8 +317,10 @@
       
         
         
-          &lt;h1 id=&quot;一、Servlet介绍&quot;&gt;&lt;a href=&quot;#一、Servlet介绍&quot; class=&quot;headerlink&quot; title=&quot;一、Servlet介绍&quot;&gt;&lt;/a&gt;一、Servlet介绍&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;Servlet 是 JavaEE
+          &lt;h1&gt;一、Servlet介绍&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Servlet 是 JavaEE 规范之一。规范就是接口！&lt;/li&gt;
+&lt;li&gt;Servlet 就 JavaWeb 三大组件之一。三大组件分别是：Servlet 程序、Filter 过滤器、Listener
         
       
     
@@ -289,7 +347,10 @@
       
         
         
-          &lt;h1 id=&quot;一、Tomcat服务器使用&quot;&gt;&lt;a href=&quot;#一、Tomcat服务器使用&quot; class=&quot;headerlink&quot; title=&quot;一、Tomcat服务器使用&quot;&gt;&lt;/a&gt;一、Tomcat服务器使用&lt;/h1&gt;&lt;h2 id=&quot;1、常用web服务器&quot;&gt;&lt;a
+          &lt;h1&gt;一、Tomcat服务器使用&lt;/h1&gt;
+&lt;h2 id=&quot;1、常用web服务器&quot;&gt;1、常用web服务器&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Tomcat：由 Apache 组织提供的一种 Web 服务器，提供对 jsp 和 Servlet 的支持。它是一种轻量级的
         
       
     
@@ -345,7 +406,9 @@
       
         
         
-          &lt;h1 id=&quot;一、JDBC概述&quot;&gt;&lt;a href=&quot;#一、JDBC概述&quot; class=&quot;headerlink&quot; title=&quot;一、JDBC概述&quot;&gt;&lt;/a&gt;一、JDBC概述&lt;/h1&gt;&lt;h2 id=&quot;1、对JDBC的理解&quot;&gt;&lt;a href=&quot;#1、对JDBC的理解&quot;
+          &lt;h1&gt;一、JDBC概述&lt;/h1&gt;
+&lt;h2 id=&quot;1、对JDBC的理解&quot;&gt;1、对JDBC的理解&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;JDBC(Java Database
         
       
     
@@ -372,8 +435,12 @@
       
         
         
-          &lt;h1 id=&quot;一、DQL语言&quot;&gt;&lt;a href=&quot;#一、DQL语言&quot; class=&quot;headerlink&quot; title=&quot;一、DQL语言&quot;&gt;&lt;/a&gt;一、DQL语言&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;DQL(Data Query
+          &lt;h1&gt;一、DQL语言&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DQL(Data Query Language)：数据查询语言，用于查询！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;1、基础查询&quot;&gt;1、基础查询&lt;/h2&gt;
+&lt;h4
         
       
     
@@ -400,7 +467,16 @@
       
         
         
-          &lt;h1 id=&quot;一、设计模式之单例设计模式&quot;&gt;&lt;a href=&quot;#一、设计模式之单例设计模式&quot; class=&quot;headerlink&quot;
+          &lt;h1&gt;一、设计模式之单例设计模式&lt;/h1&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;设计模式：&lt;/p&gt;
+&lt;p&gt;设计模式是在大量的实践中总结和理论化之后优的代码结构、编程风格、以及解决问题的思考方式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;常用
         
       
     
@@ -427,7 +503,9 @@
       
         
         
-          &lt;h1 id=&quot;一、StringBuffer-VS-StringBuilder&quot;&gt;&lt;a href=&quot;#一、StringBuffer-VS-StringBuilder&quot; class=&quot;headerlink&quot; title=&quot;一、StringBuffer VS
+          &lt;h1&gt;一、StringBuffer VS StringBuilder&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2
         
       
     
@@ -468,7 +546,10 @@
 &lt;p&gt;这里仅记录我认为没有了解透彻的知识，并不很全面系统，仅用于自己的查漏补缺！不过，我相信我没写的大家都是了解清楚的！&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;一、面向对象学习的三条主线&quot;&gt;&lt;a
+&lt;h1&gt;一、面向对象学习的三条主线&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;l
         
       
     
@@ -496,9 +577,7 @@
         
         
           &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/surrounded-regions/&quot;&gt;130. 被围绕的区域&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;题解：&quot;&gt;&lt;a
+&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/surrounded-regions/&quot;&gt;130.
         
       
     
@@ -530,9 +609,7 @@
         
         
           &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/&quot;&gt;129. 求根到叶子节点数字之和&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1
+&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/&quot;&gt;129.
         
       
     
@@ -564,9 +641,7 @@
         
         
           &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/longest-consecutive-sequence/&quot;&gt;128. 最长连续序列&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1
+&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/longest-consecutive-sequence/&quot;&gt;128.
         
       
     
@@ -577,38 +652,6 @@
     
     
       <category term="哈希" scheme="https://www.itnxd.cn/tags/%E5%93%88%E5%B8%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode刷题-127. 单词接龙</title>
-    <link href="https://www.itnxd.cn/posts/25443.html"/>
-    <id>https://www.itnxd.cn/posts/25443.html</id>
-    <published>2020-08-08T15:15:33.000Z</published>
-    <updated>2020-08-12T15:08:09.126Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/word-ladder/&quot;&gt;127. 单词接龙&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;题解：&quot;&gt;&lt;a href=&quot;#题解：&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="最短路" scheme="https://www.itnxd.cn/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
-    
-      <category term="BFS" scheme="https://www.itnxd.cn/tags/BFS/"/>
     
   </entry>
   
