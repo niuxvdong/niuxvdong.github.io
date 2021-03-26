@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.itnxd.cn/"/>
-  <updated>2021-03-21T14:16:10.158Z</updated>
+  <updated>2021-03-26T07:50:21.464Z</updated>
   <id>https://www.itnxd.cn/</id>
   
   <author>
@@ -15,6 +15,285 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring全家桶之Spring5新功能-整合Log4j2日志、Nullable注解、整合JUnit5</title>
+    <link href="https://www.itnxd.cn/posts/34962.html"/>
+    <id>https://www.itnxd.cn/posts/34962.html</id>
+    <published>2021-03-26T07:25:48.000Z</published>
+    <updated>2021-03-26T07:50:21.464Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;整个 Spring5 框架的代码基于 Java8，运行时兼容 JDK9，许多不建议使用的类和方法在代码库中删除！&lt;/p&gt;
+&lt;p&gt;Spring5中文版新功能可以在这里看到：&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Spring全家桶" scheme="https://www.itnxd.cn/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
+    
+    
+      <category term="Spring5" scheme="https://www.itnxd.cn/tags/Spring5/"/>
+    
+      <category term="Log4j2" scheme="https://www.itnxd.cn/tags/Log4j2/"/>
+    
+      <category term="Junit5" scheme="https://www.itnxd.cn/tags/Junit5/"/>
+    
+      <category term="Nullable" scheme="https://www.itnxd.cn/tags/Nullable/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring全家桶之Spring5-JdbcTemplate与事务操作</title>
+    <link href="https://www.itnxd.cn/posts/22145.html"/>
+    <id>https://www.itnxd.cn/posts/22145.html</id>
+    <published>2021-03-26T02:43:29.000Z</published>
+    <updated>2021-03-26T07:22:12.278Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;一、JdbcTemplate&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;可以使用Spring提供的JdbcTemplate来操作数据库！&lt;/p&gt;
+&lt;p&gt;虽然后面会被其他框架代替！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Spring全家桶" scheme="https://www.itnxd.cn/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
+    
+    
+      <category term="Spring5" scheme="https://www.itnxd.cn/tags/Spring5/"/>
+    
+      <category term="JdbcTemplate" scheme="https://www.itnxd.cn/tags/JdbcTemplate/"/>
+    
+      <category term="声明式事务" scheme="https://www.itnxd.cn/tags/%E5%A3%B0%E6%98%8E%E5%BC%8F%E4%BA%8B%E5%8A%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring全家桶之Spring5-AOP使用介绍</title>
+    <link href="https://www.itnxd.cn/posts/38615.html"/>
+    <id>https://www.itnxd.cn/posts/38615.html</id>
+    <published>2021-03-26T01:09:56.000Z</published>
+    <updated>2021-03-26T02:45:02.902Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;一、AOP概述&lt;/h1&gt;
+&lt;h2 id=&quot;1、概述&quot;&gt;1、概述&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Aspect Oriented Programming，面向切面编程，利用 AOP
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Spring全家桶" scheme="https://www.itnxd.cn/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
+    
+    
+      <category term="Spring5" scheme="https://www.itnxd.cn/tags/Spring5/"/>
+    
+      <category term="AOP" scheme="https://www.itnxd.cn/tags/AOP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring全家桶之Spring5-IOC使用介绍</title>
+    <link href="https://www.itnxd.cn/posts/50148.html"/>
+    <id>https://www.itnxd.cn/posts/50148.html</id>
+    <published>2021-03-25T14:36:57.000Z</published>
+    <updated>2021-03-25T07:40:32.489Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;一、Spring介绍&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Spring 是轻量级的开源的 JavaEE 框架。Spring 可以解决企业应用开发的复杂性！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Spring全家桶" scheme="https://www.itnxd.cn/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
+    
+    
+      <category term="Spring5" scheme="https://www.itnxd.cn/tags/Spring5/"/>
+    
+      <category term="IOC" scheme="https://www.itnxd.cn/tags/IOC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之LeetCode 82.删除排序链表中的重复元素 II</title>
+    <link href="https://www.itnxd.cn/posts/24068.html"/>
+    <id>https://www.itnxd.cn/posts/24068.html</id>
+    <published>2021-03-25T07:47:59.000Z</published>
+    <updated>2021-03-25T12:59:16.416Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/&quot;&gt;LeetCode 82. 删除排序链表中的重复元素 II 
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="链表" scheme="https://www.itnxd.cn/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之AcWing 131. 直方图中最大的矩形</title>
+    <link href="https://www.itnxd.cn/posts/32399.html"/>
+    <id>https://www.itnxd.cn/posts/32399.html</id>
+    <published>2021-03-24T07:46:55.000Z</published>
+    <updated>2021-03-25T12:59:16.389Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/133/&quot;&gt;AcWing 131.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
+    
+    
+      <category term="单调栈" scheme="https://www.itnxd.cn/tags/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之LeetCode 456.132模式</title>
+    <link href="https://www.itnxd.cn/posts/910.html"/>
+    <id>https://www.itnxd.cn/posts/910.html</id>
+    <published>2021-03-24T07:46:33.000Z</published>
+    <updated>2021-03-25T12:59:16.410Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/132-pattern/&quot;&gt;LeetCode 456.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="单调栈" scheme="https://www.itnxd.cn/tags/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之AcWing 1497.树的遍历</title>
+    <link href="https://www.itnxd.cn/posts/20698.html"/>
+    <id>https://www.itnxd.cn/posts/20698.html</id>
+    <published>2021-03-23T07:46:10.000Z</published>
+    <updated>2021-03-25T12:59:16.404Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/1499/&quot;&gt;AcWing
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
+    
+    
+      <category term="树的遍历" scheme="https://www.itnxd.cn/tags/%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之AcWing 85.不用加减乘除做加法</title>
+    <link href="https://www.itnxd.cn/posts/24538.html"/>
+    <id>https://www.itnxd.cn/posts/24538.html</id>
+    <published>2021-03-22T07:43:05.000Z</published>
+    <updated>2021-03-25T12:59:16.427Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/81/&quot;&gt;AcWing 85.不用加减乘除做加法&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;计算机底层加法的实现原理 —
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
+    
+    
+      <category term="位运算" scheme="https://www.itnxd.cn/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+    
+      <category term="全加器" scheme="https://www.itnxd.cn/tags/%E5%85%A8%E5%8A%A0%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>每日一题之AcWing 3302.表达式求值</title>
@@ -47,11 +326,11 @@
   </entry>
   
   <entry>
-    <title>LeetCode每日一题之反转链表</title>
+    <title>每日一题之LeetCode-92. 反转链表 II反转链表</title>
     <link href="https://www.itnxd.cn/posts/25333.html"/>
     <id>https://www.itnxd.cn/posts/25333.html</id>
     <published>2021-03-19T01:47:32.000Z</published>
-    <updated>2021-03-21T12:51:15.185Z</updated>
+    <updated>2021-03-25T07:40:07.246Z</updated>
     
     <summary type="html">
     
@@ -361,297 +640,6 @@
     
     
       <category term="Tomcat" scheme="https://www.itnxd.cn/tags/Tomcat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaWeb之jQuery使用总结</title>
-    <link href="https://www.itnxd.cn/posts/13535.html"/>
-    <id>https://www.itnxd.cn/posts/13535.html</id>
-    <published>2021-03-06T02:45:03.000Z</published>
-    <updated>2021-03-06T12:53:26.816Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;由于jQuery内容、选择器等等异常之多，只能随用随查，我找到一个不错的在线查询手册，欢迎查看！&lt;/p&gt;
-&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="JavaWeb" scheme="https://www.itnxd.cn/categories/JavaWeb/"/>
-    
-    
-      <category term="jQuery" scheme="https://www.itnxd.cn/tags/jQuery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java与数据库连接的纽带之JDBC使用总结</title>
-    <link href="https://www.itnxd.cn/posts/49844.html"/>
-    <id>https://www.itnxd.cn/posts/49844.html</id>
-    <published>2021-03-04T03:05:39.000Z</published>
-    <updated>2021-03-04T14:24:10.559Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1&gt;一、JDBC概述&lt;/h1&gt;
-&lt;h2 id=&quot;1、对JDBC的理解&quot;&gt;1、对JDBC的理解&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;JDBC(Java Database
-        
-      
-    
-    </summary>
-    
-    
-      <category term="JDBC" scheme="https://www.itnxd.cn/categories/JDBC/"/>
-    
-    
-      <category term="JDBC" scheme="https://www.itnxd.cn/tags/JDBC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>再学MySql之使用大总结</title>
-    <link href="https://www.itnxd.cn/posts/30836.html"/>
-    <id>https://www.itnxd.cn/posts/30836.html</id>
-    <published>2021-02-22T03:58:51.000Z</published>
-    <updated>2021-02-23T06:35:09.210Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1&gt;一、DQL语言&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;DQL(Data Query Language)：数据查询语言，用于查询！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;1、基础查询&quot;&gt;1、基础查询&lt;/h2&gt;
-&lt;h4
-        
-      
-    
-    </summary>
-    
-    
-      <category term="MySQL" scheme="https://www.itnxd.cn/categories/MySQL/"/>
-    
-    
-      <category term="MySQL" scheme="https://www.itnxd.cn/tags/MySQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>再学Java之单例、模板方法、动静态代理设计模式</title>
-    <link href="https://www.itnxd.cn/posts/22183.html"/>
-    <id>https://www.itnxd.cn/posts/22183.html</id>
-    <published>2021-02-17T13:29:59.000Z</published>
-    <updated>2021-02-21T15:15:38.427Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1&gt;一、设计模式之单例设计模式&lt;/h1&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;设计模式：&lt;/p&gt;
-&lt;p&gt;设计模式是在大量的实践中总结和理论化之后优的代码结构、编程风格、以及解决问题的思考方式。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;常用
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Java教程" scheme="https://www.itnxd.cn/categories/Java%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="设计模式" scheme="https://www.itnxd.cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>再学Java之StringBuffer、StringBuilder、枚举类、注解、集合和泛型</title>
-    <link href="https://www.itnxd.cn/posts/54748.html"/>
-    <id>https://www.itnxd.cn/posts/54748.html</id>
-    <published>2021-02-15T11:06:25.000Z</published>
-    <updated>2021-02-17T14:43:14.771Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1&gt;一、StringBuffer VS StringBuilder&lt;/h1&gt;
-&lt;hr&gt;
-&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Java教程" scheme="https://www.itnxd.cn/categories/Java%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="注解" scheme="https://www.itnxd.cn/tags/%E6%B3%A8%E8%A7%A3/"/>
-    
-      <category term="泛型" scheme="https://www.itnxd.cn/tags/%E6%B3%9B%E5%9E%8B/"/>
-    
-      <category term="StringBuilder" scheme="https://www.itnxd.cn/tags/StringBuilder/"/>
-    
-      <category term="StringBuffer" scheme="https://www.itnxd.cn/tags/StringBuffer/"/>
-    
-      <category term="枚举类" scheme="https://www.itnxd.cn/tags/%E6%9E%9A%E4%B8%BE%E7%B1%BB/"/>
-    
-      <category term="集合" scheme="https://www.itnxd.cn/tags/%E9%9B%86%E5%90%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>再学Java之面向对象与异常</title>
-    <link href="https://www.itnxd.cn/posts/6640.html"/>
-    <id>https://www.itnxd.cn/posts/6640.html</id>
-    <published>2021-02-15T05:09:23.000Z</published>
-    <updated>2021-02-17T13:34:31.204Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;这里仅记录我认为没有了解透彻的知识，并不很全面系统，仅用于自己的查漏补缺！不过，我相信我没写的大家都是了解清楚的！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h1&gt;一、面向对象学习的三条主线&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;l
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Java教程" scheme="https://www.itnxd.cn/categories/Java%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="面向对象" scheme="https://www.itnxd.cn/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode刷题-130. 被围绕的区域</title>
-    <link href="https://www.itnxd.cn/posts/10602.html"/>
-    <id>https://www.itnxd.cn/posts/10602.html</id>
-    <published>2020-08-08T15:16:17.000Z</published>
-    <updated>2020-08-12T15:08:09.131Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/surrounded-regions/&quot;&gt;130.
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="DFS" scheme="https://www.itnxd.cn/tags/DFS/"/>
-    
-      <category term="递归" scheme="https://www.itnxd.cn/tags/%E9%80%92%E5%BD%92/"/>
-    
-      <category term="Flood Fill" scheme="https://www.itnxd.cn/tags/Flood-Fill/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode刷题-129. 求根到叶子节点数字之和</title>
-    <link href="https://www.itnxd.cn/posts/59814.html"/>
-    <id>https://www.itnxd.cn/posts/59814.html</id>
-    <published>2020-08-08T15:16:05.000Z</published>
-    <updated>2020-08-12T15:08:09.129Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/&quot;&gt;129.
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="DFS" scheme="https://www.itnxd.cn/tags/DFS/"/>
-    
-      <category term="递归" scheme="https://www.itnxd.cn/tags/%E9%80%92%E5%BD%92/"/>
-    
-      <category term="二叉树" scheme="https://www.itnxd.cn/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode刷题-128. 最长连续序列</title>
-    <link href="https://www.itnxd.cn/posts/44196.html"/>
-    <id>https://www.itnxd.cn/posts/44196.html</id>
-    <published>2020-08-08T15:15:50.000Z</published>
-    <updated>2020-08-12T15:08:09.123Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/longest-consecutive-sequence/&quot;&gt;128.
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="哈希" scheme="https://www.itnxd.cn/tags/%E5%93%88%E5%B8%8C/"/>
     
   </entry>
   
