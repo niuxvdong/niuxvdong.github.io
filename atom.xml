@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.itnxd.cn/"/>
-  <updated>2021-03-27T15:18:42.695Z</updated>
+  <updated>2021-04-06T02:59:28.224Z</updated>
   <id>https://www.itnxd.cn/</id>
   
   <author>
@@ -15,6 +15,332 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring全家桶之SpringMvc使用介绍</title>
+    <link href="https://www.itnxd.cn/posts/22550.html"/>
+    <id>https://www.itnxd.cn/posts/22550.html</id>
+    <published>2021-04-05T03:28:58.000Z</published>
+    <updated>2021-04-06T02:59:28.224Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;一、SpringMvc概述&lt;/h1&gt;
+&lt;h2 id=&quot;1、SpringMvc概述&quot;&gt;1、SpringMvc概述&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一种轻量级的、基于 MVC 的 Web
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Spring全家桶" scheme="https://www.itnxd.cn/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
+    
+    
+      <category term="SpringMvc" scheme="https://www.itnxd.cn/tags/SpringMvc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之LeetCode 781.森林中的兔子</title>
+    <link href="https://www.itnxd.cn/posts/43253.html"/>
+    <id>https://www.itnxd.cn/posts/43253.html</id>
+    <published>2021-04-04T02:25:42.000Z</published>
+    <updated>2021-04-06T03:07:07.361Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/rabbits-in-forest/&quot;&gt;LeetCode 781.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="思维题" scheme="https://www.itnxd.cn/tags/%E6%80%9D%E7%BB%B4%E9%A2%98/"/>
+    
+      <category term="数学" scheme="https://www.itnxd.cn/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之AcWing 1222.密码脱落</title>
+    <link href="https://www.itnxd.cn/posts/62813.html"/>
+    <id>https://www.itnxd.cn/posts/62813.html</id>
+    <published>2021-04-03T02:25:10.000Z</published>
+    <updated>2021-04-06T02:58:57.587Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/1224/&quot;&gt;AcWing 1222.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
+    
+    
+      <category term="动态规划" scheme="https://www.itnxd.cn/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+      <category term="区间DP" scheme="https://www.itnxd.cn/tags/%E5%8C%BA%E9%97%B4DP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之LeetCode 1143. 最长公共子序列</title>
+    <link href="https://www.itnxd.cn/posts/55105.html"/>
+    <id>https://www.itnxd.cn/posts/55105.html</id>
+    <published>2021-04-02T02:24:36.000Z</published>
+    <updated>2021-04-06T02:58:50.589Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/longest-common-subsequence/&quot;&gt;LeetCode 1143.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="动态规划" scheme="https://www.itnxd.cn/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+      <category term="DP" scheme="https://www.itnxd.cn/tags/DP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之AcWing 1381.阶乘</title>
+    <link href="https://www.itnxd.cn/posts/33788.html"/>
+    <id>https://www.itnxd.cn/posts/33788.html</id>
+    <published>2021-04-01T03:23:15.000Z</published>
+    <updated>2021-04-02T06:56:51.852Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/1383/&quot;&gt;AcWing 1381.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
+    
+    
+      <category term="数论" scheme="https://www.itnxd.cn/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="因式分解" scheme="https://www.itnxd.cn/tags/%E5%9B%A0%E5%BC%8F%E5%88%86%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之LeetCode 1006.笨阶乘</title>
+    <link href="https://www.itnxd.cn/posts/337.html"/>
+    <id>https://www.itnxd.cn/posts/337.html</id>
+    <published>2021-03-31T03:22:52.000Z</published>
+    <updated>2021-04-06T02:56:50.255Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/clumsy-factorial/&quot;&gt;LeetCode 1006. 笨阶乘
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="栈" scheme="https://www.itnxd.cn/tags/%E6%A0%88/"/>
+    
+      <category term="找规律" scheme="https://www.itnxd.cn/tags/%E6%89%BE%E8%A7%84%E5%BE%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之AcWing 15.二维数组中的查找</title>
+    <link href="https://www.itnxd.cn/posts/20007.html"/>
+    <id>https://www.itnxd.cn/posts/20007.html</id>
+    <published>2021-03-30T03:22:11.000Z</published>
+    <updated>2021-04-02T04:46:36.320Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/16/&quot;&gt;AcWing 15.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
+    
+    
+      <category term="思维" scheme="https://www.itnxd.cn/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之AcWing 77.翻转单词顺序</title>
+    <link href="https://www.itnxd.cn/posts/6719.html"/>
+    <id>https://www.itnxd.cn/posts/6719.html</id>
+    <published>2021-03-29T03:28:02.000Z</published>
+    <updated>2021-03-29T07:59:40.015Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/activity/content/problem/content/3776/1/&quot;&gt;AcWing 77.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
+    
+    
+      <category term="字符串" scheme="https://www.itnxd.cn/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之LeetCode 190.颠倒二进制位</title>
+    <link href="https://www.itnxd.cn/posts/51716.html"/>
+    <id>https://www.itnxd.cn/posts/51716.html</id>
+    <published>2021-03-29T03:27:40.000Z</published>
+    <updated>2021-03-29T07:59:40.029Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/reverse-bits/&quot;&gt;LeetCode 190.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="二进制" scheme="https://www.itnxd.cn/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之AcWing 19.二叉树的下一个节点</title>
+    <link href="https://www.itnxd.cn/posts/43631.html"/>
+    <id>https://www.itnxd.cn/posts/43631.html</id>
+    <published>2021-03-28T03:27:05.000Z</published>
+    <updated>2021-03-29T07:59:40.009Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/31/&quot;&gt;AcWing 19. 二叉树的下一个节点 
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
+    
+    
+      <category term="二叉树" scheme="https://www.itnxd.cn/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+      <category term="链表" scheme="https://www.itnxd.cn/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+      <category term="树的遍历" scheme="https://www.itnxd.cn/tags/%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之LeetCode 173.二叉搜索树迭代器</title>
+    <link href="https://www.itnxd.cn/posts/23863.html"/>
+    <id>https://www.itnxd.cn/posts/23863.html</id>
+    <published>2021-03-28T03:26:39.000Z</published>
+    <updated>2021-03-29T07:59:40.021Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/binary-search-tree-iterator/&quot;&gt;LeetCode 173.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="二叉树" scheme="https://www.itnxd.cn/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+      <category term="树的遍历" scheme="https://www.itnxd.cn/tags/%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/"/>
+    
+  </entry>
   
   <entry>
     <title>Java自动化构建工具之Maven的使用介绍</title>
@@ -41,6 +367,34 @@
     
     
       <category term="Maven" scheme="https://www.itnxd.cn/tags/Maven/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之LeetCode 61.旋转链表</title>
+    <link href="https://www.itnxd.cn/posts/29975.html"/>
+    <id>https://www.itnxd.cn/posts/29975.html</id>
+    <published>2021-03-27T03:25:06.000Z</published>
+    <updated>2021-03-29T07:59:40.034Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/rotate-list/&quot;&gt;LeetCode 61.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="链表" scheme="https://www.itnxd.cn/tags/%E9%93%BE%E8%A1%A8/"/>
     
   </entry>
   
@@ -185,7 +539,7 @@
     <link href="https://www.itnxd.cn/posts/24068.html"/>
     <id>https://www.itnxd.cn/posts/24068.html</id>
     <published>2021-03-25T07:47:59.000Z</published>
-    <updated>2021-03-25T12:59:16.416Z</updated>
+    <updated>2021-03-29T07:04:38.739Z</updated>
     
     <summary type="html">
     
@@ -213,7 +567,7 @@
     <link href="https://www.itnxd.cn/posts/32399.html"/>
     <id>https://www.itnxd.cn/posts/32399.html</id>
     <published>2021-03-24T07:46:55.000Z</published>
-    <updated>2021-03-25T12:59:16.389Z</updated>
+    <updated>2021-03-29T07:01:25.695Z</updated>
     
     <summary type="html">
     
@@ -241,7 +595,7 @@
     <link href="https://www.itnxd.cn/posts/910.html"/>
     <id>https://www.itnxd.cn/posts/910.html</id>
     <published>2021-03-24T07:46:33.000Z</published>
-    <updated>2021-03-25T12:59:16.410Z</updated>
+    <updated>2021-03-29T07:05:34.232Z</updated>
     
     <summary type="html">
     
@@ -261,383 +615,6 @@
     
     
       <category term="单调栈" scheme="https://www.itnxd.cn/tags/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日一题之AcWing 1497.树的遍历</title>
-    <link href="https://www.itnxd.cn/posts/20698.html"/>
-    <id>https://www.itnxd.cn/posts/20698.html</id>
-    <published>2021-03-23T07:46:10.000Z</published>
-    <updated>2021-03-25T12:59:16.404Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/1499/&quot;&gt;AcWing
-        
-      
-    
-    </summary>
-    
-    
-      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
-    
-    
-      <category term="树的遍历" scheme="https://www.itnxd.cn/tags/%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日一题之AcWing 85.不用加减乘除做加法</title>
-    <link href="https://www.itnxd.cn/posts/24538.html"/>
-    <id>https://www.itnxd.cn/posts/24538.html</id>
-    <published>2021-03-22T07:43:05.000Z</published>
-    <updated>2021-03-25T12:59:16.427Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/81/&quot;&gt;AcWing 85.不用加减乘除做加法&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;计算机底层加法的实现原理 —
-        
-      
-    
-    </summary>
-    
-    
-      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
-    
-    
-      <category term="位运算" scheme="https://www.itnxd.cn/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
-    
-      <category term="全加器" scheme="https://www.itnxd.cn/tags/%E5%85%A8%E5%8A%A0%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日一题之AcWing 3302.表达式求值</title>
-    <link href="https://www.itnxd.cn/posts/46950.html"/>
-    <id>https://www.itnxd.cn/posts/46950.html</id>
-    <published>2021-03-21T12:46:10.000Z</published>
-    <updated>2021-03-21T14:16:10.158Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/3305/&quot;&gt;AcWing 3302.
-        
-      
-    
-    </summary>
-    
-    
-      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
-    
-    
-      <category term="栈" scheme="https://www.itnxd.cn/tags/%E6%A0%88/"/>
-    
-      <category term="模板" scheme="https://www.itnxd.cn/tags/%E6%A8%A1%E6%9D%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日一题之LeetCode-92. 反转链表 II反转链表</title>
-    <link href="https://www.itnxd.cn/posts/25333.html"/>
-    <id>https://www.itnxd.cn/posts/25333.html</id>
-    <published>2021-03-19T01:47:32.000Z</published>
-    <updated>2021-03-25T07:40:07.246Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1&gt;一、反转链表I&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="链表" scheme="https://www.itnxd.cn/tags/%E9%93%BE%E8%A1%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaWeb之JSON、Ajax、i18n的使用</title>
-    <link href="https://www.itnxd.cn/posts/59901.html"/>
-    <id>https://www.itnxd.cn/posts/59901.html</id>
-    <published>2021-03-18T09:33:40.000Z</published>
-    <updated>2021-03-18T14:39:04.888Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1&gt;一、JSON&lt;/h1&gt;
-&lt;h2 id=&quot;1、概述&quot;&gt;1、概述&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;JSON (JavaScript Object Notation)
-        
-      
-    
-    </summary>
-    
-    
-      <category term="JavaWeb" scheme="https://www.itnxd.cn/categories/JavaWeb/"/>
-    
-    
-      <category term="JSON" scheme="https://www.itnxd.cn/tags/JSON/"/>
-    
-      <category term="Ajax" scheme="https://www.itnxd.cn/tags/Ajax/"/>
-    
-      <category term="i18n" scheme="https://www.itnxd.cn/tags/i18n/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaWeb之Filter过滤器、ThreadLocal的使用</title>
-    <link href="https://www.itnxd.cn/posts/24926.html"/>
-    <id>https://www.itnxd.cn/posts/24926.html</id>
-    <published>2021-03-18T09:29:01.000Z</published>
-    <updated>2021-03-18T12:16:26.069Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1&gt;一、Filter&lt;/h1&gt;
-&lt;h2 id=&quot;1、概述&quot;&gt;1、概述&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Filter 过滤器它是 JavaWeb 的三大组件之一。三大组件分别是：Servlet 程序、Listener 监听器、Filter 过滤器。&lt;/li&gt;
-&lt;li&gt;Filter
-        
-      
-    
-    </summary>
-    
-    
-      <category term="JavaWeb" scheme="https://www.itnxd.cn/categories/JavaWeb/"/>
-    
-    
-      <category term="Filter" scheme="https://www.itnxd.cn/tags/Filter/"/>
-    
-      <category term="ThreadLocal" scheme="https://www.itnxd.cn/tags/ThreadLocal/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaWeb之谷歌Kaptcha验证码使用</title>
-    <link href="https://www.itnxd.cn/posts/44470.html"/>
-    <id>https://www.itnxd.cn/posts/44470.html</id>
-    <published>2021-03-18T08:40:28.000Z</published>
-    <updated>2021-03-18T09:27:05.139Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1&gt;一、概述&lt;/h1&gt;
-&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="JavaWeb" scheme="https://www.itnxd.cn/categories/JavaWeb/"/>
-    
-    
-      <category term="Kaptcha" scheme="https://www.itnxd.cn/tags/Kaptcha/"/>
-    
-      <category term="验证码" scheme="https://www.itnxd.cn/tags/%E9%AA%8C%E8%AF%81%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaWeb之Cookie和Session使用</title>
-    <link href="https://www.itnxd.cn/posts/56534.html"/>
-    <id>https://www.itnxd.cn/posts/56534.html</id>
-    <published>2021-03-15T14:50:10.000Z</published>
-    <updated>2021-03-16T03:02:04.748Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1&gt;一、Cookie&lt;/h1&gt;
-&lt;h2 id=&quot;1、Cookie概述&quot;&gt;1、Cookie概述&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Cookie 翻译过来是饼干的意思。&lt;/li&gt;
-&lt;li&gt;Cookie
-        
-      
-    
-    </summary>
-    
-    
-      <category term="JavaWeb" scheme="https://www.itnxd.cn/categories/JavaWeb/"/>
-    
-    
-      <category term="Cookie" scheme="https://www.itnxd.cn/tags/Cookie/"/>
-    
-      <category term="Session" scheme="https://www.itnxd.cn/tags/Session/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaWeb之文件的上传和下载</title>
-    <link href="https://www.itnxd.cn/posts/15689.html"/>
-    <id>https://www.itnxd.cn/posts/15689.html</id>
-    <published>2021-03-15T11:26:30.000Z</published>
-    <updated>2021-03-15T14:47:44.541Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1&gt;一、文件上传&lt;/h1&gt;
-&lt;h2 id=&quot;1、文件上传介绍&quot;&gt;1、文件上传介绍&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;要有一个 form 标签，method=post 请求&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;form 标签的 encType 属性值必须为
-        
-      
-    
-    </summary>
-    
-    
-      <category term="JavaWeb" scheme="https://www.itnxd.cn/categories/JavaWeb/"/>
-    
-    
-      <category term="文件上传下载" scheme="https://www.itnxd.cn/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaWeb之EL表达式和JSTL标签库</title>
-    <link href="https://www.itnxd.cn/posts/12961.html"/>
-    <id>https://www.itnxd.cn/posts/12961.html</id>
-    <published>2021-03-11T09:19:55.000Z</published>
-    <updated>2021-03-11T12:51:14.423Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1&gt;一、EL表达式&lt;/h1&gt;
-&lt;h2 id=&quot;1、EL表达式概述&quot;&gt;1、EL表达式概述&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;EL 表达式的全称是：Expression Language。是表达式语言。&lt;/li&gt;
-&lt;li&gt;EL 表达式的什么作用：EL
-        
-      
-    
-    </summary>
-    
-    
-      <category term="JavaWeb" scheme="https://www.itnxd.cn/categories/JavaWeb/"/>
-    
-    
-      <category term="EL" scheme="https://www.itnxd.cn/tags/EL/"/>
-    
-      <category term="JSTL" scheme="https://www.itnxd.cn/tags/JSTL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaWeb之JSP使用总结</title>
-    <link href="https://www.itnxd.cn/posts/31659.html"/>
-    <id>https://www.itnxd.cn/posts/31659.html</id>
-    <published>2021-03-11T04:03:57.000Z</published>
-    <updated>2021-03-11T09:12:54.353Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1&gt;一、JSP概述&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;JSP 的全称是 &lt;code&gt;java server pages&lt;/code&gt;。Java 的服务器页面。JSP 的&lt;strong&gt;主要作用是代替 Servlet 程序回传 html
-        
-      
-    
-    </summary>
-    
-    
-      <category term="JavaWeb" scheme="https://www.itnxd.cn/categories/JavaWeb/"/>
-    
-    
-      <category term="JSP" scheme="https://www.itnxd.cn/tags/JSP/"/>
-    
-      <category term="Listener" scheme="https://www.itnxd.cn/tags/Listener/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaWeb之Servlet使用总结</title>
-    <link href="https://www.itnxd.cn/posts/58740.html"/>
-    <id>https://www.itnxd.cn/posts/58740.html</id>
-    <published>2021-03-08T12:03:24.000Z</published>
-    <updated>2021-03-09T07:13:22.618Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1&gt;一、Servlet介绍&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;Servlet 是 JavaEE 规范之一。规范就是接口！&lt;/li&gt;
-&lt;li&gt;Servlet 就 JavaWeb 三大组件之一。三大组件分别是：Servlet 程序、Filter 过滤器、Listener
-        
-      
-    
-    </summary>
-    
-    
-      <category term="JavaWeb" scheme="https://www.itnxd.cn/categories/JavaWeb/"/>
-    
-    
-      <category term="Servlet" scheme="https://www.itnxd.cn/tags/Servlet/"/>
     
   </entry>
   
