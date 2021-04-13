@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.itnxd.cn/"/>
-  <updated>2021-04-10T07:27:41.569Z</updated>
+  <updated>2021-04-13T10:51:04.244Z</updated>
   <id>https://www.itnxd.cn/</id>
   
   <author>
@@ -15,6 +15,124 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>每日一题之LeetCode 783.二叉搜索树节点最小距离</title>
+    <link href="https://www.itnxd.cn/posts/16877.html"/>
+    <id>https://www.itnxd.cn/posts/16877.html</id>
+    <published>2021-04-13T09:20:25.000Z</published>
+    <updated>2021-04-13T10:51:04.244Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;一、题解&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;题目大意：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;求一个二叉搜索树任意两个节点数的差值的最小值！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;思路：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我们知道，二叉搜索树的中序遍历就是一个单调序列！&lt;/p&gt;
+&lt;p&gt;因此
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="中序遍历" scheme="https://www.itnxd.cn/tags/%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86/"/>
+    
+      <category term="树的遍历" scheme="https://www.itnxd.cn/tags/%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之AcWing 1453.移掉K位数字</title>
+    <link href="https://www.itnxd.cn/posts/59024.html"/>
+    <id>https://www.itnxd.cn/posts/59024.html</id>
+    <published>2021-04-12T09:19:39.000Z</published>
+    <updated>2021-04-13T10:43:36.488Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/1455/&quot;&gt;AcWing 1453. 移掉K位数字
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
+    
+    
+      <category term="贪心" scheme="https://www.itnxd.cn/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之LeetCode 179.最大数</title>
+    <link href="https://www.itnxd.cn/posts/10647.html"/>
+    <id>https://www.itnxd.cn/posts/10647.html</id>
+    <published>2021-04-11T09:19:06.000Z</published>
+    <updated>2021-04-13T10:30:10.330Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/largest-number/&quot;&gt;LeetCode 179.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="排序" scheme="https://www.itnxd.cn/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题之AcWing 62.丑数</title>
+    <link href="https://www.itnxd.cn/posts/12479.html"/>
+    <id>https://www.itnxd.cn/posts/12479.html</id>
+    <published>2021-04-10T09:17:13.000Z</published>
+    <updated>2021-04-13T10:16:54.065Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/58/&quot;&gt;AcWing 62. 丑数
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
+    
+    
+      <category term="多路归并" scheme="https://www.itnxd.cn/tags/%E5%A4%9A%E8%B7%AF%E5%BD%92%E5%B9%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>持久化层数据库框架-MyBatis使用总结</title>
@@ -53,7 +171,7 @@
     <link href="https://www.itnxd.cn/posts/31655.html"/>
     <id>https://www.itnxd.cn/posts/31655.html</id>
     <published>2021-04-08T07:17:09.000Z</published>
-    <updated>2021-04-10T07:45:23.900Z</updated>
+    <updated>2021-04-10T07:57:27.596Z</updated>
     
     <summary type="html">
     
@@ -81,7 +199,7 @@
     <link href="https://www.itnxd.cn/posts/23461.html"/>
     <id>https://www.itnxd.cn/posts/23461.html</id>
     <published>2021-04-07T07:16:37.000Z</published>
-    <updated>2021-04-10T07:56:37.097Z</updated>
+    <updated>2021-04-10T07:57:27.599Z</updated>
     
     <summary type="html">
     
@@ -109,7 +227,7 @@
     <link href="https://www.itnxd.cn/posts/20480.html"/>
     <id>https://www.itnxd.cn/posts/20480.html</id>
     <published>2021-04-06T07:15:50.000Z</published>
-    <updated>2021-04-10T07:38:20.088Z</updated>
+    <updated>2021-04-10T07:57:27.588Z</updated>
     
     <summary type="html">
     
@@ -483,137 +601,6 @@
     
     
       <category term="Maven" scheme="https://www.itnxd.cn/tags/Maven/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日一题之LeetCode 61.旋转链表</title>
-    <link href="https://www.itnxd.cn/posts/29975.html"/>
-    <id>https://www.itnxd.cn/posts/29975.html</id>
-    <published>2021-03-27T03:25:06.000Z</published>
-    <updated>2021-03-29T07:59:40.034Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/rotate-list/&quot;&gt;LeetCode 61.
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="链表" scheme="https://www.itnxd.cn/tags/%E9%93%BE%E8%A1%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring全家桶之Spring5新功能-整合Log4j2日志、Nullable注解、整合JUnit5</title>
-    <link href="https://www.itnxd.cn/posts/34962.html"/>
-    <id>https://www.itnxd.cn/posts/34962.html</id>
-    <published>2021-03-26T07:25:48.000Z</published>
-    <updated>2021-03-26T09:09:10.396Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;整个 Spring5 框架的代码基于 Java8，运行时兼容 JDK9，许多不建议使用的类和方法在代码库中删除！&lt;/p&gt;
-&lt;p&gt;Spring5中文版新功能可以在这里看到：&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Spring全家桶" scheme="https://www.itnxd.cn/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
-    
-    
-      <category term="Spring5" scheme="https://www.itnxd.cn/tags/Spring5/"/>
-    
-      <category term="Log4j2" scheme="https://www.itnxd.cn/tags/Log4j2/"/>
-    
-      <category term="Junit5" scheme="https://www.itnxd.cn/tags/Junit5/"/>
-    
-      <category term="Nullable" scheme="https://www.itnxd.cn/tags/Nullable/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring全家桶之Spring5-JdbcTemplate与事务操作</title>
-    <link href="https://www.itnxd.cn/posts/22145.html"/>
-    <id>https://www.itnxd.cn/posts/22145.html</id>
-    <published>2021-03-26T02:43:29.000Z</published>
-    <updated>2021-03-26T09:09:10.414Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1&gt;一、JdbcTemplate&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;可以使用Spring提供的JdbcTemplate来操作数据库！&lt;/p&gt;
-&lt;p&gt;虽然后面会被其他框架代替！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Spring全家桶" scheme="https://www.itnxd.cn/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
-    
-    
-      <category term="Spring5" scheme="https://www.itnxd.cn/tags/Spring5/"/>
-    
-      <category term="JdbcTemplate" scheme="https://www.itnxd.cn/tags/JdbcTemplate/"/>
-    
-      <category term="声明式事务" scheme="https://www.itnxd.cn/tags/%E5%A3%B0%E6%98%8E%E5%BC%8F%E4%BA%8B%E5%8A%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring全家桶之Spring5-AOP使用介绍</title>
-    <link href="https://www.itnxd.cn/posts/38615.html"/>
-    <id>https://www.itnxd.cn/posts/38615.html</id>
-    <published>2021-03-26T01:09:56.000Z</published>
-    <updated>2021-03-26T09:09:10.423Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1&gt;一、AOP概述&lt;/h1&gt;
-&lt;h2 id=&quot;1、概述&quot;&gt;1、概述&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Aspect Oriented Programming，面向切面编程，利用 AOP
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Spring全家桶" scheme="https://www.itnxd.cn/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
-    
-    
-      <category term="Spring5" scheme="https://www.itnxd.cn/tags/Spring5/"/>
-    
-      <category term="AOP" scheme="https://www.itnxd.cn/tags/AOP/"/>
     
   </entry>
   
