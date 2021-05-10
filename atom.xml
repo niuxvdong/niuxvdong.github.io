@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.itnxd.cn/"/>
-  <updated>2021-05-10T02:36:52.190Z</updated>
+  <updated>2021-05-10T05:51:31.995Z</updated>
   <id>https://www.itnxd.cn/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Shell编程学习总结</title>
+    <link href="https://www.itnxd.cn/posts/6952.html"/>
+    <id>https://www.itnxd.cn/posts/6952.html</id>
+    <published>2021-05-10T03:10:00.000Z</published>
+    <updated>2021-05-10T05:51:31.995Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;一、概述&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Shell 是一个命令行解释器，它为用户提供了一个向 Linux 内核发送请求以便运行程序的界面系统级程序，用户可以用 Shell 来启动、挂起、停止甚至是编写一些程序！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Shell" scheme="https://www.itnxd.cn/categories/Shell/"/>
+    
+    
+      <category term="Shell" scheme="https://www.itnxd.cn/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux使用及JavaEE环境搭建</title>
     <link href="https://www.itnxd.cn/posts/58036.html"/>
     <id>https://www.itnxd.cn/posts/58036.html</id>
     <published>2021-05-07T01:35:41.000Z</published>
-    <updated>2021-05-10T02:36:52.190Z</updated>
+    <updated>2021-05-10T03:05:25.103Z</updated>
     
     <summary type="html">
     
@@ -573,38 +604,6 @@
     
     
       <category term="二进制" scheme="https://www.itnxd.cn/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日一题之AcWing 19.二叉树的下一个节点</title>
-    <link href="https://www.itnxd.cn/posts/43631.html"/>
-    <id>https://www.itnxd.cn/posts/43631.html</id>
-    <published>2021-03-28T03:27:05.000Z</published>
-    <updated>2021-03-29T07:59:40.009Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/31/&quot;&gt;AcWing 19. 二叉树的下一个节点 
-        
-      
-    
-    </summary>
-    
-    
-      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
-    
-    
-      <category term="二叉树" scheme="https://www.itnxd.cn/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
-    
-      <category term="链表" scheme="https://www.itnxd.cn/tags/%E9%93%BE%E8%A1%A8/"/>
-    
-      <category term="树的遍历" scheme="https://www.itnxd.cn/tags/%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/"/>
     
   </entry>
   
