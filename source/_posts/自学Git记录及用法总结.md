@@ -2,7 +2,6 @@
 title: 自学Git记录及用法总结
 author: Mr.Niu
 toc: true
-top: true
 abbrlink: 50207
 cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/banners/1.jpg'
 top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/banners/1.jpg'
