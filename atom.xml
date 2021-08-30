@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.itnxd.cn/"/>
-  <updated>2021-05-10T05:51:31.995Z</updated>
+  <updated>2021-08-30T07:51:02.586Z</updated>
   <id>https://www.itnxd.cn/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Redis学习总结</title>
+    <link href="https://www.itnxd.cn/posts/64689.html"/>
+    <id>https://www.itnxd.cn/posts/64689.html</id>
+    <published>2021-08-30T07:12:17.000Z</published>
+    <updated>2021-08-30T07:51:02.586Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Shell编程学习总结</title>
     <link href="https://www.itnxd.cn/posts/6952.html"/>
     <id>https://www.itnxd.cn/posts/6952.html</id>
     <published>2021-05-10T03:10:00.000Z</published>
-    <updated>2021-05-10T05:51:31.995Z</updated>
+    <updated>2021-05-10T05:52:34.160Z</updated>
     
     <summary type="html">
     
@@ -576,34 +603,6 @@
     
     
       <category term="字符串" scheme="https://www.itnxd.cn/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日一题之LeetCode 190.颠倒二进制位</title>
-    <link href="https://www.itnxd.cn/posts/51716.html"/>
-    <id>https://www.itnxd.cn/posts/51716.html</id>
-    <published>2021-03-29T03:27:40.000Z</published>
-    <updated>2021-03-29T07:59:40.029Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/reverse-bits/&quot;&gt;LeetCode 190.
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="二进制" scheme="https://www.itnxd.cn/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/"/>
     
   </entry>
   
