@@ -12,14 +12,14 @@ menu:
   留言板: /contact/ || fa fa-coffee
   友链: /link/ || fa fa-link
   关于我: /about/ || fa fa-heart
-  百宝箱||fa fa-list:
-    - 导航 || https://nxd.js.org/ || fa fa-thumbs-up
-    # - 音乐 || https://music.niuxvdong.top/ || fa fa-music
-    - 云盘 || https://pan.niub.cf/tykj/ || fa fa-cloud
-    # - 图床 || http://pic.niuxvdong.top/ || fa fa-file-image
-    - 谷歌 || https://proxy.niub.cf/ || fa fa-plane
-    # - 评论 || https://valine.niuxvdong.top/ || fa fa-comments
-    # - 电影 || /movies/ || fa fa-film
+  # 百宝箱||fa fa-list:
+  #   - 导航 || https://nxd.js.org/ || fa fa-thumbs-up
+  #   # - 音乐 || https://music.niuxvdong.top/ || fa fa-music
+  #   - 云盘 || https://pan.niub.cf/tykj/ || fa fa-cloud
+  #   # - 图床 || http://pic.niuxvdong.top/ || fa fa-file-image
+  #   - 谷歌 || https://proxy.niub.cf/ || fa fa-plane
+  #   # - 评论 || https://valine.niuxvdong.top/ || fa fa-comments
+  #   # - 电影 || /movies/ || fa fa-film
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
@@ -42,6 +42,7 @@ highlight_theme: mac light # default / darker / pale night / light / ocean / mac
 highlight_copy: true #代碼複製按鈕
 highlight_lang: true #代碼語言顯示
 highlight_shrink: false # true 全部代碼框不展開，需點擊 '>' 打開 / false 代碼框展開，有'>'點擊按鈕 | none 代碼框展開，不顯示 '>' 按鈕
+highlight_height_limit: false # unit: px
 code_word_wrap: false
 
 # copy setting
@@ -216,7 +217,7 @@ wordcount:
 toc:
   enable: true
   number: false
-  style_simple: false
+  style_simple: true
 
 # auto open the sidebar in 'post'
 # auto_open_sidebar:
@@ -311,6 +312,7 @@ gitalk:
   pagerDirection: last # Comment sorting direction, available values are last and first.
   createIssueManually: false # Gitalk will create a corresponding github issue for your every single page automatically
   count: false # dispaly comment count in top_img
+  option:
 
 # valine comment system. https://valine.js.org
 valine:
@@ -344,6 +346,7 @@ valine:
     mail: 邮箱(必填)
     link: 网址(https://)
   tagMeta: [“博主”,“小伙伴”,“访客”]
+  visitor: true
   option:
 
 # waline - A simple comment system with backend support fork from Valine
@@ -351,8 +354,10 @@ valine:
 waline:
   serverURL: https://waline.niuxvdong.top/ # https://waline-six-sigma.vercel.app/ # Waline server address url
   avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
-  emojiCDN: # emoji CDN
+  # emojiCDN: # emoji CDN
+  avatarCDN: # Gravatar CDN baseURL
   bg: /image/comment_bg.png # waline background
+  visitor: true
   option:
 
 # utterances
@@ -382,6 +387,7 @@ facebook_comments:
 twikoo:
   envId: itnxd-8g1z2i760e99f516
   region:
+  visitor: true
   option:
 
 # Chat Services
@@ -490,26 +496,32 @@ google_adsense:
 #   aside:
 #   post:
 
-####    站長驗證    ####
-# Google Webmaster tools verification setting
-# See: https://www.google.com/webmasters/
-google_site_verification: H9LW1qdxrkJ55YbkfWulMvpaexxx3Rk0Yo6dVANeNHc
+# ####    站長驗證    ####
+# # Google Webmaster tools verification setting
+# # See: https://www.google.com/webmasters/
+# google_site_verification: H9LW1qdxrkJ55YbkfWulMvpaexxx3Rk0Yo6dVANeNHc
 
-# Bing Webmaster tools verification setting
-# See: https://www.bing.com/webmaster/
-bing_site_verification:
+# # Bing Webmaster tools verification setting
+# # See: https://www.bing.com/webmaster/
+# bing_site_verification:
 
-# Baidu Webmaster tools verification setting
-# See: https://ziyuan.baidu.com/site/
-baidu_site_verification: code-YglH3DObCb
+# # Baidu Webmaster tools verification setting
+# # See: https://ziyuan.baidu.com/site/
+# baidu_site_verification: code-YglH3DObCb
 
-# 360 Webmaster tools verification setting
-# see http://zhanzhang.so.com/
-qihu_site_verification:
+# # 360 Webmaster tools verification setting
+# # see http://zhanzhang.so.com/
+# qihu_site_verification:
 
-# Yandex Webmaster tools verification setting
-# see https://webmaster.yandex.com/
-yandex_site_verification:
+# # Yandex Webmaster tools verification setting
+# # see https://webmaster.yandex.com/
+# yandex_site_verification:
+
+site_verification:
+  - name: google-site-verification
+    content: H9LW1qdxrkJ55YbkfWulMvpaexxx3Rk0Yo6dVANeNHc
+  - name: baidu-site-verification
+    content: code-YglH3DObCb
 
 # 打賞按鈕
 reward:
@@ -822,17 +834,6 @@ newest_comments:
   limit: 6
   storage: 10 # unit: mins, save data to localStorage
   avatar: true
-  # You can only choose one, or neither
-  valine: false
-  github_issues:
-    enable: false
-    repo:
-  disqus:
-    enable: false
-    forum:
-    api_key:
-  twikoo: true
-  waline: false
 
 ####   右下角按鈕  ####
 
@@ -926,10 +927,10 @@ note:
 
 # Artitalk
 # see https://artitalk.js.org/
-artitalk:
-  appId:
-  appKey:
-  option:
+# artitalk:
+#   appId:
+#   appKey:
+#   option:
 
 # Pjax [Beta]
 # It may contain bugs and unstable, give feedback when you find the bugs.
@@ -945,11 +946,13 @@ aplayerInject:
   enable: true
   per_page: true
 
-# 圖片懶加載
-# https://github.com/ApoorvSaxena/lozad.js
+# Lazyload (圖片懶加載)
+# https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: true
-  post: /img/loading.gif #加載動畫
+  enable: false
+  field: site # site/post
+  placeholder: /img/loading.gif
+  blur: false
 
 # 避免重複網址分散seo
 # canonical: true
@@ -980,13 +983,13 @@ inject:
   # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/css/my.css">
   - <link rel="stylesheet" href="//at.alicdn.com/t/font_1828588_zrw9f0qqie.css">
   # - <link rel="stylesheet" href="/self/atom-one-dark-reasonable.css">
-  - <link rel="stylesheet" href="/self/dracula.css">
+  # - <link rel="stylesheet" href="/self/dracula.css">
 
   bottom:
     # - <script src="js/music.js"></script>
     # - <script src="https://cdn.jsdelivr.net/gh/niuxvdong/niuxvdong.github.io/js/my.js"></script>
-    - <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
-    - <div class="aplayer no-destroy" data-id="4900141628" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div>
+    # - <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
+    # - <div class="aplayer no-destroy" data-id="4900141628" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div>
     # - <div class="aplayer no-destroy" data-id="000PeZCQ1i4XVs" data-server="tencent" data-type="artist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div>
 
 # CDN
@@ -1023,8 +1026,8 @@ CDN:
   # math
   mathjax: https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML
   katex: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
-  katex_copytex: https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js
-  katex_copytex_css: https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css
+  katex_copytex: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
+  katex_copytex_css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css
   mermaid: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
 
   # count
@@ -1072,7 +1075,7 @@ CDN:
   aplayer_js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
   meting_js: https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js
 
-  artitalk: https://cdn.jsdelivr.net/npm/artitalk
+  # artitalk: https://cdn.jsdelivr.net/npm/artitalk
 
   # 簡繁轉換
   translate: /js/tw_cn.js

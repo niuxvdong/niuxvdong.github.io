@@ -229,8 +229,8 @@ img {
   background: url(https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile1/imgbed/2020/02/13/20200213164243.png) 100% 100% no-repeat;
 }
 
-#sidebar .sidebar-toc .toc-link.active {
+/* #sidebar .sidebar-toc .toc-link.active {
   border-right-color: #e21a20;
   background: #eb5055;
   color: #fff;
-}
+} */
