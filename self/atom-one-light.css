@@ -17,89 +17,88 @@ hue-6-2: #c18401
 
 #article-container .highlight-tools {
   color: 	#f47466;
-  background: #FFFFE0;
+  background:	#F5F5F5;
 }
 
 #article-container figure.highlight .gutter pre {
   color: 	#696969;
-  background: #FFFFE0;
+  background: #fafafa;
 }
 
-/* 背景和前景 */
-#article-container pre, #article-container figure.highlight {
-  color: #383a42;
-  background: #FFFFF0;
-}
-
-.comment,
-.quote {
-  font-style: italic;
-}
-
-.doctag,
-.keyword,
-.formula {
-  color: #a626a4;
-}
-
-.section,
-.name,
-.selector-tag,
-.deletion,
-.subst {
-  color: #e45649;
-}
-
-.literal {
-  color: #0184bb;
-}
-
-.string,
-.regexp,
-.addition,
-.attribute,
-.meta .string {
-  color: #50a14f;
-}
-
-.attr,
-.params,
-.variable,
-.template-variable,
-.type,
-.selector-class,
-.selector-attr,
-.selector-pseudo,
-.number {
-  color: #986801;
-}
-
-.symbol,
-.bullet,
-.link,
-.meta,
-.selector-id,
-.title {
-  color: #4078f2;
-}
-
-.built_in,
-.title.class_,
-.class .title {
-  color: #c18401 !important;
-}
-
-.emphasis {
-  font-style: italic;
-}
-
-.strong {
-  font-weight: bold;
-}
-
-.link {
-  text-decoration: underline;
-}<script>
+#article-container figure.highlight .hljs {
+    color: #383a42;
+    background: #fafafa;
+  }
+  
+  .hljs-comment,
+  .hljs-quote {
+    color: #a0a1a7;
+    font-style: italic;
+  }
+  
+  .hljs-doctag,
+  .hljs-keyword,
+  .hljs-formula {
+    color: #a626a4;
+  }
+  
+  .hljs-section,
+  .hljs-name,
+  .hljs-selector-tag,
+  .hljs-deletion,
+  .hljs-subst {
+    color: #e45649;
+  }
+  
+  .hljs-literal {
+    color: #0184bb;
+  }
+  
+  .hljs-string,
+  .hljs-regexp,
+  .hljs-addition,
+  .hljs-attribute,
+  .hljs-meta .hljs-string {
+    color: #50a14f;
+  }
+  
+  .hljs-attr,
+  .hljs-variable,
+  .hljs-template-variable,
+  .hljs-type,
+  .hljs-selector-class,
+  .hljs-selector-attr,
+  .hljs-selector-pseudo,
+  .hljs-number {
+    color: #986801;
+  }
+  
+  .hljs-symbol,
+  .hljs-bullet,
+  .hljs-link,
+  .hljs-meta,
+  .hljs-selector-id,
+  .hljs-title {
+    color: #4078f2;
+  }
+  
+  .hljs-built_in,
+  .hljs-title.class_,
+  .hljs-class .hljs-title {
+    color: #c18401;
+  }
+  
+  .hljs-emphasis {
+    font-style: italic;
+  }
+  
+  .hljs-strong {
+    font-weight: bold;
+  }
+  
+  .hljs-link {
+    text-decoration: underline;
+  }<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
