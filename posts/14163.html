@@ -185,7 +185,7 @@
 <p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200203211028.png" alt=""></p>
 <h4 id="如图所示，复制当中的HTML代码即可。"><a class="header-anchor" href="#如图所示，复制当中的HTML代码即可。">¶</a>如图所示，复制当中的HTML代码即可。</h4>
 <p style="color:red; font-size:16px">效果如下:</p><p>
-</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">100%</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=1346281717&amp;auto=1&amp;height=66"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">frameborder</span>=<span class="hljs-string">"no"</span> <span class="hljs-attr">border</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">marginwidth</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">marginheight</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">100%</span> <span class="hljs-attr">height</span>=<span class="hljs-string">86</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"//music.163.com/outchain/player?type=2&amp;id=1346281717&amp;auto=1&amp;height=66"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span><br></code></pre></td></tr></tbody></table></figure>
 <h2 id="2、通过B站来引入外链HTML代码"><a class="header-anchor" href="#2、通过B站来引入外链HTML代码">¶</a>2、通过B站来引入外链HTML代码:</h2>
 <br>
 <p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200203212844.png" alt=""></p>
@@ -202,14 +202,14 @@
 </li>
 </ul>
 <p style="color:red; font-size:16px">通过npm来安装两个插件：</p><p>
-</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">$ npm install hexo-tag-aplayer --save</span><br><span class="line"></span><br><span class="line">$ npm install hexo-tag-dplayer --save</span><br></pre></td></tr></tbody></table></figure>
+</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><br>$ npm install hexo-tag-aplayer --save<br><br>$ npm install hexo-tag-dplayer --save<br></code></pre></td></tr></tbody></table></figure>
 <h3 id="第一种：meting后面根歌单id。"><a class="header-anchor" href="#第一种：meting后面根歌单id。">¶</a>第一种：meting后面根歌单id。</h3>
 <p>例如 :<a target="_blank" rel="noopener external nofollow noreferrer" href="https://music.163.com/playlist?id=523845661&amp;userid=46562117">https://music.163.com/playlist?id=523845661&amp;userid=46562117</a> ，这个歌</p>
 <p>单的id就是523845661，公司名可以是tencent、netease或是其他公司。</p>
 <ul>
 <li>最新版的 hexo-tag-aplayer 已经支持了MetingJS的使用，可以直接解析网络平台的歌曲，在站点配置文件_config.yml中将aplayer的meting属性开启。</li>
 </ul>
-<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="attr">aplayer:</span></span><br><span class="line">    <span class="attr">meting:</span> <span class="literal">true</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><br><span class="hljs-attr">aplayer:</span><br>    <span class="hljs-attr">meting:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></tbody></table></figure>
 <ul>
 <li>
 <p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jianshu.com/p/f1005ae09e5a">参考文章：点击这里！</a></p>
@@ -218,21 +218,21 @@
 <p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/hushhw/article/details/88092728">有关细节及参数，点击这里！</a></p>
 </li>
 </ul>
-<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{% meting <span class="string">"523845661"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs javascript">{% meting <span class="hljs-string">"523845661"</span> <span class="hljs-string">"netease"</span> <span class="hljs-string">"playlist"</span> <span class="hljs-string">"theme:#FF4081"</span> <span class="hljs-string">"mode:circulation"</span> <span class="hljs-string">"mutex:true"</span> <span class="hljs-string">"listmaxheight:340px"</span> <span class="hljs-string">"preload:auto"</span> %}<br></code></pre></td></tr></tbody></table></figure>
 
-    <div id="aplayer-LaMMgxdi" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="523845661" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+    <div id="aplayer-KMQVURes" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="523845661" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
 <h3 id="第二种：写上名字，歌手，链接地址即可。"><a class="header-anchor" href="#第二种：写上名字，歌手，链接地址即可。">¶</a>第二种：写上名字，歌手，链接地址即可。</h3>
 <ul>
 <li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.zhsh666.xyz/2019/08/19/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E9%9F%B3%E4%B9%90-%E8%A7%86%E9%A2%91/">参考文章：点击这里！</a></li>
 </ul>
-<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{% aplayer <span class="string">"她的睫毛"</span> <span class="string">"周杰伦"</span> <span class="string">"https://home.ustc.edu.cn/~mmmwhy/%d6%dc%bd%dc%c2%d7%20-%20%cb%fd%b5%c4%bd%de%c3%ab.mp3"</span>  <span class="string">"http://home.ustc.edu.cn/~mmmwhy/jay.jpg"</span> <span class="string">"autoplay=false"</span> %}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs javascript">{% aplayer <span class="hljs-string">"她的睫毛"</span> <span class="hljs-string">"周杰伦"</span> <span class="hljs-string">"https://home.ustc.edu.cn/~mmmwhy/%d6%dc%bd%dc%c2%d7%20-%20%cb%fd%b5%c4%bd%de%c3%ab.mp3"</span>  <span class="hljs-string">"http://home.ustc.edu.cn/~mmmwhy/jay.jpg"</span> <span class="hljs-string">"autoplay=false"</span> %}<br></code></pre></td></tr></tbody></table></figure>
 
-        <div id="aplayer-hcPUImyA" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-rxJxoisI" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-hcPUImyA"),
+            element: document.getElementById("aplayer-rxJxoisI"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -250,7 +250,7 @@
 <h3 id="通过meting-和-aplayer-的引用，无法同时使用，都在的时候，只能加载meting"><a class="header-anchor" href="#通过meting-和-aplayer-的引用，无法同时使用，都在的时候，只能加载meting">¶</a>通过meting 和 aplayer 的引用，无法同时使用，都在的时候，只能加载meting!</h3>
 <h2 id="4、通过Hexo的插件来引用视频"><a class="header-anchor" href="#4、通过Hexo的插件来引用视频">¶</a>4、通过Hexo的插件来引用视频:</h2>
 <p style="color:red; font-size:16px">效果如下:</p><p>
-</p><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">{% dplayer <span class="string">"url=http://home.ustc.edu.cn/~mmmwhy/GEM.mp4"</span>  <span class="string">"pic=http://home.ustc.edu.cn/~mmmwhy/GEM.jpg"</span> <span class="string">"loop=yes"</span> <span class="string">"theme=#FADFA3"</span> <span class="string">"autoplay=false"</span> <span class="string">"token=tokendemo"</span> %}</span><br></pre></td></tr></tbody></table></figure>
+</p><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><br>{% dplayer <span class="hljs-string">"url=http://home.ustc.edu.cn/~mmmwhy/GEM.mp4"</span>  <span class="hljs-string">"pic=http://home.ustc.edu.cn/~mmmwhy/GEM.jpg"</span> <span class="hljs-string">"loop=yes"</span> <span class="hljs-string">"theme=#FADFA3"</span> <span class="hljs-string">"autoplay=false"</span> <span class="hljs-string">"token=tokendemo"</span> %}<br></code></pre></td></tr></tbody></table></figure>
 <div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"http://home.ustc.edu.cn/~mmmwhy/GEM.mp4","pic":"http://home.ustc.edu.cn/~mmmwhy/GEM.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 <script>
         document.querySelectorAll('.github-emoji')

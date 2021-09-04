@@ -33,7 +33,6 @@ hue-6-2: #c18401
 
 .comment,
 .quote {
-  color: #a0a1a7;
   font-style: italic;
 }
 
@@ -87,7 +86,7 @@ hue-6-2: #c18401
 .built_in,
 .title.class_,
 .class .title {
-  color: #c18401;
+  color: #c18401 !important;
 }
 
 .emphasis {

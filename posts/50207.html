@@ -226,17 +226,17 @@
 <h2 id="三、Git的安装及配置"><a class="header-anchor" href="#三、Git的安装及配置">¶</a>三、Git的安装及配置</h2>
 <p>直接去**<a target="_blank" rel="noopener external nofollow noreferrer" href="https://git-scm.com/downloads">Git官网</a>**下载对应的安装程序，安装即可.</p>
 <p>安装完成配置一下全局用户名和邮箱！</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"xxxx"</span></span><br><span class="line">$ git config --global user.email <span class="string">"xxxx"</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git config --global user.name <span class="hljs-string">"xxxx"</span><br>$ git config --global user.email <span class="hljs-string">"xxxx"</span><br></code></pre></td></tr></tbody></table></figure>
 <p>查看用户名：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config user.name</span><br><span class="line">$ git config user.email</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git config user.name<br>$ git config user.email<br></code></pre></td></tr></tbody></table></figure>
 <p>效果如下：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208134755.png" alt=""></p>
 <p>查看配置信息：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --list</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git config --list<br></code></pre></td></tr></tbody></table></figure>
 <p>效果如下：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208135129.png" alt=""></p>
 <p>清空Git Bash的代码记录：输入<code>reset</code>回车即可</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ reset</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ reset<br></code></pre></td></tr></tbody></table></figure>
 <h2 id="四、工作区，暂存区，版本库的区别"><a class="header-anchor" href="#四、工作区，暂存区，版本库的区别">¶</a>四、工作区，暂存区，版本库的区别</h2>
 <blockquote>
 <ul>
@@ -257,19 +257,19 @@
 <h2 id="五、Git-创建版本库"><a class="header-anchor" href="#五、Git-创建版本库">¶</a>五、Git 创建版本库</h2>
 <h3 id="git-init-命令"><a class="header-anchor" href="#git-init-命令">¶</a>git init 命令</h3>
 <p>首先本地新建一个文件夹名为test，然后cd 进去，打开Git Bash，输入初始化命令：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git init<br></code></pre></td></tr></tbody></table></figure>
 <p>然后你会发现test文件夹多了一个.git目录：</p>
 <blockquote>
 <p>这个目录是Git来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把Git仓库给破坏了</p>
 </blockquote>
 <p>但是你会发现你看不到，因为它为了防止被人改动，自动隐藏了，可以使用如下命令查看：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -ah</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ ls -ah<br></code></pre></td></tr></tbody></table></figure>
 <p>效果如下：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208140226.png" alt=""></p>
 <p>会发现路径后面多了一个master，是说当前库是被git托管的，并且是在master的默认分支上。</p>
 <p>接下来在本地目录新建一个<code>README.md</code>文档，用文本编辑器打开写上“我的Git自学记录！”</p>
 <p>然后用Git命令将其提交到暂存区，再提交到版本库：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git add README.md</span><br><span class="line">$ git commit -m <span class="string">"增加README文件"</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git add README.md<br>$ git commit -m <span class="hljs-string">"增加README文件"</span><br></code></pre></td></tr></tbody></table></figure>
 <p>效果如下：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208142040.png" alt=""></p>
 <h3 id="git-add-与-git-commit-命令"><a class="header-anchor" href="#git-add-与-git-commit-命令">¶</a>git add 与 git commit 命令</h3>
@@ -383,9 +383,9 @@
 <p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208184628.png" alt=""></p>
 <h4 id="新版命令变化"><a class="header-anchor" href="#新版命令变化">¶</a>新版命令变化</h4>
 <p>新版：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git restore --staged file</span><br><span class="line">$ git restore file.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git restore --staged file<br>$ git restore file.<br></code></pre></td></tr></tbody></table></figure>
 <p>旧版：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git reset HEAD file</span><br><span class="line">$ git checkout -- file</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git reset HEAD file<br>$ git checkout -- file<br></code></pre></td></tr></tbody></table></figure>
 <p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208194415.png" alt=""></p>
 <h2 id="六、版本回退"><a class="header-anchor" href="#六、版本回退">¶</a>六、版本回退</h2>
 <blockquote>
@@ -427,7 +427,7 @@
 </blockquote>
 <h2 id="七、远程仓库（远程库）"><a class="header-anchor" href="#七、远程仓库（远程库）">¶</a>七、远程仓库（远程库）</h2>
 <h3 id="创建密钥："><a class="header-anchor" href="#创建密钥：">¶</a>创建密钥：</h3>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"youremail@example.com"</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ ssh-keygen -t rsa -C <span class="hljs-string">"youremail@example.com"</span><br></code></pre></td></tr></tbody></table></figure>
 <blockquote>
 <p>密钥相当于个人电脑的指纹，托管平台通过密钥来识别身份。</p>
 </blockquote>
@@ -447,7 +447,7 @@
 <ul>
 <li>
 <pre><code class="language-bash">$ git remote add origin git@github.com:niuxvdong/test.git
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- ```bash</span><br><span class="line">  $ git push -u origin master</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain"><br>- ```bash<br>  $ git push -u origin master<br></code></pre></td></tr></tbody></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -456,27 +456,27 @@
 <blockquote>
 <p>以便于连接另一个托管平台</p>
 </blockquote>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote rm origin</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git remote rm origin<br></code></pre></td></tr></tbody></table></figure>
 <h3 id="同时连接多个托管平台"><a class="header-anchor" href="#同时连接多个托管平台">¶</a>同时连接多个托管平台</h3>
 <blockquote>
 <p>因为远程库名字都叫origin，所以只需先删除已绑定的远程库，然后进行关联时候，将名字更改即可！</p>
 </blockquote>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git remote rm origin</span><br><span class="line">$ git remote add github git@github.com:niuxvdong/test.git</span><br><span class="line">$ git remote add gitee git@gitee.com:niuxvdong/test.git</span><br><span class="line">$ git remote -v</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git remote rm origin<br>$ git remote add github git@github.com:niuxvdong/test.git<br>$ git remote add gitee git@gitee.com:niuxvdong/test.git<br>$ git remote -v<br></code></pre></td></tr></tbody></table></figure>
 <p>so 现在的仓库名字不叫 origin 了，一个叫 github ，一个叫 gitee。用到origin的命令时，就要对应仓库名字进行修改了。</p>
 <p>push 命令修改如下：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git push github master</span><br><span class="line">$ git push gitee master</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git push github master<br>$ git push gitee master<br></code></pre></td></tr></tbody></table></figure>
 <h3 id="克隆仓库："><a class="header-anchor" href="#克隆仓库：">¶</a>克隆仓库：</h3>
 <ol>
 <li>git clone + ssh链接</li>
 <li>git clone + ssh链接 + 路径</li>
 </ol>
 <h3 id="git-remote命令"><a class="header-anchor" href="#git-remote命令">¶</a>git remote命令</h3>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git remote </span><br><span class="line">$ git remote -v</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git remote <br>$ git remote -v<br></code></pre></td></tr></tbody></table></figure>
 <p>远程库名称和详细信息</p>
 <p>有push信息说明你有推送权限：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208211844.png" alt=""></p>
 <h3 id="推送分支"><a class="header-anchor" href="#推送分支">¶</a>推送分支</h3>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin master</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git push origin master<br></code></pre></td></tr></tbody></table></figure>
 <ul>
 <li>推送其他分支即将master改为其他分支名</li>
 </ul>
@@ -486,15 +486,15 @@
 <p>参考教程：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.liaoxuefeng.com/wiki/896043488029600/1216289527823648">https://www.liaoxuefeng.com/wiki/896043488029600/1216289527823648</a></p>
 <h2 id="八、分支管理"><a class="header-anchor" href="#八、分支管理">¶</a>八、分支管理</h2>
 <h3 id="查看分支"><a class="header-anchor" href="#查看分支">¶</a>查看分支</h3>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git branch<br></code></pre></td></tr></tbody></table></figure>
 <h3 id="创建分支"><a class="header-anchor" href="#创建分支">¶</a>创建分支</h3>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch &lt;name&gt;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git branch &lt;name&gt;<br></code></pre></td></tr></tbody></table></figure>
 <h3 id="切换分支"><a class="header-anchor" href="#切换分支">¶</a>切换分支</h3>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git switch &lt;name&gt; 或 git checkout &lt;name&gt;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git switch &lt;name&gt; 或 git checkout &lt;name&gt;<br></code></pre></td></tr></tbody></table></figure>
 <h3 id="创建并切换"><a class="header-anchor" href="#创建并切换">¶</a>创建并切换</h3>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git switch -c &lt;name&gt; 或 git checkout -b &lt;name&gt;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git switch -c &lt;name&gt; 或 git checkout -b &lt;name&gt;<br></code></pre></td></tr></tbody></table></figure>
 <h3 id="合并分支"><a class="header-anchor" href="#合并分支">¶</a>合并分支</h3>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git merge &lt;name&gt;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git merge &lt;name&gt;<br></code></pre></td></tr></tbody></table></figure>
 <h4 id="默认合并方式为Fast-forward模式"><a class="header-anchor" href="#默认合并方式为Fast-forward模式">¶</a>默认合并方式为<code>Fast forward</code>模式</h4>
 <blockquote>
 <p>此种合并方法看不到合并历史，对于开发来说不太好</p>
@@ -504,40 +504,40 @@
 <p>此方法可以看到合并历史记录，便于开发和操作</p>
 </blockquote>
 <h4 id="可以追加上-m参数"><a class="header-anchor" href="#可以追加上-m参数">¶</a>可以追加上-m参数</h4>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git merge --no-ff -m <span class="string">"merge with --no-ff"</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git merge --no-ff -m <span class="hljs-string">"merge with --no-ff"</span><br></code></pre></td></tr></tbody></table></figure>
 <h3 id="删除分支"><a class="header-anchor" href="#删除分支">¶</a>删除分支</h3>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d &lt;name&gt;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git branch -d &lt;name&gt;<br></code></pre></td></tr></tbody></table></figure>
 <p><strong>强制删除分支：</strong></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -D &lt;name&gt;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git branch -D &lt;name&gt;<br></code></pre></td></tr></tbody></table></figure>
 <h3 id="合并冲突解决"><a class="header-anchor" href="#合并冲突解决">¶</a>合并冲突解决</h3>
 <h4 id="创建dev分支"><a class="header-anchor" href="#创建dev分支">¶</a>创建dev分支</h4>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch dev</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git branch dev<br></code></pre></td></tr></tbody></table></figure>
 <h4 id="在master分支将文件修改后，add并且commit"><a class="header-anchor" href="#在master分支将文件修改后，add并且commit">¶</a>在master分支将文件修改后，add并且commit</h4>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ vi new.c</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m <span class="string">"add hhhhhhhhhh"</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ vi new.c<br>$ git add .<br>$ git commit -m <span class="hljs-string">"add hhhhhhhhhh"</span><br></code></pre></td></tr></tbody></table></figure>
 <h4 id="切换到dev分支"><a class="header-anchor" href="#切换到dev分支">¶</a>切换到dev分支</h4>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git switch dev</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git switch dev<br></code></pre></td></tr></tbody></table></figure>
 <h4 id="在dev分支将文件修改后，add-并-commit"><a class="header-anchor" href="#在dev分支将文件修改后，add-并-commit">¶</a>在dev分支将文件修改后，add 并 commit</h4>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ vi new.c</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m <span class="string">"add ssssssssss"</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ vi new.c<br>$ git add .<br>$ git commit -m <span class="hljs-string">"add ssssssssss"</span><br></code></pre></td></tr></tbody></table></figure>
 <h4 id="切换到master分支"><a class="header-anchor" href="#切换到master分支">¶</a>切换到master分支</h4>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch dev</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git branch dev<br></code></pre></td></tr></tbody></table></figure>
 <h4 id="合并dev分支"><a class="header-anchor" href="#合并dev分支">¶</a>合并dev分支</h4>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git merge dev</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git merge dev<br></code></pre></td></tr></tbody></table></figure>
 <h4 id="出现冲突"><a class="header-anchor" href="#出现冲突">¶</a>出现冲突</h4>
 <p><img src="https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208205333.png" alt=""></p>
 <h4 id="vi-编辑冲突文件"><a class="header-anchor" href="#vi-编辑冲突文件">¶</a>vi 编辑冲突文件</h4>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vi new.c</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ vi new.c<br></code></pre></td></tr></tbody></table></figure>
 <h4 id="add-并commit"><a class="header-anchor" href="#add-并commit">¶</a>add 并commit</h4>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br><span class="line">git commit -m <span class="string">"merge confilt"</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git add .<br>git commit -m <span class="hljs-string">"merge confilt"</span><br></code></pre></td></tr></tbody></table></figure>
 <h4 id="删除dev分支"><a class="header-anchor" href="#删除dev分支">¶</a>删除dev分支</h4>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d dev</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git branch -d dev<br></code></pre></td></tr></tbody></table></figure>
 <h2 id="九、存储现场"><a class="header-anchor" href="#九、存储现场">¶</a>九、存储现场</h2>
 <h3 id="git-stash-命令"><a class="header-anchor" href="#git-stash-命令">¶</a>git stash 命令</h3>
 <blockquote>
 <p>用来存储当前工作状态，一遍先去处理遇到的问题或其他bug</p>
 </blockquote>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git stash</span><br><span class="line">Saved working directory and index state WIP on dev: f52c633 add merge</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git stash<br>Saved working directory and index state WIP on dev: f52c633 add merge<br></code></pre></td></tr></tbody></table></figure>
 <h3 id="git-stash-list"><a class="header-anchor" href="#git-stash-list">¶</a>git stash list</h3>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git stash list</span><br><span class="line">stash@{0}: WIP on dev: f52c633 add merge</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git stash list<br>stash@{0}: WIP on dev: f52c633 add merge<br></code></pre></td></tr></tbody></table></figure>
 <h3 id="恢复现场"><a class="header-anchor" href="#恢复现场">¶</a>恢复现场</h3>
 <h4 id="一是用git-stash-apply恢复，但是恢复后，stash内容并不删除，你需要用git-stash-drop来删除；"><a class="header-anchor" href="#一是用git-stash-apply恢复，但是恢复后，stash内容并不删除，你需要用git-stash-drop来删除；">¶</a>一是用<code>git stash apply</code>恢复，但是恢复后，stash内容并不删除，你需要用<code>git stash drop</code>来删除；</h4>
 <h4 id="另一种方式是用git-stash-pop，恢复的同时把stash内容也删了"><a class="header-anchor" href="#另一种方式是用git-stash-pop，恢复的同时把stash内容也删了">¶</a>另一种方式是用<code>git stash pop</code>，恢复的同时把stash内容也删了</h4>
@@ -548,25 +548,25 @@
 <p>tag就是一个让人容易记住的有意义的名字，它跟某个commit绑在一起。</p>
 </blockquote>
 <h3 id="创建标签"><a class="header-anchor" href="#创建标签">¶</a>创建标签</h3>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git tag v1.0</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git tag v1.0<br></code></pre></td></tr></tbody></table></figure>
 <h3 id="查看标签"><a class="header-anchor" href="#查看标签">¶</a>查看标签</h3>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git tag</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git tag<br></code></pre></td></tr></tbody></table></figure>
 <h3 id="通过commitId打标签"><a class="header-anchor" href="#通过commitId打标签">¶</a>通过commitId打标签</h3>
 <blockquote>
 <p>默认标签是打在最新提交的commit上的。有时候，如果忘了打标签，比如，现在已经是周五了，但应该在周一打的标签没有打，怎么办？</p>
 <p>方法是找到历史提交的commit id，然后打上就可以了</p>
 </blockquote>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --oneline</span><br><span class="line">$ git tag v1.1 f52c633</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git <span class="hljs-built_in">log</span> --oneline<br>$ git tag v1.1 f52c633<br></code></pre></td></tr></tbody></table></figure>
 <h3 id="查看具体标签信息"><a class="header-anchor" href="#查看具体标签信息">¶</a>查看具体标签信息</h3>
 <blockquote>
 <p>标签不是按时间顺序列出，而是按字母排序的。可以用<code>git show </code>查看标签信息：</p>
 </blockquote>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git tag</span><br><span class="line">$ git show v1.1</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git tag<br>$ git show v1.1<br></code></pre></td></tr></tbody></table></figure>
 <h3 id="创建带有说明的标签"><a class="header-anchor" href="#创建带有说明的标签">¶</a>创建带有说明的标签</h3>
 <blockquote>
 <p>还可以创建带有说明的标签，用<code>-a</code>指定标签名，<code>-m</code>指定说明文字：</p>
 </blockquote>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git tag -a v0.1 -m <span class="string">"version 0.1 released"</span> 1094adb</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git tag -a v0.1 -m <span class="hljs-string">"version 0.1 released"</span> 1094adb<br></code></pre></td></tr></tbody></table></figure>
 <blockquote>
 <p><strong>注意：</strong> 标签总是和某个commit挂钩。如果这个commit既出现在master分支，又出现在dev分支，那么在这两个分支上都可以看到这个标签。</p>
 </blockquote>
@@ -574,19 +574,19 @@
 <blockquote>
 <p>当前本地标签未推送到远程库</p>
 </blockquote>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git tag -d v0.1</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git tag -d v0.1<br></code></pre></td></tr></tbody></table></figure>
 <h3 id="推送标签"><a class="header-anchor" href="#推送标签">¶</a>推送标签</h3>
 <h4 id="推送指定标签"><a class="header-anchor" href="#推送指定标签">¶</a>推送指定标签</h4>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin v1.0</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git push origin v1.0<br></code></pre></td></tr></tbody></table></figure>
 <h4 id="一次性推送全部尚未推送到远程的本地标签"><a class="header-anchor" href="#一次性推送全部尚未推送到远程的本地标签">¶</a>一次性推送全部尚未推送到远程的本地标签</h4>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin --tags</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git push origin --tags<br></code></pre></td></tr></tbody></table></figure>
 <h3 id="删除已推送到远程库的标签"><a class="header-anchor" href="#删除已推送到远程库的标签">¶</a>删除已推送到远程库的标签</h3>
 <h4 id="先删除本地标签"><a class="header-anchor" href="#先删除本地标签">¶</a>先删除本地标签</h4>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git tag -d v0.9</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git tag -d v0.9<br></code></pre></td></tr></tbody></table></figure>
 <h4 id="再删除远程库"><a class="header-anchor" href="#再删除远程库">¶</a>再删除远程库</h4>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin :refs/tags/v0.9</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git push origin :refs/tags/v0.9<br></code></pre></td></tr></tbody></table></figure>
 <h4 id="另一种删除方式"><a class="header-anchor" href="#另一种删除方式">¶</a>另一种删除方式</h4>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin :&lt;branch&gt;/&lt;tag&gt; 注意冒号 : 必不可少, 后面跟远程库的分支名/标签名</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git push origin :&lt;branch&gt;/&lt;tag&gt; 注意冒号 : 必不可少, 后面跟远程库的分支名/标签名<br></code></pre></td></tr></tbody></table></figure>
 <h2 id="十一、自定义"><a class="header-anchor" href="#十一、自定义">¶</a>十一、自定义</h2>
 <h3 id="忽略特殊文件"><a class="header-anchor" href="#忽略特殊文件">¶</a>忽略特殊文件</h3>
 <p>参考文档：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.liaoxuefeng.com/wiki/896043488029600/900004590234208">https://www.liaoxuefeng.com/wiki/896043488029600/900004590234208</a></p>
