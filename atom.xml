@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.itnxd.cn/"/>
-  <updated>2021-09-04T12:47:37.290Z</updated>
+  <updated>2021-09-04T13:07:37.669Z</updated>
   <id>https://www.itnxd.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.itnxd.cn/posts/64689.html"/>
     <id>https://www.itnxd.cn/posts/64689.html</id>
     <published>2021-08-30T07:12:17.000Z</published>
-    <updated>2021-09-04T12:47:37.290Z</updated>
+    <updated>2021-09-04T13:07:37.669Z</updated>
     
     <summary type="html">
     
@@ -29,8 +29,8 @@
       
         
         
-          &lt;h1&gt;一、NoSQL数据库简介&lt;/h1&gt;
-&lt;h2
+          &lt;h1 id=&quot;一、NoSQL数据库简介&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#一、NoSQL数据库简介&quot;&gt;¶&lt;/a&gt;一、NoSQL数据库简介&lt;/h1&gt;
+&lt;h2 id=&quot;1、引入&quot;&gt;&lt;a class=&quot;header-anchor&quot;
         
       
     
@@ -63,11 +63,9 @@
       
         
         
-          &lt;h1&gt;一、概述&lt;/h1&gt;
+          &lt;h1 id=&quot;一、概述&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#一、概述&quot;&gt;¶&lt;/a&gt;一、概述&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Shell 是一个命令行解释器，它为用户提供了一个向 Linux 内核发送请求以便运行程序的界面系统级程序，用户可以用 Shell 来启动、挂起、停止甚至是编写一些程序！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2
+&lt;p&gt;Shell 是一个命令行解释器，它为用户提供了一个向 Linux
         
       
     
@@ -97,9 +95,7 @@
           &lt;blockquote&gt;
 &lt;p&gt;以Centos7.6为主讲解，后面会有Ubuntu不同之处的单独讲解！&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1&gt;一、Linux目录结构&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;linux
+&lt;h1 id=&quot;一、Linux目录结构&quot;&gt;&lt;a class=&quot;header-anchor&quot;
         
       
     
@@ -156,12 +152,7 @@
       
         
         
-          &lt;h1&gt;一、题解&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;题目大意：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;求一个二叉搜索树任意两个节点数的差值的最小值！&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;思路：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我们知道，二叉搜索树的中序遍历就是一个单调序列！&lt;/p&gt;
-&lt;p&gt;因此
+          &lt;h1 id=&quot;一、题解&quot;&gt;&lt;a class=&quot;header-anchor&quot;
         
       
     
@@ -191,7 +182,9 @@
         
         
           &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/1455/&quot;&gt;AcWing 1453. 移掉K位数字
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/1455/&quot;&gt;AcWing 1453. 移掉K位数字 &lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;一、题解&quot;&gt;&lt;a
         
       
     
@@ -219,7 +212,9 @@
         
         
           &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/largest-number/&quot;&gt;LeetCode 179.
+&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/largest-number/&quot;&gt;LeetCode 179. 最大数&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;一、题解&quot;&gt;&lt;a
         
       
     
@@ -247,7 +242,9 @@
         
         
           &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/58/&quot;&gt;AcWing 62. 丑数
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/58/&quot;&gt;AcWing 62. 丑数 &lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;一、题解&quot;&gt;&lt;a
         
       
     
@@ -274,10 +271,7 @@
       
         
         
-          &lt;h1&gt;一、MyBatis简介&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;MyBatis，和数据库进行交互的持久化层框架（SQL映射框架）&lt;/p&gt;
-&lt;p&gt;官方文档也很详细：&lt;a
+          &lt;h1 id=&quot;一、MyBatis简介&quot;&gt;&lt;a class=&quot;header-anchor&quot;
         
       
     
@@ -307,7 +301,9 @@
         
         
           &lt;blockquote&gt;
-&lt;p&gt;题目连接：&lt;a href=&quot;https://www.acwing.com/problem/content/65/&quot;&gt;AcWing 69.
+&lt;p&gt;题目连接：&lt;a href=&quot;https://www.acwing.com/problem/content/65/&quot;&gt;AcWing 69. 数组中数值和下标相等的元素&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;一、题解&quot;&gt;&lt;a
         
       
     
@@ -363,7 +359,9 @@
         
         
           &lt;blockquote&gt;
-&lt;p&gt;题目连接：&lt;a href=&quot;https://www.acwing.com/problem/content/64/&quot;&gt;AcWing 68.
+&lt;p&gt;题目连接：&lt;a href=&quot;https://www.acwing.com/problem/content/64/&quot;&gt;AcWing 68. 0到n-1中缺失的数字&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;一、题解&quot;&gt;&lt;a
         
       
     
@@ -390,10 +388,8 @@
       
         
         
-          &lt;h1&gt;一、SpringMvc概述&lt;/h1&gt;
-&lt;h2 id=&quot;1、SpringMvc概述&quot;&gt;1、SpringMvc概述&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;一种轻量级的、基于 MVC 的 Web
+          &lt;h1 id=&quot;一、SpringMvc概述&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#一、SpringMvc概述&quot;&gt;¶&lt;/a&gt;一、SpringMvc概述&lt;/h1&gt;
+&lt;h2 id=&quot;1、SpringMvc概述&quot;&gt;&lt;a
         
       
     
@@ -421,7 +417,9 @@
         
         
           &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/rabbits-in-forest/&quot;&gt;LeetCode 781.
+&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/rabbits-in-forest/&quot;&gt;LeetCode 781. 森林中的兔子&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1
         
       
     
@@ -451,7 +449,9 @@
         
         
           &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/1224/&quot;&gt;AcWing 1222.
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/1224/&quot;&gt;AcWing 1222. 密码脱落&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;一、题解&quot;&gt;&lt;a
         
       
     
@@ -511,7 +511,9 @@
         
         
           &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/1383/&quot;&gt;AcWing 1381.
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/1383/&quot;&gt;AcWing 1381. 阶乘&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;一、题解&quot;&gt;&lt;a
         
       
     
@@ -541,7 +543,9 @@
         
         
           &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/clumsy-factorial/&quot;&gt;LeetCode 1006. 笨阶乘
+&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/clumsy-factorial/&quot;&gt;LeetCode 1006. 笨阶乘 &lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1
         
       
     
@@ -571,7 +575,9 @@
         
         
           &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/16/&quot;&gt;AcWing 15.
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/16/&quot;&gt;AcWing 15. 二维数组中的查找&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;一、题解&quot;&gt;&lt;a
         
       
     
@@ -599,7 +605,9 @@
         
         
           &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/activity/content/problem/content/3776/1/&quot;&gt;AcWing 77.
+&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/activity/content/problem/content/3776/1/&quot;&gt;AcWing 77. 翻转单词顺序&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1
         
       
     

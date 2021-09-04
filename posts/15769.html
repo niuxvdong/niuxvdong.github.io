@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JavaScript教程系列之标准对象 | 小牛博客</title><meta name="keywords" content="JavaScript,Data,RegExp,JSON"><meta name="author" content="ITNXD"><meta name="copyright" content="ITNXD"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="首先来首歌曲来放松一下吧！        在 JavaScript 的世界里，一切皆对象！  一、包装对象 1、用typeof来识别身份  number、string、boolean、function和undefined有别于其他类型。特别注意null的类型是object，Array的类型也是object，如果我们用typeof将无法区分出null、Array和通常意义上的object——{}。">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JavaScript教程系列之标准对象 | 小牛博客</title><meta name="keywords" content="JavaScript,Data,RegExp,JSON"><meta name="author" content="ITNXD"><meta name="copyright" content="ITNXD"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="¶首先来首歌曲来放松一下吧！        在 JavaScript 的世界里，一切皆对象！  ¶一、包装对象 ¶1、用typeof来识别身份  number、string、boolean、function和undefined有别于其他类型。特别注意null的类型是object，Array的类型也是object，如果我们用typeof将无法区分出null、Array和通常意义上的object——{">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript教程系列之标准对象">
 <meta property="og:url" content="https://www.itnxd.cn/posts/15769.html">
 <meta property="og:site_name" content="小牛博客">
-<meta property="og:description" content="首先来首歌曲来放松一下吧！        在 JavaScript 的世界里，一切皆对象！  一、包装对象 1、用typeof来识别身份  number、string、boolean、function和undefined有别于其他类型。特别注意null的类型是object，Array的类型也是object，如果我们用typeof将无法区分出null、Array和通常意义上的object——{}。">
+<meta property="og:description" content="¶首先来首歌曲来放松一下吧！        在 JavaScript 的世界里，一切皆对象！  ¶一、包装对象 ¶1、用typeof来识别身份  number、string、boolean、function和undefined有别于其他类型。特别注意null的类型是object，Array的类型也是object，如果我们用typeof将无法区分出null、Array和通常意义上的object——{">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/niuxvdong/images/a/27.jpg">
 <meta property="article:published_time" content="2020-02-17T07:31:19.000Z">
@@ -181,20 +181,20 @@
       }
     }
     detectApple()
-    document.addEventListener('pjax:complete', detectApple)})(window)</script><link rel="stylesheet" href="/css/my.css"><style type="text/css">#toggle-sidebar {bottom: 80px}</style><link rel="stylesheet" href="//at.alicdn.com/t/font_1828588_zrw9f0qqie.css"><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="小牛博客" type="application/atom+xml">
-</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@2f11f173da64ba6a270c2e93d23e00911b1019d3/2021/02/06/e373babbf340391956b673128a84185d.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">243</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">181</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">21</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/niuxvdong/images/a/27.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">小牛博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">JavaScript教程系列之标准对象</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-02-17T07:31:19.000Z" title="发表于 2020-02-17 15:31:19">2020-02-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-05-18T13:54:01.940Z" title="更新于 2020-05-18 21:54:01">2020-05-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/JavaScript%E6%95%99%E7%A8%8B/">JavaScript教程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>13分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="JavaScript教程系列之标准对象"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="首先来首歌曲来放松一下吧！">首先来首歌曲来放松一下吧！</h2>
+    document.addEventListener('pjax:complete', detectApple)})(window)</script><link rel="stylesheet" href="/css/my.css"><style type="text/css">#toggle-sidebar {bottom: 80px}</style><link rel="stylesheet" href="//at.alicdn.com/t/font_1828588_zrw9f0qqie.css"><link rel="stylesheet" href="/self/atom-one-light.css"><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="小牛博客" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/niuxvdong/pic@2f11f173da64ba6a270c2e93d23e00911b1019d3/2021/02/06/e373babbf340391956b673128a84185d.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">243</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">181</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">21</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/niuxvdong/images/a/27.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">小牛博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">JavaScript教程系列之标准对象</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-02-17T07:31:19.000Z" title="发表于 2020-02-17 15:31:19">2020-02-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-05-18T13:54:01.940Z" title="更新于 2020-05-18 21:54:01">2020-05-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/JavaScript%E6%95%99%E7%A8%8B/">JavaScript教程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>13分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="JavaScript教程系列之标准对象"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="首先来首歌曲来放松一下吧！"><a class="header-anchor" href="#首先来首歌曲来放松一下吧！">¶</a>首先来首歌曲来放松一下吧！</h2>
 
-    <div id="aplayer-ohtHzmFB" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1409329965" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+    <div id="aplayer-wYCAAXnn" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1409329965" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
 <blockquote>
 <p>在 JavaScript 的世界里，一切皆对象！</p>
 </blockquote>
-<h2 id="一、包装对象">一、包装对象</h2>
-<h3 id="1、用typeof来识别身份">1、用typeof来识别身份</h3>
+<h2 id="一、包装对象"><a class="header-anchor" href="#一、包装对象">¶</a>一、包装对象</h2>
+<h3 id="1、用typeof来识别身份"><a class="header-anchor" href="#1、用typeof来识别身份">¶</a>1、用typeof来识别身份</h3>
 <blockquote>
 <p><code>number</code>、<code>string</code>、<code>boolean</code>、<code>function</code>和<code>undefined</code>有别于其他类型。特别注意<code>null</code>的类型是<code>object</code>，<code>Array</code>的类型也是<code>object</code>，如果我们用<code>typeof</code>将无法区分出<code>null</code>、<code>Array</code>和通常意义上的object——<code>{}</code>。</p>
 </blockquote>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typeof</span> <span class="number">123</span>; <span class="comment">// 'number'</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="literal">NaN</span>; <span class="comment">// 'number'</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="string">'str'</span>; <span class="comment">// 'string'</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="literal">true</span>; <span class="comment">// 'boolean'</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="literal">undefined</span>; <span class="comment">// 'undefined'</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="built_in">Math</span>.abs; <span class="comment">// 'function'</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="literal">null</span>; <span class="comment">// 'object'</span></span><br><span class="line"><span class="keyword">typeof</span> []; <span class="comment">// 'object'</span></span><br><span class="line"><span class="keyword">typeof</span> {}; <span class="comment">// 'object'</span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="2、通过new来包装对象">2、通过new来包装对象</h3>
+<h3 id="2、通过new来包装对象"><a class="header-anchor" href="#2、通过new来包装对象">¶</a>2、通过new来包装对象</h3>
 <blockquote>
 <p><code>number</code>、<code>boolean</code>和<code>string</code>都有包装对象。没错，在JavaScript中，字符串也区分<code>string</code>类型和它的包装类型。包装对象用<code>new</code>创建：</p>
 <p>经过new包装的元素类型已经变为了对象！</p>
@@ -203,12 +203,12 @@
 </p><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> n = <span class="keyword">new</span> <span class="built_in">Number</span>(<span class="number">123</span>); <span class="comment">// 123,生成了新的包装类型</span></span><br><span class="line"><span class="keyword">var</span> b = <span class="keyword">new</span> <span class="built_in">Boolean</span>(<span class="literal">true</span>); <span class="comment">// true,生成了新的包装类型</span></span><br><span class="line"><span class="keyword">var</span> s = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">'str'</span>); <span class="comment">// 'str',生成了新的包装类型</span></span><br></pre></td></tr></tbody></table></figure>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typeof</span> <span class="keyword">new</span> <span class="built_in">Number</span>(<span class="number">123</span>); <span class="comment">// 'object'</span></span><br><span class="line"><span class="keyword">new</span> <span class="built_in">Number</span>(<span class="number">123</span>) === <span class="number">123</span>; <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typeof</span> <span class="keyword">new</span> <span class="built_in">Boolean</span>(<span class="literal">true</span>); <span class="comment">// 'object'</span></span><br><span class="line"><span class="keyword">new</span> <span class="built_in">Boolean</span>(<span class="literal">true</span>) === <span class="literal">true</span>; <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typeof</span> <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">'str'</span>); <span class="comment">// 'object'</span></span><br><span class="line"><span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">'str'</span>) === <span class="string">'str'</span>; <span class="comment">// false</span></span><br></pre></td></tr></tbody></table></figure>
 <p>注意：创建包装对象后的与原始值不同！！！</p>
-<h3 id="3、不使用new的结果">3、不使用new的结果</h3>
+<h3 id="3、不使用new的结果"><a class="header-anchor" href="#3、不使用new的结果">¶</a>3、不使用new的结果</h3>
 <blockquote>
 <p><code>Number()</code>、<code>Boolean</code>和<code>String()</code>被当做普通函数，把任何类型的数据转换为<code>number</code>、<code>boolean</code>和<code>string</code>类型（注意不是其包装类型）：</p>
 </blockquote>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> n = <span class="built_in">Number</span>(<span class="string">'123'</span>); <span class="comment">// 123，相当于parseInt()或parseFloat()</span></span><br><span class="line"><span class="keyword">typeof</span> n; <span class="comment">// 'number'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> b = <span class="built_in">Boolean</span>(<span class="string">'true'</span>); <span class="comment">// true</span></span><br><span class="line"><span class="keyword">typeof</span> b; <span class="comment">// 'boolean'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> b2 = <span class="built_in">Boolean</span>(<span class="string">'false'</span>); <span class="comment">// true! 'false'字符串转换结果为true！因为它是非空字符串！</span></span><br><span class="line"><span class="keyword">var</span> b3 = <span class="built_in">Boolean</span>(<span class="string">''</span>); <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> s = <span class="built_in">String</span>(<span class="number">123.45</span>); <span class="comment">// '123.45'</span></span><br><span class="line"><span class="keyword">typeof</span> s; <span class="comment">// 'string'</span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="4、简单总结">4、简单总结</h3>
+<h3 id="4、简单总结"><a class="header-anchor" href="#4、简单总结">¶</a>4、简单总结</h3>
 <ul>
 <li>
 <p>不要使用<code>new Number()</code>、<code>new Boolean()</code>、<code>new String()</code>创建包装对象；</p>
@@ -232,7 +232,7 @@
 <p>判断某个全局变量是否存在用<code>typeof window.myVar === 'undefined'</code>；</p>
 </li>
 </ul>
-<h4 id="toString-方法">toString()方法</h4>
+<h4 id="toString-方法"><a class="header-anchor" href="#toString-方法">¶</a>toString()方法</h4>
 <blockquote>
 <p>除了null 和 undefined ,其他对象都有此方法！</p>
 <p>用来将一个对象转换为字符串类型！</p>
@@ -240,27 +240,27 @@
 <p>所以要使用两个点，或者加一个括号，将他变成整体！</p>
 </blockquote>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">123.</span>toString(); <span class="comment">// SyntaxError</span></span><br><span class="line"></span><br><span class="line"><span class="number">123.</span>.toString(); <span class="comment">// '123', 注意是两个点！</span></span><br><span class="line">(<span class="number">123</span>).toString(); <span class="comment">// '123'</span></span><br></pre></td></tr></tbody></table></figure>
-<h2 id="二、Data对象">二、Data对象</h2>
-<h3 id="1、获取对象">1、获取对象</h3>
+<h2 id="二、Data对象"><a class="header-anchor" href="#二、Data对象">¶</a>二、Data对象</h2>
+<h3 id="1、获取对象"><a class="header-anchor" href="#1、获取对象">¶</a>1、获取对象</h3>
 <blockquote>
 <p>通过new Data()来构建一个时间对象</p>
 <p>可以获得，年月日，星期，时分秒，毫秒，以及时间戳！</p>
 <p>注意，当前时间是浏览器从本机操作系统获取的时间，所以不一定准确，因为用户可以把当前时间设定为任何值。</p>
 </blockquote>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> now = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">now; <span class="comment">// Wed Jun 24 2015 19:49:22 GMT+0800 (CST)</span></span><br><span class="line">now.getFullYear(); <span class="comment">// 2015, 年份</span></span><br><span class="line">now.getMonth(); <span class="comment">// 5, 月份，注意月份范围是0~11，5表示六月</span></span><br><span class="line">now.getDate(); <span class="comment">// 24, 表示24号</span></span><br><span class="line">now.getDay(); <span class="comment">// 3, 表示星期三</span></span><br><span class="line">now.getHours(); <span class="comment">// 19, 24小时制</span></span><br><span class="line">now.getMinutes(); <span class="comment">// 49, 分钟</span></span><br><span class="line">now.getSeconds(); <span class="comment">// 22, 秒</span></span><br><span class="line">now.getMilliseconds(); <span class="comment">// 875, 毫秒数</span></span><br><span class="line">now.getTime(); <span class="comment">// 1435146562875, 以number形式表示的时间戳</span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="2、创建对象">2、创建对象</h3>
-<h4 id="创建指定日期的Data对象">创建指定日期的Data对象:</h4>
+<h3 id="2、创建对象"><a class="header-anchor" href="#2、创建对象">¶</a>2、创建对象</h3>
+<h4 id="创建指定日期的Data对象"><a class="header-anchor" href="#创建指定日期的Data对象">¶</a>创建指定日期的Data对象:</h4>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="number">2015</span>, <span class="number">5</span>, <span class="number">19</span>, <span class="number">20</span>, <span class="number">15</span>, <span class="number">30</span>, <span class="number">123</span>);</span><br><span class="line">d; <span class="comment">// Fri Jun 19 2015 20:15:30 GMT+0800 (CST)</span></span><br></pre></td></tr></tbody></table></figure>
 <p style="font-size:20px; color:red;">注意：JavaScript的Date对象月份值从0开始，牢记0=1月，1=2月，2=3月，……，11=12月。！</p><p>
 </p><p>注意：JavaScript的Date对象月份值从0开始，牢记0=1月，1=2月，2=3月，……，11=12月。
-</p><h4 id="通过解析ISO-8601格式的字符串">通过解析<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.w3.org/TR/NOTE-datetime">ISO 8601</a>格式的字符串</h4>
+</p><h4 id="通过解析ISO-8601格式的字符串"><a class="header-anchor" href="#通过解析ISO-8601格式的字符串">¶</a>通过解析<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.w3.org/TR/NOTE-datetime">ISO 8601</a>格式的字符串</h4>
 <blockquote>
 <p>返回值为时间戳！</p>
 <p>使用Date.parse()时传入的字符串使用实际月份01 ~ 12，转换为Date对象后getMonth()获取的月份值为0 ~ 11。</p>
 <p>要获取具体内容，得通过传入时间戳创建对象，再调用函数获得具体信息！</p>
 </blockquote>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> d = <span class="built_in">Date</span>.parse(<span class="string">'2015-06-24T19:49:22.875+08:00'</span>);</span><br><span class="line">d; <span class="comment">// 1435146562875</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="number">1435146562875</span>);</span><br><span class="line">d; <span class="comment">// Wed Jun 24 2015 19:49:22 GMT+0800 (CST)</span></span><br><span class="line">d.getMonth(); <span class="comment">// 5</span></span><br></pre></td></tr></tbody></table></figure>
-<h4 id="时间戳">时间戳</h4>
+<h4 id="时间戳"><a class="header-anchor" href="#时间戳">¶</a>时间戳</h4>
 <blockquote>
 <p>时间戳是个什么东西？时间戳是一个自增的整数，它表示从1970年1月1日零时整的GMT时区开始的那一刻，到现在的毫秒数。假设浏览器所在电脑的时间是准确的，那么世界上无论哪个时区的电脑，它们此刻产生的时间戳数字都是一样的，所以，时间戳可以精确地表示一个时刻，并且与时区无关。</p>
 <p>我们只需要传递时间戳，或者把时间戳从数据库里读出来，再让JavaScript自动转换为当地时间就可以了。</p>
@@ -272,17 +272,17 @@
 <li>Data的getTime方法</li>
 </ul>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Date</span>.now()); </span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">new</span> <span class="built_in">Date</span>().getTime());</span><br></pre></td></tr></tbody></table></figure>
-<h4 id="时区">时区</h4>
+<h4 id="时区"><a class="header-anchor" href="#时区">¶</a>时区</h4>
 <blockquote>
 <p><code>Date</code>对象表示的时间总是按浏览器所在时区显示的，不过我们既可以显示本地时间，也可以显示调整后的UTC时间：</p>
 <p>只要我们传递的是一个<code>number</code>类型的时间戳，我们就不用关心时区转换。任何浏览器都可以把一个时间戳正确转换为本地时间。</p>
 </blockquote>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="number">1435146562875</span>);</span><br><span class="line">d.toLocaleString(); <span class="comment">// '2015/6/24 下午7:49:22'，本地时间（北京时区+8:00），显示的字符串与操作系统设定的格式有关</span></span><br><span class="line">d.toUTCString(); <span class="comment">// 'Wed, 24 Jun 2015 11:49:22 GMT'，UTC时间，与本地时间相差8小时</span></span><br></pre></td></tr></tbody></table></figure>
-<h2 id="三、RegExp对象">三、RegExp对象</h2>
+<h2 id="三、RegExp对象"><a class="header-anchor" href="#三、RegExp对象">¶</a>三、RegExp对象</h2>
 <blockquote>
 <p>就是正则表达式！</p>
 </blockquote>
-<h3 id="1、基础匹配">1、基础匹配</h3>
+<h3 id="1、基础匹配"><a class="header-anchor" href="#1、基础匹配">¶</a>1、基础匹配</h3>
 <ul>
 <li>
 <p><code>\d</code> ：一个数字</p>
@@ -322,7 +322,7 @@
 </li>
 </ul>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">js.					<span class="comment">//可以表示js! js1 jsp</span></span><br><span class="line">\d{<span class="number">3</span>}\s+\d{<span class="number">3</span>,<span class="number">8</span>}		<span class="comment">//即三个数字一个空格然后是三到八个数字eg:010-12345</span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="2、做到更精确的匹配，用方括号表示范围：">2、做到更精确的匹配，用方括号表示范围：</h3>
+<h3 id="2、做到更精确的匹配，用方括号表示范围："><a class="header-anchor" href="#2、做到更精确的匹配，用方括号表示范围：">¶</a>2、做到更精确的匹配，用方括号表示范围：</h3>
 <ul>
 <li><code>[0-9a-zA-Z\_]</code>可以匹配一个数字、字母或者下划线；</li>
 <li><code>[0-9a-zA-Z\_]+</code>可以匹配至少由一个数字、字母或者下划线组成的字符串</li>
@@ -333,19 +333,19 @@
 <li><code>$</code>表示行的结束，<code>\d$</code>表示必须以数字结束。</li>
 <li>你可能注意到了，<code>js</code>也可以匹配<code>'jsp'</code>，但是加上<code>^js$</code>就变成了整行匹配，就只能匹配<code>'js'</code>了。</li>
 </ul>
-<h3 id="3、创建正则表达式">3、创建正则表达式</h3>
-<h4 id="通过-正则表达式-创建">通过<code>/正则表达式/</code> 创建</h4>
-<h4 id="通过new-RegExp-正则表达式-创建">通过<code>new RegExp('正则表达式')</code>创建</h4>
+<h3 id="3、创建正则表达式"><a class="header-anchor" href="#3、创建正则表达式">¶</a>3、创建正则表达式</h3>
+<h4 id="通过-正则表达式-创建"><a class="header-anchor" href="#通过-正则表达式-创建">¶</a>通过<code>/正则表达式/</code> 创建</h4>
+<h4 id="通过new-RegExp-正则表达式-创建"><a class="header-anchor" href="#通过new-RegExp-正则表达式-创建">¶</a>通过<code>new RegExp('正则表达式')</code>创建</h4>
 <blockquote>
 <p>注意，如果使用第二种写法，因为字符串的转义问题，字符串的两个<code>\\</code>实际上是一个<code>\</code>。</p>
 </blockquote>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> re1 = <span class="regexp">/ABC\-001/</span>;</span><br><span class="line"><span class="keyword">var</span> re2 = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'ABC\\-001'</span>);</span><br><span class="line"></span><br><span class="line">re1; <span class="comment">// /ABC\-001/</span></span><br><span class="line">re2; <span class="comment">// /ABC\-001/</span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="4、正则表达式匹配">4、正则表达式匹配</h3>
+<h3 id="4、正则表达式匹配"><a class="header-anchor" href="#4、正则表达式匹配">¶</a>4、正则表达式匹配</h3>
 <blockquote>
 <p>使用<code>re.test(待测字符串)</code></p>
 </blockquote>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> re = <span class="regexp">/^\d{3}\-\d{3,8}$/</span>;</span><br><span class="line">re.test(<span class="string">'010-12345'</span>); <span class="comment">// true</span></span><br><span class="line">re.test(<span class="string">'010-1234x'</span>); <span class="comment">// false</span></span><br><span class="line">re.test(<span class="string">'010 12345'</span>); <span class="comment">// false</span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="5、切分字符串">5、切分字符串</h3>
+<h3 id="5、切分字符串"><a class="header-anchor" href="#5、切分字符串">¶</a>5、切分字符串</h3>
 <blockquote>
 <p>使用<code>字符串.split(正则表达式)</code> 来切割：</p>
 </blockquote>
@@ -356,7 +356,7 @@
 <li>第四个：按空格和逗号和分号的大于等于一个的任意组合分隔</li>
 </ul>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'a b   c'</span>.split(<span class="string">' '</span>); <span class="comment">// ['a', 'b', '', '', 'c']</span></span><br><span class="line"><span class="string">'a b   c'</span>.split(<span class="regexp">/\s+/</span>); <span class="comment">// ['a', 'b', 'c']</span></span><br><span class="line"><span class="string">'a,b, c  d'</span>.split(<span class="regexp">/[\s\,]+/</span>); <span class="comment">// ['a', 'b', 'c', 'd']</span></span><br><span class="line"><span class="string">'a,b;; c  d'</span>.split(<span class="regexp">/[\s\,\;]+/</span>); <span class="comment">// ['a', 'b', 'c', 'd']</span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="6、字符串分组">6、字符串分组</h3>
+<h3 id="6、字符串分组"><a class="header-anchor" href="#6、字符串分组">¶</a>6、字符串分组</h3>
 <blockquote>
 <p>将需要分组的部分用<code>()</code>括起来即可</p>
 <p>使用：<code>正则表达式.exec(待测字符串)</code> 进行分组</p>
@@ -367,7 +367,7 @@
 <p>看一个凶残的例子：</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> re = <span class="regexp">/^(0[0-9]|1[0-9]|2[0-3]|[0-9])\:(0[0-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|[0-9])\:(0[0-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|[0-9])$/</span>;</span><br><span class="line">re.exec(<span class="string">'19:05:30'</span>); <span class="comment">// ['19:05:30', '19', '05', '30']</span></span><br></pre></td></tr></tbody></table></figure>
 <p><code>|</code> 表示或者，首先看冒号前的，从前往后表示00-09、10-19、20-29…最后一个是1-9，因为有时候01不写01，而写1，所以加一个[0-9]更合适。后面类似。。。</p>
-<h3 id="7、贪婪匹配">7、贪婪匹配</h3>
+<h3 id="7、贪婪匹配"><a class="header-anchor" href="#7、贪婪匹配">¶</a>7、贪婪匹配</h3>
 <blockquote>
 <p>正则匹配默认是贪婪匹配，也就是匹配尽可能多的字符。举例如下，匹配出数字后面的<code>0</code>：</p>
 </blockquote>
@@ -378,7 +378,7 @@
 <p><code>?</code> ：即先满足后方的条件，再考虑前方！</p>
 </blockquote>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> re = <span class="regexp">/^(\d+?)(0*)$/</span>;</span><br><span class="line">re.exec(<span class="string">'102300'</span>); <span class="comment">// ['102300', '1023', '00']</span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="8、全局搜索">8、全局搜索</h3>
+<h3 id="8、全局搜索"><a class="header-anchor" href="#8、全局搜索">¶</a>8、全局搜索</h3>
 <blockquote>
 <p>JavaScript的正则表达式还有几个特殊的标志，最常用的是<code>g</code>，表示全局匹配：</p>
 <p>即在正则表达式的最后加一个<code>g</code></p>
@@ -389,8 +389,8 @@
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> r1 = <span class="regexp">/test/g</span>;</span><br><span class="line"><span class="comment">// 等价于:</span></span><br><span class="line"><span class="keyword">var</span> r2 = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'test'</span>, <span class="string">'g'</span>);</span><br></pre></td></tr></tbody></table></figure>
 <p>如下：</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="string">'JavaScript, VBScript, JScript and ECMAScript'</span>;</span><br><span class="line"><span class="keyword">var</span> re=<span class="regexp">/[a-zA-Z]+Script/g</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用全局匹配:</span></span><br><span class="line">re.exec(s); <span class="comment">// ['JavaScript']</span></span><br><span class="line">re.lastIndex; <span class="comment">// 10</span></span><br><span class="line"></span><br><span class="line">re.exec(s); <span class="comment">// ['VBScript']</span></span><br><span class="line">re.lastIndex; <span class="comment">// 20</span></span><br><span class="line"></span><br><span class="line">re.exec(s); <span class="comment">// ['JScript']</span></span><br><span class="line">re.lastIndex; <span class="comment">// 29</span></span><br><span class="line"></span><br><span class="line">re.exec(s); <span class="comment">// ['ECMAScript']</span></span><br><span class="line">re.lastIndex; <span class="comment">// 44</span></span><br><span class="line"></span><br><span class="line">re.exec(s); <span class="comment">// null，直到结束仍没有匹配到</span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="9、小栗子">9、小栗子</h3>
-<h4 id="实现验证邮箱的正则表达式：">实现验证邮箱的正则表达式：</h4>
+<h3 id="9、小栗子"><a class="header-anchor" href="#9、小栗子">¶</a>9、小栗子</h3>
+<h4 id="实现验证邮箱的正则表达式："><a class="header-anchor" href="#实现验证邮箱的正则表达式：">¶</a>实现验证邮箱的正则表达式：</h4>
 <blockquote>
 <p>邮箱组成：</p>
 <ul>
@@ -409,16 +409,16 @@
 </ul>
 </blockquote>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> re = <span class="regexp">/^\w+\.?\w+@\w+\.\w+$/</span>;</span><br><span class="line"><span class="keyword">let</span> re = <span class="regexp">/^[0-9a-zA-Z]+\.?[0-9a-zA-Z]+\@[0-9a-zA-Z]+\.[0-9a-zA-Z]+$/</span>;</span><br><span class="line"><span class="keyword">let</span> re = <span class="regexp">/^[a-zA-Z0-9]+([._-]?[a-zA-Z0-9]+)*@([a-zA-Z0-9]+[_-]?[a-zA-Z0-9]+)([_-][a-zA-Z0-9]+)*\.[a-zA-Z]{2,3}(\.[a-zA-Z]{2})?$/</span>;</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="四、JSON对象">四、JSON对象</h2>
+<h2 id="四、JSON对象"><a class="header-anchor" href="#四、JSON对象">¶</a>四、JSON对象</h2>
 <blockquote>
 <p>JSON是JavaScript Object Notation的缩写，它是一种数据交换格式。</p>
 </blockquote>
-<h3 id="1、JSON的故事">1、JSON的故事</h3>
+<h3 id="1、JSON的故事"><a class="header-anchor" href="#1、JSON的故事">¶</a>1、JSON的故事</h3>
 <blockquote>
 <p>在JSON出现之前，大家一直用XML来传递数据。因为XML是一种纯文本格式，所以它适合在网络上交换数据。XML本身不算复杂，但是，加上DTD、XSD、XPath、XSLT等一大堆复杂的规范以后，任何正常的软件开发人员碰到XML都会感觉头大了，最后大家发现，即使你努力钻研几个月，也未必搞得清楚XML的规范。</p>
 <p>终于，在2002年的一天，道格拉斯·克罗克福特（Douglas Crockford）同学为了拯救深陷水深火热同时又被某几个巨型软件企业长期愚弄的软件工程师，发明了JSON这种超轻量级的数据交换格式。</p>
 </blockquote>
-<h3 id="2、JSON的数据类型">2、JSON的数据类型</h3>
+<h3 id="2、JSON的数据类型"><a class="header-anchor" href="#2、JSON的数据类型">¶</a>2、JSON的数据类型</h3>
 <ul>
 <li>number：和JavaScript的<code>number</code>完全一致；</li>
 <li>boolean：就是JavaScript的<code>true</code>或<code>false</code>；</li>
@@ -432,7 +432,7 @@
 <p>为了统一解析，JSON的字符串规定必须用双引号<code>""</code>，Object的键也必须用双引号<code>""</code>。</p>
 <p>由于JSON非常简单，很快就风靡Web世界，并且成为ECMA标准。几乎所有编程语言都有解析JSON的库，而在JavaScript中，我们可以直接使用JSON，因为JavaScript内置了JSON的解析。</p>
 </blockquote>
-<h3 id="3、JSON序列化">3、JSON序列化</h3>
+<h3 id="3、JSON序列化"><a class="header-anchor" href="#3、JSON序列化">¶</a>3、JSON序列化</h3>
 <blockquote>
 <p>通过JSON的stringfy()方法来进行序列化：</p>
 </blockquote>
@@ -445,7 +445,7 @@
 <p>可以在对象内部定义一个<code>toJSON()</code>的方法：</p>
 </blockquote>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xiaoming = {</span><br><span class="line">    name: <span class="string">'小明'</span>,</span><br><span class="line">    age: <span class="number">14</span>,</span><br><span class="line">    gender: <span class="literal">true</span>,</span><br><span class="line">    height: <span class="number">1.65</span>,</span><br><span class="line">    grade: <span class="literal">null</span>,</span><br><span class="line">    <span class="string">'middle-school'</span>: <span class="string">'\"W3C\" Middle School'</span>,</span><br><span class="line">    skills: [<span class="string">'JavaScript'</span>, <span class="string">'Java'</span>, <span class="string">'Python'</span>, <span class="string">'Lisp'</span>],</span><br><span class="line">    toJSON: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{</span><br><span class="line">        <span class="keyword">return</span> { <span class="comment">// 只输出name和age，并且改变了key：</span></span><br><span class="line">            <span class="string">'Name'</span>: <span class="built_in">this</span>.name,</span><br><span class="line">            <span class="string">'Age'</span>: <span class="built_in">this</span>.age</span><br><span class="line">        };</span><br><span class="line">    }</span><br><span class="line">};</span><br><span class="line"></span><br><span class="line"><span class="built_in">JSON</span>.stringify(xiaoming); <span class="comment">// '{"Name":"小明","Age":14}'</span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="4、反序列化">4、反序列化</h3>
+<h3 id="4、反序列化"><a class="header-anchor" href="#4、反序列化">¶</a>4、反序列化</h3>
 <blockquote>
 <p>将JSON格式化后的字符串变为JavaScript对象</p>
 <p>格式：<code>JSON.parse(格式化的字符串)</code>；</p>
@@ -456,7 +456,7 @@
 <p>如果属性是name，则在对应的值上加同学两个字：</p>
 </blockquote>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = <span class="built_in">JSON</span>.parse(<span class="string">'{"name":"小明","age":14}'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">key, value</span>) </span>{</span><br><span class="line">    <span class="keyword">if</span> (key === <span class="string">'name'</span>) {</span><br><span class="line">        <span class="keyword">return</span> value + <span class="string">'同学'</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> value;</span><br><span class="line">});</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">JSON</span>.stringify(obj)); <span class="comment">// {"name": "小明同学", "age": 14}</span></span><br></pre></td></tr></tbody></table></figure>
-<h2 id="本节到此结束，欢迎阅读，敬请期待后续章节！">本节到此结束，欢迎阅读，敬请期待后续章节！</h2>
+<h2 id="本节到此结束，欢迎阅读，敬请期待后续章节！"><a class="header-anchor" href="#本节到此结束，欢迎阅读，敬请期待后续章节！">¶</a>本节到此结束，欢迎阅读，敬请期待后续章节！</h2>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -617,7 +617,7 @@
 
   newestCommentInit()
   document.addEventListener('pjax:complete', newestCommentInit)
-})</script><script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/6dc9e8f9.js","daovoice")
+})</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><div class="aplayer no-destroy" data-id="4900141628" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/6dc9e8f9.js","daovoice")
 </script><script>var isChatBtn = true
 daovoice('init', {
   app_id: '6dc9e8f9',},{
