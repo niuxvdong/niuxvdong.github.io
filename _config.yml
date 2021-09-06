@@ -54,7 +54,7 @@ highlight:
   auto_detect: false
   tab_replace: ''
   wrap: true
-  hljs: false
+  hljs: true
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -137,6 +137,29 @@ githubEmojis:
     inject: true 
     styles: 
     customEmojis:
+
+markdown: 
+  preset: 'default'
+  render:
+    html: true
+    xhtmlOut: false
+    langPrefix: 'language-'
+    breaks: true
+    zinkify: true
+    typographer: true
+    quotes: '“”‘’'
+  enable_rules:
+  disable_rules:
+  plugins:
+  anchors:
+    level: 1
+    collisionSuffix: ''
+    permalink: true
+    permalinkClass: 'header-anchor'
+    permalinkSide: 'left'
+    permalinkSymbol: '¶'
+    case: 0
+    separator: '-'
     
 
 # 代码高亮主题切换 https://github.com/ele828/hexo-prism-plugin
@@ -153,7 +176,7 @@ search:
     path: search.xml
     field: post
   
-  
+
 # 中文链接转拼音 https://github.com/viko16/hexo-permalink-pinyin
 # permalink_pinyin:
     # enable: true
@@ -210,7 +233,6 @@ nofollow:
 #       options:
 #         strict: false
 
-    
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
@@ -261,10 +283,3 @@ backup:
   repository:
     github: git@github.com:niuxvdong/niuxvdong.github.io.git,backup
     # coding: git@e.coding.net:niuxvdong/blog.git,backup
-  
-  
-
-
-  
-  
-  
