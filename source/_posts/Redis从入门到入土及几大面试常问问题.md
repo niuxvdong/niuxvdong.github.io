@@ -7,12 +7,14 @@ date: 2021-08-30 15:12:17
 updated:
 top_img: https://cdn.jsdelivr.net/gh/niuxvdong/pic@20dfc0d63f6ce6e25647fc6c181f020104d1caea/2021/09/04/0dd8f091bf8546346d08f2c63706c75c.png
 cover: https://cdn.jsdelivr.net/gh/niuxvdong/pic@20dfc0d63f6ce6e25647fc6c181f020104d1caea/2021/09/04/0dd8f091bf8546346d08f2c63706c75c.png
-categories: Redis
+categories: 
+- 数据库
+- 非关系型数据库
 tags:
-  - Redis
-  - RDB
-  - AOF
-  - 集群
+- Redis
+- RDB
+- AOF
+- 集群
 ---
 
 
