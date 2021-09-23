@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.itnxd.cn/"/>
-  <updated>2021-09-21T02:17:20.183Z</updated>
+  <updated>2021-09-23T10:41:57.867Z</updated>
   <id>https://www.itnxd.cn/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>轻量应用容器框架、开源软件部署解决方案之Docker从入门到精通</title>
+    <link href="https://www.itnxd.cn/posts/8790.html"/>
+    <id>https://www.itnxd.cn/posts/8790.html</id>
+    <published>2021-09-22T01:43:29.000Z</published>
+    <updated>2021-09-23T10:41:57.867Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一、Docker概述&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#一、Docker概述&quot;&gt;¶&lt;/a&gt;一、Docker概述&lt;/h1&gt;
+&lt;h2 id=&quot;1、Docker是什么&quot;&gt;&lt;a class=&quot;header-anchor&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="容器" scheme="https://www.itnxd.cn/categories/%E5%AE%B9%E5%99%A8/"/>
+    
+    
+      <category term="Docker" scheme="https://www.itnxd.cn/tags/Docker/"/>
+    
+  </entry>
   
   <entry>
     <title>反向代理、负载均衡服务器Nginx入门到精通</title>
@@ -601,38 +629,6 @@
       <category term="动态规划" scheme="https://www.itnxd.cn/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
       <category term="DP" scheme="https://www.itnxd.cn/tags/DP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日一题之AcWing 1381.阶乘</title>
-    <link href="https://www.itnxd.cn/posts/33788.html"/>
-    <id>https://www.itnxd.cn/posts/33788.html</id>
-    <published>2021-04-01T03:23:15.000Z</published>
-    <updated>2021-04-06T03:08:30.058Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/1383/&quot;&gt;AcWing 1381. 阶乘&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;一、题解&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
-    
-    
-      <category term="数论" scheme="https://www.itnxd.cn/tags/%E6%95%B0%E8%AE%BA/"/>
-    
-      <category term="因式分解" scheme="https://www.itnxd.cn/tags/%E5%9B%A0%E5%BC%8F%E5%88%86%E8%A7%A3/"/>
     
   </entry>
   
