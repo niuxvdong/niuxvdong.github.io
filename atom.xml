@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.itnxd.cn/"/>
-  <updated>2021-09-23T10:41:57.867Z</updated>
+  <updated>2021-09-26T12:19:30.673Z</updated>
   <id>https://www.itnxd.cn/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Mybatis加强版MyBatis-Plus使用、为简化开发而生</title>
+    <link href="https://www.itnxd.cn/posts/5524.html"/>
+    <id>https://www.itnxd.cn/posts/5524.html</id>
+    <published>2021-09-26T09:48:32.000Z</published>
+    <updated>2021-09-26T12:19:30.673Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一、简介&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#一、简介&quot;&gt;¶&lt;/a&gt;一、简介&lt;/h1&gt;
+&lt;h2 id=&quot;1、概述&quot;&gt;&lt;a class=&quot;header-anchor&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="开发框架" scheme="https://www.itnxd.cn/categories/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="MyBatis-Plus" scheme="https://www.itnxd.cn/tags/MyBatis-Plus/"/>
+    
+  </entry>
+  
+  <entry>
     <title>轻量应用容器框架、开源软件部署解决方案之Docker从入门到精通</title>
     <link href="https://www.itnxd.cn/posts/8790.html"/>
     <id>https://www.itnxd.cn/posts/8790.html</id>
     <published>2021-09-22T01:43:29.000Z</published>
-    <updated>2021-09-23T10:41:57.867Z</updated>
+    <updated>2021-09-23T10:42:29.305Z</updated>
     
     <summary type="html">
     
@@ -398,7 +426,7 @@
     <link href="https://www.itnxd.cn/posts/33442.html"/>
     <id>https://www.itnxd.cn/posts/33442.html</id>
     <published>2021-04-09T07:18:18.000Z</published>
-    <updated>2021-04-10T07:27:41.569Z</updated>
+    <updated>2021-09-26T12:19:53.417Z</updated>
     
     <summary type="html">
     
@@ -413,7 +441,7 @@
     </summary>
     
     
-      <category term="数据库框架" scheme="https://www.itnxd.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%A1%86%E6%9E%B6/"/>
+      <category term="开发框架" scheme="https://www.itnxd.cn/categories/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/"/>
     
     
       <category term="MyBatis" scheme="https://www.itnxd.cn/tags/MyBatis/"/>
@@ -515,7 +543,7 @@
     <link href="https://www.itnxd.cn/posts/22550.html"/>
     <id>https://www.itnxd.cn/posts/22550.html</id>
     <published>2021-04-05T03:28:58.000Z</published>
-    <updated>2021-04-08T09:56:39.934Z</updated>
+    <updated>2021-09-26T12:20:41.164Z</updated>
     
     <summary type="html">
     
@@ -531,7 +559,7 @@
     </summary>
     
     
-      <category term="Spring全家桶" scheme="https://www.itnxd.cn/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
+      <category term="开发框架" scheme="https://www.itnxd.cn/categories/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/"/>
     
     
       <category term="SpringMvc" scheme="https://www.itnxd.cn/tags/SpringMvc/"/>
@@ -599,36 +627,6 @@
       <category term="动态规划" scheme="https://www.itnxd.cn/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
       <category term="区间DP" scheme="https://www.itnxd.cn/tags/%E5%8C%BA%E9%97%B4DP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日一题之LeetCode 1143. 最长公共子序列</title>
-    <link href="https://www.itnxd.cn/posts/55105.html"/>
-    <id>https://www.itnxd.cn/posts/55105.html</id>
-    <published>2021-04-02T02:24:36.000Z</published>
-    <updated>2021-04-06T03:08:30.066Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;题目链接：&lt;a href=&quot;https://leetcode-cn.com/problems/longest-common-subsequence/&quot;&gt;LeetCode 1143.
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="动态规划" scheme="https://www.itnxd.cn/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-      <category term="DP" scheme="https://www.itnxd.cn/tags/DP/"/>
     
   </entry>
   
