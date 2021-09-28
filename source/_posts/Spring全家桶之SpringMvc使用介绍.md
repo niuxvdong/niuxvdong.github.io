@@ -8,7 +8,7 @@ top_img: >-
 cover: >-
   https://cdn.jsdelivr.net/gh/niuxvdong/pic@85b4c936640935f65bb91a7a4656aad9774c70d9/2021/03/29/fe93649c0964b05fac8fea896308dd12.png
 categories:
-  - Spring全家桶
+  - 开发框架
 tags:
   - SpringMvc
 date: 2021-04-05 11:28:58

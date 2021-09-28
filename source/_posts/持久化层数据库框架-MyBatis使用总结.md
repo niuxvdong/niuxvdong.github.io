@@ -8,7 +8,7 @@ top_img: >-
 cover: >-
   https://cdn.jsdelivr.net/gh/niuxvdong/pic@5d0df45c637d0f7f47d463624c3d5d54bf5c165f/2021/04/09/5f345a4085a6573345ec63d7be527cb2.png
 categories:
-  - 数据库框架
+  - 开发框架
 tags:
   - MyBatis
   - PageHelper

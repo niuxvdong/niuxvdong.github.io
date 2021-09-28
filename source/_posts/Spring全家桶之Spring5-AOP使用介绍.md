@@ -8,9 +8,9 @@ top_img: >-
 cover: >-
   https://cdn.jsdelivr.net/gh/niuxvdong/pic@7ac41d51c951f7f506f4b1742fd800727bef52be/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
 categories:
-  - Spring全家桶
+  - 开发框架
 tags:
-  - Spring5
+  - Spring
   - AOP
 date: 2021-03-26 09:09:56
 updated:
