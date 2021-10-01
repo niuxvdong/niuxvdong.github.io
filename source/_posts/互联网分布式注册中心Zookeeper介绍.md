@@ -8,7 +8,7 @@ top_img: >-
 cover: >-
   https://cdn.jsdelivr.net/gh/niuxvdong/pic@be75530d6fedb428ff2e154f0aa823d6b754520e/2021/09/28/5efed5f7a5d8a6e858152e7c78b31007.png
 categories:
-  - 分布式
+  - 分布式微服务
 tags:
   - Zookeeper
   - 注册中心
