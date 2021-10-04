@@ -2,16 +2,18 @@
 title: 高级消息队列、开源消息代理软件、面向消息的中间件 RabbitMQ 介绍
 author: ITNXD
 toc: true
-date: 2021-10-04 11:27:51
-updated:
-abbrlink: https://cdn.jsdelivr.net/gh/niuxvdong/pic@67e33f6da51d3b664b04a1cf6e6768fd96b810fa/2021/10/04/bad5b13b191abdc4a6020f51449722c3.png
-top_img: https://cdn.jsdelivr.net/gh/niuxvdong/pic@67e33f6da51d3b664b04a1cf6e6768fd96b810fa/2021/10/04/bad5b13b191abdc4a6020f51449722c3.png
-cover:
+abbrlink: 49375
+top_img: >-
+  https://cdn.jsdelivr.net/gh/niuxvdong/pic@67e33f6da51d3b664b04a1cf6e6768fd96b810fa/2021/10/04/bad5b13b191abdc4a6020f51449722c3.png
+cover: >-
+  https://cdn.jsdelivr.net/gh/niuxvdong/pic@67e33f6da51d3b664b04a1cf6e6768fd96b810fa/2021/10/04/bad5b13b191abdc4a6020f51449722c3.png
 categories:
   - 中间件
 tags:
   - RabbitMQ
   - 消息队列
+date: 2021-10-04 11:27:51
+updated:
 ---
 
 
