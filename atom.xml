@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.itnxd.cn/"/>
-  <updated>2021-10-04T14:40:21.180Z</updated>
+  <updated>2021-10-13T15:14:27.903Z</updated>
   <id>https://www.itnxd.cn/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>进一步封装Spring、为简化Spring开发而生的SpringBoot框架</title>
+    <link href="https://www.itnxd.cn/posts/12809.html"/>
+    <id>https://www.itnxd.cn/posts/12809.html</id>
+    <published>2021-10-06T08:14:09.000Z</published>
+    <updated>2021-10-13T15:14:27.903Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一、SpringBoot概述&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#一、SpringBoot概述&quot;&gt;¶&lt;/a&gt;一、SpringBoot概述&lt;/h1&gt;
+&lt;h2 id=&quot;1、能做什么&quot;&gt;&lt;a class=&quot;header-anchor&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="开发框架" scheme="https://www.itnxd.cn/categories/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="SpringBoot" scheme="https://www.itnxd.cn/tags/SpringBoot/"/>
+    
+  </entry>
+  
+  <entry>
     <title>高级消息队列、开源消息代理软件、面向消息的中间件 RabbitMQ 介绍</title>
     <link href="https://www.itnxd.cn/posts/49375.html"/>
     <id>https://www.itnxd.cn/posts/49375.html</id>
     <published>2021-10-04T03:27:51.000Z</published>
-    <updated>2021-10-04T14:40:21.180Z</updated>
+    <updated>2021-10-04T14:40:39.374Z</updated>
     
     <summary type="html">
     
@@ -592,36 +620,6 @@
     
     
       <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="二分" scheme="https://www.itnxd.cn/tags/%E4%BA%8C%E5%88%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日一题之AcWing 68.0到n-1中缺失的数字</title>
-    <link href="https://www.itnxd.cn/posts/20480.html"/>
-    <id>https://www.itnxd.cn/posts/20480.html</id>
-    <published>2021-04-06T07:15:50.000Z</published>
-    <updated>2021-04-10T07:57:27.588Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;题目连接：&lt;a href=&quot;https://www.acwing.com/problem/content/64/&quot;&gt;AcWing 68. 0到n-1中缺失的数字&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;一、题解&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="AcWing" scheme="https://www.itnxd.cn/categories/AcWing/"/>
     
     
       <category term="二分" scheme="https://www.itnxd.cn/tags/%E4%BA%8C%E5%88%86/"/>
