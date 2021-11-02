@@ -324,11 +324,11 @@ rabbitmq可执行命令在`/sbin/service`下！
 # 添加开机启动 RabbitMQ 服务
 chkconfig rabbitmq-server on
 # 启动服务
-rabbitmq-server start 
+systemctl start rabbitmq-server
 # 查看服务状态
-rabbitmq-server status 
+systemctl status rabbitmq-server 
 # 停止服务
-rabbitmq-server stop 
+systemctl stop rabbitmq-server 
 ```
 
 
