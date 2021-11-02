@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.itnxd.cn/"/>
-  <updated>2021-10-25T07:32:57.944Z</updated>
+  <updated>2021-11-02T03:10:52.308Z</updated>
   <id>https://www.itnxd.cn/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>基于异步的、事件驱动的网络应用程序框架、快速开发高性能、高可靠性的网络服务器和客户端程序Netty介绍</title>
+    <link href="https://www.itnxd.cn/posts/44402.html"/>
+    <id>https://www.itnxd.cn/posts/44402.html</id>
+    <published>2021-11-01T06:38:06.000Z</published>
+    <updated>2021-11-02T03:10:52.308Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一、BIO编程&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#一、BIO编程&quot;&gt;¶&lt;/a&gt;一、BIO编程&lt;/h1&gt;
+&lt;h2 id=&quot;1、I-O-模型&quot;&gt;&lt;a class=&quot;header-anchor&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="网络编程" scheme="https://www.itnxd.cn/categories/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="Netty" scheme="https://www.itnxd.cn/tags/Netty/"/>
+    
+      <category term="NIO" scheme="https://www.itnxd.cn/tags/NIO/"/>
+    
+  </entry>
+  
+  <entry>
     <title>处理线程的工具包、JUC并发编程</title>
     <link href="https://www.itnxd.cn/posts/63819.html"/>
     <id>https://www.itnxd.cn/posts/63819.html</id>
     <published>2021-10-24T08:40:49.000Z</published>
-    <updated>2021-10-25T07:32:57.944Z</updated>
+    <updated>2021-10-25T07:33:24.831Z</updated>
     
     <summary type="html">
     
@@ -593,35 +623,6 @@
     
     
       <category term="多路归并" scheme="https://www.itnxd.cn/tags/%E5%A4%9A%E8%B7%AF%E5%BD%92%E5%B9%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>持久化层数据库框架-MyBatis使用总结</title>
-    <link href="https://www.itnxd.cn/posts/33442.html"/>
-    <id>https://www.itnxd.cn/posts/33442.html</id>
-    <published>2021-04-09T07:18:18.000Z</published>
-    <updated>2021-09-26T12:19:53.417Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;一、MyBatis简介&quot;&gt;&lt;a class=&quot;header-anchor&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="开发框架" scheme="https://www.itnxd.cn/categories/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/"/>
-    
-    
-      <category term="MyBatis" scheme="https://www.itnxd.cn/tags/MyBatis/"/>
-    
-      <category term="PageHelper" scheme="https://www.itnxd.cn/tags/PageHelper/"/>
     
   </entry>
   
