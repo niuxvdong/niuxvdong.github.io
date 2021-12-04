@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.itnxd.cn/"/>
-  <updated>2021-11-27T14:13:48.964Z</updated>
+  <updated>2021-12-04T10:43:24.395Z</updated>
   <id>https://www.itnxd.cn/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>计算机网络</title>
+    <link href="https://www.itnxd.cn/posts/28758.html"/>
+    <id>https://www.itnxd.cn/posts/28758.html</id>
+    <published>2021-11-29T09:16:40.000Z</published>
+    <updated>2021-12-04T10:43:24.395Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一、计算机网络体系结构&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#一、计算机网络体系结构&quot;&gt;¶&lt;/a&gt;一、计算机网络体系结构&lt;/h1&gt;
+&lt;h2 id=&quot;0、脑图&quot;&gt;&lt;a class=&quot;header-anchor&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="计算机基础" scheme="https://www.itnxd.cn/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="计算机网络" scheme="https://www.itnxd.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>计算机操作系统</title>
     <link href="https://www.itnxd.cn/posts/8398.html"/>
     <id>https://www.itnxd.cn/posts/8398.html</id>
     <published>2021-11-21T13:16:17.000Z</published>
-    <updated>2021-11-27T14:13:48.964Z</updated>
+    <updated>2021-11-27T14:14:39.058Z</updated>
     
     <summary type="html">
     
@@ -599,35 +627,6 @@
       <category term="Git" scheme="https://www.itnxd.cn/tags/Git/"/>
     
       <category term="GitHub" scheme="https://www.itnxd.cn/tags/GitHub/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日一题之LeetCode 783.二叉搜索树节点最小距离</title>
-    <link href="https://www.itnxd.cn/posts/16877.html"/>
-    <id>https://www.itnxd.cn/posts/16877.html</id>
-    <published>2021-04-13T09:20:25.000Z</published>
-    <updated>2021-04-13T10:52:32.585Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;一、题解&quot;&gt;&lt;a class=&quot;header-anchor&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode刷题" scheme="https://www.itnxd.cn/categories/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="中序遍历" scheme="https://www.itnxd.cn/tags/%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86/"/>
-    
-      <category term="树的遍历" scheme="https://www.itnxd.cn/tags/%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/"/>
     
   </entry>
   
