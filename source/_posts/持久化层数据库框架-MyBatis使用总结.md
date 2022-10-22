@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 33442
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@5d0df45c637d0f7f47d463624c3d5d54bf5c165f/2021/04/09/5f345a4085a6573345ec63d7be527cb2.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/09/5f345a4085a6573345ec63d7be527cb2.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@5d0df45c637d0f7f47d463624c3d5d54bf5c165f/2021/04/09/5f345a4085a6573345ec63d7be527cb2.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/09/5f345a4085a6573345ec63d7be527cb2.png
 categories:
   - 开发框架
 tags:
@@ -58,7 +58,7 @@ updated:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@b82d663bd442efe3af8c8db11b46c67f25486a41/2021/04/09/a1b6b194c6439e39313c38b37acc6484.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/09/a1b6b194c6439e39313c38b37acc6484.png)
 
 
 
@@ -895,7 +895,7 @@ select – 映射查询语句。
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a8bfc05e2999ab39a0eebea141371c349f940079/2021/04/09/f71e50a3a1e0902d7ef1939cec24abe4.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/09/f71e50a3a1e0902d7ef1939cec24abe4.png)
 
 
 
@@ -2050,7 +2050,7 @@ public void test7() throws IOException, InterruptedException {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@cbaec041ff81c6dbee0d95c69386da395973bce0/2021/04/09/7911daee3733d9f17110660bc5c777bb.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/09/7911daee3733d9f17110660bc5c777bb.png)
 
 
 
@@ -2355,7 +2355,7 @@ l memoryStoreEvictionPolicy - 当内存缓存达到最大，有新的element加�
 
 **双击命令即可！**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d8cc3e4d0fb2bc343c7e1f024f34cad1152eeb81/2021/04/09/f018abc5ac3b1b05e912fecb613d9cdf.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/09/f018abc5ac3b1b05e912fecb613d9cdf.png)
 
 
 
@@ -2365,7 +2365,7 @@ l memoryStoreEvictionPolicy - 当内存缓存达到最大，有新的element加�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@987a3c3841557a36b2330ccd3106b6a5b4301165/2021/04/09/afb674f07dbdf1ad5ceb7433d0eeac17.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/09/afb674f07dbdf1ad5ceb7433d0eeac17.png)
 
 
 
@@ -2444,7 +2444,7 @@ public void test1() throws IOException {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5138d7bbda81ac4e2dcb2c65c6d7ed99d417b1b6/2021/04/09/6c35c36c39d9852b935c47241540251f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/09/6c35c36c39d9852b935c47241540251f.png)
 
 
 

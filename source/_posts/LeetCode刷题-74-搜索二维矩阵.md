@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 59764
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/20/7664ee78ebdf1226052b13c7c0c37e23.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/20/7664ee78ebdf1226052b13c7c0c37e23.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/20/7664ee78ebdf1226052b13c7c0c37e23.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/20/7664ee78ebdf1226052b13c7c0c37e23.png
 categories: LeetCode刷题
 tags:
   - 二分

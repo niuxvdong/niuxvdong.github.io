@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 20286
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/09/ad2e2254ab79cd26beee82cbf73f5951.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/09/ad2e2254ab79cd26beee82cbf73f5951.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/09/ad2e2254ab79cd26beee82cbf73f5951.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/09/ad2e2254ab79cd26beee82cbf73f5951.png
 categories: LeetCode刷题
 tags:
   - 链表

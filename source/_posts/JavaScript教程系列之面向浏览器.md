@@ -3,8 +3,8 @@ title: JavaScript教程系列之面向浏览器
 author: Mr.Niu
 toc: true
 abbrlink: 57030
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/04.jpg'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/04.jpg'
+cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/04.jpg'
+top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/04.jpg'
 categories: 
 	- JavaScript教程
 tags:
@@ -66,7 +66,7 @@ console.log('window inner size: ' + window.innerWidth + ' x ' + window.innerHeig
 
 效果如下：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200222195240.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200222195240.png)
 
 
 
@@ -109,7 +109,7 @@ console.log('userAgent = ' + navigator.userAgent);
 
 效果如下：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200222201034.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200222201034.png)
 
 
 
@@ -502,7 +502,7 @@ document.getElementsByTagName('head')[0].appendChild(d);
 
 如下，会发现多了一行CSS，而网页只要是p标签都会被修改颜色！
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200223190055.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200223190055.png)
 
 
 

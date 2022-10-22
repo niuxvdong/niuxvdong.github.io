@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 8790
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@f40038c439ba561a382d434777da7ac61833a01c/2021/09/23/54de8d8441dfdce96e726f7fb173c689.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/23/54de8d8441dfdce96e726f7fb173c689.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@f40038c439ba561a382d434777da7ac61833a01c/2021/09/23/54de8d8441dfdce96e726f7fb173c689.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/23/54de8d8441dfdce96e726f7fb173c689.png
 categories:
   - 容器
 tags:
@@ -72,7 +72,7 @@ updated:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@13ed2f08b66b2b09da8b4c3fac3125db2172d81a/2021/09/22/44f59a8258278d09a703b8278153ac75.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/44f59a8258278d09a703b8278153ac75.png)
 
 
 
@@ -117,7 +117,7 @@ updated:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e3915bb62d6260b9bf340421f168eb9bd4407a62/2021/09/22/11d091da83f646a80e918a3636bd487f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/11d091da83f646a80e918a3636bd487f.png)
 
 
 
@@ -146,7 +146,7 @@ updated:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@39ffcf7de4116084302e0f149e7ceebba00d1d09/2021/09/22/bd00cef27bd2f07fd2bbf5a20a030fcc.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/bd00cef27bd2f07fd2bbf5a20a030fcc.png)
 
 
 
@@ -249,7 +249,7 @@ rm -rf /var/lib/docker
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@9d6dbb8a56aa75bef0235276d7c0e1221351d7ce/2021/09/22/9edb8f1f5e7e656977ffaa6819155885.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/9edb8f1f5e7e656977ffaa6819155885.png)
 
 
 
@@ -651,7 +651,7 @@ docker history 镜像名	  # 查看镜像变更历史
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@9f9d2e79f216d4ee25feb9a3eed1ed815a541bdf/2021/09/23/8255286c30fda0d557c630d14eecfe78.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/23/8255286c30fda0d557c630d14eecfe78.png)
 
 
 
@@ -680,7 +680,7 @@ docker run -d -p 8080:9000 \
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@eaf07b02ad19ac2a0ad124c4acdad9b96fbe5566/2021/09/22/e54b9b9c777df0a4abac5cede813d807.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/e54b9b9c777df0a4abac5cede813d807.png)
 
 
 
@@ -702,7 +702,7 @@ docker run -d -p 8080:9000 \
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c967ff9cabb0b14c6a32b5da725c692dd2c5f607/2021/09/22/a5642a5dd9da531a9f484a45f110398a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/a5642a5dd9da531a9f484a45f110398a.png)
 
 
 
@@ -725,7 +725,7 @@ docker run -d -p 8080:9000 \
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@4413b645e5cdc6465384055f2552d616ae1246ee/2021/09/22/23bb6a1b5a70d5db8a0f3397c251d2da.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/23bb6a1b5a70d5db8a0f3397c251d2da.png)
 
 
 
@@ -838,7 +838,7 @@ docker commit -a="itnxd" -m="add webapps app" 容器id tomcat02:1.0
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@1bcbfd80e0613305362ebc52c7d60bc3e21a2acb/2021/09/22/6c9594b33410b92df3ad31cd9d171855.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/6c9594b33410b92df3ad31cd9d171855.png)
 
 
 
@@ -860,7 +860,7 @@ dokcer run -it -v 主机内目录:容器内目录 镜像名/id
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@9f8f1d3e60128d453aa622b554149c6672426de9/2021/09/22/518973a1ca19ea0bfaf44d8929eddcf7.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/518973a1ca19ea0bfaf44d8929eddcf7.png)
 
 
 
@@ -868,7 +868,7 @@ dokcer run -it -v 主机内目录:容器内目录 镜像名/id
 
 **可在Dockerfile中使用VOLUME指令来给镜像添加一个或多个数据卷：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@4201015208f77e62cca7d214aaac4c6cf5e0c81a/2021/09/23/384d35393047e0208992d5afd12c8f43.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/23/384d35393047e0208992d5afd12c8f43.png)
 
 
 
@@ -896,7 +896,7 @@ docker run -d  -v 容器内目录  镜像名/id  # 匿名挂载
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6938009b0933257de2807c5f883c1d835198fe62/2021/09/22/4a804be7b7984a132b16239e9608286f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/4a804be7b7984a132b16239e9608286f.png)
 
 
 
@@ -914,7 +914,7 @@ docker run -d  -v 卷名：容器内目录  镜像名/id  # 具名挂载
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2c6ff7336b8110c6420a87d38b92937373ad8609/2021/09/22/01fd38ae9ace11818b0faee6e7cc083c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/01fd38ae9ace11818b0faee6e7cc083c.png)
 
 
 
@@ -922,7 +922,7 @@ docker run -d  -v 卷名：容器内目录  镜像名/id  # 具名挂载
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@837cf3716d31aa6a6905c7d93ac108f6f9f9e570/2021/09/22/ef607cc67f433877cd0f188bbcff0683.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/ef607cc67f433877cd0f188bbcff0683.png)
 
 
 
@@ -1229,7 +1229,7 @@ $ docker push itnxd/mytomcat:1.0
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a50f68ce0520830e84a45cc75591815bf54ab148/2021/09/22/01f0e5b3344e413135c7561e28aa4d5d.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/01f0e5b3344e413135c7561e28aa4d5d.png)
 
 
 
@@ -1260,7 +1260,7 @@ docker run -d -P --link 容器名/id 镜像名/id
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@4d374d776e8aabff6bf2cce9ab3aa40266dd8659/2021/09/22/9cb5deb39011b9a94f887378cd6c553c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/9cb5deb39011b9a94f887378cd6c553c.png)
 
 
 
@@ -1268,7 +1268,7 @@ docker run -d -P --link 容器名/id 镜像名/id
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@f9507d072e8f53a29ef0be33da81f03bfe36bd28/2021/09/22/c984c3b415f209a0280de3211ff8cd42.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/c984c3b415f209a0280de3211ff8cd42.png)
 
 
 
@@ -1296,7 +1296,7 @@ docker network ls    # 查看所有的docker网络
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@63f2050677dc2b15fe5b04761633d2b21ce5c527/2021/09/22/4022f7cc8d8354fdf94bb70012ff9524.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/4022f7cc8d8354fdf94bb70012ff9524.png)
 
 
 
@@ -1318,7 +1318,7 @@ docker  network create --driver 网络模式 --subnet 子网ip --gateway 网关 
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2e9a984a38b7e2699df89e9ea403a45d2eddd9e3/2021/09/22/fb627a077e745b7e7947ad030b2b7e2f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/fb627a077e745b7e7947ad030b2b7e2f.png)
 
 
 
@@ -1326,7 +1326,7 @@ docker  network create --driver 网络模式 --subnet 子网ip --gateway 网关 
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@927975a27b8481dffffebd5cb2717f3cbddd5e5b/2021/09/22/cf8a9259ffc4889a95cb8c15db080083.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/cf8a9259ffc4889a95cb8c15db080083.png)
 
 
 
@@ -1346,7 +1346,7 @@ docker  network create --driver 网络模式 --subnet 子网ip --gateway 网关 
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@be29c64960faedbda2d599b29f920ed6544920df/2021/09/22/96741dfd1f07fabd799acc3c6a8df50a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/96741dfd1f07fabd799acc3c6a8df50a.png)
 
 
 
@@ -1360,7 +1360,7 @@ docker  network create --driver 网络模式 --subnet 子网ip --gateway 网关 
 docker network connect 网络名 容器名/id
 ```
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2a6026fd5c305b2e60e809929881b91466d2b57c/2021/09/22/eaef7f917e411751c8bdc78f7c93829f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/eaef7f917e411751c8bdc78f7c93829f.png)
 
 
 
@@ -1370,7 +1370,7 @@ docker network connect 网络名 容器名/id
 
 新建的网络中绑定了一个新的容器！此时
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2f8047ce9f1187ce44617bc63c25240656038bdc/2021/09/22/56567d0b1f90a9df355d88f6880f05e0.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/56567d0b1f90a9df355d88f6880f05e0.png)
 
 
 
@@ -1386,7 +1386,7 @@ docker network connect 网络名 容器名/id
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@83c77e3c0f36f46d6b4ea23f78da71aacb8e431d/2021/09/22/7f2e9d0b725c43333dfc3337d82d5773.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/7f2e9d0b725c43333dfc3337d82d5773.png)
 
 
 
@@ -1710,7 +1710,7 @@ Docker Swarm 是 Docker 的集群管理工具。它将 Docker 主机池转变为
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@43887f3127596be8a4ef325228aa42e7d59b53d2/2021/09/22/776fabf18bc07dd61ead6e65272266c9.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/776fabf18bc07dd61ead6e65272266c9.png)
 
 
 
@@ -1751,7 +1751,7 @@ Manager Status：
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@3d42a3ef3438ea1dd34bfd3becba1018a1f68016/2021/09/22/8c39219df28f4cee550513230609af18.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/8c39219df28f4cee550513230609af18.png)
 
 
 

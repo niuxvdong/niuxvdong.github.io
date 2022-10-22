@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 54940
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/08/07/91a43b4c53fe836327920615e5908a4e.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/07/91a43b4c53fe836327920615e5908a4e.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/08/07/91a43b4c53fe836327920615e5908a4e.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/07/91a43b4c53fe836327920615e5908a4e.png
 categories: LeetCode刷题
 date: 2020-08-07 22:09:50
 updated:

@@ -3,8 +3,8 @@ title: AcWing-1326.军训队列
 author: Mr.Niu
 toc: true
 abbrlink: 13968
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_39.jpg'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_39.jpg'
+cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_39.jpg'
+top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_39.jpg'
 categories:
   - AcWing
 tags:
@@ -121,7 +121,7 @@ n 个人，分成 k 组，求 k 组的最大最小值差的平方的最小值，
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/202002251943429381.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/202002251943429381.png)
 
 
 

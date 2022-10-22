@@ -3,8 +3,8 @@ title: JS实战之油猴脚本编写之知乎一键转载
 author: Mr.Niu
 toc: true
 abbrlink: 1495
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@555efb3ddebd04d1969e9ab00080635a859b2739/2021/02/06/0eaff35043c619dc102d61019cf0b07b.png'
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@555efb3ddebd04d1969e9ab00080635a859b2739/2021/02/06/0eaff35043c619dc102d61019cf0b07b.png'
+top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/0eaff35043c619dc102d61019cf0b07b.png'
+cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/0eaff35043c619dc102d61019cf0b07b.png'
 categories: JS实战
 tags:
   - 油猴脚本
@@ -49,7 +49,7 @@ updated:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/08/174972b9ac2b582593a8d6ad6b862d57.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/08/174972b9ac2b582593a8d6ad6b862d57.png)
 
 # 三、完整代码
 

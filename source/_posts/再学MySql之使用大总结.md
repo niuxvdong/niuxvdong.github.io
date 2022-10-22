@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 30836
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@224c1996b8b0251b7a9a90aafc59ad2f92a201b9/2021/02/22/714da936370bca0654bf82b57fcc1027.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/22/714da936370bca0654bf82b57fcc1027.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@224c1996b8b0251b7a9a90aafc59ad2f92a201b9/2021/02/22/714da936370bca0654bf82b57fcc1027.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/22/714da936370bca0654bf82b57fcc1027.png
 categories:
   - MySQL
 tags:
@@ -506,7 +506,7 @@ cross join 表2 别名;
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d2baa84a018f8e3f6d4d5b1c36c9e43167e74ff9/2021/02/22/6e29356e99a2a6c8b9eef981b50d9b3c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/22/6e29356e99a2a6c8b9eef981b50d9b3c.png)
 
 
 
@@ -514,7 +514,7 @@ cross join 表2 别名;
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@246e5a30942cb4ae508f821f33a3b4b0755ff4d9/2021/02/22/8fde5413dfbddc98a505bc18feb93f61.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/22/8fde5413dfbddc98a505bc18feb93f61.png)
 
 
 

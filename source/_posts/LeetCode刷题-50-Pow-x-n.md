@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 4834
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/07/11b296738651c93c0ae7ad546ee201cb.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/07/11b296738651c93c0ae7ad546ee201cb.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/07/11b296738651c93c0ae7ad546ee201cb.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/07/11b296738651c93c0ae7ad546ee201cb.png
 categories: LeetCode刷题
 tags:
   - 快速幂
@@ -42,7 +42,7 @@ updated:
 
 ## 题解：
 
-[详见之前的这道题详解！](https://niuxvdong.top/posts/2286.html)
+[详见之前的这道题详解！](https://www.itnxd.cn/posts/2286.html)
 
 
 

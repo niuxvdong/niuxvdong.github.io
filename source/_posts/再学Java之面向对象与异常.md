@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 6640
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@c0e31f1ad80376e7f59bff73e7de464fd0c93f9c/2021/02/06/57ea9cb8f94698210de69d9742d81d04.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/57ea9cb8f94698210de69d9742d81d04.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@c0e31f1ad80376e7f59bff73e7de464fd0c93f9c/2021/02/06/57ea9cb8f94698210de69d9742d81d04.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/57ea9cb8f94698210de69d9742d81d04.png
 categories:
   - Java教程
 tags:
@@ -97,7 +97,7 @@ updated:
 
 #### 4.1、八种基本数据类型对应的包装类
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c20d1850a644fb3b94e6d053bb3e331dc5f99c1b/2021/02/15/0a205dc1bcac802a31740c31f9e8adc5.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/15/0a205dc1bcac802a31740c31f9e8adc5.png)
 
 
 
@@ -169,7 +169,7 @@ public void test6() {
 
 **四种权限修饰符的具体修饰范围：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@280c6659fbae0ccdd10bbda48068ab404b58dea8/2021/02/15/ee319173db444ad6e01123f3155015c0.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/15/ee319173db444ad6e01123f3155015c0.png)
 
 
 

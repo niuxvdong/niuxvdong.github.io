@@ -3,8 +3,8 @@ title: JavaWeb之Cookie和Session使用
 author: ITNXD
 toc: true
 abbrlink: 56534
-top_img: https://cdn.jsdelivr.net/gh/niuxvdong/pic@195b5228d0e8d0521a82d7074f399c086eea6683/2021/03/16/b89c9c53224f01449998789fa34acfc6.png
-cover: https://cdn.jsdelivr.net/gh/niuxvdong/pic@195b5228d0e8d0521a82d7074f399c086eea6683/2021/03/16/b89c9c53224f01449998789fa34acfc6.png
+top_img: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/16/b89c9c53224f01449998789fa34acfc6.png
+cover: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/16/b89c9c53224f01449998789fa34acfc6.png
 categories:
   - JavaWeb
 tags:
@@ -109,7 +109,7 @@ public abstract class BaseServlet extends HttpServlet {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2238693dd0b648d1d905e7f51e304f7c79b7a3e2/2021/03/16/a67ec5d90a0514f5a9254ff5a5d69d52.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/16/a67ec5d90a0514f5a9254ff5a5d69d52.png)
 
 
 
@@ -143,7 +143,7 @@ protected void createCookie(HttpServletRequest req, HttpServletResponse resp) th
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@58389cbbfae0a32f6b0bd0670eae159a7645f3a3/2021/03/16/d1b4e9adde19085e7f6f166f566663be.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/16/d1b4e9adde19085e7f6f166f566663be.png)
 
 
 
@@ -280,7 +280,7 @@ protected void updateCookie(HttpServletRequest req, HttpServletResponse resp) th
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@478348ceb4d8675be868aa664b5f569244409942/2021/03/16/2b637587baf07cd25e22fba6ed1e50e0.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/16/2b637587baf07cd25e22fba6ed1e50e0.png)
 
 
 
@@ -400,7 +400,7 @@ protected void setPath(HttpServletRequest req, HttpServletResponse resp) throws 
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@ba91159f00221e7c4c50dfdb344e55d845cd1d10/2021/03/16/6848f6055caf9034b73048d038c2c701.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/16/6848f6055caf9034b73048d038c2c701.png)
 
 
 
@@ -653,7 +653,7 @@ protected void deleteNow(HttpServletRequest req, HttpServletResponse resp) throw
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@22772e736b800eb3d65bbdaf4317ce2c06e1652b/2021/03/16/12e739a06592871ec25ea5566610be4b.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/16/12e739a06592871ec25ea5566610be4b.png)
 
 
 

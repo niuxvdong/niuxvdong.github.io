@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 29682
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/07/1bcdc2bc71dc053d1c14a729bb4420e7.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/07/1bcdc2bc71dc053d1c14a729bb4420e7.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/07/1bcdc2bc71dc053d1c14a729bb4420e7.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/07/1bcdc2bc71dc053d1c14a729bb4420e7.png
 categories: LeetCode刷题
 tags:
   - DFS

@@ -5,8 +5,8 @@ toc: true
 abbrlink: 55519
 date: 2020-02-17 22:17:37
 updated:
-cover: https://cdn.jsdelivr.net/gh/niuxvdong/images/a/18.jpg
-top_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/a/18.jpg
+cover: https://gitcode.net/qq_43590403/images/-/raw/master/a/18.jpg
+top_img: https://gitcode.net/qq_43590403/images/-/raw/master/a/18.jpg
 categories:
 	- JavaScript教程
 tags:

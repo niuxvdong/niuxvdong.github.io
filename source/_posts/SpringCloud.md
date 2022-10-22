@@ -3,8 +3,8 @@ title: 分布式微服务架构的一站式解决方案、多种微服务架构�
 author: ITNXD
 toc: true
 abbrlink: 29680
-top_img: https://cdn.jsdelivr.net/gh/niuxvdong/pic@43d5028746ba22e8036a1d3a11247e915c9ea6b7/2021/10/23/922026402b21435e77ec5a1c183683b7.png
-cover: https://cdn.jsdelivr.net/gh/niuxvdong/pic@43d5028746ba22e8036a1d3a11247e915c9ea6b7/2021/10/23/922026402b21435e77ec5a1c183683b7.png
+top_img: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/922026402b21435e77ec5a1c183683b7.png
+cover: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/922026402b21435e77ec5a1c183683b7.png
 categories: 分布式微服务
 tags:
   - SpringCloud
@@ -39,7 +39,7 @@ updated:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@20fd363ab582be5c3206a1d130ad68f713a9c509/2021/10/14/832db74de6eeebcfc1f133b6eed26244.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/14/832db74de6eeebcfc1f133b6eed26244.png)
 
 
 
@@ -59,7 +59,7 @@ updated:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@09152baaae33f97902a74e319b5619b735be7e3b/2021/10/14/45af0b8268ab322db231df7ea58a12ca.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/14/45af0b8268ab322db231df7ea58a12ca.png)
 
 
 
@@ -67,7 +67,7 @@ updated:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@9b3245eee28dd8c281c04356e8b2215c414dd713/2021/10/14/a657ee51aa9acdaeb99e089cdb275db2.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/14/a657ee51aa9acdaeb99e089cdb275db2.png)
 
 
 
@@ -219,7 +219,7 @@ updated:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e6fc97ec62645c3b04a20aee6c616fe19dd86624/2021/10/14/d6735d92d0dadcdc2f74a9e669b41819.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/14/d6735d92d0dadcdc2f74a9e669b41819.png)
 
 
 
@@ -959,7 +959,7 @@ Eureka采用了CS的设计架构，Eureka Sever作为服务注册功能的服务
 在服务注册与发现中，有一个注册中心。当服务器启动的时候，会把当前自己服务器的信息比如服务地址通讯地址等以别名方式注册到注册中心上。另一方(消费者服务提供者)，以该别名的方式去注册中心上获取到实际的服务通讯地址，然后再实现本地RPC调用RPC远程调用框架核心设计思想:在于注册中心，因为使用注册中心管理每个服务与服务之间的一个依赖关系(服务治理概念)。在任何RPC远程框架中，都会有一个注册中心存放服务地址相关信息(接口地址)
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@943787d8b5b30c16f9a90fad6342e91f5a5e7776/2021/10/15/1a036992d2f6c9f403b5e0b70fd11ce2.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/15/1a036992d2f6c9f403b5e0b70fd11ce2.png)
 
 
 
@@ -1237,7 +1237,7 @@ eureka:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6e03b4509544856e5844e1d625814b3c8f2df161/2021/10/15/80b98ad8fc6914da80541e25fbf31199.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/15/80b98ad8fc6914da80541e25fbf31199.png)
 
 
 
@@ -1494,7 +1494,7 @@ public class OrderController {
 
 **相互注册，互相守望！**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e43233df73c4cbdc381deb89c34b6ff18c48f2df/2021/10/15/d55aa433a1bb7f955e725f07a55b67ff.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/15/d55aa433a1bb7f955e725f07a55b67ff.png)
 
 
 
@@ -2647,7 +2647,7 @@ public class OrderMain80 {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5630fd8c8c69376c5925bd44475d5c67a0098d13/2021/10/16/bb6820a02b511002e10c9a3ac1d79a8c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/16/bb6820a02b511002e10c9a3ac1d79a8c.png)
 
 
 
@@ -2798,7 +2798,7 @@ Ribbon其实就是一个软负载均衡的客户端组件，它可以和其他�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@73123bdf4dbd6f0fa1bfd02ac98e081cb4e628e2/2021/10/16/a74388dba8613b5aa44aaed63a6c8988.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/16/a74388dba8613b5aa44aaed63a6c8988.png)
 
 
 
@@ -2889,7 +2889,7 @@ public CommonResult<Payment> getPayment1(@PathVariable("id") Long id){
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@3f76f43a064dc0c02d2f43b24ac10b1ba484a342/2021/10/16/b5e711ceda3c95c67ae8b1a6e10eff76.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/16/b5e711ceda3c95c67ae8b1a6e10eff76.png)
 
 
 
@@ -4814,7 +4814,7 @@ public String doSomething() {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@dc4ac9b942bf9817304a4da56196bab9db2a0865/2021/10/18/716a877cea7ef425d243c064a06c029a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/18/716a877cea7ef425d243c064a06c029a.png)
 
 
 
@@ -5051,7 +5051,7 @@ http://localhost:8001/payment/circuit/-1
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@32a5b677f4cf883757f7751fc0e7a122c6e881a6/2021/10/18/c02404014dfb05992f2d8f495c2fc8ad.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/18/c02404014dfb05992f2d8f495c2fc8ad.png)
 
 
 
@@ -5063,7 +5063,7 @@ http://localhost:8001/payment/circuit/-1
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e5443f577a975afd22993aee8b4097e5a473b713/2021/10/18/5e568147c3993b6afdc8c86cf47597c3.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/18/5e568147c3993b6afdc8c86cf47597c3.png)
 
 
 
@@ -5089,13 +5089,13 @@ http://localhost:8001/payment/circuit/-1
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@231e809f997ab0d484b2e93e9aeabc3a4f5376b1/2021/10/18/6a90625b58bcc70434c4d3a23185aab5.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/18/6a90625b58bcc70434c4d3a23185aab5.png)
 
 
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2722644f8e74e3f2d7e00118f3e18e8642aca872/2021/10/18/6d7df1b33994e11f0e231dfb3cb9d089.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/18/6d7df1b33994e11f0e231dfb3cb9d089.png)
 
 
 
@@ -5180,7 +5180,7 @@ Spring Cloud Gateway的目标提供统一的路由方式且基于 Filter链的�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@30d224782759d1a9616ca051d857b3d196fc45ea/2021/10/18/b57373e993833736aae2f1b5a1940c39.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/18/b57373e993833736aae2f1b5a1940c39.png)
 
 
 
@@ -5307,7 +5307,7 @@ predicate就是我们的匹配条件；而fliter，就可以理解为一个无�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a84774bee23b6c71e980d2ff5719029fdefa99c1/2021/10/18/a0ddbb02c8ed47509dcb80c12a0bad0f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/18/a0ddbb02c8ed47509dcb80c12a0bad0f.png)
 
 
 
@@ -6039,7 +6039,7 @@ SpringCloud提供了ConfigServer来解决这个问题，我们每一个微服务
 
 SpringCloud Config为微服务架构中的微服务提供集中化的外部配置支持，配置服务器为各个不同微服务应用的所有环境提供了一个中心化的外部配置。
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@83a12d187ece3886fba6db321398d8b7aaad73e0/2021/10/18/b29048b8a332bc91f31b3558d198fa11.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/18/b29048b8a332bc91f31b3558d198fa11.png)
 
 
 
@@ -6633,7 +6633,7 @@ Spring Cloud Bus 配合Spring Cloud Config 使用可以实现配置的动态刷�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@8c9328baa5b8c581c7328505a611ba012aafc9fd/2021/10/18/a92fcd5f1d1b60208a5042abd1a3cae1.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/18/a92fcd5f1d1b60208a5042abd1a3cae1.png)
 
 
 
@@ -6645,7 +6645,7 @@ Spring Cloud Bus能管理和传播分布式系统间的消息，就像一个分�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@ec3a99890409b89704bd7eb3c074ccacbbf8ae32/2021/10/18/7252d84ed08777672dc7b3234a001549.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/18/7252d84ed08777672dc7b3234a001549.png)
 
 
 
@@ -6699,7 +6699,7 @@ rabbitmq-plugins enable rabbitmq _management
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@839dca9f6829dc5a7de2ade228f557304b7b4132/2021/10/18/b5675feebb7c07d035731ab561b7e1d3.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/18/b5675feebb7c07d035731ab561b7e1d3.png)
 
 
 
@@ -6717,7 +6717,7 @@ rabbitmq-plugins enable rabbitmq _management
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6308ec7c789ea984b9149e4ea08223cf969b494a/2021/10/18/8bd851bc4ced4a595a8bfc65a6bf6ec1.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/18/8bd851bc4ced4a595a8bfc65a6bf6ec1.png)
 
 
 
@@ -6978,7 +6978,7 @@ spring:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@9c6bcf0b3d13953e6e46fd583e176bb42ab10c73/2021/10/19/3184daab29451e384322177d5ec8892f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/19/3184daab29451e384322177d5ec8892f.png)
 
 
 
@@ -7085,7 +7085,7 @@ spring:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a146d7c671d4d252d10eb6d9eb0939ede31ab288/2021/10/19/b07e9e8ec886c3260d1bfd1bc7e4dd73.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/19/b07e9e8ec886c3260d1bfd1bc7e4dd73.png)
 
 
 
@@ -7111,7 +7111,7 @@ spring:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@b6938397859006e364838c9e0e45b76a5bcbb2cf/2021/10/19/2e4ad9b31e8d007bab74dd6f97da5b37.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/19/2e4ad9b31e8d007bab74dd6f97da5b37.png)
 
 
 
@@ -7152,13 +7152,13 @@ Topic主题进行广播
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@0a2b0556ec577caaa8af87d4fee180253b078ae5/2021/10/19/898c4cea615c60b152eb3ce1eb29c481.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/19/898c4cea615c60b152eb3ce1eb29c481.png)
 
 
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@02ec747525855fc57ec098af4f34e8d99c6ba545/2021/10/19/ef69bc0c387648038187cbb46f1c0ade.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/19/ef69bc0c387648038187cbb46f1c0ade.png)
 
 
 
@@ -7704,7 +7704,7 @@ java -jar zipkin-server-2.34.4-exec.jar
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@fa301b1a7ec33db9f1976b21cce30c3d2276e641/2021/10/19/2070ddb1cbed53469e9bb476362074b2.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/19/2070ddb1cbed53469e9bb476362074b2.png)
 
 
 
@@ -8264,7 +8264,7 @@ public class PaymentController {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@226f23986a7395a1f7ec28372638607bdfc7da71/2021/10/19/6f5b03f556f0f1836326b9ba613871e3.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/19/6f5b03f556f0f1836326b9ba613871e3.png)
 
 
 
@@ -8449,7 +8449,7 @@ public class OrderNacosController {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5ff28b240c57c6cbed1225206c4e14672f392245/2021/10/19/6b72f8a125a700bf1480cd787dd2421f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/19/6b72f8a125a700bf1480cd787dd2421f.png)
 
 
 
@@ -8461,7 +8461,7 @@ Nacos与其他注册中心特性对比
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@960ed14fbd400fa08e99dd0e5b7df65d931c696a/2021/10/19/e6399a634f243123a7f4a5772f463f52.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/19/e6399a634f243123a7f4a5772f463f52.png)
 
 
 
@@ -8469,7 +8469,7 @@ Nacos与其他注册中心特性对比
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@7aeb6f4d3a39c12b6355f4dad7560c37c9f2394c/2021/10/19/74e4456fad2567f8c3b6b98bb909b9f4.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/19/74e4456fad2567f8c3b6b98bb909b9f4.png)
 
 
 
@@ -8721,7 +8721,7 @@ nacos-config-client-test.yaml
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@88612c3801d26dfc6617df13ccac59cbb9f7c7ed/2021/10/19/175f1567cd04c8e234c0196fb3b40791.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/19/175f1567cd04c8e234c0196fb3b40791.png)
 
 
 
@@ -8729,7 +8729,7 @@ nacos-config-client-test.yaml
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@65fc5e7b5a267c11bd88858d16a32f6b211e3702/2021/10/19/3c50537282518121fdf3c3a8729cbe23.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/19/3c50537282518121fdf3c3a8729cbe23.png)
 
 
 
@@ -8739,7 +8739,7 @@ nacos-config-client-test.yaml
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@7e99034d5a1e76d493f2da9bc4bfd4209ce699b8/2021/10/19/c7adcf1e319860ddbec5860c111304cf.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/19/c7adcf1e319860ddbec5860c111304cf.png)
 
 
 
@@ -8779,7 +8779,7 @@ nacos-config-client-test.yaml
 
 **三者情况**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@0881156016e6618423ab9967561965c937f02438/2021/10/20/3dc85b949de530e4baca3eae6cc5965c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/20/3dc85b949de530e4baca3eae6cc5965c.png)
 
 
 
@@ -8811,7 +8811,7 @@ nacos-config-client-test.yaml
 
 **配置切换即可： spring.profiles.active**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@7cccdc89916c2ab7a85776dbf42e6adaa217dab3/2021/10/20/307a73bb5f37ae62f2bdb9519eb7d2d2.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/20/307a73bb5f37ae62f2bdb9519eb7d2d2.png)
 
 
 
@@ -8836,7 +8836,7 @@ nacos-config-client-test.yaml
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@82b8b8fcd9a566044eba6e7fd550eaa4fc936bd7/2021/10/20/fd30c6a340e42f8e852b9423b74cac2c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/20/fd30c6a340e42f8e852b9423b74cac2c.png)
 
 
 
@@ -8846,7 +8846,7 @@ nacos-config-client-test.yaml
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c54c859c803d4a48defdea0522b198dcdb241e32/2021/10/20/72823787fd437c18c7c112ef8af137a9.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/20/72823787fd437c18c7c112ef8af137a9.png)
 
 
 
@@ -8869,7 +8869,7 @@ nacos-config-client-test.yaml
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6510e9d411a202ca0c36c98cca0ee2e6f6c0abf5/2021/10/20/00ff0e70b65e3dd7ee5bc57322efaa76.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/20/00ff0e70b65e3dd7ee5bc57322efaa76.png)
 
 
 
@@ -8930,7 +8930,7 @@ spring:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@92f70d535622393a2882cdf886df37fdc14ae0ea/2021/10/20/a429999c19116193fa93c7ee590878d6.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/20/a429999c19116193fa93c7ee590878d6.png)
 
 
 
@@ -8938,7 +8938,7 @@ spring:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@b8845764f5d813936d0f7157c3b0204008729b5e/2021/10/20/beab47c11f4403d13c2e5b0a5797433b.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/20/beab47c11f4403d13c2e5b0a5797433b.png)
 
 
 
@@ -9275,7 +9275,7 @@ management:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@f31c1ba250f9847f8bcc716d0e7c489e986630d6/2021/10/20/a001d58984feff943f704ec53509a411.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/20/a001d58984feff943f704ec53509a411.png)
 
 
 
@@ -9322,7 +9322,7 @@ management:
 
 —句话解释，之前我们学习过的Hystrix！
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@90f8499776abf54d2ed4b54c5138372e19bb4619/2021/10/21/566e39522bb978ecfb6172de68f56302.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/21/566e39522bb978ecfb6172de68f56302.png)
 
 
 
@@ -9644,7 +9644,7 @@ public class MainApp8401 {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5f51ecb8c926a4ffeaf827f5e618c263164447ea/2021/10/21/d7aafffecba6b8adaf2eac900c4da3b8.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/21/d7aafffecba6b8adaf2eac900c4da3b8.png)
 
 
 
@@ -9725,7 +9725,7 @@ public String testA() throws InterruptedException {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@086626eff4d38567dbb995877e3f19c385f399c1/2021/10/21/ad10578741ed8160ab8f67da2bb98a57.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/21/ad10578741ed8160ab8f67da2bb98a57.png)
 
 
 
@@ -9735,7 +9735,7 @@ public String testA() throws InterruptedException {
 
 配置完毕点击运行集合即可！
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@3a9bde1395ab00168ab1695e5c28beed2693d7f8/2021/10/21/5354f7ee5608ce61bb2278514707fb72.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/21/5354f7ee5608ce61bb2278514707fb72.png)
 
 
 
@@ -9791,7 +9791,7 @@ Warm Up（RuleConstant.CONTROL_BEHAVIOR_WARM_UP）方式，即预热/冷启动�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2e51df35861bd90a8fddc59c63707703d4f3c497/2021/10/21/8e0d24031d91e12d69775a2cee47fbb3.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/21/8e0d24031d91e12d69775a2cee47fbb3.png)
 
 
 
@@ -9809,7 +9809,7 @@ Warm Up（RuleConstant.CONTROL_BEHAVIOR_WARM_UP）方式，即预热/冷启动�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5ea123802b44c872ab26b5e12c8e7b514f078159/2021/10/21/d98068e670b98f0508c77f108c446130.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/21/d98068e670b98f0508c77f108c446130.png)
 
 
 
@@ -9835,7 +9835,7 @@ Warm Up（RuleConstant.CONTROL_BEHAVIOR_WARM_UP）方式，即预热/冷启动�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@36e28948416198e2c05e57502cc54340fe41ac75/2021/10/21/38b05a1770f8a64dce0c031ff98d365f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/21/38b05a1770f8a64dce0c031ff98d365f.png)
 
 
 
@@ -9849,7 +9849,7 @@ Warm Up（RuleConstant.CONTROL_BEHAVIOR_WARM_UP）方式，即预热/冷启动�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5c12fba438f092ca9a471427e6d8064ac618fa05/2021/10/21/c2fa63a85e8e51fd77c1b30c3002779c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/21/c2fa63a85e8e51fd77c1b30c3002779c.png)
 
 
 
@@ -9915,7 +9915,7 @@ public String testB() {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@0754070d00e04907179d9ecb60b1f55ed59afb35/2021/10/21/5c52f83f8e6cac6676f45859ac8c856a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/21/5c52f83f8e6cac6676f45859ac8c856a.png)
 
 
 
@@ -9987,7 +9987,7 @@ public String testD() {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@1772211d26b61dbafc131aae2eb1a4e9e4f63039/2021/10/22/81d75bf62eabf33550581f97a3637c76.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/22/81d75bf62eabf33550581f97a3637c76.png)
 
 
 
@@ -9995,7 +9995,7 @@ public String testD() {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@f74fd76d18280c2972a14dba6c06461a6879eec8/2021/10/22/45b2b17ed02db4363c19cdcc432adedd.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/22/45b2b17ed02db4363c19cdcc432adedd.png)
 
 
 
@@ -10052,7 +10052,7 @@ public String testD() {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@0aee281f6527560fddcea4579769075c7605d42b/2021/10/22/fb3b833256a58596bb2d03f9a563f423.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/22/fb3b833256a58596bb2d03f9a563f423.png)
 
 
 
@@ -10062,7 +10062,7 @@ public String testD() {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@270fb99cc98b15fcc54353cd300f2c61f88c5ceb/2021/10/22/5edc313c4699b59b91232fe3cd574ee0.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/22/5edc313c4699b59b91232fe3cd574ee0.png)
 
 
 
@@ -10124,7 +10124,7 @@ public String testE() {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2f882d0b70dbc4acc0b857340c7f63fd0ca4ea93/2021/10/22/5b12873b58eaf740a82fbc894a24f7b8.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/22/5b12873b58eaf740a82fbc894a24f7b8.png)
 
 
 
@@ -10163,7 +10163,7 @@ public String testE() {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6965177e3d24eaae07d7e595100f4d118aba9bbb/2021/10/22/4a2b29348ae5ea0ed529a20f4efe7c12.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/22/4a2b29348ae5ea0ed529a20f4efe7c12.png)
 
 Sentinel 利用 **LRU 策略**统计最近最常访问的热点参数，结合**令牌桶算法**来进行参数级别的流控。**热点参数限流支持集群模式**。
 
@@ -10215,7 +10215,7 @@ public String deal_testHotKey (String p1, String p2, BlockException exception) {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@35478e4971bfe00af401d8609b0481a7aaef90a0/2021/10/22/1edaf0ea44acbae4db7551ebe0315cdf.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/22/1edaf0ea44acbae4db7551ebe0315cdf.png)
 
 
 
@@ -10250,7 +10250,7 @@ public String deal_testHotKey (String p1, String p2, BlockException exception) {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e0cfe769677d274c2824b418607e5c73c526a586/2021/10/22/652d3d655c29eaf979ee686716f34ae8.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/22/652d3d655c29eaf979ee686716f34ae8.png)
 
 
 
@@ -10376,7 +10376,7 @@ public class RateLimitController {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d1790e034a499388a3ef9df3d9126da07c09e048/2021/10/22/e77c2efe5f28bf191015c08ac8a6b220.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/22/e77c2efe5f28bf191015c08ac8a6b220.png)
 
 
 
@@ -10437,7 +10437,7 @@ public CommonResult byUrl() {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@0fb3c9ac38aae39d3ae712cd9eb66e1f9162d821/2021/10/22/517676d84a18317b90659ed9e5e2526e.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/22/517676d84a18317b90659ed9e5e2526e.png)
 
 
 
@@ -10519,7 +10519,7 @@ public CommonResult customerBlockHandler() {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6c696d7a455b25b51ad968e6d60391f2f41e26ff/2021/10/22/ef20b02bc29f86e8e29266adccac2d50.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/22/ef20b02bc29f86e8e29266adccac2d50.png)
 
 
 
@@ -11065,7 +11065,7 @@ public class CircleBreakerController {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2d95a1bfb4ef1f540ea3b4360d927359e623a9ab/2021/10/23/0eff14dd9a18a0717510c0b09f572754.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/0eff14dd9a18a0717510c0b09f572754.png)
 
 
 
@@ -11331,7 +11331,7 @@ public class OrderNacosMain84 {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6e62fbd85c0f34887d4efe6bab64c7ea17d6a918/2021/10/23/6604d2ac7ae8a16d8c8b6b561dfae3bc.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/6604d2ac7ae8a16d8c8b6b561dfae3bc.png)
 
 
 
@@ -11429,7 +11429,7 @@ feign:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@fda694f195759129868e0f7d344267441936f8ff/2021/10/23/3aac5d5ad01887c2d6e45b241a4d82cf.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/3aac5d5ad01887c2d6e45b241a4d82cf.png)
 
 
 
@@ -11508,7 +11508,7 @@ feign:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@7caadfed9526572891d759b36f8552ec1143b041/2021/10/23/4f27f6619433d712f6f51fcb29e3705c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/4f27f6619433d712f6f51fcb29e3705c.png)
 
 
 
@@ -11560,7 +11560,7 @@ Seata是一款开源的分布式事务解决方案，致力于在微服务架构
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@8edacdde1c090567bc4e97d9b30a32908ed5d3c4/2021/10/23/1c3332a3df9f31df446d5c642aab1d74.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/1c3332a3df9f31df446d5c642aab1d74.png)
 
 
 
@@ -11589,7 +11589,7 @@ Seata是一款开源的分布式事务解决方案，致力于在微服务架构
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@38beee1f7b04f5381df57e784097cde4b2d522c2/2021/10/23/a9754cbe057e19fa85dbdbede35a76eb.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/a9754cbe057e19fa85dbdbede35a76eb.png)
 
 
 
@@ -11993,7 +11993,7 @@ CREATE TABLE `undo_log` (
 
 **数据库初始情况：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c4e1a5f9fbf84db42def4da8994cbd2449515f02/2021/10/23/14a6368a8f33a4ca358390634920d23e.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/14a6368a8f33a4ca358390634920d23e.png)
 
 
 
@@ -12007,7 +12007,7 @@ CREATE TABLE `undo_log` (
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a1c340dbdbbad1764a955182a69e4019b4a83783/2021/10/23/809358bd1ff14d45dc1aa57f16fa632f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/809358bd1ff14d45dc1aa57f16fa632f.png)
 
 
 
@@ -12050,7 +12050,7 @@ public class AccountServiceImpl implements AccountService {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@8f527a43a81d059738a8db109f52c60b7b1d1c29/2021/10/23/e783baaa3b362c354511e7dd6539b41e.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/e783baaa3b362c354511e7dd6539b41e.png)
 
 
 
@@ -12117,7 +12117,7 @@ Simple Extensible Autonomous Transaction Architecture，简单可扩展自治事
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@8edacdde1c090567bc4e97d9b30a32908ed5d3c4/2021/10/23/1c3332a3df9f31df446d5c642aab1d74.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/1c3332a3df9f31df446d5c642aab1d74.png)
 
 
 
@@ -12177,7 +12177,7 @@ Simple Extensible Autonomous Transaction Architecture，简单可扩展自治事
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5c2513f035494fab8d76ed067329bd3d75c978ce/2021/10/23/388c12abce5a8c67ef3673c6f917ecfe.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/388c12abce5a8c67ef3673c6f917ecfe.png)
 
 **二阶段提交**
 
@@ -12185,7 +12185,7 @@ Simple Extensible Autonomous Transaction Architecture，简单可扩展自治事
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a4a325498d626ab1082fde7bd640f04359d9e7b4/2021/10/23/e7471d2db0590f7303a170915d9c9564.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/e7471d2db0590f7303a170915d9c9564.png)
 
 **二阶段回滚**
 
@@ -12197,7 +12197,7 @@ Simple Extensible Autonomous Transaction Architecture，简单可扩展自治事
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a4a325498d626ab1082fde7bd640f04359d9e7b4/2021/10/23/e7471d2db0590f7303a170915d9c9564.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/e7471d2db0590f7303a170915d9c9564.png)
 
 
 
@@ -12207,7 +12207,7 @@ Simple Extensible Autonomous Transaction Architecture，简单可扩展自治事
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@4b46e6c7573346e66b77e6bb22a0abd10a94efe2/2021/10/23/278b336174336be0e2e9126cc42fb16c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/278b336174336be0e2e9126cc42fb16c.png)
 
 
 
@@ -12221,4 +12221,4 @@ Simple Extensible Autonomous Transaction Architecture，简单可扩展自治事
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5947a9ddcb4479d9f5c2dd4b11b9d0678da54f1f/2021/10/23/f827e1c3f3049ff58ee0d115784f2f4a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/23/f827e1c3f3049ff58ee0d115784f2f4a.png)

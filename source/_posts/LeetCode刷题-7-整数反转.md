@@ -3,8 +3,8 @@ title: LeetCode刷题-7.整数反转
 author: Mr.Niu
 toc: true
 abbrlink: 58547
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@4ccc80d355832b3686898ac37e5cd99199161851/2021/02/06/106227485d1c1adad38e8b3f36245c1a.png'
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@4ccc80d355832b3686898ac37e5cd99199161851/2021/02/06/106227485d1c1adad38e8b3f36245c1a.png'
+top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/106227485d1c1adad38e8b3f36245c1a.png'
+cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/106227485d1c1adad38e8b3f36245c1a.png'
 categories: LeetCode刷题
 tags:
   - 反转

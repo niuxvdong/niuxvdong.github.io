@@ -3,8 +3,8 @@ title: Java教程系列之异常处理
 author: Mr.Niu
 toc: true
 abbrlink: 19314
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@555efb3ddebd04d1969e9ab00080635a859b2739/2021/02/06/0eaff35043c619dc102d61019cf0b07b.png'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@555efb3ddebd04d1969e9ab00080635a859b2739/2021/02/06/0eaff35043c619dc102d61019cf0b07b.png'
+cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/0eaff35043c619dc102d61019cf0b07b.png'
+top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/0eaff35043c619dc102d61019cf0b07b.png'
 categories:
   - Java教程
 tags:

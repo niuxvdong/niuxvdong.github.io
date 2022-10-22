@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 58740
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@96012753424dea53bf52f439d37afab1758bdf9f/2021/03/08/ba2bb57f28e91a5b1ea717ac93817640.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/08/ba2bb57f28e91a5b1ea717ac93817640.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@96012753424dea53bf52f439d37afab1758bdf9f/2021/03/08/ba2bb57f28e91a5b1ea717ac93817640.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/08/ba2bb57f28e91a5b1ea717ac93817640.png
 categories:
   - JavaWeb
 tags:
@@ -234,7 +234,7 @@ public class HelloServlet implements Servlet {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@b64e9b1a6266367c13b63d42ea5a43dcf0bae34a/2021/03/08/dc61049254c888868b487c6e1dfdf732.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/08/dc61049254c888868b487c6e1dfdf732.png)
 
 
 
@@ -449,7 +449,7 @@ public class HelloServlet2 extends HttpServlet {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d42038af5f0416cd70b31e12f56dba621e411621/2021/03/08/f56a6c227cb52a1d38eed157cfbfc23d.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/08/f56a6c227cb52a1d38eed157cfbfc23d.png)
 
 
 
@@ -468,7 +468,7 @@ public class HelloServlet2 extends HttpServlet {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@76317036a7446c91242b87ad13506be9f6f5bd99/2021/03/08/e76879bd855202d23767b0b6e9598d54.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/08/e76879bd855202d23767b0b6e9598d54.png)
 
 
 
@@ -508,7 +508,7 @@ public class HelloServlet3 extends HttpServlet {
 
 - GenericServlet实现了三大接口：`Servlet、ServletConfig、java.io.Serializable`
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@7e2d21f17281694d69e0db245a136bdf9fd289b1/2021/03/08/52b063fa55ca37c504939958f226d6dd.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/08/52b063fa55ca37c504939958f226d6dd.png)
 
 
 
@@ -930,7 +930,7 @@ HTTP 协议中的数据又叫**报文**。
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@122929874465d486fb7fc16d4e1d80a240402519/2021/03/09/86708542870c12bdb3f79cb36549ebcf.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/86708542870c12bdb3f79cb36549ebcf.png)
 
 
 
@@ -973,7 +973,7 @@ HTTP 协议中的数据又叫**报文**。
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a1300e71310d6c0e609cc436f29dcbcf4ad65439/2021/03/09/39b56c6af0c8be22abce73cb6a99cde6.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/39b56c6af0c8be22abce73cb6a99cde6.png)
 
 
 
@@ -1030,7 +1030,7 @@ HTTP 协议中的数据又叫**报文**。
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a02cff6acd041e6c48db05e30cd21c6bef353ede/2021/03/09/b31ac0e653e1cc9cf15c77a5fb50e7a7.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/b31ac0e653e1cc9cf15c77a5fb50e7a7.png)
 
 
 
@@ -1069,7 +1069,7 @@ HTTP 协议中的数据又叫**报文**。
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e6a86a2ff848d2add5cf5a8c19429555986d7b4e/2021/03/09/4e5806ca994d381e1692f6c73b9b29d2.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/4e5806ca994d381e1692f6c73b9b29d2.png)
 
 
 
@@ -1106,7 +1106,7 @@ HTTP 协议中的数据又叫**报文**。
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c89f505bdef7856e51516f14d241ded430452adb/2021/03/09/62a8e8622a89a0b27c6f2ad437953bf5.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/62a8e8622a89a0b27c6f2ad437953bf5.png)
 
 
 
@@ -1131,7 +1131,7 @@ HTTP 协议中的数据又叫**报文**。
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@ece3e3d39341386e3700537e6cb552ab1eca6da2/2021/03/09/2cf403091b8cfbf30dfe56af58510110.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/2cf403091b8cfbf30dfe56af58510110.png)
 
 
 
@@ -1161,9 +1161,9 @@ HTTP 协议中的数据又叫**报文**。
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@61fdbb8b269605941698e353180b55da78dc36a8/2021/03/09/0daee5aae527b7a6381401b6f552cfea.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/0daee5aae527b7a6381401b6f552cfea.png)
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d841826d7c2d32c53b4a289d329009ea77a45bf1/2021/03/09/d1d9f178cd9120da55de7e355b6ff50d.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/d1d9f178cd9120da55de7e355b6ff50d.png)
 
 
 
@@ -1394,7 +1394,7 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a138f5f8449f4ad3fa6371949770cd21ad3e5367/2021/03/09/ab1611a6a28185912214ea645492aabe.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/ab1611a6a28185912214ea645492aabe.png)
 
 
 
@@ -1776,7 +1776,7 @@ public class ResponseIOServlet extends HttpServlet {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@24e58384a1d671782f78a059f6e09c20e73044fa/2021/03/09/e412c3428884540e03cd083bbfe7693a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/e412c3428884540e03cd083bbfe7693a.png)
 
 
 

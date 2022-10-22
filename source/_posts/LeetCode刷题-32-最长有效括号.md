@@ -3,8 +3,8 @@ title: LeetCode刷题-32.最长有效括号
 author: Mr.Niu
 toc: true
 abbrlink: 24831
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@bcfe2fb0eaa941b28ba46818bbf6f6826d095a73/2021/02/06/8f7e2b60c489d794b40e5a793f4cf20e.png'
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@bcfe2fb0eaa941b28ba46818bbf6f6826d095a73/2021/02/06/8f7e2b60c489d794b40e5a793f4cf20e.png'
+top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/8f7e2b60c489d794b40e5a793f4cf20e.png'
+cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/8f7e2b60c489d794b40e5a793f4cf20e.png'
 categories: LeetCode刷题
 tags:
   - 动态规划
@@ -47,7 +47,7 @@ updated:
 
 **首先，先回忆一下括号匹配的两个条件？**
 
-[上次的括号问题有提到的，点击这里！](https://niuxvdong.top/posts/51962.html)
+[上次的括号问题有提到的，点击这里！](https://www.itnxd.cn/posts/51962.html)
 
 1. 左右括号相等
 2. 任意前缀左括号数量大于等于右括号数量
@@ -63,7 +63,7 @@ updated:
 
 参考下面的图：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/25/bbdfb8f792e66e3fcd126bca892faa30.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/25/bbdfb8f792e66e3fcd126bca892faa30.png)
 
 
 

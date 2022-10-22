@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 45780
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/08/09/bb0987ae6c2569776383d2b5826c2ae9.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/09/bb0987ae6c2569776383d2b5826c2ae9.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/08/09/bb0987ae6c2569776383d2b5826c2ae9.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/09/bb0987ae6c2569776383d2b5826c2ae9.png
 categories: LeetCode刷题
 tags:
   - 贪心

@@ -3,8 +3,8 @@ title: AcWing-95.费解的开关
 author: Mr.Niu
 toc: true
 abbrlink: 18232
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_17.jpg'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_17.jpg'
+cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_17.jpg'
+top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_17.jpg'
 categories:
   - AcWing
 tags:

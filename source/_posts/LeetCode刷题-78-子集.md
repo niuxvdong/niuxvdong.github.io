@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 61204
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/23/7c68d7c420ae3710476e3656966f7318.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/23/7c68d7c420ae3710476e3656966f7318.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/23/7c68d7c420ae3710476e3656966f7318.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/23/7c68d7c420ae3710476e3656966f7318.png
 categories: LeetCode刷题
 tags:
   - 递归
@@ -39,7 +39,7 @@ updated:
 
 
 
-> 与之前的题几乎一致：[AcWing-92.递归实现指数型枚举](https://niuxvdong.top/posts/14886.html)
+> 与之前的题几乎一致：[AcWing-92.递归实现指数型枚举](https://www.itnxd.cn/posts/14886.html)
 
 
 

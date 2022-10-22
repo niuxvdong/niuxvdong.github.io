@@ -3,8 +3,8 @@ title: AcWing-101.最高的牛
 author: Mr.Niu
 toc: true
 abbrlink: 63414
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/56.jpg'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/56.jpg'
+cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/56.jpg'
+top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/56.jpg'
 categories:
   - AcWing
 tags:

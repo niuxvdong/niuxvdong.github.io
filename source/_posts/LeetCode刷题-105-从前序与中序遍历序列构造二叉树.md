@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 53963
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/08/05/0ed2492c7a86445b18ce271eea9949e0.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/05/0ed2492c7a86445b18ce271eea9949e0.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/08/05/0ed2492c7a86445b18ce271eea9949e0.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/05/0ed2492c7a86445b18ce271eea9949e0.png
 categories: LeetCode刷题
 date: 2020-08-05 19:23:54
 updated:
@@ -60,7 +60,7 @@ tags:
 - 右子树下标：`k - 1 - il + pl + 1 + 1, pr, k + 1, ir`
 - 下标计算见下图：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/08/07/80ab36e8217256824ea0dddad60bffb9.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/07/80ab36e8217256824ea0dddad60bffb9.png)
 
 
 

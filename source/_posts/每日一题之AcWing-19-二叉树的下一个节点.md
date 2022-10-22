@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 43631
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@c200773d85f5eb15e2deb2c05823538e4c5f2fe8/2021/03/21/2efbc4cb93b487fd05b4faaa113a1b7d.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/2efbc4cb93b487fd05b4faaa113a1b7d.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@c200773d85f5eb15e2deb2c05823538e4c5f2fe8/2021/03/21/2efbc4cb93b487fd05b4faaa113a1b7d.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/2efbc4cb93b487fd05b4faaa113a1b7d.png
 categories:
   - AcWing
 tags:
@@ -54,7 +54,7 @@ updated:
 
 **简图如下：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@822eceb25c62010244bbece8ea99cef2d2e09567/2021/03/29/376c4c695431432777b3d9575e3deb6d.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/29/376c4c695431432777b3d9575e3deb6d.png)
 
 
 

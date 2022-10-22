@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 63939
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/08/c4d55f5ae8a00a89b777748446cd5ff2.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/08/c4d55f5ae8a00a89b777748446cd5ff2.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/08/c4d55f5ae8a00a89b777748446cd5ff2.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/08/c4d55f5ae8a00a89b777748446cd5ff2.png
 categories: LeetCode刷题
 tags:
   - 模拟
@@ -56,7 +56,7 @@ updated:
 
 ## 题解：
 
-和[54题-螺旋矩阵](https://niuxvdong.top/posts/395.html)类似，同样使用两个方向数组，参考上一篇题解，同样是一个方向走到不能走就换方向。
+和[54题-螺旋矩阵](https://www.itnxd.cn/posts/395.html)类似，同样使用两个方向数组，参考上一篇题解，同样是一个方向走到不能走就换方向。
 
 此处的`res`数组存储每个位置要填的值！
 

@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 38615
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@7ac41d51c951f7f506f4b1742fd800727bef52be/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@7ac41d51c951f7f506f4b1742fd800727bef52be/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
 categories:
   - 开发框架
 tags:
@@ -368,7 +368,7 @@ public class UserDaoProxy implements InvocationHandler {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@4aacb9d5d4a472c859e56a82d87601ca79d2480d/2021/03/26/256df5fb1b081e1171c7e6c7fce32125.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/26/256df5fb1b081e1171c7e6c7fce32125.png)
 
 
 

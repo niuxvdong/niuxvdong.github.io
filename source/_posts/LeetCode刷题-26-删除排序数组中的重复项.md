@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 20075
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/19/08c7a474b9fcdadc62d0fc56730cef80.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/19/08c7a474b9fcdadc62d0fc56730cef80.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/19/08c7a474b9fcdadc62d0fc56730cef80.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/19/08c7a474b9fcdadc62d0fc56730cef80.png
 categories: LeetCode刷题
 tags:
   - 数组

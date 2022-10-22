@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 16211
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@ed6c32c3f3cc5f9a904e8a63ae2dd23d118bfd21/2021/09/20/8214792608475af375dedc1e855d8a07.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/8214792608475af375dedc1e855d8a07.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@ed6c32c3f3cc5f9a904e8a63ae2dd23d118bfd21/2021/09/20/8214792608475af375dedc1e855d8a07.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/8214792608475af375dedc1e855d8a07.png
 categories: 中间件
 tags:
   - Nginx
@@ -64,11 +64,11 @@ IMAP(Internet Mail Access Protocol)交互式邮件存取协议，
 
 **正向代理**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@aa8492a4df81efb58f6e2673b15c13507943569e/2021/09/16/e9eeb45f43d0d4a237f24a03aca62f7a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/16/e9eeb45f43d0d4a237f24a03aca62f7a.png)
 
 **反向代理**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5a845a0f4884745440bc05b8c94a1d3f73756b9a/2021/09/16/bc7dedd65a66cbfcd1f33539191dbec3.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/16/bc7dedd65a66cbfcd1f33539191dbec3.png)
 
 ## 3、常见服务器对比
 
@@ -122,7 +122,7 @@ Nginx采用的是多进程模式运行，其中有一个master主进程和N多�
 
 BSD是一个开源的许可证，世界上的开源许可证有很多，现在比较流行的有六种分别是GPL、BSD、MIT、Mozilla、Apache、LGPL。这六种的区别是什么，我们可以通过下面一张图来解释下：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@7b85283859cf88d8ea052579a211c7185e0497f3/2021/09/16/1f5e9d7ace5930237eeafe7cf43fdc22.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/16/1f5e9d7ace5930237eeafe7cf43fdc22.png)
 
 
 
@@ -213,7 +213,7 @@ access.log访问日志记录
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@f1e9cf806c80f7c0e1fb76d6000e46f4f0befc9e/2021/09/16/faabf427d59ad1b9e22b128c1d6bd154.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/16/faabf427d59ad1b9e22b128c1d6bd154.png)
 
 ## 2、获取Nginx源码
 
@@ -243,7 +243,7 @@ selinux(security-enhanced linux),美国安全局对于强制访问控制的实�
 
 **sestatus查看状态：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@30451a46a7c2adef2536424af0eee600d2fc7003/2021/09/16/11c9857b57d50fa58a8ae3f9725d9818.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/16/11c9857b57d50fa58a8ae3f9725d9818.png)
 
 
 
@@ -253,7 +253,7 @@ selinux(security-enhanced linux),美国安全局对于强制访问控制的实�
 vim /etc/selinux/config
 ```
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6dec769908aaa24cb45515e47364831b2f137c6e/2021/09/16/a0ed8186be0b4aee192c1445a2fcf55c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/16/a0ed8186be0b4aee192c1445a2fcf55c.png)
 
 
 
@@ -400,7 +400,7 @@ module_hotfixes=true
 yum list | grep nginx
 ```
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@34476a5bbbc826991fe24a483b8e70996b31b0db/2021/09/16/7c116b2a4016c50cb953aff8a766c000.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/16/7c116b2a4016c50cb953aff8a766c000.png)
 
 4、使用yum进行安装
 
@@ -426,11 +426,11 @@ whereis nginx
 
 **简单安装：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@43dfde146a7c4cb8f4941d63b0d97352c60f0f2b/2021/09/16/29e58d90d91cfc66e26d97838e2c6b5b.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/16/29e58d90d91cfc66e26d97838e2c6b5b.png)
 
 **yum安装：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c406d847041a19468e4bf4c19a26f80fefa1ac94/2021/09/21/3c22b1e1dbb518c9b3c8d1d4eb58f717.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/21/3c22b1e1dbb518c9b3c8d1d4eb58f717.png)
 
 
 
@@ -542,7 +542,7 @@ make clean
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e8fa950a3e08f2ef9f7df4255ebd60ee75becf03/2021/09/16/ff532a9007e0c9f2bd5fb61374acf2c2.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/16/ff532a9007e0c9f2bd5fb61374acf2c2.png)
 
 **内容解释：**
 
@@ -581,7 +581,7 @@ src：Nginx的源代码
 
 在使用Nginx之前，我们先对安装好的Nginx目录文件进行一个分析，在这块给大家介绍一个工具tree，通过tree我们可以很方面的去查看centos系统上的文件目录结构，当然，如果想使用tree工具，就得先通过`yum install -y tree`来进行安装，安装成功后，可以通过执行`tree /usr/local/nginx`(tree后面跟的是Nginx的安装目录)，获取的结果如下：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d30f7cc1285b3c562e6114e3603d8345b0152c03/2021/09/16/4d6cebf558f2f6bff2492d70372a1a9c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/16/4d6cebf558f2f6bff2492d70372a1a9c.png)
 
 
 
@@ -647,7 +647,7 @@ Nginx安装完成后，接下来我们要学习的是如何启动、重启和停
 
 前面在提到Nginx的高性能，其实也和它的架构模式有关。Nginx默认采用的是多进程的方式来工作的，当将Nginx启动后，我们通过`ps -ef | grep nginx`命令可以查看到如下内容：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@39f911ca172882f6e708f961408bbd57786a17b6/2021/09/16/a2099b81c551d9bd9f3122701abf9c53.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/16/a2099b81c551d9bd9f3122701abf9c53.png)
 
 
 
@@ -657,7 +657,7 @@ master进程主要用来管理worker进程，包含接收外界的信息，并�
 
 而worker进程则是专门用来处理用户请求的，各个worker进程之间是平等的并且相互独立，处理请求的机会也是一样的。nginx的进程模型，我们可以通过下图来说明下：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@ff89023316675a88efc090a3aacf557c959932fa/2021/09/16/8406abf39a0de70f1baeb77cd7fb58b8.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/16/8406abf39a0de70f1baeb77cd7fb58b8.png)
 
 
 
@@ -740,7 +740,7 @@ kill -WINCH PID /kill -WINCH`cat /usr/local/nginx/logs/nginx.pid`
 
 此方式是通过Nginx安装目录下的sbin下的可执行文件nginx来进行Nginx状态的控制，我们可以通过`nginx -h`来查看都有哪些参数可以用：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a1abe9bce2f69b726f2ce0c00493bb99ae3f9188/2021/09/16/e1436331505fbc1e8843dd8ef56d98fb.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/16/e1436331505fbc1e8843dd8ef56d98fb.png)
 
 
 
@@ -864,7 +864,7 @@ cd ~/nginx/core/nginx-1.16.1/objscp nginx /usr/local/nginx/sbin
 
 会发现其实底层使用的也是信号控制的！
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@4938e4e8e2885e332acee4d7c7d256edde4af890/2021/09/16/7fdc4a32ea1137c5601ce51b0e1c1c62.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/16/7fdc4a32ea1137c5601ce51b0e1c1c62.png)
 
 4、查看是否更新成功
 
@@ -1027,7 +1027,7 @@ worker_processes：用于配置Nginx生成工作进程的数量，这个是Nginx
 
 如果将worker_processes设置成2，则会看到如下内容:
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6c298c31dc1c41e6ef8ded39953f4a778f5a7dce/2021/09/16/707c7455d265e40b0f8b57cb4674be3c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/16/707c7455d265e40b0f8b57cb4674be3c.png)
 
 ### 其他指令
 
@@ -1330,7 +1330,7 @@ server块和location块，非常重要，后面介绍！
 
 **准备相关文件，目录如下：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2fe604df11514859e6934fe62de2c5c3587578f1/2021/09/18/63fa0d0fddb32328ba5b37aa6067f4f5.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/63fa0d0fddb32328ba5b37aa6067f4f5.png)
 
 ## 2、配置内容
 
@@ -2020,7 +2020,7 @@ server{
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e7dc4bfcb9bec9a69bc35f73552d9dbe504e117e/2021/09/18/842789cb4052150cc14681587f6cff2f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/842789cb4052150cc14681587f6cff2f.png)
 
 
 
@@ -2046,7 +2046,7 @@ server{
 
 **tcp_nopush和tcp_nodelay区别：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d2989ee87343051834b3af940e4163584573506b/2021/09/18/4702ca37d6fafd88056ccb488a989e8f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/4702ca37d6fafd88056ccb488a989e8f.png)
 
 
 
@@ -2164,7 +2164,7 @@ http{
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@46a092ba5cc04ac285ab4b4e6bbd87cb6153c458/2021/09/18/63a64aaa315b9d9ad8c7787b76ff5015.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/63a64aaa315b9d9ad8c7787b76ff5015.png)
 
 
 
@@ -2387,7 +2387,7 @@ gzip_static: 检查与访问资源同名的.gz文件时，response中以gzip相�
 
 1、直接访问`http://192.168.200.133/jquery.js`
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@93223c6988047cc2e1b064450a8b2423d13eb835/2021/09/18/0e340262898399859f4762cad0065a10.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/0e340262898399859f4762cad0065a10.png)
 
 
 
@@ -2403,7 +2403,7 @@ cd /usr/local/nginx/htmlgzip jquery.js
 
 **多了Content-Encoding：gzip 和 Vary：Accept-Encoding**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@23a85ee7980fb57a0dc2d590614c0275d7b2ad60/2021/09/18/45d728a04f91dad0fbb9e5c5ee3f8a7a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/45d728a04f91dad0fbb9e5c5ee3f8a7a.png)
 
 
 
@@ -2470,7 +2470,7 @@ Web缓存是指一个Web资源（如html页面，图片，js，数据等）存�
 
 **缓存执行流程示意图：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@dc94e077385ebcb098d4a85ae3deee830aefe5e1/2021/09/18/c1184cadb15dd8b1f753005f9c6fab91.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/c1184cadb15dd8b1f753005f9c6fab91.png)
 
 
 
@@ -2491,13 +2491,13 @@ Web缓存是指一个Web资源（如html页面，图片，js，数据等）存�
 
 **弱缓存请求头图示：** 记得去掉浏览器disabled cache的勾。
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6248328a92f367269b8ab988238cecec28e419ef/2021/09/18/b62f6936b16bf0ee27aded2eca2da178.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/b62f6936b16bf0ee27aded2eca2da178.png)
 
 **注意**：直接刷新页面和F5会导致**强缓存失效**。一定要在开一个页面，提前打开浏览器控制台的网络选项卡查看！
 
 **强缓存图示：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@352f0124abad7b82c1366f0f47015ddb7fba7f34/2021/09/21/3f1c3af4ec7c38f94ed9e63f3caba8df.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/21/3f1c3af4ec7c38f94ed9e63f3caba8df.png)
 
 
 
@@ -2535,7 +2535,7 @@ location ~ .*\.(html|js|css|png|jpg) {
 
 **分别为没有设置、设置为max，1000，负数 响应头示意图：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@70ce1034598233cd356e403f9128bc8c2a2f7ac7/2021/09/18/5bbd022e3be8e72719904155537e9922.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/5bbd022e3be8e72719904155537e9922.png)
 
 
 
@@ -2634,7 +2634,7 @@ http://www.nginx.org/user/1
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@465f98fad733b643c82247275d7e581add1035c4/2021/09/18/b9a26fe2092c8e69fc9bf267737e0a66.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/b9a26fe2092c8e69fc9bf267737e0a66.png)
 
 
 
@@ -2692,7 +2692,7 @@ server{
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2f0fa10a8039d8f849cfa6d9bdb0177de2006d4f/2021/09/18/3663ee8d61743ddbc1fcb48dbbf59a4a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/3663ee8d61743ddbc1fcb48dbbf59a4a.png)
 
 
 
@@ -2747,7 +2747,7 @@ location /getUser{
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@701de75fe3a93cb22d6f8807d7162c2c73940270/2021/09/18/795c6d8cfd009ecdc303e6e7cbc83b1e.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/795c6d8cfd009ecdc303e6e7cbc83b1e.png)
 
 
 
@@ -2759,7 +2759,7 @@ location /getUser{
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@be66fb5ac746756b1a0294e60d21c2e20abacc5d/2021/09/18/87e2911bfcc23c6c2abaf07fd36b3913.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/87e2911bfcc23c6c2abaf07fd36b3913.png)
 
 
 
@@ -3021,7 +3021,7 @@ location /testbreak {
 
 当我们创建了该目录和默认html文件后，如下：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@3cbcbb65c492559d627c2ec94ab65ca872604503/2021/09/18/72579af508647dc17784aa18a2c05d7c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/72579af508647dc17784aa18a2c05d7c.png)
 
 301表示永久重定向，重定向到?1，状态码为200，响应头多了一个username为JERRY，即break后面的不会执行（同一作用域内）。
 
@@ -3396,7 +3396,7 @@ Nginx即可以实现正向代理，也可以实现反向代理。
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@20702967fd6ab99bd90e05127a45aa3bb53b4223/2021/09/18/9e3386ab9850dcedef2122fc27c3dab0.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/9e3386ab9850dcedef2122fc27c3dab0.png)
 
 **1、服务端的设置**
 
@@ -3419,7 +3419,7 @@ http {
 
 **2、使用客户端访问服务端，打开日志查看结果**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@db65588d2f1c4a2523700d49e0c373627bb9e433/2021/09/18/794d1a51eae1d53d481003846bfc380e.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/794d1a51eae1d53d481003846bfc380e.png)
 
 
 
@@ -3453,7 +3453,7 @@ server {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@84edf72614f17b19f7778219fcefc225dfc8909d/2021/09/18/6cbc65dd0830582ffcfab83d486d6735.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/6cbc65dd0830582ffcfab83d486d6735.png)
 
 
 
@@ -3461,7 +3461,7 @@ server {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d415a610d3913777c16756fbf41490a098fdb5da/2021/09/18/8d17f1d3a38472597dcd26f697199821.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/8d17f1d3a38472597dcd26f697199821.png)
 
 
 
@@ -3693,7 +3693,7 @@ server {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@22ab9f1cfc77363cb06099a8feaf8f9eb42945df/2021/09/18/2e652b00643e49889ede7818977214e2.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/2e652b00643e49889ede7818977214e2.png)
 
 
 
@@ -3765,7 +3765,7 @@ server {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@b29312dd7368afcf99bd344cfaed843d437b43ea/2021/09/18/e60dcd747e8f1639e050fca1f5992a87.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/18/e60dcd747e8f1639e050fca1f5992a87.png)
 
 
 
@@ -4004,7 +4004,7 @@ server {
 
 **Buffer翻译过来是"缓冲"，Cache翻译过来是"缓存"。**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@75ac3ed1b22f754773e7bb09d58b89d5decc535c/2021/09/21/1ad4883fb51cb2beeb31cf8071352d8e.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/21/1ad4883fb51cb2beeb31cf8071352d8e.png)
 
 **总结下：**
 
@@ -4113,7 +4113,7 @@ proxy_temp_file_write_size 64k;
 
 早期的网站流量和业务功能都比较简单，单台服务器足以满足基本的需求，但是随着互联网的发展，业务流量越来越大并且业务逻辑也跟着越来越复杂，单台服务器的性能及单点故障问题就凸显出来了，因此需要多台服务器进行性能的水平扩展及避免单点故障出现。那么如何将不同用户的请求流量分发到不同的服务器上呢？
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d0a65a145b29bdeaf29492d01522a3eeb3b80212/2021/09/20/2a7497f7a17f4c185158713f1a0a9f41.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/2a7497f7a17f4c185158713f1a0a9f41.png)
 
 
 
@@ -4127,7 +4127,7 @@ proxy_temp_file_write_size 64k;
 
 **横向扩展是通过添加机器来满足大型网站服务的处理能力。**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@cc6592d0952bb4fce62cb867c70e7c3d04f40fe1/2021/09/20/6d0784f4af512f0c7092bbe5e7b6a44e.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/6d0784f4af512f0c7092bbe5e7b6a44e.png)
 
 **这里面涉及到两个重要的角色分别是"应用集群"和"负载均衡器"：**
 
@@ -4158,7 +4158,7 @@ proxy_temp_file_write_size 64k;
 
 这种方式比较原始，只要实现的方式就是在网站主页上面提供不同线路、不同服务器链接方式，让用户来选择自己访问的具体服务器，来实现负载均衡。
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@ae083912b666024f3339b8c6ee8ed989f29ff7ca/2021/09/20/a7a59285b372eab1c657c5262e56144a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/a7a59285b372eab1c657c5262e56144a.png)
 
 
 
@@ -4208,7 +4208,7 @@ DNS负载均衡采用的是简单的轮询负载算法，不能区分服务器�
 
 介绍四/七层负载均衡之前，我们先了解一个概念，OSI(open system interconnection), 叫开放式系统互联模型，这个是由国际标准化组织ISO指定的一个不基于具体机型、操作系统或公司的网络体系结构。该模型将网络通信的工作分为七层。
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@59c85a84238bf7c49d51a938619472a66868501b/2021/09/20/be2e2184532d51dcf192fbf8ba5a8031.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/be2e2184532d51dcf192fbf8ba5a8031.png)
 
 **简单介绍，属于计网知识：**
 
@@ -4304,7 +4304,7 @@ DNS负载均衡采用的是简单的轮询负载算法，不能区分服务器�
 
 ### 七层负载均衡的实现流程
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@195994c67f40e67b41a52f3e3ebef1ac461e1c58/2021/09/20/2ad6c45893d795a1db6f141d72a880e5.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/2ad6c45893d795a1db6f141d72a880e5.png)
 
 **服务端设置：**
 
@@ -4539,7 +4539,7 @@ server {
 
 需要额外多说一点的是使用ip_hash指令无法保证后端服务器的负载均衡，可能导致有些后端服务器接收到的请求多，有些后端服务器接收的请求少，而且设置后端服务器权重等方法将不起作用。
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@1f8a334a37771a672532cbb321975622033b71ca/2021/09/20/a4ba018fdb2645ffce5caeea717f0cf1.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/a4ba018fdb2645ffce5caeea717f0cf1.png)
 
 #### least_conn
 
@@ -4569,7 +4569,7 @@ server {
 
 此负载均衡策略适合请求处理时间长短不一造成服务器过载的情况。
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@dbe0b03da73c4d1d9c9a06a5f95ffdd980abefe7/2021/09/20/92f8a6f3734bd169392e1e5c0f86b996.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/92f8a6f3734bd169392e1e5c0f86b996.png)
 
 #### url_hash
 
@@ -4605,7 +4605,7 @@ http://192.168.200.133:8083/c
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@87cf5ce2765f4ee9de0bcfb5d07615e2889f69e1/2021/09/21/3961edaa589501a260fe10db2f8e8abe.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/21/3961edaa589501a260fe10db2f8e8abe.png)
 
 
 
@@ -4654,7 +4654,7 @@ make
 
 **编译可能会出现如下错误，ngx_http_upstream_srv_conf_t结构中缺少default_port**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@0ad3184adefd68a6fd53f61559049cfe9518743b/2021/09/20/514fb1170c24f30b7cf15ff8d0ef1503.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/514fb1170c24f30b7cf15ff8d0ef1503.png)
 
 
 
@@ -4666,7 +4666,7 @@ make
 in_port_t	   default_port
 ```
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@b6bb5b6a29524645b90feab6c2f4361bf1168c02/2021/09/21/f450fb757cd336b23d3560a21b660b37.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/21/f450fb757cd336b23d3560a21b660b37.png)
 
 然后再进行make.
 
@@ -4870,7 +4870,7 @@ Nginx默认是没有编译这个模块的，需要使用到stream模块，那么
 
 **需求分析：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@41e7df43f5f768880828eeae21cdfcb380047d16/2021/09/21/baf09946607db1723fe1d6aab4da11ef.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/21/baf09946607db1723fe1d6aab4da11ef.png)
 
 **实现步骤：**
 
@@ -4943,7 +4943,7 @@ stream {
 
 **访问测试：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a2d18ce7b0180988eb822b7a6a7e8032c5874cf3/2021/09/20/95b479e18b44c496b6976ecdb0c4e79c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/95b479e18b44c496b6976ecdb0c4e79c.png)
 
 
 
@@ -4975,7 +4975,7 @@ stream {
 
 **缓存流程图示：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@f2ba35e791c0e065d132e672f2fc3fe85e506fbb/2021/09/20/27e4dcc8421bef5cecb0ee43f67613f3.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/27e4dcc8421bef5cecb0ee43f67613f3.png)
 
 
 
@@ -5008,7 +5008,7 @@ Nginx是从0.7.48版开始提供缓存功能。Nginx是基于Proxy Store来实�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6ac0655236f06bca340ca4946f79824c997bff4f/2021/09/20/ade72ddca26dcb51879537d9ed49bf93.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/ade72ddca26dcb51879537d9ed49bf93.png)
 
 
 
@@ -5142,7 +5142,7 @@ proxy_cache_valid any 1m; #对所有响应状态码的URL都设置1分钟缓存
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@cf98643f3f7cc28f3201a56de4e9bdd7e2c31ac5/2021/09/20/666c5b0e3ef8bbd9495e4714b4c447d9.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/666c5b0e3ef8bbd9495e4714b4c447d9.png)
 
 
 
@@ -5213,11 +5213,11 @@ http{
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@71ebb3a6977240db5a70df12943ed265df2cd008/2021/09/20/d38dfaef4d6330bcda4cb366a29b2029.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/d38dfaef4d6330bcda4cb366a29b2029.png)
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e9d2978c232ee44e9ccd66ca94a6671a7f401266/2021/09/20/9108de1d213dc3cec96328bec7d43ae7.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/9108de1d213dc3cec96328bec7d43ae7.png)
 
 
 
@@ -5288,7 +5288,7 @@ server{
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d6560b12999df2ba1e4ff852a3ff573f683ba213/2021/09/20/df641183ffd8410c5288339243a89c71.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/df641183ffd8410c5288339243a89c71.png)
 
 
 
@@ -5333,7 +5333,7 @@ server{
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5068f5a14c31168a862ae6a08a5a3714e192519a/2021/09/20/db9d113302505af6e58493db411a8fc7.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/db9d113302505af6e58493db411a8fc7.png)
 
 
 
@@ -5455,7 +5455,7 @@ server{
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@58e2c7c11bc55916523863f33a8ee0670fb00f6b/2021/09/20/d9bfab4e8cd8706604285b6d92fb88ed.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/d9bfab4e8cd8706604285b6d92fb88ed.png)
 
 
 
@@ -5504,7 +5504,7 @@ server{
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@16e54b05be7fc5bb533016c30560705e8af73555/2021/09/20/5f1b9b461b6e43b4d0b6a6fc63b2716f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/5f1b9b461b6e43b4d0b6a6fc63b2716f.png)
 
 
 
@@ -5518,7 +5518,7 @@ server{
 
 2、在Nginx所在服务器创建如下目录，并将对应的静态资源放入指定的位置
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@441a4412b2b41be6c2b190e2d0333a1872976472/2021/09/20/6536ed1df6cc2bd6d191e221e0917061.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/6536ed1df6cc2bd6d191e221e0917061.png)
 
 
 
@@ -5582,7 +5582,7 @@ server {
 
 4、启动测试，访问 `http://192.168.200.133/`
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@265a47eb5fbbaf4d4484a8fda7c2551db6949251/2021/09/20/911c8b1870724242bb473f6ab0ec2d50.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/911c8b1870724242bb473f6ab0ec2d50.png)
 
 
 
@@ -5604,7 +5604,7 @@ server {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@35d06e9c898d62d7e5c3f71f2022af4a07aee05e/2021/09/20/f06f9bf110d4ed26a23224d7d8331381.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/f06f9bf110d4ed26a23224d7d8331381.png)
 
 
 
@@ -5662,7 +5662,7 @@ upstream webservice{
 
 ### VRRP介绍
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2fd53841181b8f25bbe9a42734c072ae50189af0/2021/09/20/516ac58e49de49f012a010bf2569e2da.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/516ac58e49de49f012a010bf2569e2da.png)
 
 **VRRP（Virtual Route Redundancy Protocol）协议**：翻译过来为虚拟路由冗余协议。VRRP协议将两台或多台路由器设备虚拟成一个设备，对外提供虚拟路由器IP,而在路由器组内部，如果实际拥有这个对外IP的路由器如果工作正常的话就是MASTER, MASTER实现针对虚拟路由器IP的各种网络功能。其他设备不拥有该虚拟IP，状态为BACKUP,处了接收MASTER的VRRP状态通告信息以外，不执行对外的网络功能。当主机失效时，BACKUP将接管原先MASTER的网络功能。
 
@@ -5679,7 +5679,7 @@ upstream webservice{
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@940fcc089b51deb8ca559dceed3747548b22597e/2021/09/20/c4fed4170b6aa736a428923643496b97.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/c4fed4170b6aa736a428923643496b97.png)
 
 
 
@@ -5874,13 +5874,13 @@ cd /usr/local/sbin
 
 再次通过 `ip a`查看ip：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@9312cf6a722e3ea18f9e406c67467e169720601c/2021/09/20/2cdc6358d5d7314c8e2bc64994a64cfb.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/2cdc6358d5d7314c8e2bc64994a64cfb.png)
 
 
 
 3、当把192.168.200.133服务器上的keepalived关闭后，再次查看ip
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c06dc6a7bdd4e7775a2d35f2b4228dd50524f8d7/2021/09/20/ddf7e9e89216ab72194a2a0fd45c8d6f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/ddf7e9e89216ab72194a2a0fd45c8d6f.png)
 
 
 
@@ -6144,7 +6144,7 @@ htpasswd -v /usr/local/nginx/conf/htpasswd username #验证用户名和密码是
 
 **效果如下：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c68204e5fd984844940b517151e85db298f00e2e/2021/09/20/b131a6f43326a2f1c47da030ad08c20d.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/b131a6f43326a2f1c47da030ad08c20d.png)
 
 **小结：**
 
@@ -6845,13 +6845,13 @@ location /lua{
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@290dddd7f73e8df5decd5cecfd527c89ce43de65/2021/09/20/905e4010e1416f2deef097eb7aff0024.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/905e4010e1416f2deef097eb7aff0024.png)
 
 
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a66598e90ca8a30776484ccac4fa84096f95281e/2021/09/20/bd392858d64778fb185eff366acaf0f3.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/bd392858d64778fb185eff366acaf0f3.png)
 
 ## 4、ngx_lua的使用
 
@@ -6861,7 +6861,7 @@ location /lua{
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@99e68ee0d651f1a882344d76741e876352d699d7/2021/09/20/6c33362ae76fd3ffecfdff03cc6e92f3.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/6c33362ae76fd3ffecfdff03cc6e92f3.png)
 
 
 
@@ -7007,7 +7007,7 @@ location / {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@7886b3fe0f1c5c43590a6badf8ef252e645c10e6/2021/09/20/007459aa108ebadef4015cb4a56f9222.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/20/007459aa108ebadef4015cb4a56f9222.png)
 
 
 

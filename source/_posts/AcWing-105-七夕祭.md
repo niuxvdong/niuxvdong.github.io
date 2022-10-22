@@ -3,8 +3,8 @@ title: AcWing-105.七夕祭
 author: Mr.Niu
 toc: true
 abbrlink: 47007
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/d%20(20).jpg'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/04.jpg'
+cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/d%20(20).jpg'
+top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/04.jpg'
 categories:
   - AcWing
 tags:
@@ -225,7 +225,7 @@ row 1
 
 如下图：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@38b34f6b44ddf95a60530570e54828b1f79faf65/2021/02/06/4ead5b50ee5c819b2bdd81ad22f081bd.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/4ead5b50ee5c819b2bdd81ad22f081bd.png)
 
 
 
@@ -245,7 +245,7 @@ row 1
 
 如图：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d7a4856f2d2d97eb0cf2e3611c8c01160a03b7bc/2021/02/06/6fadfa01b5eaee4d51e71e6ccae2b597.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/6fadfa01b5eaee4d51e71e6ccae2b597.png)
 
 
 
@@ -273,7 +273,7 @@ S[i] ---------------> S[i] + (S[M] - S[k])
 
 眼熟吗？
 
-这不就是刚刚做过的[AcWing-104. 货仓选址](https://niuxvdong.top/posts/57916.html) 吗？
+这不就是刚刚做过的[AcWing-104. 货仓选址](https://www.itnxd.cn/posts/57916.html) 吗？
 
 砍断处 k 相当于货仓位置，s[i] 相当于各个商店位置！
 

@@ -3,8 +3,8 @@ title: LeetCode刷题-10.正则表达式匹配
 author: Mr.Niu
 toc: true
 abbrlink: 6262
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@46ac33603f7c1be1aa18e10e1489a5f09a4102d7/2021/02/06/75a319eb796ea3b3991c19b40c821e28.png'
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@46ac33603f7c1be1aa18e10e1489a5f09a4102d7/2021/02/06/75a319eb796ea3b3991c19b40c821e28.png'
+top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/75a319eb796ea3b3991c19b40c821e28.png'
+cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/75a319eb796ea3b3991c19b40c821e28.png'
 categories: LeetCode刷题
 tags:
   - 动态规划

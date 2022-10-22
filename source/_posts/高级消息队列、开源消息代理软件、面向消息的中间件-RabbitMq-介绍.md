@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 49375
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@67e33f6da51d3b664b04a1cf6e6768fd96b810fa/2021/10/04/bad5b13b191abdc4a6020f51449722c3.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/bad5b13b191abdc4a6020f51449722c3.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@67e33f6da51d3b664b04a1cf6e6768fd96b810fa/2021/10/04/bad5b13b191abdc4a6020f51449722c3.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/bad5b13b191abdc4a6020f51449722c3.png
 categories:
   - 中间件
 tags:
@@ -48,7 +48,7 @@ MQ(message queue)，从字面意思上看，本质是个队列，FIFO 先入先�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c03847cbb79dbb2478b427e486173306544016e9/2021/10/04/656776657c1cd707e4384e2aa2ee0dbe.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/656776657c1cd707e4384e2aa2ee0dbe.png)
 
 ### 应用解耦
 
@@ -58,7 +58,7 @@ MQ(message queue)，从字面意思上看，本质是个队列，FIFO 先入先�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@3f6f1caf6239eca057468d9b9035ebd661c23065/2021/10/04/7fa61fe00211121e2b256e9d9e65fde3.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/7fa61fe00211121e2b256e9d9e65fde3.png)
 
 
 
@@ -72,7 +72,7 @@ MQ(message queue)，从字面意思上看，本质是个队列，FIFO 先入先�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2e551f08c70f41c1a9e8d02d242874af20cc5e10/2021/10/04/41c600ba04bb6070e6e53c69584a85f6.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/41c600ba04bb6070e6e53c69584a85f6.png)
 
 
 
@@ -218,7 +218,7 @@ RabbitMQ 是一个消息中间件：它接受并转发消息。你可以把它�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@95586c9c170b9a87e58ac49fccc887da98e0cc98/2021/10/04/1acf4a1111da7c55530d84c0ab7b43c5.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/1acf4a1111da7c55530d84c0ab7b43c5.png)
 
 
 
@@ -230,7 +230,7 @@ RabbitMQ 是一个消息中间件：它接受并转发消息。你可以把它�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@fd6d47103d4637fa575eb6414400669f08558f6c/2021/10/04/d4aa4aca082ab0db7c30fbe502247ce7.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/d4aa4aca082ab0db7c30fbe502247ce7.png)
 
 
 
@@ -569,7 +569,7 @@ public class RabbitMqUtils {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@ba56e9029f33e3af1c11a3d8b9721bb3fcd272ea/2021/10/04/427ced52eb04544b3603f53edc987656.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/427ced52eb04544b3603f53edc987656.png)
 
 
 
@@ -704,7 +704,7 @@ C.Channel.basicReject()
 
 是否批量应答！
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e99eed1051e68d16863c56ebcdebe861c20aee56/2021/10/04/a82cd91fb95d09216aefa08e0ca19459.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/a82cd91fb95d09216aefa08e0ca19459.png)
 
 
 
@@ -1213,7 +1213,7 @@ String queueName = channel.queueDeclare().getQueue();
 
 创建出来之后长成这样：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2968dcdc0197e1facd09b2b948e73f934560f3c4/2021/10/04/99634aeaae8a1898b7820920717dbd28.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/99634aeaae8a1898b7820920717dbd28.png)
 
 
 
@@ -1227,7 +1227,7 @@ Fanout 这种类型非常简单。正如从名称中猜到的那样，它是将�
 
 ### 代码架构图
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@ccbc65036cc91ff222e0396d578fa9b9caf8bb20/2021/10/04/51fbc9fce1642ac4e5c0810428734ba2.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/51fbc9fce1642ac4e5c0810428734ba2.png)
 
 ### 生产者
 
@@ -1352,7 +1352,7 @@ public class ReceiveLogs02 {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@35667ce11b856b45e3cc33e9988dd16876ca8791/2021/10/04/d340cc001c730dccc67f3da9673c4a7b.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/d340cc001c730dccc67f3da9673c4a7b.png)
 
 
 
@@ -1495,7 +1495,7 @@ public class ReceiveLogDirect02 {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6e9746fa92ef507656f8141667c8f8f70f820045/2021/10/04/53bd973371240faa0a20ac29108532aa.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/53bd973371240faa0a20ac29108532aa.png)
 
 
 
@@ -1659,7 +1659,7 @@ public class ReceiveLogsTopic02 {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@ee18116a007a7916dfad9fc219685784abea0a7c/2021/10/04/8860b616c3ded7952a52a61ac73268a6.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/8860b616c3ded7952a52a61ac73268a6.png)
 
 
 
@@ -1815,7 +1815,7 @@ public class Consumer02 {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@cf5f4d2ef2e018f3bae6f2357256dd74e7940a76/2021/10/04/1695f6e16eda5e6635df1278aa139b30.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/1695f6e16eda5e6635df1278aa139b30.png)
 
 
 
@@ -1823,7 +1823,7 @@ public class Consumer02 {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@7d301f0d68c8d35546d4c649bc1f0d9f1999ab80/2021/10/04/4ec2df2ea10647d257da46d37cdce38c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/4ec2df2ea10647d257da46d37cdce38c.png)
 
 
 
@@ -1833,7 +1833,7 @@ public class Consumer02 {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@8831fa340b18924206668e38cc36a5bb85a3ceee/2021/10/04/cac4782d836785db3e977c5f968d8479.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/cac4782d836785db3e977c5f968d8479.png)
 
 
 
@@ -2002,7 +2002,7 @@ public class SwaggerConfig {
 
 创建两个队列 QA 和 QB，两者队列 TTL 分别设置为 10S 和 40S，然后在创建一个交换机 X 和死信交换机 Y，它们的类型都是 direct，创建一个死信队列 QD，它们的绑定关系如下：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6556b6bc672f14394bb7f390758b930fcd0debb2/2021/10/04/79d592a699655dfc9ac8f7371b385d09.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/79d592a699655dfc9ac8f7371b385d09.png)
 
 
 
@@ -2189,7 +2189,7 @@ public class DelayedQueueConsumer {
 
 新增了一个队列 QC,绑定关系如下,该队列不设置 TTL 时间：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@bb4f16c0825b55d1cad140a5b8d650889b256458/2021/10/04/31ea7c80db0244ead6a22fc35678d52e.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/31ea7c80db0244ead6a22fc35678d52e.png)
 
 
 
@@ -2257,7 +2257,7 @@ public void sendMsg(@PathVariable String message,@PathVariable String ttlTime) {
 
 **效果：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@596b69e17ffb8d23b2ce533db8c4f5fe5df231f8/2021/10/04/dac29001c52f10800a1f495a54822b20.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/dac29001c52f10800a1f495a54822b20.png)
 
 
 
@@ -2313,7 +2313,7 @@ systemctl restart rabbitmq-server
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6164e6c332f5c85e6f3b9e848cfa55d51ac1a1c5/2021/10/04/2440f233f67ab0a42234d462874a0202.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/2440f233f67ab0a42234d462874a0202.png)
 
 
 
@@ -2323,7 +2323,7 @@ systemctl restart rabbitmq-server
 
 新增了一个队列 delayed.queue,一个自定义交换机 delayed.exchange，绑定关系如下：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5474b84d9f379d7e76bc67f69ac47585e1417cfe/2021/10/04/82380d647c6839296c4a9164853ce9bc.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/82380d647c6839296c4a9164853ce9bc.png)
 
 
 
@@ -2432,7 +2432,7 @@ public class DelayedQueueConsumer {
 
 **结果：** 符合预期！
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@8a7105e420b0ab388e4582f69cffe41ab5dab18e/2021/10/04/125e32f30a49be2d6da25d0fc19b50c4.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/125e32f30a49be2d6da25d0fc19b50c4.png)
 
 
 
@@ -2466,7 +2466,7 @@ public class DelayedQueueConsumer {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@fd67327a455005229eec6807479b633a46e3be08/2021/10/04/fc1a404afd0a31dbef1b16304b8b6df5.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/fc1a404afd0a31dbef1b16304b8b6df5.png)
 
 
 
@@ -2791,7 +2791,7 @@ public class MyCallBack implements RabbitTemplate.ConfirmCallback, RabbitTemplat
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@f09e0265185b039b3eb4c8268333c331833fd269/2021/10/04/c7f62c71cab9080b9c96e5ea927fabba.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/c7f62c71cab9080b9c96e5ea927fabba.png)
 
 
 
@@ -3111,7 +3111,7 @@ channel.queueDeclare("myqueue", false, false, false, args);
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@7a2dc121490be5997e65371cd992e1e0a0e738eb/2021/10/04/ca55022f5c5e05059bf508d5dc9759b5.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/ca55022f5c5e05059bf508d5dc9759b5.png)
 
 
 
@@ -3175,7 +3175,7 @@ rabbitmqctl forget_cluster_node rabbit@node2#(node1 机器上执行)
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@cafebb9ab33e1c69e696ccbb5522d68d24073523/2021/10/04/8a66eb3eee9fef6271ed919fbab521ce.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/8a66eb3eee9fef6271ed919fbab521ce.png)
 
 
 
@@ -3203,7 +3203,7 @@ rabbitmqctl forget_cluster_node rabbit@node2#(node1 机器上执行)
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2003c390effbe9ddb211d36a78b518c309e70557/2021/10/04/9863d8278d9811dbf6319033c2d4d00e.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/9863d8278d9811dbf6319033c2d4d00e.png)
 
 
 
@@ -3211,7 +3211,7 @@ rabbitmqctl forget_cluster_node rabbit@node2#(node1 机器上执行)
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@0db2019b8ae7710f700ae557d3e54ecce3deaf70/2021/10/04/722fdc04361d39166e0dfb82375ef410.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/722fdc04361d39166e0dfb82375ef410.png)
 
 
 
@@ -3221,7 +3221,7 @@ rabbitmqctl forget_cluster_node rabbit@node2#(node1 机器上执行)
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@04ec08d6026deb5c14cf84f85c4db71954e9b1c7/2021/10/04/86e18d3ddb37e5d99e494ac9cc970378.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/86e18d3ddb37e5d99e494ac9cc970378.png)
 
 
 
@@ -3253,7 +3253,7 @@ rabbitmqctl forget_cluster_node rabbit@node2#(node1 机器上执行)
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@9fc83e9dbe2c2eb4eb35cc13d1e28245edd112d2/2021/10/04/d8f37b23f9ce611b232bd5cf52209a17.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/d8f37b23f9ce611b232bd5cf52209a17.png)
 
 
 
@@ -3285,7 +3285,7 @@ HAProxy 提供高可用性、负载均衡及基于 TCPHTTP 应用的代理，支
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@83b58427d234a1fb47794f8ea64db2242992f9f2/2021/10/04/39f243a56d67072c7255f9f22df74a44.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/39f243a56d67072c7255f9f22df74a44.png)
 
 3、在两台节点启动 haproxy
 
@@ -3392,7 +3392,7 @@ systemctl restart rabbitmq-server
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@b062f5e340c4b534d9c35be08f2ea46e95bba74f/2021/10/04/6bb68590d0c9f6def34caf2bf45645c7.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/6bb68590d0c9f6def34caf2bf45645c7.png)
 
 
 
@@ -3400,19 +3400,19 @@ systemctl restart rabbitmq-server
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c9e9004deba589aa86862b6960e215d341dc7241/2021/10/04/69279975c70b3a571c4afc3189af485d.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/69279975c70b3a571c4afc3189af485d.png)
 
 
 
 4、添加 policy
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@f0d70fbab0da9b96ee6a8dcd87fdad024aca8fcf/2021/10/04/0d7e100f8e07cdbbf21e516f1b8ea7cb.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/0d7e100f8e07cdbbf21e516f1b8ea7cb.png)
 
 
 
 5、成功
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@f1a2e174fdb6b8d2edb202adce1fde6176198419/2021/10/04/e81ce5ab6efd93fd15c3bb080e4caa37.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/e81ce5ab6efd93fd15c3bb080e4caa37.png)
 
 
 
@@ -3436,7 +3436,7 @@ systemctl restart rabbitmq-server
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5bbad69779dca17532e3ae8c0449f893f835bb7a/2021/10/04/b797f0f55417c8ece3cebee4e058c49b.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/b797f0f55417c8ece3cebee4e058c49b.png)
 
 
 
@@ -3456,7 +3456,7 @@ systemctl restart rabbitmq-server
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@f2b358cd4f36312f92505f1ab92200342ac32ec4/2021/10/04/edc72fd35a2422f06288d747b5c997d2.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/edc72fd35a2422f06288d747b5c997d2.png)
 
 
 
@@ -3498,7 +3498,7 @@ systemctl restart rabbitmq-server
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@de25258b04a113bc066e09ddf81d5cc891adcb8c/2021/10/04/0fb2761335bfed9098b25ce25a44cc52.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/0fb2761335bfed9098b25ce25a44cc52.png)
 
 
 
@@ -3506,4 +3506,4 @@ systemctl restart rabbitmq-server
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@7ebd3c23727ee960a81ec66497e9f4f6762dd4cf/2021/10/04/6180316d284a3e56b37e604676750b32.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/6180316d284a3e56b37e604676750b32.png)

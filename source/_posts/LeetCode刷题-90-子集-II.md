@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 51468
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/25/0e4ff5a73c462da6852db59c8e7bb797.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/25/0e4ff5a73c462da6852db59c8e7bb797.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/25/0e4ff5a73c462da6852db59c8e7bb797.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/25/0e4ff5a73c462da6852db59c8e7bb797.png
 categories: LeetCode刷题
 tags:
   - 递归
@@ -30,7 +30,7 @@ updated:
 
 
 
-> 又是不能重复的递归问题，和[LeetCode刷题-47.全排列II](https://niuxvdong.top/posts/23499.html)此题的关键位置有点像！
+> 又是不能重复的递归问题，和[LeetCode刷题-47.全排列II](https://www.itnxd.cn/posts/23499.html)此题的关键位置有点像！
 
 
 

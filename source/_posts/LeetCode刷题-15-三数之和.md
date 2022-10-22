@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 55831
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/18/8db64eed4162c45ab5426cf74f4c021a.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/18/8db64eed4162c45ab5426cf74f4c021a.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/18/8db64eed4162c45ab5426cf74f4c021a.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/18/8db64eed4162c45ab5426cf74f4c021a.png
 categories: LeetCode刷题
 tags:
   - 双指针

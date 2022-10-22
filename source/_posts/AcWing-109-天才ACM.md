@@ -3,8 +3,8 @@ title: AcWing-109.天才ACM
 author: Mr.Niu
 toc: true
 abbrlink: 45606
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@bfaad6fac7391b26bb1137c5c0859b0f71e2231e/2021/02/06/758af1487930ce44515582ac268dbbac.png'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@bfaad6fac7391b26bb1137c5c0859b0f71e2231e/2021/02/06/758af1487930ce44515582ac268dbbac.png'
+cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/758af1487930ce44515582ac268dbbac.png'
+top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/758af1487930ce44515582ac268dbbac.png'
 categories:
   - AcWing
 tags:

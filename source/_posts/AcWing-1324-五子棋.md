@@ -3,8 +3,8 @@ title: AcWing-1324.五子棋
 author: Mr.Niu
 toc: true
 abbrlink: 44380
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_65.jpg'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_65.jpg'
+cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_65.jpg'
+top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_65.jpg'
 categories:
   - AcWing
 tags:

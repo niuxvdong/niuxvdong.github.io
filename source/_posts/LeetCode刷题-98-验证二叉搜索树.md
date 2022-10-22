@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 58463
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/08/03/0e45f44c8abbb58a540266046d1e0b7b.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/03/0e45f44c8abbb58a540266046d1e0b7b.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/08/03/0e45f44c8abbb58a540266046d1e0b7b.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/03/0e45f44c8abbb58a540266046d1e0b7b.png
 categories: LeetCode刷题
 tags:
   - 二叉搜索树

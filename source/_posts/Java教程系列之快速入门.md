@@ -3,7 +3,7 @@ title: Java教程系列之快速入门
 author: Mr.Niu
 toc: true
 abbrlink: 12025
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/mmexport1581051788215.jpg'
+cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/mmexport1581051788215.jpg'
 categories:
   - Java教程
 tags:
@@ -12,7 +12,7 @@ tags:
   - Java
 date: 2020-02-09 19:50:45
 updated:
-top_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/mmexport1581051788215.jpg
+top_img: https://gitcode.net/qq_43590403/images/-/raw/master/img/mmexport1581051788215.jpg
 ---
 
 
@@ -64,7 +64,7 @@ top_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/mmexport1581051788215.
 - Java EE：Enterprise Edition
 - Java ME：Micro Edition
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200210191720.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200210191720.png)
 
 > Java SE就是标准版，包含标准的JVM和标准库
 >
@@ -102,7 +102,7 @@ top_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/mmexport1581051788215.
 
 > JRE就是运行Java字节码的虚拟机。但是，如果只有Java源码，要编译成Java字节码，就需要JDK，因为JDK除了包含JRE，还提供了编译器、调试器等开发工具。
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200210192759.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200210192759.png)
 
 #### JSR 和JCP
 
@@ -134,25 +134,25 @@ top_img: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/mmexport1581051788215.
 
 #### 1、新建`JAVA_HOME`变量，变量值为安装JDK的路径
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200210201656.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200210201656.png)
 
 
 
 #### 2、新建`CLASSPATH`变量，变量值为`.;%JAVA_HOME%\lib`。
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200210201734.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200210201734.png)
 
 
 
 3、新增`CLASSPATH`变量，变量值为`%JAVA_HOME%\bin`。
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200210201804.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200210201804.png)
 
  找到PATH点击编辑->新建
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200210201827.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200210201827.png)
 
 
 
@@ -162,7 +162,7 @@ win + R键打开cmd:
 
 输入`java -version`，若显示如下，则说明配置正确，否则需要检查路径问题，重新配置。
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200210202637.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200210202637.png)
 
 
 
@@ -576,7 +576,7 @@ ORDER BY name DESC""";
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200210223841.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200210223841.png)
 
 注意：上面表示五行还有一个换行符`\n`
 

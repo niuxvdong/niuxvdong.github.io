@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 6952
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@feeb95dfd7676a4b6f09cc4ff30e7568c1c46cc6/2021/05/10/4112099d6b7a54e7dfc84f2fb6c51687.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/05/10/4112099d6b7a54e7dfc84f2fb6c51687.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@feeb95dfd7676a4b6f09cc4ff30e7568c1c46cc6/2021/05/10/4112099d6b7a54e7dfc84f2fb6c51687.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/05/10/4112099d6b7a54e7dfc84f2fb6c51687.png
 categories:
   - Shell
 tags:

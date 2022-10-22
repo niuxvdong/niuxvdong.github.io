@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 13535
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@79b93a6702d038417c8c704709653a6e5922e9fa/2021/03/06/8c5b8ebc37e71dcc16b03673c4551977.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/06/8c5b8ebc37e71dcc16b03673c4551977.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@79b93a6702d038417c8c704709653a6e5922e9fa/2021/03/06/8c5b8ebc37e71dcc16b03673c4551977.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/06/8c5b8ebc37e71dcc16b03673c4551977.png
 categories:
   - JavaWeb
 tags:

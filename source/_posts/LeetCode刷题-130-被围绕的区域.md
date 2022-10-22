@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 10602
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/08/09/ab444f56198af2025a18c92122a07ce7.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/09/ab444f56198af2025a18c92122a07ce7.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/08/09/ab444f56198af2025a18c92122a07ce7.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/09/ab444f56198af2025a18c92122a07ce7.png
 categories: LeetCode刷题
 tags:
   - Flood Fill

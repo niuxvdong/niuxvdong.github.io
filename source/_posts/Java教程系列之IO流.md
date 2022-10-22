@@ -3,8 +3,8 @@ title: Java教程系列之IO流
 author: Mr.Niu
 toc: true
 abbrlink: 61053
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@1609fa8769d274cc92c39376995b3200c5e4a296/2021/02/06/8c45a4ecb931635b21bb72595f059933.png'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@1609fa8769d274cc92c39376995b3200c5e4a296/2021/02/06/8c45a4ecb931635b21bb72595f059933.png'
+cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/8c45a4ecb931635b21bb72595f059933.png'
+top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/8c45a4ecb931635b21bb72595f059933.png'
 categories:
   - Java教程
 tags:

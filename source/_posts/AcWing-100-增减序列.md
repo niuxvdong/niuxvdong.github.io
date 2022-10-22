@@ -3,8 +3,8 @@ title: AcWing-100.增减序列
 author: Mr.Niu
 toc: true
 abbrlink: 41483
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/04.jpg'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/04.jpg'
+cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/04.jpg'
+top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/04.jpg'
 categories:
   - AcWing
 tags:

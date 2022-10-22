@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 63819
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@02cbba2ae81a9022f8bc40d04c8ddb89124e18a8/2021/10/25/1d57ced3775c11d0e1c2f25bcd3b1f33.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/1d57ced3775c11d0e1c2f25bcd3b1f33.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@02cbba2ae81a9022f8bc40d04c8ddb89124e18a8/2021/10/25/1d57ced3775c11d0e1c2f25bcd3b1f33.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/1d57ced3775c11d0e1c2f25bcd3b1f33.png
 categories:
   - 并发编程
 tags:
@@ -819,7 +819,7 @@ AA打印5此，BB打印10次，CC打印15次，一共进行10轮
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@38d06ffec0d2530ac37a53c15205bdda96a66419/2021/10/24/0839615375a97296a569185d2a50903e.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/24/0839615375a97296a569185d2a50903e.png)
 
 
 
@@ -1055,7 +1055,7 @@ public boolean add(E e) {
 
 **图示：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@39fb262ed27dfa1a6c578bc99e8b270b156477f4/2021/10/24/bc4b830653e2d0fb37ad3ab2b42c63e3.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/24/bc4b830653e2d0fb37ad3ab2b42c63e3.png)
 
 
 
@@ -2193,7 +2193,7 @@ Process finished with exit code 0
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6510fde833ac0e1ca3d1b3f384c7a79fc8290e62/2021/10/25/610eb4a01e8a2fc601b61f35620e1e78.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/610eb4a01e8a2fc601b61f35620e1e78.png)
 
 
 
@@ -2211,7 +2211,7 @@ Process finished with exit code 0
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c8bc27cc78a494b7b413b9373dbd335385062c25/2021/10/25/7447818f88210cc8640d062448f564bb.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/7447818f88210cc8640d062448f564bb.png)
 
 
 
@@ -2418,7 +2418,7 @@ DelayQueue 中的元素只有当其指定的延迟时间到了，才能够从队
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@aa46bb6be8a84d18fbe2cca8911c676400cdfd85/2021/10/25/f9753e713da552b51915dc6f01ee5660.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/f9753e713da552b51915dc6f01ee5660.png)
 
 
 
@@ -2534,7 +2534,7 @@ Java 中的线程池是通过 Executor 框架实现的，该框架中用到了 E
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@1e8a3d59eb45ed61690bbe05f93e8e043a193972/2021/10/25/fec5f239cada65dec1f812dd9e4342e9.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/fec5f239cada65dec1f812dd9e4342e9.png)
 
 
 
@@ -2650,7 +2650,7 @@ public ThreadPoolExecutor(int corePoolSize,
 
 12使用常驻线程，345进入阻塞队列，678开辟新的三个线程，9无法处理执行拒绝策略！
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@26d10c94e9b136bf74bdea64da26008609927622/2021/10/25/990ed469767dd1649ab8153fafd5d6fc.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/990ed469767dd1649ab8153fafd5d6fc.png)
 
 
 
@@ -2663,7 +2663,7 @@ public ThreadPoolExecutor(int corePoolSize,
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@744668701c22dfe5ff93ee0d4241b6b87ac3a796/2021/10/25/83b667c3f188ec86baea11b9be2314be.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/83b667c3f188ec86baea11b9be2314be.png)
 
 
 
@@ -2677,7 +2677,7 @@ public ThreadPoolExecutor(int corePoolSize,
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6c5e16afd96692437192839d4a7066ffaf1f1f81/2021/10/25/bb132fc646f4c5e1ea8e3a63ebe04161.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/bb132fc646f4c5e1ea8e3a63ebe04161.png)
 
 
 

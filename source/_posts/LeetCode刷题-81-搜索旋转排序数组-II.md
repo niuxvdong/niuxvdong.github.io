@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 38820
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/23/690a23f110781db7ce5ea5da57b4378c.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/23/690a23f110781db7ce5ea5da57b4378c.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/23/690a23f110781db7ce5ea5da57b4378c.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/23/690a23f110781db7ce5ea5da57b4378c.png
 categories: LeetCode刷题
 tags:
   - 二分
@@ -41,7 +41,7 @@ updated:
 
 
 
-> 和之前题目类似：[LeetCode刷题-33.搜索旋转排序数组](https://niuxvdong.top/posts/51598.html)
+> 和之前题目类似：[LeetCode刷题-33.搜索旋转排序数组](https://www.itnxd.cn/posts/51598.html)
 
 
 
@@ -84,7 +84,7 @@ updated:
 
 
 
-具体思路：参考之前题目：[LeetCode刷题-33.搜索旋转排序数组](https://niuxvdong.top/posts/51598.html)
+具体思路：参考之前题目：[LeetCode刷题-33.搜索旋转排序数组](https://www.itnxd.cn/posts/51598.html)
 
 
 

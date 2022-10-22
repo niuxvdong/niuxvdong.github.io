@@ -204,7 +204,7 @@ abbrlink:
 # lazyload: 
 #     enable: false # 是否开启图片懒加载 
 #     onlypost: true # 是否只对文章的图片做懒加载 
-#     loadingImg: https://cdn.jsdelivr.net/gh/niuxvdong/images/img/loading.gif
+#     loadingImg: https://gitcode.net/qq_43590403/images/-/raw/master/img/loading.gif
 
 # hexo-douban
 # douban: 
@@ -237,6 +237,10 @@ nofollow:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: butterfly
+
+jsdelivr_auto_fallback:
+  enable: true
+  add_defer: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

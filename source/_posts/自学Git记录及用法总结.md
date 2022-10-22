@@ -3,8 +3,8 @@ title: 自学Git记录及用法总结
 author: Mr.Niu
 toc: true
 abbrlink: 50207
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/banners/1.jpg'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/banners/1.jpg'
+cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/banners/1.jpg'
+top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/banners/1.jpg'
 categories:
   - Git
 tags:
@@ -14,7 +14,7 @@ date: 2020-02-06 21:02:25
 updated:
 ---
 
-![Git](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/git.jpg)
+![Git](https://gitcode.net/qq_43590403/images/-/raw/master/img/git.jpg)
 
 > Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。
 
@@ -102,7 +102,7 @@ $ git config user.email
 
 效果如下：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208134755.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208134755.png)
 
 查看配置信息：
 
@@ -112,7 +112,7 @@ $ git config --list
 
 效果如下：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208135129.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208135129.png)
 
 清空Git Bash的代码记录：输入`reset`回车即可
 
@@ -130,7 +130,7 @@ $ reset
 
 下图来解释三者的关系：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208141138.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208141138.png)
 
 > 图中左侧为工作区，右侧为版本库。在版本库中标记为 "index" 的区域是暂存区（stage, index），标记为 "master" 的是 master 分支所代表的目录树。
 >
@@ -168,7 +168,7 @@ $ ls -ah
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208140226.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208140226.png)
 
 
 
@@ -189,7 +189,7 @@ $ git commit -m "增加README文件"
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208142040.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208142040.png)
 
 
 
@@ -216,7 +216,7 @@ $ git commit -m "增加README文件"
 
 如下：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208142926.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208142926.png)
 
 
 
@@ -224,7 +224,7 @@ $ git commit -m "增加README文件"
 
 如下：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208143038.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208143038.png)
 
 - 会提示"change not staged for commit"也就是改变还没有提交到版本库
 - 会提示"modifiled : README.md"即，提示这个文件被修改了
@@ -233,7 +233,7 @@ $ git commit -m "增加README文件"
 
 接下来使用`git add .`将文件提交到暂存区，在使用git status 来查看状态：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208143630.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208143630.png)
 
 
 
@@ -244,7 +244,7 @@ $ git commit -m "增加README文件"
 
 接下来使用git commit来将修改提交到版本库，然后使用git status查看状态：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208144133.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208144133.png)
 
 会发现git status 的返回状态为"working tree clean"，即工作区很干净。
 
@@ -260,7 +260,7 @@ $ git commit -m "增加README文件"
 
 cd到.git目录可以看到HEAD(版本库)和index(暂存区)文件：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208185725.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208185725.png)
 
 ### cd 命令
 
@@ -306,7 +306,7 @@ cd到.git目录可以看到HEAD(版本库)和index(暂存区)文件：
 
 若没有差异，则不会有返回信息。
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208173721.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208173721.png)
 
 
 
@@ -330,15 +330,15 @@ cd到.git目录可以看到HEAD(版本库)和index(暂存区)文件：
 
 提交到暂存区或版本库，用rm删除后恢复操作：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208183205.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208183205.png)
 
 提交到版本库文件，用git rm删除恢复操作：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208184333.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208184333.png)
 
 彻底删除版本库文件：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208184628.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208184628.png)
 
 
 
@@ -360,7 +360,7 @@ $ git checkout -- file
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208194415.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208194415.png)
 
 ## 六、版本回退
 
@@ -372,19 +372,19 @@ $ git checkout -- file
 
 > `git log`命令显示从最近到最远的提交日志，会显示提交id,作者，邮箱，日期，以及提交备注。
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208190624.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208190624.png)
 
 
 
 #### 可以使用`git log --oneline`来显示简略版的历史
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208191408.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208191408.png)
 
 #### 可以使用 `git log --pretty=oneline`来显示在一行
 
 > 只显示commit id ,以及提交备注
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208190759.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208190759.png)
 
 
 
@@ -460,7 +460,7 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 ### 如图所示，安照提示走：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208195930.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208195930.png)
 
 
 
@@ -520,7 +520,7 @@ $ git remote -v
 
 有push信息说明你有推送权限：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208211844.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208211844.png)
 
 
 
@@ -648,7 +648,7 @@ $ git merge dev
 
 #### 出现冲突
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/images/img/20200208205333.png)
+![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200208205333.png)
 
 #### vi 编辑冲突文件
 

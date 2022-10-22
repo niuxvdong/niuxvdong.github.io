@@ -8,8 +8,8 @@ tags:
   - Dubbo
 date: 2021-10-01 15:48:41
 updated:
-top_img: https://cdn.jsdelivr.net/gh/niuxvdong/pic@a2064035fcb2efe4f95ed2262f3f836bf7ba6350/2021/10/01/27c3919bb7046bc5ece2657118592e38.png
-cover: https://cdn.jsdelivr.net/gh/niuxvdong/pic@a2064035fcb2efe4f95ed2262f3f836bf7ba6350/2021/10/01/27c3919bb7046bc5ece2657118592e38.png
+top_img: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/27c3919bb7046bc5ece2657118592e38.png
+cover: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/27c3919bb7046bc5ece2657118592e38.png
 ---
 
 
@@ -44,7 +44,7 @@ cover: https://cdn.jsdelivr.net/gh/niuxvdong/pic@a2064035fcb2efe4f95ed2262f3f836
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@3089db3c8f9a7d0b4c4e8bbd4ee2508f17109f76/2021/10/01/9cf66d6f9eb3a58be35ed04ba5c20516.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/9cf66d6f9eb3a58be35ed04ba5c20516.png)
 
 
 
@@ -90,7 +90,7 @@ cover: https://cdn.jsdelivr.net/gh/niuxvdong/pic@a2064035fcb2efe4f95ed2262f3f836
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@115ae0dcc589ec601db34f01a1c95dd71097124a/2021/10/01/2e41b325de0bffc9f43b79b820f32411.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/2e41b325de0bffc9f43b79b820f32411.png)
 
 
 
@@ -104,7 +104,7 @@ cover: https://cdn.jsdelivr.net/gh/niuxvdong/pic@a2064035fcb2efe4f95ed2262f3f836
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@05a16db7591bdde711203f0d6f508a46326ed9d3/2021/10/01/477e7332ef6d05c918eae571ce416533.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/477e7332ef6d05c918eae571ce416533.png)
 
 
 
@@ -124,7 +124,7 @@ cover: https://cdn.jsdelivr.net/gh/niuxvdong/pic@a2064035fcb2efe4f95ed2262f3f836
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5590eb443baaa837ec9ee0d988e4216a17af8ceb/2021/10/01/abf1ae30833fe724cebf60b675f81500.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/abf1ae30833fe724cebf60b675f81500.png)
 
 
 
@@ -160,7 +160,7 @@ RPC【Remote Procedure Call】是指**远程过程调用**，是一种进程间�
 
 **RPC两个核心模块：通讯，序列化。**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d757f389f81ccbc7a339ecbc3a615cd12a5f193d/2021/10/01/e046cca905bc0abdc037faa9c6204a9d.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/e046cca905bc0abdc037faa9c6204a9d.png)
 
 
 
@@ -168,7 +168,7 @@ RPC【Remote Procedure Call】是指**远程过程调用**，是一种进程间�
 
 **流程图：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5cfd9399401c59084015072c08fc692765495fb5/2021/10/01/5d4835568c61d1c6506ae95e4a6fd648.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/5d4835568c61d1c6506ae95e4a6fd648.png)
 
 
 
@@ -182,7 +182,7 @@ RPC【Remote Procedure Call】是指**远程过程调用**，是一种进程间�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@018a40cf0fef39719a46d06d693b116f2fe0d764/2021/10/01/2b385232f32c4e1cbe7785eefdbbc3a8.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/2b385232f32c4e1cbe7785eefdbbc3a8.png)
 
 
 
@@ -288,7 +288,7 @@ mvn clean package '-Dmaven.test.skip=true'
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d95d7f51c3b656420075b33a6c58c838dee1b624/2021/10/01/13e436f0be954c235d1de2975ad8e16b.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/13e436f0be954c235d1de2975ad8e16b.png)
 
 
 
@@ -310,7 +310,7 @@ mvn clean package '-Dmaven.test.skip=true'
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@cc292898e585bebb382b0cd132c7b9735fe43eb3/2021/10/01/706513245a68205c19a594c9aef946b1.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/706513245a68205c19a594c9aef946b1.png)
 
 
 
@@ -330,7 +330,7 @@ pom.xml：
 
 **服务消费者层：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@8b2ddb266de38cdc8586040188adb84fdaf1267b/2021/10/01/7db4e3d4b1beb063d254eb7aaf2fdc2c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/7db4e3d4b1beb063d254eb7aaf2fdc2c.png)
 
 
 
@@ -400,7 +400,7 @@ public class OrderServiceImpl implements OrderService {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@763d79868d21791859fc2ec4a8c39055261973f1/2021/10/01/eb339f8881f52af053bf5b1de90f17be.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/eb339f8881f52af053bf5b1de90f17be.png)
 
 
 
@@ -585,7 +585,7 @@ public class MainApplication {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6ed2cffb073de31bea22a5dfde4f99a73f934d93/2021/10/01/4f7e1e400c133a542b2cc54b03381c74.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/4f7e1e400c133a542b2cc54b03381c74.png)
 
 
 
@@ -762,7 +762,7 @@ public class Application {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@3d87c3e94f70ff758d971371eb652b6e964546f8/2021/10/01/d06221fe083077fb38fb34026da2cb25.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/d06221fe083077fb38fb34026da2cb25.png)
 
 
 
@@ -959,7 +959,7 @@ public class Application {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@fa891414b76d005647eee45022a0dec5bf199edc/2021/10/01/1e10b6b761953f7d97e8d9d0f79694a4.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/1e10b6b761953f7d97e8d9d0f79694a4.png)
 
 
 
@@ -975,7 +975,7 @@ public class Application {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@3747e0db100d5bf151c12f8c3f7108f3b638014c/2021/10/01/36b1d283b01062faf0fab779b0d9cc95.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/36b1d283b01062faf0fab779b0d9cc95.png)
 
 
 
@@ -987,7 +987,7 @@ public class Application {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c49cee7e3a9e69651c85aa2e82a960ccc7198cc1/2021/10/01/8a52ad7cc1cca298ff6d0974a79d07e4.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/8a52ad7cc1cca298ff6d0974a79d07e4.png)
 
 
 
@@ -1104,7 +1104,7 @@ dubbo.consumer.check=false（全局）
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@dbf125b55a042045dc4e8d4347efb4b16c465315/2021/10/01/c152cf7135ac1d719562b12db364d47d.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/c152cf7135ac1d719562b12db364d47d.png)
 
 
 
@@ -1225,7 +1225,7 @@ private UserService userService;
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@fcf47d380f5dbe03b5de9a3108072c24130c5679/2021/10/01/25cc2c563aff6da130e20710dbb1df29.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/25cc2c563aff6da130e20710dbb1df29.png)
 
 
 
@@ -1505,7 +1505,7 @@ UserService userService;
 
 示意图：用完一个比例的，则不会再调用！
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2cb7be3573f5bfd8f2dc7cfe399331b3d5d01dbb/2021/10/01/81a51f499c563bd2cfef5806429601b2.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/81a51f499c563bd2cfef5806429601b2.png)
 
 
 
@@ -1539,7 +1539,7 @@ UserService userService;
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@910262fc6613bc6a9df874a5ef9c05231790d9ab/2021/10/01/d7a7f94631c9ee598f04b3155a4e2c1b.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/d7a7f94631c9ee598f04b3155a4e2c1b.png)
 
 
 
@@ -1840,7 +1840,7 @@ public List<UserAddress> hello (String userId) {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@4a09a4509d89f296d5608c341b713c81c1ec9930/2021/10/01/826080cb84a762a7cccc3acd2550358e.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/826080cb84a762a7cccc3acd2550358e.png)
 
 
 
@@ -1878,7 +1878,7 @@ Netty是一个**异步**事件驱动的网络应用程序框架， 用于快速�
 
 **BIO：(Blocking IO)**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@be45bcc1512427c29e225c92d9668faeadc46837/2021/10/01/ff1180b37e5b13982db37362a6783034.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/ff1180b37e5b13982db37362a6783034.png)
 
 
 
@@ -1890,7 +1890,7 @@ Selector 一般称 为**选择器** ，也可以翻译为 **多路复用器，**
 
 Connect（连接就绪）、Accept（接受就绪）、Read（读就绪）、Write（写就绪）
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c1b3faaf17cd903fd3d81b4b56ef26f7fe5d7c7e/2021/10/01/3977a864002eaf92f4572f16c11ca643.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/3977a864002eaf92f4572f16c11ca643.png)
 
 
 
@@ -1900,7 +1900,7 @@ Connect（连接就绪）、Accept（接受就绪）、Read（读就绪）、Wri
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@afceebe3d531c801a1c942925424d9ff7bc095ae/2021/10/01/b40610f939fa281f94ae7859f2db6ed4.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/b40610f939fa281f94ae7859f2db6ed4.png)
 
 
 
@@ -1916,7 +1916,7 @@ Connect（连接就绪）、Accept（接受就绪）、Read（读就绪）、Wri
 
 ### dubbo原理 - 框架设计 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@17d3549bf461d3d696e5019758f666c1739f482c/2021/10/01/3db0b83e1a318bd1a70eda097351b316.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/3db0b83e1a318bd1a70eda097351b316.png)
 
 
 
@@ -1940,7 +1940,7 @@ Connect（连接就绪）、Accept（接受就绪）、Read（读就绪）、Wri
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@9e27838fb978ae6c6b9bf111e44a09ab1c05e7a2/2021/10/01/ad8567c7d1aa9fa5bb1538b7d1231551.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/ad8567c7d1aa9fa5bb1538b7d1231551.png)
 
 
 
@@ -1948,7 +1948,7 @@ Connect（连接就绪）、Accept（接受就绪）、Read（读就绪）、Wri
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@34122b89d959e6cf91d935e07222ec67f360b3af/2021/10/01/38c17adb7041fef1b18ca5c3592939a1.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/38c17adb7041fef1b18ca5c3592939a1.png)
 
 
 
@@ -1958,4 +1958,4 @@ Connect（连接就绪）、Accept（接受就绪）、Read（读就绪）、Wri
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@bc548fc08f5d606c99f2e047848a4dfaee74982e/2021/10/01/9f2d8cb36f584ff6551a333251389754.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/9f2d8cb36f584ff6551a333251389754.png)

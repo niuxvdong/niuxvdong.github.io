@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 12809
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@a597bd7c2e1ea1f995776f0c08d7e835663009e4/2021/10/13/f4ee28a291f9feb683183e72ba34bb7a.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/13/f4ee28a291f9feb683183e72ba34bb7a.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@a597bd7c2e1ea1f995776f0c08d7e835663009e4/2021/10/13/f4ee28a291f9feb683183e72ba34bb7a.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/13/f4ee28a291f9feb683183e72ba34bb7a.png
 categories:
   - 开发框架
 tags:
@@ -29,7 +29,7 @@ updated:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@070a54f65a2cbae040ef9c87af1c25eae5b0ab93/2021/10/06/65eb698fde4c6ee99e6cd7cc114f4866.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/06/65eb698fde4c6ee99e6cd7cc114f4866.png)
 
 
 
@@ -66,7 +66,7 @@ updated:
 
 **响应式编程：占用少量线程，使用少量资源就可以处理大量的并发和需要的业务！**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@4eef956453523418391a3e9a52eb77a14586eb82/2021/10/06/1e165f8821bebc82c49e38f8951f93e6.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/06/1e165f8821bebc82c49e38f8951f93e6.png)
 
 
 
@@ -494,7 +494,7 @@ public User user01(){
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c5ddfed4b340d47f65d422c7046e8a4cbf42719a/2021/10/06/d130dc527896a28992051955b6a10843.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/06/d130dc527896a28992051955b6a10843.png)
 
 
 
@@ -802,7 +802,7 @@ protected AutoConfigurationImportSelector.AutoConfigurationEntry getAutoConfigur
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@58a232297854193984cf8a6b07b6a2af58dedbe0/2021/10/06/25fb6c3a05f9002b0332d3893f292354.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/06/25fb6c3a05f9002b0332d3893f292354.png)
 
 
 
@@ -882,7 +882,7 @@ private static Map<String, List<String>> loadSpringFactories(ClassLoader classLo
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@b7d39fa224ed410fdffb23385bddf446ea8c65ef/2021/10/06/2c5db5b36ccc621210a24badc43e7fc5.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/06/2c5db5b36ccc621210a24badc43e7fc5.png)
 
 
 
@@ -894,7 +894,7 @@ private static Map<String, List<String>> loadSpringFactories(ClassLoader classLo
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d14eedd1c7511c79c95689337360b0851383a44f/2021/10/06/fb00fd4e010448ace612ed1f995e393f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/06/fb00fd4e010448ace612ed1f995e393f.png)
 
 
 
@@ -920,7 +920,7 @@ xxxxAutoConfiguration 按照条件装配规则（@Conditional），最终会按�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e1a222ec7f5ce4787bd15506fce409fa7c1c84cb/2021/10/06/dd174fbd8692652cb04aa847ace8f530.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/06/dd174fbd8692652cb04aa847ace8f530.png)
 
 
 
@@ -1011,7 +1011,7 @@ public MultipartResolver multipartResolver() {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2b76a558ef517d130608ba6ad5c7fe3758b51bef/2021/10/06/d0f3565fd7f85bb4a2149a3821d11124.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/06/d0f3565fd7f85bb4a2149a3821d11124.png)
 
 
 
@@ -1159,7 +1159,7 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/using.html#using.
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e19d007d254720a7d8dcd6d6ea184f7cffe75d96/2021/10/06/d6bf94dc7313fd25b5479a840f776260.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/06/d6bf94dc7313fd25b5479a840f776260.png)
 
 
 
@@ -1861,7 +1861,7 @@ public class WebConfig implements WebMvcConfigurer {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6b35b8ebdb3c465d8e5ced40a7a7289cbf1a0951/2021/10/11/8cca2ed66bbba4ff1a11520617195442.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/11/8cca2ed66bbba4ff1a11520617195442.png)
 
 **SpringMVC功能分析都从 org.springframework.web.servlet.DispatcherServlet ->doDispatch()**
 
@@ -1911,7 +1911,7 @@ protected void doDispatch(HttpServletRequest request, HttpServletResponse respon
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@cec8117ceca031738d134b74945b7153c49fb34d/2021/10/11/d5badd0222c88c887ffa1f31d861fc5d.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/11/d5badd0222c88c887ffa1f31d861fc5d.png)
 
 
 
@@ -1921,7 +1921,7 @@ protected void doDispatch(HttpServletRequest request, HttpServletResponse respon
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@475512060b2c7fac6297ca81ca72057da2c00de2/2021/10/11/22bb1f8063e993e558d2144ecc0ea81e.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/11/22bb1f8063e993e558d2144ecc0ea81e.png)
 
 
 
@@ -2255,7 +2255,7 @@ ServletModelAttributeMethodProcessor来解析参数！
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@15c74bc21dd01ebfd0f2ee20be1e894c24f4cd82/2021/10/11/ef03fb15f5c7380a241c11a435287243.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/11/ef03fb15f5c7380a241c11a435287243.png)
 
 
 
@@ -2289,7 +2289,7 @@ Object returnValue = invokeForRequest(webRequest, mavContainer, providedArgs);
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@88c9d39faaed2eedbf40994e339047ea76298e44/2021/10/11/29271034c9ae0e77eb06ddfb54565dce.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/11/29271034c9ae0e77eb06ddfb54565dce.png)
 
 
 
@@ -2300,7 +2300,7 @@ Object returnValue = invokeForRequest(webRequest, mavContainer, providedArgs);
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2c723527870166a2072dba7b6809a14cf2ad94fe/2021/10/11/79460da51895f8cedf0c38f8cd132994.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/11/79460da51895f8cedf0c38f8cd132994.png)
 
 
 
@@ -2312,7 +2312,7 @@ Object returnValue = invokeForRequest(webRequest, mavContainer, providedArgs);
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@867deb127af530101f4a0cb92e2b5e4af739e894/2021/10/11/6fa478f1b0d1cc8f2dbd9f04b345cc48.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/11/6fa478f1b0d1cc8f2dbd9f04b345cc48.png)
 
 
 
@@ -2355,7 +2355,7 @@ WebDataBinder binder = binderFactory.createBinder(webRequest, attribute, name);
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5f1084d1ebf5f0431a625dd2c4900e3b4d393d1f/2021/10/11/a8f341a19125c1df86bb2fb2b8f96dbc.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/11/a8f341a19125c1df86bb2fb2b8f96dbc.png)
 
 
 
@@ -2407,7 +2407,7 @@ public class WebConfig implements WebMvcConfigurer {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@f6a9ecdd692c3e1969fd4a28b10ccd5a31982597/2021/10/11/79c81cc12f49e78ecd76b3f8c4ab34bf.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/11/79c81cc12f49e78ecd76b3f8c4ab34bf.png)
 
 
 
@@ -2496,7 +2496,7 @@ web场景自动引入了json场景
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a372e301c116846f1e7f17e86ef9007ff4b8e7f7/2021/10/11/be510f7c44ea2be159f2edab440e8099.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/11/be510f7c44ea2be159f2edab440e8099.png)
 
 
 
@@ -2542,13 +2542,13 @@ HttpMessageConverter: 看是否支持将此 Class类型的对象，转为MediaTy
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c6ecb86479bc98fd6465630a6a8f9fddfd2770c3/2021/10/11/3b87214940a1331d9259c6c189c704a2.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/11/3b87214940a1331d9259c6c189c704a2.png)
 
 #### 默认的MessageConverter
 
 最终 `MappingJackson2HttpMessageConverter`  把对象转为JSON（利用底层的jackson的objectMapper转换的）
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@fb5e5213706a29b0b6749a01f750e34e0037d07e/2021/10/11/ad48ee43f3360d1c895ae2c489902254.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/11/ad48ee43f3360d1c895ae2c489902254.png)
 
 
 
@@ -2580,7 +2580,7 @@ HttpMessageConverter: 看是否支持将此 Class类型的对象，转为MediaTy
 
 只需要改变请求头中Accept字段。Http协议中规定的，告诉服务器本客户端可以接收的数据类型！
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@eaf0b9c6d3875e3caccfad11bc4fb89e72c0a50c/2021/10/11/c3466f78461255e24bbcb7798b72c1ad.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/11/c3466f78461255e24bbcb7798b72c1ad.png)
 
 
 
@@ -2623,7 +2623,7 @@ spring:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@b4c25d376ded87360da6273ba33ec84fa93cdbb7/2021/10/11/97917c71f0a940faed8d2264caaeff2c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/11/97917c71f0a940faed8d2264caaeff2c.png)
 
 - 6、进行内容协商的最佳匹配媒体类型
 - 7、用支持将对象转为最佳匹配媒体类型的converter。调用它进行转化 。
@@ -3012,7 +3012,7 @@ th:if="${not #lists.isEmpty(prod.comments)}">view</a>
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2e1557bb632c59b865e577f9878a1251e8f56687/2021/10/12/1a621ab5b3d001466c9c21624fab7963.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/12/1a621ab5b3d001466c9c21624fab7963.png)
 
 
 
@@ -3438,7 +3438,7 @@ public class AdminConfig implements WebMvcConfigurer {
 
 **如下图：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@f0355d3cbf2aa8ec7e4c26a70c6949a7acb31fd7/2021/10/12/ce9ebec135c8a426e53e93a5c291bdb1.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/12/ce9ebec135c8a426e53e93a5c291bdb1.png)
 
 
 
@@ -3599,13 +3599,13 @@ spring:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@94ab30ffec93b779b641ca1b9c2928668ce39c8d/2021/10/12/f66c672fb1c46bed938a9ea9d29e392d.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/12/f66c672fb1c46bed938a9ea9d29e392d.png)
 
 
 
 **浏览器的白页：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c0362e57d72dcb1a2ec29339298db24e3e2ded74/2021/10/12/a4acc09c2aaa69da2df2b3cc0053b0af.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/12/a4acc09c2aaa69da2df2b3cc0053b0af.png)
 
 
 
@@ -3616,7 +3616,7 @@ spring:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d9f3b80ee1ede4b9c819dc3148b7abaa9976c72b/2021/10/12/fc1077950557e0d2d2f9d771ce65b9d8.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/12/fc1077950557e0d2d2f9d771ce65b9d8.png)
 
 
 
@@ -4102,7 +4102,7 @@ spring:
 
 **因此：精确匹配的话，默认是到不了DispatcherServlet 的！**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2ccb263e65e75140cafc5c4b337ecb85fe94f0d2/2021/10/12/8075fe0af3c4cb62841802a36ea546cf.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/12/8075fe0af3c4cb62841802a36ea546cf.png)
 
 
 
@@ -4150,7 +4150,7 @@ spring:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e529acfec77d5502c58d55cc2b0a67b998db40b9/2021/10/12/bbfae54edad820015245af09170a3df2.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/12/bbfae54edad820015245af09170a3df2.png)
 
 
 
@@ -4318,7 +4318,7 @@ public class AdminConfig implements WebMvcConfigurer {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d1a01f29d84da987c3b01ccc19d30ef4ebbccf24/2021/10/13/dc3347c97dc569dae877dc73f3a707ac.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/13/dc3347c97dc569dae877dc73f3a707ac.png)
 
 
 
@@ -4842,7 +4842,7 @@ spring:
 
 **自动导入的东西：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@523354c93a5ec59bb1b904625cd4b4053112df87/2021/10/13/2860a1714570f560ceb0cd8f9c52fbe9.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/13/2860a1714570f560ceb0cd8f9c52fbe9.png)
 
 
 
@@ -5331,7 +5331,7 @@ public String deleteUser(@PathVariable("id") Long id,
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@37016f82dbb364adcf6bb70660a8cb7ca7b302c3/2021/10/13/d50a62f713dccb3f6123b60f31d3f62e.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/13/d50a62f713dccb3f6123b60f31d3f62e.png)
 
 
 
@@ -6123,7 +6123,7 @@ static Stream<String> method() {
 
 **自动导入的东西：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@8bbe00a7c41946061a7a173ed11cbec470d214b7/2021/10/13/735adc4a2a3e922404ac737911a36015.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/13/735adc4a2a3e922404ac737911a36015.png)
 
 
 
@@ -6133,7 +6133,7 @@ static Stream<String> method() {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@55f891ecfa3076845af59deba7da2c0905a0b29b/2021/10/13/43f1a7eecac8e6447a2d74be0cc12422.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/13/43f1a7eecac8e6447a2d74be0cc12422.png)
 
 
 
@@ -6285,7 +6285,7 @@ management:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@678cd4b7c7c91480763f48c4d4300f0507719308/2021/10/13/31b4aa0e6b18da3b6f752fcfe1865588.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/13/31b4aa0e6b18da3b6f752fcfe1865588.png)
 
 
 
@@ -6308,7 +6308,7 @@ management:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@20dd9ded66831acf436c96ccbee2ffb2ca37c372/2021/10/13/b89587bbd68464913c414df3dda00790.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/13/b89587bbd68464913c414df3dda00790.png)
 
 
 
@@ -6987,7 +6987,7 @@ public class HelloWorld6Application {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@7ebf05025645ac65d8bc4b3973dbcb2d5af3918f/2021/10/13/1801e123a25a56561be9abd1ea7a7050.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/13/1801e123a25a56561be9abd1ea7a7050.png)
 
 
 
@@ -7491,5 +7491,5 @@ com.itnxd.boot.listener.MySpringApplicationRunListener
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5c0811d843827515d0140795b184382643e024e7/2021/10/13/7ad9bff975d5f0e7299540f3118c2da6.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/13/7ad9bff975d5f0e7299540f3118c2da6.png)
 

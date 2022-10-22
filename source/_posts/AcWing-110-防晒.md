@@ -3,8 +3,8 @@ title: AcWing-110.防晒
 author: Mr.Niu
 toc: true
 abbrlink: 10715
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@d3f1c71aafba54961a8bf8a2341a169d77829441/2021/02/06/ce8c2bfb909a31b425c145d594cafde9.png'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@d3f1c71aafba54961a8bf8a2341a169d77829441/2021/02/06/ce8c2bfb909a31b425c145d594cafde9.png'
+cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/ce8c2bfb909a31b425c145d594cafde9.png'
+top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/ce8c2bfb909a31b425c145d594cafde9.png'
 categories:
   - AcWing
 tags:
@@ -116,7 +116,7 @@ updated:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@55fc671fe5b756adf8af42f1ac7351a09319b718/2021/02/06/d394e4ac22f43a1013d66b9d477d2c94.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/d394e4ac22f43a1013d66b9d477d2c94.png)
 
 
 

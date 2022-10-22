@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 50148
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@7ac41d51c951f7f506f4b1742fd800727bef52be/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@7ac41d51c951f7f506f4b1742fd800727bef52be/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
 categories:
   - 开发框架
 tags:
@@ -78,7 +78,7 @@ updated:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e58dcebf779022bff65ad8fed661d20ada3d84f2/2021/03/23/5a6b833dc918e890bff69a7cf787319a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/23/5a6b833dc918e890bff69a7cf787319a.png)
 
 
 
@@ -148,7 +148,7 @@ IOC：（Inversion Of Control）控制反转，把**对象创建**和对象之�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@77f5bc0e62479fac8d25ca6dd03060558624a0ce/2021/03/23/3de345bf550cfe245889cea0f5487a7f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/23/3de345bf550cfe245889cea0f5487a7f.png)
 
 
 
@@ -219,7 +219,7 @@ public void test2(){
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@103e92e76dcce26a97afbf5e9d183a12374baf32/2021/03/23/4d1acb125da0305a37310400e13f9de1.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/23/4d1acb125da0305a37310400e13f9de1.png)
 
 
 
@@ -265,7 +265,7 @@ public void test2(){
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e58dcebf779022bff65ad8fed661d20ada3d84f2/2021/03/23/5a6b833dc918e890bff69a7cf787319a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/23/5a6b833dc918e890bff69a7cf787319a.png)
 
 
 
@@ -279,7 +279,7 @@ public void test2(){
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d0f0d73444bd564670d59195bb9071a55d0b9351/2021/03/23/e8dd12b744f567d2c257d0ff15f2f998.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/23/e8dd12b744f567d2c257d0ff15f2f998.png)
 
 
 
@@ -1018,7 +1018,7 @@ public class UserService {
 
 **关于Resource介绍：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@4a9096ee7c565cbb6eb7fc7a967654bf8dcf7953/2021/03/20/2538980f51cd4b36cbdf288968c89eb9.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/20/2538980f51cd4b36cbdf288968c89eb9.png)
 
 
 

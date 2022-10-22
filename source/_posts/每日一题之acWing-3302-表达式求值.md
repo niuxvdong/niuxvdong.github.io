@@ -4,14 +4,14 @@ author: ITNXD
 toc: true
 abbrlink: 46950
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@c200773d85f5eb15e2deb2c05823538e4c5f2fe8/2021/03/21/2efbc4cb93b487fd05b4faaa113a1b7d.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/2efbc4cb93b487fd05b4faaa113a1b7d.png
 categories: AcWing
 tags:
   - 栈
   - 模板
 date: 2021-03-21 20:46:10
 updated:
-top_img: https://cdn.jsdelivr.net/gh/niuxvdong/pic@c200773d85f5eb15e2deb2c05823538e4c5f2fe8/2021/03/21/2efbc4cb93b487fd05b4faaa113a1b7d.png
+top_img: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/2efbc4cb93b487fd05b4faaa113a1b7d.png
 ---
 
 
@@ -83,7 +83,7 @@ top_img: https://cdn.jsdelivr.net/gh/niuxvdong/pic@c200773d85f5eb15e2deb2c058235
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@55cc90adcbc457a54927bbf4bf04d82f0cc2892b/2021/03/21/337ab08acbddb37e409f2c6d6c2a5bc2.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/337ab08acbddb37e409f2c6d6c2a5bc2.png)
 
 
 
@@ -117,7 +117,7 @@ top_img: https://cdn.jsdelivr.net/gh/niuxvdong/pic@c200773d85f5eb15e2deb2c058235
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c02ffb9d8dd648ed29368038e0b4931719dd4472/2021/03/21/8a2c573b705d0baf847aded86288afa3.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/8a2c573b705d0baf847aded86288afa3.png)
 
 **总结：**只要当前运算符优先级**不大于**上一个运算符优先级，就表明该子树被遍历完毕了，该子树就可以进行计算了！
 

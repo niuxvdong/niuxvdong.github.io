@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 22145
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@7ac41d51c951f7f506f4b1742fd800727bef52be/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@7ac41d51c951f7f506f4b1742fd800727bef52be/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
 categories:
   - 开发框架
 tags:
@@ -49,7 +49,7 @@ updated:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@9213bfa1038ac7ed80a095e74bc9b8b03ec7127f/2021/03/26/1b61ef16d8fdf40b7764476bd1df2d11.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/26/1b61ef16d8fdf40b7764476bd1df2d11.png)
 
 
 
@@ -292,7 +292,7 @@ public void batchDelete(List<Object[]> batchArgs) {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a1a9cfc8288acd0e823a6d35204b82770fc78a50/2021/03/26/e493fc1acabe6b92e33a2e5fe802c2d9.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/26/e493fc1acabe6b92e33a2e5fe802c2d9.png)
 
 
 
@@ -509,13 +509,13 @@ public class UserService {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@906d470bf8281e6819bd020f574e296067285468/2021/03/26/c4846dee195138820239ec8c3b569e80.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/26/c4846dee195138820239ec8c3b569e80.png)
 
 
 
 **Spring中的七种传播行为：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c95aab87209aa692a0ad794e5c9bbfc96df9b0c8/2021/03/26/570fbc894299b58708dda920fb086048.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/26/570fbc894299b58708dda920fb086048.png)
 
 
 

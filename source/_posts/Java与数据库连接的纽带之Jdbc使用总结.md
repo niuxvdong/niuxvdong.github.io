@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 49844
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@3664bab88ada15e2b4f2eec157dcd8d4ca62a3f3/2021/03/04/336cc0b0afbf531ecc0d41f84c7893e7.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/04/336cc0b0afbf531ecc0d41f84c7893e7.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@3664bab88ada15e2b4f2eec157dcd8d4ca62a3f3/2021/03/04/336cc0b0afbf531ecc0d41f84c7893e7.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/04/336cc0b0afbf531ecc0d41f84c7893e7.png
 categories:
   - JDBC
 tags:
@@ -39,7 +39,7 @@ updated:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@fbcc0b0739d5aed4d61f3da630fba64578ec5916/2021/03/04/1452fe993847e6e858c4470c7f997f57.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/04/1452fe993847e6e858c4470c7f997f57.png)
 
 
 
@@ -336,7 +336,7 @@ driverClass=com.mysql.cj.jdbc.Driver
 
 **用到的类加载器如图：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@11f13ac0caae0f35b6ddbf65e4f625ac677c3f0c/2021/02/13/9871609ce62dff37dbc3dc641218c5c7.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/13/9871609ce62dff37dbc3dc641218c5c7.png)
 
 
 
@@ -831,7 +831,7 @@ public void test2(){
 
 **MySQL的四种BLOB类型：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@98160242b5333159d22a33b8d3fe2e14b87ce330/2021/03/04/29e703f205176b182bff881b8e3ebb49.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/04/29e703f205176b182bff881b8e3ebb49.png)
 
 
 

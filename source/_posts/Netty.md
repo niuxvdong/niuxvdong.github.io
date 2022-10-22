@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 44402
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@e915ec1da8f4fd93824ca93a53c42d6c2371d03d/2021/11/02/5a36755da549fd44dd641d57680b154c.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/5a36755da549fd44dd641d57680b154c.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@e915ec1da8f4fd93824ca93a53c42d6c2371d03d/2021/11/02/5a36755da549fd44dd641d57680b154c.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/5a36755da549fd44dd641d57680b154c.png
 categories: 网络编程
 tags:
   - Netty
@@ -40,7 +40,7 @@ updated:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@29defda3efef0e650883e4397cf8c65b92d65ede/2021/11/01/3732838213a7ba45f5480b218471bed6.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/3732838213a7ba45f5480b218471bed6.png)
 
 
 
@@ -288,7 +288,7 @@ public class BasicBuffer {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@9a4bcaa7c7fe8b62b809b7de645919e7b2c675c0/2021/11/01/1442e1a9271b1394f089af8aae0e881b.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/1442e1a9271b1394f089af8aae0e881b.png)
 
 
 
@@ -330,7 +330,7 @@ public class BasicBuffer {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d8e47f71bf278f388adad6b2e46918c90e2acebc/2021/11/01/b3518ccd029e026d73efabc5f43c5e8b.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/b3518ccd029e026d73efabc5f43c5e8b.png)
 
 
 
@@ -338,7 +338,7 @@ public class BasicBuffer {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@8750f2792bc0274d5f73ae58e0cac9164ff8d8ac/2021/11/01/d5ac82aa972b1b9267aa90c592a88e8d.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/d5ac82aa972b1b9267aa90c592a88e8d.png)
 
 
 
@@ -346,7 +346,7 @@ public class BasicBuffer {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@9fe5fe87d873c89a955b58fa32d350d926115b14/2021/11/01/44078b911e56e29466e13abd52e7a067.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/44078b911e56e29466e13abd52e7a067.png)
 
 
 
@@ -364,7 +364,7 @@ public class BasicBuffer {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@4bb5caa313e68196093899e017b07fbd19210597/2021/11/01/38fa516dbe45924b5b41e12decfd0c44.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/38fa516dbe45924b5b41e12decfd0c44.png)
 
 
 
@@ -786,7 +786,7 @@ public class ScatteringAndGatheringTest {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@09ea3d095ce85cf7ac8a0d83f5611cba99684b1e/2021/11/01/7c1525a53f949603587d8ccd436b2be4.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/7c1525a53f949603587d8ccd436b2be4.png)
 
 
 
@@ -802,7 +802,7 @@ public class ScatteringAndGatheringTest {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a4e2e15295d408b6a62408414d3eeb7a815eb7b4/2021/11/01/4c5673686ee98194df35b78897759d05.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/4c5673686ee98194df35b78897759d05.png)
 
 
 
@@ -841,7 +841,7 @@ NIO 非阻塞 网络编程相关的(Selector、SelectionKey、ServerScoketChanne
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5f7087c33cffaf9693fc9a1ce1fa045f38731858/2021/11/01/5ab85f05ff675f6cb1f771aebf818483.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/5ab85f05ff675f6cb1f771aebf818483.png)
 
 
 
@@ -1067,7 +1067,7 @@ public static final int OP_ACCEPT = 1 << 4;
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2aa3f948c99353084ef01cf8fef028907514772e/2021/11/01/6472933473279fa62e491cbb7a6c3ab6.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/6472933473279fa62e491cbb7a6c3ab6.png)
 
 
 
@@ -1079,7 +1079,7 @@ ServerSocketChannel 在服务器端监听新的客户端 Socket 连接：
 
 **相关方法如下：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@0ae8ff7f6eaf01e2e9a90aa52ac8844e5b047626/2021/11/01/37709676e8cc96a27db47b04c8315836.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/37709676e8cc96a27db47b04c8315836.png)
 
 
 
@@ -1105,7 +1105,7 @@ SocketChannel，网络 IO 通道，具体负责进行读写操作。NIO 把缓�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@4cc989510bbf8a7886111db008dd150a2fc1c155/2021/11/01/2fef4113ca684419fc1e24d2c709cf0d.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/2fef4113ca684419fc1e24d2c709cf0d.png)
 
 
 
@@ -1129,7 +1129,7 @@ SocketChannel，网络 IO 通道，具体负责进行读写操作。NIO 把缓�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@95d954cd364b6a0e9d5d865432c51c5c81351805/2021/11/01/0354086eb4eaebfa8df32c11ccba6549.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/0354086eb4eaebfa8df32c11ccba6549.png)
 
 
 
@@ -1427,7 +1427,7 @@ public class GroupChatClient {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@633168d7e88310efab160398cff0b1826eeeb9a6/2021/11/01/d7309b13e0381891ae723363c75eb2f6.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/d7309b13e0381891ae723363c75eb2f6.png)
 
 
 
@@ -1445,7 +1445,7 @@ mmap 通过内存映射，将文件映射到内核缓冲区，同时，用户空
 
 **mmap：三次拷贝，四次切换**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2ba096b799bada5ac3f062e6b26cabd55abe8dbf/2021/11/01/b942f876a7a9fc388ee966350ed7f10a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/b942f876a7a9fc388ee966350ed7f10a.png)
 
 
 
@@ -1459,7 +1459,7 @@ Linux 2.1 版本 提供了 sendFile 函数，其基本原理如下：数据根�
 
 **sendfile linux2.1：三次拷贝，两次切换**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@831bdff8cabf0c3bbabde49cd7a48a8ebb6c5677/2021/11/01/b1eca553a2c7639b4befcd02ac29ee64.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/b1eca553a2c7639b4befcd02ac29ee64.png)
 
 
 
@@ -1475,7 +1475,7 @@ Linux 在 2.4 版本中，做了一些修改，避免了从内核缓冲区拷贝
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@00280216cf5d9fd525821c0e37016414b5a57cac/2021/11/01/a447e15e78bd38f77a1acce122c7349a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/a447e15e78bd38f77a1acce122c7349a.png)
 
 
 
@@ -1696,7 +1696,7 @@ public class NewIOClient {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@f74d4d34d3ffb0eb10516e7984647beeefbfb869/2021/11/01/388c7b3ded2b5cf3c558468d93418c4f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/388c7b3ded2b5cf3c558468d93418c4f.png)
 
 
 
@@ -1828,7 +1828,7 @@ Netty 对 JDK 自带的 NIO 的 API 进行了封装，解决了上述问题。
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@65329d57f408696f94eaabd3bbdd13b60a98820f/2021/11/01/b555657d6182d01a24c72d485706eaee.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/b555657d6182d01a24c72d485706eaee.png)
 
 
 
@@ -1881,7 +1881,7 @@ Netty 对 JDK 自带的 NIO 的 API 进行了封装，解决了上述问题。
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@4f9372fda6f1da899af2f8d1e921fa48950c6bba/2021/11/01/5af093743efec5b2a030e28f6013354d.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/5af093743efec5b2a030e28f6013354d.png)
 
 
 
@@ -1914,7 +1914,7 @@ Netty 对 JDK 自带的 NIO 的 API 进行了封装，解决了上述问题。
 
 ### 工作原理图
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@3209f181c320fbe2bc4e52d7291af19aa252c2a3/2021/11/01/282c3b2196244bb4478f7fdb132dac75.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/282c3b2196244bb4478f7fdb132dac75.png)
 
 
 
@@ -1955,7 +1955,7 @@ Netty 对 JDK 自带的 NIO 的 API 进行了封装，解决了上述问题。
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@bf43e13f2f3042df6864500c145cd8650c2bdde3/2021/11/01/a35c5f36aa50f14ef83487043737448f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/a35c5f36aa50f14ef83487043737448f.png)
 
 
 
@@ -1993,7 +1993,7 @@ Netty 对 JDK 自带的 NIO 的 API 进行了封装，解决了上述问题。
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@c4eed51c6d7c1143c5988159e9171a3957d04686/2021/11/01/423584d652205c806af1512d1db8fb8a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/423584d652205c806af1512d1db8fb8a.png)
 
 
 
@@ -2058,7 +2058,7 @@ Netty 主要基于主从 Reactors 多线程模型（如图）做了一定的改�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@957016a95afd88b5f0885bf868a0c06f1824c4f4/2021/11/01/e65c0e66c4f66b80a438575678e9af0a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/e65c0e66c4f66b80a438575678e9af0a.png)
 
 
 
@@ -2082,7 +2082,7 @@ Netty 主要基于主从 Reactors 多线程模型（如图）做了一定的改�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e396a1f8540672ee9a932c0eb79faccff4558b30/2021/11/01/f1dca1ed6258f5c80ac9c3e7fa7ff4be.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/f1dca1ed6258f5c80ac9c3e7fa7ff4be.png)
 
 
 
@@ -2096,7 +2096,7 @@ Netty 主要基于主从 Reactors 多线程模型（如图）做了一定的改�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@835064609a79d598acfd1354c69eb890ca19b53e/2021/11/01/65fc294793dbb494213b18bf361d9628.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/65fc294793dbb494213b18bf361d9628.png)
 
 
 
@@ -2584,7 +2584,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@87e38aa5f5e8e570067efcc9688b51446d0c2309/2021/11/01/6122e7d1e6dca277fbd6f2fd8836a09c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/6122e7d1e6dca277fbd6f2fd8836a09c.png)
 
 
 
@@ -2867,7 +2867,7 @@ public ChannelFuture connect(String inetHost, int inetPort)  该方法用于客�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@56aa8c1d0f9d824c82f6ecd6e3491ff90ea37918/2021/11/01/caae81dd5fe2a773860bfed5a174e882.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/caae81dd5fe2a773860bfed5a174e882.png)
 
 
 
@@ -2877,7 +2877,7 @@ public ChannelFuture connect(String inetHost, int inetPort)  该方法用于客�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@9b5c45332df685db47b12a9eaa9a60bc366ff4f8/2021/11/01/99b3615a5c166a13c45eb985f41db035.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/99b3615a5c166a13c45eb985f41db035.png)
 
 
 
@@ -2897,7 +2897,7 @@ public ChannelFuture connect(String inetHost, int inetPort)  该方法用于客�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@f196b01211998238972f4274b1edf8fc6f1ffc9f/2021/11/01/37e494f98a2357ae942d01e999b6ef44.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/37e494f98a2357ae942d01e999b6ef44.png)
 
 
 
@@ -2919,7 +2919,7 @@ public ChannelFuture connect(String inetHost, int inetPort)  该方法用于客�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@e904278d6098950efc4af78c5e27075662180670/2021/11/01/9391bb54c078ee9dde83cc044d8bc688.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/9391bb54c078ee9dde83cc044d8bc688.png)
 
 
 
@@ -2934,7 +2934,7 @@ public ChannelFuture connect(String inetHost, int inetPort)  该方法用于客�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@f7caeca8c4d0875e3f7979be7e5535de27023ee1/2021/11/01/595fbd2e8cffcb7534e659555a26f680.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/595fbd2e8cffcb7534e659555a26f680.png)
 
 
 
@@ -2953,7 +2953,7 @@ public ChannelFuture connect(String inetHost, int inetPort)  该方法用于客�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@59ec8223a6bf9e9366d8737c30ab06167e4cd7c3/2021/11/01/b9d6753e2d7d140232f9792f57ff5b92.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/b9d6753e2d7d140232f9792f57ff5b92.png)
 
 
 
@@ -2974,7 +2974,7 @@ public ChannelFuture connect(String inetHost, int inetPort)  该方法用于客�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@a3938038af3633f107cedd4c2deebb5fae996875/2021/11/01/5158af6e9869485c39526355013f8310.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/5158af6e9869485c39526355013f8310.png)
 
 
 
@@ -3064,7 +3064,7 @@ public class NettyByteBuf02 {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@6653ed676d045ab2e04d121f0b4d407f00e76da1/2021/11/01/a24d2105be9922f51571a9899b4a003a.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/a24d2105be9922f51571a9899b4a003a.png)
 
 
 
@@ -3449,7 +3449,7 @@ public class MyServerHandler extends ChannelInboundHandlerAdapter {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@323561ad8b599e2f5f1169495763f89d11a577ad/2021/11/01/c28177e26be7cc9da211d1d0dbab002c.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/c28177e26be7cc9da211d1d0dbab002c.png)
 
 
 
@@ -3703,7 +3703,7 @@ public class MyTextWebSocketFrameHandler extends SimpleChannelInboundHandler<Tex
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@0e4ccb6a1b12fd12db3070b856325e98c3f67b81/2021/11/01/d7294297e57fbcc9fd317c19ec4a6767.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/01/d7294297e57fbcc9fd317c19ec4a6767.png)
 
 
 
@@ -4178,7 +4178,7 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter {
 
 ### 关系继承图
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@dbce4c7739638bc24cc06ffe4e3f846fcb82080d/2021/11/02/01ea6a9f4251a467bebb91730c623440.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/01ea6a9f4251a467bebb91730c623440.png)
 
 
 
@@ -4189,7 +4189,7 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@854e2aff88a08eaf96da5b6c21e48a4eec4683d6/2021/11/02/bd2e3d89a2a5c9ac0febeade256dd1e8.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/bd2e3d89a2a5c9ac0febeade256dd1e8.png)
 
 
 
@@ -4203,7 +4203,7 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@7230612cd36d9d905b969fe7407c64c1459cb73e/2021/11/02/da1599a4ded7cae000bbadda6d1358af.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/da1599a4ded7cae000bbadda6d1358af.png)
 
 
 
@@ -4448,7 +4448,7 @@ public class MyByteToLongDecoder2 extends ReplayingDecoder<Void> { // Void 代�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@376ac81b4e859790c4ec5a2ae3c4988c4fe84435/2021/11/02/e4cd29c6c3b5c31b1fdfcfd288e5c12f.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/e4cd29c6c3b5c31b1fdfcfd288e5c12f.png)
 
 
 
@@ -4528,7 +4528,7 @@ log4j.appender.stdout.layout.ConversionPattern=[%p] %C{1} - %m%n
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@bcbde0a8fdc7dd88aacf4a5c5c61c69f4b9144b3/2021/11/02/b1ae04cfd60c4173f5cbfa607168a406.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/b1ae04cfd60c4173f5cbfa607168a406.png)
 
 
 
@@ -4649,7 +4649,7 @@ public class MyClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@44cab141a7622b1491a6a7d6a2261f9f9de39cb5/2021/11/02/132713db68bc065c207912e0c855db16.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/132713db68bc065c207912e0c855db16.png)
 
 
 
@@ -4891,7 +4891,7 @@ public class MyClientHandler extends SimpleChannelInboundHandler<MessageProtocol
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@15a7f7a4872d52f12b8d7c1c55032a9434282218/2021/11/02/f2ec3adf77275539ca1b81bab951f2da.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/f2ec3adf77275539ca1b81bab951f2da.png)
 
 
 
@@ -4912,7 +4912,7 @@ public class MyClientHandler extends SimpleChannelInboundHandler<MessageProtocol
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@fbd55b2d7a0025b626168d7f79475fa2cf103f45/2021/11/02/606381a96a916fd83c796f0905c1002d.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/606381a96a916fd83c796f0905c1002d.png)
 
 
 
@@ -4992,7 +4992,7 @@ ChannelHandler 的作用就是处理 IO 事件或拦截 IO 事件，并将其**�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@5b738e0afaebb59cf6e1dfa6f16e105896184b16/2021/11/02/1050ce24498ae2acddaa96d7b5a3d14d.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/1050ce24498ae2acddaa96d7b5a3d14d.png)
 
 
 
@@ -5026,7 +5026,7 @@ Netty 提供了 IdleStateHandler ，ReadTimeoutHandler，WriteTimeoutHandler 三
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@d84049983dae5d1594177a008d268d49069790bc/2021/11/02/6955953b1322d137a874992f6fa99a44.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/6955953b1322d137a874992f6fa99a44.png)
 
 
 
@@ -5055,7 +5055,7 @@ Netty 提供了 IdleStateHandler ，ReadTimeoutHandler，WriteTimeoutHandler 三
 
 ### 示意图
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@74c274f46b86a3a47cf5b6282c1d61709ffefd7a/2021/11/02/bf96f8d22eb8d6ad8580fa1aaf30b524.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/bf96f8d22eb8d6ad8580fa1aaf30b524.png)
 
 
 
@@ -5198,7 +5198,7 @@ b.group(bossGroup, workerGroup)
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@06497d709d8ffd1f2320a97fbee37b4ce57b5049/2021/11/02/876c4573ae04b62337d097e492293bf0.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/876c4573ae04b62337d097e492293bf0.png)
 
 
 
@@ -5208,7 +5208,7 @@ b.group(bossGroup, workerGroup)
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@410464c89b196822d87d301b1dcde2f59fad79e9/2021/11/02/61d239ad2734fcc7db36472446dc2749.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/61d239ad2734fcc7db36472446dc2749.png)
 
 
 
@@ -5254,7 +5254,7 @@ RPC 的目标就是将 2-8 这些步骤都封装起来，用户无需关心这�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2285b1db006dc7f95e873b9c16e5edeeea0d56a1/2021/11/02/b12f41f724594ce202cdcab7f8fa3c70.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/b12f41f724594ce202cdcab7f8fa3c70.png)
 
 
 
@@ -5262,7 +5262,7 @@ RPC 的目标就是将 2-8 这些步骤都封装起来，用户无需关心这�
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@204b4ecad617e90f6c323d9ffd183de35d786b80/2021/11/02/c40f83aea610be4b96a3cd70d459ee35.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/11/02/c40f83aea610be4b96a3cd70d459ee35.png)
 
 
 

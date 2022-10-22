@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 25333
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@c200773d85f5eb15e2deb2c05823538e4c5f2fe8/2021/03/21/2efbc4cb93b487fd05b4faaa113a1b7d.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/2efbc4cb93b487fd05b4faaa113a1b7d.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@c200773d85f5eb15e2deb2c05823538e4c5f2fe8/2021/03/21/2efbc4cb93b487fd05b4faaa113a1b7d.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/2efbc4cb93b487fd05b4faaa113a1b7d.png
 categories:
   - LeetCode刷题
 tags:
@@ -47,7 +47,7 @@ updated:
 
 **如下方简图：**
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@182b2233ca636988b9d269312b590afb555e7d0c/2021/03/19/c593a61eccabce51a8d7688741514caa.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/19/c593a61eccabce51a8d7688741514caa.png)
 
 
 
@@ -178,7 +178,7 @@ public:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/08/03/83914c72b2707151b8a59258ab3aecc1.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/03/83914c72b2707151b8a59258ab3aecc1.png)
 
 
 

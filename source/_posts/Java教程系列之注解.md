@@ -3,8 +3,8 @@ title: Java教程系列之注解
 author: Mr.Niu
 toc: true
 abbrlink: 35258
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_39.jpg'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/images/img/ACG.GY_39.jpg'
+cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_39.jpg'
+top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_39.jpg'
 categories:
   - Java教程
 tags:

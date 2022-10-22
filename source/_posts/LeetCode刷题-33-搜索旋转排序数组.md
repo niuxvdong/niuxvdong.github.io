@@ -3,8 +3,8 @@ title: LeetCode刷题-33.搜索旋转排序数组
 author: Mr.Niu
 toc: true
 abbrlink: 51598
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@952357b1f7ce307a9753f30b8709af5f00fcee8e/2021/02/06/eae39252d9715e4ec7a4557d355e2eb7.png'
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@952357b1f7ce307a9753f30b8709af5f00fcee8e/2021/02/06/eae39252d9715e4ec7a4557d355e2eb7.png'
+top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/eae39252d9715e4ec7a4557d355e2eb7.png'
+cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/eae39252d9715e4ec7a4557d355e2eb7.png'
 categories: LeetCode刷题
 tags:
   - 二分
@@ -74,7 +74,7 @@ updated:
 
 
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/06/27/e96807de64211b486698338e0dde4fcd.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/27/e96807de64211b486698338e0dde4fcd.png)
 
 
 

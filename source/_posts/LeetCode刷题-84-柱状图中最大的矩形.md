@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 64100
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/25/72c15b5bb85e9a5323409fd48b3c6de5.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/25/72c15b5bb85e9a5323409fd48b3c6de5.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/25/72c15b5bb85e9a5323409fd48b3c6de5.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/25/72c15b5bb85e9a5323409fd48b3c6de5.png
 categories: LeetCode刷题
 tags:
   - 栈
@@ -33,7 +33,7 @@ updated:
 
 > 第二次遇到单调栈了，不太好理解的一个算法和思路！
 >
-> 和[LeetCode刷题-42.接雨水](https://niuxvdong.top/posts/57751.html)很是类似！
+> 和[LeetCode刷题-42.接雨水](https://www.itnxd.cn/posts/57751.html)很是类似！
 
 
 

@@ -3,8 +3,8 @@ title: Java教程系列之Java核心类
 author: Mr.Niu
 toc: true
 abbrlink: 22799
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@11228a65b2c18cadaa52b67e37eb1c63c8ca6362/2021/02/06/dbce4ec19a17c8cd73e7695dbbbbd2d0.png'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@11228a65b2c18cadaa52b67e37eb1c63c8ca6362/2021/02/06/dbce4ec19a17c8cd73e7695dbbbbd2d0.png'
+cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/dbce4ec19a17c8cd73e7695dbbbbd2d0.png'
+top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/dbce4ec19a17c8cd73e7695dbbbbd2d0.png'
 categories:
   - Java教程
 tags:
@@ -199,7 +199,7 @@ s.replace("ll", "~~"); // "he~~o"，所有子串"ll"被替换为"~~"
 
 - 使用正则表达式：
 
-> [参考我之前在JavaScript教程的RegExp：点击这里!](https://niuxvdong.top/posts/15769.html)
+> [参考我之前在JavaScript教程的RegExp：点击这里!](https://www.itnxd.cn/posts/15769.html)
 >
 > 当然语法不太相同，后面的java教程会讲到Re！
 

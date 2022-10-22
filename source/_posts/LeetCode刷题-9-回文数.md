@@ -3,8 +3,8 @@ title: LeetCode刷题-9.回文数
 author: Mr.Niu
 toc: true
 abbrlink: 22431
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@66663a6014dc5321e6e05b37ca6ed479d8f4fc45/2021/02/06/2b7168dde2a4484253dacbd3dac53d12.png'
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@66663a6014dc5321e6e05b37ca6ed479d8f4fc45/2021/02/06/2b7168dde2a4484253dacbd3dac53d12.png'
+top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/2b7168dde2a4484253dacbd3dac53d12.png'
+cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/2b7168dde2a4484253dacbd3dac53d12.png'
 categories: LeetCode刷题
 tags:
   - 回文数

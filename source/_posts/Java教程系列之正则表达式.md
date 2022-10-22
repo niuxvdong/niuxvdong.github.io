@@ -3,8 +3,8 @@ title: Java教程系列之正则表达式
 author: Mr.Niu
 toc: true
 abbrlink: 53926
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@25fe3876042973d1968601ddec4adf8b598d7334/2021/02/06/1cd30885cbb41802e41b1e6d976cb2cb.png'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@25fe3876042973d1968601ddec4adf8b598d7334/2021/02/06/1cd30885cbb41802e41b1e6d976cb2cb.png'
+cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/1cd30885cbb41802e41b1e6d976cb2cb.png'
+top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/1cd30885cbb41802e41b1e6d976cb2cb.png'
 categories:
   - Java教程
 tags:
@@ -25,7 +25,7 @@ updated:
 
 
 
-> [由于学JavaScript时就已经学过了正则的规则，所以本文只介绍与其不同支出，大概的一个框架及用法！](https://niuxvdong.top/posts/15769.html)
+> [由于学JavaScript时就已经学过了正则的规则，所以本文只介绍与其不同支出，大概的一个框架及用法！](https://www.itnxd.cn/posts/15769.html)
 
 
 

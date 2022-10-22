@@ -3,8 +3,8 @@ title: AcWing-112.雷达设备
 author: Mr.Niu
 toc: true
 abbrlink: 27200
-cover: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@34dabb7f36c7e10af6f9cd383f5884a83fcbf94e/2021/02/06/9fd846795f34be8edc6238ce1ef30584.png'
-top_img: 'https://cdn.jsdelivr.net/gh/niuxvdong/pic@34dabb7f36c7e10af6f9cd383f5884a83fcbf94e/2021/02/06/9fd846795f34be8edc6238ce1ef30584.png'
+cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/9fd846795f34be8edc6238ce1ef30584.png'
+top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/9fd846795f34be8edc6238ce1ef30584.png'
 categories:
   - AcWing
 tags:
@@ -101,7 +101,7 @@ updated:
 
 如下图：
 
-![](https://cdn.jsdelivr.net/gh/niuxvdong/pic@2e24aaf3c4458f5989f59ed62888a29e5753ca61/2021/02/06/b5d73de5aa375610c1f08b2755af1975.png)
+![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/b5d73de5aa375610c1f08b2755af1975.png)
 
 
 

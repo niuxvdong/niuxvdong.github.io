@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 15108
 top_img: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/07/dbc10f616e914a13e8bf45ac07a7f34f.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/07/dbc10f616e914a13e8bf45ac07a7f34f.png
 cover: >-
-  https://cdn.jsdelivr.net/gh/niuxvdong/pic@latest/2020/07/07/dbc10f616e914a13e8bf45ac07a7f34f.png
+  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/07/dbc10f616e914a13e8bf45ac07a7f34f.png
 categories: LeetCode刷题
 tags:
   - 哈希表
