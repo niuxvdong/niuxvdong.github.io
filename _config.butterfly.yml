@@ -385,7 +385,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: itnxd-8g1z2i760e99f516
+  envId: https://twikoo-nxd.vercel.app/
   region:
   visitor: true
   option:
@@ -448,7 +448,7 @@ footer:
   owner:
     enable: true
     since: 2020
-  custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY  <a target="_blank" rel="external nofollow" href="https://vercel.com/"><b>Vercel</b></a> && <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a><br><img style="vertical-align:middle" src="https://cdn.jsdelivr.net/gh/lzyblog/image@4b122354dee27f3056fd3a7fc6a43dbf68cebf33/2020/11/16/025e5329f3592dfa03a13c5365323ba1.png" alt=""> <a href="https://www.beian.miit.gov.cn/"><b>晋ICP备19005025号-2</b></a>
+  custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY  <a target="_blank" rel="external nofollow" href="https://vercel.com/"><b>Vercel</b></a> && <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a><br><img style="vertical-align:middle" src="https://gitcode.net/qq_43590403/img/-/raw/master/pictures/2022/10/22_19_11_15_202210221911223.png" alt=""> <a href="https://www.beian.miit.gov.cn/"><b>晋ICP备19005025号-2</b></a>
   copyright: true # Copyright of theme and framework
   ICP: # Chinese ICP License
     enable: true
