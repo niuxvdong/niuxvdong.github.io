@@ -331,14 +331,14 @@
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://twikoo-nxd.vercel.app/',
+      envId: 'https://twikoo.itnxd.cn/',
       region: ''
     }, null))
   }
 
   const getCount = () => {
     twikoo.getCommentsCount({
-      envId: 'https://twikoo-nxd.vercel.app/',
+      envId: 'https://twikoo.itnxd.cn/',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
@@ -387,7 +387,7 @@
   const getComment = () => {
     const runTwikoo = () => {
       twikoo.getRecentComments({
-        envId: 'https://twikoo-nxd.vercel.app/',
+        envId: 'https://twikoo.itnxd.cn/',
         region: '',
         pageSize: 6,
         includeReply: true

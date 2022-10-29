@@ -477,14 +477,14 @@ json 中的 key 访问就跟访问对象的属性一样： <code>json 对象.key
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://twikoo-nxd.vercel.app/',
+      envId: 'https://twikoo.itnxd.cn/',
       region: ''
     }, null))
   }
 
   const getCount = () => {
     twikoo.getCommentsCount({
-      envId: 'https://twikoo-nxd.vercel.app/',
+      envId: 'https://twikoo.itnxd.cn/',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
@@ -533,7 +533,7 @@ json 中的 key 访问就跟访问对象的属性一样： <code>json 对象.key
   const getComment = () => {
     const runTwikoo = () => {
       twikoo.getRecentComments({
-        envId: 'https://twikoo-nxd.vercel.app/',
+        envId: 'https://twikoo.itnxd.cn/',
         region: '',
         pageSize: 6,
         includeReply: true
