@@ -5,9 +5,9 @@
   <subtitle>每天进步一点点!</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://www.itnxd.cn/"/>
+  <link href="https://itnxd.eu.org/"/>
   <updated>2025-01-26T10:39:16.834Z</updated>
-  <id>https://www.itnxd.cn/</id>
+  <id>https://itnxd.eu.org/</id>
   
   <author>
     <name>ITNXD</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>JVM学习总结</title>
-    <link href="https://www.itnxd.cn/posts/43777.html"/>
-    <id>https://www.itnxd.cn/posts/43777.html</id>
+    <link href="https://itnxd.eu.org/posts/43777.html"/>
+    <id>https://itnxd.eu.org/posts/43777.html</id>
     <published>2022-01-14T05:31:39.000Z</published>
     <updated>2025-01-26T10:39:16.834Z</updated>
     
@@ -37,19 +37,19 @@
     </summary>
     
     
-      <category term="JVM" scheme="https://www.itnxd.cn/categories/JVM/"/>
+      <category term="JVM" scheme="https://itnxd.eu.org/categories/JVM/"/>
     
     
-      <category term="JVM" scheme="https://www.itnxd.cn/tags/JVM/"/>
+      <category term="JVM" scheme="https://itnxd.eu.org/tags/JVM/"/>
     
   </entry>
   
   <entry>
     <title>计算机操作系统 - 详细版</title>
-    <link href="https://www.itnxd.cn/posts/40062.html"/>
-    <id>https://www.itnxd.cn/posts/40062.html</id>
+    <link href="https://itnxd.eu.org/posts/40062.html"/>
+    <id>https://itnxd.eu.org/posts/40062.html</id>
     <published>2021-12-04T14:07:36.000Z</published>
-    <updated>2025-01-26T10:39:16.606Z</updated>
+    <updated>2025-01-26T11:23:16.363Z</updated>
     
     <summary type="html">
     
@@ -65,17 +65,17 @@
     </summary>
     
     
-      <category term="计算机基础" scheme="https://www.itnxd.cn/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+      <category term="计算机基础" scheme="https://itnxd.eu.org/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="操作系统" scheme="https://www.itnxd.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+      <category term="操作系统" scheme="https://itnxd.eu.org/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
   <entry>
     <title>计算机网络</title>
-    <link href="https://www.itnxd.cn/posts/28758.html"/>
-    <id>https://www.itnxd.cn/posts/28758.html</id>
+    <link href="https://itnxd.eu.org/posts/28758.html"/>
+    <id>https://itnxd.eu.org/posts/28758.html</id>
     <published>2021-11-29T09:16:40.000Z</published>
     <updated>2025-01-26T10:39:16.583Z</updated>
     
@@ -93,17 +93,17 @@
     </summary>
     
     
-      <category term="计算机基础" scheme="https://www.itnxd.cn/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+      <category term="计算机基础" scheme="https://itnxd.eu.org/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="计算机网络" scheme="https://www.itnxd.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+      <category term="计算机网络" scheme="https://itnxd.eu.org/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
   <entry>
     <title>计算机操作系统</title>
-    <link href="https://www.itnxd.cn/posts/8398.html"/>
-    <id>https://www.itnxd.cn/posts/8398.html</id>
+    <link href="https://itnxd.eu.org/posts/8398.html"/>
+    <id>https://itnxd.eu.org/posts/8398.html</id>
     <published>2021-11-21T13:16:17.000Z</published>
     <updated>2025-01-26T10:39:16.602Z</updated>
     
@@ -121,19 +121,19 @@
     </summary>
     
     
-      <category term="计算机基础" scheme="https://www.itnxd.cn/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+      <category term="计算机基础" scheme="https://itnxd.eu.org/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="操作系统" scheme="https://www.itnxd.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+      <category term="操作系统" scheme="https://itnxd.eu.org/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
   <entry>
     <title>在线教育-谷粒学苑项目总结</title>
-    <link href="https://www.itnxd.cn/posts/16013.html"/>
-    <id>https://www.itnxd.cn/posts/16013.html</id>
+    <link href="https://itnxd.eu.org/posts/16013.html"/>
+    <id>https://itnxd.eu.org/posts/16013.html</id>
     <published>2021-11-21T02:08:44.000Z</published>
-    <updated>2025-01-26T10:39:16.607Z</updated>
+    <updated>2025-01-26T11:23:16.363Z</updated>
     
     <summary type="html">
     
@@ -149,19 +149,19 @@
     </summary>
     
     
-      <category term="项目总结" scheme="https://www.itnxd.cn/categories/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
+      <category term="项目总结" scheme="https://itnxd.eu.org/categories/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="项目" scheme="https://www.itnxd.cn/tags/%E9%A1%B9%E7%9B%AE/"/>
+      <category term="项目" scheme="https://itnxd.eu.org/tags/%E9%A1%B9%E7%9B%AE/"/>
     
   </entry>
   
   <entry>
     <title>前端知识点总结</title>
-    <link href="https://www.itnxd.cn/posts/45102.html"/>
-    <id>https://www.itnxd.cn/posts/45102.html</id>
+    <link href="https://itnxd.eu.org/posts/45102.html"/>
+    <id>https://itnxd.eu.org/posts/45102.html</id>
     <published>2021-11-20T09:33:21.000Z</published>
-    <updated>2025-01-26T10:39:16.622Z</updated>
+    <updated>2025-01-26T11:23:16.339Z</updated>
     
     <summary type="html">
     
@@ -178,27 +178,27 @@
     </summary>
     
     
-      <category term="前端知识" scheme="https://www.itnxd.cn/categories/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/"/>
+      <category term="前端知识" scheme="https://itnxd.eu.org/categories/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/"/>
     
     
-      <category term="es6" scheme="https://www.itnxd.cn/tags/es6/"/>
+      <category term="es6" scheme="https://itnxd.eu.org/tags/es6/"/>
     
-      <category term="vue" scheme="https://www.itnxd.cn/tags/vue/"/>
+      <category term="vue" scheme="https://itnxd.eu.org/tags/vue/"/>
     
-      <category term="axios" scheme="https://www.itnxd.cn/tags/axios/"/>
+      <category term="axios" scheme="https://itnxd.eu.org/tags/axios/"/>
     
-      <category term="webpack" scheme="https://www.itnxd.cn/tags/webpack/"/>
+      <category term="webpack" scheme="https://itnxd.eu.org/tags/webpack/"/>
     
-      <category term="babel" scheme="https://www.itnxd.cn/tags/babel/"/>
+      <category term="babel" scheme="https://itnxd.eu.org/tags/babel/"/>
     
-      <category term="npm" scheme="https://www.itnxd.cn/tags/npm/"/>
+      <category term="npm" scheme="https://itnxd.eu.org/tags/npm/"/>
     
   </entry>
   
   <entry>
     <title>基于异步的、事件驱动的网络应用程序框架、快速开发高性能、高可靠性的网络服务器和客户端程序Netty介绍</title>
-    <link href="https://www.itnxd.cn/posts/44402.html"/>
-    <id>https://www.itnxd.cn/posts/44402.html</id>
+    <link href="https://itnxd.eu.org/posts/44402.html"/>
+    <id>https://itnxd.eu.org/posts/44402.html</id>
     <published>2021-11-01T06:38:06.000Z</published>
     <updated>2025-01-26T10:39:16.670Z</updated>
     
@@ -216,21 +216,21 @@
     </summary>
     
     
-      <category term="网络编程" scheme="https://www.itnxd.cn/categories/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
+      <category term="网络编程" scheme="https://itnxd.eu.org/categories/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
     
     
-      <category term="Netty" scheme="https://www.itnxd.cn/tags/Netty/"/>
+      <category term="Netty" scheme="https://itnxd.eu.org/tags/Netty/"/>
     
-      <category term="NIO" scheme="https://www.itnxd.cn/tags/NIO/"/>
+      <category term="NIO" scheme="https://itnxd.eu.org/tags/NIO/"/>
     
   </entry>
   
   <entry>
     <title>处理线程的工具包、JUC并发编程</title>
-    <link href="https://www.itnxd.cn/posts/63819.html"/>
-    <id>https://www.itnxd.cn/posts/63819.html</id>
+    <link href="https://itnxd.eu.org/posts/63819.html"/>
+    <id>https://itnxd.eu.org/posts/63819.html</id>
     <published>2021-10-24T08:40:49.000Z</published>
-    <updated>2025-01-26T10:39:16.829Z</updated>
+    <updated>2025-01-26T11:23:16.364Z</updated>
     
     <summary type="html">
     
@@ -247,19 +247,19 @@
     </summary>
     
     
-      <category term="并发编程" scheme="https://www.itnxd.cn/categories/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/"/>
+      <category term="并发编程" scheme="https://itnxd.eu.org/categories/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/"/>
     
     
-      <category term="JUC" scheme="https://www.itnxd.cn/tags/JUC/"/>
+      <category term="JUC" scheme="https://itnxd.eu.org/tags/JUC/"/>
     
   </entry>
   
   <entry>
     <title>分布式微服务架构的一站式解决方案、多种微服务架构落地技术的集合体、俗称微服务全家桶的 SpringCloud</title>
-    <link href="https://www.itnxd.cn/posts/29680.html"/>
-    <id>https://www.itnxd.cn/posts/29680.html</id>
+    <link href="https://itnxd.eu.org/posts/29680.html"/>
+    <id>https://itnxd.eu.org/posts/29680.html</id>
     <published>2021-10-14T01:42:54.000Z</published>
-    <updated>2025-01-26T10:39:16.669Z</updated>
+    <updated>2025-01-26T11:25:46.411Z</updated>
     
     <summary type="html">
     
@@ -275,19 +275,19 @@
     </summary>
     
     
-      <category term="分布式微服务" scheme="https://www.itnxd.cn/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+      <category term="分布式微服务" scheme="https://itnxd.eu.org/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
     
     
-      <category term="SpringCloud" scheme="https://www.itnxd.cn/tags/SpringCloud/"/>
+      <category term="SpringCloud" scheme="https://itnxd.eu.org/tags/SpringCloud/"/>
     
   </entry>
   
   <entry>
     <title>进一步封装Spring、为简化Spring开发而生的SpringBoot框架</title>
-    <link href="https://www.itnxd.cn/posts/12809.html"/>
-    <id>https://www.itnxd.cn/posts/12809.html</id>
+    <link href="https://itnxd.eu.org/posts/12809.html"/>
+    <id>https://itnxd.eu.org/posts/12809.html</id>
     <published>2021-10-06T08:14:09.000Z</published>
-    <updated>2025-01-26T10:39:16.559Z</updated>
+    <updated>2025-01-26T11:23:16.349Z</updated>
     
     <summary type="html">
     
@@ -303,17 +303,17 @@
     </summary>
     
     
-      <category term="开发框架" scheme="https://www.itnxd.cn/categories/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/"/>
+      <category term="开发框架" scheme="https://itnxd.eu.org/categories/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/"/>
     
     
-      <category term="SpringBoot" scheme="https://www.itnxd.cn/tags/SpringBoot/"/>
+      <category term="SpringBoot" scheme="https://itnxd.eu.org/tags/SpringBoot/"/>
     
   </entry>
   
   <entry>
     <title>高级消息队列、开源消息代理软件、面向消息的中间件 RabbitMQ 介绍</title>
-    <link href="https://www.itnxd.cn/posts/49375.html"/>
-    <id>https://www.itnxd.cn/posts/49375.html</id>
+    <link href="https://itnxd.eu.org/posts/49375.html"/>
+    <id>https://itnxd.eu.org/posts/49375.html</id>
     <published>2021-10-04T03:27:51.000Z</published>
     <updated>2025-01-26T10:39:16.447Z</updated>
     
@@ -331,21 +331,21 @@
     </summary>
     
     
-      <category term="中间件" scheme="https://www.itnxd.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+      <category term="中间件" scheme="https://itnxd.eu.org/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
     
     
-      <category term="RabbitMQ" scheme="https://www.itnxd.cn/tags/RabbitMQ/"/>
+      <category term="RabbitMQ" scheme="https://itnxd.eu.org/tags/RabbitMQ/"/>
     
-      <category term="消息队列" scheme="https://www.itnxd.cn/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"/>
+      <category term="消息队列" scheme="https://itnxd.eu.org/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"/>
     
   </entry>
   
   <entry>
     <title>高性能、轻量级开源分布式RPC服务框架Dubbo使用介绍</title>
-    <link href="https://www.itnxd.cn/posts/23425.html"/>
-    <id>https://www.itnxd.cn/posts/23425.html</id>
+    <link href="https://itnxd.eu.org/posts/23425.html"/>
+    <id>https://itnxd.eu.org/posts/23425.html</id>
     <published>2021-10-01T07:48:41.000Z</published>
-    <updated>2025-01-26T10:39:16.590Z</updated>
+    <updated>2025-01-26T11:23:16.346Z</updated>
     
     <summary type="html">
     
@@ -361,17 +361,17 @@
     </summary>
     
     
-      <category term="分布式微服务" scheme="https://www.itnxd.cn/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+      <category term="分布式微服务" scheme="https://itnxd.eu.org/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
     
     
-      <category term="Dubbo" scheme="https://www.itnxd.cn/tags/Dubbo/"/>
+      <category term="Dubbo" scheme="https://itnxd.eu.org/tags/Dubbo/"/>
     
   </entry>
   
   <entry>
     <title>互联网分布式注册中心Zookeeper介绍</title>
-    <link href="https://www.itnxd.cn/posts/34316.html"/>
-    <id>https://www.itnxd.cn/posts/34316.html</id>
+    <link href="https://itnxd.eu.org/posts/34316.html"/>
+    <id>https://itnxd.eu.org/posts/34316.html</id>
     <published>2021-09-28T00:59:38.000Z</published>
     <updated>2025-01-26T10:39:16.631Z</updated>
     
@@ -389,21 +389,21 @@
     </summary>
     
     
-      <category term="分布式微服务" scheme="https://www.itnxd.cn/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+      <category term="分布式微服务" scheme="https://itnxd.eu.org/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
     
     
-      <category term="Zookeeper" scheme="https://www.itnxd.cn/tags/Zookeeper/"/>
+      <category term="Zookeeper" scheme="https://itnxd.eu.org/tags/Zookeeper/"/>
     
-      <category term="注册中心" scheme="https://www.itnxd.cn/tags/%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83/"/>
+      <category term="注册中心" scheme="https://itnxd.eu.org/tags/%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83/"/>
     
-      <category term="分布式锁" scheme="https://www.itnxd.cn/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/"/>
+      <category term="分布式锁" scheme="https://itnxd.eu.org/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/"/>
     
   </entry>
   
   <entry>
     <title>Mybatis加强版MyBatis-Plus使用、为简化开发而生</title>
-    <link href="https://www.itnxd.cn/posts/5524.html"/>
-    <id>https://www.itnxd.cn/posts/5524.html</id>
+    <link href="https://itnxd.eu.org/posts/5524.html"/>
+    <id>https://itnxd.eu.org/posts/5524.html</id>
     <published>2021-09-26T09:48:32.000Z</published>
     <updated>2025-01-26T10:39:16.670Z</updated>
     
@@ -421,17 +421,17 @@
     </summary>
     
     
-      <category term="开发框架" scheme="https://www.itnxd.cn/categories/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/"/>
+      <category term="开发框架" scheme="https://itnxd.eu.org/categories/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/"/>
     
     
-      <category term="MyBatis-Plus" scheme="https://www.itnxd.cn/tags/MyBatis-Plus/"/>
+      <category term="MyBatis-Plus" scheme="https://itnxd.eu.org/tags/MyBatis-Plus/"/>
     
   </entry>
   
   <entry>
     <title>轻量应用容器框架、开源软件部署解决方案之Docker从入门到精通</title>
-    <link href="https://www.itnxd.cn/posts/8790.html"/>
-    <id>https://www.itnxd.cn/posts/8790.html</id>
+    <link href="https://itnxd.eu.org/posts/8790.html"/>
+    <id>https://itnxd.eu.org/posts/8790.html</id>
     <published>2021-09-22T01:43:29.000Z</published>
     <updated>2025-01-26T10:39:16.447Z</updated>
     
@@ -449,17 +449,17 @@
     </summary>
     
     
-      <category term="容器" scheme="https://www.itnxd.cn/categories/%E5%AE%B9%E5%99%A8/"/>
+      <category term="容器" scheme="https://itnxd.eu.org/categories/%E5%AE%B9%E5%99%A8/"/>
     
     
-      <category term="Docker" scheme="https://www.itnxd.cn/tags/Docker/"/>
+      <category term="Docker" scheme="https://itnxd.eu.org/tags/Docker/"/>
     
   </entry>
   
   <entry>
     <title>反向代理、负载均衡服务器Nginx入门到精通</title>
-    <link href="https://www.itnxd.cn/posts/16211.html"/>
-    <id>https://www.itnxd.cn/posts/16211.html</id>
+    <link href="https://itnxd.eu.org/posts/16211.html"/>
+    <id>https://itnxd.eu.org/posts/16211.html</id>
     <published>2021-09-14T02:16:39.000Z</published>
     <updated>2025-01-26T10:39:16.617Z</updated>
     
@@ -477,23 +477,23 @@
     </summary>
     
     
-      <category term="中间件" scheme="https://www.itnxd.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+      <category term="中间件" scheme="https://itnxd.eu.org/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
     
     
-      <category term="Nginx" scheme="https://www.itnxd.cn/tags/Nginx/"/>
+      <category term="Nginx" scheme="https://itnxd.eu.org/tags/Nginx/"/>
     
-      <category term="Lua" scheme="https://www.itnxd.cn/tags/Lua/"/>
+      <category term="Lua" scheme="https://itnxd.eu.org/tags/Lua/"/>
     
-      <category term="负载均衡" scheme="https://www.itnxd.cn/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/"/>
+      <category term="负载均衡" scheme="https://itnxd.eu.org/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/"/>
     
-      <category term="反向代理" scheme="https://www.itnxd.cn/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
+      <category term="反向代理" scheme="https://itnxd.eu.org/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title>MySQL数据库索引、索引失效、B树、B+树、聚簇索引、非聚簇索引</title>
-    <link href="https://www.itnxd.cn/posts/6406.html"/>
-    <id>https://www.itnxd.cn/posts/6406.html</id>
+    <link href="https://itnxd.eu.org/posts/6406.html"/>
+    <id>https://itnxd.eu.org/posts/6406.html</id>
     <published>2021-09-13T08:28:30.000Z</published>
     <updated>2025-01-26T10:39:16.669Z</updated>
     
@@ -512,25 +512,25 @@
     </summary>
     
     
-      <category term="数据库" scheme="https://www.itnxd.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://itnxd.eu.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="索引" scheme="https://www.itnxd.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E7%B4%A2%E5%BC%95/"/>
+      <category term="索引" scheme="https://itnxd.eu.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E7%B4%A2%E5%BC%95/"/>
     
     
-      <category term="B树" scheme="https://www.itnxd.cn/tags/B%E6%A0%91/"/>
+      <category term="B树" scheme="https://itnxd.eu.org/tags/B%E6%A0%91/"/>
     
-      <category term="B+树" scheme="https://www.itnxd.cn/tags/B-%E6%A0%91/"/>
+      <category term="B+树" scheme="https://itnxd.eu.org/tags/B-%E6%A0%91/"/>
     
-      <category term="索引" scheme="https://www.itnxd.cn/tags/%E7%B4%A2%E5%BC%95/"/>
+      <category term="索引" scheme="https://itnxd.eu.org/tags/%E7%B4%A2%E5%BC%95/"/>
     
   </entry>
   
   <entry>
     <title>MySQL数据库高级-MySQL数据库优化</title>
-    <link href="https://www.itnxd.cn/posts/37817.html"/>
-    <id>https://www.itnxd.cn/posts/37817.html</id>
+    <link href="https://itnxd.eu.org/posts/37817.html"/>
+    <id>https://itnxd.eu.org/posts/37817.html</id>
     <published>2021-09-07T00:26:52.000Z</published>
-    <updated>2025-01-26T10:39:16.697Z</updated>
+    <updated>2025-01-26T11:23:16.334Z</updated>
     
     <summary type="html">
     
@@ -548,23 +548,23 @@
     </summary>
     
     
-      <category term="数据库" scheme="https://www.itnxd.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://itnxd.eu.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="关系型数据库" scheme="https://www.itnxd.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="关系型数据库" scheme="https://itnxd.eu.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="MySQL" scheme="https://www.itnxd.cn/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://itnxd.eu.org/tags/MySQL/"/>
     
-      <category term="索引优化" scheme="https://www.itnxd.cn/tags/%E7%B4%A2%E5%BC%95%E4%BC%98%E5%8C%96/"/>
+      <category term="索引优化" scheme="https://itnxd.eu.org/tags/%E7%B4%A2%E5%BC%95%E4%BC%98%E5%8C%96/"/>
     
-      <category term="性能分析" scheme="https://www.itnxd.cn/tags/%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90/"/>
+      <category term="性能分析" scheme="https://itnxd.eu.org/tags/%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90/"/>
     
   </entry>
   
   <entry>
     <title>Redis从入门到入土及几大面试常问问题</title>
-    <link href="https://www.itnxd.cn/posts/64689.html"/>
-    <id>https://www.itnxd.cn/posts/64689.html</id>
+    <link href="https://itnxd.eu.org/posts/64689.html"/>
+    <id>https://itnxd.eu.org/posts/64689.html</id>
     <published>2021-08-30T07:12:17.000Z</published>
     <updated>2025-01-26T10:39:16.669Z</updated>
     
@@ -582,25 +582,25 @@
     </summary>
     
     
-      <category term="数据库" scheme="https://www.itnxd.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://itnxd.eu.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="非关系型数据库" scheme="https://www.itnxd.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="非关系型数据库" scheme="https://itnxd.eu.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="Redis" scheme="https://www.itnxd.cn/tags/Redis/"/>
+      <category term="Redis" scheme="https://itnxd.eu.org/tags/Redis/"/>
     
-      <category term="RDB" scheme="https://www.itnxd.cn/tags/RDB/"/>
+      <category term="RDB" scheme="https://itnxd.eu.org/tags/RDB/"/>
     
-      <category term="AOF" scheme="https://www.itnxd.cn/tags/AOF/"/>
+      <category term="AOF" scheme="https://itnxd.eu.org/tags/AOF/"/>
     
-      <category term="集群" scheme="https://www.itnxd.cn/tags/%E9%9B%86%E7%BE%A4/"/>
+      <category term="集群" scheme="https://itnxd.eu.org/tags/%E9%9B%86%E7%BE%A4/"/>
     
   </entry>
   
   <entry>
     <title>Shell编程学习总结</title>
-    <link href="https://www.itnxd.cn/posts/6952.html"/>
-    <id>https://www.itnxd.cn/posts/6952.html</id>
+    <link href="https://itnxd.eu.org/posts/6952.html"/>
+    <id>https://itnxd.eu.org/posts/6952.html</id>
     <published>2021-05-10T03:10:00.000Z</published>
     <updated>2025-01-26T10:39:16.669Z</updated>
     
@@ -619,10 +619,10 @@
     </summary>
     
     
-      <category term="Shell" scheme="https://www.itnxd.cn/categories/Shell/"/>
+      <category term="Shell" scheme="https://itnxd.eu.org/categories/Shell/"/>
     
     
-      <category term="Shell" scheme="https://www.itnxd.cn/tags/Shell/"/>
+      <category term="Shell" scheme="https://itnxd.eu.org/tags/Shell/"/>
     
   </entry>
   
