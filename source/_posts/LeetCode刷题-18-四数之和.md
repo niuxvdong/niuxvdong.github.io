@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 4066
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/19/a8a2fe376e4aa4136ddf2db8a41317be.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/19/a8a2fe376e4aa4136ddf2db8a41317be.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/19/a8a2fe376e4aa4136ddf2db8a41317be.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/19/a8a2fe376e4aa4136ddf2db8a41317be.png
 categories: LeetCode刷题
 tags:
   - 双指针
@@ -36,7 +36,7 @@ updated:
 
 > 又是使用双指针的题，双指针可以将复杂度降低一维！
 >
-> 这道题和LeetCode的第15题完全一样！[我的第15题链接](https://www.itnxd.cn/posts/55831.html)
+> 这道题和LeetCode的第15题完全一样！[我的第15题链接](https://itnxd.eu.org/posts/55831.html)
 
 
 

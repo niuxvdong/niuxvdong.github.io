@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 15234
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/20/b22e598ae99cda60cdc00ccda877e44c.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/20/b22e598ae99cda60cdc00ccda877e44c.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/20/b22e598ae99cda60cdc00ccda877e44c.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/20/b22e598ae99cda60cdc00ccda877e44c.png
 categories: LeetCode刷题
 tags:
   - 高精度

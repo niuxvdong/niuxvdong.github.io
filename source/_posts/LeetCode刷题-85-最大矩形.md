@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 16580
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/25/4a2f73a21291f7a3f80ada6a6ebae9e4.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/25/4a2f73a21291f7a3f80ada6a6ebae9e4.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/25/4a2f73a21291f7a3f80ada6a6ebae9e4.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/25/4a2f73a21291f7a3f80ada6a6ebae9e4.png
 categories: LeetCode刷题
 tags:
   - 单调栈

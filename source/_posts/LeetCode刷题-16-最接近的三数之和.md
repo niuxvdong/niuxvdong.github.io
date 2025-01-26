@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 14896
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/19/08c7a474b9fcdadc62d0fc56730cef80.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/19/08c7a474b9fcdadc62d0fc56730cef80.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/19/08c7a474b9fcdadc62d0fc56730cef80.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/19/08c7a474b9fcdadc62d0fc56730cef80.png
 categories: LeetCode刷题
 tags:
   - 双指针
@@ -32,7 +32,7 @@ updated:
 
 
 
-> 嗯，也是双指针，和LeetCode的第15题（也就是[我的上一篇文章的题解](https://www.itnxd.cn/posts/55831.html)基本类似）。
+> 嗯，也是双指针，和LeetCode的第15题（也就是[我的上一篇文章的题解](https://itnxd.eu.org/posts/55831.html)基本类似）。
 
 
 

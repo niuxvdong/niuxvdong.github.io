@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 11911
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/19/f51d6df1a9d7b3b2d8fbc82c2e336194.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/19/f51d6df1a9d7b3b2d8fbc82c2e336194.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/19/f51d6df1a9d7b3b2d8fbc82c2e336194.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/19/f51d6df1a9d7b3b2d8fbc82c2e336194.png
 categories: LeetCode刷题
 tags:
   - 字符串
@@ -34,7 +34,7 @@ updated:
 
 
 
-> 和 [12.整数转罗马数字](https://www.itnxd.cn/posts/61074.html)类似，就是反过来问的！处理稍有不同！
+> 和 [12.整数转罗马数字](https://itnxd.eu.org/posts/61074.html)类似，就是反过来问的！处理稍有不同！
 
 
 

@@ -3,8 +3,8 @@ title: AcWing-94.递归实现排列型枚举
 author: Mr.Niu
 toc: true
 abbrlink: 45388
-cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_51.jpg'
-top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_51.jpg'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/ACG.GY_51.jpg'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/ACG.GY_51.jpg'
 categories:
   - AcWing
 tags:

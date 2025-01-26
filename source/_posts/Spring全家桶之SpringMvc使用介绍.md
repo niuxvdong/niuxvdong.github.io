@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 22550
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/29/fe93649c0964b05fac8fea896308dd12.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/29/fe93649c0964b05fac8fea896308dd12.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/29/fe93649c0964b05fac8fea896308dd12.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/29/fe93649c0964b05fac8fea896308dd12.png
 categories:
   - 开发框架
 tags:
@@ -71,7 +71,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/29/f6167f60310cc1f2115952b9cc1acb76.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/29/f6167f60310cc1f2115952b9cc1acb76.png)
 
 
 
@@ -95,13 +95,13 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/29/b82a96276e008085c6a549dc436666cd.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/29/b82a96276e008085c6a549dc436666cd.png)
 
 
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/29/f8e117473854f107cf535f50f178c1c2.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/29/f8e117473854f107cf535f50f178c1c2.png)
 
 
 
@@ -113,7 +113,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/29/029caef47bb2f23f25daadab44f1403d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/29/029caef47bb2f23f25daadab44f1403d.png)
 
 
 
@@ -143,7 +143,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/29/ca415f2ce977f1eaf6bc4c0610aff2c0.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/29/ca415f2ce977f1eaf6bc4c0610aff2c0.png)
 
 
 
@@ -183,7 +183,7 @@ E:\Java学习\IdeaProject\SpringMvc\2_Test\WebContent
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/29/f3b189451ac536795c3722de72b62846.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/29/f3b189451ac536795c3722de72b62846.png)
 
 
 
@@ -195,7 +195,7 @@ E:\Java学习\IdeaProject\SpringMvc\2_Test\WebContent
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/29/3d7c6e55c64f8ba9d908a0bcb34622ad.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/29/3d7c6e55c64f8ba9d908a0bcb34622ad.png)
 
 
 
@@ -1640,7 +1640,7 @@ public Book ModelAttributeTest(Map<String, Object> map){
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/02/683bd2077a621fb5d842f07db077210c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/02/683bd2077a621fb5d842f07db077210c.png)
 
 
 
@@ -1674,7 +1674,7 @@ public Book ModelAttributeTest(Map<String, Object> map){
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/02/cde373c3c444231ee7aebf321937cfd3.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/02/cde373c3c444231ee7aebf321937cfd3.png)
 
 
 
@@ -1682,7 +1682,7 @@ public Book ModelAttributeTest(Map<String, Object> map){
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/02/6804061691d1c9d6562856af2f97e28c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/02/6804061691d1c9d6562856af2f97e28c.png)
 
 
 
@@ -1706,7 +1706,7 @@ public Book ModelAttributeTest(Map<String, Object> map){
 
 
 
-**不使用SpringMvc的步骤略有复杂：[纯i18n国际化配置步骤，学习JavaWeb写的记录！点击这里！](https://www.itnxd.cn/posts/59901.html#7%E3%80%81JSTL-%E6%A0%87%E7%AD%BE%E5%BA%93%E5%AE%9E%E7%8E%B0%E5%9B%BD%E9%99%85%E5%8C%96)**
+**不使用SpringMvc的步骤略有复杂：[纯i18n国际化配置步骤，学习JavaWeb写的记录！点击这里！](https://itnxd.eu.org/posts/59901.html#7%E3%80%81JSTL-%E6%A0%87%E7%AD%BE%E5%BA%93%E5%AE%9E%E7%8E%B0%E5%9B%BD%E9%99%85%E5%8C%96)**
 
 
 
@@ -1776,7 +1776,7 @@ public Book ModelAttributeTest(Map<String, Object> map){
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/02/4b28bcc0346e6eaaf9bb2db69b58a200.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/02/4b28bcc0346e6eaaf9bb2db69b58a200.png)
 
 
 
@@ -1870,7 +1870,7 @@ IDE会自动导入fmt标签的！
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/02/d3efc7459437b6a9edd81d3cf135bf24.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/02/d3efc7459437b6a9edd81d3cf135bf24.png)
 
 
 
@@ -1886,7 +1886,7 @@ IDE会自动导入fmt标签的！
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/02/a9a7ba6fccea14f8d530ca7d3cfe407f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/02/a9a7ba6fccea14f8d530ca7d3cfe407f.png)
 
 
 
@@ -2308,7 +2308,7 @@ ConversionService组件：负责数据类型的转换以及格式化功能，内
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/05/7c395875a34223b1651b3b84951e889d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/05/7c395875a34223b1651b3b84951e889d.png)
 
 
 
@@ -3257,7 +3257,7 @@ public ResponseEntity<byte[]> download01(HttpServletRequest request) throws IOEx
 
 > `@RequestParam("header") MultipartFile file`: 自动将文件流封装到MultipartFile对象！
 >
-> [JavaWeb文件上传方法，点击这里查看！](https://www.itnxd.cn/posts/15689.html)
+> [JavaWeb文件上传方法，点击这里查看！](https://itnxd.eu.org/posts/15689.html)
 
 
 
@@ -3400,7 +3400,7 @@ public String upload(@RequestParam(value = "username", required = false) String 
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/05/5fea1b62395722cf06f0dfd600a5db67.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/05/5fea1b62395722cf06f0dfd600a5db67.png)
 
 
 
@@ -3726,7 +3726,7 @@ public String LocalTest2(Locale locale, Model model){
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/05/384592c77563a89378d7fa71801b826c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/05/384592c77563a89378d7fa71801b826c.png)
 
 
 
@@ -3908,7 +3908,7 @@ SimpleMappingExceptionResolver：通过配置的方式进行异常处理
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/05/f3d2196b6ea442d5af146477ee1e8c3b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/05/f3d2196b6ea442d5af146477ee1e8c3b.png)
 
 
 

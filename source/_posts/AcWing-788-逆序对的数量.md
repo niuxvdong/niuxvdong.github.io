@@ -3,8 +3,8 @@ title: AcWing-788.逆序对的数量
 author: Mr.Niu
 toc: true
 abbrlink: 25834
-cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_35.jpg'
-top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_35.jpg'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/ACG.GY_35.jpg'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/ACG.GY_35.jpg'
 categories:
   - AcWing
 tags:
@@ -114,7 +114,7 @@ while(i <= mid && j <= r)
 
 如图：
 
-![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200226214901.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/20200226214901.png)
 
 
 

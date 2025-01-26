@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 34316
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/5efed5f7a5d8a6e858152e7c78b31007.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/5efed5f7a5d8a6e858152e7c78b31007.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/5efed5f7a5d8a6e858152e7c78b31007.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/5efed5f7a5d8a6e858152e7c78b31007.png
 categories:
   - 分布式微服务
 tags:
@@ -49,7 +49,7 @@ Zookeeper从设计模式角度来理解：是一个基于观察者模式设计�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/61af91ab79f77f80bfc0366d646efb8c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/61af91ab79f77f80bfc0366d646efb8c.png)
 
 
 
@@ -84,7 +84,7 @@ ZooKeeper 数据模型的结构与 Unix 文件系统很类似，整体上可以�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/d5e42c40a0d741e973660d2483ec7bd1.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/d5e42c40a0d741e973660d2483ec7bd1.png)
 
 
 
@@ -127,7 +127,7 @@ ZooKeeper 数据模型的结构与 Unix 文件系统很类似，整体上可以�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/3a29034d6383f50e9b66a08b43a9ef6d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/3a29034d6383f50e9b66a08b43a9ef6d.png)
 
 
 
@@ -135,7 +135,7 @@ ZooKeeper 数据模型的结构与 Unix 文件系统很类似，整体上可以�
 
 在Zookeeper中记录每台服务器的访问数，让访问数最少的服务器去处理最新的客户端请求！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/d9bcc4db25c42b2cf79243825bceb96a.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/d9bcc4db25c42b2cf79243825bceb96a.png)
 
 
 
@@ -325,7 +325,7 @@ server.3=localhost:2883:3883
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/1d8ff2069539acb2008ba9074d1d2295.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/1d8ff2069539acb2008ba9074d1d2295.png)
 
 
 
@@ -574,7 +574,7 @@ set /sanguo/weiguo "simayi"
 
 **图示：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/9d19f5d452c962f893c0f3cebc50fcf7.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/9d19f5d452c962f893c0f3cebc50fcf7.png)
 
 
 
@@ -772,7 +772,7 @@ public class ZkClient {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/25022a9ebba91591add21ae15e402f4a.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/25022a9ebba91591add21ae15e402f4a.png)
 
 
 
@@ -784,7 +784,7 @@ public class ZkClient {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/da6d6675b57534e34e8920831cf1aedb.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/da6d6675b57534e34e8920831cf1aedb.png)
 
 
 
@@ -806,7 +806,7 @@ public class ZkClient {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/9bf5fadbbc764b2c0bb54a6bbe62e932.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/9bf5fadbbc764b2c0bb54a6bbe62e932.png)
 
 
 
@@ -1010,7 +1010,7 @@ public class DistributeClient {
 - 启动 DistributeServer 服务端
 - 点击 Edit Configurations…，在弹出的窗口中（Program arguments）输入想启动的主机，例如，82.156.11.189:2182
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/e800f92a3319b669f3800c4a87c97d20.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/e800f92a3319b669f3800c4a87c97d20.png)
 
 
 
@@ -1038,7 +1038,7 @@ public class DistributeClient {
 
 **分布式锁分析：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/4406c85d0d47d70cea7a07f4347253d0.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/4406c85d0d47d70cea7a07f4347253d0.png)
 
 
 
@@ -1804,7 +1804,7 @@ ls、get、create、delete ....
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/ba6ad0e4603b98c60d76c3b34569b977.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/ba6ad0e4603b98c60d76c3b34569b977.png)
 
 
 
@@ -1825,7 +1825,7 @@ ls、get、create、delete ....
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/284c1d3724df6ec49cca813971b0a462.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/284c1d3724df6ec49cca813971b0a462.png)
 
 
 
@@ -1850,7 +1850,7 @@ ls、get、create、delete ....
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/fd44d7220ba3590ee5226adce3eedf4d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/fd44d7220ba3590ee5226adce3eedf4d.png)
 
 
 
@@ -1870,7 +1870,7 @@ ls、get、create、delete ....
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/8ef0a99d411020479828223a52d58008.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/8ef0a99d411020479828223a52d58008.png)
 
 
 
@@ -1895,7 +1895,7 @@ ls、get、create、delete ....
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/40b674519bae5b7c41d559930cd72e99.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/40b674519bae5b7c41d559930cd72e99.png)
 
 
 
@@ -1948,7 +1948,7 @@ Zab 协议包括两种基本的模式：消息广播、崩溃恢复。
 
 **示意图：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/5a257bbf67b5d6899ce410e0c12a3e8c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/5a257bbf67b5d6899ce410e0c12a3e8c.png)
 
 
 
@@ -1997,7 +1997,7 @@ Zab 协议包括两种基本的模式：消息广播、崩溃恢复。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/b4fd798df80c27b528ace22f6192ec71.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/b4fd798df80c27b528ace22f6192ec71.png)
 
 
 
@@ -2022,7 +2022,7 @@ Zab 协议包括两种基本的模式：消息广播、崩溃恢复。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/dc642a53a02928fdd10aa674ebc3d6db.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/dc642a53a02928fdd10aa674ebc3d6db.png)
 
 
 
@@ -2039,7 +2039,7 @@ Zab 协议包括两种基本的模式：消息广播、崩溃恢复。
 
 崩溃恢复主要包括两部分：**Leader选举和数据恢复。**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/28/e2f5b93c465b11fe6ec1749efc58abe9.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/28/e2f5b93c465b11fe6ec1749efc58abe9.png)
 
 **Zab如何数据同步：**
 

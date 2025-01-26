@@ -3,8 +3,8 @@ title: LeetCode刷题-28.实现strStr()
 author: Mr.Niu
 toc: true
 abbrlink: 45773
-top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/f45b0094f57dd09e8807ead0f6b2ee9d.png'
-cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/f45b0094f57dd09e8807ead0f6b2ee9d.png'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/f45b0094f57dd09e8807ead0f6b2ee9d.png'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/f45b0094f57dd09e8807ead0f6b2ee9d.png'
 categories: LeetCode刷题
 tags:
   - KMP
@@ -162,13 +162,13 @@ s = " " + s, p = " " + p;
 
 假设当前状态如下：`i - 1`为原串`p`指向的位置，`j`为`p`的前缀后缀相等时前缀的尾。序号1和序号2是同一段，序号3是原串`1 ~ (i - 1)`中与前缀相等的后缀，此时序号1，2，3都是相等的。
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/22/5880ff8272e6debedb8138c4b76db5d0.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/22/5880ff8272e6debedb8138c4b76db5d0.png)
 
 **若 `i` 和 `j + 1`可以匹配，此时`next[i]`就会由`j`变为`j + 1`，则效果图如下：**
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/22/9411c5d614a964bc2fe5df17302a9ab1.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/22/9411c5d614a964bc2fe5df17302a9ab1.png)
 
 **若 `i` 和 `j + 1`无法匹配，则说明前缀串`1 ~ j`无法满足当前`next[i]`的条件，此时`j`的位置就需要发生变化，将前缀缩小为`1 ~ next[j]`去试探此时是否可以匹配`next[i]`的条件，若一直无法匹配，已经到了`next[1] = 0`或`j == 0`时，仍然无法匹配，则当前`next[i] = 0`；若试探中，某次可以匹配，则当前`next[i]`的值就可以更新为当前`next[j] + 1`**
 
@@ -178,7 +178,7 @@ s = " " + s, p = " " + p;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/22/ab2c3a53e468247615e02a1579fbaf64.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/22/ab2c3a53e468247615e02a1579fbaf64.png)
 
 
 
@@ -194,7 +194,7 @@ s = " " + s, p = " " + p;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/22/196ae57ca0cee7dde9393d23354933c6.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/22/196ae57ca0cee7dde9393d23354933c6.png)
 
 **什么时候就算找到了？**
 

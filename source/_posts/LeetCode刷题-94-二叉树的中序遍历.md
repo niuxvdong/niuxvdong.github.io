@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 16898
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/03/0b3055f519f8b35907802af52b89c5d7.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/08/03/0b3055f519f8b35907802af52b89c5d7.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/03/0b3055f519f8b35907802af52b89c5d7.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/08/03/0b3055f519f8b35907802af52b89c5d7.png
 categories: LeetCode刷题
 tags:
   - 二叉树

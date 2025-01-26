@@ -5,8 +5,8 @@ toc: true
 abbrlink: 64689
 date: 2021-08-30 15:12:17
 updated:
-top_img: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/04/0dd8f091bf8546346d08f2c63706c75c.png
-cover: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/04/0dd8f091bf8546346d08f2c63706c75c.png
+top_img: https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/04/0dd8f091bf8546346d08f2c63706c75c.png
+cover: https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/04/0dd8f091bf8546346d08f2c63706c75c.png
 categories: 
 - 数据库
 - 非关系型数据库
@@ -35,7 +35,7 @@ tags:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/04/7df712822e85c391dadc049889ce9b08.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/04/7df712822e85c391dadc049889ce9b08.png)
 
 
 
@@ -45,7 +45,7 @@ tags:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/04/47850f866e568e61205ca20d502803d4.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/04/47850f866e568e61205ca20d502803d4.png)
 
 
 
@@ -57,7 +57,7 @@ tags:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/04/5d79ed1da88f8048d3fb58749024877e.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/04/5d79ed1da88f8048d3fb58749024877e.png)
 
 
 
@@ -137,7 +137,7 @@ NoSQL 不依赖业务逻辑方式存储，而以简单的key-value模式存储�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/04/fca29f36ee14825bf6306c5dc9e1b5a9.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/04/fca29f36ee14825bf6306c5dc9e1b5a9.png)
 
 
 
@@ -265,7 +265,7 @@ ping
 
 **单线程 + 多路IO复用技术简单图示：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/04/a4ea491fa6826d2b567bf1e7e39ea61d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/04/a4ea491fa6826d2b567bf1e7e39ea61d.png)
 
 
 
@@ -435,7 +435,7 @@ Redis单命令的原子性主要得益于Redis的单线程。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/04/bd1935f0ddb02ba95eeb66a09b3624f6.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/04/bd1935f0ddb02ba95eeb66a09b3624f6.png)
 
 
 
@@ -495,7 +495,7 @@ Java中HashSet的内部实现使用的是HashMap，只不过所有的value都指
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/04/55e595933da95aae1236ed2bf15df6af.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/04/55e595933da95aae1236ed2bf15df6af.png)
 
 ### 5.1、常用命令
 
@@ -594,7 +594,7 @@ Hash类型对应的数据结构是两种：**ziplist（压缩列表），hashtab
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/04/db028641e8d1f371bcdeb127a3b4b52a.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/04/db028641e8d1f371bcdeb127a3b4b52a.png)
 
 
 
@@ -608,7 +608,7 @@ Hash类型对应的数据结构是两种：**ziplist（压缩列表），hashtab
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/04/97b23627a5921efa165a079742fc0a09.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/04/97b23627a5921efa165a079742fc0a09.png)
 
 
 
@@ -641,7 +641,7 @@ Hash类型对应的数据结构是两种：**ziplist（压缩列表），hashtab
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/04/76e2d445c94909a95e5172e724485b79.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/04/76e2d445c94909a95e5172e724485b79.png)
 
 
 
@@ -657,7 +657,7 @@ requirepass：密码设置，在命令中设置密码，只是临时的。重启
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/04/e5310d54e7e3e145759ed890b64f3fee.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/04/e5310d54e7e3e145759ed890b64f3fee.png)
 
 
 
@@ -665,7 +665,7 @@ requirepass：密码设置，在命令中设置密码，只是临时的。重启
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/04/c463b541bc23741d752456a45cd2c220.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/04/c463b541bc23741d752456a45cd2c220.png)
 
 
 
@@ -721,13 +721,13 @@ requirepass：密码设置，在命令中设置密码，只是临时的。重启
 
 **订阅及发送消息如下图：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/04/59b6a13874f9cb7622e697c95b59c521.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/04/59b6a13874f9cb7622e697c95b59c521.png)
 
 
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/04/b4e991cdffd74af01442ff964987ad5e.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/04/b4e991cdffd74af01442ff964987ad5e.png)
 
 
 
@@ -1248,7 +1248,7 @@ Redis事务的主要作用就是**串联多个命令防止别的命令插队**�
 
 **乐观锁简单图示：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/05/e1fb245177d1148ce397c945124ab97c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/05/e1fb245177d1148ce397c945124ab97c.png)
 
 
 
@@ -1260,7 +1260,7 @@ Redis事务的主要作用就是**串联多个命令防止别的命令插队**�
 
 > 库存减1，秒杀成功者加1！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/05/ca82cc9223b090258d1bef9c846d99b3.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/05/ca82cc9223b090258d1bef9c846d99b3.png)
 
 
 
@@ -1838,7 +1838,7 @@ Redis会单独创建（fork）一个**子进程来进行持久化**，会先将�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/05/9c61f3f57d7fc5a2078757f7a513880b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/05/9c61f3f57d7fc5a2078757f7a513880b.png)
 
 
 
@@ -1880,7 +1880,7 @@ Redis会单独创建（fork）一个**子进程来进行持久化**，会先将�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/05/b7bea5a29f14643f03444c5508d4f86e.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/05/b7bea5a29f14643f03444c5508d4f86e.png)
 
 
 
@@ -2021,7 +2021,7 @@ Redis会记录上次重写时的AOF大小，默认配置是当AOF文件大小是
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/05/68860408cafe97f7874e66d6af85c576.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/05/68860408cafe97f7874e66d6af85c576.png)
 
 
 
@@ -2065,7 +2065,7 @@ Redis会记录上次重写时的AOF大小，默认配置是当AOF文件大小是
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/9c74cbbdba763470a40025f116ea5285.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/9c74cbbdba763470a40025f116ea5285.png)
 
 
 
@@ -2137,7 +2137,7 @@ dbfilename dump6379.rdb
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/cc60c04c716d1894a6dd1f614200fd62.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/cc60c04c716d1894a6dd1f614200fd62.png)
 
 ### 2.2、薪火相传
 
@@ -2149,7 +2149,7 @@ dbfilename dump6379.rdb
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/2c706ccd5ed258a890f1b57e6da2f69c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/2c706ccd5ed258a890f1b57e6da2f69c.png)
 
 
 
@@ -2176,7 +2176,7 @@ dbfilename dump6379.rdb
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/79c2756da4cc577417728be8fb4aa15e.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/79c2756da4cc577417728be8fb4aa15e.png)
 
 
 
@@ -2209,7 +2209,7 @@ dbfilename dump6379.rdb
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/e915fa2a6596aef487307c5826cf8a40.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/e915fa2a6596aef487307c5826cf8a40.png)
 
 
 
@@ -2277,7 +2277,7 @@ public static  Jedis getJedisFromSentinel(){
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/6e2107d1597953eda3fc6228cf452086.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/6e2107d1597953eda3fc6228cf452086.png)
 
 
 
@@ -2317,7 +2317,7 @@ public static  Jedis getJedisFromSentinel(){
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/86448fe15e052511b99c1133f5bf1d12.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/86448fe15e052511b99c1133f5bf1d12.png)
 
 
 
@@ -2325,7 +2325,7 @@ public static  Jedis getJedisFromSentinel(){
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/2757d15550b4abb431ebeb635a35877d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/2757d15550b4abb431ebeb635a35877d.png)
 
 
 
@@ -2409,11 +2409,11 @@ dir "/myredis"
 
 **示例图：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/753ce0af08c1c5f4e8c7f073a3f02152.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/753ce0af08c1c5f4e8c7f073a3f02152.png)
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/cfe4456ed0c83725243c5fee080324ca.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/cfe4456ed0c83725243c5fee080324ca.png)
 
 
 
@@ -2431,11 +2431,11 @@ cluster nodes 命令查看集群信息，可看到主从关系！
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/bcaf5bbd4c8a314a4f053fd97ba4427f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/bcaf5bbd4c8a314a4f053fd97ba4427f.png)
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/9946642104f6ae05fb4c7571536bf9bf.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/9946642104f6ae05fb4c7571536bf9bf.png)
 
 
 
@@ -2451,7 +2451,7 @@ cluster nodes 命令查看集群信息，可看到主从关系！
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/90108bea4f4dc311f482e1a37726faca.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/90108bea4f4dc311f482e1a37726faca.png)
 
 
 
@@ -2478,7 +2478,7 @@ cluster nodes 命令查看集群信息，可看到主从关系！
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/a5dbd563bcfd48396f512e54466cdb8f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/a5dbd563bcfd48396f512e54466cdb8f.png)
 
 
 
@@ -2606,7 +2606,7 @@ public class JedisClusterTest {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/44d51bbbc82039710ed1d5175db07a39.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/44d51bbbc82039710ed1d5175db07a39.png)
 
 
 
@@ -2657,7 +2657,7 @@ public class JedisClusterTest {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/05e657bee74d4932c365c03f549e9f7f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/05e657bee74d4932c365c03f549e9f7f.png)
 
 
 
@@ -2687,7 +2687,7 @@ public class JedisClusterTest {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/abf22698d8523bea60f0b136cb2c8073.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/abf22698d8523bea60f0b136cb2c8073.png)
 
 
 
@@ -2713,7 +2713,7 @@ public class JedisClusterTest {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/41bc90ce43b39d6b12bc99bdde94b5e9.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/41bc90ce43b39d6b12bc99bdde94b5e9.png)
 
 
 
@@ -2812,7 +2812,7 @@ public class JedisClusterTest {
 
 **不设置UUID可能误释放其他人：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/411ebc83e32407b96bcdd01025f408de.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/411ebc83e32407b96bcdd01025f408de.png)
 
 
 
@@ -2822,7 +2822,7 @@ public class JedisClusterTest {
 
 **删除操作不是原子性也会误释放其人人：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/137d0c0129adc029807c5882f13753cb.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/137d0c0129adc029807c5882f13753cb.png)
 
 
 
@@ -2945,7 +2945,7 @@ public void testLockLua() {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/f5cf4edcb96dac010960f2344d8dabe0.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/f5cf4edcb96dac010960f2344d8dabe0.png)
 
 
 
@@ -3018,15 +3018,15 @@ Redis ACL是Access Control List（访问控制列表）的缩写，该功能允�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/ead9e47831c80dc2a07a1533736f949c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/ead9e47831c80dc2a07a1533736f949c.png)
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/a1055761690dbf6385e3983be8bc80cf.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/a1055761690dbf6385e3983be8bc80cf.png)
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/04cd915f6afe4634c26c7462bc415637.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/04cd915f6afe4634c26c7462bc415637.png)
 
 
 
@@ -3052,7 +3052,7 @@ Redis ACL是Access Control List（访问控制列表）的缩写，该功能允�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/3b3121b4c9cfdc01dff8f5a0dcd0e33d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/3b3121b4c9cfdc01dff8f5a0dcd0e33d.png)
 
 
 
@@ -3101,7 +3101,7 @@ Redis 6 加入多线程,但跟 Memcached 这种从 IO处理到数据访问多线
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/f7d5a128cd3b96c6505817c0c3560415.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/f7d5a128cd3b96c6505817c0c3560415.png)
 
 
 
@@ -3113,7 +3113,7 @@ Redis 6 加入多线程,但跟 Memcached 这种从 IO处理到数据访问多线
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/06/de14547d0b1c3d3536139a9803ec43b7.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/06/de14547d0b1c3d3536139a9803ec43b7.png)
 
 
 

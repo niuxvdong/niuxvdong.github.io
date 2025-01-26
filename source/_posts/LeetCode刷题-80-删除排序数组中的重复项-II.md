@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 40432
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/23/e294d8cbf3a6cd60851a3cbdd93e66be.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/23/e294d8cbf3a6cd60851a3cbdd93e66be.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/23/e294d8cbf3a6cd60851a3cbdd93e66be.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/23/e294d8cbf3a6cd60851a3cbdd93e66be.png
 categories: LeetCode刷题
 date: 2020-07-23 10:52:28
 updated:
@@ -37,7 +37,7 @@ tags:
 
 
 
-> 与之前一道题几乎类似：[LeetCode刷题-26.删除排序数组中的重复项](https://www.itnxd.cn/posts/20075.html)
+> 与之前一道题几乎类似：[LeetCode刷题-26.删除排序数组中的重复项](https://itnxd.eu.org/posts/20075.html)
 
 
 

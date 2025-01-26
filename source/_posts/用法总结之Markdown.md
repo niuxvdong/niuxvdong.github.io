@@ -7,8 +7,8 @@ categories:
   - Markdown
 tags:
   - Markdown
-cover: https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_35.jpg
-top_img: https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_35.jpg
+cover: https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/ACG.GY_35.jpg
+top_img: https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/ACG.GY_35.jpg
 date: 2020-02-03 19:36:46
 updated: 
 ---
@@ -45,7 +45,7 @@ updated:
 
 显示效果：
 
-![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200206195510.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/20200206195510.png)
 
 ### 2、段落
 
@@ -305,18 +305,18 @@ int main()
 ```markdown
 [链接名称](链接地址)
 
-[Mr.Niu's Blog](https://www.itnxd.cn)
+[Mr.Niu's Blog](https://itnxd.eu.org)
 
 或者
 
-<https://www.itnxd.cn>
+<https://itnxd.eu.org>
 ```
 
 显示效果：
 
-[Mr.Niu's Blog](https://www.itnxd.cn)
+[Mr.Niu's Blog](https://itnxd.eu.org)
 
-<https://www.itnxd.cn>
+<https://itnxd.eu.org>
 
 #### 8.2 高级用法：
 
@@ -327,7 +327,7 @@ int main()
 然后在文档的结尾为变量赋值（网址）
 
   [1]: https://www.baidu.com
-  [niu]: https://www.itnxd.cn
+  [niu]: https://itnxd.eu.org
 ```
 
 显示效果：
@@ -338,7 +338,7 @@ int main()
 然后在文档的结尾为变量赋值（网址）：
 
 [1]: https://www.baidu.com
-[niu]: https://www.itnxd.cn
+[niu]: https://itnxd.eu.org
 
 ### 9、图片
 
@@ -351,12 +351,12 @@ int main()
 > ```
 
 ```markdown
-![](https://gitcode.net/qq_43590403/images/-/raw/master/img/e%20(2).jpg)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/e%20(2).jpg)
 ```
 
 显示效果：
 
-![](https://gitcode.net/qq_43590403/images/-/raw/master/img/e%20(2).jpg)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/e%20(2).jpg)
 
 ### 10、表格
 

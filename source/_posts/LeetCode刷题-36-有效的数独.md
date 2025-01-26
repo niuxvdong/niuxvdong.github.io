@@ -3,8 +3,8 @@ title: LeetCode刷题-36.有效的数独
 author: Mr.Niu
 toc: true
 abbrlink: 63579
-top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/170e230f16ed55ce6d4fbee77063566f.png'
-cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/170e230f16ed55ce6d4fbee77063566f.png'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/170e230f16ed55ce6d4fbee77063566f.png'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/170e230f16ed55ce6d4fbee77063566f.png'
 categories: LeetCode刷题
 tags:
   - 数独

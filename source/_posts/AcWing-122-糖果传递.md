@@ -3,8 +3,8 @@ title: AcWing-122.糖果传递
 author: Mr.Niu
 toc: true
 abbrlink: 58067
-cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/d%20(2).jpg'
-top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/31.jpg'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/d%20(2).jpg'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/31.jpg'
 categories:
   - AcWing
 tags:
@@ -34,7 +34,7 @@ updated:
 
 > 又是一道环形的均分纸牌问题，这也是这类题的一个基础的经典的例题了！
 >
-> 我先做的 [七夕祭](https://www.itnxd.cn/posts/47007.html) 这道题，一个二维的环形均分纸牌问题，比这个复杂一点。。
+> 我先做的 [七夕祭](https://itnxd.eu.org/posts/47007.html) 这道题，一个二维的环形均分纸牌问题，比这个复杂一点。。
 
 #### 题目描述
 
@@ -99,7 +99,7 @@ n个人围成一圈，没人有一些糖果，问最少交换多少次会达到�
 
 同样是环形均分纸牌问题，里面的公式推导就不再推了，请看我的上一篇题解：
 
-> [AcWing-105.七夕祭](https://www.itnxd.cn/posts/47007.html) 
+> [AcWing-105.七夕祭](https://itnxd.eu.org/posts/47007.html) 
 
 
 

@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 49844
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/04/336cc0b0afbf531ecc0d41f84c7893e7.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/04/336cc0b0afbf531ecc0d41f84c7893e7.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/04/336cc0b0afbf531ecc0d41f84c7893e7.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/04/336cc0b0afbf531ecc0d41f84c7893e7.png
 categories:
   - JDBC
 tags:
@@ -39,7 +39,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/04/1452fe993847e6e858c4470c7f997f57.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/04/1452fe993847e6e858c4470c7f997f57.png)
 
 
 
@@ -336,7 +336,7 @@ driverClass=com.mysql.cj.jdbc.Driver
 
 **用到的类加载器如图：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/13/9871609ce62dff37dbc3dc641218c5c7.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/13/9871609ce62dff37dbc3dc641218c5c7.png)
 
 
 
@@ -831,7 +831,7 @@ public void test2(){
 
 **MySQL的四种BLOB类型：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/04/29e703f205176b182bff881b8e3ebb49.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/04/29e703f205176b182bff881b8e3ebb49.png)
 
 
 
@@ -1127,7 +1127,7 @@ public void test3(){
 
 
 
-> [参考我之前写的文章，数据库事务处理，点击这里！](https://www.itnxd.cn/posts/30836.html#%E4%BA%94%E3%80%81TCL%E8%AF%AD%E8%A8%80)
+> [参考我之前写的文章，数据库事务处理，点击这里！](https://itnxd.eu.org/posts/30836.html#%E4%BA%94%E3%80%81TCL%E8%AF%AD%E8%A8%80)
 
 
 

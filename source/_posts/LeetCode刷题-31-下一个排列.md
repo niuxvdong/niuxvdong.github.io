@@ -3,8 +3,8 @@ title: LeetCode刷题-31.下一个排列
 author: Mr.Niu
 toc: true
 abbrlink: 17783
-top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/57ea9cb8f94698210de69d9742d81d04.png'
-cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/57ea9cb8f94698210de69d9742d81d04.png'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/57ea9cb8f94698210de69d9742d81d04.png'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/57ea9cb8f94698210de69d9742d81d04.png'
 categories: LeetCode刷题
 tags:
   - 全排列
@@ -81,7 +81,7 @@ public:
 
 **简图如下：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/25/fddbd1eb2ccc78a725021b54d36a8a4b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/25/fddbd1eb2ccc78a725021b54d36a8a4b.png)
 
 
 

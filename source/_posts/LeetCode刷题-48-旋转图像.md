@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 39221
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/07/fad941d32ceb2a5488fdb34d132743a1.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/07/fad941d32ceb2a5488fdb34d132743a1.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/07/fad941d32ceb2a5488fdb34d132743a1.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/07/fad941d32ceb2a5488fdb34d132743a1.png
 categories: LeetCode刷题
 tags:
   - 旋转
@@ -76,11 +76,11 @@ updated:
 
 **顺时针90度：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/07/28704e149047f611dc7b3f02a055ecf3.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/07/28704e149047f611dc7b3f02a055ecf3.png)
 
 **逆时针90度：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/07/1756276eacb08963189833b07d18b5e9.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/07/1756276eacb08963189833b07d18b5e9.png)
 
 
 
@@ -88,7 +88,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/07/a2d276068952a25459c49e6ef8cd071d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/07/a2d276068952a25459c49e6ef8cd071d.png)
 
 
 

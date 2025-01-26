@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 58036
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/05/07/a32f2e71c7e5097a257c9d860015d9a3.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/05/07/a32f2e71c7e5097a257c9d860015d9a3.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/05/07/a32f2e71c7e5097a257c9d860015d9a3.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/05/07/a32f2e71c7e5097a257c9d860015d9a3.png
 categories:
   - Linux
 tags:
@@ -100,7 +100,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/05/07/78ad5b72d5de9d19400611cd4f505de3.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/05/07/78ad5b72d5de9d19400611cd4f505de3.png)
 
 
 
@@ -638,7 +638,7 @@ chmod 751 文件/目录名
 
 **五个*含义：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/05/09/f5a1d5378a76f9d4d1371680afdab504.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/05/09/f5a1d5378a76f9d4d1371680afdab504.png)
 
 
 
@@ -646,7 +646,7 @@ chmod 751 文件/目录名
 
 **特殊符号：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/05/09/817e3dc69853129bf7d0c967745a0f75.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/05/09/817e3dc69853129bf7d0c967745a0f75.png)
 
 
 
@@ -682,7 +682,7 @@ chmod 751 文件/目录名
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/05/09/aa083a24bf23c5be183716d6c4c4f668.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/05/09/aa083a24bf23c5be183716d6c4c4f668.png)
 
 
 
@@ -734,7 +734,7 @@ job 1 at Tue May 11 17:00:00 2021
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/05/09/47bf7cd46e7c31635cb39afd2157aaf1.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/05/09/47bf7cd46e7c31635cb39afd2157aaf1.png)
 
 
 
@@ -832,7 +832,7 @@ sr0
 
 - 永久挂载：通过修改 `/etc/fstab` 实现挂载。添加一行映射如下：
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/05/09/aa8274a2bfa47c416ca9296ed5aa8ab2.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/05/09/aa8274a2bfa47c416ca9296ed5aa8ab2.png)
 
 - 添加完成后 执行 `mount –a` 即刻生效
 
@@ -906,7 +906,7 @@ ls -lR /opt | grep "^d" | wc
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/05/09/f8582a07890c54439e02858d7044e44d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/05/09/f8582a07890c54439e02858d7044e44d.png)
 
 
 
@@ -922,7 +922,7 @@ ls -lR /opt | grep "^d" | wc
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/05/09/ac985e7b483eb552ece31fb70e929a8f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/05/09/ac985e7b483eb552ece31fb70e929a8f.png)
 
 
 
@@ -932,7 +932,7 @@ ls -lR /opt | grep "^d" | wc
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/05/09/656b59a3609aebe8624923c866e4f82b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/05/09/656b59a3609aebe8624923c866e4f82b.png)
 
 
 
@@ -1387,7 +1387,7 @@ firewall-cmd --query-port=3306/tcp 查询是否开放成功
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/05/09/31457fa3964b417e9dc426de5ecd4841.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/05/09/31457fa3964b417e9dc426de5ecd4841.png)
 
 
 

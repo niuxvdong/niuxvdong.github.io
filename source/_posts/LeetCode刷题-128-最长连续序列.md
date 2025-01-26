@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 44196
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/09/ac7c428e16634f1aa7e9b851c0847fe9.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/08/09/ac7c428e16634f1aa7e9b851c0847fe9.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/09/ac7c428e16634f1aa7e9b851c0847fe9.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/08/09/ac7c428e16634f1aa7e9b851c0847fe9.png
 categories: LeetCode刷题
 tags:
   - 哈希

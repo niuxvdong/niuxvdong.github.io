@@ -3,8 +3,8 @@ title: Hexo中引入音乐和视频
 author: Mr.Niu
 toc: true
 abbrlink: 14163
-cover: https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_65.jpg
-top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_65.jpg'
+cover: https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/ACG.GY_65.jpg
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/ACG.GY_65.jpg'
 categories:
   - Hexo
 tags:
@@ -18,7 +18,7 @@ updated:
 
 <br>
 
-![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200203211028.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/20200203211028.png)
 
 #### 如图所示，复制当中的HTML代码即可。
 
@@ -32,7 +32,7 @@ updated:
 
 <br>
 
-![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200203212844.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/20200203212844.png)
 
 #### 如图所示，复制当中的HTML代码即可。
 

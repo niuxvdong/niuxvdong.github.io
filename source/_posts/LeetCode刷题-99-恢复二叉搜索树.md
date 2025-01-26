@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 9694
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/03/3a0eaccd4cf2bb974d9f9d308550fc18.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/08/03/3a0eaccd4cf2bb974d9f9d308550fc18.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/03/3a0eaccd4cf2bb974d9f9d308550fc18.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/08/03/3a0eaccd4cf2bb974d9f9d308550fc18.png
 categories: LeetCode刷题
 tags:
   - Morris-traversal

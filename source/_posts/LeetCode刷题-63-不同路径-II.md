@@ -3,8 +3,8 @@ title: LeetCode刷题-63. 不同路径 II
 author: Mr.Niu
 toc: true
 abbrlink: 8265
-top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/8f7e2b60c489d794b40e5a793f4cf20e.png'
-cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/8f7e2b60c489d794b40e5a793f4cf20e.png'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/8f7e2b60c489d794b40e5a793f4cf20e.png'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/8f7e2b60c489d794b40e5a793f4cf20e.png'
 categories: LeetCode刷题
 tags:
   - 动态规划

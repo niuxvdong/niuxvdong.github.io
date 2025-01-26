@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 15525
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/19/e28e373e27f4a7479c3ef24d07458bd2.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/19/e28e373e27f4a7479c3ef24d07458bd2.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/19/e28e373e27f4a7479c3ef24d07458bd2.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/19/e28e373e27f4a7479c3ef24d07458bd2.png
 categories: LeetCode刷题
 tags:
   - 栈

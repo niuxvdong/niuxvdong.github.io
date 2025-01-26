@@ -3,8 +3,8 @@ title: LeetCode刷题-38.外观数列
 author: Mr.Niu
 toc: true
 abbrlink: 58677
-top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/d5787bbd8ec29096932f5b1b12823ec4.png'
-cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/d5787bbd8ec29096932f5b1b12823ec4.png'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/d5787bbd8ec29096932f5b1b12823ec4.png'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/d5787bbd8ec29096932f5b1b12823ec4.png'
 categories: LeetCode刷题
 tags:
   - 模拟

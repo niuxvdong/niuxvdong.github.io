@@ -3,8 +3,8 @@ title: LeetCode刷题-8.字符串转换整数(atoi)
 author: Mr.Niu
 toc: true
 abbrlink: 64625
-top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/2e09b303e87eda57aaef64c5f127abcb.png'
-cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/2e09b303e87eda57aaef64c5f127abcb.png'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/2e09b303e87eda57aaef64c5f127abcb.png'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/2e09b303e87eda57aaef64c5f127abcb.png'
 categories: LeetCode刷题
 tags:
   - 字符串

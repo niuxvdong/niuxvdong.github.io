@@ -3,8 +3,8 @@ title: AcWing-92.递归实现指数型枚举
 author: Mr.Niu
 toc: true
 abbrlink: 14886
-cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_41.jpg'
-top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_41.jpg'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/ACG.GY_41.jpg'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/ACG.GY_41.jpg'
 categories:
   - AcWing
 tags:

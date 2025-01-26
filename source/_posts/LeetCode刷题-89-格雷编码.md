@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 56047
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/25/7990ead3a4b68c1522a3cce5f7e5ba08.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/25/7990ead3a4b68c1522a3cce5f7e5ba08.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/25/7990ead3a4b68c1522a3cce5f7e5ba08.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/25/7990ead3a4b68c1522a3cce5f7e5ba08.png
 categories: LeetCode刷题
 tags:
   - 格雷编码
@@ -57,7 +57,7 @@ n位二进制，共有2^n种组合！
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/25/d271a1bdacfc1607be30981dc9fe4243.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/25/d271a1bdacfc1607be30981dc9fe4243.png)
 
 **简单解释一下正确性：**
 

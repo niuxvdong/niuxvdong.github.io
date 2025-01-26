@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://www.itnxd.cn/
+url: https://itnxd.eu.org/
 root: /
 #permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink.html  # 此处可以自己设置，也可以直接使用 :/abbrlink
@@ -204,7 +204,7 @@ abbrlink:
 # lazyload: 
 #     enable: false # 是否开启图片懒加载 
 #     onlypost: true # 是否只对文章的图片做懒加载 
-#     loadingImg: https://gitcode.net/qq_43590403/images/-/raw/master/img/loading.gif
+#     loadingImg: https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/loading.gif
 
 # hexo-douban
 # douban: 
@@ -259,7 +259,7 @@ deploy:
 # hexo-baidu-url-submit 百度主动推送 
 baidu_url_submit: 
     count: 300 # 提交最新的一个链接 
-    host: www.itnxd.cn # 在百度站长平台中注册的域名 
+    host: itnxd.eu.org # 在百度站长平台中注册的域名 
     token: WAtgzOp9lVQXjDi3 # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里! 
     path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
 
@@ -279,7 +279,7 @@ backup:
   type: git
   # theme: hexo-theme-matery
   theme: Butterfly
-  message: Back up my www.itnxd.cn blog
+  message: Back up my blog
   repository:
     github: git@github.com:niuxvdong/niuxvdong.github.io.git,backup
     # coding: git@e.coding.net:niuxvdong/blog.git,backup

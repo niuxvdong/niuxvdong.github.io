@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 23616
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/05/01/38d2edc6d16f03ace563a5f350c6cd10.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/05/01/38d2edc6d16f03ace563a5f350c6cd10.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/05/01/38d2edc6d16f03ace563a5f350c6cd10.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/05/01/38d2edc6d16f03ace563a5f350c6cd10.png
 categories:
   - Git
 tags:
@@ -20,7 +20,7 @@ updated:
 
 
 
-> **[好久前学习的Git内容记录，点击这里！](https://www.itnxd.cn/posts/50207.html)**
+> **[好久前学习的Git内容记录，点击这里！](https://itnxd.eu.org/posts/50207.html)**
 >
 > 本篇只记录最常用的命令及整合IDEA的步骤！
 

@@ -3,8 +3,8 @@ title: AcWing-114.国王游戏
 author: Mr.Niu
 toc: true
 abbrlink: 55540
-cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/a748bd6cf1ce9794a730ee2ac026ca16.png'
-top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/a748bd6cf1ce9794a730ee2ac026ca16.png'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/a748bd6cf1ce9794a730ee2ac026ca16.png'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/a748bd6cf1ce9794a730ee2ac026ca16.png'
 categories:
   - AcWing
 tags:
@@ -120,7 +120,7 @@ updated:
 
 证明过程：
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/942034150e5f0ea74d610e3a27758100.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/942034150e5f0ea74d610e3a27758100.png)
 
 
 

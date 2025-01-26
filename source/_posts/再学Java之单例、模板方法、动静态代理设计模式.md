@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 22183
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/d5787bbd8ec29096932f5b1b12823ec4.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/d5787bbd8ec29096932f5b1b12823ec4.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/d5787bbd8ec29096932f5b1b12823ec4.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/d5787bbd8ec29096932f5b1b12823ec4.png
 categories:
   - Java教程
 tags:

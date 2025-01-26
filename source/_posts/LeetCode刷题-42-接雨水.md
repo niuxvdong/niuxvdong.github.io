@@ -3,8 +3,8 @@ title: LeetCode刷题-42.接雨水
 author: Mr.Niu
 toc: true
 abbrlink: 57751
-top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/09/ab444f56198af2025a18c92122a07ce7.png'
-cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/09/ab444f56198af2025a18c92122a07ce7.png'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/08/09/ab444f56198af2025a18c92122a07ce7.png'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/08/09/ab444f56198af2025a18c92122a07ce7.png'
 categories: LeetCode刷题
 tags:
   - 单调栈
@@ -47,7 +47,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/05/c1a2ce79bc5cbe791c2adb34191c1308.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/05/c1a2ce79bc5cbe791c2adb34191c1308.png)
 
 ## 题解一：三次扫描
 
@@ -220,7 +220,7 @@ public:
 
 **注意**：如果出栈一次后，栈空，即当前的形状不是凹槽，就像当前只有`top`和`i`一样，无法存水，`break`即可！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/05/69b2ca063aea366ee7032690ba2963ef.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/05/69b2ca063aea366ee7032690ba2963ef.png)
 
 
 

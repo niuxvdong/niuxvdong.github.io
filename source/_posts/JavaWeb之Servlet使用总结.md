@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 58740
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/08/ba2bb57f28e91a5b1ea717ac93817640.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/08/ba2bb57f28e91a5b1ea717ac93817640.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/08/ba2bb57f28e91a5b1ea717ac93817640.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/08/ba2bb57f28e91a5b1ea717ac93817640.png
 categories:
   - JavaWeb
 tags:
@@ -56,7 +56,7 @@ updated:
 
 
 
-> [创建Web工程方式，点击这里！](https://www.itnxd.cn/posts/61877.html#2-1%E3%80%81%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9AWeb%E5%B7%A5%E7%A8%8B)
+> [创建Web工程方式，点击这里！](https://itnxd.eu.org/posts/61877.html#2-1%E3%80%81%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9AWeb%E5%B7%A5%E7%A8%8B)
 
 
 
@@ -234,7 +234,7 @@ public class HelloServlet implements Servlet {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/08/dc61049254c888868b487c6e1dfdf732.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/08/dc61049254c888868b487c6e1dfdf732.png)
 
 
 
@@ -449,7 +449,7 @@ public class HelloServlet2 extends HttpServlet {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/08/f56a6c227cb52a1d38eed157cfbfc23d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/08/f56a6c227cb52a1d38eed157cfbfc23d.png)
 
 
 
@@ -468,7 +468,7 @@ public class HelloServlet2 extends HttpServlet {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/08/e76879bd855202d23767b0b6e9598d54.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/08/e76879bd855202d23767b0b6e9598d54.png)
 
 
 
@@ -508,7 +508,7 @@ public class HelloServlet3 extends HttpServlet {
 
 - GenericServlet实现了三大接口：`Servlet、ServletConfig、java.io.Serializable`
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/08/52b063fa55ca37c504939958f226d6dd.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/08/52b063fa55ca37c504939958f226d6dd.png)
 
 
 
@@ -804,7 +804,7 @@ public void init(ServletConfig config) throws ServletException {
 4. 该路径`C:\Users\15890\AppData\Local\JetBrains\IntelliJIdea2020.3\tomcat\a65c5dac-b285-42bc-bb15-73d8c6c7bf83\conf\Catalina\localhost`下有一个`07_Servlet.xml`配置文件
 5. 内容为`<Context path="/07_Servlet" docBase="E:\Java学习\IdeaProject\JavaWeb\out\artifacts\07_Servlet_war_exploded" />`
 6. 该路径就是对IDEA的web工程下web目录的一个映射
-7. 其实就是之前讲到的一种部署方式：[通过Tomcat配置信息进行web项目映射！点击这里！](https://www.itnxd.cn/posts/61877.html#6%E3%80%81%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E5%88%B0Tomcat%E4%B8%AD)
+7. 其实就是之前讲到的一种部署方式：[通过Tomcat配置信息进行web项目映射！点击这里！](https://itnxd.eu.org/posts/61877.html#6%E3%80%81%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E5%88%B0Tomcat%E4%B8%AD)
 
 
 
@@ -930,7 +930,7 @@ HTTP 协议中的数据又叫**报文**。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/86708542870c12bdb3f79cb36549ebcf.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/09/86708542870c12bdb3f79cb36549ebcf.png)
 
 
 
@@ -973,7 +973,7 @@ HTTP 协议中的数据又叫**报文**。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/39b56c6af0c8be22abce73cb6a99cde6.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/09/39b56c6af0c8be22abce73cb6a99cde6.png)
 
 
 
@@ -1030,7 +1030,7 @@ HTTP 协议中的数据又叫**报文**。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/b31ac0e653e1cc9cf15c77a5fb50e7a7.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/09/b31ac0e653e1cc9cf15c77a5fb50e7a7.png)
 
 
 
@@ -1069,7 +1069,7 @@ HTTP 协议中的数据又叫**报文**。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/4e5806ca994d381e1692f6c73b9b29d2.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/09/4e5806ca994d381e1692f6c73b9b29d2.png)
 
 
 
@@ -1106,7 +1106,7 @@ HTTP 协议中的数据又叫**报文**。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/62a8e8622a89a0b27c6f2ad437953bf5.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/09/62a8e8622a89a0b27c6f2ad437953bf5.png)
 
 
 
@@ -1131,7 +1131,7 @@ HTTP 协议中的数据又叫**报文**。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/2cf403091b8cfbf30dfe56af58510110.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/09/2cf403091b8cfbf30dfe56af58510110.png)
 
 
 
@@ -1161,9 +1161,9 @@ HTTP 协议中的数据又叫**报文**。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/0daee5aae527b7a6381401b6f552cfea.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/09/0daee5aae527b7a6381401b6f552cfea.png)
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/d1d9f178cd9120da55de7e355b6ff50d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/09/d1d9f178cd9120da55de7e355b6ff50d.png)
 
 
 
@@ -1394,7 +1394,7 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/ab1611a6a28185912214ea645492aabe.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/09/ab1611a6a28185912214ea645492aabe.png)
 
 
 
@@ -1776,7 +1776,7 @@ public class ResponseIOServlet extends HttpServlet {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/09/e412c3428884540e03cd083bbfe7693a.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/09/e412c3428884540e03cd083bbfe7693a.png)
 
 
 

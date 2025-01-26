@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 30836
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/22/714da936370bca0654bf82b57fcc1027.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/22/714da936370bca0654bf82b57fcc1027.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/22/714da936370bca0654bf82b57fcc1027.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/22/714da936370bca0654bf82b57fcc1027.png
 categories:
   - MySQL
 tags:
@@ -192,7 +192,7 @@ order by 排序的字段或表达式;
 
 
 
-> [我之前的教程！点击这里！](https://www.itnxd.cn/posts/16928.html#1%E3%80%81%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0)
+> [我之前的教程！点击这里！](https://itnxd.eu.org/posts/16928.html#1%E3%80%81%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0)
 
 
 
@@ -217,7 +217,7 @@ order by 排序的字段或表达式;
 
 
 
-> [我之前的教程！点击这里！](https://www.itnxd.cn/posts/16928.html#3%E3%80%81%E6%95%B0%E5%80%BC%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0)
+> [我之前的教程！点击这里！](https://itnxd.eu.org/posts/16928.html#3%E3%80%81%E6%95%B0%E5%80%BC%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0)
 
 
 
@@ -236,7 +236,7 @@ order by 排序的字段或表达式;
 
 
 
-> [我之前的教程！点击这里！](https://www.itnxd.cn/posts/16928.html#2%E3%80%81%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0)
+> [我之前的教程！点击这里！](https://itnxd.eu.org/posts/16928.html#2%E3%80%81%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0)
 
 
 
@@ -506,7 +506,7 @@ cross join 表2 别名;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/22/6e29356e99a2a6c8b9eef981b50d9b3c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/22/6e29356e99a2a6c8b9eef981b50d9b3c.png)
 
 
 
@@ -514,7 +514,7 @@ cross join 表2 别名;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/22/8fde5413dfbddc98a505bc18feb93f61.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/22/8fde5413dfbddc98a505bc18feb93f61.png)
 
 
 
@@ -1487,7 +1487,7 @@ alter table 表 modify column 字段名 字段类型 约束 ;
 
 
 
-> [以前写的教程，点击这里查看！](https://www.itnxd.cn/posts/15411.html#9%E3%80%81%E7%B4%A2%E5%BC%95)
+> [以前写的教程，点击这里查看！](https://itnxd.eu.org/posts/15411.html#9%E3%80%81%E7%B4%A2%E5%BC%95)
 
 
 
@@ -1501,12 +1501,12 @@ alter table 表 modify column 字段名 字段类型 约束 ;
 
 > DCL(Data Control Language)：数据控制语句，用于控制不同数据段直接的许可和访问级别的语句。这些语句定义了数据库、表、字段、用户的访问权限和安全级别。主要的语句关键字包括`grant、revoke `等。
 >
-> **总链接**：[数据库教程之字符集.安全管理.维护，之前写的教程，点击这里！](https://www.itnxd.cn/posts/28616.html)
+> **总链接**：[数据库教程之字符集.安全管理.维护，之前写的教程，点击这里！](https://itnxd.eu.org/posts/28616.html)
 >
-> - [字符集和校对顺序，点击这里！](https://www.itnxd.cn/posts/28616.html#%E4%B8%80%E3%80%81%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E6%A0%A1%E5%AF%B9%E9%A1%BA%E5%BA%8F)
-> - [安全管理，用户管理，访问控制，点击这里！](https://www.itnxd.cn/posts/28616.html#%E4%BA%8C%E3%80%81%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86)
-> - [数据库维护，备份，日志，点击这里！](https://www.itnxd.cn/posts/28616.html#%E4%B8%89%E3%80%81%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BB%B4%E6%8A%A4)
-> - [改善性能，mysql使用建议，点击这里！](https://www.itnxd.cn/posts/28616.html#%E5%9B%9B%E3%80%81%E6%94%B9%E5%96%84%E6%80%A7%E8%83%BD)
+> - [字符集和校对顺序，点击这里！](https://itnxd.eu.org/posts/28616.html#%E4%B8%80%E3%80%81%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E6%A0%A1%E5%AF%B9%E9%A1%BA%E5%BA%8F)
+> - [安全管理，用户管理，访问控制，点击这里！](https://itnxd.eu.org/posts/28616.html#%E4%BA%8C%E3%80%81%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86)
+> - [数据库维护，备份，日志，点击这里！](https://itnxd.eu.org/posts/28616.html#%E4%B8%89%E3%80%81%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BB%B4%E6%8A%A4)
+> - [改善性能，mysql使用建议，点击这里！](https://itnxd.eu.org/posts/28616.html#%E5%9B%9B%E3%80%81%E6%94%B9%E5%96%84%E6%80%A7%E8%83%BD)
 
 
 
@@ -1607,7 +1607,7 @@ SELECT * FROM account;
 
 
 
-> 我之前写的教程更加详细：[隔离级别，点击这里！](https://www.itnxd.cn/posts/61605.html#%E4%BA%8C%E3%80%81%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB)
+> 我之前写的教程更加详细：[隔离级别，点击这里！](https://itnxd.eu.org/posts/61605.html#%E4%BA%8C%E3%80%81%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB)
 
 
 
@@ -2430,8 +2430,8 @@ CALL test_while2(100)$
 
 
 
-> 总链接：[数据库教程之游标及触发器，之前写的教程，点击这里!](https://www.itnxd.cn/posts/43244.html)
+> 总链接：[数据库教程之游标及触发器，之前写的教程，点击这里!](https://itnxd.eu.org/posts/43244.html)
 >
-> - [游标](https://www.itnxd.cn/posts/43244.html#%E4%B8%80%E3%80%81%E6%B8%B8%E6%A0%87)
-> - [触发器](https://www.itnxd.cn/posts/43244.html#%E4%BA%8C%E3%80%81%E8%A7%A6%E5%8F%91%E5%99%A8)
+> - [游标](https://itnxd.eu.org/posts/43244.html#%E4%B8%80%E3%80%81%E6%B8%B8%E6%A0%87)
+> - [触发器](https://itnxd.eu.org/posts/43244.html#%E4%BA%8C%E3%80%81%E8%A7%A6%E5%8F%91%E5%99%A8)
 

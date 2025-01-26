@@ -3,8 +3,8 @@ title: AcWing-107.超快速排序
 author: Mr.Niu
 toc: true
 abbrlink: 8382
-cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/e%20(19).jpg'
-top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/a/11.jpg'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/e%20(19).jpg'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/a/11.jpg'
 categories:
   - AcWing
 tags:
@@ -35,7 +35,7 @@ updated:
 
 > 又是归并排序求逆序对的问题！
 >
-> 参考我关于这类问题的一篇题解：[AcWing-788.逆序对的数量](https://www.itnxd.cn/posts/25834.html)
+> 参考我关于这类问题的一篇题解：[AcWing-788.逆序对的数量](https://itnxd.eu.org/posts/25834.html)
 
 #### 题目描述
 
@@ -113,7 +113,7 @@ updated:
 
 详细题解看类似的题目下面这篇我之前写的题解！
 
-> [AcWing-788.逆序对的数量](https://www.itnxd.cn/posts/25834.html)
+> [AcWing-788.逆序对的数量](https://itnxd.eu.org/posts/25834.html)
 
 
 

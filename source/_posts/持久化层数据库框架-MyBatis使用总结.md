@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 33442
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/09/5f345a4085a6573345ec63d7be527cb2.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/09/5f345a4085a6573345ec63d7be527cb2.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/09/5f345a4085a6573345ec63d7be527cb2.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/09/5f345a4085a6573345ec63d7be527cb2.png
 categories:
   - 开发框架
 tags:
@@ -58,7 +58,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/09/a1b6b194c6439e39313c38b37acc6484.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/09/a1b6b194c6439e39313c38b37acc6484.png)
 
 
 
@@ -895,7 +895,7 @@ select – 映射查询语句。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/09/f71e50a3a1e0902d7ef1939cec24abe4.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/09/f71e50a3a1e0902d7ef1939cec24abe4.png)
 
 
 
@@ -2050,7 +2050,7 @@ public void test7() throws IOException, InterruptedException {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/09/7911daee3733d9f17110660bc5c777bb.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/09/7911daee3733d9f17110660bc5c777bb.png)
 
 
 
@@ -2355,7 +2355,7 @@ l memoryStoreEvictionPolicy - 当内存缓存达到最大，有新的element加�
 
 **双击命令即可！**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/09/f018abc5ac3b1b05e912fecb613d9cdf.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/09/f018abc5ac3b1b05e912fecb613d9cdf.png)
 
 
 
@@ -2365,7 +2365,7 @@ l memoryStoreEvictionPolicy - 当内存缓存达到最大，有新的element加�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/09/afb674f07dbdf1ad5ceb7433d0eeac17.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/09/afb674f07dbdf1ad5ceb7433d0eeac17.png)
 
 
 
@@ -2444,7 +2444,7 @@ public void test1() throws IOException {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/04/09/6c35c36c39d9852b935c47241540251f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/04/09/6c35c36c39d9852b935c47241540251f.png)
 
 
 

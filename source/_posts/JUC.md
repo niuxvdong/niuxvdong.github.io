@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 63819
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/1d57ced3775c11d0e1c2f25bcd3b1f33.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/25/1d57ced3775c11d0e1c2f25bcd3b1f33.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/1d57ced3775c11d0e1c2f25bcd3b1f33.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/25/1d57ced3775c11d0e1c2f25bcd3b1f33.png
 categories:
   - 并发编程
 tags:
@@ -819,7 +819,7 @@ AA打印5此，BB打印10次，CC打印15次，一共进行10轮
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/24/0839615375a97296a569185d2a50903e.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/24/0839615375a97296a569185d2a50903e.png)
 
 
 
@@ -1055,7 +1055,7 @@ public boolean add(E e) {
 
 **图示：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/24/bc4b830653e2d0fb37ad3ab2b42c63e3.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/24/bc4b830653e2d0fb37ad3ab2b42c63e3.png)
 
 
 
@@ -2016,7 +2016,7 @@ Process finished with exit code 0
 
 
 
-[https://www.itnxd.cn/posts/64689.html5、Redis中的悲观锁和乐观锁](https://www.itnxd.cn/posts/64689.html#5%E3%80%81Redis%E4%B8%AD%E7%9A%84%E6%82%B2%E8%A7%82%E9%94%81%E5%92%8C%E4%B9%90%E8%A7%82%E9%94%81)
+[https://itnxd.eu.org/posts/64689.html5、Redis中的悲观锁和乐观锁](https://itnxd.eu.org/posts/64689.html#5%E3%80%81Redis%E4%B8%AD%E7%9A%84%E6%82%B2%E8%A7%82%E9%94%81%E5%92%8C%E4%B9%90%E8%A7%82%E9%94%81)
 
 
 
@@ -2193,7 +2193,7 @@ Process finished with exit code 0
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/610eb4a01e8a2fc601b61f35620e1e78.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/25/610eb4a01e8a2fc601b61f35620e1e78.png)
 
 
 
@@ -2211,7 +2211,7 @@ Process finished with exit code 0
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/7447818f88210cc8640d062448f564bb.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/25/7447818f88210cc8640d062448f564bb.png)
 
 
 
@@ -2418,7 +2418,7 @@ DelayQueue 中的元素只有当其指定的延迟时间到了，才能够从队
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/f9753e713da552b51915dc6f01ee5660.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/25/f9753e713da552b51915dc6f01ee5660.png)
 
 
 
@@ -2534,7 +2534,7 @@ Java 中的线程池是通过 Executor 框架实现的，该框架中用到了 E
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/fec5f239cada65dec1f812dd9e4342e9.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/25/fec5f239cada65dec1f812dd9e4342e9.png)
 
 
 
@@ -2650,7 +2650,7 @@ public ThreadPoolExecutor(int corePoolSize,
 
 12使用常驻线程，345进入阻塞队列，678开辟新的三个线程，9无法处理执行拒绝策略！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/990ed469767dd1649ab8153fafd5d6fc.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/25/990ed469767dd1649ab8153fafd5d6fc.png)
 
 
 
@@ -2663,7 +2663,7 @@ public ThreadPoolExecutor(int corePoolSize,
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/83b667c3f188ec86baea11b9be2314be.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/25/83b667c3f188ec86baea11b9be2314be.png)
 
 
 
@@ -2677,7 +2677,7 @@ public ThreadPoolExecutor(int corePoolSize,
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/25/bb132fc646f4c5e1ea8e3a63ebe04161.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/25/bb132fc646f4c5e1ea8e3a63ebe04161.png)
 
 
 

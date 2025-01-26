@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 24926
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/18/d318c7b9707b249e866ceabe5c169fc9.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/18/d318c7b9707b249e866ceabe5c169fc9.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/18/d318c7b9707b249e866ceabe5c169fc9.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/18/d318c7b9707b249e866ceabe5c169fc9.png
 categories: JavaWeb
 tags:
   - Filter
@@ -181,7 +181,7 @@ public class AdminFilter implements Filter {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/18/846f506a4971c87179c8935f8699472d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/18/846f506a4971c87179c8935f8699472d.png)
 
 
 
@@ -311,7 +311,7 @@ public void init(FilterConfig filterConfig) throws ServletException {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/18/d690988ed033ff5eeb71c9e4ec0f95e1.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/18/d690988ed033ff5eeb71c9e4ec0f95e1.png)
 
 
 
@@ -462,7 +462,7 @@ public void doFilter(ServletRequest servletRequest, ServletResponse servletRespo
 
 
 
-**补充**：对于数据库事务问题，据我理解，只要所有数据库操作都传入一个连接对象，且不在操作中进行关闭连接就可以达到事务操作的目的！**[正如康师傅的JDBC中的考虑事务操作的通用增删改查的实现，点击这里！](https://www.itnxd.cn/posts/49844.html#%E5%85%AD%E3%80%81%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%8B%E5%8A%A1)**
+**补充**：对于数据库事务问题，据我理解，只要所有数据库操作都传入一个连接对象，且不在操作中进行关闭连接就可以达到事务操作的目的！**[正如康师傅的JDBC中的考虑事务操作的通用增删改查的实现，点击这里！](https://itnxd.eu.org/posts/49844.html#%E5%85%AD%E3%80%81%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%8B%E5%8A%A1)**
 
 
 

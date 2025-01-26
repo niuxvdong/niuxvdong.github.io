@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 40239
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/08/2551073f07a67ad60680fbe2eb942569.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/08/2551073f07a67ad60680fbe2eb942569.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/08/2551073f07a67ad60680fbe2eb942569.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/08/2551073f07a67ad60680fbe2eb942569.png
 categories: LeetCode刷题
 tags:
   - 全排列
@@ -103,7 +103,7 @@ public:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/20/6c7692fd4d611fbd9f1299e2fcb5fee6.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/20/6c7692fd4d611fbd9f1299e2fcb5fee6.png)
 
 **时间复杂度**：$O(n^2)$
 

@@ -3,8 +3,8 @@ title: JavaWeb之Cookie和Session使用
 author: ITNXD
 toc: true
 abbrlink: 56534
-top_img: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/16/b89c9c53224f01449998789fa34acfc6.png
-cover: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/16/b89c9c53224f01449998789fa34acfc6.png
+top_img: https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/16/b89c9c53224f01449998789fa34acfc6.png
+cover: https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/16/b89c9c53224f01449998789fa34acfc6.png
 categories:
   - JavaWeb
 tags:
@@ -109,7 +109,7 @@ public abstract class BaseServlet extends HttpServlet {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/16/a67ec5d90a0514f5a9254ff5a5d69d52.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/16/a67ec5d90a0514f5a9254ff5a5d69d52.png)
 
 
 
@@ -143,7 +143,7 @@ protected void createCookie(HttpServletRequest req, HttpServletResponse resp) th
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/16/d1b4e9adde19085e7f6f166f566663be.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/16/d1b4e9adde19085e7f6f166f566663be.png)
 
 
 
@@ -280,7 +280,7 @@ protected void updateCookie(HttpServletRequest req, HttpServletResponse resp) th
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/16/2b637587baf07cd25e22fba6ed1e50e0.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/16/2b637587baf07cd25e22fba6ed1e50e0.png)
 
 
 
@@ -400,7 +400,7 @@ protected void setPath(HttpServletRequest req, HttpServletResponse resp) throws 
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/16/6848f6055caf9034b73048d038c2c701.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/16/6848f6055caf9034b73048d038c2c701.png)
 
 
 
@@ -653,7 +653,7 @@ protected void deleteNow(HttpServletRequest req, HttpServletResponse resp) throw
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/16/12e739a06592871ec25ea5566610be4b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/16/12e739a06592871ec25ea5566610be4b.png)
 
 
 

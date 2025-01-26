@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 8790
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/23/54de8d8441dfdce96e726f7fb173c689.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/23/54de8d8441dfdce96e726f7fb173c689.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/23/54de8d8441dfdce96e726f7fb173c689.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/23/54de8d8441dfdce96e726f7fb173c689.png
 categories:
   - 容器
 tags:
@@ -72,7 +72,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/44f59a8258278d09a703b8278153ac75.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/44f59a8258278d09a703b8278153ac75.png)
 
 
 
@@ -117,7 +117,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/11d091da83f646a80e918a3636bd487f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/11d091da83f646a80e918a3636bd487f.png)
 
 
 
@@ -146,7 +146,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/bd00cef27bd2f07fd2bbf5a20a030fcc.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/bd00cef27bd2f07fd2bbf5a20a030fcc.png)
 
 
 
@@ -249,7 +249,7 @@ rm -rf /var/lib/docker
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/9edb8f1f5e7e656977ffaa6819155885.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/9edb8f1f5e7e656977ffaa6819155885.png)
 
 
 
@@ -651,7 +651,7 @@ docker history 镜像名	  # 查看镜像变更历史
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/23/8255286c30fda0d557c630d14eecfe78.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/23/8255286c30fda0d557c630d14eecfe78.png)
 
 
 
@@ -680,7 +680,7 @@ docker run -d -p 8080:9000 \
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/e54b9b9c777df0a4abac5cede813d807.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/e54b9b9c777df0a4abac5cede813d807.png)
 
 
 
@@ -702,7 +702,7 @@ docker run -d -p 8080:9000 \
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/a5642a5dd9da531a9f484a45f110398a.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/a5642a5dd9da531a9f484a45f110398a.png)
 
 
 
@@ -725,7 +725,7 @@ docker run -d -p 8080:9000 \
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/23bb6a1b5a70d5db8a0f3397c251d2da.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/23bb6a1b5a70d5db8a0f3397c251d2da.png)
 
 
 
@@ -838,7 +838,7 @@ docker commit -a="itnxd" -m="add webapps app" 容器id tomcat02:1.0
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/6c9594b33410b92df3ad31cd9d171855.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/6c9594b33410b92df3ad31cd9d171855.png)
 
 
 
@@ -860,7 +860,7 @@ dokcer run -it -v 主机内目录:容器内目录 镜像名/id
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/518973a1ca19ea0bfaf44d8929eddcf7.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/518973a1ca19ea0bfaf44d8929eddcf7.png)
 
 
 
@@ -868,7 +868,7 @@ dokcer run -it -v 主机内目录:容器内目录 镜像名/id
 
 **可在Dockerfile中使用VOLUME指令来给镜像添加一个或多个数据卷：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/23/384d35393047e0208992d5afd12c8f43.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/23/384d35393047e0208992d5afd12c8f43.png)
 
 
 
@@ -896,7 +896,7 @@ docker run -d  -v 容器内目录  镜像名/id  # 匿名挂载
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/4a804be7b7984a132b16239e9608286f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/4a804be7b7984a132b16239e9608286f.png)
 
 
 
@@ -914,7 +914,7 @@ docker run -d  -v 卷名：容器内目录  镜像名/id  # 具名挂载
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/01fd38ae9ace11818b0faee6e7cc083c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/01fd38ae9ace11818b0faee6e7cc083c.png)
 
 
 
@@ -922,7 +922,7 @@ docker run -d  -v 卷名：容器内目录  镜像名/id  # 具名挂载
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/ef607cc67f433877cd0f188bbcff0683.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/ef607cc67f433877cd0f188bbcff0683.png)
 
 
 
@@ -1229,7 +1229,7 @@ $ docker push itnxd/mytomcat:1.0
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/01f0e5b3344e413135c7561e28aa4d5d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/01f0e5b3344e413135c7561e28aa4d5d.png)
 
 
 
@@ -1260,7 +1260,7 @@ docker run -d -P --link 容器名/id 镜像名/id
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/9cb5deb39011b9a94f887378cd6c553c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/9cb5deb39011b9a94f887378cd6c553c.png)
 
 
 
@@ -1268,7 +1268,7 @@ docker run -d -P --link 容器名/id 镜像名/id
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/c984c3b415f209a0280de3211ff8cd42.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/c984c3b415f209a0280de3211ff8cd42.png)
 
 
 
@@ -1296,7 +1296,7 @@ docker network ls    # 查看所有的docker网络
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/4022f7cc8d8354fdf94bb70012ff9524.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/4022f7cc8d8354fdf94bb70012ff9524.png)
 
 
 
@@ -1318,7 +1318,7 @@ docker  network create --driver 网络模式 --subnet 子网ip --gateway 网关 
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/fb627a077e745b7e7947ad030b2b7e2f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/fb627a077e745b7e7947ad030b2b7e2f.png)
 
 
 
@@ -1326,7 +1326,7 @@ docker  network create --driver 网络模式 --subnet 子网ip --gateway 网关 
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/cf8a9259ffc4889a95cb8c15db080083.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/cf8a9259ffc4889a95cb8c15db080083.png)
 
 
 
@@ -1346,7 +1346,7 @@ docker  network create --driver 网络模式 --subnet 子网ip --gateway 网关 
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/96741dfd1f07fabd799acc3c6a8df50a.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/96741dfd1f07fabd799acc3c6a8df50a.png)
 
 
 
@@ -1360,7 +1360,7 @@ docker  network create --driver 网络模式 --subnet 子网ip --gateway 网关 
 docker network connect 网络名 容器名/id
 ```
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/eaef7f917e411751c8bdc78f7c93829f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/eaef7f917e411751c8bdc78f7c93829f.png)
 
 
 
@@ -1370,7 +1370,7 @@ docker network connect 网络名 容器名/id
 
 新建的网络中绑定了一个新的容器！此时
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/56567d0b1f90a9df355d88f6880f05e0.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/56567d0b1f90a9df355d88f6880f05e0.png)
 
 
 
@@ -1386,7 +1386,7 @@ docker network connect 网络名 容器名/id
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/7f2e9d0b725c43333dfc3337d82d5773.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/7f2e9d0b725c43333dfc3337d82d5773.png)
 
 
 
@@ -1710,7 +1710,7 @@ Docker Swarm 是 Docker 的集群管理工具。它将 Docker 主机池转变为
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/776fabf18bc07dd61ead6e65272266c9.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/776fabf18bc07dd61ead6e65272266c9.png)
 
 
 
@@ -1751,7 +1751,7 @@ Manager Status：
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/22/8c39219df28f4cee550513230609af18.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/22/8c39219df28f4cee550513230609af18.png)
 
 
 

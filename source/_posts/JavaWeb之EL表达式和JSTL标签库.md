@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 12961
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/11/3bf3e14497a262785628aa9f76a3386e.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/11/3bf3e14497a262785628aa9f76a3386e.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/11/3bf3e14497a262785628aa9f76a3386e.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/11/3bf3e14497a262785628aa9f76a3386e.png
 categories:
   - JavaWeb
 tags:
@@ -181,7 +181,7 @@ public class Person {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/11/6b5685971f99452bed99efb2685dca71.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/11/6b5685971f99452bed99efb2685dca71.png)
 
 
 
@@ -191,7 +191,7 @@ public class Person {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/11/20799829d9c3118d16aa21df4fbb1148.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/11/20799829d9c3118d16aa21df4fbb1148.png)
 
 
 
@@ -203,7 +203,7 @@ public class Person {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/11/62d7181c62997a8d09aa771b8c04c941.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/11/62d7181c62997a8d09aa771b8c04c941.png)
 
 
 
@@ -319,7 +319,7 @@ ${map.c-c-c}
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/11/0a7b79a55578b82a3e6b3ba53ab5493a.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/11/0a7b79a55578b82a3e6b3ba53ab5493a.png)
 
 
 
@@ -651,7 +651,7 @@ ${paramValues}<br>
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/11/c4a315200425e05471990e0275e601aa.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/11/c4a315200425e05471990e0275e601aa.png)
 
 
 
@@ -866,7 +866,7 @@ request.setAttribute("height", 180);
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/11/c2e3d2daa238d1c4c9714b875b711322.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/11/c2e3d2daa238d1c4c9714b875b711322.png)
 
 
 

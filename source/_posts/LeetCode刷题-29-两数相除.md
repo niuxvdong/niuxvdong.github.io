@@ -3,8 +3,8 @@ title: LeetCode刷题-29.两数相除
 author: Mr.Niu
 toc: true
 abbrlink: 6904
-top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/a/5.jpg'
-cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/a/5.jpg'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/a/5.jpg'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/a/5.jpg'
 categories: LeetCode刷题
 tags:
   - 倍增

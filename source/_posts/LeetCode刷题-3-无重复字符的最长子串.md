@@ -3,8 +3,8 @@ title: LeetCode刷题-3.无重复字符的最长子串
 author: Mr.Niu
 toc: true
 abbrlink: 25173
-top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/2217be8958644ff0aeee6c0a11233678.png'
-cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/2217be8958644ff0aeee6c0a11233678.png'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/2217be8958644ff0aeee6c0a11233678.png'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/2217be8958644ff0aeee6c0a11233678.png'
 categories: LeetCode刷题
 tags:
   - 双指针
@@ -78,7 +78,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/13/22c05fc2d493bfde42e956439f6a326f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/13/22c05fc2d493bfde42e956439f6a326f.png)
 
 时间复杂度：每个点最多被i 和 j 各扫描一次，所以为 O(N)
 

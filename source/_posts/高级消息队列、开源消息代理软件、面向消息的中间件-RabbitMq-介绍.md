@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 49375
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/bad5b13b191abdc4a6020f51449722c3.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/bad5b13b191abdc4a6020f51449722c3.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/bad5b13b191abdc4a6020f51449722c3.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/bad5b13b191abdc4a6020f51449722c3.png
 categories:
   - 中间件
 tags:
@@ -48,7 +48,7 @@ MQ(message queue)，从字面意思上看，本质是个队列，FIFO 先入先�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/656776657c1cd707e4384e2aa2ee0dbe.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/656776657c1cd707e4384e2aa2ee0dbe.png)
 
 ### 应用解耦
 
@@ -58,7 +58,7 @@ MQ(message queue)，从字面意思上看，本质是个队列，FIFO 先入先�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/7fa61fe00211121e2b256e9d9e65fde3.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/7fa61fe00211121e2b256e9d9e65fde3.png)
 
 
 
@@ -72,7 +72,7 @@ MQ(message queue)，从字面意思上看，本质是个队列，FIFO 先入先�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/41c600ba04bb6070e6e53c69584a85f6.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/41c600ba04bb6070e6e53c69584a85f6.png)
 
 
 
@@ -218,7 +218,7 @@ RabbitMQ 是一个消息中间件：它接受并转发消息。你可以把它�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/1acf4a1111da7c55530d84c0ab7b43c5.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/1acf4a1111da7c55530d84c0ab7b43c5.png)
 
 
 
@@ -230,7 +230,7 @@ RabbitMQ 是一个消息中间件：它接受并转发消息。你可以把它�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/d4aa4aca082ab0db7c30fbe502247ce7.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/d4aa4aca082ab0db7c30fbe502247ce7.png)
 
 
 
@@ -569,7 +569,7 @@ public class RabbitMqUtils {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/427ced52eb04544b3603f53edc987656.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/427ced52eb04544b3603f53edc987656.png)
 
 
 
@@ -704,7 +704,7 @@ C.Channel.basicReject()
 
 是否批量应答！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/a82cd91fb95d09216aefa08e0ca19459.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/a82cd91fb95d09216aefa08e0ca19459.png)
 
 
 
@@ -1213,7 +1213,7 @@ String queueName = channel.queueDeclare().getQueue();
 
 创建出来之后长成这样：
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/99634aeaae8a1898b7820920717dbd28.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/99634aeaae8a1898b7820920717dbd28.png)
 
 
 
@@ -1227,7 +1227,7 @@ Fanout 这种类型非常简单。正如从名称中猜到的那样，它是将�
 
 ### 代码架构图
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/51fbc9fce1642ac4e5c0810428734ba2.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/51fbc9fce1642ac4e5c0810428734ba2.png)
 
 ### 生产者
 
@@ -1352,7 +1352,7 @@ public class ReceiveLogs02 {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/d340cc001c730dccc67f3da9673c4a7b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/d340cc001c730dccc67f3da9673c4a7b.png)
 
 
 
@@ -1495,7 +1495,7 @@ public class ReceiveLogDirect02 {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/53bd973371240faa0a20ac29108532aa.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/53bd973371240faa0a20ac29108532aa.png)
 
 
 
@@ -1659,7 +1659,7 @@ public class ReceiveLogsTopic02 {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/8860b616c3ded7952a52a61ac73268a6.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/8860b616c3ded7952a52a61ac73268a6.png)
 
 
 
@@ -1815,7 +1815,7 @@ public class Consumer02 {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/1695f6e16eda5e6635df1278aa139b30.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/1695f6e16eda5e6635df1278aa139b30.png)
 
 
 
@@ -1823,7 +1823,7 @@ public class Consumer02 {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/4ec2df2ea10647d257da46d37cdce38c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/4ec2df2ea10647d257da46d37cdce38c.png)
 
 
 
@@ -1833,7 +1833,7 @@ public class Consumer02 {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/cac4782d836785db3e977c5f968d8479.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/cac4782d836785db3e977c5f968d8479.png)
 
 
 
@@ -2002,7 +2002,7 @@ public class SwaggerConfig {
 
 创建两个队列 QA 和 QB，两者队列 TTL 分别设置为 10S 和 40S，然后在创建一个交换机 X 和死信交换机 Y，它们的类型都是 direct，创建一个死信队列 QD，它们的绑定关系如下：
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/79d592a699655dfc9ac8f7371b385d09.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/79d592a699655dfc9ac8f7371b385d09.png)
 
 
 
@@ -2189,7 +2189,7 @@ public class DelayedQueueConsumer {
 
 新增了一个队列 QC,绑定关系如下,该队列不设置 TTL 时间：
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/31ea7c80db0244ead6a22fc35678d52e.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/31ea7c80db0244ead6a22fc35678d52e.png)
 
 
 
@@ -2257,7 +2257,7 @@ public void sendMsg(@PathVariable String message,@PathVariable String ttlTime) {
 
 **效果：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/dac29001c52f10800a1f495a54822b20.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/dac29001c52f10800a1f495a54822b20.png)
 
 
 
@@ -2313,7 +2313,7 @@ systemctl restart rabbitmq-server
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/2440f233f67ab0a42234d462874a0202.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/2440f233f67ab0a42234d462874a0202.png)
 
 
 
@@ -2323,7 +2323,7 @@ systemctl restart rabbitmq-server
 
 新增了一个队列 delayed.queue,一个自定义交换机 delayed.exchange，绑定关系如下：
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/82380d647c6839296c4a9164853ce9bc.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/82380d647c6839296c4a9164853ce9bc.png)
 
 
 
@@ -2432,7 +2432,7 @@ public class DelayedQueueConsumer {
 
 **结果：** 符合预期！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/125e32f30a49be2d6da25d0fc19b50c4.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/125e32f30a49be2d6da25d0fc19b50c4.png)
 
 
 
@@ -2466,7 +2466,7 @@ public class DelayedQueueConsumer {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/fc1a404afd0a31dbef1b16304b8b6df5.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/fc1a404afd0a31dbef1b16304b8b6df5.png)
 
 
 
@@ -2791,7 +2791,7 @@ public class MyCallBack implements RabbitTemplate.ConfirmCallback, RabbitTemplat
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/c7f62c71cab9080b9c96e5ea927fabba.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/c7f62c71cab9080b9c96e5ea927fabba.png)
 
 
 
@@ -3111,7 +3111,7 @@ channel.queueDeclare("myqueue", false, false, false, args);
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/ca55022f5c5e05059bf508d5dc9759b5.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/ca55022f5c5e05059bf508d5dc9759b5.png)
 
 
 
@@ -3175,7 +3175,7 @@ rabbitmqctl forget_cluster_node rabbit@node2#(node1 机器上执行)
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/8a66eb3eee9fef6271ed919fbab521ce.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/8a66eb3eee9fef6271ed919fbab521ce.png)
 
 
 
@@ -3203,7 +3203,7 @@ rabbitmqctl forget_cluster_node rabbit@node2#(node1 机器上执行)
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/9863d8278d9811dbf6319033c2d4d00e.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/9863d8278d9811dbf6319033c2d4d00e.png)
 
 
 
@@ -3211,7 +3211,7 @@ rabbitmqctl forget_cluster_node rabbit@node2#(node1 机器上执行)
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/722fdc04361d39166e0dfb82375ef410.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/722fdc04361d39166e0dfb82375ef410.png)
 
 
 
@@ -3221,7 +3221,7 @@ rabbitmqctl forget_cluster_node rabbit@node2#(node1 机器上执行)
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/86e18d3ddb37e5d99e494ac9cc970378.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/86e18d3ddb37e5d99e494ac9cc970378.png)
 
 
 
@@ -3253,7 +3253,7 @@ rabbitmqctl forget_cluster_node rabbit@node2#(node1 机器上执行)
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/d8f37b23f9ce611b232bd5cf52209a17.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/d8f37b23f9ce611b232bd5cf52209a17.png)
 
 
 
@@ -3285,7 +3285,7 @@ HAProxy 提供高可用性、负载均衡及基于 TCPHTTP 应用的代理，支
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/39f243a56d67072c7255f9f22df74a44.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/39f243a56d67072c7255f9f22df74a44.png)
 
 3、在两台节点启动 haproxy
 
@@ -3392,7 +3392,7 @@ systemctl restart rabbitmq-server
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/6bb68590d0c9f6def34caf2bf45645c7.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/6bb68590d0c9f6def34caf2bf45645c7.png)
 
 
 
@@ -3400,19 +3400,19 @@ systemctl restart rabbitmq-server
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/69279975c70b3a571c4afc3189af485d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/69279975c70b3a571c4afc3189af485d.png)
 
 
 
 4、添加 policy
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/0d7e100f8e07cdbbf21e516f1b8ea7cb.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/0d7e100f8e07cdbbf21e516f1b8ea7cb.png)
 
 
 
 5、成功
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/e81ce5ab6efd93fd15c3bb080e4caa37.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/e81ce5ab6efd93fd15c3bb080e4caa37.png)
 
 
 
@@ -3436,7 +3436,7 @@ systemctl restart rabbitmq-server
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/b797f0f55417c8ece3cebee4e058c49b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/b797f0f55417c8ece3cebee4e058c49b.png)
 
 
 
@@ -3456,7 +3456,7 @@ systemctl restart rabbitmq-server
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/edc72fd35a2422f06288d747b5c997d2.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/edc72fd35a2422f06288d747b5c997d2.png)
 
 
 
@@ -3498,7 +3498,7 @@ systemctl restart rabbitmq-server
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/0fb2761335bfed9098b25ce25a44cc52.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/0fb2761335bfed9098b25ce25a44cc52.png)
 
 
 
@@ -3506,4 +3506,4 @@ systemctl restart rabbitmq-server
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/04/6180316d284a3e56b37e604676750b32.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/04/6180316d284a3e56b37e604676750b32.png)

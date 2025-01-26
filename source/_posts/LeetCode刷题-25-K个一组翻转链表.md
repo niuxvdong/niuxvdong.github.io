@@ -3,8 +3,8 @@ title: LeetCode刷题-25.K个一组翻转链表
 author: Mr.Niu
 toc: true
 abbrlink: 42577
-top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/2217be8958644ff0aeee6c0a11233678.png'
-cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/2217be8958644ff0aeee6c0a11233678.png'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/2217be8958644ff0aeee6c0a11233678.png'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/2217be8958644ff0aeee6c0a11233678.png'
 categories: LeetCode刷题
 tags:
   - 链表
@@ -136,7 +136,7 @@ public:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/21/1d7853d5ea8c377dd3ca3bb280374ff7.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/21/1d7853d5ea8c377dd3ca3bb280374ff7.png)
 
 ## AC代码二：（清晰）
 

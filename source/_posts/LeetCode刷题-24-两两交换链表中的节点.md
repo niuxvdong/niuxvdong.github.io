@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 28774
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/18/71c8e00671678eeed46f918fd9cf6e0e.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/18/71c8e00671678eeed46f918fd9cf6e0e.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/18/71c8e00671678eeed46f918fd9cf6e0e.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/18/71c8e00671678eeed46f918fd9cf6e0e.png
 categories: LeetCode刷题
 tags:
   - 链表
@@ -56,7 +56,7 @@ updated:
 
 **以此为戒：做链表题一定要画好图，看清哪里断了，哪里没断！**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/21/ea939ed3419513945f6226db2e773d7c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/21/ea939ed3419513945f6226db2e773d7c.png)
 
 ## 错误代码：
 
@@ -104,7 +104,7 @@ public:
 - `p`永远指向下一组节点的上一个节点，`a、b`永远指向下一组节点。
 - 要严格保证后面有两个节点或以上才可以，`p->next && p->next->next`，即这两个节点非空！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/21/2e36441ffbccf9e87472cd90383b3274.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/21/2e36441ffbccf9e87472cd90383b3274.png)
 
 ## AC代码：
 

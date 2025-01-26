@@ -3,8 +3,8 @@ title: LeetCode刷题-1.两数之和
 author: Mr.Niu
 toc: true
 abbrlink: 43672
-top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/a9c2f309abce279d95c1a290e8e75015.png'
-cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/a9c2f309abce279d95c1a290e8e75015.png'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/a9c2f309abce279d95c1a290e8e75015.png'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/a9c2f309abce279d95c1a290e8e75015.png'
 categories: LeetCode刷题
 tags:
   - 数组

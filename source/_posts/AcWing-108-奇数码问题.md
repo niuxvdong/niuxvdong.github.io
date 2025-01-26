@@ -3,8 +3,8 @@ title: AcWing-108.奇数码问题
 author: Mr.Niu
 toc: true
 abbrlink: 12934
-cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/e%20(19).jpg'
-top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/e%20(19).jpg'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/e%20(19).jpg'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/e%20(19).jpg'
 categories:
   - AcWing
 tags:
@@ -36,7 +36,7 @@ updated:
 
 > 同样是归并排序求逆序对的问题！
 >
-> 参考我关于这类问题的一篇题解：[AcWing-788.逆序对的数量](https://www.itnxd.cn/posts/25834.html)
+> 参考我关于这类问题的一篇题解：[AcWing-788.逆序对的数量](https://itnxd.eu.org/posts/25834.html)
 >
 > 奇偶性很神奇，对于一类问题，如果属于同种性质（奇偶性相同），那么它们就是完全相同（这个在某种意义上说）的，一些特殊的情况又例外！
 
@@ -142,7 +142,7 @@ TAK
 
 
 
-> [我之前的题解：归并求逆序对！点击这里！](https://www.itnxd.cn/posts/25834.html)
+> [我之前的题解：归并求逆序对！点击这里！](https://itnxd.eu.org/posts/25834.html)
 >
 > [参考题解：点击这里！](https://www.acwing.com/solution/AcWing/content/1294/)
 

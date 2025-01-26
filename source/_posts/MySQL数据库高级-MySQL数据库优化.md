@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 37817
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/13/023c60267caad6a4c7dd0a87e754c56b.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/13/023c60267caad6a4c7dd0a87e754c56b.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/13/023c60267caad6a4c7dd0a87e754c56b.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/13/023c60267caad6a4c7dd0a87e754c56b.png
 categories:
   - 数据库
   - 关系型数据库
@@ -38,7 +38,7 @@ updated:
 
 
 
-> 安装步骤参考我之前的博客，[Linux安装MySQL5.7！](https://www.itnxd.cn/posts/58036.html#3%E3%80%81%E5%AE%89%E8%A3%85Mysql)
+> 安装步骤参考我之前的博客，[Linux安装MySQL5.7！](https://itnxd.eu.org/posts/58036.html#3%E3%80%81%E5%AE%89%E8%A3%85Mysql)
 
 
 
@@ -148,7 +148,7 @@ default-character-set=utf8
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/07/7923eb0cadd206f4f3ec1b3992c21d7b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/07/7923eb0cadd206f4f3ec1b3992c21d7b.png)
 
 
 
@@ -186,7 +186,7 @@ default-character-set=utf8
 
 > 和其它数据库相比，MySQL 有点与众不同，它的架构可以在多种不同场景中应用并发挥良好作用。主要体现在存储引擎的架构上，**插件式的存储引擎架构将查询处理和其它的系统任务以及数据的存储提取相分离。**这种架构可以根据业务的需求和实际需要选择合适的存储引擎。
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/08/4854018f0c945e58642b5366f34499cb.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/08/4854018f0c945e58642b5366f34499cb.png)
 
 
 
@@ -265,7 +265,7 @@ show variables like '%storage_engine%'
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/08/0f529d81c3b8a27e8841528ae62f19bd.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/08/0f529d81c3b8a27e8841528ae62f19bd.png)
 
 
 
@@ -303,7 +303,7 @@ show variables like '%storage_engine%'
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/08/1bfd0d22949c894d7e6c883eeca7534f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/08/1bfd0d22949c894d7e6c883eeca7534f.png)
 
 
 
@@ -352,7 +352,7 @@ show variables like '%storage_engine%'
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/08/fc298f9e49358faa7f4ea026e806e7ef.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/08/fc298f9e49358faa7f4ea026e806e7ef.png)
 
 
 
@@ -364,7 +364,7 @@ show variables like '%storage_engine%'
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/08/4b833060abad46f7c83725063cfd3dab.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/08/4b833060abad46f7c83725063cfd3dab.png)
 
 
 
@@ -376,7 +376,7 @@ show variables like '%storage_engine%'
 
 **MySQL执行顺序鱼刺图：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/08/35ceab73ec100972533feea050cb4b65.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/08/35ceab73ec100972533feea050cb4b65.png)
 
 
 
@@ -392,7 +392,7 @@ show variables like '%storage_engine%'
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/08/47467787a1aa24843ea0ad469b94b3ca.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/08/47467787a1aa24843ea0ad469b94b3ca.png)
 
 
 
@@ -406,7 +406,7 @@ show variables like '%storage_engine%'
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/08/cffc6e7c7181f27e97effa18537e4b14.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/08/cffc6e7c7181f27e97effa18537e4b14.png)
 
 
 
@@ -414,7 +414,7 @@ show variables like '%storage_engine%'
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/08/79b38eb77814626670b4698b8f0667f9.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/08/79b38eb77814626670b4698b8f0667f9.png)
 
 
 
@@ -453,7 +453,7 @@ MySQL 官方对索引的定义为：索引（Index）是帮助 MySQL 高效获�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/08/3b2a9e7979c2b51236c0642dd24d653b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/08/3b2a9e7979c2b51236c0642dd24d653b.png)
 
 
 
@@ -595,7 +595,7 @@ CREATE INDEX idx_customer_name ON customer(customer_name);
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/08/125120d8c06726964383ce9e2e8b8b1e.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/08/125120d8c06726964383ce9e2e8b8b1e.png)
 
 
 
@@ -667,7 +667,7 @@ CREATE UNIQUE INDEX idx_customer_name ON customer(customer_no);
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/aa9fa51daadd1cd07e878df4607b24f4.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/aa9fa51daadd1cd07e878df4607b24f4.png)
 
 
 
@@ -684,7 +684,7 @@ CREATE UNIQUE INDEX idx_customer_name ON customer(customer_no);
 
 **结构如下图所示：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/bf301c7cc5cfcb919388d9334e3c2a8a.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/bf301c7cc5cfcb919388d9334e3c2a8a.png)
 
 
 
@@ -719,7 +719,7 @@ CREATE UNIQUE INDEX idx_customer_name ON customer(customer_no);
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/bf0cf71fe1bc2eafbfe7b0080a16c7e3.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/bf0cf71fe1bc2eafbfe7b0080a16c7e3.png)
 
 
 
@@ -809,7 +809,7 @@ IO：磁盘I/O瓶颈发生在装入数据远大于内存容量的时候
 
 **Explain 执行后返回的信息：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/bae9ff6f9832f42e6fca8bb87251d032.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/bae9ff6f9832f42e6fca8bb87251d032.png)
 
 
 
@@ -825,7 +825,7 @@ select 查询的序列号,包含一组数字，表示查询中执行 select 子�
 
 - id 相同，执行顺序由上至下
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/3036fe4cdc0cba6689b5af113fd1c8df.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/3036fe4cdc0cba6689b5af113fd1c8df.png)
 
 
 
@@ -833,7 +833,7 @@ select 查询的序列号,包含一组数字，表示查询中执行 select 子�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/1a48c9eb64f7d802f5bb4bb8bf07bc9f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/1a48c9eb64f7d802f5bb4bb8bf07bc9f.png)
 
 
 
@@ -847,7 +847,7 @@ derived2中的2是id=2的那个2，表示s3是由t3衍生出来的表，因此�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/9c7c37cf014a3f8e653e83f1930ab2f4.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/9c7c37cf014a3f8e653e83f1930ab2f4.png)
 
 
 
@@ -871,7 +871,7 @@ select_type 代表查询的类型，主要是用于区别普通查询、联合�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/dc16eb0bddee71c7eb714803233499a9.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/dc16eb0bddee71c7eb714803233499a9.png)
 
 
 
@@ -885,7 +885,7 @@ select_type 代表查询的类型，主要是用于区别普通查询、联合�
 
 当使用了@@来引用系统变量的时候，不会使用缓存。
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/d2b59495502d7ec85d8bcb1c6eeabbdb.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/d2b59495502d7ec85d8bcb1c6eeabbdb.png)
 
 
 
@@ -932,7 +932,7 @@ type 是查询的访问类型。是较为重要的一个指标。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/c79ceb456484b97825f80bf039c01c07.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/c79ceb456484b97825f80bf039c01c07.png)
 
 
 
@@ -944,7 +944,7 @@ type 是查询的访问类型。是较为重要的一个指标。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/2066695c4ae03f4b10931f95b64617ea.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/2066695c4ae03f4b10931f95b64617ea.png)
 
 
 
@@ -956,7 +956,7 @@ type 是查询的访问类型。是较为重要的一个指标。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/5018c711aa1e091c0be94a0ce941b417.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/5018c711aa1e091c0be94a0ce941b417.png)
 
 
 
@@ -966,7 +966,7 @@ type 是查询的访问类型。是较为重要的一个指标。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/157571885743ccabaee8f10f0e1590f8.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/157571885743ccabaee8f10f0e1590f8.png)
 
 
 
@@ -978,7 +978,7 @@ Full Index Scan，index与ALL区别为index类型只遍历索引树。这通常�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/0d1e3c3589b71c236ac0891e87fc0e5a.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/0d1e3c3589b71c236ac0891e87fc0e5a.png)
 
 
 
@@ -1020,7 +1020,7 @@ Full Table Scan，将遍历全表以找到匹配的行。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/bd241acd1cc3bf0cf2e52bf17010f4b0.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/bd241acd1cc3bf0cf2e52bf17010f4b0.png)
 
 
 
@@ -1034,7 +1034,7 @@ key_len显示的值为索引字段的**最大可能长度**，**并非实际使�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/9956ae055c43ca11adb167f302026f6f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/9956ae055c43ca11adb167f302026f6f.png)
 
 
 
@@ -1049,7 +1049,7 @@ key_len显示的值为索引字段的**最大可能长度**，**并非实际使�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/f8856e0a599c6fabf3b51b167f7db0aa.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/f8856e0a599c6fabf3b51b167f7db0aa.png)
 
 
 
@@ -1073,7 +1073,7 @@ key_len显示的值为索引字段的**最大可能长度**，**并非实际使�
 
 **其实就是where右边对应的条件，只是限定了左边必须是有索引的列！**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/712456fef1d0e2934abf7e59f5edaf8f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/712456fef1d0e2934abf7e59f5edaf8f.png)
 
 
 
@@ -1087,7 +1087,7 @@ rows 列显示 MySQL 认为它执行查询时必须检查的行数。越少越�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/eb25f727ac6bc16bb5e96568d3394a5f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/eb25f727ac6bc16bb5e96568d3394a5f.png)
 
 
 
@@ -1123,7 +1123,7 @@ rows 列显示 MySQL 认为它执行查询时必须检查的行数。越少越�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/35483fb3721a9752014f06b78cb5cf1d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/35483fb3721a9752014f06b78cb5cf1d.png)
 
 
 
@@ -1139,7 +1139,7 @@ rows 列显示 MySQL 认为它执行查询时必须检查的行数。越少越�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/dbbcea25dd3379eef9ba8d4176f0c189.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/dbbcea25dd3379eef9ba8d4176f0c189.png)
 
 
 
@@ -1160,7 +1160,7 @@ Using index 代表表示相应的 select 操作中使用了覆盖索引(Covering
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/f3a60899d7498d107bfc72397ae7c8c8.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/f3a60899d7498d107bfc72397ae7c8c8.png)
 
 
 
@@ -1205,7 +1205,7 @@ where 子句的值总是 false，不能用来获取任何元组。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/25a4c0bda5a115199d99a4cd4fedc3ef.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/25a4c0bda5a115199d99a4cd4fedc3ef.png)
 
 
 
@@ -1233,7 +1233,7 @@ where 子句的值总是 false，不能用来获取任何元组。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/a816115134dd06104b5e30cfbb803303.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/a816115134dd06104b5e30cfbb803303.png)
 
 
 
@@ -1241,7 +1241,7 @@ where 子句的值总是 false，不能用来获取任何元组。
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/09/453477dd9d8642c565734d4d6a3a5bb3.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/09/453477dd9d8642c565734d4d6a3a5bb3.png)
 
 
 
@@ -1745,7 +1745,7 @@ EXPLAIN SELECT * FROM staffs WHERE NAME = 'July' AND age = 25 AND pos = 'dev';
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/445668969f0a823486f571d5b8511539.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/445668969f0a823486f571d5b8511539.png)
 
 
 
@@ -1766,7 +1766,7 @@ explain SELECT * FROM staffs WHERE pos = 'dev';
 
 **type都变为了ALL！**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/9e5cdd60f8262236b0fdac5a25579bff.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/9e5cdd60f8262236b0fdac5a25579bff.png)
 
 
 
@@ -1804,7 +1804,7 @@ explain SELECT * FROM staffs WHERE NAME = 'July' AND pos = 'dev';
 
 很明显，使用到了索引，但是ref只有一个const，即中间出现了断层，索引部分失效！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/8b4898b4619b06ce4b135a0c97ddc12f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/8b4898b4619b06ce4b135a0c97ddc12f.png)
 
 
 
@@ -1837,7 +1837,7 @@ explain SELECT * FROM staffs WHERE left(name,4);
 
 索引列增加函数后，type变为了ALL，性能下降！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/c9d1e92e1b7e9f18e0d40860391d98f8.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/c9d1e92e1b7e9f18e0d40860391d98f8.png)
 
 
 
@@ -1871,7 +1871,7 @@ type变为了range，右边的pos将会失效！
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/4ddc54ac2fa614924f606040d4c9f0f7.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/4ddc54ac2fa614924f606040d4c9f0f7.png)
 
 
 
@@ -1899,7 +1899,7 @@ explain SELECT name FROM staffs WHERE name = 'July' AND age = 25;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/28e1a653048f47f485fa0db2a1bf49e9.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/28e1a653048f47f485fa0db2a1bf49e9.png)
 
 
 
@@ -1928,7 +1928,7 @@ explain SELECT * FROM staffs WHERE name = 'July' or name = 'z3';
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/5ff2d92ba62ba552c0d433585747f4db.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/5ff2d92ba62ba552c0d433585747f4db.png)
 
 
 
@@ -1960,7 +1960,7 @@ like百分号加右边type会变为range，且使用上索引！
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/a99d4908defc69c338aa7ab73d1cac7e.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/a99d4908defc69c338aa7ab73d1cac7e.png)
 
 
 
@@ -2001,7 +2001,7 @@ explain SELECT * FROM staffs WHERE name = 2000;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/be4ded5e37da50f2106e981769f9269a.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/be4ded5e37da50f2106e981769f9269a.png)
 
 
 
@@ -2028,7 +2028,7 @@ explain SELECT * FROM staffs WHERE name = 2000;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/9b508cc387a5dd9398498faf116fad4a.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/9b508cc387a5dd9398498faf116fad4a.png)
 
 
 
@@ -2036,7 +2036,7 @@ explain SELECT * FROM staffs WHERE name = 2000;
 
 - 这种情况显示用到了两个索引，但其实用到了三个索引，第三个索引c3没有用于查找而是用于了排序！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/b7512c812aad3a865f2e480bd6b71ebb.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/b7512c812aad3a865f2e480bd6b71ebb.png)
 
 
 
@@ -2044,7 +2044,7 @@ explain SELECT * FROM staffs WHERE name = 2000;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/a06eaf6065b061b81131987cb966dc57.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/a06eaf6065b061b81131987cb966dc57.png)
 
 
 
@@ -2054,7 +2054,7 @@ explain SELECT * FROM staffs WHERE name = 2000;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/1bf02bdc80c04e7c5428ad2906203f7d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/1bf02bdc80c04e7c5428ad2906203f7d.png)
 
 
 
@@ -2065,7 +2065,7 @@ explain SELECT * FROM staffs WHERE name = 2000;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/5bdb099e3b731cee074a553b15ef961b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/5bdb099e3b731cee074a553b15ef961b.png)
 
 
 
@@ -2074,7 +2074,7 @@ explain SELECT * FROM staffs WHERE name = 2000;
 - 第一个用到了两个索引，无filesort，原因是c2 = a2，其实就是常量const，对常量排序毫无意义，因此最后的排序相当于order by c3，并没有断层出现
 - 第二个用到了一个索引，产生了filesort，原因是order by顺序出现了断层
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/91154d481794d64dd28fad048e36f133.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/91154d481794d64dd28fad048e36f133.png)
 
 
 
@@ -2082,7 +2082,7 @@ explain SELECT * FROM staffs WHERE name = 2000;
 
 - 都是只用了一个索引，由于断层会导致第二种情况会发生文件排序和临时表问题！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/ed345a44ef4696119ab5ebcec05b7869.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/ed345a44ef4696119ab5ebcec05b7869.png)
 
 
 
@@ -2101,7 +2101,7 @@ explain SELECT * FROM staffs WHERE name = 2000;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/5a47a1ab257242b26b1f9c0971f16e5c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/5a47a1ab257242b26b1f9c0971f16e5c.png)
 
 
 
@@ -2175,7 +2175,7 @@ explain SELECT * FROM staffs WHERE name = 2000;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/8de33809473bc2325389dc1066c78342.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/8de33809473bc2325389dc1066c78342.png)
 
 
 
@@ -2238,7 +2238,7 @@ EXPLAIN SELECT * FROM tblA WHERE age > 20 ORDER BY birth,age;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/f0decb4eef607c38cc819e1e8fc84db1.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/f0decb4eef607c38cc819e1e8fc84db1.png)
 
 
 
@@ -2248,7 +2248,7 @@ EXPLAIN SELECT * FROM tblA WHERE age > 20 ORDER BY birth,age;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/64dd06f64cc56641caa96366137251fd.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/64dd06f64cc56641caa96366137251fd.png)
 
 
 
@@ -2315,7 +2315,7 @@ EXPLAIN SELECT * FROM tblA WHERE age > 20 ORDER BY birth,age;
 
 简单解释一下第八个，b是范围，但是排序使用到了bc，对于bc来说，因为a为常量在，因此范围b不会影响！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/4aef9ff5159764a69211b5be6fa83bba.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/4aef9ff5159764a69211b5be6fa83bba.png)
 
 
 
@@ -2367,7 +2367,7 @@ EXPLAIN SELECT * FROM tblA WHERE age > 20 ORDER BY birth,age;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/caea6f0b3eaea02a0dee7cdc7ed13c22.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/caea6f0b3eaea02a0dee7cdc7ed13c22.png)
 
 
 
@@ -2403,7 +2403,7 @@ log_output=FILE
 select sleep(4);
 ```
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/dffd32ebda0f6bd7f531b305e3cfc92b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/dffd32ebda0f6bd7f531b305e3cfc92b.png)
 
 
 
@@ -2431,7 +2431,7 @@ mysqldumpslow --help
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/df3d089baddab9513fc14799711c5476.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/df3d089baddab9513fc14799711c5476.png)
 
 
 
@@ -2441,7 +2441,7 @@ mysqldumpslow --help
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/10/eb69e7c669d97ae58e8204256dba45f3.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/10/eb69e7c669d97ae58e8204256dba45f3.png)
 
 
 
@@ -2709,13 +2709,13 @@ select * from emp group by id%20 order by 5;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/12/8bc75ef1a0d61ac524ac0644af041b4b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/12/8bc75ef1a0d61ac524ac0644af041b4b.png)
 
 
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/12/80c85bc4c15979c66145cbd93c1f2734.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/12/80c85bc4c15979c66145cbd93c1f2734.png)
 
 
 
@@ -2809,7 +2809,7 @@ mysql> show profile cpu,block io for query 16;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/12/0c069fe0782c787b6a0a89bb07910dc0.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/12/0c069fe0782c787b6a0a89bb07910dc0.png)
 
 
 
@@ -2902,7 +2902,7 @@ select * from mysql.general_log;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/12/610673f29339c9d71688d248b661e450.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/12/610673f29339c9d71688d248b661e450.png)
 
 
 
@@ -3039,7 +3039,7 @@ mysql> show status like 'table%';
 
 unlock后才会结束阻塞！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/12/247fb061482690de76973ceca0d09a1d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/12/247fb061482690de76973ceca0d09a1d.png)
 
 
 
@@ -3056,7 +3056,7 @@ unlock后才会结束阻塞！
 
 unlock后才会结束阻塞！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/12/ecb38d4b5b17c910143e2f178dd4f98a.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/12/ecb38d4b5b17c910143e2f178dd4f98a.png)
 
 
 
@@ -3145,7 +3145,7 @@ commit后阻塞才会结束！
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/12/a3dee9fe2d67077587c5518a8681812c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/12/a3dee9fe2d67077587c5518a8681812c.png)
 
 
 
@@ -3169,7 +3169,7 @@ commit后阻塞才会结束！
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/12/c1935c50a6984fd9acd07a869cdde942.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/12/c1935c50a6984fd9acd07a869cdde942.png)
 
 
 
@@ -3202,7 +3202,7 @@ commit后阻塞才会结束！
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/12/0747ad598a2279882c35a5a2eedbb674.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/12/0747ad598a2279882c35a5a2eedbb674.png)
 
 
 
@@ -3218,7 +3218,7 @@ select * from test_innodb_lock where a=8 for update;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/12/55b0d3571ad776bf9d4c36c2655a8fa2.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/12/55b0d3571ad776bf9d4c36c2655a8fa2.png)
 
 
 
@@ -3310,7 +3310,7 @@ slave会从master读取binlog来进行数据同步：
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/12/c1af741f6b1922fdf0a7920c9e2468c0.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/12/c1af741f6b1922fdf0a7920c9e2468c0.png)
 
 
 
@@ -3352,13 +3352,13 @@ slave会从master读取binlog来进行数据同步：
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/13/f8dae72f10efef10fdca5f5f19595943.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/13/f8dae72f10efef10fdca5f5f19595943.png)
 
 
 
 **my.ini文件：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/13/b17d3b3819938b3c69c1eb2cfaf69b57.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/13/b17d3b3819938b3c69c1eb2cfaf69b57.png)
 
 
 
@@ -3431,7 +3431,7 @@ show master status；
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/13/4a8cb3cbd30c7f82b4118e4a0f0a8d34.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/13/4a8cb3cbd30c7f82b4118e4a0f0a8d34.png)
 
 
 
@@ -3463,7 +3463,7 @@ show slave status\G
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/13/9da738dd5edcea88ad866fc9d9bbd444.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/13/9da738dd5edcea88ad866fc9d9bbd444.png)
 
 
 

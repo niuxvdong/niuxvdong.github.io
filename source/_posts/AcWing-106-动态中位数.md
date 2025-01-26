@@ -3,8 +3,8 @@ title: AcWing-106.动态中位数
 author: Mr.Niu
 toc: true
 abbrlink: 3455
-cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/d%20(28).jpg'
-top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/56.jpg'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/d%20(28).jpg'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/56.jpg'
 categories:
   - AcWing
 tags:
@@ -148,7 +148,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/cfbed76f33d180d0887c7328c90b0165.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/cfbed76f33d180d0887c7328c90b0165.png)
 
 
 

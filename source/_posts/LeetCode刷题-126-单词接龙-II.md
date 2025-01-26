@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 48766
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/09/60d39eeb07a42b0d0aaf7e9be6d86138.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/08/09/60d39eeb07a42b0d0aaf7e9be6d86138.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/08/09/60d39eeb07a42b0d0aaf7e9be6d86138.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/08/09/60d39eeb07a42b0d0aaf7e9be6d86138.png
 categories: LeetCode刷题
 tags:
   - 最短路

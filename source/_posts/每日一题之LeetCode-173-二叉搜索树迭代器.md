@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 23863
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/2efbc4cb93b487fd05b4faaa113a1b7d.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/21/2efbc4cb93b487fd05b4faaa113a1b7d.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/2efbc4cb93b487fd05b4faaa113a1b7d.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/21/2efbc4cb93b487fd05b4faaa113a1b7d.png
 categories:
   - LeetCode刷题
 tags:
@@ -48,7 +48,7 @@ updated:
 
 其实就是二叉树中序遍历非递归写法的拆分！
 
-二叉树非递归中序遍历写法：[LeetCode的94题就是！](https://www.itnxd.cn/posts/16898.html)
+二叉树非递归中序遍历写法：[LeetCode的94题就是！](https://itnxd.eu.org/posts/16898.html)
 
 1. 构造器处理第一部分
 2. next处理下一部分，然后还得处理和构造器相同的部分

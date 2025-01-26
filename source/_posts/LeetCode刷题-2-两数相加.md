@@ -9,8 +9,8 @@ tags:
   - 模拟
 date: 2020-06-12 22:09:58
 updated:
-top_img: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/57ea9cb8f94698210de69d9742d81d04.png
-cover: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/57ea9cb8f94698210de69d9742d81d04.png
+top_img: https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/57ea9cb8f94698210de69d9742d81d04.png
+cover: https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/57ea9cb8f94698210de69d9742d81d04.png
 ---
 
 

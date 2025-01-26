@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 50148
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/21/bfc3135039b751146d7e559fc3d7f832.png
 categories:
   - 开发框架
 tags:
@@ -78,7 +78,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/23/5a6b833dc918e890bff69a7cf787319a.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/23/5a6b833dc918e890bff69a7cf787319a.png)
 
 
 
@@ -148,7 +148,7 @@ IOC：（Inversion Of Control）控制反转，把**对象创建**和对象之�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/23/3de345bf550cfe245889cea0f5487a7f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/23/3de345bf550cfe245889cea0f5487a7f.png)
 
 
 
@@ -219,7 +219,7 @@ public void test2(){
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/23/4d1acb125da0305a37310400e13f9de1.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/23/4d1acb125da0305a37310400e13f9de1.png)
 
 
 
@@ -265,7 +265,7 @@ public void test2(){
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/23/5a6b833dc918e890bff69a7cf787319a.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/23/5a6b833dc918e890bff69a7cf787319a.png)
 
 
 
@@ -279,7 +279,7 @@ public void test2(){
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/23/e8dd12b744f567d2c257d0ff15f2f998.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/23/e8dd12b744f567d2c257d0ff15f2f998.png)
 
 
 
@@ -1018,7 +1018,7 @@ public class UserService {
 
 **关于Resource介绍：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/20/2538980f51cd4b36cbdf288968c89eb9.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/20/2538980f51cd4b36cbdf288968c89eb9.png)
 
 
 

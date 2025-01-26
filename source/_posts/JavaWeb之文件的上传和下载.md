@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 15689
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/15/7684201c6e0c7e79a55a4ca670a497ca.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/15/7684201c6e0c7e79a55a4ca670a497ca.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/15/7684201c6e0c7e79a55a4ca670a497ca.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/15/7684201c6e0c7e79a55a4ca670a497ca.png
 categories:
   - JavaWeb
 tags:
@@ -135,7 +135,7 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws S
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/15/203cdd0e57e5ad682758cc8bd2cfa933.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/15/203cdd0e57e5ad682758cc8bd2cfa933.png)
 
 
 

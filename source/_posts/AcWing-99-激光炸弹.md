@@ -3,8 +3,8 @@ title: AcWing-99.激光炸弹
 author: Mr.Niu
 toc: true
 abbrlink: 26178
-cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/40.jpg'
-top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/40.jpg'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/40.jpg'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/40.jpg'
 categories:
   - AcWing
 tags:
@@ -125,7 +125,7 @@ s[i] = s[0]......+s[i]
 
 画个图：紫色的自己加上红色和绿色构成的矩形，再加上另一个红色和绿色构成的矩形，在减去多加的绿色部分！
 
-![](https://gitcode.net/qq_43590403/images/-/raw/master/img/12312.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/12312.png)
 
 
 
@@ -141,7 +141,7 @@ s[i] = s[0]......+s[i]
 
 如下图：
 
-![](https://gitcode.net/qq_43590403/images/-/raw/master/img/rak2.jpg)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/rak2.jpg)
 
 
 

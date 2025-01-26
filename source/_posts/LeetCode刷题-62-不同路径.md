@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 21929
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/09/70565ef50e6782ee3a41f60a5d6499c0.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/09/70565ef50e6782ee3a41f60a5d6499c0.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/09/70565ef50e6782ee3a41f60a5d6499c0.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/09/70565ef50e6782ee3a41f60a5d6499c0.png
 categories: LeetCode刷题
 tags:
   - 动态规划

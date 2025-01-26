@@ -8,8 +8,8 @@ tags:
   - Dubbo
 date: 2021-10-01 15:48:41
 updated:
-top_img: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/27c3919bb7046bc5ece2657118592e38.png
-cover: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/27c3919bb7046bc5ece2657118592e38.png
+top_img: https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/27c3919bb7046bc5ece2657118592e38.png
+cover: https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/27c3919bb7046bc5ece2657118592e38.png
 ---
 
 
@@ -44,7 +44,7 @@ cover: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/27c3919bb7046
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/9cf66d6f9eb3a58be35ed04ba5c20516.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/9cf66d6f9eb3a58be35ed04ba5c20516.png)
 
 
 
@@ -90,7 +90,7 @@ cover: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/27c3919bb7046
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/2e41b325de0bffc9f43b79b820f32411.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/2e41b325de0bffc9f43b79b820f32411.png)
 
 
 
@@ -104,7 +104,7 @@ cover: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/27c3919bb7046
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/477e7332ef6d05c918eae571ce416533.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/477e7332ef6d05c918eae571ce416533.png)
 
 
 
@@ -124,7 +124,7 @@ cover: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/27c3919bb7046
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/abf1ae30833fe724cebf60b675f81500.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/abf1ae30833fe724cebf60b675f81500.png)
 
 
 
@@ -160,7 +160,7 @@ RPC【Remote Procedure Call】是指**远程过程调用**，是一种进程间�
 
 **RPC两个核心模块：通讯，序列化。**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/e046cca905bc0abdc037faa9c6204a9d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/e046cca905bc0abdc037faa9c6204a9d.png)
 
 
 
@@ -168,7 +168,7 @@ RPC【Remote Procedure Call】是指**远程过程调用**，是一种进程间�
 
 **流程图：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/5d4835568c61d1c6506ae95e4a6fd648.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/5d4835568c61d1c6506ae95e4a6fd648.png)
 
 
 
@@ -182,7 +182,7 @@ RPC【Remote Procedure Call】是指**远程过程调用**，是一种进程间�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/2b385232f32c4e1cbe7785eefdbbc3a8.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/2b385232f32c4e1cbe7785eefdbbc3a8.png)
 
 
 
@@ -227,7 +227,7 @@ RPC【Remote Procedure Call】是指**远程过程调用**，是一种进程间�
 
 
 
-安装详细查看之前ZK教程：[https://www.itnxd.cn/posts/34316.html#%E4%BA%8C%E3%80%81%E5%AE%89%E8%A3%85](https://www.itnxd.cn/posts/34316.html#%E4%BA%8C%E3%80%81%E5%AE%89%E8%A3%85)
+安装详细查看之前ZK教程：[https://itnxd.eu.org/posts/34316.html#%E4%BA%8C%E3%80%81%E5%AE%89%E8%A3%85](https://itnxd.eu.org/posts/34316.html#%E4%BA%8C%E3%80%81%E5%AE%89%E8%A3%85)
 
 
 
@@ -288,7 +288,7 @@ mvn clean package '-Dmaven.test.skip=true'
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/13e436f0be954c235d1de2975ad8e16b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/13e436f0be954c235d1de2975ad8e16b.png)
 
 
 
@@ -310,7 +310,7 @@ mvn clean package '-Dmaven.test.skip=true'
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/706513245a68205c19a594c9aef946b1.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/706513245a68205c19a594c9aef946b1.png)
 
 
 
@@ -330,7 +330,7 @@ pom.xml：
 
 **服务消费者层：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/7db4e3d4b1beb063d254eb7aaf2fdc2c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/7db4e3d4b1beb063d254eb7aaf2fdc2c.png)
 
 
 
@@ -400,7 +400,7 @@ public class OrderServiceImpl implements OrderService {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/eb339f8881f52af053bf5b1de90f17be.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/eb339f8881f52af053bf5b1de90f17be.png)
 
 
 
@@ -585,7 +585,7 @@ public class MainApplication {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/4f7e1e400c133a542b2cc54b03381c74.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/4f7e1e400c133a542b2cc54b03381c74.png)
 
 
 
@@ -762,7 +762,7 @@ public class Application {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/d06221fe083077fb38fb34026da2cb25.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/d06221fe083077fb38fb34026da2cb25.png)
 
 
 
@@ -959,7 +959,7 @@ public class Application {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/1e10b6b761953f7d97e8d9d0f79694a4.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/1e10b6b761953f7d97e8d9d0f79694a4.png)
 
 
 
@@ -975,7 +975,7 @@ public class Application {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/36b1d283b01062faf0fab779b0d9cc95.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/36b1d283b01062faf0fab779b0d9cc95.png)
 
 
 
@@ -987,7 +987,7 @@ public class Application {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/8a52ad7cc1cca298ff6d0974a79d07e4.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/8a52ad7cc1cca298ff6d0974a79d07e4.png)
 
 
 
@@ -1104,7 +1104,7 @@ dubbo.consumer.check=false（全局）
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/c152cf7135ac1d719562b12db364d47d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/c152cf7135ac1d719562b12db364d47d.png)
 
 
 
@@ -1225,7 +1225,7 @@ private UserService userService;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/25cc2c563aff6da130e20710dbb1df29.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/25cc2c563aff6da130e20710dbb1df29.png)
 
 
 
@@ -1505,7 +1505,7 @@ UserService userService;
 
 示意图：用完一个比例的，则不会再调用！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/81a51f499c563bd2cfef5806429601b2.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/81a51f499c563bd2cfef5806429601b2.png)
 
 
 
@@ -1539,7 +1539,7 @@ UserService userService;
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/d7a7f94631c9ee598f04b3155a4e2c1b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/d7a7f94631c9ee598f04b3155a4e2c1b.png)
 
 
 
@@ -1840,7 +1840,7 @@ public List<UserAddress> hello (String userId) {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/826080cb84a762a7cccc3acd2550358e.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/826080cb84a762a7cccc3acd2550358e.png)
 
 
 
@@ -1878,7 +1878,7 @@ Netty是一个**异步**事件驱动的网络应用程序框架， 用于快速�
 
 **BIO：(Blocking IO)**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/ff1180b37e5b13982db37362a6783034.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/ff1180b37e5b13982db37362a6783034.png)
 
 
 
@@ -1890,7 +1890,7 @@ Selector 一般称 为**选择器** ，也可以翻译为 **多路复用器，**
 
 Connect（连接就绪）、Accept（接受就绪）、Read（读就绪）、Write（写就绪）
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/3977a864002eaf92f4572f16c11ca643.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/3977a864002eaf92f4572f16c11ca643.png)
 
 
 
@@ -1900,7 +1900,7 @@ Connect（连接就绪）、Accept（接受就绪）、Read（读就绪）、Wri
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/b40610f939fa281f94ae7859f2db6ed4.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/b40610f939fa281f94ae7859f2db6ed4.png)
 
 
 
@@ -1916,7 +1916,7 @@ Connect（连接就绪）、Accept（接受就绪）、Read（读就绪）、Wri
 
 ### dubbo原理 - 框架设计 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/3db0b83e1a318bd1a70eda097351b316.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/3db0b83e1a318bd1a70eda097351b316.png)
 
 
 
@@ -1940,7 +1940,7 @@ Connect（连接就绪）、Accept（接受就绪）、Read（读就绪）、Wri
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/ad8567c7d1aa9fa5bb1538b7d1231551.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/ad8567c7d1aa9fa5bb1538b7d1231551.png)
 
 
 
@@ -1948,7 +1948,7 @@ Connect（连接就绪）、Accept（接受就绪）、Read（读就绪）、Wri
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/38c17adb7041fef1b18ca5c3592939a1.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/38c17adb7041fef1b18ca5c3592939a1.png)
 
 
 
@@ -1958,4 +1958,4 @@ Connect（连接就绪）、Accept（接受就绪）、Read（读就绪）、Wri
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/10/01/9f2d8cb36f584ff6551a333251389754.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/10/01/9f2d8cb36f584ff6551a333251389754.png)

@@ -3,8 +3,8 @@ title: AcWing-90.64位整数乘法
 author: Mr.Niu
 toc: true
 abbrlink: 39845
-cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_83.jpg'
-top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_83.jpg'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/ACG.GY_83.jpg'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/ACG.GY_83.jpg'
 categories:
   - AcWing
 tags:
@@ -78,7 +78,7 @@ updated:
 
 使用高精度乘法去算，显然可以，但是没必要，本题不需要最后结果，需要的是模p 的结果，所以可以借助快速幂思想：
 
-> [参考这里：AcWing-89.a ^ b](https://www.itnxd.cn/posts/2286.html)
+> [参考这里：AcWing-89.a ^ b](https://itnxd.eu.org/posts/2286.html)
 
 类似的：十八位数乘法会溢出，那么加法肯定不会溢出，所以就是要将乘法转化为加法：
 

@@ -3,8 +3,8 @@ title: Java教程系列之面向对象编程
 author: Mr.Niu
 toc: true
 abbrlink: 40947
-cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/792a0206bd0f5540313e680d1b426692.png'
-top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/792a0206bd0f5540313e680d1b426692.png'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/792a0206bd0f5540313e680d1b426692.png'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/792a0206bd0f5540313e680d1b426692.png'
 categories:
   - Java教程
 tags:

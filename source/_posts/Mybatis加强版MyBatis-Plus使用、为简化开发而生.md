@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 5524
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/26/124fa3c7859ae9eb301e9b4d0e5cbfea.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/26/124fa3c7859ae9eb301e9b4d0e5cbfea.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/26/124fa3c7859ae9eb301e9b4d0e5cbfea.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/26/124fa3c7859ae9eb301e9b4d0e5cbfea.png
 categories: 开发框架
 tags:
   - MyBatis-Plus
@@ -549,7 +549,7 @@ public class TestMp {
 
 **图示如下：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/26/eb28695e55bc92f35f38fae334453d8b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/26/eb28695e55bc92f35f38fae334453d8b.png)
 
 
 
@@ -816,7 +816,7 @@ public void testGenerator() {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/26/d7a2515d42820cc95618fd6c78edc384.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/26/d7a2515d42820cc95618fd6c78edc384.png)
 
 
 

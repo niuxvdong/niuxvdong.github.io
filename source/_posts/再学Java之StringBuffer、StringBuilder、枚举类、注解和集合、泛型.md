@@ -5,8 +5,8 @@ toc: true
 abbrlink: 54748
 date: 2021-02-15 19:06:25
 updated:
-top_img: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/9fd846795f34be8edc6238ce1ef30584.png
-cover: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/9fd846795f34be8edc6238ce1ef30584.png
+top_img: https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/9fd846795f34be8edc6238ce1ef30584.png
+cover: https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/9fd846795f34be8edc6238ce1ef30584.png
 categories:
 	- Java教程
 tags:
@@ -454,7 +454,7 @@ public void test2(){
 
 **`Target`注解的课取值：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/17/c091f6bdcf447d758b7310e81d1c553d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/17/c091f6bdcf447d758b7310e81d1c553d.png)
 
 
 

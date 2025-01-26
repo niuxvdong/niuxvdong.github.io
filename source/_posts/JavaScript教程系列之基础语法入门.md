@@ -3,7 +3,7 @@ title: JavaScript教程系列之基础语法入门
 author: Mr.Niu
 toc: true
 abbrlink: 41103
-cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/e (19).jpg'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/e (19).jpg'
 categories:
 	- JavaScript教程
 tags:
@@ -11,7 +11,7 @@ tags:
 	- 入门
 date: 2020-02-09 13:53:06
 updated:
-top_img: https://gitcode.net/qq_43590403/images/-/raw/master/img/04.jpg
+top_img: https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/04.jpg
 ---
 
 

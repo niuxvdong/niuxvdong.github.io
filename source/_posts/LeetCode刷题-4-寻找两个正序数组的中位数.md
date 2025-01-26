@@ -3,8 +3,8 @@ title: LeetCode刷题-4.寻找两个正序数组的中位数
 author: Mr.Niu
 toc: true
 abbrlink: 44209
-top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/f45b0094f57dd09e8807ead0f6b2ee9d.png'
-cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/f45b0094f57dd09e8807ead0f6b2ee9d.png'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/f45b0094f57dd09e8807ead0f6b2ee9d.png'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/f45b0094f57dd09e8807ead0f6b2ee9d.png'
 categories: LeetCode刷题
 tags:
   - 递归
@@ -139,7 +139,7 @@ public:
 
 
 
-![简单图示](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/13/b65882b67720b835f09698285c07a792.png)
+![简单图示](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/13/b65882b67720b835f09698285c07a792.png)
 
 
 

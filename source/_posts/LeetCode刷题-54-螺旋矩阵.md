@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 395
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/07/a87fbbf6814aa0b0d4462eac5c55bcb4.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/07/a87fbbf6814aa0b0d4462eac5c55bcb4.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/07/a87fbbf6814aa0b0d4462eac5c55bcb4.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/07/a87fbbf6814aa0b0d4462eac5c55bcb4.png
 categories: LeetCode刷题
 tags:
   - 模拟

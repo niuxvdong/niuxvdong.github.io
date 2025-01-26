@@ -3,8 +3,8 @@ title: AcWing-93.递归实现组合型枚举
 author: Mr.Niu
 toc: true
 abbrlink: 53888
-cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_08.jpg'
-top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_08.jpg'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/ACG.GY_08.jpg'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/ACG.GY_08.jpg'
 categories:
   - AcWing
 tags:

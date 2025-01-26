@@ -11,8 +11,8 @@ tags:
   - i18n
 date: 2021-03-18 17:33:40
 updated:
-top_img: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/18/4fb7fc6f404e546446eff3f9e9ad3881.png
-cover: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/18/4fb7fc6f404e546446eff3f9e9ad3881.png
+top_img: https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/18/4fb7fc6f404e546446eff3f9e9ad3881.png
+cover: https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/18/4fb7fc6f404e546446eff3f9e9ad3881.png
 ---
 
 
@@ -770,7 +770,7 @@ protected void ajaxExistUsername(HttpServletRequest req, HttpServletResponse res
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/18/9c2c6ffa6e34299697551db4ea92d33c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/18/9c2c6ffa6e34299697551db4ea92d33c.png)
 
 
 

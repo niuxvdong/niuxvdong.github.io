@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 6406
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/13/6f9a05265d5267b2a5cfcc173404af27.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/13/6f9a05265d5267b2a5cfcc173404af27.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/13/6f9a05265d5267b2a5cfcc173404af27.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/13/6f9a05265d5267b2a5cfcc173404af27.png
 categories:
   - 数据库
   - 索引
@@ -46,7 +46,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/13/74d905cbddf326015d438798fa501466.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/13/74d905cbddf326015d438798fa501466.png)
 
 
 
@@ -70,13 +70,13 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/13/a97e98371841d1114faac40f04edd0dd.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/13/a97e98371841d1114faac40f04edd0dd.png)
 
 **查找10的过程：** 也仅仅比了四次！
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/13/d8bdb527e626d03f73aba03971057a8e.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/13/d8bdb527e626d03f73aba03971057a8e.png)
 
 
 
@@ -97,7 +97,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/13/e231111d9753c9f163a1955d7ba46978.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/13/e231111d9753c9f163a1955d7ba46978.png)
 
 
 
@@ -121,7 +121,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/13/03cb14f93a39d9651e497010d8f714bc.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/13/03cb14f93a39d9651e497010d8f714bc.png)
 
 
 
@@ -153,7 +153,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/13/e05faa617ea161b29111391539dcbba3.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/13/e05faa617ea161b29111391539dcbba3.png)
 
 
 
@@ -300,7 +300,7 @@ MyISAM支持 FULLTEXT类型的全文索引， InnoDB不支持FULLTEXT类型的�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/13/64b50f96b0d97e4f3359b62fc0842019.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/13/64b50f96b0d97e4f3359b62fc0842019.png)
 
 
 
@@ -320,7 +320,7 @@ MyISAM的 B+树 的叶子节点上，记录的是真实数据的**存储地址**
 
 **聚簇索引存储结构：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/09/13/6f9a05265d5267b2a5cfcc173404af27.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/09/13/6f9a05265d5267b2a5cfcc173404af27.png)
 
 
 

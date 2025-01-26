@@ -124,43 +124,43 @@ mermaid:
 
 # Favicon
 # ---------------
-favicon: https://gitcode.net/qq_43590403/images/-/raw/master/img/favicon.ico
+favicon: https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/favicon.ico
 
 # Post info settings
 # ---------------
 avatar:
-  img: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/e373babbf340391956b673128a84185d.png
+  img: https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/e373babbf340391956b673128a84185d.png
   effect: true # 頭像會一直轉圈
 
 # Disable all banner image
 disable_top_img: false
 
 # the banner image of index
-index_img: https://gitcode.net/qq_43590403/images/-/raw/master/img/H21b5f6b8496141a1979a33666e1074d9x.jpg
+index_img: https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/H21b5f6b8496141a1979a33666e1074d9x.jpg
 
 # if the banner of page not setting,it will show the top_img
-default_top_img: https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/eae39252d9715e4ec7a4557d355e2eb7.png
+default_top_img: https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/eae39252d9715e4ec7a4557d355e2eb7.png
 
 # the banner image of archive page
-archive_img: https://gitcode.net/qq_43590403/images/-/raw/master/img/H21b5f6b8496141a1979a33666e1074d9x.jpg
+archive_img: https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/H21b5f6b8496141a1979a33666e1074d9x.jpg
 
 # the banner image of tag page
 # tag page, look like https://xxxxxxxxx.com/tags/butterfly
-tag_img: https://gitcode.net/qq_43590403/images/-/raw/master/img/mmexport1581051773909.jpg
+tag_img: https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/mmexport1581051773909.jpg
 
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
-tag_per_img: https://gitcode.net/qq_43590403/images/-/raw/master/banners/5.jpg
+tag_per_img: https://cdn.itnxd.eu.org/gh/niuxvdong/images/banners/5.jpg
 
 # the banner image of category page
 # category page, look like https://xxxxxxxxx.com/categories/butterfly
-category_img: https://gitcode.net/qq_43590403/images/-/raw/master/banners/5.jpg
+category_img: https://cdn.itnxd.eu.org/gh/niuxvdong/images/banners/5.jpg
 
 # The banner image of category page
 # format:
 #  - category name: xxxxx
-category_per_img: https://gitcode.net/qq_43590403/images/-/raw/master/banners/5.jpg
+category_per_img: https://cdn.itnxd.eu.org/gh/niuxvdong/images/banners/5.jpg
 
 # 如果你有使用hexo-douban，可配置這個
 # douban:
@@ -338,7 +338,7 @@ valine:
   emojiCDN: # emoji CDN
   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields nick/mail/link
-  bg: https://gitcode.net/qq_43590403/img/-/raw/master/pictures/2022/10/22_18_20_1_202210221820740.png
+  bg: https://cdn.itnxd.eu.org/gh/niuxvdong/img/pictures/2022/10/22_18_20_1_202210221820740.png
   # bg: https://cdn.jsdelivr.net/gh/niuxvdong/pic/img/comment_bg.png # valine background
   count: true # dispaly comment count in top_img
   metaPlaceholder:
@@ -448,7 +448,7 @@ footer:
   owner:
     enable: true
     since: 2020
-  custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY  <a target="_blank" rel="external nofollow" href="https://vercel.com/"><b>Vercel</b></a> && <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a><br><img style="vertical-align:middle" src="https://gitcode.net/qq_43590403/img/-/raw/master/pictures/2022/10/22_19_11_15_202210221911223.png" alt=""> <a href="https://beian.miit.gov.cn/"><b>晋ICP备19005025号-2</b></a>
+  custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY  <a target="_blank" rel="external nofollow" href="https://vercel.com/"><b>Vercel</b></a> && <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a><br><img style="vertical-align:middle" src="https://cdn.itnxd.eu.org/gh/niuxvdong/img/pictures/2022/10/22_19_11_15_202210221911223.png" alt=""> <a href="https://beian.miit.gov.cn/"><b>晋ICP备19005025号-2</b></a>
   copyright: true # Copyright of theme and framework
   ICP: # Chinese ICP License
     enable: true
@@ -527,10 +527,10 @@ site_verification:
 reward:
   enable: true
   QR_code:
-    - img: https://gitcode.net/qq_43590403/images/-/raw/master/img/WeChantQR.jpg
+    - img: https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/WeChantQR.jpg
       link:
       text: 微信
-    - img: https://gitcode.net/qq_43590403/images/-/raw/master/img/AliPayQR.jpg
+    - img: https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/AliPayQR.jpg
       link:
       text: 支付宝
 
@@ -851,7 +851,7 @@ translate:
   #延遲時間,若不在前, 要設定延遲翻譯時間, 如100表示100ms,默認為0
   translateDelay: 0
   #博客網址
-  # cookieDomain: 'https://www.itnxd.cn/'
+  # cookieDomain: 'https://itnxd.eu.org/'
   #當文字是簡體時，按鈕顯示的文字
   msgToTraditionalChinese: '繁'
   #當文字是繁體時，按鈕顯示的文字

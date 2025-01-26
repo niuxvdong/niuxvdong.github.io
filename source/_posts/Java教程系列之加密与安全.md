@@ -3,8 +3,8 @@ title: Java教程系列之加密与安全
 author: Mr.Niu
 toc: true
 abbrlink: 25096
-cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/75a319eb796ea3b3991c19b40c821e28.png'
-top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/75a319eb796ea3b3991c19b40c821e28.png'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/75a319eb796ea3b3991c19b40c821e28.png'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/75a319eb796ea3b3991c19b40c821e28.png'
 categories:
   - Java教程
 tags:

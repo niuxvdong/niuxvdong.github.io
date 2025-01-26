@@ -3,8 +3,8 @@ title: AcWing-89.a ^ b
 author: Mr.Niu
 toc: true
 abbrlink: 2286
-cover: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_33.jpg'
-top_img: 'https://gitcode.net/qq_43590403/images/-/raw/master/img/ACG.GY_33.jpg'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/ACG.GY_33.jpg'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/ACG.GY_33.jpg'
 categories:
   - AcWing
 tags:
@@ -84,7 +84,7 @@ updated:
 
 快速幂思想如图：
 
-![](https://gitcode.net/qq_43590403/images/-/raw/master/img/20200227125511.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/images/img/20200227125511.png)
 
 
 

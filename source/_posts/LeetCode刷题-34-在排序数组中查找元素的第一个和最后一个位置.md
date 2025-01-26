@@ -3,8 +3,8 @@ title: LeetCode刷题-34.在排序数组中查找元素的第一个和最后一�
 author: Mr.Niu
 toc: true
 abbrlink: 39392
-top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/2ead155c241dc7841b557e7750a24927.png'
-cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/2ead155c241dc7841b557e7750a24927.png'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/2ead155c241dc7841b557e7750a24927.png'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/2ead155c241dc7841b557e7750a24927.png'
 categories: LeetCode刷题
 tags:
   - 二分
@@ -44,7 +44,7 @@ updated:
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/27/b9d900f90664e006ed5e39d98f89e6d4.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/27/b9d900f90664e006ed5e39d98f89e6d4.png)
 
 使用 `x >= target`可以找到满足该条件的最后一个数，即左端点！
 

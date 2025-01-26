@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 43777
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2022/08/06/d625a577df424a8e480bb87940d0debc.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/08/06/d625a577df424a8e480bb87940d0debc.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2022/08/06/d625a577df424a8e480bb87940d0debc.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/08/06/d625a577df424a8e480bb87940d0debc.png
 categories:
   - JVM
 tags:
@@ -44,7 +44,7 @@ JVM JRE JDK的区别
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/14/0b9147ca101a32aa7733d8a650b385bc.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/14/0b9147ca101a32aa7733d8a650b385bc.png)
 
 
 
@@ -116,7 +116,7 @@ JVM JRE JDK的区别
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/14/b84becadbc0a8cba98a5ee2ad7ae5634.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/14/b84becadbc0a8cba98a5ee2ad7ae5634.png)
 
 
 
@@ -307,7 +307,7 @@ Method Area
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/14/33d7471bdee5af88e9c8d887b27958b2.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/14/33d7471bdee5af88e9c8d887b27958b2.png)
 
 
 
@@ -760,7 +760,7 @@ public class Demo1_9 {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/b187842fc4be99d0fcb27ce7c1dd9087.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/b187842fc4be99d0fcb27ce7c1dd9087.png)
 
 
 
@@ -768,7 +768,7 @@ public class Demo1_9 {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/4aa202a219bcc1ab633de6160612fd03.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/4aa202a219bcc1ab633de6160612fd03.png)
 
 
 
@@ -1031,7 +1031,7 @@ public class Demo1_26 {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/9fcfeeb1071535145539b24ce349a687.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/9fcfeeb1071535145539b24ce349a687.png)
 
 
 
@@ -1041,7 +1041,7 @@ public class Demo1_26 {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/b79dc1b4f389e18ccc33bcbedced7a85.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/b79dc1b4f389e18ccc33bcbedced7a85.png)
 
 
 
@@ -1261,7 +1261,7 @@ Mark Compact
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/8f304731c0f2286838026d6f481e7869.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/8f304731c0f2286838026d6f481e7869.png)
 
 
 
@@ -1279,7 +1279,7 @@ Copy
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/205fe28736db1a8067c231dffd276e7d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/205fe28736db1a8067c231dffd276e7d.png)
 
 
 
@@ -1326,7 +1326,7 @@ JVM是根据具体情况，选择一个或多个垃圾回收算法协同工作�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/1f5e14c33e17ea8fbb77ef128025a038.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/1f5e14c33e17ea8fbb77ef128025a038.png)
 
 
 
@@ -1404,7 +1404,7 @@ JVM是根据具体情况，选择一个或多个垃圾回收算法协同工作�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/5cede90cbd52c231f4d2ebd92a9f75fa.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/5cede90cbd52c231f4d2ebd92a9f75fa.png)
 
 
 
@@ -1450,7 +1450,7 @@ Serial Old是Serial回收器的老年代版本
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/284ee66db633400c039378e8a3c76938.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/284ee66db633400c039378e8a3c76938.png)
 
 
 
@@ -1521,7 +1521,7 @@ Serial Old是Serial回收器的老年代版本
 
 
 
- ![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/d524db8ff677cb9382456b9d32fae393.png)
+ ![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/d524db8ff677cb9382456b9d32fae393.png)
 
 ```java
 -XX:+UseConcMarkSweepGC（并发标记清除） ~ -XX:+UseParNewGC ~ SerialOld 
@@ -1587,7 +1587,7 @@ Concurrent Mark Sweep，并发标记清除回收器，一种以获取**最短回
 
 **应用场景**：适用于注重服务的响应速度，希望系统**停顿时间最短**，给用户带来更好的体验等场景下。如web程序、b/s服务
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/d524db8ff677cb9382456b9d32fae393.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/d524db8ff677cb9382456b9d32fae393.png)
 
 **CMS回收器的运行过程分为下列4步：**
 
@@ -1661,7 +1661,7 @@ JDK9：G1
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/84fc3158676faf3bd95af8ce6411526d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/84fc3158676faf3bd95af8ce6411526d.png)
 
 
 
@@ -1700,7 +1700,7 @@ JDK9：G1
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/f673d4a96b76ce1d520ffa02df567fe6.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/f673d4a96b76ce1d520ffa02df567fe6.png)
 
 
 
@@ -1722,7 +1722,7 @@ S：幸存者区
 
 O：老年区
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/a8fc1dd147b359145427bdde4669f0c9.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/a8fc1dd147b359145427bdde4669f0c9.png)
 
 
 
@@ -1752,7 +1752,7 @@ CM：并发标记
 
 #### Mixed Collection
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/84fc3158676faf3bd95af8ce6411526d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/84fc3158676faf3bd95af8ce6411526d.png)
 
 会对 E、S、O 进行全面垃圾回收
 
@@ -1775,7 +1775,7 @@ CM：并发标记
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/66085803ce7310c4f5a790453fc7eed2.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/66085803ce7310c4f5a790453fc7eed2.png)
 
 
 
@@ -1848,13 +1848,13 @@ CM：并发标记
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/f123563089607b90b85bfab6216264f4.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/f123563089607b90b85bfab6216264f4.png)
 
 
 
 ### Remark
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/84fc3158676faf3bd95af8ce6411526d.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/84fc3158676faf3bd95af8ce6411526d.png)
 
 
 
@@ -1875,7 +1875,7 @@ pre-write barrier + satb_mark_queue：写屏障 + 重新标记队列
 - 白色：未处理，也有强引用，不会回收
 - 单独的白色：被回收
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/ba9346c6b47661c4829002ea1c6d2bf7.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/ba9346c6b47661c4829002ea1c6d2bf7.png)
 
 
 
@@ -1910,7 +1910,7 @@ Wilson于1994年在理论上证明了，当且仅当以下两个条件同时满�
 
 来自深入理解JVM：
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/fa3a5280ede2ed36fbd83e1b7e0b5b80.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/fa3a5280ede2ed36fbd83e1b7e0b5b80.png)
 
 
 
@@ -1928,7 +1928,7 @@ Wilson于1994年在理论上证明了，当且仅当以下两个条件同时满�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/2b5ce2f7c730dee0071a86e4b97e5496.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/2b5ce2f7c730dee0071a86e4b97e5496.png)
 
 **并发标记过程中**
 
@@ -1952,7 +1952,7 @@ Wilson于1994年在理论上证明了，当且仅当以下两个条件同时满�
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/15/92a58a8e455439f7fa8b680805cbb2ac.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/15/92a58a8e455439f7fa8b680805cbb2ac.png)
 
 
 
@@ -2035,7 +2035,7 @@ public class Demo3 {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/9cc15bb6f98e542991d3e15d405ce7be.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/9cc15bb6f98e542991d3e15d405ce7be.png)
 
 
 
@@ -2648,7 +2648,7 @@ Class常量池载入运行时常量池
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/907fb88366a8a9e5b3973188f3550880.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/907fb88366a8a9e5b3973188f3550880.png)
 
 
 
@@ -2658,7 +2658,7 @@ Class常量池载入运行时常量池
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/22b33d00055b1233e8584cd636eb991f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/22b33d00055b1233e8584cd636eb991f.png)
 
 
 
@@ -2672,7 +2672,7 @@ Class常量池载入运行时常量池
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/a24878c0214d42b6c8e2f8e45d304b21.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/a24878c0214d42b6c8e2f8e45d304b21.png)
 
 
 
@@ -2690,7 +2690,7 @@ Class常量池载入运行时常量池
 - ldc2_w 将一个 long 压入操作数栈（分**两次**压入，因为 long 是 8 个字节）
 - 这里小的数字都是和字节码指令存在一起，超过 short 范围的数字存入了常量池
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/ce55ea80e0e599bc1d9a3a5f37d4f575.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/ce55ea80e0e599bc1d9a3a5f37d4f575.png)
 
 
 
@@ -2700,7 +2700,7 @@ Class常量池载入运行时常量池
 
 - 将操作数栈顶数据弹出，存入局部变量表的 slot 1
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/1e43aa67463a8bc063a0dbe412804350.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/1e43aa67463a8bc063a0dbe412804350.png)
 
 **ldc #3**
 
@@ -2709,7 +2709,7 @@ Class常量池载入运行时常量池
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/cba0e0085749e323aac079f4502254fa.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/cba0e0085749e323aac079f4502254fa.png)
 
 
 
@@ -2717,7 +2717,7 @@ Class常量池载入运行时常量池
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/9945b5e47765d16f49f87d222ba712c8.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/9945b5e47765d16f49f87d222ba712c8.png)
 
 
 
@@ -2725,7 +2725,7 @@ Class常量池载入运行时常量池
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/8995dd4238018a336d42dee081072b37.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/8995dd4238018a336d42dee081072b37.png)
 
 
 
@@ -2735,13 +2735,13 @@ Class常量池载入运行时常量池
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/6a79a8666eee3fb93720b3e7622ac409.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/6a79a8666eee3fb93720b3e7622ac409.png)
 
 **iadd**
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/d74b123fe1fa08cacd8dcc7f1b4bbd93.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/d74b123fe1fa08cacd8dcc7f1b4bbd93.png)
 
 
 
@@ -2749,7 +2749,7 @@ Class常量池载入运行时常量池
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/b70bfceec9f1c707f367d93561df5fa0.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/b70bfceec9f1c707f367d93561df5fa0.png)
 
 **getstatic #4**
 
@@ -2758,15 +2758,15 @@ Class常量池载入运行时常量池
 - 在运行时常量池中找到#4，发现是一个对象
 - 在堆内存中找到该对象，并将其**引用**放入操作数栈中
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/241e1cbad891fa4450d541d3b199733a.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/241e1cbad891fa4450d541d3b199733a.png)
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/0865a5ae1d18ec4046a102f858587d42.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/0865a5ae1d18ec4046a102f858587d42.png)
 
 **iload_3**
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/890f9a7876cee187802fd2b086258504.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/890f9a7876cee187802fd2b086258504.png)
 
 **invokevirtual #5**
 
@@ -2775,12 +2775,12 @@ Class常量池载入运行时常量池
 - 生成新的栈帧（分配 locals、stack等）
 - 传递参数，执行新栈帧中的字节码
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/421289d6891a8d646aa3c45d30a083d2.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/421289d6891a8d646aa3c45d30a083d2.png)
 
 - 执行完毕，弹出栈帧 
 - 清除 main 操作数栈内容
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/63211caa2df2267bc969326165be80b6.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/63211caa2df2267bc969326165be80b6.png)
 
 
 
@@ -2852,7 +2852,7 @@ public class Demo3_2 {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/86eb6001dfce606f934b5cbe2fa11e3f.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/86eb6001dfce606f934b5cbe2fa11e3f.png)
 
 
 
@@ -4547,7 +4547,7 @@ public class Candy11 {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/799c41ce1d6bed10e1a0eade4ec4b3a7.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/799c41ce1d6bed10e1a0eade4ec4b3a7.png)
 
 
 
@@ -4715,7 +4715,7 @@ class D {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/16/044cc27924dce9f85a6176651875b5b3.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/16/044cc27924dce9f85a6176651875b5b3.png)
 
 
 
@@ -5227,7 +5227,7 @@ private static void loadInitialDrivers() {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/17/cf8db3ef70987b80290cea67acc51841.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/17/cf8db3ef70987b80290cea67acc51841.png)
 
 
 
@@ -5779,7 +5779,7 @@ private static int inflationThreshold = 15;
 - 主内存
 - 工作内存
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/17/69979e1c38516743c6bac5036c4c6a1b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/17/69979e1c38516743c6bac5036c4c6a1b.png)
 
 
 
@@ -5828,7 +5828,7 @@ putstatic     i // 将修改后的值存入静态变量i
 
 而 Java 的内存模型如下，完成静态变量的自增，自减需要在主存和线程内存中进行数据交换：
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/17/69979e1c38516743c6bac5036c4c6a1b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/17/69979e1c38516743c6bac5036c4c6a1b.png)
 
 
 
@@ -5962,17 +5962,17 @@ public static void main(String[] args) throws InterruptedException {
 
 - 初始状态， t 线程刚开始从主内存读取了 run 的值到工作内存。
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/17/99e92cac4fe9cc2e9b583a4cd14afcdd.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/17/99e92cac4fe9cc2e9b583a4cd14afcdd.png)
 
 
 
 - 因为 t 线程要**频繁**从主内存中读取 **run 的值**，JIT 编译器会将 run 的值**缓存**至自己工作内存中的**高速缓存**中，减少对主存中 run 的访问，提高效率
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/17/6ae835697471041240631d06e8452e1c.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/17/6ae835697471041240631d06e8452e1c.png)
 
 - 1 秒之后，main 线程修改了 run 的值，并同步至主存，而 t 是从自己工作内存中的高速缓存中读取这个变量的值，结果永远是**旧值**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/17/ba6ed6d226ef92d1f9107b146fbd6dfc.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/17/ba6ed6d226ef92d1f9107b146fbd6dfc.png)
 
 
 
@@ -6601,7 +6601,7 @@ public static void method2() {
 - 线程1、2指的是存储数据的栈
 - 对象MarkWord指的是存储数据的堆中的对象头
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/17/d3790cf0fae5f7938ca3acbc19956d9b.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/17/d3790cf0fae5f7938ca3acbc19956d9b.png)
 
 
 
@@ -6637,7 +6637,7 @@ public static void method1() {
 
 **两个线程执行过程：**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/17/9690af5ec32239c677e8b56df0ec7e06.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/17/9690af5ec32239c677e8b56df0ec7e06.png)
 
 
 
@@ -6661,7 +6661,7 @@ public static void method1() {
 
 **自旋重试成功的情况**
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/17/d9215beea5edd022585d58f9f9ee3cc5.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/17/d9215beea5edd022585d58f9f9ee3cc5.png)
 
 
 
@@ -6669,7 +6669,7 @@ public static void method1() {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/17/d7300eeebf43d7e37f212a5162d3acb0.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/17/d7300eeebf43d7e37f212a5162d3acb0.png)
 
 
 
@@ -6719,7 +6719,7 @@ public static void method2() {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2022/01/17/0f30e000d10c8b04ab4f29255b38c066.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2022/01/17/0f30e000d10c8b04ab4f29255b38c066.png)
 
 
 

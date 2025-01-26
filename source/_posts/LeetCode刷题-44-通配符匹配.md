@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 18504
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/06/e53c62159d162b9deb5dfc3babd38c4d.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/06/e53c62159d162b9deb5dfc3babd38c4d.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/06/e53c62159d162b9deb5dfc3babd38c4d.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/06/e53c62159d162b9deb5dfc3babd38c4d.png
 categories: LeetCode刷题
 tags:
   - 动态规划
@@ -36,7 +36,7 @@ updated:
 
 
 
-> 又是一道关于正则表达式匹配问题的，和上一道[10.正则表达式匹配](https://www.itnxd.cn/posts/6262.html)几乎类似！
+> 又是一道关于正则表达式匹配问题的，和上一道[10.正则表达式匹配](https://itnxd.eu.org/posts/6262.html)几乎类似！
 >
 > 同样的做法，再来一次动态规划！
 
@@ -61,7 +61,7 @@ updated:
 
 如下图，由于我写过了一遍，就不再写了！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/07/07/db3cff8862526da36d3c6226cd967e94.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/07/07/db3cff8862526da36d3c6226cd967e94.png)
 
 
 

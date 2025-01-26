@@ -4,9 +4,9 @@ author: Mr.Niu
 toc: true
 abbrlink: 22556
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/19/ff8b6654de31f6df7cb093b10ca1e1f3.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/19/ff8b6654de31f6df7cb093b10ca1e1f3.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/19/ff8b6654de31f6df7cb093b10ca1e1f3.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/19/ff8b6654de31f6df7cb093b10ca1e1f3.png
 categories: LeetCode刷题
 tags:
   - 贪心
@@ -43,7 +43,7 @@ updated:
 
 给了一堆柱子及其高度，要求选出两个柱子，使得凹槽内的面积达到最大，当然两根柱子要选较低的一根作为高，否则会发生漏水！
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/18/3c856033057b341f993e2c05b37772ef.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/18/3c856033057b341f993e2c05b37772ef.png)
 
 ## 题解一：
 
@@ -76,7 +76,7 @@ updated:
 
 **可以结合我画的图来看：**`s‘`面积最大为`s2'`
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2020/06/19/6054632724d73c3346e8cc792cc18409.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2020/06/19/6054632724d73c3346e8cc792cc18409.png)
 
 ---
 

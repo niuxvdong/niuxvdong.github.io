@@ -4,9 +4,9 @@ author: ITNXD
 toc: true
 abbrlink: 31659
 top_img: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/11/af59e853e69829cdb079b25f72f9e8d5.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/11/af59e853e69829cdb079b25f72f9e8d5.png
 cover: >-
-  https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/11/af59e853e69829cdb079b25f72f9e8d5.png
+  https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/11/af59e853e69829cdb079b25f72f9e8d5.png
 categories:
   - JavaWeb
 tags:
@@ -570,7 +570,7 @@ public class PrintHtml extends HttpServlet {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/11/1d8f5b4ca78227b340b0fcca4551dda3.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/11/1d8f5b4ca78227b340b0fcca4551dda3.png)
 
 
 
@@ -637,7 +637,7 @@ public class PrintHtml extends HttpServlet {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/11/1858a33aea7e9c374d5c0a28b2d2408e.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/11/1858a33aea7e9c374d5c0a28b2d2408e.png)
 
 
 
@@ -744,7 +744,7 @@ public class PrintHtml extends HttpServlet {
 
 
 
-![](https://gitcode.net/qq_43590403/pic/-/raw/master/2021/03/11/95a3f34c429d2ef9f0dd6dbf6b4b3d20.png)
+![](https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/03/11/95a3f34c429d2ef9f0dd6dbf6b4b3d20.png)
 
 
 

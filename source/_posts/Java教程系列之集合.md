@@ -3,8 +3,8 @@ title: Java教程系列之集合
 author: Mr.Niu
 toc: true
 abbrlink: 46100
-cover: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/d5787bbd8ec29096932f5b1b12823ec4.png'
-top_img: 'https://gitcode.net/qq_43590403/pic/-/raw/master/2021/02/06/d5787bbd8ec29096932f5b1b12823ec4.png'
+cover: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/d5787bbd8ec29096932f5b1b12823ec4.png'
+top_img: 'https://cdn.itnxd.eu.org/gh/niuxvdong/pic/2021/02/06/d5787bbd8ec29096932f5b1b12823ec4.png'
 categories:
   - Java教程
 tags:
@@ -1366,7 +1366,7 @@ props.load(new FileInputStream("C:\\conf\\setting.properties"));
 
 ```java
 Properties props2 = new Properties();
-props2.setProperty("url", "https://www.itnxd.cn/");
+props2.setProperty("url", "https://itnxd.eu.org/");
 props2.setProperty("language", "Java");
 //E:\MyJavaProgram\Settings 已写入我的E盘
 props2.store(new FileOutputStream("E:\\MyJavaProgram\\Settings\\setting.properties"), "这是写入的properties注释");
@@ -1386,7 +1386,7 @@ props2.store(new FileOutputStream("E:\\MyJavaProgram\\Settings\\setting.properti
 ```properties
 #\u8FD9\u662F\u5199\u5165\u7684properties\u6CE8\u91CA
 #Wed Apr 08 21:58:45 CST 2020
-url=https\://www.itnxd.cn/
+url=https\://itnxd.eu.org/
 language=Java
 ```
 
@@ -1410,7 +1410,7 @@ language=Java
 Properties props3 = new Properties();
 props3.load(new FileReader("E:\\MyJavaProgram\\Settings\\setting.properties", StandardCharsets.UTF_8));
 System.out.println(props3.getProperty("language")); // Java
-System.out.println(props3.getProperty("url")); // https://www.itnxd.cn/
+System.out.println(props3.getProperty("url")); // https://itnxd.eu.org/
 ```
 
 
